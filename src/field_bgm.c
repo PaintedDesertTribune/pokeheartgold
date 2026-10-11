@@ -185,7 +185,9 @@ static void FieldBGM_GetFadeOutAndWaitFrames(FieldSystem *fieldSystem, int mode,
 }
 
 int FieldBGM_GetEyesMeetForTrainer(u16 trainerID, int regionNo) {
-    GF_ASSERT(regionNo < 2);
+    if (regionNo > MAP_REGION_KANTO) {
+        regionNo = MAP_REGION_JOHTO; // Sinnoh maps reuse the Johto encounter jingles until it has its own
+    }
 
     u8 class = TrainerData_GetAttr(trainerID, TRATTR_CLASS);
     u16 i, seqNo = SEQ_GS_EYE_J_SHOUNEN;

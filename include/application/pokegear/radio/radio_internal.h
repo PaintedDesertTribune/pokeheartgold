@@ -61,7 +61,7 @@ typedef struct RadioShow {
     u8 textNoScroll;           // 0x65
     u8 isSecondLine : 1;       // 0x66
     u8 statik : 1;             // 0x66. spelling intentional, "static" is a reserved keyword
-    u8 regionNo : 1;           // 0x66
+    u8 regionNo : 2;           // 0x66
     u8 isPlayingJingle : 1;    // 0x66
     u8 triggerCommercials : 1; // 0x66
     u8 delayCounter;           // 0x67

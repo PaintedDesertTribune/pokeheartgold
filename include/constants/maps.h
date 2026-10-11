@@ -541,6 +541,7 @@
 #define MAP_CELADON_GAME_CORNER                           537 // MAP_T07SP0101
 #define MAP_UNUSED                                        538 // MAP_R00
 #define MAP_POKEMON_LEAGUE_ENTRANCE_WIFI_ROOM             539 // MAP_T10R0801
-#define MAP_ID_MAX                                        540
+#define MAP_CANALAVE                                      540 // MAP_C02 (Sinnoh, imported from Diamond)
+#define MAP_ID_MAX                                        541
 
 #endif // POKEHEARTGOLD_CONSTANTS_MAPS_H

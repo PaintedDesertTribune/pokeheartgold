@@ -1,0 +1,15 @@
+{
+  "header": "fielddata/script/scr_seq/event_C02.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 31,
+      "z": 50,
+      "header": "MAP_OLIVINE",
+      "anchor": 8,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

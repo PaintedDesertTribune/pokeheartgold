@@ -26,7 +26,7 @@ typedef struct MapHeader {
     u16 mapsec : 8;
     u16 areaIcon : 4;
     u16 momCallIntroParam : 4;
-    u32 regionNo : 1;
+    u32 regionNo : 2;
     u32 weather : 7;
     u32 mapType : 4;
     u32 cameraType : 6;
@@ -54,6 +54,7 @@ typedef enum MapType {
 typedef enum MapRegion {
     MAP_REGION_JOHTO = 0,
     MAP_REGION_KANTO = 1,
+    MAP_REGION_SINNOH = 2,
 } MapRegion;
 
 u8 MapHeader_GetAreaDataBank(u32 mapId);

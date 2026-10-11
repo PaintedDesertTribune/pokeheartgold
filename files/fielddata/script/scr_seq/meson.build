@@ -535,6 +535,7 @@ scr_seq_event_headers = files(
     'event_W40.h',
     'event_W40R0101.h',
     'event_W41.h',
+    'event_C02.h',
 )
 
 scr_seq_asm = files(
@@ -1503,4 +1504,6 @@ scr_seq_asm = files(
     'scr_seq_0962_W40.s',
     'scr_seq_0963_W40R0101.s',
     'scr_seq_0964_W41.s',
+    'scr_seq_0965_C02.s',
+    'scr_seq_0966_C02_hdr.s',
 )
