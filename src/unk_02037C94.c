@@ -1445,9 +1445,14 @@ int sub_02039998(void) {
     return sub_02034044();
 }
 
+u32 gHackCommUnk4E = 0, gHackCommUnk5D = 0, gHackCommUnk24 = 0;
+
 void sub_020399A4(s8 arg0) {
     if (_021D4150) {
         _021D4150->unk56 = arg0;
+        gHackCommUnk4E = _021D4150->unk4E;
+        gHackCommUnk5D = _021D4150->unk5D;
+        gHackCommUnk24 = (u32)_021D4150->unk24;
     }
 }
 

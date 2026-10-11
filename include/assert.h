@@ -9,7 +9,11 @@
  *
  * Pass NO_GF_ASSERT=1 to make to remove these.
  */
-#ifdef PM_KEEP_ASSERTS
+#include "hack_config.h"
+
+#if defined(PM_KEEP_ASSERTS) && HACK_ASSERTS_ALWAYS_VISIBLE
+#define GF_ASSERT(expr) ((expr) ? (void)0 : GF_AssertFailAt(__FILE__, __LINE__))
+#elif defined(PM_KEEP_ASSERTS)
 #define GF_ASSERT(expr) ((expr) ? (void)0 : GF_AssertFail())
 #else
 #define GF_ASSERT(...) ((void)0)

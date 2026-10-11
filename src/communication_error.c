@@ -89,6 +89,31 @@ static BOOL sub_0203A9FC(u32 *error_code_ptr) {
     return TRUE;
 }
 
+
+#include "constants/charcode.h"
+#include "hack_config.h"
+extern u32 gHackCommUnk4E, gHackCommUnk5D, gHackCommUnk24;
+static void HackCommAppendNum(String *str, u32 value) {
+    char buf[12];
+    int i = 0, a, b;
+    if (value == 0) {
+        buf[i++] = '0';
+    }
+    while (value > 0 && i < 11) {
+        buf[i++] = (char)('0' + value % 10);
+        value /= 10;
+    }
+    buf[i] = 0;
+    for (a = 0, b = i - 1; a < b; a++, b--) {
+        char t = buf[a];
+        buf[a] = buf[b];
+        buf[b] = t;
+    }
+    for (a = 0; a < i; a++) {
+        String_AddChar(str, CHAR_0 + (buf[a] - '0'));
+    }
+}
+
 void ShowCommunicationError(enum HeapID heapID, u32 error, u32 errorCode) {
     Window window;
 
@@ -173,6 +198,17 @@ void ShowCommunicationError(enum HeapID heapID, u32 error, u32 errorCode) {
     DrawFrameAndWindow1(&window, FALSE, 0x1F7, 2);
 
     BufferIntegerAsString(messageFormat, 0, errorCode, 5, PRINTING_MODE_LEADING_ZEROS, TRUE);
+    {
+        String *hc = String_New(64, heapID);
+        String_AddChar(hc, CHAR_H); String_AddChar(hc, CHAR_C); String_AddChar(hc, CHAR_SPACE);
+        HackCommAppendNum(hc, error); String_AddChar(hc, CHAR_SPACE);
+        HackCommAppendNum(hc, errorCode); String_AddChar(hc, CHAR_SPACE);
+        HackCommAppendNum(hc, gHackCommUnk4E); String_AddChar(hc, CHAR_SPACE);
+        HackCommAppendNum(hc, gHackCommUnk5D); String_AddChar(hc, CHAR_SPACE);
+        HackCommAppendNum(hc, gHackCommUnk24);
+        AddTextPrinterParameterized(&window, 0, hc, 0, 128, 0, NULL);
+        String_Delete(hc);
+    }
     ReadMsgDataIntoString(errorMessageData, msgNo, tmpStr);
     StringExpandPlaceholders(messageFormat, errorMessageStr, tmpStr);
     AddTextPrinterParameterized(&window, 0, errorMessageStr, 0, 0, 0, NULL);

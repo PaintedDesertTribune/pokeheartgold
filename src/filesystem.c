@@ -1,4 +1,5 @@
 #define _IN_FILESYSTEM_C // Place sNarcFileList here when filesystem.h is included
+#include "error_handling.h"
 
 #include "filesystem.h"
 
@@ -23,6 +24,10 @@ static void ReadFromNarcMemberByPathAndId(void *dest, const char *path, s32 file
     FS_SeekFile(&file, (s32)(btaf_start + 4), FS_SEEK_SET);
     FS_ReadFile(&file, &chunk_size, 4);
     FS_ReadFile(&file, &num_files, 2);
+    if (!(num_files > file_idx)) {
+        gHackNarcPath = path;
+        gHackNarcIndex = file_idx;
+    }
     GF_ASSERT(num_files > file_idx);
     btnf_start = btaf_start + chunk_size;
     FS_SeekFile(&file, (s32)(btnf_start + 4), FS_SEEK_SET);
@@ -62,6 +67,10 @@ static void *AllocAndReadFromNarcMemberByPathAndId(const char *path, s32 file_id
     FS_SeekFile(&file, (s32)(btaf_start + 4), FS_SEEK_SET);
     FS_ReadFile(&file, &chunk_size, 4);
     FS_ReadFile(&file, &num_files, 2);
+    if (!(num_files > file_idx)) {
+        gHackNarcPath = path;
+        gHackNarcIndex = file_idx;
+    }
     GF_ASSERT(num_files > file_idx);
     btnf_start = btaf_start + chunk_size;
     FS_SeekFile(&file, (s32)(btnf_start + 4), FS_SEEK_SET);
@@ -133,6 +142,10 @@ u32 GetNarcMemberSizeByIdPair(NarcId narc_id, s32 file_idx) {
     FS_SeekFile(&file, (s32)(btaf_start + 4), FS_SEEK_SET);
     FS_ReadFile(&file, &chunk_size, 4);
     FS_ReadFile(&file, &num_files, 2);
+    if (!(num_files > file_idx)) {
+        gHackNarcPath = sNarcFileList[narc_id];
+        gHackNarcIndex = file_idx;
+    }
     GF_ASSERT(num_files > file_idx);
     btnf_start = btaf_start + chunk_size;
     FS_SeekFile(&file, (s32)(btnf_start + 4), FS_SEEK_SET);

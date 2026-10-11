@@ -10,6 +10,9 @@
 #include "files/msgdata/msg/msg_0292.h"
 #include "files/msgdata/msg/msg_0293.h"
 #include "files/msgdata/msg/msg_0445.h"
+#include "files/msgdata/msg/msg_0254.h"
+
+#include "hack_config.h"
 
 #include "apricorn_tree.h"
 #include "field_system.h"
@@ -106,10 +109,36 @@ BOOL ov36_TitleScreen_NewGame_AppExec(OverlayManager *man, int *state) {
     return TRUE;
 }
 
+#if HACK_SKIP_INTRO
+// Stand-in for the Oak speech: default name, gender and rival name, then straight to the field.
+static void HackSkipIntro_SetDefaults(SaveData *saveData) {
+    PlayerProfile *profile = Save_PlayerData_GetProfile(saveData);
+    MsgData *names = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, NARC_msgdata_msg, msg_0445, HEAP_ID_3);
+    MsgData *rivalNames = NewMsgDataFromNarc(MSGDATA_LOAD_LAZY, NARC_msgdata_msg, msg_0254, HEAP_ID_3);
+    String *name = NewString_ReadMsgData(names, msg_0445_00000);
+    String *rival = NewString_ReadMsgData(rivalNames, msg_0254_00041);
+
+    PlayerName_StringToFlat(profile, name);
+    PlayerProfile_SetTrainerGender(profile, PLAYER_GENDER_MALE);
+    Save_Misc_RivalName_Set(Save_Misc_Get(saveData), rival);
+
+    String_Delete(name);
+    String_Delete(rival);
+    DestroyMsgData(names);
+    DestroyMsgData(rivalNames);
+}
+#endif
+
 BOOL ov36_TitleScreen_NewGame_AppExit(OverlayManager *man, int *state) {
 #pragma unused(man, state)
+#if HACK_SKIP_INTRO
+    HackSkipIntro_SetDefaults(((struct UnkStruct_02111868_sub *)OverlayManager_GetArgs(man))->saveData);
+    Heap_Destroy(HEAPID_OV36);
+    RegisterMainOverlay(FS_OVERLAY_ID(OVY_36), &ov36_App_InitGameState_AfterOakSpeech);
+#else
     Heap_Destroy(HEAPID_OV36);
     RegisterMainOverlay(FS_OVERLAY_ID_NONE, &gApplication_OakSpeech);
+#endif
 
     return TRUE;
 }

@@ -7,4 +7,10 @@
 // without playing to Olivine. Set to 0 for a normal start.
 #define HACK_START_IN_CANALAVE 1
 
+// Skip the Oak speech and naming screens on New Game: player is Ethan, rival is Silver.
+#define HACK_SKIP_INTRO 1
+
+// Show the game's error screen on any failed assertion instead of silently continuing.
+#define HACK_ASSERTS_ALWAYS_VISIBLE 1
+
 #endif // POKEHEARTGOLD_HACK_CONFIG_H

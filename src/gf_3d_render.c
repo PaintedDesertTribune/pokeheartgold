@@ -1,5 +1,12 @@
 #include "gf_3d_render.h"
 
+#include "error_handling.h"
+
+u32 gHackTexFailPtr = 0;
+u32 gHackTexFailMagic = 0;
+u32 gHackTexFailFileMagic = 0;
+u32 gHackTexFailEntries = 0;
+
 #include "global.h"
 
 #include "gf_3d_vramman.h"
@@ -122,6 +129,12 @@ BOOL GF3dRender_AllocAndLoadTexResources(NNSG3dResTex *tex) {
         }
 
         if (!hasTexVram) {
+            gHackTexFailSize = texRequiredSize;
+            gHackTexFailName = NULL;
+            gHackTexFailPtr = (u32)tex;
+            gHackTexFailMagic = *(u32 *)tex;                 // should read 'TEX0'
+            gHackTexFailFileMagic = *(u32 *)((u8 *)tex - 0x14); // 'BTX0' or 'BMD0' when tex sits at offset 0x14 of its file
+            gHackTexFailEntries = tex->dict.numEntry;
             GF_ASSERT(!NNS_GfdFreeTexVram(texKey));
             return FALSE;
         }

@@ -1,5 +1,7 @@
 #include "heap.h"
 
+#include "hack_config.h"
+
 #include "global.h"
 
 #include "error_handling.h"
@@ -195,8 +197,13 @@ static void *AllocFromHeapInternal(NNSFndHeapHandle heap, u32 size, s32 alignmen
     return ptr;
 }
 
-static void AllocFail(void) {
-    if (sub_02037D78()) {
+u32 gHackAllocFailHeap = 0xFFFF;
+u32 gHackAllocFailSize = 0;
+
+static void AllocFail(enum HeapID heapID, u32 size) {
+    gHackAllocFailHeap = heapID;
+    gHackAllocFailSize = size;
+    if (sub_02037D78() || HACK_ASSERTS_ALWAYS_VISIBLE) {
         PrintErrorMessageAndReset();
     }
 }
@@ -212,7 +219,7 @@ void *Heap_Alloc(enum HeapID heapID, u32 size) {
     if (ptr != NULL) {
         sHeapInfo.numMemBlocks[heapID]++;
     } else {
-        AllocFail();
+        AllocFail(heapID, size);
     }
 
     return ptr;
@@ -229,7 +236,7 @@ void *Heap_AllocAtEnd(enum HeapID heapID, u32 size) {
     if (ptr != NULL) {
         sHeapInfo.numMemBlocks[heapID]++;
     } else {
-        AllocFail();
+        AllocFail(heapID, size);
     }
 
     return ptr;

@@ -4,8 +4,15 @@
   "objects": [],
   "warps": [
     {
-      "x": 31,
-      "z": 50,
+      "x": 13,
+      "z": 45,
+      "header": "MAP_OLIVINE",
+      "anchor": 8,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "z": 46,
       "header": "MAP_OLIVINE",
       "anchor": 8,
       "y": 0

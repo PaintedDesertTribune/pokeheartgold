@@ -8,12 +8,13 @@ Run from the pokeheartgold repo root on a clean checkout of the archives:
 
 What it does
   * land data (a/0/6/5):   Diamond chunks 48 and 49 -> HeartGold format (adds the 0x1234 marker
-                           and an empty BGS section), building ids remapped
+                           and an empty BGS section), building ids remapped, BDHC replaced by a flat one
   * building models (a/0/4/0): the Diamond NSBMDs Canalave uses, appended
   * building anim list (a/1/0/7): one default (no animation) 24-byte entry per new model
   * bm_field_matshp.dat:   one empty row per new model
   * map texture set (a/0/4/4): Diamond tex set 15, appended
   * area build list (a/0/4/3): the new model ids, appended
+  * area build textures (a/0/7/0): an NSBTX merged from the models' embedded textures, same index
   * area data (a/0/4/2):   one entry pointing at the new build list and tex set
   * map matrix:            files/fielddata/mapmatrix/map_matrix/map_matrix_0288_C02.bin (1 x 2)
 
@@ -23,10 +24,20 @@ import os
 import struct
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import nsbtx  # noqa: E402
+
 DP_CHUNKS = [48, 49]           # land_data ids of Canalave City in Diamond's main matrix
 DP_AREA_BUILD = 11             # area_build list Canalave's area uses
 DP_TEX_SET = 15                # map_tex_set Canalave's area uses
 MATRIX_NAME = "C02"
+
+# Proof-slice tile overrides: (chunk, local x, local z) -> (type, collision).
+# Canalave's harbor is on the west bank of the canal. Until the sailor and boat script exist, a warp
+# panel on the quay (global 13, 46) stands in for boarding the ship; arrivals land at (13, 45).
+TILE_OVERRIDES = {
+    (49, 13, 14): (0x67, 0x00),   # TILE_BEHAVIOR_WARP_PANEL at global (13, 46); arrivals land one tile north
+}
 MATRIX_FILE = "files/fielddata/mapmatrix/map_matrix/map_matrix_0288_C02.bin"
 
 HG_LAND = "files/a/0/6/5"
@@ -34,11 +45,12 @@ HG_MODELS = "files/a/0/4/0"
 HG_ANIM = "files/a/1/0/7"
 HG_TEX = "files/a/0/4/4"
 HG_BUILDLIST = "files/a/0/4/3"
+HG_BUILDTEX = "files/a/0/7/0"   # per-area texture set for building models; indexed like HG_BUILDLIST
 HG_AREA = "files/a/0/4/2"
 HG_MATSHP = "files/fielddata/build_model/bm_field_matshp.dat"
 
 # Expected member counts on a stock checkout; the tool refuses to run twice.
-EXPECTED = {HG_LAND: 676, HG_MODELS: 340, HG_ANIM: 340, HG_TEX: 106, HG_BUILDLIST: 104, HG_AREA: 106}
+EXPECTED = {HG_LAND: 676, HG_MODELS: 340, HG_ANIM: 340, HG_TEX: 106, HG_BUILDLIST: 104, HG_BUILDTEX: 104, HG_AREA: 106}
 
 
 def narc_read(path):
@@ -82,10 +94,18 @@ def dp_land(dp, idx):
     return open(f"{dp}/files/fielddata/land_data/land_data_release/narc_{idx:04d}.bin", "rb").read()
 
 
-def convert_land(chunk, id_map):
+def convert_land(chunk, id_map, flat_bdhc, chunk_id):
     perm, bld, mdl, bdhc = struct.unpack_from("<4I", chunk, 0)
     body = bytearray(chunk[0x10:])
     assert len(body) == perm + bld + mdl + bdhc, "Diamond land data sizes do not add up"
+    for (cid, x, z), (ttype, coll) in TILE_OVERRIDES.items():
+        if cid == chunk_id:
+            body[(z * 32 + x) * 2] = ttype
+            body[(z * 32 + x) * 2 + 1] = coll
+    # Diamond's BDHC height map is an older layout HeartGold cannot read, so swap in HeartGold's
+    # flat one (ground at height 0) until a converter exists. Bridges and slopes will be flat.
+    body = body[: perm + bld + mdl] + flat_bdhc
+    bdhc = len(flat_bdhc)
     # remap building ids (first u32 of each 48-byte entry)
     for i in range(bld // 0x30):
         off = perm + i * 0x30
@@ -144,21 +164,35 @@ def main():
 
     lists, fnt = narc_read(HG_BUILDLIST)
     list_index = len(lists)
-    lists.append(b"".join(struct.pack("<H", id_map[b]) for b in dp_ids))
+    # HeartGold lists start with a u16 count; Diamond's are bare id arrays.
+    lists.append(struct.pack("<H", len(dp_ids)) + b"".join(struct.pack("<H", id_map[b]) for b in dp_ids))
     narc_write(HG_BUILDLIST, lists, fnt)
+
+    # Building texture set for the area. HeartGold binds building textures by name from this NSBTX,
+    # not from the models' embedded TEX0 blocks, so merge the Diamond models' textures into one set.
+    # Must stay index-aligned with the build list.
+    btex, fnt = narc_read(HG_BUILDTEX)
+    assert len(btex) == list_index, "building texture sets must stay aligned with building lists"
+    merged, ntex, npltt = nsbtx.merge_models([dp_models[b] for b in dp_ids])
+    btex.append(merged)
+    narc_write(HG_BUILDTEX, btex, fnt)
+    print(f"building texture set: {ntex} textures, {npltt} palettes, {len(merged)} bytes")
 
     areas, fnt = narc_read(HG_AREA)
     area_index = len(areas)
-    # build list, tex set, unused, outdoor (field models), lighting
-    areas.append(struct.pack("<HHHBB", list_index, tex_index, 0, 1, 1))
+    # build list, tex set, texture-animation set (0xFFFF = none; Johto sets animate by texture name
+    # and collide with Sinnoh names), outdoor (field models), lighting
+    areas.append(struct.pack("<HHHBB", list_index, tex_index, 0xFFFF, 1, 1))
     narc_write(HG_AREA, areas, fnt)
 
     # 4. land data
     land, fnt = narc_read(HG_LAND)
+    ref = land[1]  # a stock single-level map: its BDHC is the flat template
+    flat_bdhc = ref[len(ref) - struct.unpack_from("<I", ref, 12)[0]:]
     land_ids = []
     for c in DP_CHUNKS:
         land_ids.append(len(land))
-        land.append(convert_land(chunks[c], id_map))
+        land.append(convert_land(chunks[c], id_map, flat_bdhc, c))
     narc_write(HG_LAND, land, fnt)
 
     # 5. matrix: 1 wide, 2 tall, no header section (filled with the map id at load), altitudes 0

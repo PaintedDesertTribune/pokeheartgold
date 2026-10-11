@@ -1,5 +1,8 @@
 #include "error_message_reset.h"
 
+#include "hack_config.h"
+
+
 #include <nitro/gx/g2.h>
 #include <nitro/gx/gx_bgcnt.h>
 #include <nitro/pad/common/pad.h>
@@ -81,6 +84,91 @@ static void VBlankIntr() {
     MI_WaitDma(GX_DEFAULT_DMAID);
 }
 
+
+#if HACK_ASSERTS_ALWAYS_VISIBLE
+#include "constants/charcode.h"
+#include "error_handling.h"
+
+extern u32 gHackTexFailPtr, gHackTexFailMagic, gHackTexFailFileMagic, gHackTexFailEntries;
+extern u32 gHackAllocFailHeap, gHackAllocFailSize;
+extern u32 gHackAssertLR;
+
+static const char *HackBasename(const char *path) {
+    const char *base = path;
+    for (; *path != 0; path++) {
+        if (*path == '/' || *path == '\\') {
+            base = path + 1;
+        }
+    }
+    return base;
+}
+
+static void HackAppendAscii(String *str, const char *text) {
+    for (; *text != 0; text++) {
+        char c = *text;
+        u16 code;
+        if (c >= '0' && c <= '9') {
+            code = CHAR_0 + (c - '0');
+        } else if (c >= 'A' && c <= 'Z') {
+            code = CHAR_A + (c - 'A');
+        } else if (c >= 'a' && c <= 'z') {
+            code = CHAR_a + (c - 'a');
+        } else if (c == '.') {
+            code = CHAR_PERIOD;
+        } else if (c == '_') {
+            code = CHAR_UNDERSCORE;
+        } else if (c == '/') {
+            code = CHAR_SLASH;
+        } else {
+            code = CHAR_SPACE;
+        }
+        String_AddChar(str, code);
+    }
+}
+
+static void HackAppendAsciiN(String *str, const char *text, int n) {
+    char buf[32];
+    int i;
+    for (i = 0; i < n && i < 31 && text[i] != 0; i++) {
+        buf[i] = text[i];
+    }
+    buf[i] = 0;
+    HackAppendAscii(str, buf);
+}
+
+static void HackAppendHex(String *str, u32 value) {
+    static const char digits[] = "0123456789ABCDEF";
+    char buf[9];
+    int i;
+    for (i = 7; i >= 0; i--) {
+        buf[i] = digits[value & 0xF];
+        value >>= 4;
+    }
+    buf[8] = 0;
+    HackAppendAscii(str, buf);
+}
+
+static void HackAppendNumber(String *str, int value) {
+    char buf[12];
+    int i = 0;
+    if (value == 0) {
+        buf[i++] = '0';
+    }
+    while (value > 0 && i < 11) {
+        buf[i++] = (char)('0' + value % 10);
+        value /= 10;
+    }
+    buf[i] = 0;
+    // reverse
+    for (int a = 0, b = i - 1; a < b; a++, b--) {
+        char t = buf[a];
+        buf[a] = buf[b];
+        buf[b] = t;
+    }
+    HackAppendAscii(str, buf);
+}
+#endif
+
 void PrintErrorMessageAndReset(void) {
     Window window;
 
@@ -139,9 +227,89 @@ void PrintErrorMessageAndReset(void) {
     FillWindowPixelRect(&window, 0xF, 0, 0, 208, 144);
     DrawFrameAndWindow1(&window, FALSE, 0x1F7, 2);
 
-    ReadMsgDataIntoString(error_msgdata, msg_0041_00003, error_str);
-    AddTextPrinterParameterized(&window, 0, error_str, 0, 0, 0, NULL);
+#if HACK_ASSERTS_ALWAYS_VISIBLE
+    BOOL hackDiag = (gHackAssertFile != NULL || gHackAssertLR != 0 || gHackAllocFailHeap != 0xFFFF || gHackTexFailSize != 0 || gHackNarcPath != NULL);
+    if (!hackDiag) {
+        ReadMsgDataIntoString(error_msgdata, msg_0041_00003, error_str);
+        AddTextPrinterParameterized(&window, 0, error_str, 0, 0, 0, NULL);
+        {
+            String *hd = String_New(32, HEAP_ID_DEFAULT);
+            HackAppendAscii(hd, "HACK GEN no diag");
+            AddTextPrinterParameterized(&window, 0, hd, 0, 128, 0, NULL);
+            String_Delete(hd);
+        }
+    } else {
+        String *hd = String_New(32, HEAP_ID_DEFAULT);
+        HackAppendAscii(hd, "HACK DIAGNOSTIC");
+        AddTextPrinterParameterized(&window, 0, hd, 0, 0, 0, NULL);
+        String_Delete(hd);
+    }
     String_Delete(error_str);
+    if (gHackAssertFile != NULL) {
+        String *where = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(where, HackBasename(gHackAssertFile));
+        String_AddChar(where, CHAR_COLON);
+        HackAppendNumber(where, gHackAssertLine);
+        AddTextPrinterParameterized(&window, 0, where, 0, 16, 0, NULL);
+        String_Delete(where);
+    }
+    if (gHackAssertLR != 0) {
+        String *lr = String_New(32, HEAP_ID_DEFAULT);
+        HackAppendAscii(lr, "from ");
+        HackAppendHex(lr, gHackAssertLR);
+        AddTextPrinterParameterized(&window, 0, lr, 0, 32, 0, NULL);
+        String_Delete(lr);
+    }
+    if (gHackNote[2] != 0 || gHackNote[0] != 0) {
+        String *nt = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(nt, "note ");
+        HackAppendHex(nt, gHackNote[0]); HackAppendAscii(nt, " ");
+        HackAppendHex(nt, gHackNote[1]); HackAppendAscii(nt, " ");
+        HackAppendNumber(nt, gHackNote[2]);
+        AddTextPrinterParameterized(&window, 0, nt, 0, 48, 0, NULL);
+        String_Delete(nt);
+    }
+    if (gHackAllocFailHeap != 0xFFFF) {
+        String *al = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(al, "alloc heap ");
+        HackAppendNumber(al, gHackAllocFailHeap);
+        HackAppendAscii(al, " size ");
+        HackAppendNumber(al, gHackAllocFailSize);
+        AddTextPrinterParameterized(&window, 0, al, 0, 48, 0, NULL);
+        String_Delete(al);
+    }
+    if (gHackTexFailSize != 0) {
+        String *tx = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(tx, "tex ");
+        HackAppendNumber(tx, gHackTexFailSize);
+        HackAppendAscii(tx, " at ");
+        HackAppendHex(tx, gHackTexFailPtr);
+        HackAppendAscii(tx, " n ");
+        HackAppendNumber(tx, gHackTexFailEntries);
+        AddTextPrinterParameterized(&window, 0, tx, 0, 64, 0, NULL);
+        String_Delete(tx);
+        tx = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(tx, "magic ");
+        HackAppendAsciiN(tx, (const char *)&gHackTexFailMagic, 4);
+        HackAppendAscii(tx, " file ");
+        HackAppendAsciiN(tx, (const char *)&gHackTexFailFileMagic, 4);
+        HackAppendAscii(tx, " ");
+        HackAppendHex(tx, gHackTexFailMagic);
+        AddTextPrinterParameterized(&window, 0, tx, 0, 80, 0, NULL);
+        String_Delete(tx);
+        tx = String_New(8, HEAP_ID_DEFAULT);
+        AddTextPrinterParameterized(&window, 0, tx, 0, 64, 0, NULL);
+        String_Delete(tx);
+    }
+    if (gHackNarcPath != NULL) {
+        String *which = String_New(96, HEAP_ID_DEFAULT);
+        HackAppendAscii(which, gHackNarcPath);
+        String_AddChar(which, CHAR_SPACE);
+        HackAppendNumber(which, gHackNarcIndex);
+        AddTextPrinterParameterized(&window, 0, which, 0, 96, 0, NULL);
+        String_Delete(which);
+    }
+#endif
 
     GfGfx_BothDispOn();
     SetMasterBrightnessNeutral(PM_LCD_TOP);

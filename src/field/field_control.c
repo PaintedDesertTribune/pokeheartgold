@@ -1,5 +1,9 @@
 #include "field/field_control.h"
 
+#include "error_handling.h"
+#include "hack_config.h"
+#include "map_events_internal.h"
+
 #include "global.h"
 
 #include "constants/badge.h"
@@ -513,6 +517,23 @@ static BOOL FieldSystem_CheckMapTransition(FieldSystem *fieldSystem, FieldInput 
 
     PlayerAvatar_GetFacingTileCoords(fieldSystem, &x, &z);
 
+#if HACK_ASSERTS_ALWAYS_VISIBLE
+    {
+        // Hack diagnostic: standing on or facing a warp-type tile with no matching warp event.
+        int sx, sz;
+        Location probe;
+        PlayerAvatar_GetStandingTileCoords(fieldSystem, &sx, &sz);
+        u8 standing = GetMetatileBehavior(fieldSystem, sx, sz);
+        u8 facing = GetMetatileBehavior(fieldSystem, x, z);
+        if ((MetatileBehavior_IsWarpPanel(standing) && !FieldSystem_MapConnection(fieldSystem, sx, sz, &probe))
+            || (MetatileBehavior_IsDoor(facing) && !FieldSystem_MapConnection(fieldSystem, x, z, &probe))) {
+            gHackNote[0] = (u32)((sx << 16) | (sz & 0xFFFF));
+            gHackNote[1] = (u32)((x << 16) | (z & 0xFFFF));
+            gHackNote[2] = fieldSystem->mapEvents->num_warp_events;
+            GF_ASSERT(0);
+        }
+    }
+#endif
     if (sub_020548C0(fieldSystem, x, z) == FALSE) { // TerrainCollisionManager_CheckCollision?
         return FALSE;
     }
