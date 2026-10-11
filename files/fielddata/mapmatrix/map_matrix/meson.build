@@ -287,5 +287,20 @@ map_matrix_bin = copy_gen.process(files(
     'map_matrix_0285_D52R0103.bin',
     'map_matrix_0286_T25SP0101.bin',
     'map_matrix_0287_D51R0301.bin',
+    # SINNOH_PORT_BEGIN
     'map_matrix_0288_C02.bin',
+    'map_matrix_0289_C02FS0101.bin',
+    'map_matrix_0290_C02GYM0101.bin',
+    'map_matrix_0291_C02PC0101.bin',
+    'map_matrix_0292_C02PC0102.bin',
+    'map_matrix_0293_C02R0101.bin',
+    'map_matrix_0294_C02R0102.bin',
+    'map_matrix_0295_C02R0103.bin',
+    'map_matrix_0296_C02R0201.bin',
+    'map_matrix_0297_C02R0301.bin',
+    'map_matrix_0298_C02R0401.bin',
+    'map_matrix_0299_C02R0501.bin',
+    'map_matrix_0300_C02R0601.bin',
+    'map_matrix_0301_R218R0201.bin',
+    # SINNOH_PORT_END
 ))

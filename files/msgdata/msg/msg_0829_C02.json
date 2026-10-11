@@ -1,9 +1,351 @@
 {
-  "key": 2566,
+  "key": 8239,
   "messages": [
     {
       "id": "msg_0829_C02_00000",
-      "en_US": "Canalave City\nA port town, far from Johto.\r"
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Whoops!\n",
+        "Hey, {STRVAR_1 3, 1, 0}!\r",
+        "You’re going to challenge the Gym\n",
+        "Leader up past here, eh?\r",
+        "Someone should check to see if you’re\n",
+        "ready for this challenge!\r",
+        "That someone is me!\n",
+        "With my brand-new Gym Badge!\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Yeah, yeah, you’re just\n",
+        "a bit better than me, as usual.\r",
+        "But listen up!\r",
+        "Let me tell you who’s going to take\n",
+        "on the Pokémon League and become\\fthe Champion.\r",
+        "You guessed right!\n",
+        "It’s going to be me!\r",
+        "Anyways, you should be able to\n",
+        "take the Gym Leader here.\r",
+        "Hurry up and go make the challenge!\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00002",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hey! That’s the Mine\n",
+        "Badge! Good going!\r",
+        "You’re tough enough to consider\n",
+        "becoming the Pokémon Champ.\r",
+        "Of course, I’m tougher, so it’s\n",
+        "not going to actually happen.\r",
+        "Anyways, {STRVAR_1 3, 1, 0}, come with\n",
+        "me to the library.\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00003",
+      "en_US": [
+        "Rowan: !\r",
+        "...That tremor...\n",
+        "That wasn’t a natural occurrence.\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00004",
+      "en_US": [
+        "Hey, hey! Old dude and kids!\n",
+        "Something big just happened!\r",
+        "They’re saying there was a huge\n",
+        "explosion at Lake Valor!\r",
+        "Ka-boom!!\r",
+        "Like that!\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00005",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Gramps!\r",
+        "I’m going to the lake!\n",
+        "I have a bad feeling about this!\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00006",
+      "en_US": [
+        "Rowan: !\r",
+        "...That {STRVAR_1 3, 0, 0}...\n",
+        "Can’t sit still...\r",
+        "{STRVAR_1 3, 1, 0}, I’m worried about\n",
+        "Lake Valor.\r",
+        "But I have no idea what is taking\n",
+        "place. You must find out!\r",
+        "But before you go, let me stress:\n",
+        "don’t get in over your head.\r",
+        "We will try to join you as soon as\n",
+        "we inspect Lake Verity.\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00007",
+      "en_US": [
+        "Dawn: ...{STRVAR_1 3, 0, 0}, you’ll be OK,\n",
+        "won’t you?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00008",
+      "en_US": [
+        "Lucas: Lake Valor...\n",
+        "I wonder what happened?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00009",
+      "en_US": [
+        "Dawn: We’re going off to Lake Verity\n",
+        "first...\r",
+        "Don’t do anything rash if something\n",
+        "does happen."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00010",
+      "en_US": [
+        "Lucas: We’re going to investigate\n",
+        "Lake Verity before we join you.\r",
+        "Don’t try to be a hero if anything\n",
+        "crazy happens."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00011",
+      "en_US": [
+        "Rowan: Hmm...\r",
+        "What is taking place at Lake\n",
+        "Valor... You must find out!\r",
+        "But before you go, let me stress:\n",
+        "don’t get in over your head.\r",
+        "We will try to join you as soon as\n",
+        "we inspect Lake Verity."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00012",
+      "en_US": [
+        "What’s up?\n",
+        "Your clothes look damp.\r",
+        "Were you swimming at the beach\n",
+        "right by Sandgem Town?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00013",
+      "en_US": [
+        "The tremor earlier...\n",
+        "It didn’t feel like an earthquake.\r",
+        "It felt more like an explosion.\n"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00014",
+      "en_US": [
+        "Welcome to Canalave City, the Canal\n",
+        "City!\r",
+        "In the old days, this port used to\n",
+        "be a hub of cargo transportation."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00015",
+      "en_US": [
+        "What was that tremor?\n",
+        "I thought Mt. Coronet erupted!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00016",
+      "en_US": [
+        "I’m going to study at the library.\n",
+        "I love reading.\r",
+        "I love how reading takes me to places\n",
+        "far away in time and space."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00017",
+      "en_US": [
+        "An explosion at Lake Valor?\n",
+        "But there isn’t anything there?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00018",
+      "en_US": [
+        "My PSYDUCK is very close to me.\n",
+        "It can use the move Return!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00019",
+      "en_US": [
+        "E-even PS-PSYDUCK’s Future Sight\n",
+        "couldn’t foretell that tremor!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00020",
+      "en_US": "PSYDUCK: Gua?"
+    },
+    {
+      "id": "msg_0829_C02_00021",
+      "en_US": [
+        "PSYDUCK: Gua! Gua! Gwa?\n",
+        "Guaa! Guuagwa?!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00022",
+      "en_US": [
+        "The Gym Leader and Trainers of this Gym\n",
+        "often go out to Iron Island.\r",
+        "They not only train their Pokémon,\n",
+        "but they work out as well."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00023",
+      "en_US": "I’m flabbergasted!"
+    },
+    {
+      "id": "msg_0829_C02_00024",
+      "en_US": "Do you wanna set sail?"
+    },
+    {
+      "id": "msg_0829_C02_00025",
+      "en_US": "Anchors aweigh!\r"
+    },
+    {
+      "id": "msg_0829_C02_00026",
+      "en_US": [
+        "You just tell me whenever you need\n",
+        "to set sail!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00027",
+      "en_US": [
+        "Ahoy! You just go on and tell me\n",
+        "whenever you want to set sail again!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00028",
+      "en_US": [
+        "I’ve lost my love of sailing since my\n",
+        "son fell into that horrid nightmare...\r",
+        "I need the Lunar Wing from Fullmoon\n",
+        "Island to awaken him!\r",
+        "Would you go to Fullmoon Island for me?\n",
+        "If not for me, then for my son?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00029",
+      "en_US": [
+        "We’re both counting on you!\r",
+        "Only you can awaken my son from his\n",
+        "awful nightmare...\r",
+        "Please, I need the Lunar Wing from\n",
+        "Fullmoon Island to awaken him!\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00030",
+      "en_US": [
+        "Do you need to get ready?\r",
+        "I’ll be waiting here.\n",
+        "We’re desperate for your help."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00031",
+      "en_US": [
+        "That Lunar Wing...\n",
+        "Please! Take it to my son..."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00032",
+      "en_US": [
+        "You’ve been asleep for a long,\n",
+        "long time... What happened to you?\r",
+        "And what were you doing here?\n",
+        "No one’s lived here for fifty years.\r"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00033",
+      "en_US": [
+        "Canalave City\n",
+        "Cargo Port"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00034",
+      "en_US": [
+        "Canalave City Pokémon Gym\n",
+        "Leader: Byron\\fThe Man with the Steel Body!"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00035",
+      "en_US": "Canalave Library"
+    },
+    {
+      "id": "msg_0829_C02_00036",
+      "en_US": "Sailor Eldritch’s House"
+    },
+    {
+      "id": "msg_0829_C02_00037",
+      "en_US": "Canalave Dock"
+    },
+    {
+      "id": "msg_0829_C02_00038",
+      "en_US": [
+        "Harbor Inn...\n",
+        "The text is too faded to read."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00039",
+      "en_US": [
+        "Harbor Inn\n",
+        "A Roost for Restless Sailors\r",
+        "“Enjoy sweet dreams in our\n",
+        "sumptuous beds!”"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00040",
+      "en_US": [
+        "The door is tightly shut.\n",
+        "It appears impossible to open."
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00041",
+      "en_US": [
+        "Sailor: This ship sails to Olivine City\n",
+        "in the Johto region.\r",
+        "Shall we set sail?"
+      ]
+    },
+    {
+      "id": "msg_0829_C02_00042",
+      "en_US": [
+        "Sailor: Come back whenever you’re ready\n",
+        "to sail."
+      ]
     }
   ]
 }

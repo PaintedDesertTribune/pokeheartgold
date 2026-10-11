@@ -2220,7 +2220,7 @@
 #define FLAG_UNK_B5E                      0xB5E
 #define FLAG_UNK_B5F                      0xB5F
 
-#define NUM_FLAGS 2912
+#define NUM_FLAGS 4096
 
 #define NUM_TEMP_FLAGS 64
 #define TEMP_FLAG_BASE 0x4000

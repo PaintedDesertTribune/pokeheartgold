@@ -490,5 +490,20 @@ zone_event_json = files(
     '488_T25SP0101.json',
     '489_T07SP0101.json',
     '490_T10R0801.json',
+    # SINNOH_PORT_BEGIN
     '491_C02.json',
+    '492_C02FS0101.json',
+    '493_C02GYM0101.json',
+    '494_C02PC0101.json',
+    '495_C02PC0102.json',
+    '496_C02R0101.json',
+    '497_C02R0102.json',
+    '498_C02R0103.json',
+    '499_C02R0201.json',
+    '500_C02R0301.json',
+    '501_C02R0401.json',
+    '502_C02R0501.json',
+    '503_C02R0601.json',
+    '504_R218R0201.json',
+    # SINNOH_PORT_END
 )

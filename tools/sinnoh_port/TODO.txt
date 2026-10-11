@@ -1,0 +1,94 @@
+MAP_CANALAVE: item ball std 7145 contents unknown, variadic placeholder
+MAP_CANALAVE: sprite 101 (None) has no HeartGold match
+MAP_CANALAVE: sprite 148 (SPRITE_RIVEL) has no HeartGold match
+MAP_CANALAVE: sprite 164 (SPRITE_OLDMAN2) has no HeartGold match
+MAP_CANALAVE: sprite 74 (SPRITE_KODUCK) has no HeartGold match
+MAP_CANALAVE: sprite 91 (None) has no HeartGold match
+MAP_CANALAVE: sprite 93 (None) has no HeartGold match
+MAP_CANALAVE: sprite 95 (None) has no HeartGold match
+MAP_CANALAVE: trainer 476
+MAP_CANALAVE: trainer 477
+MAP_CANALAVE: trainer 478
+MAP_CANALAVE: unmapped command ScrCmd_CheckEventValidity
+MAP_CANALAVE: unmapped command ScrCmd_NationalDex
+MAP_CANALAVE: unmapped command ScrCmd_SetBgEventPosition
+MAP_CANALAVE: unmapped command ScrCmd_ShipAnimation
+MAP_CANALAVE: unmapped command ScrCmd_Unk00EB
+MAP_CANALAVE: unmapped command ScrCmd_Unk00EC
+MAP_CANALAVE_GYM: object 0 is Diamond trainer std 3231; placeholder trainer
+MAP_CANALAVE_GYM: object 2 is Diamond trainer std 3255; placeholder trainer
+MAP_CANALAVE_GYM: object 3 is Diamond trainer std 3256; placeholder trainer
+MAP_CANALAVE_GYM: object 5 is Diamond trainer std 3313; placeholder trainer
+MAP_CANALAVE_GYM: object 6 is Diamond trainer std 3278; placeholder trainer
+MAP_CANALAVE_GYM: object 7 is Diamond trainer std 3366; placeholder trainer
+MAP_CANALAVE_GYM: object 8 is Diamond trainer std 3282; placeholder trainer
+MAP_CANALAVE_GYM: sprite 168 (None) has no HeartGold match
+MAP_CANALAVE_GYM: std script 2017
+MAP_CANALAVE_GYM: std script 2044
+MAP_CANALAVE_GYM: trainer 232
+MAP_CANALAVE_GYM: trainer 250
+MAP_CANALAVE_GYM: trainer 256
+MAP_CANALAVE_GYM: trainer 257
+MAP_CANALAVE_GYM: trainer 279
+MAP_CANALAVE_GYM: trainer 283
+MAP_CANALAVE_GYM: trainer 314
+MAP_CANALAVE_GYM: trainer 367
+MAP_CANALAVE_GYM: unmapped command ScrCmd_InitCanalaveGym
+MAP_CANALAVE_GYM: unmapped command ScrCmd_PlaySoundWait
+MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk00EB
+MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk00EC
+MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk01CD
+MAP_CANALAVE_HARBOR_INN: sprite 168 (None) has no HeartGold match
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_CheckEventValidity
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_FadeScreen
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_NationalDex
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_PlaySoundWait
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_Unk02B5
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_WaitFadeScreen
+MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_Warp
+MAP_CANALAVE_LIBRARY_1F: sprite 163 (SPRITE_WOMAN6) has no HeartGold match
+MAP_CANALAVE_LIBRARY_3F: sprite 101 (None) has no HeartGold match
+MAP_CANALAVE_LIBRARY_3F: sprite 148 (SPRITE_RIVEL) has no HeartGold match
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_GetFriendName
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_LockCamera
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_ReleaseCamera
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_ShakeCamera
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_StopFanfare
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_Unk0043
+MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_Unk029D
+MAP_CANALAVE_MOVE_DELETER_HOUSE: sprite 164 (SPRITE_OLDMAN2) has no HeartGold match
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_ChoosePokemonMenu
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_FadeScreen
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_GetPartyMonSpecies
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_GetSelectedPartySlot
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_RestoreOverworld
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_WaitFadeScreen
+MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command cmd_8001
+MAP_CANALAVE_POKECENTER_1F: std script 2002
+MAP_CANALAVE_POKECENTER_1F: warp 2 to Diamond map MAP_CANALAVE_POKECENTER_B1F not imported; points at itself
+MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9000; dropped
+MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9012; dropped
+MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
+MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
+MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
+MAP_CANALAVE_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
+MAP_CANALAVE_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
+MAP_CANALAVE_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
+MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_CANALAVE_POKEMART: level script uses Diamond std script 10200; dropped
+MAP_CANALAVE_POKEMART: object 3 uses Diamond std script 10201; no script for now
+MAP_CANALAVE_POKEMART: std script 2019
+MAP_CANALAVE_POKEMART: unmapped command ScrCmd_NormalMart
+MAP_CANALAVE_POKEMART: unmapped command ScrCmd_SpecialMart
+MAP_CANALAVE_POKEMART: unmapped command ScrCmd_Unk0035
+MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_CheckGameCompleted
+MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_NationalDex
+MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_PlaySoundWait
+MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_TakeItem
+MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2017
+MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2044
+MAP_CANALAVE_WEST_HOUSE: object 0 uses Diamond std script 10159; no script for now
+MAP_CANALAVE_WEST_HOUSE: unmapped command ScrCmd_Unk0238
+MAP_ROUTE_218_CANALAVE_GATEHOUSE: unmapped command ScrCmd_GetFriendName
+MAP_ROUTE_218_CANALAVE_GATEHOUSE: unmapped command ScrCmd_UnlockGenderEntries
+MAP_ROUTE_218_CANALAVE_GATEHOUSE: warp 1 to Diamond map MAP_ROUTE_218 not imported; points at itself

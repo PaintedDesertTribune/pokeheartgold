@@ -11,7 +11,7 @@
 #if HACK_START_IN_CANALAVE
 // Test start for the Sinnoh proof slice: the east bank of Canalave's canal, by the harbor.
 static const Location sLocation_PlayerRoom = {
-    .mapId = MAP_CANALAVE,
+    .mapId = MAP_SINNOH_CANALAVE,
     .warpId = 0xFFFFFFFF,
     .x = 22,
     .y = 30,
