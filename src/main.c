@@ -26,6 +26,7 @@ FS_EXTERN_OVERLAY(OVY_36);
 
 extern const OverlayManagerTemplate gApplication_IntroMovie;
 extern const OverlayManagerTemplate ov36_App_MainMenu_SelectOption_Continue;
+extern const OverlayManagerTemplate ov36_App_MainMenu_SelectOption_NewGame;
 
 struct UnkStruct_02111868 {
     FSOverlayID mainOverlayId;
@@ -72,7 +73,11 @@ void NitroMain(void) {
         switch (OS_GetResetParameter()) {
         case 0:
             _02111868.unk_10.unk_04 = 0;
+#if HACK_AUTO_NEWGAME
+            RegisterMainOverlay(FS_OVERLAY_ID(OVY_36), &ov36_App_MainMenu_SelectOption_NewGame);
+#else
             RegisterMainOverlay(FS_OVERLAY_ID(intro_title), &gApplication_IntroMovie);
+#endif
             break;
         case 1:
             sub_0200FBF4(PM_LCD_TOP, RGB_BLACK);

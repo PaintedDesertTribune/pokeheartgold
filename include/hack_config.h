@@ -10,6 +10,9 @@
 // Skip the Oak speech and naming screens on New Game: player is Ethan, rival is Silver.
 #define HACK_SKIP_INTRO 1
 
+// Boot straight into a new game (no intro movie, title or menu), for unattended map-load tests driven over the
+// melonDS GDB stub by tools/sinnoh_port/maploadtest.py. Set to 0 for a normal boot.
+#define HACK_AUTO_NEWGAME 1
 // Show the game's error screen on any failed assertion instead of silently continuing.
 #define HACK_ASSERTS_ALWAYS_VISIBLE 1
 
