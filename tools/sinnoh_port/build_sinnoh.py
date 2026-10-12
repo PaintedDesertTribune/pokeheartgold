@@ -263,7 +263,7 @@ class Narcs:
 
 # ----------------------------------------------------------------------------- Diamond side
 # Diamond command argument layouts the source scan gets wrong (it counts a "ScriptGetVarPointer" in a comment).
-LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh", "ScrCmd_Unk0250": ""}   # Unk0250: new-game save-field init, no args
+LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh", "ScrCmd_Unk0250": "", "ScrCmd_Unk0238": "hh"}   # Unk0250: new-game save-field init, no args; Unk0238: (var in, var out)
 HG_NPC_TRADE_COUNT = 13          # NPC_TRADE_MAX in stock HeartGold; Diamond's trades are appended
 DP_TRADE_NAME_BANK = 326
 DP_PARTNER_BARRY = 837      # TRAINER_PKMN_TRAINER_BARRY_CEDRIC_19: Barry's team for the Spear Pillar tag battle
@@ -538,6 +538,9 @@ TRANSLATE = {
     "ScrCmd_InitSunyshoreGym": ("SinnohSunyshoreGymInit", "b"),   # src/field/gymmick/sinnoh_sunyshore.c
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
+    "ScrCmd_GiveEgg": ("GiveEgg", "vv"),
+    "ScrCmd_PartyMonHasMove": ("MonHasMove", "pvv"),
+    "ScrCmd_SealsMart": ("SealMart", "v"),                  # HeartGold's seal shop lists, same index range
     "ScrCmd_Unk02A0": ("MultiBattle", "ttt0"),              # (partner, opponent 1, opponent 2): Spear Pillar tag battle with Barry
     "ScrCmd_Unk00ED": ("CheckBattleWon", "p"), "ScrCmd_Unk02BC": ("CheckBattleWon", "p"),
     "ScrCmd_Unk00EE": ("PartyCheckForDouble", "p"),

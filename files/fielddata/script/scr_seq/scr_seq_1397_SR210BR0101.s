@@ -92,7 +92,7 @@ _00A6:
 	GoTo _00FC
 
 _00E7:
-	// TODO Diamond ScrCmd_PartyMonHasMove 0x099 args [32780, 434, 16384]: no HeartGold mapping yet
+	MonHasMove 0x800C, 434, 0x4000
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _010F
 
@@ -120,7 +120,7 @@ _010F:
 	Call _01D9
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0071
-	// TODO Diamond ScrCmd_PartyMonHasMove 0x099 args [32780, 434, 32768]: no HeartGold mapping yet
+	MonHasMove 0x800C, 434, 0x8000
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _0087
 	MonGetFriendship 0x800C, 0x8000

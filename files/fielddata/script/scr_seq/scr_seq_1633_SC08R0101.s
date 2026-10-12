@@ -107,31 +107,31 @@ _00E0:
 	End
 
 _0147:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [0]: no HeartGold mapping yet
+	SealMart 0
 	Return
 
 _014D:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [1]: no HeartGold mapping yet
+	SealMart 1
 	Return
 
 _0153:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [2]: no HeartGold mapping yet
+	SealMart 2
 	Return
 
 _0159:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [3]: no HeartGold mapping yet
+	SealMart 3
 	Return
 
 _015F:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [4]: no HeartGold mapping yet
+	SealMart 4
 	Return
 
 _0165:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [5]: no HeartGold mapping yet
+	SealMart 5
 	Return
 
 _016B:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [6]: no HeartGold mapping yet
+	SealMart 6
 	Return
 
 scr_seq_SC08R0101_003:

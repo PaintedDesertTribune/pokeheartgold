@@ -211,7 +211,7 @@ _031C:
 	CompareVarToValue 0x800C, 6
 	GoToIf 1, _034D
 	NPCMsg msg_1203_SD24R0105_00012
-	// TODO Diamond ScrCmd_GiveEgg 0x097 args [447, 10]: no HeartGold mapping yet
+	GiveEgg 447, 10
 	SetFlag FLAG_SINNOH_515
 	ClearFlag FLAG_SINNOH_226
 	Call _036B

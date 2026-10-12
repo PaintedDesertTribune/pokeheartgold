@@ -327,31 +327,31 @@ scr_seq_SC08_016:
 	End
 
 _0476:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [0]: no HeartGold mapping yet
+	SealMart 0
 	GoTo _04BC
 
 _0480:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [1]: no HeartGold mapping yet
+	SealMart 1
 	GoTo _04BC
 
 _048A:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [2]: no HeartGold mapping yet
+	SealMart 2
 	GoTo _04BC
 
 _0494:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [3]: no HeartGold mapping yet
+	SealMart 3
 	GoTo _04BC
 
 _049E:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [4]: no HeartGold mapping yet
+	SealMart 4
 	GoTo _04BC
 
 _04A8:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [5]: no HeartGold mapping yet
+	SealMart 5
 	GoTo _04BC
 
 _04B2:
-	// TODO Diamond ScrCmd_SealsMart 0x14a args [6]: no HeartGold mapping yet
+	SealMart 6
 	GoTo _04BC
 
 _04BC:

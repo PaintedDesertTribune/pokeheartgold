@@ -21,8 +21,8 @@ MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_Unk01C6
 MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_Unk01C7
 MAP_CANALAVE_POKECENTER_1F: warp 2 to Diamond map MAP_CANALAVE_POKECENTER_B1F not imported; points at itself
 MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_CANALAVE_WEST_HOUSE: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_CANALAVE_WEST_HOUSE: object 0 uses Diamond std script 10159; no script for now
-MAP_CANALAVE_WEST_HOUSE: unmapped command ScrCmd_Unk0238
 MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: dropped ScrCmd_ShowPokemonPic: Diamond's in-field Pokémon portrait window has no HeartGold script command
 MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_Unk0209
 MAP_CELESTIC_POKECENTER_1F: warp 2 to Diamond map MAP_CELESTIC_POKECENTER_B1F not imported; points at itself
@@ -78,7 +78,6 @@ MAP_GREAT_MARSH_AREA_3: BG event 0 uses Diamond std script 8805; no script for n
 MAP_GREAT_MARSH_AREA_4: BG event 0 uses Diamond std script 8806; no script for now
 MAP_GREAT_MARSH_AREA_5: BG event 0 uses Diamond std script 8807; no script for now
 MAP_GREAT_MARSH_AREA_6: BG event 0 uses Diamond std script 8808; no script for now
-MAP_HEARTHOME: unmapped command ScrCmd_GiveEgg
 MAP_HEARTHOME: unmapped command ScrCmd_HasSpaceForDecoration
 MAP_HEARTHOME: unmapped command ScrCmd_Unk0286
 MAP_HEARTHOME: unmapped command ScrCmd_Unk0287
@@ -86,10 +85,10 @@ MAP_HEARTHOME: unmapped command ScrCmd_Unk0288
 MAP_HEARTHOME: unmapped command ScrCmd_Unk0293
 MAP_HEARTHOME: warp 10 to Diamond map MAP_HEARTHOME_POFFIN_HOUSE not imported; points at itself
 MAP_HEARTHOME: warp 2 to Diamond map MAP_HEARTHOME_SUPER_CONTEST_HALL_LOBBY not imported; points at itself
+MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: object 2 uses Diamond std script 10162; no script for now
-MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: unmapped command ScrCmd_Unk0238
+MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: object 3 uses Diamond std script 10162; no script for now
-MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: unmapped command ScrCmd_Unk0238
 MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_GYM_FOURTH_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_GYM_LEADER_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
@@ -98,8 +97,8 @@ MAP_HEARTHOME_GYM_THIRD_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthom
 MAP_HEARTHOME_NORTHEAST_HOUSE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_HEARTHOME_POKECENTER_1F: warp 2 to Diamond map MAP_HEARTHOME_POKECENTER_B1F not imported; points at itself
 MAP_HEARTHOME_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_HEARTHOME_POKEMON_FAN_CLUB: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_HEARTHOME_POKEMON_FAN_CLUB: object 5 uses Diamond std script 10153; no script for now
-MAP_HEARTHOME_POKEMON_FAN_CLUB: unmapped command ScrCmd_Unk0238
 MAP_HEARTHOME_SOUTHEAST_HOUSE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
@@ -107,7 +106,6 @@ MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set;
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
-MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_GiveEgg
 MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk02B6
 MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
@@ -138,16 +136,16 @@ MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk02B2
 MAP_JUBLIFE_POKECENTER_1F: warp 2 to Diamond map MAP_JUBLIFE_POKECENTER_B1F not imported; points at itself
 MAP_JUBLIFE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
+MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_JUBLIFE_POKETCH_COMPANY_1F: object 1 uses Diamond std script 10155; no script for now
-MAP_JUBLIFE_POKETCH_COMPANY_1F: unmapped command ScrCmd_Unk0238
 MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketch: Pokétch dropped (decision 16)
 MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_JUBLIFE_TRAINER_SCHOOL: unmapped command ScrCmd_Unk0048
 MAP_JUBLIFE_TV_1F: unmapped command ScrCmd_Unk024E
 MAP_JUBLIFE_TV_2F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_JUBLIFE_TV_2F: dropped ScrCmd_GetFashionNameWithArticle: Contest dress-up dropped (decision 16)
+MAP_JUBLIFE_TV_2F: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_JUBLIFE_TV_2F: object 2 uses Diamond std script 10158; no script for now
-MAP_JUBLIFE_TV_2F: unmapped command ScrCmd_Unk0238
 MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_CheckPortraitSlot: Jubilife TV portrait feature dropped
 MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_DressupPokemon: Contest dress-up dropped (decision 16)
 MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_ShowDressedPokemon: Contest dress-up dropped (decision 16)
@@ -312,7 +310,6 @@ MAP_ROUTE_209: unmapped command ScrCmd_GetSpiritombTalkCounter
 MAP_ROUTE_209: unmapped command ScrCmd_ResetSpiritombTalkCounter
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_GetMoveName
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_GetPartyMonTypes
-MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_PartyMonHasMove
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_Unk0224
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_Unk0225
 MAP_ROUTE_210_NORTH: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -400,7 +397,6 @@ MAP_ROUTE_228: berry plot object 11 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_228: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_228: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_228: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_PartyMonHasMove
 MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_Unk0224
 MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_Unk0225
 MAP_ROUTE_229: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -467,7 +463,6 @@ MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0162: Diamond partner-trainer c
 MAP_STARK_MOUNTAIN_INTERIOR_2: object 14 uses Diamond std script 9703; no script for now
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
-MAP_SUNYSHORE: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE: warp 7 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_1 not imported; points at itself
 MAP_SUNYSHORE: warp 8 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_2 not imported; points at itself
 MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
@@ -475,7 +470,6 @@ MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_GetRibbonName
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0243
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0245
 MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_GetTotalPokemonEVs
-MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE_POKECENTER_1F: warp 2 to Diamond map MAP_SUNYSHORE_POKECENTER_B1F not imported; points at itself
 MAP_SUNYSHORE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_SUNYSHORE_POKETCH_DEVELOPER_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)

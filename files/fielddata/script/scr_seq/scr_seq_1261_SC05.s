@@ -301,7 +301,7 @@ _054C:
 	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_0977_SC05_00027
 	WaitSE SEQ_ME_ITEM
-	// TODO Diamond ScrCmd_GiveEgg 0x097 args [440, 9]: no HeartGold mapping yet
+	GiveEgg 440, 9
 	SetFlag FLAG_SINNOH_251
 	GoTo _0578
 

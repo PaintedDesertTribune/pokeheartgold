@@ -147,15 +147,15 @@ _0251:
 	GoTo _0285
 
 _0271:
-	// TODO Diamond ScrCmd_PartyMonHasMove 0x099 args [32780, 307, 32768]: no HeartGold mapping yet
+	MonHasMove 0x800C, 307, 0x8000
 	Return
 
 _027B:
-	// TODO Diamond ScrCmd_PartyMonHasMove 0x099 args [32780, 308, 32768]: no HeartGold mapping yet
+	MonHasMove 0x800C, 308, 0x8000
 	Return
 
 _0285:
-	// TODO Diamond ScrCmd_PartyMonHasMove 0x099 args [32780, 338, 32768]: no HeartGold mapping yet
+	MonHasMove 0x800C, 338, 0x8000
 	Return
 
 _028F:

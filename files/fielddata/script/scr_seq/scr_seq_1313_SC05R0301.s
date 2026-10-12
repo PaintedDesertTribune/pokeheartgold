@@ -12,7 +12,14 @@
 	ScrDefEnd
 
 scr_seq_SC05R0301_003:
-	// TODO unknown Diamond command ScrCmd_Unk0238 (0x238); script truncated here
+	// Diamond ScrCmd_Unk0238 dropped: unknown Diamond variable transform (sub_02042214)
+	CompareVarToValue 0x4000, 0
+	GoToIf 1, _002B
+	ClearFlag FLAG_SINNOH_567
+	End
+
+_002B:
+	SetFlag FLAG_SINNOH_567
 	End
 
 scr_seq_SC05R0301_000:
