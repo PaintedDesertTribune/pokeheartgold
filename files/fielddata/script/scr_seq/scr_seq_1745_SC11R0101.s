@@ -53,7 +53,7 @@ _0071:
 	ScrCmd_066 21, 1
 	ScrCmd_066 22, 2
 	ScrCmd_066 19, 3
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
 	GoToIf 1, _00C9
@@ -92,7 +92,7 @@ _00EF:
 	ScrCmd_066 23, 0
 	ScrCmd_066 24, 1
 	ScrCmd_066 19, 2
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
 	GoToIf 1, _0136
@@ -126,7 +126,7 @@ _0153:
 	ScrCmd_066 26, 1
 	ScrCmd_066 27, 2
 	ScrCmd_066 19, 3
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
 	GoToIf 1, _01AB

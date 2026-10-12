@@ -175,6 +175,22 @@
         "The Quick Ball: the perfect gift for\n",
         "the impatient Trainer!"
       ]
+    },
+    {
+      "id": "msg_1019_ST04R0301_00017",
+      "en_US": "DUSK BALL"
+    },
+    {
+      "id": "msg_1019_ST04R0301_00018",
+      "en_US": "HEAL BALL"
+    },
+    {
+      "id": "msg_1019_ST04R0301_00019",
+      "en_US": "QUICK BALL"
+    },
+    {
+      "id": "msg_1019_ST04R0301_00020",
+      "en_US": "EXIT"
     }
   ]
 }

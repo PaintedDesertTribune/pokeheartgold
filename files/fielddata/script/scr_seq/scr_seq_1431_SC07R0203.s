@@ -24,7 +24,7 @@ scr_seq_SC07R0203_000:
 	MenuInit 1, 1, 0, 1, 0x800C
 	ScrCmd_066 229, 1
 	ScrCmd_066 228, 0
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _00BE
 	GoTo _00B3
@@ -35,7 +35,7 @@ _005B:
 	MenuInit 1, 1, 0, 1, 0x800C
 	ScrCmd_066 229, 0
 	ScrCmd_066 228, 1
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CompareVarToValue 0x800C, 0
 	GoToIf 5, _00B3
 	// TODO Diamond ScrCmd_DummyRandom 0x1b8 args [32780, 4]: no HeartGold mapping yet

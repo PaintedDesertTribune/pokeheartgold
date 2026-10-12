@@ -15,8 +15,6 @@ MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_LockCamera: scripted camera moves need a
 MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
 MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
-MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_CountPartyMonMoves
 MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_ForgetPartyMonMove
 MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_GetPokemonMoveName
@@ -52,7 +50,6 @@ MAP_ETERNA_POKECENTER_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (deci
 MAP_ETERNA_POKECENTER_1F: warp 2 to Diamond map MAP_ETERNA_POKECENTER_B1F not imported; points at itself
 MAP_ETERNA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_ETERNA_ROUTE_206_GATEHOUSE: unmapped command ScrCmd_CountNationalDexSeen
-MAP_ETERNA_UNDERGROUND_MAN_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: unmapped command ScrCmd_HasSpaceForDecoration
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: unmapped command ScrCmd_Unk024A
 MAP_FIGHT_AREA: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -60,7 +57,6 @@ MAP_FIGHT_AREA: berry plot object 11 skipped; Diamond's soft-soil berry system i
 MAP_FIGHT_AREA: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FIGHT_AREA: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FIGHT_AREA: unmapped command ScrCmd_Unk028F
-MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: unmapped command ScrCmd_Unk0041
 MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: unmapped command ScrCmd_Unk02CF
 MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: warp 1 to Diamond map MAP_BATTLE_PARK not imported; points at itself
@@ -140,7 +136,6 @@ MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_CloseDoorAnimation: scripted do
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
-MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_WaitDoorAnimation: scripted door animation
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B2
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B3
@@ -153,8 +148,6 @@ MAP_JUBLIFE_POKETCH_COMPANY_1F: object 1 uses Diamond std script 10155; no scrip
 MAP_JUBLIFE_POKETCH_COMPANY_1F: unmapped command ScrCmd_Unk0238
 MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketch: Pokétch dropped (decision 16)
 MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_TRAINER_SCHOOL: unmapped command ScrCmd_Unk0048
 MAP_JUBLIFE_TV_1F: unmapped command ScrCmd_Unk024E
 MAP_JUBLIFE_TV_2F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
@@ -174,7 +167,6 @@ MAP_JUBLIFE_TV_3F: unmapped command ScrCmd_Unk0244
 MAP_JUBLIFE_TV_3F_GLOBAL_RANKINGS: unmapped command ScrCmd_Unk01B5
 MAP_JUBLIFE_TV_3F_GROUP_RANKINGS: unmapped command ScrCmd_Unk01B5
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
-MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_TV_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_LAKE_VERITY: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_LAKE_VERITY: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
@@ -207,15 +199,12 @@ MAP_OLD_CHATEAU_2F_ROOM_4: unmapped command ScrCmd_Unk0292
 MAP_OREBURGH: event uses script 45 but the bank has 19 scripts; no script for now
 MAP_OREBURGH_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_OREBURGH_MINE_B2F: unmapped command ScrCmd_Unk029E
-MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
-MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_CountFossils
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilMinimumAmount
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilPokemon
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_NamePokemonScreen
 MAP_OREBURGH_NORTH_HOUSE_1F: dropped ScrCmd_OpenTradeScreen: the trade screen is part of HeartGold's NPCTradeExec
-MAP_OREBURGH_POKECENTER_1F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_CapitalizeFirstChar
 MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_SetPlayerAvatar
 MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk00D9
@@ -290,7 +279,6 @@ MAP_RESORT_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported
 MAP_RESORT_AREA_RIBBON_SYNDICATE_1F: unmapped command ScrCmd_CountTotalPartyRibbons
 MAP_RESORT_AREA_RIBBON_SYNDICATE_2F: unmapped command ScrCmd_AddPartyMonFriendship
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
-MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_ROUTE_201: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_ROUTE_201: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
@@ -329,7 +317,6 @@ MAP_ROUTE_208: berry plot object 14 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_208: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208_BERRY_MASTER_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_ROUTE_208_BERRY_MASTER_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ROUTE_208_BERRY_MASTER_HOUSE: unmapped command ScrCmd_GetPoketchAppName
 MAP_ROUTE_209: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_209: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -364,7 +351,6 @@ MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: dropped ScrCmd_Unk00DA: buffers a messa
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01EC
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01ED
 MAP_ROUTE_212_POKEMON_MANSION_LOBBY: warp 5 to Diamond map MAP_TROPHY_GARDEN not imported; points at itself
-MAP_ROUTE_212_SHARD_WEATHER_TM_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ROUTE_212_SOUTH: berry plot object 27 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_SOUTH: berry plot object 28 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_SOUTH: berry plot object 29 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -484,9 +470,7 @@ MAP_SOLACEON: unmapped command ScrCmd_CountSinnohDexSeen
 MAP_SOLACEON: unmapped command ScrCmd_Unk01BF
 MAP_SOLACEON_DAYCARE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_SOLACEON_DAYCARE: object 0 uses Diamond std script 9501; no script for now
-MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
-MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0218
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0219
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk021A
@@ -587,27 +571,19 @@ MAP_VEILSTONE: unmapped command ScrCmd_Unk02A0
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionNameWithArticle: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: unmapped command ScrCmd_Unk027E
-MAP_VEILSTONE_DEPARTMENT_STORE_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: unmapped command ScrCmd_DummyRandom
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: unmapped command ScrCmd_Unk027E
-MAP_VEILSTONE_DEPARTMENT_STORE_4F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_4F: unmapped command ScrCmd_GoodsMart
 MAP_VEILSTONE_DEPARTMENT_STORE_4F: unmapped command ScrCmd_Unk027E
-MAP_VEILSTONE_DEPARTMENT_STORE_5F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
-MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: warp 7 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_1: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_1: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_BACK: unmapped command ScrCmd_Unk025E
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_BACK: unmapped command ScrCmd_Unk025F
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B2F: warp 1 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_HideCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_ShowCoinBox: HeartGold has no coin box window
-MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_UpdateCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_CanGiveCoins
@@ -630,7 +606,6 @@ MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0044
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0046
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0047
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0280
-MAP_VEILSTONE_SOUTH_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_VERITY_LAKEFRONT: object 0 uses Diamond std script 9701; no script for now

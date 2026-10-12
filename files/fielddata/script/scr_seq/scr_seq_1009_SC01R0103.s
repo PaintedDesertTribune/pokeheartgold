@@ -64,8 +64,8 @@ _0062:
 	Call _01B2
 
 _00A2:
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00036, 0, 0
+	MenuExec
 	CompareVarToValue 0x8004, 1
 	GoToIf 1, _0119
 	CompareVarToValue 0x8004, 2
@@ -86,7 +86,7 @@ _00FE:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00037, 0, 1
 	Return
 
 _0119:
@@ -97,7 +97,7 @@ _0122:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00038, 0, 2
 	Return
 
 _013D:
@@ -108,7 +108,7 @@ _0146:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00039, 0, 3
 	Return
 
 _0161:
@@ -119,7 +119,7 @@ _016A:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00040, 0, 4
 	Return
 
 _0185:
@@ -130,7 +130,7 @@ _018E:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00041, 0, 5
 	Return
 
 _01A9:
@@ -141,7 +141,7 @@ _01B2:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D6
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00042, 0, 6
 	Return
 
 _01CD:
@@ -172,8 +172,8 @@ _01E3:
 	Call _036A
 
 _0229:
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00036, 0, 0
+	MenuExec
 	CompareVarToValue 0x8004, 1
 	GoToIf 1, _02AD
 	CompareVarToValue 0x8004, 2
@@ -196,7 +196,7 @@ _0292:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00043, 0, 1
 	Return
 
 _02AD:
@@ -207,7 +207,7 @@ _02B6:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00044, 0, 2
 	Return
 
 _02D1:
@@ -218,7 +218,7 @@ _02DA:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00045, 0, 3
 	Return
 
 _02F5:
@@ -229,7 +229,7 @@ _02FE:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00046, 0, 4
 	Return
 
 _0319:
@@ -240,7 +240,7 @@ _0322:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00047, 0, 5
 	Return
 
 _033D:
@@ -251,7 +251,7 @@ _0346:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00048, 0, 6
 	Return
 
 _0361:
@@ -262,7 +262,7 @@ _036A:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _038E
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00049, 0, 7
 	Return
 
 _0385:
@@ -292,8 +292,8 @@ _039B:
 	Call _04EB
 
 _03DB:
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00036, 0, 0
+	MenuExec
 	CompareVarToValue 0x8004, 1
 	GoToIf 1, _0452
 	CompareVarToValue 0x8004, 2
@@ -314,7 +314,7 @@ _0437:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00050, 0, 1
 	Return
 
 _0452:
@@ -325,7 +325,7 @@ _045B:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00051, 0, 2
 	Return
 
 _0476:
@@ -336,7 +336,7 @@ _047F:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00052, 0, 3
 	Return
 
 _049A:
@@ -347,7 +347,7 @@ _04A3:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00053, 0, 4
 	Return
 
 _04BE:
@@ -358,7 +358,7 @@ _04C7:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00054, 0, 5
 	Return
 
 _04E2:
@@ -369,7 +369,7 @@ _04EB:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _050F
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00055, 0, 6
 	Return
 
 _0506:
@@ -399,8 +399,8 @@ _051C:
 	Call _066C
 
 _055C:
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00036, 0, 0
+	MenuExec
 	CompareVarToValue 0x8004, 1
 	GoToIf 1, _05D3
 	CompareVarToValue 0x8004, 2
@@ -421,7 +421,7 @@ _05B8:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00056, 0, 1
 	Return
 
 _05D3:
@@ -432,7 +432,7 @@ _05DC:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00057, 0, 2
 	Return
 
 _05F7:
@@ -443,7 +443,7 @@ _0600:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00058, 0, 3
 	Return
 
 _061B:
@@ -454,7 +454,7 @@ _0624:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00059, 0, 4
 	Return
 
 _063F:
@@ -465,7 +465,7 @@ _0648:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00060, 0, 5
 	Return
 
 _0663:
@@ -476,7 +476,7 @@ _066C:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0690
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0851_SC01R0103_00061, 0, 6
 	Return
 
 _0687:

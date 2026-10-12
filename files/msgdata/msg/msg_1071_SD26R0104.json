@@ -173,6 +173,22 @@
         "Pokémon can be summoned and shackled\\fto do as we command...\r",
         "The PC entry ends there...\r"
       ]
+    },
+    {
+      "id": "msg_1071_SD26R0104_00014",
+      "en_US": "THE CREATION OF SPACE"
+    },
+    {
+      "id": "msg_1071_SD26R0104_00015",
+      "en_US": "MYTHICAL POKéMON"
+    },
+    {
+      "id": "msg_1071_SD26R0104_00016",
+      "en_US": "RED CHAIN"
+    },
+    {
+      "id": "msg_1071_SD26R0104_00017",
+      "en_US": "EXIT"
     }
   ]
 }

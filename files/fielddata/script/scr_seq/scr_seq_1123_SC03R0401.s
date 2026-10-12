@@ -104,7 +104,7 @@ _0132:
 	CallIf 1, _0370
 	CopyVar 0x8006, 0x8005
 	AddVar 0x8006, 156
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0908_SC03R0401_00024, 0, 0x8004
 	GoTo _0219
 
 _020D:
@@ -116,8 +116,8 @@ _0219:
 	AddVar 0x8005, 1
 	CompareVarToVar 0x8004, 0x8001
 	GoToIf 5, _0132
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0908_SC03R0401_00025, 0, 0x8004
+	MenuExec
 	CompareVarToValue 0x8003, 255
 	GoToIf 1, _03DB
 	CompareVarToVar 0x8003, 0x4000

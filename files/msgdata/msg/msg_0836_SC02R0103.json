@@ -489,6 +489,22 @@
         "On this floor, you will find many\n",
         "books on the myths and legends of\\fthe Sinnoh region."
       ]
+    },
+    {
+      "id": "msg_0836_SC02R0103_00054",
+      "en_US": "PART 1"
+    },
+    {
+      "id": "msg_0836_SC02R0103_00055",
+      "en_US": "PART 2"
+    },
+    {
+      "id": "msg_0836_SC02R0103_00056",
+      "en_US": "PART 3"
+    },
+    {
+      "id": "msg_0836_SC02R0103_00057",
+      "en_US": "EXIT"
     }
   ]
 }

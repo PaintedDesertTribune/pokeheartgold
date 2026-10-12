@@ -380,11 +380,11 @@ scr_seq_SC02R0103_010:
 	NPCMsg msg_0836_SC02R0103_00047
 	NPCMsg msg_0836_SC02R0103_00048
 	MenuInit 1, 1, 0, 1, 0x800C
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuItemAdd msg_0836_SC02R0103_00054, 0, 0
+	MenuItemAdd msg_0836_SC02R0103_00055, 1, 1
+	MenuItemAdd msg_0836_SC02R0103_00056, 2, 2
+	MenuItemAdd msg_0836_SC02R0103_00057, 3, 3
+	MenuExec
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _05CF
 	CompareVarToValue 0x800C, 1

@@ -81,7 +81,8 @@ EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "S
                                           "SINNOH_BM_CANALAVE_FLOOR_3": 0x12E},
                      "MAP_VEILSTONE_GYM": {"SINNOH_BM_VEILSTONE_BAG_0": 0x11F, "SINNOH_BM_VEILSTONE_BAG_1": 0x120, "SINNOH_BM_VEILSTONE_BAG_2": 0x121,
                                            "SINNOH_BM_VEILSTONE_BAG_3": 0x122, "SINNOH_BM_VEILSTONE_BAG_4": 0x123, "SINNOH_BM_VEILSTONE_BAG_5": 0x124,
-                                           "SINNOH_BM_VEILSTONE_BAG_6": 0x125}}
+                                           "SINNOH_BM_VEILSTONE_BAG_6": 0x125},
+                     "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)}}
 SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
 BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
 FIRST_SINNOH_SPRITE = 1100   # HeartGold sprite ids above the follower-mon range
@@ -264,7 +265,9 @@ class Narcs:
 # Diamond command argument layouts the source scan gets wrong (it counts a "ScriptGetVarPointer" in a comment).
 LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh", "ScrCmd_Unk0250": ""}   # Unk0250: new-game save-field init, no args
 HG_NPC_TRADE_COUNT = 13          # NPC_TRADE_MAX in stock HeartGold; Diamond's trades are appended
-DP_TRADE_NAME_BANK = 326         # Diamond msg bank: 4 nicknames then 4 OT names
+DP_TRADE_NAME_BANK = 326
+DP_MENU_TEXT_BANK = 321     # list-window labels (PART 1, EXIT, ...): Diamond's menu code loads this bank itself
+_shared_msg_cache = {}         # Diamond msg bank: 4 nicknames then 4 OT names
 
 
 class Diamond:
@@ -527,8 +530,12 @@ TRANSLATE = {
     "ScrCmd_ClearTrainerFlag": ("ClearTrainerFlag", "t"),
     "ScrCmd_CheckTrainerFlag": ("CheckTrainerFlag", "t"),
     "ScrCmd_Unk0040": ("MenuInit", "bbbbp"),
+    "ScrCmd_Unk0043": ("MenuExec", ""),           # Diamond's scrolling list window: same menu object as HeartGold's MenuInit/MenuItemAdd/MenuExec
+
     "ScrCmd_InitCanalaveGym": ("SinnohCanalaveGymInit", ""),   # src/field/gymmick/sinnoh_canalave.c
     "ScrCmd_InitVeilstoneGym": ("SinnohVeilstoneGymInit", ""),   # src/field/gymmick/sinnoh_veilstone.c
+    "ScrCmd_InitSunyshoreGym": ("SinnohSunyshoreGymInit", "b"),   # src/field/gymmick/sinnoh_sunyshore.c
+    "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_PlayBgm": ("PlayBGM", "B"),
     "ScrCmd_Unk0057": ("PlayBGM", "B"),          # Diamond's second play-BGM (used by its std 2040/2048 theme scripts)
     "ScrCmd_FadeOutBgm": ("FadeOutBGM", "vv"),   # (target volume, frames) in both games
@@ -571,8 +578,6 @@ DP_STD_SILENT = {2027, 2037, 8803, 8804, 8805, 8806, 8807, 8808}   # 8803+: Grea
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
-    "ScrCmd_InitSunyshoreGym": "Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet",
-    "ScrCmd_RotateSunyshoreGymGear": "Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)",
     "ScrCmd_InitPastoriaGym": "Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet",
     "ScrCmd_CheckPastoriaGymButton": "Pastoria Gym water buttons not ported yet (gym stays walkable)",
     "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
@@ -588,8 +593,6 @@ DROP = {
     "ScrCmd_LockCamera": "scripted camera moves need a HeartGold port (library cutscene)",
     "ScrCmd_ReleaseCamera": "scripted camera moves need a HeartGold port (library cutscene)",
     "ScrCmd_ShakeCamera": "screen shake needs a HeartGold port (library cutscene)",
-    "ScrCmd_Unk0043": "Diamond scrolling list window (library bookshelf)",
-    "ScrCmd_Unk029D": "Diamond scrolling list window (library bookshelf)",
     "ScrCmd_Unk01CD": "Diamond misc save-data pointer setup",
     "ScrCmd_Unk02B5": "Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id",
     "ScrCmd_UnlockGenderEntries": "Pokédex gender pages; HeartGold has no toggle",
@@ -744,9 +747,18 @@ class Trainers:
 class Translator:
     def __init__(self, dp, state, code, msg_prefix, nmsgs, sprites=None, trainers=None, maps=None, hgmap=None):
         self.dp, self.state, self.code, self.msg_prefix, self.nmsgs = dp, state, code, msg_prefix, nmsgs
+        self.extra_msgs = []   # (Diamond bank, id) copied into this map's message bank after its own messages
         self.sprites, self.trainers = sprites, trainers
         self.maps, self.hgmap = maps or {}, hgmap   # Diamond map id -> HeartGold map name; this map's own name
         self.todo = []
+
+
+    def shared_msg(self, bank, mid):
+        """A message from one of Diamond's shared banks, appended to this map's bank (list-window labels live in bank 321)."""
+        key = (bank, mid)
+        if key not in self.extra_msgs:
+            self.extra_msgs.append(key)
+        return f"{self.msg_prefix}_{self.nmsgs + self.extra_msgs.index(key):05d}"
 
     def flag(self, dpflag):
         return self.state.flag(dpflag)
@@ -789,6 +801,7 @@ class Translator:
             if pc in seen or pc >= len(b):
                 continue
             last_se = None
+            menu_idx = 0   # row index for MenuItemAdd (Diamond's list-window add has no row argument)
             while pc < len(b) and pc not in seen:
                 seen.add(pc)
                 cmd_pc = pc
@@ -821,6 +834,15 @@ class Translator:
                 if name == "ScrCmd_PlaySound":
                     nm0 = self.dp.seq_name(raw[0]) if raw[0] < 0x4000 else None
                     last_se = self.var(raw[0]) if raw[0] >= 0x4000 else (nm0 if nm0 in HG_SE_IDS else SE_RENAMES.get(nm0, str(raw[0])))
+                if name == "ScrCmd_Unk0040":
+                    menu_idx = 0
+                if name == "ScrCmd_Unk029D":   # list-window item: (message, value) -> MenuItemAdd message, row, value
+                    msg = self.shared_msg(DP_MENU_TEXT_BANK, raw[0])   # labels come from Diamond's shared menu-text bank
+                    val = self.var(raw[1]) if raw[1] >= 0x4000 else str(raw[1])
+                    lines[pc] = f"\tMenuItemAdd {msg}, {menu_idx}, {val}"
+                    menu_idx += 1
+                    pc = nxt
+                    continue
                 if name == "ScrCmd_MoveHearthomeGymElevator":
                     # Diamond lifts the player between the room's two floors in place (upper floor north of the lift tile,
                     # lower floor south; the height plates do not overlap), so a warp one tile north or south stands in
@@ -1275,9 +1297,8 @@ def main():
             parts = [x for x in re.split(r"(?<=[\n\r])", extra) if x]
             js["messages"].append({"id": f"{bank_name}_{nmsgs:05d}", "en_US": parts if len(parts) > 1 else parts[0]})
             nmsgs += 1
-        json.dump(js, open(f"files/msgdata/msg/{bank_name}.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         generated_msgs.append(bank_name)
-        # --- scripts
+        # --- scripts (the message bank is written after translation: list-window labels get appended to it)
         tr = Translator(dp, state, m["code"], bank_name, nmsgs, sprites, trainers, dp2hg, m["hgname"])
         frame_idx = set()   # scripts run from the level script's frame table (var == value, every frame)
         lb0 = dp.file("script/scr_seq_release", h["lvl"])
@@ -1290,6 +1311,13 @@ def main():
                     q0 += 6
             p0 += 5
         asm, nscripts, stubbed = tr.translate(h["scripts"], SCRIPT_OVERRIDES.get(m["name"]), frame_idx)
+        for k, (sbank, smid) in enumerate(tr.extra_msgs):
+            if sbank not in _shared_msg_cache:
+                _shared_msg_cache[sbank] = gmm_to_json(dp, sbank, "shared")[0]["messages"]
+            src_msgs = _shared_msg_cache[sbank]
+            text = src_msgs[smid]["en_US"] if smid < len(src_msgs) else "?"
+            js["messages"].append({"id": f"{bank_name}_{nmsgs + k:05d}", "en_US": text})
+        json.dump(js, open(f"files/msgdata/msg/{bank_name}.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         todo += [f"{m['name']}: {t}" for t in tr.todo] + [f"{m['name']}: unmapped command {s}" for s in sorted(stubbed)]
         scr_name = f"scr_seq_{m['scr']:04d}_{m['code']}"
         hdr_name = f"scr_seq_{m['hdr']:04d}_{m['code']}_hdr"

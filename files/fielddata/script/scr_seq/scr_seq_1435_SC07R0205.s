@@ -94,7 +94,7 @@ _00D5:
 	ScrCmd_066 220, 1
 	ScrCmd_066 221, 2
 	ScrCmd_066 222, 3
-	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
+	MenuExec
 	CopyVar 0x8008, 0x8000
 	CompareVarToValue 0x8008, 0
 	GoToIf 1, _0125

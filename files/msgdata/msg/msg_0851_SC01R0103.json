@@ -309,6 +309,110 @@
         "Switch the attacker and defender\n",
         "types to see what is effective.\r"
       ]
+    },
+    {
+      "id": "msg_0851_SC01R0103_00036",
+      "en_US": "EXIT"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00037",
+      "en_US": "DIGITAL WATCH"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00038",
+      "en_US": "ANALOG WATCH"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00039",
+      "en_US": "STOPWATCH"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00040",
+      "en_US": "KITCHEN TIMER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00041",
+      "en_US": "ALARM CLOCK"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00042",
+      "en_US": "CALENDAR"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00043",
+      "en_US": "CALCULATOR"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00044",
+      "en_US": "MEMO PAD"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00045",
+      "en_US": "FRIENDSHIP CHECKER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00046",
+      "en_US": "DAY-CARE CHECKER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00047",
+      "en_US": "MATCHUP CHECKER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00048",
+      "en_US": "POKéMON HISTORY"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00049",
+      "en_US": "BERRY SEARCHER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00050",
+      "en_US": "POKéMON LIST"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00051",
+      "en_US": "DOT ARTIST"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00052",
+      "en_US": "COIN TOSS"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00053",
+      "en_US": "ROULETTE"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00054",
+      "en_US": "COLOR CHANGER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00055",
+      "en_US": "MARKING MAP"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00056",
+      "en_US": "PEDOMETER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00057",
+      "en_US": "COUNTER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00058",
+      "en_US": "TRAINER COUNTER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00059",
+      "en_US": "LINK SEARCHER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00060",
+      "en_US": "MOVE TESTER"
+    },
+    {
+      "id": "msg_0851_SC01R0103_00061",
+      "en_US": "DOWSING MACHINE"
     }
   ]
 }
