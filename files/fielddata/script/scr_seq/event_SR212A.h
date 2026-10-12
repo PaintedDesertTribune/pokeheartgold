@@ -13,6 +13,9 @@
 #define _EV_scr_seq_SR212A_007 7
 #define _EV_scr_seq_SR212A_008 8
 #define _EV_scr_seq_SR212A_009 9
+#define _EV_scr_seq_SR212A_010 10
+#define _EV_scr_seq_SR212A_011 11
+#define _EV_scr_seq_SR212A_012 12
 
 #define obj_SR212A_0 0
 #define obj_SR212A_1 1

@@ -7,6 +7,10 @@
 #define _EV_scr_seq_SR221_001 1
 #define _EV_scr_seq_SR221_002 2
 #define _EV_scr_seq_SR221_003 3
+#define _EV_scr_seq_SR221_004 4
+#define _EV_scr_seq_SR221_005 5
+#define _EV_scr_seq_SR221_006 6
+#define _EV_scr_seq_SR221_007 7
 
 #define obj_SR221_0 0
 #define obj_SR221_1 1

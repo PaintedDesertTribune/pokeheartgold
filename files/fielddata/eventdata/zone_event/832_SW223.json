@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SW223.h",
   "bgs": [
     {
-      "scriptId": "8407",
+      "scriptId": "8401",
       "type": 2,
       "x": 859,
       "z": 707,
@@ -221,7 +221,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1166",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SW223_001 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -238,7 +238,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1164",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SW223_002 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

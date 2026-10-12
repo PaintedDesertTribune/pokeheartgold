@@ -17,6 +17,8 @@
 #define _EV_scr_seq_SD05R0114_011 11
 #define _EV_scr_seq_SD05R0114_012 12
 #define _EV_scr_seq_SD05R0114_013 13
+#define _EV_scr_seq_SD05R0114_014 14
+#define _EV_scr_seq_SD05R0114_015 15
 
 #define obj_SD05R0114_0 0
 #define obj_SD05R0114_1 1

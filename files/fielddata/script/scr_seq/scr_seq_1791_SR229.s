@@ -7,6 +7,9 @@
 
 	ScrDef scr_seq_SR229_000
 	ScrDef scr_seq_SR229_001
+	ScrDef scr_seq_SR229_002
+	ScrDef scr_seq_SR229_003
+	ScrDef scr_seq_SR229_004
 	ScrDefEnd
 
 scr_seq_SR229_000:
@@ -46,5 +49,23 @@ scr_seq_SR229_001:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SR229_002:
+	SetVar VAR_SPECIAL_x8008, 325
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR229_003:
+	SetVar VAR_SPECIAL_x8008, 23
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR229_004:
+	SetVar VAR_SPECIAL_x8008, 46
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

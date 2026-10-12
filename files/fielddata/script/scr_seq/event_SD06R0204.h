@@ -5,6 +5,8 @@
 
 #define _EV_scr_seq_SD06R0204_000 0
 #define _EV_scr_seq_SD06R0204_001 1
+#define _EV_scr_seq_SD06R0204_002 2
+#define _EV_scr_seq_SD06R0204_003 3
 
 #define obj_SD06R0204_0 0
 #define obj_SD06R0204_1 1

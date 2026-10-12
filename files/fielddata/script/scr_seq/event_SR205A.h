@@ -13,6 +13,10 @@
 #define _EV_scr_seq_SR205A_007 7
 #define _EV_scr_seq_SR205A_008 8
 #define _EV_scr_seq_SR205A_009 9
+#define _EV_scr_seq_SR205A_010 10
+#define _EV_scr_seq_SR205A_011 11
+#define _EV_scr_seq_SR205A_012 12
+#define _EV_scr_seq_SR205A_013 13
 
 #define obj_SR205A_0 0
 #define obj_SR205A_1 1

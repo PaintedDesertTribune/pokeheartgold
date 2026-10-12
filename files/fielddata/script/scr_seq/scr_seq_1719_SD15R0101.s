@@ -7,6 +7,7 @@
 
 	ScrDef scr_seq_SD15R0101_000
 	ScrDef scr_seq_SD15R0101_001
+	ScrDef scr_seq_SD15R0101_002
 	ScrDefEnd
 
 scr_seq_SD15R0101_000:
@@ -50,5 +51,11 @@ mv_SD15R0101_0080:
 	.short 12, 1
 	.short 72, 1
 	EndMovement
+
+scr_seq_SD15R0101_002:
+	SetVar VAR_SPECIAL_x8008, 453
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

@@ -11,6 +11,8 @@
 #define _EV_scr_seq_SR222_005 5
 #define _EV_scr_seq_SR222_006 6
 #define _EV_scr_seq_SR222_007 7
+#define _EV_scr_seq_SR222_008 8
+#define _EV_scr_seq_SR222_009 9
 
 #define obj_SR222_0 0
 #define obj_SR222_1 1

@@ -8,6 +8,9 @@
 	ScrDef scr_seq_SR204A_000
 	ScrDef scr_seq_SR204A_001
 	ScrDef scr_seq_SR204A_002
+	ScrDef scr_seq_SR204A_003
+	ScrDef scr_seq_SR204A_004
+	ScrDef scr_seq_SR204A_005
 	ScrDefEnd
 
 scr_seq_SR204A_000:
@@ -36,5 +39,23 @@ scr_seq_SR204A_002:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SR204A_003:
+	SetVar VAR_SPECIAL_x8008, 254
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR204A_004:
+	SetVar VAR_SPECIAL_x8008, 45
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR204A_005:
+	SetVar VAR_SPECIAL_x8008, 22
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

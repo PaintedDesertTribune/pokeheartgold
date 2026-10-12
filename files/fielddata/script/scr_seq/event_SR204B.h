@@ -6,6 +6,8 @@
 #define _EV_scr_seq_SR204B_000 0
 #define _EV_scr_seq_SR204B_001 1
 #define _EV_scr_seq_SR204B_002 2
+#define _EV_scr_seq_SR204B_003 3
+#define _EV_scr_seq_SR204B_004 4
 
 #define obj_SR204B_0 0
 #define obj_SR204B_1 1

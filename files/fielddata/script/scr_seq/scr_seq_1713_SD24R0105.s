@@ -14,6 +14,10 @@
 	ScrDef scr_seq_SD24R0105_006
 	ScrDef scr_seq_SD24R0105_007
 	ScrDef scr_seq_SD24R0105_008
+	ScrDef scr_seq_SD24R0105_009
+	ScrDef scr_seq_SD24R0105_010
+	ScrDef scr_seq_SD24R0105_011
+	ScrDef scr_seq_SD24R0105_012
 	ScrDefEnd
 
 scr_seq_SD24R0105_000:
@@ -415,5 +419,29 @@ mv_SD24R0105_0448:
 	.short 61, 1
 	.short 14, 1
 	EndMovement
+
+scr_seq_SD24R0105_009:
+	SetVar VAR_SPECIAL_x8008, 242
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD24R0105_010:
+	SetVar VAR_SPECIAL_x8008, 2
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD24R0105_011:
+	SetVar VAR_SPECIAL_x8008, 24
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD24R0105_012:
+	SetVar VAR_SPECIAL_x8008, 45
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

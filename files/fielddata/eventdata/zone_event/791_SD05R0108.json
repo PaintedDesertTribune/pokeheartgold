@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD05R0108.h",
   "bgs": [
     {
-      "scriptId": "8386",
+      "scriptId": "8380",
       "type": 2,
       "x": 27,
       "z": 17,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8387",
+      "scriptId": "8381",
       "type": 2,
       "x": 25,
       "z": 25,

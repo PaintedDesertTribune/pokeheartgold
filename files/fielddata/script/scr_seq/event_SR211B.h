@@ -7,6 +7,7 @@
 #define _EV_scr_seq_SR211B_001 1
 #define _EV_scr_seq_SR211B_002 2
 #define _EV_scr_seq_SR211B_003 3
+#define _EV_scr_seq_SR211B_004 4
 
 #define obj_SR211B_0 0
 #define obj_SR211B_1 1

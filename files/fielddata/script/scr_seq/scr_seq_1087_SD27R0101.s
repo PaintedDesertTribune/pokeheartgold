@@ -12,6 +12,7 @@
 	ScrDef scr_seq_SD27R0101_004
 	ScrDef scr_seq_SD27R0101_005
 	ScrDef scr_seq_SD27R0101_006
+	ScrDef scr_seq_SD27R0101_007
 	ScrDefEnd
 
 scr_seq_SD27R0101_000:
@@ -575,5 +576,11 @@ mv_SD27R0101_0650:
 mv_SD27R0101_0658:
 	.short 18, 7
 	EndMovement
+
+scr_seq_SD27R0101_007:
+	SetVar VAR_SPECIAL_x8008, 365
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

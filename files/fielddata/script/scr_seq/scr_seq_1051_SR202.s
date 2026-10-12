@@ -11,6 +11,7 @@
 	ScrDef scr_seq_SR202_003
 	ScrDef scr_seq_SR202_004
 	ScrDef scr_seq_SR202_005
+	ScrDef scr_seq_SR202_006
 	ScrDefEnd
 
 scr_seq_SR202_000:
@@ -394,5 +395,11 @@ mv_SR202_0484:
 mv_SR202_0494:
 	.short 14, 2
 	EndMovement
+
+scr_seq_SR202_006:
+	SetVar VAR_SPECIAL_x8008, 17
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

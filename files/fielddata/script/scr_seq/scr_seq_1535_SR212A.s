@@ -15,6 +15,9 @@
 	ScrDef scr_seq_SR212A_007
 	ScrDef scr_seq_SR212A_008
 	ScrDef scr_seq_SR212A_009
+	ScrDef scr_seq_SR212A_010
+	ScrDef scr_seq_SR212A_011
+	ScrDef scr_seq_SR212A_012
 	ScrDefEnd
 
 scr_seq_SR212A_009:
@@ -137,5 +140,23 @@ scr_seq_SR212A_008:
 	ReleaseAll
 	End
 
+
+scr_seq_SR212A_010:
+	SetVar VAR_SPECIAL_x8008, 318
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR212A_011:
+	SetVar VAR_SPECIAL_x8008, 338
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR212A_012:
+	SetVar VAR_SPECIAL_x8008, 40
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

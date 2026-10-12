@@ -11,6 +11,13 @@
 #define _EV_scr_seq_SR213_005 5
 #define _EV_scr_seq_SR213_006 6
 #define _EV_scr_seq_SR213_007 7
+#define _EV_scr_seq_SR213_008 8
+#define _EV_scr_seq_SR213_009 9
+#define _EV_scr_seq_SR213_010 10
+#define _EV_scr_seq_SR213_011 11
+#define _EV_scr_seq_SR213_012 12
+#define _EV_scr_seq_SR213_013 13
+#define _EV_scr_seq_SR213_014 14
 
 #define obj_SR213_0 0
 #define obj_SR213_1 1

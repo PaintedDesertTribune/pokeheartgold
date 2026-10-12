@@ -7,6 +7,7 @@
 
 	ScrDef scr_seq_SR212AR0102_000
 	ScrDef scr_seq_SR212AR0102_001
+	ScrDef scr_seq_SR212AR0102_002
 	ScrDefEnd
 
 scr_seq_SR212AR0102_000:
@@ -50,5 +51,11 @@ scr_seq_SR212AR0102_001:
 	ReleaseAll
 	End
 
+
+scr_seq_SR212AR0102_002:
+	SetVar VAR_SPECIAL_x8008, 3
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

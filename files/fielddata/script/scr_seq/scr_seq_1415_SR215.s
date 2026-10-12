@@ -13,6 +13,11 @@
 	ScrDef scr_seq_SR215_005
 	ScrDef scr_seq_SR215_006
 	ScrDef scr_seq_SR215_007
+	ScrDef scr_seq_SR215_008
+	ScrDef scr_seq_SR215_009
+	ScrDef scr_seq_SR215_010
+	ScrDef scr_seq_SR215_011
+	ScrDef scr_seq_SR215_012
 	ScrDefEnd
 
 scr_seq_SR215_006:
@@ -126,5 +131,35 @@ scr_seq_SR215_005:
 	ReleaseAll
 	End
 
+
+scr_seq_SR215_008:
+	SetVar VAR_SPECIAL_x8008, 55
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR215_009:
+	SetVar VAR_SPECIAL_x8008, 27
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR215_010:
+	SetVar VAR_SPECIAL_x8008, 38
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR215_011:
+	SetVar VAR_SPECIAL_x8008, 361
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR215_012:
+	SetVar VAR_SPECIAL_x8008, 303
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

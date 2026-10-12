@@ -11,6 +11,14 @@
 	ScrDef scr_seq_SD16R0102_003
 	ScrDef scr_seq_SD16R0102_004
 	ScrDef scr_seq_SD16R0102_005
+	ScrDef scr_seq_SD16R0102_006
+	ScrDef scr_seq_SD16R0102_007
+	ScrDef scr_seq_SD16R0102_008
+	ScrDef scr_seq_SD16R0102_009
+	ScrDef scr_seq_SD16R0102_010
+	ScrDef scr_seq_SD16R0102_011
+	ScrDef scr_seq_SD16R0102_012
+	ScrDef scr_seq_SD16R0102_013
 	ScrDefEnd
 
 scr_seq_SD16R0102_005:
@@ -175,5 +183,53 @@ mv_SD16R0102_0198:
 mv_SD16R0102_01A8:
 	.short 12, 1
 	EndMovement
+
+scr_seq_SD16R0102_006:
+	SetVar VAR_SPECIAL_x8008, 377
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_007:
+	SetVar VAR_SPECIAL_x8008, 49
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_008:
+	SetVar VAR_SPECIAL_x8008, 29
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_009:
+	SetVar VAR_SPECIAL_x8008, 50
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_010:
+	SetVar VAR_SPECIAL_x8008, 278
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_011:
+	SetVar VAR_SPECIAL_x8008, 41
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_012:
+	SetVar VAR_SPECIAL_x8008, 92
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD16R0102_013:
+	SetVar VAR_SPECIAL_x8008, 2
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

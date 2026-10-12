@@ -11,6 +11,10 @@
 #define _EV_scr_seq_SR206_005 5
 #define _EV_scr_seq_SR206_006 6
 #define _EV_scr_seq_SR206_007 7
+#define _EV_scr_seq_SR206_008 8
+#define _EV_scr_seq_SR206_009 9
+#define _EV_scr_seq_SR206_010 10
+#define _EV_scr_seq_SR206_011 11
 
 #define obj_SR206_0 0
 #define obj_SR206_1 1

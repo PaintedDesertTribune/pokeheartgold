@@ -7,6 +7,7 @@
 
 	ScrDef scr_seq_SD25R0108_000
 	ScrDef scr_seq_SD25R0108_001
+	ScrDef scr_seq_SD25R0108_002
 	ScrDefEnd
 
 scr_seq_SD25R0108_000:
@@ -42,5 +43,11 @@ mv_SD25R0108_004C:
 	.short 74, 1
 	.short 69, 1
 	EndMovement
+
+scr_seq_SD25R0108_002:
+	SetVar VAR_SPECIAL_x8008, 417
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

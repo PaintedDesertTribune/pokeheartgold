@@ -2,6 +2,7 @@
 #define _IN_FIELDMAP_C
 
 #include "constants/std_script.h"
+#include "constants/sinnoh.h"
 
 #include "files/fielddata/script/scr_seq.naix"
 #include "files/msgdata/msg.naix"
@@ -463,6 +464,10 @@ void TrainerFlagClear(SaveData *saveData, u32 trainer) {
 }
 
 u16 HiddenItemScriptNoToFlagId(u16 script) {
+    // SINNOH_PORT: Sinnoh's hidden items continue the index space, but 800+idx would land on stock story flags
+    if (script - _std_hidden_item >= SINNOH_HIDDEN_ITEM_FIRST_IDX) {
+        return script - _std_hidden_item - SINNOH_HIDDEN_ITEM_FIRST_IDX + SINNOH_HIDDEN_ITEM_FLAG_BASE;
+    }
     return script - _std_hidden_item + HIDDEN_ITEMS_FLAG_BASE;
 }
 

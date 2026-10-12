@@ -1,20 +1,14 @@
 MAP_ACUITY_CAVERN: unmapped command ScrCmd_Unk00ED
 MAP_ACUITY_CAVERN: warp 0 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
-MAP_ACUITY_LAKEFRONT: item ball std 7176 contents unknown, variadic placeholder
 MAP_ACUITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_AMITY_SQUARE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_AMITY_SQUARE: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_AMITY_SQUARE: item ball std 7064 contents unknown, variadic placeholder
-MAP_AMITY_SQUARE: item ball std 7065 contents unknown, variadic placeholder
-MAP_AMITY_SQUARE: item ball std 7066 contents unknown, variadic placeholder
-MAP_AMITY_SQUARE: item ball std 7067 contents unknown, variadic placeholder
 MAP_AMITY_SQUARE: unmapped command ScrCmd_CheckAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_ClearAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_GetAmitySquareAccessory
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk01D3
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk027C
-MAP_CANALAVE: item ball std 7145 contents unknown, variadic placeholder
 MAP_CANALAVE_GYM: dropped ScrCmd_InitCanalaveGym: Canalave Gym lift puzzle needs a HeartGold port
 MAP_CANALAVE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_CANALAVE_HARBOR_INN: dropped ScrCmd_Unk02B5: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
@@ -52,8 +46,6 @@ MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_CELESTIC_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_CELESTIC_SHOP: std script 2019
 MAP_CELESTIC_SOUTHWEST_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_ETERNA: item ball std 7039 contents unknown, variadic placeholder
-MAP_ETERNA: item ball std 7041 contents unknown, variadic placeholder
 MAP_ETERNA: unmapped command ScrCmd_GetGameVersion
 MAP_ETERNA_BIKE_SHOP: unmapped command ScrCmd_SetSpawn
 MAP_ETERNA_CONDOMINIUMS_1F: dropped ScrCmd_OpenTradeScreen: the trade screen is part of HeartGold's NPCTradeExec
@@ -65,17 +57,9 @@ MAP_ETERNA_FOREST_EXTERIOR: berry plot object 1 skipped; Diamond's soft-soil ber
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 2 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 3 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
-MAP_ETERNA_FOREST_EXTERIOR: item ball std 7043 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_EXTERIOR: item ball std 7044 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_EXTERIOR: std script 2015
 MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7029 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7030 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7031 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7032 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7033 contents unknown, variadic placeholder
-MAP_ETERNA_FOREST_INTERIOR: item ball std 7034 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: object 0 uses Diamond std script 9702; no script for now
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_KeepEvent
 MAP_ETERNA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
@@ -119,8 +103,6 @@ MAP_FIGHT_AREA_POKEMART: std script 2019
 MAP_FLOAROMA: berry plot object 5 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FLOAROMA: berry plot object 6 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FLOAROMA_FLOWER_SHOP: unmapped command ScrCmd_AccessoriesShop
-MAP_FLOAROMA_MEADOW: item ball std 7157 contents unknown, variadic placeholder
-MAP_FLOAROMA_MEADOW: item ball std 7158 contents unknown, variadic placeholder
 MAP_FLOAROMA_POKECENTER_1F: warp 2 to Diamond map MAP_FLOAROMA_POKECENTER_B1F not imported; points at itself
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9000; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9012; dropped
@@ -134,29 +116,22 @@ MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 0 skipped; Diamond's soft-soil b
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 1 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 2 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 3 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7132 contents unknown, variadic placeholder
-MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7133 contents unknown, variadic placeholder
-MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7134 contents unknown, variadic placeholder
-MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7135 contents unknown, variadic placeholder
 MAP_FULLMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
-MAP_FULLMOON_ISLAND_INTERIOR: item ball std 7252 contents unknown, variadic placeholder
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_BlinkEvent
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_CreateRoamer
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_ShowPokemonPic
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk0209
-MAP_GREAT_MARSH_AREA_1: item ball std 7080 contents unknown, variadic placeholder
-MAP_GREAT_MARSH_AREA_1: item ball std 7081 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_1: BG event 0 uses Diamond std script 8803; no script for now
 MAP_GREAT_MARSH_AREA_1: level script uses Diamond std script 8800; dropped
-MAP_GREAT_MARSH_AREA_2: item ball std 7082 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_2: BG event 0 uses Diamond std script 8804; no script for now
 MAP_GREAT_MARSH_AREA_2: level script uses Diamond std script 8800; dropped
-MAP_GREAT_MARSH_AREA_3: item ball std 7084 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_3: BG event 0 uses Diamond std script 8805; no script for now
 MAP_GREAT_MARSH_AREA_3: level script uses Diamond std script 8800; dropped
-MAP_GREAT_MARSH_AREA_4: item ball std 7083 contents unknown, variadic placeholder
-MAP_GREAT_MARSH_AREA_4: item ball std 7085 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_4: BG event 0 uses Diamond std script 8806; no script for now
 MAP_GREAT_MARSH_AREA_4: level script uses Diamond std script 8800; dropped
-MAP_GREAT_MARSH_AREA_5: item ball std 7086 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_5: BG event 0 uses Diamond std script 8807; no script for now
 MAP_GREAT_MARSH_AREA_5: level script uses Diamond std script 8800; dropped
-MAP_GREAT_MARSH_AREA_6: item ball std 7087 contents unknown, variadic placeholder
+MAP_GREAT_MARSH_AREA_6: BG event 0 uses Diamond std script 8808; no script for now
 MAP_GREAT_MARSH_AREA_6: level script uses Diamond std script 8800; dropped
 MAP_HEARTHOME: std script 2012
 MAP_HEARTHOME: unmapped command ScrCmd_GiveEgg
@@ -194,26 +169,16 @@ MAP_HEARTHOME_POKEMART: std script 2019
 MAP_HEARTHOME_POKEMON_FAN_CLUB: object 5 uses Diamond std script 10153; no script for now
 MAP_HEARTHOME_POKEMON_FAN_CLUB: unmapped command ScrCmd_Unk0238
 MAP_HEARTHOME_SOUTHEAST_HOUSE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
-MAP_IRON_ISLAND_B1F_ROOM_1: item ball std 7146 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
-MAP_IRON_ISLAND_B1F_ROOM_2: item ball std 7147 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B1F_ROOM_2: item ball std 7148 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B2F_ROOM_1: item ball std 7149 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B2F_ROOM_1: item ball std 7150 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
-MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7151 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7152 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7153 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7154 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_GiveEgg
 MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk02B6
 MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
-MAP_IRON_ISLAND_B3F: item ball std 7155 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_HOUSE: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
 MAP_JUBLIFE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
@@ -282,12 +247,9 @@ MAP_JUBLIFE_TV_3F_GROUP_RANKINGS: unmapped command ScrCmd_Unk01B5
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_TV_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
-MAP_LAKE_ACUITY: item ball std 7177 contents unknown, variadic placeholder
-MAP_LAKE_VALOR: item ball std 7156 contents unknown, variadic placeholder
 MAP_LAKE_VERITY: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_LAKE_VERITY: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_LAKE_VERITY: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_LAKE_VERITY: item ball std 7000 contents unknown, variadic placeholder
 MAP_LAKE_VERITY: std script 2040
 MAP_LAKE_VERITY: std script 2041
 MAP_LAKE_VERITY: unmapped command ScrCmd_EndStarterSelectionScreen
@@ -295,28 +257,10 @@ MAP_LAKE_VERITY: unmapped command ScrCmd_FirstBattle
 MAP_LAKE_VERITY: unmapped command ScrCmd_GetPlayerStarterName
 MAP_LAKE_VERITY: unmapped command ScrCmd_GetRivalStarterName
 MAP_LAKE_VERITY: unmapped command ScrCmd_StarterSelectionScreen
-MAP_MOUNT_CORONET_B1F: item ball std 7163 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_B1F: item ball std 7164 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_B1F: item ball std 7165 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_B1F: item ball std 7166 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_B1F: item ball std 7167 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_B1F: item ball std 7168 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_NORTH_1F_ROOM_1: item ball std 7160 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_NORTH_1F_ROOM_1: item ball std 7161 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_NORTH_1F_ROOM_1: item ball std 7162 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_NORTH_1F_ROOM_1: item ball std 7191 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_1F: item ball std 7059 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_1F: item ball std 7060 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_2F: item ball std 7187 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_2F: item ball std 7188 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_2F: item ball std 7189 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SOUTH_2F: item ball std 7190 contents unknown, variadic placeholder
 MAP_MOUNT_CORONET_SPEAR_PILLAR: coord event 6 uses Diamond std script 2039; no script for now
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
-MAP_MOUNT_CORONET_SPEAR_PILLAR: item ball std 7253 contents unknown, variadic placeholder
-MAP_MOUNT_CORONET_SPEAR_PILLAR: item ball std 7254 contents unknown, variadic placeholder
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_DebugWatch
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_FadeOutBgm
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_GetGameVersion
@@ -333,26 +277,13 @@ MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk02BC
 MAP_NEWMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_NEWMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk02BC
 MAP_OLD_CHATEAU_1F: unmapped command ScrCmd_Unk0292
-MAP_OLD_CHATEAU_2F_ROOM_1: item ball std 7036 contents unknown, variadic placeholder
-MAP_OLD_CHATEAU_2F_ROOM_2: item ball std 7036 contents unknown, variadic placeholder
 MAP_OLD_CHATEAU_2F_ROOM_2: unmapped command ScrCmd_Unk02BC
-MAP_OLD_CHATEAU_2F_ROOM_4: item ball std 7037 contents unknown, variadic placeholder
 MAP_OLD_CHATEAU_2F_ROOM_4: unmapped command ScrCmd_Unk0292
-MAP_OLD_CHATEAU_2F_ROOM_5: item ball std 7037 contents unknown, variadic placeholder
-MAP_OLD_CHATEAU_2F_SIDE_ROOMS: item ball std 7035 contents unknown, variadic placeholder
 MAP_OREBURGH: event uses script 45 but the bank has 19 scripts; no script for now
 MAP_OREBURGH: std script 2043
 MAP_OREBURGH: std script 2048
 MAP_OREBURGH: std script 2049
-MAP_OREBURGH_GATE_B1F: item ball std 7005 contents unknown, variadic placeholder
-MAP_OREBURGH_GATE_B1F: item ball std 7006 contents unknown, variadic placeholder
-MAP_OREBURGH_GATE_B1F: item ball std 7007 contents unknown, variadic placeholder
-MAP_OREBURGH_GATE_B1F: item ball std 7008 contents unknown, variadic placeholder
-MAP_OREBURGH_GATE_B1F: item ball std 7009 contents unknown, variadic placeholder
 MAP_OREBURGH_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_OREBURGH_MINE_B1F: item ball std 7011 contents unknown, variadic placeholder
-MAP_OREBURGH_MINE_B2F: item ball std 7012 contents unknown, variadic placeholder
-MAP_OREBURGH_MINE_B2F: item ball std 7013 contents unknown, variadic placeholder
 MAP_OREBURGH_MINE_B2F: unmapped command ScrCmd_Unk029E
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
@@ -385,7 +316,6 @@ MAP_PASTORIA: berry plot object 15 skipped; Diamond's soft-soil berry system is 
 MAP_PASTORIA: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_PASTORIA: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_PASTORIA: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
-MAP_PASTORIA: item ball std 7088 contents unknown, variadic placeholder
 MAP_PASTORIA: std script 2015
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_1F: unmapped command ScrCmd_EnableDisableSafariZone
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_2F: unmapped command ScrCmd_UseGreatMarshBinoculars
@@ -456,15 +386,10 @@ MAP_POKEMON_LEAGUE_POKECENTER_2F: level script uses Diamond std script 9013; dro
 MAP_POKEMON_LEAGUE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_POKEMON_LEAGUE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_POKEMON_LEAGUE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_RAVAGED_PATH: item ball std 7017 contents unknown, variadic placeholder
-MAP_RAVAGED_PATH: item ball std 7018 contents unknown, variadic placeholder
-MAP_RAVAGED_PATH: item ball std 7019 contents unknown, variadic placeholder
-MAP_RAVAGED_PATH: item ball std 7020 contents unknown, variadic placeholder
 MAP_RESORT_AREA: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_RESORT_AREA: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_RESORT_AREA: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_RESORT_AREA: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_RESORT_AREA: item ball std 7250 contents unknown, variadic placeholder
 MAP_RESORT_AREA_POKECENTER_1F: warp 2 to Diamond map MAP_RESORT_AREA_POKECENTER_B1F not imported; points at itself
 MAP_RESORT_AREA_POKECENTER_2F: level script uses Diamond std script 9000; dropped
 MAP_RESORT_AREA_POKECENTER_2F: level script uses Diamond std script 9012; dropped
@@ -484,37 +409,20 @@ MAP_ROUTE_201: unmapped command ScrCmd_GetPlayerStarterName
 MAP_ROUTE_201: unmapped command ScrCmd_GetRivalStarterName
 MAP_ROUTE_201: unmapped command ScrCmd_KeepEvent
 MAP_ROUTE_201: unmapped command ScrCmd_Unk0164
-MAP_ROUTE_202: item ball std 7001 contents unknown, variadic placeholder
 MAP_ROUTE_202: std script 2040
 MAP_ROUTE_202: unmapped command ScrCmd_CatchTutorial
-MAP_ROUTE_203: item ball std 7003 contents unknown, variadic placeholder
-MAP_ROUTE_203: item ball std 7004 contents unknown, variadic placeholder
-MAP_ROUTE_204_NORTH: item ball std 7021 contents unknown, variadic placeholder
-MAP_ROUTE_204_NORTH: item ball std 7022 contents unknown, variadic placeholder
-MAP_ROUTE_204_SOUTH: item ball std 7014 contents unknown, variadic placeholder
-MAP_ROUTE_204_SOUTH: item ball std 7015 contents unknown, variadic placeholder
-MAP_ROUTE_204_SOUTH: item ball std 7016 contents unknown, variadic placeholder
 MAP_ROUTE_205_NORTH: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_NORTH: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_NORTH: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_NORTH: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_205_NORTH: item ball std 7038 contents unknown, variadic placeholder
 MAP_ROUTE_205_SOUTH: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_SOUTH: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_SOUTH: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_SOUTH: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_205_SOUTH: item ball std 7025 contents unknown, variadic placeholder
-MAP_ROUTE_205_SOUTH: item ball std 7026 contents unknown, variadic placeholder
-MAP_ROUTE_205_SOUTH: item ball std 7027 contents unknown, variadic placeholder
-MAP_ROUTE_205_SOUTH: item ball std 7028 contents unknown, variadic placeholder
 MAP_ROUTE_206: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_206: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_206: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_206: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_206: item ball std 7045 contents unknown, variadic placeholder
-MAP_ROUTE_206: item ball std 7046 contents unknown, variadic placeholder
-MAP_ROUTE_206: item ball std 7047 contents unknown, variadic placeholder
-MAP_ROUTE_206: item ball std 7048 contents unknown, variadic placeholder
 MAP_ROUTE_206: unmapped command ScrCmd_CyclingRoad
 MAP_ROUTE_206: unmapped command ScrCmd_GetPreviousMapID
 MAP_ROUTE_206_CYCLING_ROAD_GATEHOUSE: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
@@ -523,10 +431,6 @@ MAP_ROUTE_207: berry plot object 12 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_207: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_207: item ball std 7010 contents unknown, variadic placeholder
-MAP_ROUTE_207: item ball std 7056 contents unknown, variadic placeholder
-MAP_ROUTE_207: item ball std 7057 contents unknown, variadic placeholder
-MAP_ROUTE_207: item ball std 7058 contents unknown, variadic placeholder
 MAP_ROUTE_207: std script 2040
 MAP_ROUTE_207: std script 2041
 MAP_ROUTE_207: unmapped command ScrCmd_GetPoketchAppName
@@ -538,9 +442,6 @@ MAP_ROUTE_208: berry plot object 13 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_208: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_208: item ball std 7061 contents unknown, variadic placeholder
-MAP_ROUTE_208: item ball std 7062 contents unknown, variadic placeholder
-MAP_ROUTE_208: item ball std 7063 contents unknown, variadic placeholder
 MAP_ROUTE_208_BERRY_MASTER_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ROUTE_208_BERRY_MASTER_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ROUTE_208_BERRY_MASTER_HOUSE: unmapped command ScrCmd_GetPoketchAppName
@@ -548,18 +449,10 @@ MAP_ROUTE_209: berry plot object 17 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_209: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_209: berry plot object 19 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_209: berry plot object 20 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_209: item ball std 7098 contents unknown, variadic placeholder
-MAP_ROUTE_209: item ball std 7099 contents unknown, variadic placeholder
-MAP_ROUTE_209: item ball std 7100 contents unknown, variadic placeholder
-MAP_ROUTE_209: item ball std 7101 contents unknown, variadic placeholder
-MAP_ROUTE_209: item ball std 7102 contents unknown, variadic placeholder
 MAP_ROUTE_209: unmapped command ScrCmd_CapitalizeFirstChar
 MAP_ROUTE_209: unmapped command ScrCmd_GetItemNameWithIndefArticle
 MAP_ROUTE_209: unmapped command ScrCmd_GetSpiritombTalkCounter
 MAP_ROUTE_209: unmapped command ScrCmd_ResetSpiritombTalkCounter
-MAP_ROUTE_209_LOST_TOWER_2F: item ball std 7103 contents unknown, variadic placeholder
-MAP_ROUTE_209_LOST_TOWER_3F: item ball std 7104 contents unknown, variadic placeholder
-MAP_ROUTE_209_LOST_TOWER_4F: item ball std 7105 contents unknown, variadic placeholder
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_GetMoveName
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_GetPartyMonTypes
 MAP_ROUTE_210_GRANDMA_WILMA_HOUSE: unmapped command ScrCmd_PartyMonHasMove
@@ -569,69 +462,37 @@ MAP_ROUTE_210_NORTH: berry plot object 18 skipped; Diamond's soft-soil berry sys
 MAP_ROUTE_210_NORTH: berry plot object 19 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_210_NORTH: berry plot object 20 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_210_NORTH: berry plot object 21 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_210_NORTH: item ball std 7129 contents unknown, variadic placeholder
-MAP_ROUTE_210_NORTH: item ball std 7130 contents unknown, variadic placeholder
-MAP_ROUTE_210_NORTH: item ball std 7131 contents unknown, variadic placeholder
 MAP_ROUTE_210_SOUTH: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_210_SOUTH: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_210_SOUTH: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_210_SOUTH: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_210_SOUTH: item ball std 7110 contents unknown, variadic placeholder
-MAP_ROUTE_210_SOUTH: item ball std 7111 contents unknown, variadic placeholder
-MAP_ROUTE_210_SOUTH: item ball std 7112 contents unknown, variadic placeholder
-MAP_ROUTE_210_SOUTH: item ball std 7113 contents unknown, variadic placeholder
 MAP_ROUTE_211_EAST: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_211_EAST: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_211_EAST: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_211_EAST: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_211_EAST: item ball std 7159 contents unknown, variadic placeholder
-MAP_ROUTE_211_WEST: item ball std 7042 contents unknown, variadic placeholder
 MAP_ROUTE_212_NORTH: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_NORTH: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_NORTH: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_NORTH: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_212_NORTH: item ball std 7068 contents unknown, variadic placeholder
-MAP_ROUTE_212_NORTH: item ball std 7069 contents unknown, variadic placeholder
-MAP_ROUTE_212_NORTH: item ball std 7070 contents unknown, variadic placeholder
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
-MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: item ball std 7071 contents unknown, variadic placeholder
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01EC
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01ED
 MAP_ROUTE_212_POKEMON_MANSION_LOBBY: warp 5 to Diamond map MAP_TROPHY_GARDEN not imported; points at itself
-MAP_ROUTE_212_POKEMON_MANSION_WEST_ROOMS: item ball std 7072 contents unknown, variadic placeholder
 MAP_ROUTE_212_SHARD_WEATHER_TM_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ROUTE_212_SOUTH: berry plot object 27 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_SOUTH: berry plot object 28 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_SOUTH: berry plot object 29 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_212_SOUTH: berry plot object 30 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_212_SOUTH: item ball std 7073 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7074 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7075 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7076 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7077 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7078 contents unknown, variadic placeholder
-MAP_ROUTE_212_SOUTH: item ball std 7079 contents unknown, variadic placeholder
 MAP_ROUTE_213: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_213: berry plot object 19 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_213: berry plot object 20 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_213: berry plot object 21 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_213: item ball std 7089 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7090 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7091 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7092 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7093 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7094 contents unknown, variadic placeholder
-MAP_ROUTE_213: item ball std 7095 contents unknown, variadic placeholder
 MAP_ROUTE_213_FOOTSTEP_HOUSE: unmapped command ScrCmd_GetPokemonFootprint
 MAP_ROUTE_213_GRAND_LAKE_NORTHEAST_ROOM: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ROUTE_214: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_214: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_214: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_214: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_214: item ball std 7124 contents unknown, variadic placeholder
-MAP_ROUTE_214: item ball std 7125 contents unknown, variadic placeholder
-MAP_ROUTE_214: item ball std 7126 contents unknown, variadic placeholder
-MAP_ROUTE_214: item ball std 7127 contents unknown, variadic placeholder
 MAP_ROUTE_214: unmapped command ScrCmd_CountSeenUnown
 MAP_ROUTE_214: warp 2 to Diamond map MAP_RUIN_MANIAC_CAVE_STAGE_1 not imported; points at itself
 MAP_ROUTE_214: warp 3 to Diamond map MAP_RUIN_MANIAC_CAVE_STAGE_2 not imported; points at itself
@@ -641,37 +502,15 @@ MAP_ROUTE_215: berry plot object 15 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_215: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_215: berry plot object 17 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_215: berry plot object 18 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_215: item ball std 7114 contents unknown, variadic placeholder
-MAP_ROUTE_215: item ball std 7115 contents unknown, variadic placeholder
-MAP_ROUTE_215: item ball std 7116 contents unknown, variadic placeholder
-MAP_ROUTE_215: item ball std 7117 contents unknown, variadic placeholder
-MAP_ROUTE_215: item ball std 7118 contents unknown, variadic placeholder
-MAP_ROUTE_216: item ball std 7169 contents unknown, variadic placeholder
-MAP_ROUTE_216: item ball std 7170 contents unknown, variadic placeholder
-MAP_ROUTE_216: item ball std 7171 contents unknown, variadic placeholder
-MAP_ROUTE_216: item ball std 7172 contents unknown, variadic placeholder
-MAP_ROUTE_217: item ball std 7173 contents unknown, variadic placeholder
-MAP_ROUTE_217: item ball std 7174 contents unknown, variadic placeholder
-MAP_ROUTE_217: item ball std 7175 contents unknown, variadic placeholder
 MAP_ROUTE_218: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_218: item ball std 7143 contents unknown, variadic placeholder
-MAP_ROUTE_218: item ball std 7144 contents unknown, variadic placeholder
 MAP_ROUTE_218_CANALAVE_GATEHOUSE: dropped ScrCmd_UnlockGenderEntries: Pokédex gender pages; HeartGold has no toggle
-MAP_ROUTE_219: item ball std 7002 contents unknown, variadic placeholder
-MAP_ROUTE_220: item ball std 7136 contents unknown, variadic placeholder
-MAP_ROUTE_220: item ball std 7137 contents unknown, variadic placeholder
-MAP_ROUTE_220: item ball std 7138 contents unknown, variadic placeholder
 MAP_ROUTE_221: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_221: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_221: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_221: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_221: item ball std 7139 contents unknown, variadic placeholder
-MAP_ROUTE_221: item ball std 7140 contents unknown, variadic placeholder
-MAP_ROUTE_221: item ball std 7141 contents unknown, variadic placeholder
-MAP_ROUTE_221: item ball std 7142 contents unknown, variadic placeholder
 MAP_ROUTE_221: warp 1 to Diamond map MAP_ROUTE_221_PAL_PARK_ENTRANCE not imported; points at itself
 MAP_ROUTE_221: warp 2 to Diamond map MAP_ROUTE_221_PAL_PARK_ENTRANCE not imported; points at itself
 MAP_ROUTE_221_LEVEL_ITEM_HOUSE: unmapped command ScrCmd_GetPartyMonLevel
@@ -680,22 +519,15 @@ MAP_ROUTE_222: berry plot object 21 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_222: berry plot object 22 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_222: berry plot object 23 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_222: berry plot object 24 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_222: item ball std 7192 contents unknown, variadic placeholder
-MAP_ROUTE_222: item ball std 7193 contents unknown, variadic placeholder
 MAP_ROUTE_222_POKEMON_SIZE_CONTEST_HOUSE: unmapped command ScrCmd_BufferPartyPokemonSize
 MAP_ROUTE_222_POKEMON_SIZE_CONTEST_HOUSE: unmapped command ScrCmd_BufferPokemonRecordSize
 MAP_ROUTE_222_POKEMON_SIZE_CONTEST_HOUSE: unmapped command ScrCmd_CheckPokemonSizeRecord
 MAP_ROUTE_222_POKEMON_SIZE_CONTEST_HOUSE: unmapped command ScrCmd_SetPokemonSizeRecord
-MAP_ROUTE_223: item ball std 7195 contents unknown, variadic placeholder
-MAP_ROUTE_223: item ball std 7197 contents unknown, variadic placeholder
 MAP_ROUTE_224: berry plot object 4 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: berry plot object 5 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: berry plot object 6 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
-MAP_ROUTE_224: item ball std 7211 contents unknown, variadic placeholder
-MAP_ROUTE_224: item ball std 7212 contents unknown, variadic placeholder
-MAP_ROUTE_224: item ball std 7213 contents unknown, variadic placeholder
 MAP_ROUTE_224: unmapped command ScrCmd_FadeInBgm
 MAP_ROUTE_224: unmapped command ScrCmd_FadeOutBgm
 MAP_ROUTE_224: unmapped command ScrCmd_GetWhiteRockInscription
@@ -705,33 +537,16 @@ MAP_ROUTE_225: berry plot object 10 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_225: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_225: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_225: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_225: item ball std 7216 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7217 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7218 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7219 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7220 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7221 contents unknown, variadic placeholder
-MAP_ROUTE_225: item ball std 7222 contents unknown, variadic placeholder
 MAP_ROUTE_226: berry plot object 4 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_226: berry plot object 5 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_226: berry plot object 6 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_226: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_226: item ball std 7223 contents unknown, variadic placeholder
-MAP_ROUTE_226: item ball std 7224 contents unknown, variadic placeholder
-MAP_ROUTE_226: item ball std 7225 contents unknown, variadic placeholder
 MAP_ROUTE_226_HOUSE: dropped ScrCmd_OpenTradeScreen: the trade screen is part of HeartGold's NPCTradeExec
 MAP_ROUTE_226_HOUSE: unmapped command ScrCmd_UnlockForeignEntries
-MAP_ROUTE_227: item ball std 7226 contents unknown, variadic placeholder
-MAP_ROUTE_227: item ball std 7227 contents unknown, variadic placeholder
 MAP_ROUTE_228: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_228: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_228: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_228: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_228: item ball std 7242 contents unknown, variadic placeholder
-MAP_ROUTE_228: item ball std 7243 contents unknown, variadic placeholder
-MAP_ROUTE_228: item ball std 7244 contents unknown, variadic placeholder
-MAP_ROUTE_228: item ball std 7245 contents unknown, variadic placeholder
-MAP_ROUTE_228: item ball std 7246 contents unknown, variadic placeholder
 MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_PartyMonHasMove
 MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_Unk0224
 MAP_ROUTE_228_NORTH_HOUSE: unmapped command ScrCmd_Unk0225
@@ -739,14 +554,10 @@ MAP_ROUTE_229: berry plot object 10 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_229: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_229: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_229: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_229: item ball std 7247 contents unknown, variadic placeholder
-MAP_ROUTE_229: item ball std 7248 contents unknown, variadic placeholder
-MAP_ROUTE_229: item ball std 7249 contents unknown, variadic placeholder
 MAP_ROUTE_230: berry plot object 5 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_230: berry plot object 6 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_230: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_230: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
-MAP_ROUTE_230: item ball std 7251 contents unknown, variadic placeholder
 MAP_SANDGEM: dropped ScrCmd_CloseDoorAnimation: scripted door animation
 MAP_SANDGEM: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_SANDGEM: dropped ScrCmd_OpenDoorAnimation: scripted door animation
@@ -794,8 +605,6 @@ MAP_SNOWPOINT_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SNOWPOINT_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_SNOWPOINT_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SNOWPOINT_POKEMART: std script 2019
-MAP_SNOWPOINT_TEMPLE_B1F: item ball std 7178 contents unknown, variadic placeholder
-MAP_SNOWPOINT_TEMPLE_B4F: item ball std 7179 contents unknown, variadic placeholder
 MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_CheckRegis
 MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_ShakeEvent
 MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_Unk00ED
@@ -830,37 +639,18 @@ MAP_SOLACEON_RUINS_1F_MAIN_ROOM: unmapped command ScrCmd_MessageUnown
 MAP_SOLACEON_RUINS_2F: unmapped command ScrCmd_MessageUnown
 MAP_SOLACEON_RUINS_2F: warp 1 to Diamond map MAP_RUIN_MANIAC_CAVE_STAGE_3 not imported; points at itself
 MAP_SOLACEON_RUINS_B1F_MAIN_ROOM: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
-MAP_SOLACEON_RUINS_B4F_ROOM_2: item ball std 7106 contents unknown, variadic placeholder
-MAP_SOLACEON_RUINS_B4F_ROOM_2: item ball std 7107 contents unknown, variadic placeholder
-MAP_SOLACEON_RUINS_B4F_ROOM_2: item ball std 7108 contents unknown, variadic placeholder
-MAP_SOLACEON_RUINS_B4F_ROOM_2: item ball std 7109 contents unknown, variadic placeholder
 MAP_SOLACEON_RUINS_B4F_ROOM_2: unmapped command ScrCmd_MessageUnown
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetPokemonForm
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetSealCountFromId
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetSealName
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetSealNamePlural
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GiveSeals
-MAP_STARK_MOUNTAIN_EXTERIOR: item ball std 7228 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_EXTERIOR: item ball std 7229 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7230 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7231 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7232 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7233 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7234 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7235 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7236 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7237 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7238 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7239 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7240 contents unknown, variadic placeholder
-MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7241 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: object 14 uses Diamond std script 9703; no script for now
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_STARK_MOUNTAIN_INTERIOR_3: unmapped command ScrCmd_Unk00ED
-MAP_SUNYSHORE: item ball std 7194 contents unknown, variadic placeholder
 MAP_SUNYSHORE: std script 2019
 MAP_SUNYSHORE: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE: warp 7 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_1 not imported; points at itself
@@ -942,8 +732,6 @@ MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_FreeDoorAnimation: scripted door a
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_VALLEY_WINDWORKS_EXTERIOR: item ball std 7023 contents unknown, variadic placeholder
-MAP_VALLEY_WINDWORKS_EXTERIOR: item ball std 7024 contents unknown, variadic placeholder
 MAP_VALOR_CAVERN: unmapped command ScrCmd_Unk00ED
 MAP_VALOR_CAVERN: warp 0 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_CloseDoorAnimation: scripted door animation
@@ -952,8 +740,6 @@ MAP_VALOR_LAKEFRONT: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_VALOR_LAKEFRONT: item ball std 7096 contents unknown, variadic placeholder
-MAP_VALOR_LAKEFRONT: item ball std 7097 contents unknown, variadic placeholder
 MAP_VALOR_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
 MAP_VALOR_LAKEFRONT: warp 4 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
 MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_CheckNationalDexComplete
@@ -961,9 +747,6 @@ MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_CheckSinnohDex
 MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_RegisterNationalPokedex
 MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_RegisterSinnohPokedex
 MAP_VALOR_LAKEFRONT_SEVEN_STARS_RESTAURANT: unmapped command ScrCmd_DummyRandom
-MAP_VEILSTONE: item ball std 7119 contents unknown, variadic placeholder
-MAP_VEILSTONE: item ball std 7120 contents unknown, variadic placeholder
-MAP_VEILSTONE: item ball std 7121 contents unknown, variadic placeholder
 MAP_VEILSTONE: std script 2040
 MAP_VEILSTONE: std script 2041
 MAP_VEILSTONE: unmapped command ScrCmd_CheckPokemonInParty
@@ -989,21 +772,12 @@ MAP_VEILSTONE_DEPARTMENT_STORE_5F: dropped ScrCmd_Unk0043: Diamond scrolling lis
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: item ball std 7182 contents unknown, variadic placeholder
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: warp 7 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_2F: item ball std 7184 contents unknown, variadic placeholder
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_3F: item ball std 7183 contents unknown, variadic placeholder
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_3F: item ball std 7185 contents unknown, variadic placeholder
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_1: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_1: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_BACK: unmapped command ScrCmd_Unk025E
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_4F_BACK: unmapped command ScrCmd_Unk025F
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B2F: item ball std 7180 contents unknown, variadic placeholder
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B2F: item ball std 7181 contents unknown, variadic placeholder
-MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B2F: item ball std 7186 contents unknown, variadic placeholder
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B2F: warp 1 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
-MAP_VEILSTONE_GALACTIC_WAREHOUSE_ENTRANCE: item ball std 7122 contents unknown, variadic placeholder
-MAP_VEILSTONE_GALACTIC_WAREHOUSE_ENTRANCE: item ball std 7123 contents unknown, variadic placeholder
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_HideCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_ShowCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_GAME_CORNER: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
@@ -1044,32 +818,11 @@ MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_EventStopFollowing
 MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_KeepEvent
 MAP_VERITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 MAP_VERITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
-MAP_VICTORY_ROAD_1F: item ball std 7198 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F: item ball std 7199 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F: item ball std 7200 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F: item ball std 7201 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F: item ball std 7202 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_VICTORY_ROAD_1F_BACK_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7208 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7209 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7210 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7214 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: object 28 uses Diamond std script 9705; no script for now
-MAP_VICTORY_ROAD_2F: item ball std 7203 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_2F: item ball std 7204 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_2F: item ball std 7205 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_2F: item ball std 7206 contents unknown, variadic placeholder
-MAP_VICTORY_ROAD_B1F: item ball std 7207 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
-MAP_WAYWARD_CAVE_1F: item ball std 7049 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_1F: item ball std 7050 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_1F: item ball std 7051 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_1F: item ball std 7052 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_B1F: item ball std 7053 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_B1F: item ball std 7054 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_B1F: item ball std 7055 contents unknown, variadic placeholder
 new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated
 sprites: sprite 118 (None) has no HeartGold match and is not a billboard; placeholder
 std bank 207 (Diamond std 9000-9016) holds the Pokémon Center stair/counter scripts; level scripts call 9000/9012-9015 for the upstairs partner walk; HeartGold's own Pokémon Center handles that, so they stay dropped

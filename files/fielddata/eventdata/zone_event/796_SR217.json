@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SR217.h",
   "bgs": [
     {
-      "scriptId": "8389",
+      "scriptId": "8383",
       "type": 2,
       "x": 292,
       "z": 332,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8390",
+      "scriptId": "8384",
       "type": 2,
       "x": 314,
       "z": 305,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8391",
+      "scriptId": "8385",
       "type": 2,
       "x": 291,
       "z": 299,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8392",
+      "scriptId": "8386",
       "type": 2,
       "x": 304,
       "z": 354,
@@ -34,7 +34,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8393",
+      "scriptId": "8387",
       "type": 2,
       "x": 305,
       "z": 308,
@@ -42,7 +42,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8394",
+      "scriptId": "8388",
       "type": 2,
       "x": 314,
       "z": 317,
@@ -50,7 +50,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8395",
+      "scriptId": "8389",
       "type": 2,
       "x": 299,
       "z": 319,
@@ -58,7 +58,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8396",
+      "scriptId": "8390",
       "type": 2,
       "x": 318,
       "z": 308,
@@ -66,7 +66,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8397",
+      "scriptId": "8391",
       "type": 2,
       "x": 314,
       "z": 348,
@@ -74,7 +74,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8398",
+      "scriptId": "8392",
       "type": 2,
       "x": 288,
       "z": 338,
@@ -250,7 +250,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1147",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR217_003 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -267,7 +267,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1148",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR217_004 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -284,7 +284,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1146",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR217_005 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

@@ -6,6 +6,8 @@
 #define _EV_scr_seq_SD26R0103_000 0
 #define _EV_scr_seq_SD26R0103_001 1
 #define _EV_scr_seq_SD26R0103_002 2
+#define _EV_scr_seq_SD26R0103_003 3
+#define _EV_scr_seq_SD26R0103_004 4
 
 #define obj_SD26R0103_0 0
 #define obj_SD26R0103_1 1

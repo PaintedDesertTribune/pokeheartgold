@@ -6,6 +6,9 @@
 #define _EV_scr_seq_SR210B_000 0
 #define _EV_scr_seq_SR210B_001 1
 #define _EV_scr_seq_SR210B_002 2
+#define _EV_scr_seq_SR210B_003 3
+#define _EV_scr_seq_SR210B_004 4
+#define _EV_scr_seq_SR210B_005 5
 
 #define obj_SR210B_0 0
 #define obj_SR210B_1 1

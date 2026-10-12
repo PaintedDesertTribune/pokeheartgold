@@ -8,6 +8,8 @@
 	ScrDef scr_seq_SR227_000
 	ScrDef scr_seq_SR227_001
 	ScrDef scr_seq_SR227_002
+	ScrDef scr_seq_SR227_003
+	ScrDef scr_seq_SR227_004
 	ScrDefEnd
 
 scr_seq_SR227_000:
@@ -189,5 +191,17 @@ mv_SR227_0204:
 	.short 12, 3
 	.short 14, 8
 	EndMovement
+
+scr_seq_SR227_003:
+	SetVar VAR_SPECIAL_x8008, 249
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR227_004:
+	SetVar VAR_SPECIAL_x8008, 52
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

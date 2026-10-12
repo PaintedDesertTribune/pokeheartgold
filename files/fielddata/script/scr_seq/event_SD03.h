@@ -7,6 +7,8 @@
 #define _EV_scr_seq_SD03_001 1
 #define _EV_scr_seq_SD03_002 2
 #define _EV_scr_seq_SD03_003 3
+#define _EV_scr_seq_SD03_004 4
+#define _EV_scr_seq_SD03_005 5
 
 #define obj_SD03_4 4
 #define obj_SD03_5 5

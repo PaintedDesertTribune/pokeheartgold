@@ -1204,4 +1204,5 @@ mv_SC05_0E80:
 	.short 15, 8
 	EndMovement
 
+
 	.balign 4, 0

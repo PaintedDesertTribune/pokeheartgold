@@ -225,4 +225,5 @@ mv_SC06R0101_023C:
 	.short 69, 1
 	EndMovement
 
+
 	.balign 4, 0

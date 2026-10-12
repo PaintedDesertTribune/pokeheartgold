@@ -33,6 +33,9 @@
 #define _EV_scr_seq_SC07_027 27
 #define _EV_scr_seq_SC07_028 28
 #define _EV_scr_seq_SC07_029 29
+#define _EV_scr_seq_SC07_030 30
+#define _EV_scr_seq_SC07_031 31
+#define _EV_scr_seq_SC07_032 32
 
 #define obj_SC07_0 0
 #define obj_SC07_1 1

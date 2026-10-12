@@ -10,6 +10,8 @@
 	ScrDef scr_seq_SD01R0102_002
 	ScrDef scr_seq_SD01R0102_003
 	ScrDef scr_seq_SD01R0102_004
+	ScrDef scr_seq_SD01R0102_005
+	ScrDef scr_seq_SD01R0102_006
 	ScrDefEnd
 
 scr_seq_SD01R0102_000:
@@ -111,5 +113,17 @@ mv_SD01R0102_00D8:
 	.short 35, 1
 	.short 63, 4
 	EndMovement
+
+scr_seq_SD01R0102_005:
+	SetVar VAR_SPECIAL_x8008, 78
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD01R0102_006:
+	SetVar VAR_SPECIAL_x8008, 17
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

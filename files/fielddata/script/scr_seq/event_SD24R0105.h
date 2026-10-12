@@ -12,6 +12,10 @@
 #define _EV_scr_seq_SD24R0105_006 6
 #define _EV_scr_seq_SD24R0105_007 7
 #define _EV_scr_seq_SD24R0105_008 8
+#define _EV_scr_seq_SD24R0105_009 9
+#define _EV_scr_seq_SD24R0105_010 10
+#define _EV_scr_seq_SD24R0105_011 11
+#define _EV_scr_seq_SD24R0105_012 12
 
 #define obj_SD24R0105_0 0
 #define obj_SD24R0105_1 1

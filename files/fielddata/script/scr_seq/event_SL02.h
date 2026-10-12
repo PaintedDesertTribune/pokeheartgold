@@ -13,6 +13,8 @@
 #define _EV_scr_seq_SL02_007 7
 #define _EV_scr_seq_SL02_008 8
 #define _EV_scr_seq_SL02_009 9
+#define _EV_scr_seq_SL02_010 10
+#define _EV_scr_seq_SL02_011 11
 
 #define obj_SL02_0 0
 #define obj_SL02_1 1

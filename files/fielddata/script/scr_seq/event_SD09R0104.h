@@ -7,6 +7,10 @@
 #define _EV_scr_seq_SD09R0104_001 1
 #define _EV_scr_seq_SD09R0104_002 2
 #define _EV_scr_seq_SD09R0104_003 3
+#define _EV_scr_seq_SD09R0104_004 4
+#define _EV_scr_seq_SD09R0104_005 5
+#define _EV_scr_seq_SD09R0104_006 6
+#define _EV_scr_seq_SD09R0104_007 7
 
 #define obj_SD09R0104_0 0
 #define obj_SD09R0104_1 1

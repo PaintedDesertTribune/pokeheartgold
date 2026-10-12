@@ -8,6 +8,9 @@
 #define _EV_scr_seq_SR208_002 2
 #define _EV_scr_seq_SR208_003 3
 #define _EV_scr_seq_SR208_004 4
+#define _EV_scr_seq_SR208_005 5
+#define _EV_scr_seq_SR208_006 6
+#define _EV_scr_seq_SR208_007 7
 
 #define obj_SR208_0 0
 #define obj_SR208_1 1

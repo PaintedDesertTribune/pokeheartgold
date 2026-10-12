@@ -46,7 +46,8 @@ MATSHP = {"field": "files/fielddata/build_model/bm_field_matshp.dat", "room": "f
 ENC_JSON = "files/fielddata/encountdata/gs_enc_data.json"
 TRAINER_FILES = [ENC_JSON, "files/poketool/trainer/trainers.json", "files/msgdata/msg/msg_0728.json", "files/msgdata/msg/msg_0730.json",
                  "files/poketool/trmsg/trtbl.narc", "files/poketool/trmsg/trtblofs.narc", "files/a/0/5/8",
-                 "files/a/1/1/2", "files/msgdata/msg/msg_0200.json"]
+                 "files/a/1/1/2", "files/msgdata/msg/msg_0200.json", "files/fielddata/script/scr_seq/scr_seq_0145.s",
+                 "files/fielddata/script/scr_seq/scr_seq_0003.s"]
 RESTORE = list(ARCHIVES.values()) + list(MATSHP.values()) + TRAINER_FILES
 
 FIRST_MAP_ID = 540          # first free HeartGold map id
@@ -58,7 +59,8 @@ FIRST_SINNOH_FLAG = 2912    # NUM_FLAGS of stock HeartGold; we grow NUM_FLAGS
 NUM_FLAGS_NEW = 8192        # save audit 2026-10-11: 0xB60-0x115F Sinnoh flags, 0x1160-0x155F Sinnoh trainers,
                             # 0x1560-0x159F Sinnoh fly points, 0x15A0-0x1FFF reserved for Hoenn
 NUM_VARS_NEW = 0x380        # vars 0x4170-0x426F Sinnoh, 0x4270-0x437F reserved for Hoenn
-FIRST_HIDDEN_ITEM_IDX = 231  # free indices in HeartGold's hidden item table
+FIRST_HIDDEN_ITEM_IDX = 231  # free indices in HeartGold's hidden item table (stock flags 800+idx stop at idx 230)
+SINNOH_HIDDEN_ITEM_FLAG_BASE = 0x1060   # flags for Sinnoh hidden items (idx 231+), top 256 of the Sinnoh flag block
 FREE_VARS = list(range(0x4170, 0x4270))   # Sinnoh variables (save audit); the 40 unused stock vars stay free
 PLACEHOLDER_SPRITE = "SPRITE_GSBOY1"
 PLACEHOLDER_TRAINER = 1
@@ -102,6 +104,21 @@ SHARED_MATRIX_NAME = "SINNOH"
 MAP_PROJ_X = (32, 30)
 MAP_PROJ_Y = (22, 30)
 DEFAULT_MUSIC = "SEQ_GS_C_ASAGI"
+BGM_EVENT = {   # Diamond event/encounter themes played from scripts -> HeartGold stand-ins
+    "SEQ_TSURETEKE": "SEQ_GS_E_RIVAL1", "SEQ_THE_BOY": "SEQ_GS_E_SUPPORT_M", "SEQ_THE_GIRL": "SEQ_GS_E_SUPPORT_F",
+    "SEQ_THE_EVENT01": "SEQ_GS_E_TSURETEKE1", "SEQ_THE_EVENT02": "SEQ_GS_E_TSURETEKE2", "SEQ_THE_EVENT03": "SEQ_GS_E_TSURETEKE1",
+    "SEQ_OPENING2": "SEQ_GS_E_TSURETEKE2", "SEQ_D_RYAYHY": "SEQ_GS_E_LUGIA",
+}
+# Standard scripts HeartGold lacks, appended to its misc std bank (scr_seq_0003); ids are 2000 + stock count + position
+SINNOH_STD = [
+    ("std_sinnoh_partner_theme",   # Diamond 2040: the partner's theme by player gender (Dawn/Lucas -> Lyra/Ethan)
+     "\tStopBGM 0\n\tGetPlayerGender VAR_SPECIAL_x800C\n\tCompare VAR_SPECIAL_x800C, 0\n\tGoToIfEq _sinnoh_partner_f\n"
+     "\tPlayBGM SEQ_GS_E_SUPPORT_M\n\tRestartCurrentScript\n\tEnd\n\n_sinnoh_partner_f:\n\tPlayBGM SEQ_GS_E_SUPPORT_F\n\tRestartCurrentScript\n\tEnd\n"),
+    ("std_sinnoh_rival_theme",     # Diamond 2048: Barry's theme
+     "\tStopBGM 0\n\tPlayBGM SEQ_GS_E_RIVAL1\n\tRestartCurrentScript\n\tEnd\n"),
+    ("std_sinnoh_default_bgm",     # Diamond 2041/2043/2049: fade out and return to the map's music
+     "\tFadeOutBGM 0, 30\n\tResetBGM\n\tRestartCurrentScript\n\tEnd\n"),
+]
 MAPSEC_RENAMES = {"VICTORY_ROAD": "VICTORY_ROAD_S"}   # HeartGold keeps Sinnoh's location names for met-location data, this one suffixed
 
 # Hand tweaks per Diamond map. TILE_OVERRIDES: (DP land id, x, z) -> (type, collision).
@@ -269,6 +286,27 @@ class Diamond:
 
     def file(self, sub, idx):
         return open(f"{self.repo}/files/fielddata/{sub}/narc_{idx:04d}.bin", "rb").read()
+
+    def seq_name(self, seqno):
+        """Name of a Diamond sound sequence id (include/constants/sndseq.h: SNDARC_BGM_BASE 1000, SNDARC_SE_BASE 1500)."""
+        if not hasattr(self, "_seqs"):
+            src = open(f"{self.repo}/include/constants/sndseq.h").read()
+            bases = {k: int(v) for k, v in re.findall(r"#define (SNDARC_\w+_BASE)\s+(\d+)", src)}
+            self._seqs = {bases[b] + int(n): name for name, b, n in re.findall(r"#define (SEQ_\w+)\s+\((SNDARC_\w+_BASE) \+ (\d+)\)", src)}
+        return self._seqs.get(seqno)
+
+    def hidden_item(self, idx):
+        """Diamond's hidden-item table (UNK_020F2DB4, 229 rows of {u16 item, u8 qty, u8 dowsing, u16 0, u16 index});
+        std script 8000+idx looks its row up by index. Returns (item, qty, dowsing) or None."""
+        if not hasattr(self, "_hidden"):
+            rom = open(f"{self.repo}/build/diamond.us/pokediamond.us.nds", "rb").read()
+            a9off, a9ram = struct.unpack_from("<I", rom, 0x20)[0], struct.unpack_from("<I", rom, 0x28)[0]
+            off = a9off + (0x020F2DB4 - a9ram)
+            self._hidden = {}
+            for i in range(0xE5):
+                item, qty, dows, _, index = struct.unpack_from("<HBBHH", rom, off + i * 8)
+                self._hidden[index] = (item, qty, dows)
+        return self._hidden.get(idx)
 
     def _sprite_tables(self):
         asm = open(f"{self.repo}/{DP_SPRITE_TABLES}").read()
@@ -471,7 +509,11 @@ TRANSLATE = {
     "ScrCmd_ClearTrainerFlag": ("ClearTrainerFlag", "t"),
     "ScrCmd_CheckTrainerFlag": ("CheckTrainerFlag", "t"),
     "ScrCmd_Unk0040": ("MenuInit", "bbbbp"),
-    "ScrCmd_PlayBgm": ("PlayBGM", "v"),
+    "ScrCmd_PlayBgm": ("PlayBGM", "B"),
+    "ScrCmd_Unk0057": ("PlayBGM", "B"),          # Diamond's second play-BGM (used by its std 2040/2048 theme scripts)
+    "ScrCmd_FadeOutBgm": ("FadeOutBGM", "vv"),   # (target volume, frames) in both games
+    "ScrCmd_FadeInBgm": ("FadeInBGM", "v"),
+    "ScrCmd_PlayDefaultBgm": ("ResetBGM", ""),
     "ScrCmd_StopBgm": ("StopBGM", "v"),
     "ScrCmd_GiveMoney": ("GiveMoney", "v"),
     "ScrCmd_TakeMoney": ("TakeMoney", "v"),
@@ -480,7 +522,8 @@ TRANSLATE = {
     "ScrCmd_SetFlagVar": ("SetFlagVar", "F"),
     "ScrCmd_ClearFlagVar": ("ClearFlagVar", "F"),
 }
-DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose",
+DP_STD = {2000: "std_signpost", 2019: "std_mart_intro",   # 2019 = "Welcome! What do you need?"
+          2040: "std_sinnoh_partner_theme", 2048: "std_sinnoh_rival_theme", 2041: "std_sinnoh_default_bgm", 2043: "std_sinnoh_default_bgm", 2049: "std_sinnoh_default_bgm", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose",
           # Diamond's field-move objects (bank 375 holds its 10000-10015 field-move prompts): HeartGold has the same three
           10000: "std_field_cut", 10001: "std_field_rock_smash", 10002: "std_field_strength",
           # Pokémon Center 2F counter, left to right in Diamond (x 3, 7, 12) matched to HeartGold's counter row (x 2, 6, 11)
@@ -490,7 +533,10 @@ DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_int
           # 2017 = "bag is full" message (identified by disassembly; the same 0x8004/0x8005 item/quantity convention)
           2016: "std_give_item_verbose", 2017: "std_bag_is_full"}
 # Diamond std calls that do nothing worth keeping: 2037 is an empty script, 2009 hands out a Pokétch coupon (decision 16).
-DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokétch dropped, decision 16)"}
+DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokétch dropped, decision 16)",
+               2012: "Underground decoration gift (Underground not in HeartGold)", 2013: "Underground trap gift (Underground not in HeartGold)",
+               2015: "Contest accessory gift (dress-up dropped, decision 16)", 2036: "Contest accessory gift (dress-up dropped, decision 16)",
+               2045: "Contest backdrop gift (dress-up dropped, decision 16)"}
 # Diamond std scripts whose objects can stay mute without a note: 2027 is the cave vent hole's one-line message.
 DP_STD_SILENT = {2027, 2037}   # 2037 is an empty script (used on scenery objects)
 
@@ -786,6 +832,16 @@ class Translator:
                             args.append(lbl)
                         elif k == "m":
                             args.append(f"{self.msg_prefix}_{v:05d}" if v < self.nmsgs else str(v))
+                        elif k == "B":   # a Diamond BGM id -> the HeartGold stand-in (map music or event theme)
+                            if v >= 0x4000:
+                                args.append(self.var(v))
+                            else:
+                                nm = self.dp.seq_name(v)
+                                hg = BGM_EVENT.get(nm) or MUSIC.get(nm)
+                                if hg is None:
+                                    self.todo.append(f"music {nm or v} has no HeartGold stand-in; {DEFAULT_MUSIC}")
+                                    hg = DEFAULT_MUSIC
+                                args.append(hg)
                         elif k == "f":
                             args.append(self.flag(v))
                         elif k == "p":
@@ -899,7 +955,7 @@ class State:
     def __init__(self):
         self.flags = {}
         self.vars = {}
-        self.hidden_items = []  # (item, qty, idx)
+        self.hidden_items = []  # (item, qty, dowsing, idx, code)
 
     def flag(self, dpflag):
         if dpflag >= 0x4000:          # temp flags, same in both games
@@ -1169,6 +1225,25 @@ def main():
         scr_name = f"scr_seq_{m['scr']:04d}_{m['code']}"
         hdr_name = f"scr_seq_{m['hdr']:04d}_{m['code']}_hdr"
         includes = f'#include "constants/scrcmd.h"\n#include "constants/sinnoh.h"\n#include "fielddata/script/scr_seq/event_{m["code"]}.h"\n#include "msgdata/msg/{bank_name}.h"\n#include "macros/script.inc"\n#include "macros/movement.inc"\n\n'
+        # item balls: Diamond's std 7000+ scripts are 'SetVar 0x8008 item; SetVar 0x8009 qty' and HeartGold's
+        # std_itemball_variadic reads the same two vars, so each ball gets a tiny script in the map's own bank
+        eb = dp.file("eventdata/zone_event_release", h["events"])
+        q = 4 + struct.unpack_from("<I", eb, 0)[0] * 0x14
+        no_pre = struct.unpack_from("<I", eb, q)[0]; q += 4
+        itemball_ref, item_scripts = {}, []
+        for i in range(no_pre):
+            sid = struct.unpack_from("<H", eb, q + i * 0x20 + 10)[0]
+            if 7000 <= sid < 8000:
+                r = dp.std_item(370, sid - 6999)
+                if r is None:
+                    todo.append(f"{m['name']}: item ball std {sid} has no readable contents; variadic placeholder")
+                    continue
+                n = nscripts + len(item_scripts)
+                item_scripts.append(f"scr_seq_{m['code']}_{n:03d}:\n\tSetVar VAR_SPECIAL_x8008, {r[0]}\n\tSetVar VAR_SPECIAL_x8009, {r[1]}\n\tCallStd std_itemball_variadic\n\tEnd\n")
+                itemball_ref[i] = f"_EV_scr_seq_{m['code']}_{n:03d} + 1"
+        nscripts_bank = nscripts    # scripts Diamond's events may legally reference
+        nscripts += len(item_scripts)
+        asm += "\n" + "\n".join(item_scripts)
         defs = "".join(f"\tScrDef scr_seq_{m['code']}_{i:03d}\n" for i in range(nscripts)) + "\tScrDefEnd\n"
         open(f"files/fielddata/script/scr_seq/{scr_name}.s", "w").write(includes + defs + asm + "\n\t.balign 4, 0\n")
         # level script, same format in both games
@@ -1191,8 +1266,8 @@ def main():
                     return DP_STD[sid]
                 todo.append(f"{m['name']}: level script uses Diamond std script {sid}; dropped")
                 return None
-            if sid - 1 >= nscripts:
-                todo.append(f"{m['name']}: level script uses script {sid} but the bank has {nscripts} scripts; dropped")
+            if sid - 1 >= nscripts_bank:
+                todo.append(f"{m['name']}: level script uses script {sid} but the bank has {nscripts_bank} scripts; dropped")
                 return None
             return f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
         for t, sid in entries:
@@ -1219,22 +1294,24 @@ def main():
         open(f"files/fielddata/script/scr_seq/{hdr_name}.s", "w").write("\n".join(hdr_lines) + "\n")
         generated_scripts += [scr_name, hdr_name]
         # --- events
-        eb = dp.file("eventdata/zone_event_release", h["events"])
         ox, oy = (0, 0) if shared else (origin[0] * 32, origin[1] * 32)
         p = 0
         nb = struct.unpack_from("<I", eb, p)[0]; p += 4
         def ev_script(sid):
-            if sid - 1 >= nscripts:   # Diamond's Oreburgh has a sign pointing past its bank
-                todo.append(f"{m['name']}: event uses script {sid} but the bank has {nscripts} scripts; no script for now")
+            if sid - 1 >= nscripts_bank:   # Diamond's Oreburgh has a sign pointing past its bank
+                todo.append(f"{m['name']}: event uses script {sid} but the bank has {nscripts_bank} scripts; no script for now")
                 return "0"
             return f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
         bgs = []
         for i in range(nb):
             sid, typ, x, z, y, d = struct.unpack_from("<HHIIII", eb, p + i * 0x14)
-            if sid >= 8000:
-                r = dp.std_item(370, sid - 7999)
+            if 8000 <= sid < 8800:   # Diamond's 8800+ are Great Marsh std scripts, not hidden items
+                r = dp.hidden_item(sid - 8000)
+                if r is None:
+                    todo.append(f"{m['name']}: hidden item {sid} has no row in Diamond's table; Potion placeholder")
+                    r = (17, 1, 0)
                 idx = FIRST_HIDDEN_ITEM_IDX + len(state.hidden_items)
-                state.hidden_items.append((r[0] if r else 1, r[1] if r else 1, idx, m["code"]))
+                state.hidden_items.append((r[0], r[1], r[2], idx, m["code"]))
                 sid_s = str(8000 + idx)
             elif sid >= 2000:   # a Diamond std script on a BG event
                 sid_s = DP_STD.get(sid, "0")
@@ -1250,8 +1327,7 @@ def main():
             o = struct.unpack_from("<14Hi", eb, p + i * 0x20)
             sid = o[5]
             if sid >= 7000 and sid < 8000:
-                sid_s = "std_itemball_variadic"
-                todo.append(f"{m['name']}: item ball std {sid} contents unknown, variadic placeholder")
+                sid_s = itemball_ref.get(i, "std_itemball_variadic")
             elif 3000 <= sid < 7000:   # Diamond's NPC-trainer std ids: 3000/5000 + trainer - 1, same scheme as HeartGold
                 macro = "std_trainer" if sid < 5000 else "std_trainer_2"
                 sid_s = f"{macro}({trainers.hg_name(sid - (3000 if sid < 5000 else 5000) + 1)})"
@@ -1446,7 +1522,16 @@ def main():
             f"#define SINNOH_CELL_TO_MAP_X(cx) ((cx) * {MAP_PROJ_X[0]} / {MAP_PROJ_X[1]})",
             f"#define SINNOH_CELL_TO_MAP_Y(cy) ((cy) * {MAP_PROJ_Y[0]} / {MAP_PROJ_Y[1]})",
             f"#define SPAWN_MAPS_COUNT {num_spawns}            // HeartGold's 30 spawn rows plus one per Sinnoh town",
-            "#define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)", "", "#endif"]
+            "#define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)",
+            f"#define SINNOH_HIDDEN_ITEM_FIRST_IDX {FIRST_HIDDEN_ITEM_IDX}   // hidden-item indices from here on are Sinnoh's",
+            f"#define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x{SINNOH_HIDDEN_ITEM_FLAG_BASE:04X}   // their flags (stock 800+idx would hit story flags)", ""]
+    std3 = "files/fielddata/script/scr_seq/scr_seq_0003.s"
+    std3_src = open(std3).read()
+    std3_count = std3_src.count("\tScrDef ")
+    sin += [f"#define {name} {2000 + std3_count + i}   // appended to HeartGold's misc std bank" for i, (name, _) in enumerate(SINNOH_STD)] + ["", "#endif"]
+    std3_src = std3_src.replace("\tScrDefEnd\n", "".join(f"\tScrDef {name}_body\n" for name, _ in SINNOH_STD) + "\tScrDefEnd\n", 1)
+    std3_src = std3_src.rstrip("\n") + "\n\n" + "".join(f"{name}_body:\n{body}\n" for name, body in SINNOH_STD) + "\t.balign 4, 0\n"
+    open(std3, "w").write(std3_src)
     open("include/constants/sinnoh.h", "w").write("\n".join(sin) + "\n")
 
     if shared_cells:
@@ -1605,8 +1690,6 @@ def main():
     if plain:
         todo.append("trainer classes: " + ", ".join(plain) + " use the default encounter jingle and battle music; every class's intro animation is blank")
     todo.append("new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated")
-    todo.append("hidden items: Diamond's contents live in an engine table (its std 8000+ scripts read 0x8000-0x8002); the importer "
-                "currently copies the item-ball list instead, so Sinnoh hidden items hold the wrong items until that table is found")
     todo.append("std bank 207 (Diamond std 9000-9016) holds the Pokémon Center stair/counter scripts; level scripts call 9000/9012-9015 "
                 "for the upstairs partner walk; HeartGold's own Pokémon Center handles that, so they stay dropped")
     # --- Diamond's four in-game trades: records are HeartGold's NPCTrade minus its trailing word; names go into msg_0200
@@ -1652,7 +1735,18 @@ def main():
         i = s.rstrip().rfind("};")
         s = s[:i] + "    // SINNOH_PORT_BEGIN\n    // SINNOH_PORT_END\n" + s[i:]
         open(hi, "w").write(s)
-    replace_block(hi, "    // SINNOH_PORT_BEGIN", "    // SINNOH_PORT_END", "".join(f"    {{ {item}, {qty}, 0, 0, {idx} }}, // Diamond {code}\n" for item, qty, idx, code in state.hidden_items))
+    replace_block(hi, "    // SINNOH_PORT_BEGIN", "    // SINNOH_PORT_END", "".join(f"    {{ {item}, {qty}, {dows}, 0, {idx} }}, // Diamond {code}\n" for item, qty, dows, idx, code in state.hidden_items))
+    # std script 8000+idx indexes HeartGold's generic hidden-item bank (scr_seq_0145, 257 aliases of one script);
+    # Sinnoh indices run past it, so the bank's offset table gets one alias per extra index
+    assert FIRST_SINNOH_FLAG + len(state.flags) <= SINNOH_HIDDEN_ITEM_FLAG_BASE, "Sinnoh flags ran into the hidden-item flag block"
+    assert len(state.hidden_items) <= 256, "more Sinnoh hidden items than the 0x1060-0x115F flag block holds"
+    b145 = "files/fielddata/script/scr_seq/scr_seq_0145.s"
+    s = open(b145).read()
+    stock_defs = s.count("\tScrDef ")
+    need = FIRST_HIDDEN_ITEM_IDX + len(state.hidden_items) - stock_defs
+    if need > 0:
+        s = s.replace("\tScrDefEnd\n", "\tScrDef scr_seq_0145_000\n" * need + "\tScrDefEnd\n", 1)
+        open(b145, "w").write(s)
 
     # NUM_FLAGS growth
     fl = open("include/constants/flags.h").read()

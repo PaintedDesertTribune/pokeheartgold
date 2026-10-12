@@ -10,6 +10,9 @@
 	ScrDef scr_seq_SR208_002
 	ScrDef scr_seq_SR208_003
 	ScrDef scr_seq_SR208_004
+	ScrDef scr_seq_SR208_005
+	ScrDef scr_seq_SR208_006
+	ScrDef scr_seq_SR208_007
 	ScrDefEnd
 
 scr_seq_SR208_000:
@@ -75,5 +78,23 @@ _00C0:
 	ReleaseAll
 	End
 
+
+scr_seq_SR208_005:
+	SetVar VAR_SPECIAL_x8008, 4
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR208_006:
+	SetVar VAR_SPECIAL_x8008, 48
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR208_007:
+	SetVar VAR_SPECIAL_x8008, 59
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

@@ -9,6 +9,7 @@
 #define _EV_scr_seq_SR202_003 3
 #define _EV_scr_seq_SR202_004 4
 #define _EV_scr_seq_SR202_005 5
+#define _EV_scr_seq_SR202_006 6
 
 #define obj_SR202_0 0
 #define obj_SR202_1 1

@@ -28,4 +28,5 @@ scr_seq_SC08GYM0102_003:
 	End
 
 
+
 	.balign 4, 0

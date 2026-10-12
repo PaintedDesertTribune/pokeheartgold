@@ -8,6 +8,7 @@
 	ScrDef scr_seq_SD01R0101_000
 	ScrDef scr_seq_SD01R0101_001
 	ScrDef scr_seq_SD01R0101_002
+	ScrDef scr_seq_SD01R0101_003
 	ScrDefEnd
 
 scr_seq_SD01R0101_000:
@@ -34,5 +35,11 @@ scr_seq_SD01R0101_002:
 	ReleaseAll
 	End
 
+
+scr_seq_SD01R0101_003:
+	SetVar VAR_SPECIAL_x8008, 58
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

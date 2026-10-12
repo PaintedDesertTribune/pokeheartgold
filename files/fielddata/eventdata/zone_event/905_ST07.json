@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_ST07.h",
   "bgs": [
     {
-      "scriptId": "8473",
+      "scriptId": "8467",
       "type": 2,
       "x": 824,
       "z": 471,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8474",
+      "scriptId": "8468",
       "type": 2,
       "x": 822,
       "z": 445,
@@ -41,7 +41,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1218",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_ST07_007 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

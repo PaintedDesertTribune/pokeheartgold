@@ -12,6 +12,10 @@
 	ScrDef scr_seq_SR210A_004
 	ScrDef scr_seq_SR210A_005
 	ScrDef scr_seq_SR210A_006
+	ScrDef scr_seq_SR210A_007
+	ScrDef scr_seq_SR210A_008
+	ScrDef scr_seq_SR210A_009
+	ScrDef scr_seq_SR210A_010
 	ScrDefEnd
 
 scr_seq_SR210A_006:
@@ -287,5 +291,29 @@ mv_SR210A_02D4:
 mv_SR210A_02DC:
 	.short 33, 1
 	EndMovement
+
+scr_seq_SR210A_007:
+	SetVar VAR_SPECIAL_x8008, 76
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR210A_008:
+	SetVar VAR_SPECIAL_x8008, 3
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR210A_009:
+	SetVar VAR_SPECIAL_x8008, 2
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR210A_010:
+	SetVar VAR_SPECIAL_x8008, 25
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

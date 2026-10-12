@@ -5,6 +5,7 @@
 
 #define _EV_scr_seq_SD25R0108_000 0
 #define _EV_scr_seq_SD25R0108_001 1
+#define _EV_scr_seq_SD25R0108_002 2
 
 #define obj_SD25R0108_0 0
 #define obj_SD25R0108_1 1

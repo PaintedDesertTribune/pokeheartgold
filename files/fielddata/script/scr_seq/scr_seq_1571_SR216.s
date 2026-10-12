@@ -8,6 +8,10 @@
 	ScrDef scr_seq_SR216_000
 	ScrDef scr_seq_SR216_001
 	ScrDef scr_seq_SR216_002
+	ScrDef scr_seq_SR216_003
+	ScrDef scr_seq_SR216_004
+	ScrDef scr_seq_SR216_005
+	ScrDef scr_seq_SR216_006
 	ScrDefEnd
 
 scr_seq_SR216_000:
@@ -36,5 +40,29 @@ scr_seq_SR216_002:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SR216_003:
+	SetVar VAR_SPECIAL_x8008, 340
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR216_004:
+	SetVar VAR_SPECIAL_x8008, 20
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR216_005:
+	SetVar VAR_SPECIAL_x8008, 219
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR216_006:
+	SetVar VAR_SPECIAL_x8008, 45
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

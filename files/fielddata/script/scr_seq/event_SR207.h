@@ -10,6 +10,10 @@
 #define _EV_scr_seq_SR207_004 4
 #define _EV_scr_seq_SR207_005 5
 #define _EV_scr_seq_SR207_006 6
+#define _EV_scr_seq_SR207_007 7
+#define _EV_scr_seq_SR207_008 8
+#define _EV_scr_seq_SR207_009 9
+#define _EV_scr_seq_SR207_010 10
 
 #define obj_SR207_0 0
 #define obj_SR207_1 1

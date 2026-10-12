@@ -5,6 +5,8 @@
 
 #define _EV_scr_seq_SD16_000 0
 #define _EV_scr_seq_SD16_001 1
+#define _EV_scr_seq_SD16_002 2
+#define _EV_scr_seq_SD16_003 3
 
 #define obj_SD16_0 0
 #define obj_SD16_1 1

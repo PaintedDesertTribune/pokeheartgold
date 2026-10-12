@@ -26,6 +26,8 @@
 #define _EV_scr_seq_SC04_020 20
 #define _EV_scr_seq_SC04_021 21
 #define _EV_scr_seq_SC04_022 22
+#define _EV_scr_seq_SC04_023 23
+#define _EV_scr_seq_SC04_024 24
 
 #define obj_SC04_0 0
 #define obj_SC04_1 1

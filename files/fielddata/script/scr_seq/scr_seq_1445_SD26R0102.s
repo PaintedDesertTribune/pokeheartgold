@@ -11,6 +11,7 @@
 	ScrDef scr_seq_SD26R0102_003
 	ScrDef scr_seq_SD26R0102_004
 	ScrDef scr_seq_SD26R0102_005
+	ScrDef scr_seq_SD26R0102_006
 	ScrDefEnd
 
 scr_seq_SD26R0102_000:
@@ -90,5 +91,11 @@ scr_seq_SD26R0102_005:
 	ReleaseAll
 	End
 
+
+scr_seq_SD26R0102_006:
+	SetVar VAR_SPECIAL_x8008, 29
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

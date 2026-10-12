@@ -10,6 +10,7 @@
 #define _EV_scr_seq_SR212AR0103_004 4
 #define _EV_scr_seq_SR212AR0103_005 5
 #define _EV_scr_seq_SR212AR0103_006 6
+#define _EV_scr_seq_SR212AR0103_007 7
 
 #define obj_SR212AR0103_0 0
 #define obj_SR212AR0103_1 1

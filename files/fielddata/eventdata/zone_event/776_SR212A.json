@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SR212A.h",
   "bgs": [
     {
-      "scriptId": "8343",
+      "scriptId": "8337",
       "type": 2,
       "x": 475,
       "z": 803,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8344",
+      "scriptId": "8338",
       "type": 2,
       "x": 467,
       "z": 779,
@@ -202,7 +202,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1041",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR212A_010 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -219,7 +219,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1040",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR212A_011 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -236,7 +236,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1042",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR212A_012 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

@@ -5,6 +5,9 @@
 
 #define _EV_scr_seq_SR229_000 0
 #define _EV_scr_seq_SR229_001 1
+#define _EV_scr_seq_SR229_002 2
+#define _EV_scr_seq_SR229_003 3
+#define _EV_scr_seq_SR229_004 4
 
 #define obj_SR229_0 0
 #define obj_SR229_2 2

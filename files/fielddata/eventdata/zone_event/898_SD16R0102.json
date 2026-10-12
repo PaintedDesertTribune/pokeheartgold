@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD16R0102.h",
   "bgs": [
     {
-      "scriptId": "8460",
+      "scriptId": "8454",
       "type": 2,
       "x": 85,
       "z": 49,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8461",
+      "scriptId": "8455",
       "type": 2,
       "x": 60,
       "z": 11,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8462",
+      "scriptId": "8456",
       "type": 2,
       "x": 5,
       "z": 48,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8463",
+      "scriptId": "8457",
       "type": 2,
       "x": 26,
       "z": 66,
@@ -34,7 +34,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8464",
+      "scriptId": "8458",
       "type": 2,
       "x": 53,
       "z": 39,
@@ -42,7 +42,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8465",
+      "scriptId": "8459",
       "type": 2,
       "x": 65,
       "z": 65,
@@ -159,7 +159,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1202",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_006 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -176,7 +176,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1209",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_007 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -193,7 +193,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1208",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_008 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -210,7 +210,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1206",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_009 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -227,7 +227,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1203",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_010 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -244,7 +244,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1204",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_011 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -261,7 +261,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1205",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_012 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -278,7 +278,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1207",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD16R0102_013 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

@@ -13,6 +13,7 @@
 	ScrDef scr_seq_SD26R0101_005
 	ScrDef scr_seq_SD26R0101_006
 	ScrDef scr_seq_SD26R0101_007
+	ScrDef scr_seq_SD26R0101_008
 	ScrDefEnd
 
 scr_seq_SD26R0101_000:
@@ -166,5 +167,11 @@ mv_SD26R0101_0164:
 mv_SD26R0101_016C:
 	.short 19, 1
 	EndMovement
+
+scr_seq_SD26R0101_008:
+	SetVar VAR_SPECIAL_x8008, 376
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

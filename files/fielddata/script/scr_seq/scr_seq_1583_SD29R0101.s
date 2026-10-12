@@ -6,6 +6,7 @@
 #include "macros/movement.inc"
 
 	ScrDef scr_seq_SD29R0101_000
+	ScrDef scr_seq_SD29R0101_001
 	ScrDefEnd
 
 scr_seq_SD29R0101_000:
@@ -30,5 +31,11 @@ _002B:
 	ReleaseAll
 	End
 
+
+scr_seq_SD29R0101_001:
+	SetVar VAR_SPECIAL_x8008, 341
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

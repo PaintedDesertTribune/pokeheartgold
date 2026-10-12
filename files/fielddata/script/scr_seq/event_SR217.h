@@ -6,6 +6,9 @@
 #define _EV_scr_seq_SR217_000 0
 #define _EV_scr_seq_SR217_001 1
 #define _EV_scr_seq_SR217_002 2
+#define _EV_scr_seq_SR217_003 3
+#define _EV_scr_seq_SR217_004 4
+#define _EV_scr_seq_SR217_005 5
 
 #define obj_SR217_0 0
 #define obj_SR217_1 1

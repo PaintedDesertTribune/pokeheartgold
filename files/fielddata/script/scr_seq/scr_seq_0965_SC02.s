@@ -29,6 +29,7 @@
 	ScrDef scr_seq_SC02_021
 	ScrDef scr_seq_SC02_022
 	ScrDef scr_seq_SC02_023
+	ScrDef scr_seq_SC02_024
 	ScrDefEnd
 
 scr_seq_SC02_000:
@@ -710,5 +711,11 @@ mv_SC02_094C:
 	.short 14, 3
 	.short 13, 8
 	EndMovement
+
+scr_seq_SC02_024:
+	SetVar VAR_SPECIAL_x8008, 416
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

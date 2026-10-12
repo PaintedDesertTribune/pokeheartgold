@@ -12,4 +12,5 @@ scr_seq_SC05GYM0112_000:
 	End
 
 
+
 	.balign 4, 0

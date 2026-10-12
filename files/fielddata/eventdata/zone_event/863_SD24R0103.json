@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD24R0103.h",
   "bgs": [
     {
-      "scriptId": "8428",
+      "scriptId": "8422",
       "type": 2,
       "x": 19,
       "z": 16,
@@ -17,7 +17,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1123",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD24R0103_002 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -34,7 +34,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1122",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD24R0103_003 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

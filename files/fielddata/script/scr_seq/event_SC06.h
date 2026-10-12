@@ -19,6 +19,7 @@
 #define _EV_scr_seq_SC06_013 13
 #define _EV_scr_seq_SC06_014 14
 #define _EV_scr_seq_SC06_015 15
+#define _EV_scr_seq_SC06_016 16
 
 #define obj_SC06_0 0
 #define obj_SC06_1 1

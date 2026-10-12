@@ -13,6 +13,13 @@
 	ScrDef scr_seq_SR213_005
 	ScrDef scr_seq_SR213_006
 	ScrDef scr_seq_SR213_007
+	ScrDef scr_seq_SR213_008
+	ScrDef scr_seq_SR213_009
+	ScrDef scr_seq_SR213_010
+	ScrDef scr_seq_SR213_011
+	ScrDef scr_seq_SR213_012
+	ScrDef scr_seq_SR213_013
+	ScrDef scr_seq_SR213_014
 	ScrDefEnd
 
 scr_seq_SR213_000:
@@ -140,5 +147,47 @@ mv_SR213_00DC:
 	.short 16, 2
 	.short 19, 9
 	EndMovement
+
+scr_seq_SR213_008:
+	SetVar VAR_SPECIAL_x8008, 367
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_009:
+	SetVar VAR_SPECIAL_x8008, 72
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_010:
+	SetVar VAR_SPECIAL_x8008, 29
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_011:
+	SetVar VAR_SPECIAL_x8008, 84
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_012:
+	SetVar VAR_SPECIAL_x8008, 332
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_013:
+	SetVar VAR_SPECIAL_x8008, 51
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR213_014:
+	SetVar VAR_SPECIAL_x8008, 46
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

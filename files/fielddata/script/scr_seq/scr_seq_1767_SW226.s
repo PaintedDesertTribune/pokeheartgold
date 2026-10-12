@@ -7,6 +7,9 @@
 
 	ScrDef scr_seq_SW226_000
 	ScrDef scr_seq_SW226_001
+	ScrDef scr_seq_SW226_002
+	ScrDef scr_seq_SW226_003
+	ScrDef scr_seq_SW226_004
 	ScrDefEnd
 
 scr_seq_SW226_000:
@@ -25,5 +28,23 @@ scr_seq_SW226_001:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SW226_002:
+	SetVar VAR_SPECIAL_x8008, 380
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SW226_003:
+	SetVar VAR_SPECIAL_x8008, 48
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SW226_004:
+	SetVar VAR_SPECIAL_x8008, 279
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

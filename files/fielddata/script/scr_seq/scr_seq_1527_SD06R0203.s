@@ -7,6 +7,7 @@
 
 	ScrDef scr_seq_SD06R0203_000
 	ScrDef scr_seq_SD06R0203_001
+	ScrDef scr_seq_SD06R0203_002
 	ScrDefEnd
 
 scr_seq_SD06R0203_000:
@@ -27,5 +28,11 @@ scr_seq_SD06R0203_001:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SD06R0203_002:
+	SetVar VAR_SPECIAL_x8008, 94
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

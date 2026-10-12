@@ -96,4 +96,5 @@ mv_SC10R0111_010C:
 	.short 32, 1
 	EndMovement
 
+
 	.balign 4, 0

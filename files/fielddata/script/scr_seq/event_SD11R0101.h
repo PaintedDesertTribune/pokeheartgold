@@ -29,6 +29,10 @@
 #define _EV_scr_seq_SD11R0101_023 23
 #define _EV_scr_seq_SD11R0101_024 24
 #define _EV_scr_seq_SD11R0101_025 25
+#define _EV_scr_seq_SD11R0101_026 26
+#define _EV_scr_seq_SD11R0101_027 27
+#define _EV_scr_seq_SD11R0101_028 28
+#define _EV_scr_seq_SD11R0101_029 29
 
 #define obj_SD11R0101_0 0
 #define obj_SD11R0101_1 1

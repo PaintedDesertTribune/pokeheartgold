@@ -9,6 +9,7 @@
 	ScrDef scr_seq_SR211B_001
 	ScrDef scr_seq_SR211B_002
 	ScrDef scr_seq_SR211B_003
+	ScrDef scr_seq_SR211B_004
 	ScrDefEnd
 
 scr_seq_SR211B_000:
@@ -73,5 +74,11 @@ scr_seq_SR211B_003:
 mv_SR211B_0080:
 	.short 75, 1
 	EndMovement
+
+scr_seq_SR211B_004:
+	SetVar VAR_SPECIAL_x8008, 356
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

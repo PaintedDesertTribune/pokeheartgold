@@ -184,4 +184,5 @@ mv_SC04R0204_01AC:
 	.short 34, 1
 	EndMovement
 
+
 	.balign 4, 0

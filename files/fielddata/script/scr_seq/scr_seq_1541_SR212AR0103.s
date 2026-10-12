@@ -12,6 +12,7 @@
 	ScrDef scr_seq_SR212AR0103_004
 	ScrDef scr_seq_SR212AR0103_005
 	ScrDef scr_seq_SR212AR0103_006
+	ScrDef scr_seq_SR212AR0103_007
 	ScrDefEnd
 
 scr_seq_SR212AR0103_000:
@@ -324,5 +325,11 @@ mv_SR212AR0103_037C:
 	.short 13, 1
 	.short 0, 1
 	EndMovement
+
+scr_seq_SR212AR0103_007:
+	SetVar VAR_SPECIAL_x8008, 414
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

@@ -14,6 +14,11 @@
 	ScrDef scr_seq_SR209_006
 	ScrDef scr_seq_SR209_007
 	ScrDef scr_seq_SR209_008
+	ScrDef scr_seq_SR209_009
+	ScrDef scr_seq_SR209_010
+	ScrDef scr_seq_SR209_011
+	ScrDef scr_seq_SR209_012
+	ScrDef scr_seq_SR209_013
 	ScrDefEnd
 
 scr_seq_SR209_007:
@@ -255,5 +260,35 @@ scr_seq_SR209_006:
 	ReleaseAll
 	End
 
+
+scr_seq_SR209_009:
+	SetVar VAR_SPECIAL_x8008, 94
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR209_010:
+	SetVar VAR_SPECIAL_x8008, 60
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR209_011:
+	SetVar VAR_SPECIAL_x8008, 374
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR209_012:
+	SetVar VAR_SPECIAL_x8008, 49
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR209_013:
+	SetVar VAR_SPECIAL_x8008, 346
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

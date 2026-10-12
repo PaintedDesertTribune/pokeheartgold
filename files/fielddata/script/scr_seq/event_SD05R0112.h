@@ -4,6 +4,10 @@
 #include "constants/sinnoh.h"
 
 #define _EV_scr_seq_SD05R0112_000 0
+#define _EV_scr_seq_SD05R0112_001 1
+#define _EV_scr_seq_SD05R0112_002 2
+#define _EV_scr_seq_SD05R0112_003 3
+#define _EV_scr_seq_SD05R0112_004 4
 
 #define obj_SD05R0112_0 0
 #define obj_SD05R0112_1 1

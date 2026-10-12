@@ -5,6 +5,8 @@
 
 #define _EV_scr_seq_SR218_000 0
 #define _EV_scr_seq_SR218_001 1
+#define _EV_scr_seq_SR218_002 2
+#define _EV_scr_seq_SR218_003 3
 
 #define obj_SR218_0 0
 #define obj_SR218_1 1

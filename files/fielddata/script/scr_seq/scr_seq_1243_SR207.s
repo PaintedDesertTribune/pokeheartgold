@@ -12,6 +12,10 @@
 	ScrDef scr_seq_SR207_004
 	ScrDef scr_seq_SR207_005
 	ScrDef scr_seq_SR207_006
+	ScrDef scr_seq_SR207_007
+	ScrDef scr_seq_SR207_008
+	ScrDef scr_seq_SR207_009
+	ScrDef scr_seq_SR207_010
 	ScrDefEnd
 
 scr_seq_SR207_000:
@@ -292,5 +296,29 @@ mv_SR207_0364:
 	.short 15, 1
 	.short 12, 7
 	EndMovement
+
+scr_seq_SR207_007:
+	SetVar VAR_SPECIAL_x8008, 4
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR207_008:
+	SetVar VAR_SPECIAL_x8008, 56
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR207_009:
+	SetVar VAR_SPECIAL_x8008, 47
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR207_010:
+	SetVar VAR_SPECIAL_x8008, 26
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

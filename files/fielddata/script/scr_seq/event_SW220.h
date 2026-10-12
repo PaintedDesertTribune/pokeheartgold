@@ -4,6 +4,9 @@
 #include "constants/sinnoh.h"
 
 #define _EV_scr_seq_SW220_000 0
+#define _EV_scr_seq_SW220_001 1
+#define _EV_scr_seq_SW220_002 2
+#define _EV_scr_seq_SW220_003 3
 
 #define obj_SW220_0 0
 #define obj_SW220_1 1

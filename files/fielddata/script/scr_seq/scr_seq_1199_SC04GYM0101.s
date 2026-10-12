@@ -75,4 +75,5 @@ mv_SC04GYM0101_003C:
 	.short 36, 1
 	EndMovement
 
+
 	.balign 4, 0

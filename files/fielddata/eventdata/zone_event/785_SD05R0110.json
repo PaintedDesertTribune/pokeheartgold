@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD05R0110.h",
   "bgs": [
     {
-      "scriptId": "8361",
+      "scriptId": "8355",
       "type": 2,
       "x": 5,
       "z": 7,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8362",
+      "scriptId": "8356",
       "type": 2,
       "x": 11,
       "z": 10,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8363",
+      "scriptId": "8357",
       "type": 2,
       "x": 16,
       "z": 35,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8364",
+      "scriptId": "8358",
       "type": 2,
       "x": 19,
       "z": 39,
@@ -34,7 +34,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8365",
+      "scriptId": "8359",
       "type": 2,
       "x": 25,
       "z": 56,
@@ -42,7 +42,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8366",
+      "scriptId": "8360",
       "type": 2,
       "x": 20,
       "z": 58,

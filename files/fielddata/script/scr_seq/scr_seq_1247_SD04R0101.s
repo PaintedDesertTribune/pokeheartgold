@@ -7,6 +7,10 @@
 
 	ScrDef scr_seq_SD04R0101_000
 	ScrDef scr_seq_SD04R0101_001
+	ScrDef scr_seq_SD04R0101_002
+	ScrDef scr_seq_SD04R0101_003
+	ScrDef scr_seq_SD04R0101_004
+	ScrDef scr_seq_SD04R0101_005
 	ScrDefEnd
 
 scr_seq_SD04R0101_000:
@@ -44,5 +48,29 @@ _005F:
 	ReleaseAll
 	End
 
+
+scr_seq_SD04R0101_002:
+	SetVar VAR_SPECIAL_x8008, 362
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD04R0101_003:
+	SetVar VAR_SPECIAL_x8008, 19
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD04R0101_004:
+	SetVar VAR_SPECIAL_x8008, 315
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SD04R0101_005:
+	SetVar VAR_SPECIAL_x8008, 82
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

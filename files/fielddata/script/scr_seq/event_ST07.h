@@ -10,6 +10,7 @@
 #define _EV_scr_seq_ST07_004 4
 #define _EV_scr_seq_ST07_005 5
 #define _EV_scr_seq_ST07_006 6
+#define _EV_scr_seq_ST07_007 7
 
 #define obj_ST07_2 2
 #define obj_ST07_3 3

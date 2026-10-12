@@ -938,6 +938,8 @@
 #define SINNOH_CELL_TO_MAP_Y(cy) ((cy) * 22 / 30)
 #define SPAWN_MAPS_COUNT 48            // HeartGold's 30 spawn rows plus one per Sinnoh town
 #define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)
+#define SINNOH_HIDDEN_ITEM_FIRST_IDX 231   // hidden-item indices from here on are Sinnoh's
+#define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x1060   // their flags (stock 800+idx would hit story flags)
 
 #define TRCLASS_MUSIC_ROWS 51   // asm/unk_020517A4.s class-to-battle-music rows
 #endif

@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SR221.h",
   "bgs": [
     {
-      "scriptId": "8422",
+      "scriptId": "8416",
       "type": 2,
       "x": 267,
       "z": 923,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8423",
+      "scriptId": "8417",
       "type": 2,
       "x": 263,
       "z": 898,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8424",
+      "scriptId": "8418",
       "type": 2,
       "x": 280,
       "z": 922,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8425",
+      "scriptId": "8419",
       "type": 2,
       "x": 301,
       "z": 924,
@@ -34,7 +34,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8426",
+      "scriptId": "8420",
       "type": 2,
       "x": 272,
       "z": 917,
@@ -159,7 +159,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1116",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR221_004 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -176,7 +176,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1117",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR221_005 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -193,7 +193,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1115",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR221_006 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -210,7 +210,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1087",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SR221_007 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,

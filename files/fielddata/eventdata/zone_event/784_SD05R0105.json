@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD05R0105.h",
   "bgs": [
     {
-      "scriptId": "8357",
+      "scriptId": "8351",
       "type": 2,
       "x": 41,
       "z": 7,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8358",
+      "scriptId": "8352",
       "type": 2,
       "x": 44,
       "z": 10,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8359",
+      "scriptId": "8353",
       "type": 2,
       "x": 13,
       "z": 29,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8360",
+      "scriptId": "8354",
       "type": 2,
       "x": 31,
       "z": 33,

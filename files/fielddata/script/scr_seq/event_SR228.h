@@ -5,6 +5,11 @@
 
 #define _EV_scr_seq_SR228_000 0
 #define _EV_scr_seq_SR228_001 1
+#define _EV_scr_seq_SR228_002 2
+#define _EV_scr_seq_SR228_003 3
+#define _EV_scr_seq_SR228_004 4
+#define _EV_scr_seq_SR228_005 5
+#define _EV_scr_seq_SR228_006 6
 
 #define obj_SR228_2 2
 #define obj_SR228_3 3

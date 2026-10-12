@@ -1333,4 +1333,5 @@ mv_SC01_0EC0:
 	.short 32, 1
 	EndMovement
 
+
 	.balign 4, 0

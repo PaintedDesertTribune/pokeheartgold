@@ -13,6 +13,10 @@
 	ScrDef scr_seq_SR206_005
 	ScrDef scr_seq_SR206_006
 	ScrDef scr_seq_SR206_007
+	ScrDef scr_seq_SR206_008
+	ScrDef scr_seq_SR206_009
+	ScrDef scr_seq_SR206_010
+	ScrDef scr_seq_SR206_011
 	ScrDefEnd
 
 scr_seq_SR206_007:
@@ -107,5 +111,29 @@ scr_seq_SR206_006:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SR206_008:
+	SetVar VAR_SPECIAL_x8008, 245
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR206_009:
+	SetVar VAR_SPECIAL_x8008, 27
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR206_010:
+	SetVar VAR_SPECIAL_x8008, 19
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR206_011:
+	SetVar VAR_SPECIAL_x8008, 76
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

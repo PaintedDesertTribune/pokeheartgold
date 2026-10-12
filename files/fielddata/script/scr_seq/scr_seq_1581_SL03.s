@@ -10,6 +10,7 @@
 	ScrDef scr_seq_SL03_002
 	ScrDef scr_seq_SL03_003
 	ScrDef scr_seq_SL03_004
+	ScrDef scr_seq_SL03_005
 	ScrDefEnd
 
 scr_seq_SL03_001:
@@ -92,5 +93,11 @@ scr_seq_SL03_004:
 	CallStd std_signpost
 	End
 
+
+scr_seq_SL03_005:
+	SetVar VAR_SPECIAL_x8008, 2
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

@@ -15,6 +15,12 @@
 #define _EV_scr_seq_SD03R0101_009 9
 #define _EV_scr_seq_SD03R0101_010 10
 #define _EV_scr_seq_SD03R0101_011 11
+#define _EV_scr_seq_SD03R0101_012 12
+#define _EV_scr_seq_SD03R0101_013 13
+#define _EV_scr_seq_SD03R0101_014 14
+#define _EV_scr_seq_SD03R0101_015 15
+#define _EV_scr_seq_SD03R0101_016 16
+#define _EV_scr_seq_SD03R0101_017 17
 
 #define obj_SD03R0101_0 0
 #define obj_SD03R0101_1 1

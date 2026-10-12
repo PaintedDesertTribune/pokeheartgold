@@ -5,6 +5,13 @@
 
 #define _EV_scr_seq_SR225_000 0
 #define _EV_scr_seq_SR225_001 1
+#define _EV_scr_seq_SR225_002 2
+#define _EV_scr_seq_SR225_003 3
+#define _EV_scr_seq_SR225_004 4
+#define _EV_scr_seq_SR225_005 5
+#define _EV_scr_seq_SR225_006 6
+#define _EV_scr_seq_SR225_007 7
+#define _EV_scr_seq_SR225_008 8
 
 #define obj_SR225_2 2
 #define obj_SR225_3 3

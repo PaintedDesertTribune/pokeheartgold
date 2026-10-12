@@ -5,6 +5,8 @@
 
 #define _EV_scr_seq_SC07R0301_000 0
 #define _EV_scr_seq_SC07R0301_001 1
+#define _EV_scr_seq_SC07R0301_002 2
+#define _EV_scr_seq_SC07R0301_003 3
 
 #define obj_SC07R0301_0 0
 #define obj_SC07R0301_1 1

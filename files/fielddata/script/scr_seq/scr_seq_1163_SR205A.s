@@ -15,6 +15,10 @@
 	ScrDef scr_seq_SR205A_007
 	ScrDef scr_seq_SR205A_008
 	ScrDef scr_seq_SR205A_009
+	ScrDef scr_seq_SR205A_010
+	ScrDef scr_seq_SR205A_011
+	ScrDef scr_seq_SR205A_012
+	ScrDef scr_seq_SR205A_013
 	ScrDefEnd
 
 scr_seq_SR205A_000:
@@ -270,5 +274,29 @@ mv_SR205A_0284:
 	.short 63, 1
 	.short 13, 1
 	EndMovement
+
+scr_seq_SR205A_010:
+	SetVar VAR_SPECIAL_x8008, 4
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR205A_011:
+	SetVar VAR_SPECIAL_x8008, 57
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR205A_012:
+	SetVar VAR_SPECIAL_x8008, 26
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR205A_013:
+	SetVar VAR_SPECIAL_x8008, 79
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

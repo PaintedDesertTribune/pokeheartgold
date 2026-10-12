@@ -10,6 +10,8 @@
 #define _EV_scr_seq_SD13R0101_004 4
 #define _EV_scr_seq_SD13R0101_005 5
 #define _EV_scr_seq_SD13R0101_006 6
+#define _EV_scr_seq_SD13R0101_007 7
+#define _EV_scr_seq_SD13R0101_008 8
 
 #define obj_SD13R0101_0 0
 #define obj_SD13R0101_1 1

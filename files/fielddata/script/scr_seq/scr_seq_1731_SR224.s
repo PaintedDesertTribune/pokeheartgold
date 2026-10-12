@@ -9,6 +9,9 @@
 	ScrDef scr_seq_SR224_001
 	ScrDef scr_seq_SR224_002
 	ScrDef scr_seq_SR224_003
+	ScrDef scr_seq_SR224_004
+	ScrDef scr_seq_SR224_005
+	ScrDef scr_seq_SR224_006
 	ScrDefEnd
 
 scr_seq_SR224_000:
@@ -302,5 +305,23 @@ mv_SR224_03AC:
 	.short 65, 1
 	.short 76, 12
 	EndMovement
+
+scr_seq_SR224_004:
+	SetVar VAR_SPECIAL_x8008, 326
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR224_005:
+	SetVar VAR_SPECIAL_x8008, 50
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
+
+scr_seq_SR224_006:
+	SetVar VAR_SPECIAL_x8008, 280
+	SetVar VAR_SPECIAL_x8009, 1
+	CallStd std_itemball_variadic
+	End
 
 	.balign 4, 0

@@ -75,4 +75,5 @@ mv_SC02R0101_0074:
 	.short 0, 1
 	EndMovement
 
+
 	.balign 4, 0

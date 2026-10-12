@@ -2,7 +2,7 @@
   "header": "fielddata/script/scr_seq/event_SD05R0113.h",
   "bgs": [
     {
-      "scriptId": "8435",
+      "scriptId": "8429",
       "type": 2,
       "x": 11,
       "z": 12,
@@ -10,7 +10,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8436",
+      "scriptId": "8430",
       "type": 2,
       "x": 2,
       "z": 3,
@@ -18,7 +18,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8437",
+      "scriptId": "8431",
       "type": 2,
       "x": 7,
       "z": 27,
@@ -26,7 +26,7 @@
       "dir": 4
     },
     {
-      "scriptId": "8438",
+      "scriptId": "8432",
       "type": 2,
       "x": 2,
       "z": 61,
@@ -347,7 +347,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1142",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_001 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -364,7 +364,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1137",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_002 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -381,7 +381,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1138",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_003 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -398,7 +398,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1141",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_004 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -415,7 +415,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1140",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_005 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
@@ -432,7 +432,7 @@
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_1139",
-      "scriptId": "std_itemball_variadic",
+      "scriptId": "_EV_scr_seq_SD05R0113_006 + 1",
       "facingDirection": 0,
       "param0": 0,
       "param1": 0,
