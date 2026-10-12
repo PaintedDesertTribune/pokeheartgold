@@ -1,0 +1,84 @@
+{
+  "key": 8660,
+  "messages": [
+    {
+      "id": "msg_1154_R222R0201_00000",
+      "en_US": [
+        "I had a dream!\n",
+        "It was a wonderful dream!\r",
+        "I dreamt that a Trainer would bring\n",
+        "me a giant REMORAID!"
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00001",
+      "en_US": [
+        "I had a dream!\n",
+        "It was a wonderful dream!\r",
+        "I dreamt that a Trainer would bring\n",
+        "me a giant REMORAID!\r",
+        "Oh, my gosh!\n",
+        "That dream was no dream!\r",
+        "H-how big of a REMORAID did you\n",
+        "bring me?!"
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00002",
+      "en_US": [
+        "{STRVAR_1 52, 0, 0}.{STRVAR_1 50, 1, 0} inches...\n",
+        "This REMORAID is {STRVAR_1 52, 0, 0}.{STRVAR_1 50, 1, 0} inches...\r",
+        "...I think you did better than in\n",
+        "my dream!\r",
+        "I’d like you to have this.\r"
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00003",
+      "en_US": [
+        "Thank you!\n",
+        "I really enjoyed this.\r",
+        "I think I’ll dream of an even bigger\n",
+        "REMORAID tonight."
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00004",
+      "en_US": [
+        "{STRVAR_1 52, 0, 0}.{STRVAR_1 50, 1, 0} inches...\n",
+        "Am I experiencing deja vu?\\fI distinctly remember this size..."
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00005",
+      "en_US": [
+        "This REMORAID was {STRVAR_1 52, 0, 0}.{STRVAR_1 50, 1, 0} inches.\r",
+        "I know a genius who brought me\n",
+        "a REMORAID that was {STRVAR_1 52, 2, 0}.{STRVAR_1 50, 3, 0} inches..."
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00006",
+      "en_US": [
+        "Wha...\n",
+        "What do you think you’re showing me?\r",
+        "Did you even listen to what I had\n",
+        "to say?"
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00007",
+      "en_US": [
+        "Your Bag’s jammed full...\n",
+        "I can’t give you this..."
+      ]
+    },
+    {
+      "id": "msg_1154_R222R0201_00008",
+      "en_US": [
+        "Oh, what? Why would you deny me\n",
+        "the chance to measure your REMORAID?"
+      ]
+    }
+  ]
+}

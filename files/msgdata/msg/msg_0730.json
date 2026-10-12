@@ -555,27 +555,71 @@
     },
     {
       "id": "msg_0730_00138",
-      "en_US": "Pokéfan"
+      "en_US": "Leader"
     },
     {
       "id": "msg_0730_00139",
-      "en_US": "Belle & Pa"
+      "en_US": "Pokéfan"
     },
     {
       "id": "msg_0730_00140",
-      "en_US": "Leader"
+      "en_US": "Belle & Pa"
     },
     {
       "id": "msg_0730_00141",
-      "en_US": "Galactic Boss"
+      "en_US": "Leader"
     },
     {
       "id": "msg_0730_00142",
-      "en_US": "Commander"
+      "en_US": "Galactic Boss"
     },
     {
       "id": "msg_0730_00143",
+      "en_US": "Commander"
+    },
+    {
+      "id": "msg_0730_00144",
       "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00145",
+      "en_US": "Ace Trainer"
+    },
+    {
+      "id": "msg_0730_00146",
+      "en_US": "Ace Trainer"
+    },
+    {
+      "id": "msg_0730_00147",
+      "en_US": "Skier"
+    },
+    {
+      "id": "msg_0730_00148",
+      "en_US": "Skier"
+    },
+    {
+      "id": "msg_0730_00149",
+      "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00150",
+      "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00151",
+      "en_US": "Elite Four"
+    },
+    {
+      "id": "msg_0730_00152",
+      "en_US": "Elite Four"
+    },
+    {
+      "id": "msg_0730_00153",
+      "en_US": "Elite Four"
+    },
+    {
+      "id": "msg_0730_00154",
+      "en_US": "Elite Four"
     }
   ]
 }

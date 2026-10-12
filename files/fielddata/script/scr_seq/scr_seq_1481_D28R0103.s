@@ -51,7 +51,7 @@ scr_seq_D28R0103_002:
 	NPCMsg msg_1087_D28R0103_00003
 	CloseMsg
 	SetFlag FLAG_SINNOH_142
-	// TODO Diamond ScrCmd_LegendaryBattle 0x2bd args [482, 50]: no HeartGold mapping yet
+	WildBattle 482, 50
 	ClearFlag FLAG_SINNOH_142
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0

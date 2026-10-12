@@ -1,0 +1,56 @@
+{
+  "header": "fielddata/script/scr_seq/event_D24.h",
+  "bgs": [
+    {
+      "scriptId": "8427",
+      "type": 2,
+      "x": 114,
+      "z": 504,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D24_0",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_D24_001 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 99,
+      "z": 502,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 111,
+      "z": 499,
+      "header": "MAP_SINNOH_IRON_ISLAND_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 117,
+      "z": 489,
+      "header": "MAP_SINNOH_IRON_ISLAND_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 103,
+      "z": 489,
+      "header": "MAP_SINNOH_IRON_ISLAND_B3F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

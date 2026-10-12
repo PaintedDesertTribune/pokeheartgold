@@ -47,7 +47,7 @@ scr_seq_T05R0201_003:
 	LockAll
 	FacePlayer
 	NPCMsg msg_1049_T05R0201_00001
-	// TODO Diamond ScrCmd_GetHour 0x268 args [32780]: no HeartGold mapping yet
+	SetVar 0x800C, 12   // Diamond ScrCmd_GetHour: result fixed
 	CompareVarToValue 0x800C, 4
 	GoToIf 0, _0113
 	CompareVarToValue 0x800C, 10

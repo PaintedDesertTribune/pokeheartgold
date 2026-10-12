@@ -1,0 +1,74 @@
+{
+  "header": "fielddata/script/scr_seq/event_C08PC0102.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C08PC0102_0",
+      "spriteId": "SPRITE_PCWOMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "std_union_room",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 7,
+      "z": 4,
+      "y": 0
+    },
+    {
+      "id": "obj_C08PC0102_1",
+      "spriteId": "SPRITE_PCWOMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "std_wireless_colosseum",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 12,
+      "z": 4,
+      "y": 0
+    },
+    {
+      "id": "obj_C08PC0102_2",
+      "spriteId": "SPRITE_PCWOMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "std_trainer_card_explain",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 2,
+      "z": 10,
+      "header": "MAP_SINNOH_SUNYSHORE_POKECENTER_1F",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "z": 2,
+      "header": "MAP_SINNOH_SUNYSHORE_POKECENTER_2F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

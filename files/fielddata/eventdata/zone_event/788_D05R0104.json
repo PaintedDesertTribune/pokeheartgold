@@ -1,0 +1,190 @@
+{
+  "header": "fielddata/script/scr_seq/event_D05R0104.h",
+  "bgs": [
+    {
+      "scriptId": "8373",
+      "type": 2,
+      "x": 41,
+      "z": 44,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8374",
+      "type": 2,
+      "x": 44,
+      "z": 47,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8375",
+      "type": 2,
+      "x": 33,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8376",
+      "type": 2,
+      "x": 21,
+      "z": 19,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8377",
+      "type": 2,
+      "x": 43,
+      "z": 17,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D05R0104_0",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_32",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 42,
+      "z": 44,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_1",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_33",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 43,
+      "z": 42,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_2",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_34",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 45,
+      "z": 43,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_3",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_35",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 45,
+      "z": 39,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_4",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_36",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 42,
+      "z": 37,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_5",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_37",
+      "scriptId": "std_field_rock_smash",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 39,
+      "z": 20,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0104_6",
+      "spriteId": "SPRITE_ROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_38",
+      "scriptId": "std_field_strength",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 35,
+      "z": 17,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 42,
+      "z": 40,
+      "header": "MAP_SINNOH_MOUNT_CORONET_4F_ROOM_1",
+      "anchor": 4,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "z": 19,
+      "header": "MAP_SINNOH_MOUNT_CORONET_4F_ROOM_3",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 45,
+      "z": 28,
+      "header": "MAP_SINNOH_MOUNT_CORONET_TUNNEL_ROOM",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

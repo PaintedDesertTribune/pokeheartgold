@@ -149,7 +149,7 @@ scr_seq_D02_005:
 	CloseMsg
 	WaitCry
 	SetFlag FLAG_SINNOH_142
-	// TODO Diamond ScrCmd_LegendaryBattle 0x2bd args [425, 22]: no HeartGold mapping yet
+	WildBattle 425, 22
 	ClearFlag FLAG_SINNOH_142
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0

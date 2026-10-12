@@ -15,7 +15,7 @@
 	ScrDefEnd
 
 scr_seq_R212AR0103_000:
-	// TODO Diamond ScrCmd_GetHour 0x268 args [16384]: no HeartGold mapping yet
+	SetVar 0x4000, 12   // Diamond ScrCmd_GetHour: result fixed
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _004F
 	CompareVarToValue 0x4000, 1

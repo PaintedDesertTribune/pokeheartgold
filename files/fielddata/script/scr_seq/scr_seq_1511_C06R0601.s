@@ -68,7 +68,7 @@ _00D7:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CC
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	BufferItemName 1, 260
 	NPCMsg msg_1102_C06R0601_00004
 	CallStd std_obtain_item_verbose
@@ -85,7 +85,7 @@ _0118:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CC
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	BufferItemName 1, 261
 	NPCMsg msg_1102_C06R0601_00004
 	CallStd std_obtain_item_verbose
@@ -102,7 +102,7 @@ _0159:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CC
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	BufferItemName 1, 262
 	NPCMsg msg_1102_C06R0601_00004
 	CallStd std_obtain_item_verbose
@@ -119,7 +119,7 @@ _019A:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CC
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	BufferItemName 1, 263
 	NPCMsg msg_1102_C06R0601_00004
 	CallStd std_obtain_item_verbose
@@ -136,7 +136,7 @@ _01DB:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CC
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	BufferItemName 1, 264
 	NPCMsg msg_1102_C06R0601_00004
 	CallStd std_obtain_item_verbose

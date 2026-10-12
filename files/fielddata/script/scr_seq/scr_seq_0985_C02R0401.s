@@ -81,7 +81,7 @@ scr_seq_C02R0401_001:
 	FadeScreen 6, 6, 0, 0
 	WaitFade
 	Wait 120, 0x800C
-	Warp MAP_SINNOH_CANALAVE_HARBOR_INN, 0, 152, 277, 1
+	Warp MAP_SINNOH_NEWMOON_ISLAND_EXTERIOR, 0, 152, 277, 1
 	FadeScreen 6, 6, 1, 0
 	WaitFade
 	ReleaseAll

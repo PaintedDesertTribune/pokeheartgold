@@ -1,0 +1,57 @@
+{
+  "header": "fielddata/script/scr_seq/event_D15R0101.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_D15R0101_0",
+      "spriteId": "SPRITE_SINNOH_SPPOKE9",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_621",
+      "scriptId": "_EV_scr_seq_D15R0101_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 16,
+      "z": 15,
+      "y": 0
+    },
+    {
+      "id": "obj_D15R0101_1",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1078",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 16,
+      "z": 15,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 16,
+      "z": 21,
+      "header": "MAP_SINNOH_FULLMOON_ISLAND_EXTERIOR",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 17,
+      "z": 21,
+      "header": "MAP_SINNOH_FULLMOON_ISLAND_EXTERIOR",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

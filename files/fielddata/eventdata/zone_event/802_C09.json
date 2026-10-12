@@ -1,0 +1,230 @@
+{
+  "header": "fielddata/script/scr_seq/event_C09.h",
+  "bgs": [
+    {
+      "scriptId": "8399",
+      "type": 2,
+      "x": 381,
+      "z": 220,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C09_009 + 1",
+      "type": 1,
+      "x": 360,
+      "z": 240,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C09_010 + 1",
+      "type": 1,
+      "x": 363,
+      "z": 222,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_C09_0",
+      "spriteId": "SPRITE_WOMAN5",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 365,
+      "z": 243,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_3",
+      "spriteId": "SPRITE_SINNOH_BOY4",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_007 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 361,
+      "z": 216,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_4",
+      "spriteId": "SPRITE_SINNOH_GIRL4",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_005 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 376,
+      "z": 211,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_5",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 4,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_008 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 1,
+      "x": 373,
+      "z": 228,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_6",
+      "spriteId": "SPRITE_WOMAN5",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 367,
+      "z": 198,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_7",
+      "spriteId": "SPRITE_LEADER6",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_529",
+      "scriptId": "_EV_scr_seq_C09_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 366,
+      "z": 208,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_8",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_664",
+      "scriptId": "_EV_scr_seq_C09_011 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 356,
+      "z": 247,
+      "y": 458752
+    },
+    {
+      "id": "obj_C09_9",
+      "spriteId": "SPRITE_SINNOH_GIRL4",
+      "movement": 11,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C09_006 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 355,
+      "z": 221,
+      "y": 458752
+    }
+  ],
+  "warps": [
+    {
+      "x": 353,
+      "z": 208,
+      "header": "MAP_SINNOH_SNOWPOINT_NORTHWEST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 379,
+      "z": 208,
+      "header": "MAP_SINNOH_SNOWPOINT_NORTHEAST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 366,
+      "z": 197,
+      "header": "MAP_SINNOH_SNOWPOINT_TEMPLE_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 353,
+      "z": 232,
+      "header": "MAP_SINNOH_SNOWPOINT_POKEMART",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 379,
+      "z": 233,
+      "header": "MAP_SINNOH_SNOWPOINT_POKECENTER_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 367,
+      "z": 222,
+      "header": "MAP_SINNOH_SNOWPOINT_GYM",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 367,
+      "z": 197,
+      "header": "MAP_SINNOH_SNOWPOINT_TEMPLE_1F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_C09_002 + 1",
+      "x": 366,
+      "z": 198,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_407F"
+    }
+  ]
+}

@@ -516,7 +516,7 @@ _0772:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	SinnohShipCutscene 3, 2, MAP_SINNOH_CANALAVE, 39, 277
+	SinnohShipCutscene 3, 2, MAP_SINNOH_FULLMOON_ISLAND_EXTERIOR, 39, 277
 	ReleaseAll
 	End
 

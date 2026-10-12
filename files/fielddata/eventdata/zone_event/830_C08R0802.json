@@ -1,0 +1,15 @@
+{
+  "header": "fielddata/script/scr_seq/event_C08R0802.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 3,
+      "z": 6,
+      "header": "MAP_SINNOH_SUNYSHORE_VISTA_LIGHTHOUSE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

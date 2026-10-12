@@ -1,0 +1,412 @@
+{
+  "header": "fielddata/script/scr_seq/event_C08.h",
+  "bgs": [
+    {
+      "scriptId": "8405",
+      "type": 2,
+      "x": 855,
+      "z": 759,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8406",
+      "type": 2,
+      "x": 889,
+      "z": 792,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_012 + 1",
+      "type": 1,
+      "x": 848,
+      "z": 763,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_009 + 1",
+      "type": 1,
+      "x": 841,
+      "z": 788,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_010 + 1",
+      "type": 1,
+      "x": 847,
+      "z": 748,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_011 + 1",
+      "type": 1,
+      "x": 882,
+      "z": 790,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_013 + 1",
+      "type": 1,
+      "x": 885,
+      "z": 744,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_015 + 1",
+      "type": 1,
+      "x": 885,
+      "z": 770,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C08_014 + 1",
+      "type": 1,
+      "x": 858,
+      "z": 759,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_C08_0",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 883,
+      "z": 770,
+      "y": 458752
+    },
+    {
+      "id": "obj_C08_1",
+      "spriteId": "SPRITE_MIDDLEWOMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_005 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 856,
+      "z": 780,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_2",
+      "spriteId": "SPRITE_WOMAN1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_006 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 4,
+      "yRange": 0,
+      "x": 848,
+      "z": 785,
+      "y": 458752
+    },
+    {
+      "id": "obj_C08_3",
+      "spriteId": "SPRITE_WORKMAN",
+      "movement": 5,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 881,
+      "z": 793,
+      "y": 458752
+    },
+    {
+      "id": "obj_C08_7",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 5,
+      "x": 854,
+      "z": 754,
+      "y": 458752
+    },
+    {
+      "id": "obj_C08_9",
+      "spriteId": "SPRITE_SINNOH_MIKAN",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C08_008 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 857,
+      "z": 741,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_10",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 853,
+      "z": 751,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_11",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 853,
+      "z": 745,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_12",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 853,
+      "z": 755,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_16",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 884,
+      "z": 794,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_17",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1163",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 881,
+      "z": 779,
+      "y": 0
+    },
+    {
+      "id": "obj_C08_18",
+      "spriteId": "SPRITE_SINNOH_BIGFOUR3",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_599",
+      "scriptId": "_EV_scr_seq_C08_017 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 4,
+      "yRange": 0,
+      "x": 845,
+      "z": 748,
+      "y": 458752
+    },
+    {
+      "id": "obj_C08_19",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 878,
+      "z": 794,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 849,
+      "z": 762,
+      "header": "MAP_SINNOH_SUNYSHORE_MARKET",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 883,
+      "z": 743,
+      "header": "MAP_SINNOH_SUNYSHORE_JULIA_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 845,
+      "z": 768,
+      "header": "MAP_SINNOH_SUNYSHORE_WEST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 832,
+      "z": 790,
+      "header": "MAP_SINNOH_ROUTE_222_SUNYSHORE_GATEOUSE",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 875,
+      "z": 743,
+      "header": "MAP_SINNOH_SUNYSHORE_NORTH_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 853,
+      "z": 768,
+      "header": "MAP_SINNOH_SUNYSHORE_POKEMART",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 832,
+      "z": 791,
+      "header": "MAP_SINNOH_ROUTE_222_SUNYSHORE_GATEOUSE",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 832,
+      "z": 751,
+      "header": "MAP_SINNOH_SUNYSHORE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 832,
+      "z": 750,
+      "header": "MAP_SINNOH_SUNYSHORE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 888,
+      "z": 771,
+      "header": "MAP_SINNOH_SUNYSHORE_POKETCH_DEVELOPER_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 886,
+      "z": 790,
+      "header": "MAP_SINNOH_SUNYSHORE_VISTA_LIGHTHOUSE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 860,
+      "z": 784,
+      "header": "MAP_SINNOH_SUNYSHORE_POKECENTER_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 845,
+      "z": 747,
+      "header": "MAP_SINNOH_SUNYSHORE_GYM_ROOM_1",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 850,
+      "z": 762,
+      "header": "MAP_SINNOH_SUNYSHORE_MARKET",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_C08_007 + 1",
+      "x": 853,
+      "z": 743,
+      "w": 5,
+      "h": 1,
+      "y": 0,
+      "val": 1,
+      "var": "VAR_SINNOH_407E"
+    }
+  ]
+}

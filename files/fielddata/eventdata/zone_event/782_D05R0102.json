@@ -1,0 +1,153 @@
+{
+  "header": "fielddata/script/scr_seq/event_D05R0102.h",
+  "bgs": [
+    {
+      "scriptId": "8354",
+      "type": 2,
+      "x": 25,
+      "z": 11,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8355",
+      "type": 2,
+      "x": 16,
+      "z": 35,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D05R0102_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1156",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 31,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0102_1",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1158",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 23,
+      "z": 37,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0102_2",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1157",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 55,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0102_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1159",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 13,
+      "z": 60,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0102_4",
+      "spriteId": "SPRITE_SINNOH_T5_O01_C",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_595",
+      "scriptId": "_EV_scr_seq_D05R0102_000 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 7,
+      "z": 23,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 27,
+      "z": 48,
+      "header": "MAP_SINNOH_MOUNT_CORONET_SOUTH_1F",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "z": 59,
+      "header": "MAP_SINNOH_ROUTE_207",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "z": 23,
+      "header": "MAP_SINNOH_MOUNT_CORONET_SOUTH_2F",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "z": 12,
+      "header": "MAP_SINNOH_MOUNT_CORONET_SOUTH_2F",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 11,
+      "z": 4,
+      "header": "MAP_SINNOH_MOUNT_CORONET_SOUTH_3F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 21,
+      "z": 4,
+      "header": "MAP_SINNOH_MOUNT_CORONET_SOUTH_3F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_R217R0101.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_R217R0101_0",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 8,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_R217R0101_000 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_ROUTE_217",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -1,0 +1,31 @@
+{
+  "header": "fielddata/script/scr_seq/event_D20R0104.h",
+  "bgs": [
+    {
+      "scriptId": "8400",
+      "type": 2,
+      "x": 10,
+      "z": 8,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 6,
+      "z": 3,
+      "header": "MAP_SINNOH_SNOWPOINT_TEMPLE_B2F",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 14,
+      "z": 3,
+      "header": "MAP_SINNOH_SNOWPOINT_TEMPLE_B4F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

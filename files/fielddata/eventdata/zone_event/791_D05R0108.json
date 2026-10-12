@@ -1,0 +1,74 @@
+{
+  "header": "fielddata/script/scr_seq/event_D05R0108.h",
+  "bgs": [
+    {
+      "scriptId": "8386",
+      "type": 2,
+      "x": 27,
+      "z": 17,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8387",
+      "type": 2,
+      "x": 25,
+      "z": 25,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D05R0108_0",
+      "spriteId": "SPRITE_SINNOH_GINGAW",
+      "movement": 16,
+      "type": 1,
+      "eventFlag": "FLAG_SINNOH_685",
+      "scriptId": "std_trainer(TRAINER_SINNOH_GALACTIC_F_GRUNT_14)",
+      "facingDirection": 2,
+      "param0": 5,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 26,
+      "z": 16,
+      "y": 0
+    },
+    {
+      "id": "obj_D05R0108_1",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "FLAG_SINNOH_685",
+      "scriptId": "std_trainer(TRAINER_SINNOH_GALACTIC_GRUNT_29)",
+      "facingDirection": 1,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 20,
+      "z": 22,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 21,
+      "z": 7,
+      "header": "MAP_SINNOH_MOUNT_CORONET_4F_ROOM_3",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "z": 24,
+      "header": "MAP_SINNOH_MOUNT_CORONET_6F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

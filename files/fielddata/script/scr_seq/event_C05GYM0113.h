@@ -3,6 +3,11 @@
 
 #include "constants/sinnoh.h"
 
+#define _EV_scr_seq_C05GYM0113_000 0
+#define _EV_scr_seq_C05GYM0113_001 1
+#define _EV_scr_seq_C05GYM0113_002 2
+#define _EV_scr_seq_C05GYM0113_003 3
+#define _EV_scr_seq_C05GYM0113_004 4
 
 #define obj_C05GYM0113_0 0
 

@@ -127,7 +127,7 @@ _019D:
 	End
 
 _01A8:
-	// TODO Diamond ScrCmd_ShowCoinBox 0x075 args [20, 2]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShowCoinBox dropped: HeartGold has no coin box window
 	ShowMoneyBox 20, 7
 
 _01B4:
@@ -154,7 +154,7 @@ _01F3:
 	GoToIf 1, _02A0
 	SubMoneyImmediate 1000
 	// TODO Diamond ScrCmd_GiveCoins 0x079 args [50]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_UpdateCoinBox 0x077 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_UpdateCoinBox dropped: HeartGold has no coin box window
 	UpdateMoneyBox
 	PlayFanfare 1604
 	WaitSE 1604
@@ -172,7 +172,7 @@ _0242:
 	GoToIf 1, _02A0
 	SubMoneyImmediate 10000
 	// TODO Diamond ScrCmd_GiveCoins 0x079 args [500]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_UpdateCoinBox 0x077 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_UpdateCoinBox dropped: HeartGold has no coin box window
 	UpdateMoneyBox
 	PlayFanfare 1604
 	WaitSE 1604
@@ -184,7 +184,7 @@ _0291:
 	NPCMsg msg_1066_C07R0101_00004
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideCoinBox 0x076 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_HideCoinBox dropped: HeartGold has no coin box window
 	HideMoneyBox
 	ReleaseAll
 	End
@@ -193,7 +193,7 @@ _02A0:
 	NPCMsg msg_1066_C07R0101_00005
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideCoinBox 0x076 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_HideCoinBox dropped: HeartGold has no coin box window
 	HideMoneyBox
 	ReleaseAll
 	End
@@ -202,7 +202,7 @@ _02AF:
 	NPCMsg msg_1066_C07R0101_00006
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideCoinBox 0x076 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_HideCoinBox dropped: HeartGold has no coin box window
 	HideMoneyBox
 	ReleaseAll
 	End

@@ -101,6 +101,7 @@ SHARED_MATRIX_NAME = "SINNOH"
 MAP_PROJ_X = (32, 30)
 MAP_PROJ_Y = (22, 30)
 DEFAULT_MUSIC = "SEQ_GS_C_ASAGI"
+MAPSEC_RENAMES = {"VICTORY_ROAD": "VICTORY_ROAD_S"}   # HeartGold keeps Sinnoh's location names for met-location data, this one suffixed
 
 # Hand tweaks per Diamond map. TILE_OVERRIDES: (DP land id, x, z) -> (type, collision).
 # EXTRA_WARPS: list of warp dicts appended to the map's events.
@@ -423,6 +424,8 @@ TRANSLATE = {
     "ScrCmd_GetPokemonNickname": ("BufferPartyMonNick", "bv"), "ScrCmd_CheckPartyForSpecies": ("PlayerHasSpecies", "pv"),
     "ScrCmd_GetLeadingPartyMonSlot": ("GetPartyLead", "p"), "ScrCmd_WaitButtonAB": ("WaitButton", ""),
     "ScrCmd_GiveMon": ("GiveMon", "vvv00p"), "ScrCmd_WildBattle": ("WildBattle", "vv"),
+    "ScrCmd_LegendaryBattle": ("WildBattle", "vv"),   # Diamond's no-flee variant; HeartGold's plain wild battle for now
+    "ScrCmd_GetPokemonName": ("BufferSpeciesName", "bv00"), "ScrCmd_ReleaseEvent": ("Release", "o"),
     "ScrCmd_SetEventMovement": ("SetObjectMovementType", "oh"), "ScrCmd_RideBike": ("PlayerOnBikeSet", "b"),
     "ScrCmd_ShipAnimation": ("SinnohShipCutscene", "bbGhh"),   # src/sinnoh_ship_cutscene.c
     "ScrCmd_RestoreOverworld": ("RestoreOverworld", ""),
@@ -1202,7 +1205,7 @@ def main():
                         .dayMusicId = {music[0]},
                         .nightMusicId = {music[1]},
                         .eventsBank = NARC_zone_event_{evname}_bin,
-                        .mapsec = MAPSEC_{h['mapsec']},
+                        .mapsec = MAPSEC_{MAPSEC_RENAMES.get(h['mapsec'], h['mapsec'])},
                         .areaIcon = {1 if outdoor else 9},
                         .momCallIntroParam = 6,
                         .regionNo = MAP_REGION_SINNOH,

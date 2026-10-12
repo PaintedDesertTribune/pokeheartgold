@@ -30,7 +30,7 @@
 
 scr_seq_L02R0101_001:
 	SetFlag FLAG_SINNOH_2542
-	// TODO Diamond ScrCmd_GetHour 0x268 args [16384]: no HeartGold mapping yet
+	SetVar 0x4000, 12   // Diamond ScrCmd_GetHour: result fixed
 	CompareVarToValue 0x4000, 9
 	GoToIf 0, _0087
 	CompareVarToValue 0x4000, 23

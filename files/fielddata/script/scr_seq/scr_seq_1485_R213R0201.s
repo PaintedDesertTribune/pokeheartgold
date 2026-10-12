@@ -18,7 +18,7 @@ scr_seq_R213R0201_001:
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8002
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32770]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8002, 0, 0
 	BufferPlayersName 1
 	BufferPartyMonNick 2, 0x8002
 	// TODO Diamond ScrCmd_GetPokemonFootprint 0x23a args [32768, 32769, 32770]: no HeartGold mapping yet

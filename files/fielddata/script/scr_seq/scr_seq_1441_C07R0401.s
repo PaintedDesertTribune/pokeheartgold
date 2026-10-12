@@ -16,7 +16,7 @@ scr_seq_C07R0401_000:
 	FacePlayer
 	SetVar 0x4001, 19
 	NPCMsg msg_1067_C07R0401_00000
-	// TODO Diamond ScrCmd_ShowCoinBox 0x075 args [21, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShowCoinBox dropped: HeartGold has no coin box window
 	GoTo _002B
 
 _002B:
@@ -43,7 +43,7 @@ _002B:
 	NPCMsg msg_1067_C07R0401_00004
 	GiveItem 0x8000, 1, 0x800C
 	// TODO Diamond ScrCmd_TakeCoinsAddress 0x2a8 args [32769]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_UpdateCoinBox 0x077 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_UpdateCoinBox dropped: HeartGold has no coin box window
 	PlayFanfare 1604
 	WaitSE 1604
 	GoTo _002B
@@ -52,7 +52,7 @@ _00C8:
 	NPCMsg msg_1067_C07R0401_00007
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideCoinBox 0x076 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_HideCoinBox dropped: HeartGold has no coin box window
 	ReleaseAll
 	End
 

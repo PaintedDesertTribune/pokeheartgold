@@ -1,0 +1,57 @@
+{
+  "header": "fielddata/script/scr_seq/event_C10R0112.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C10R0112_0",
+      "spriteId": "SPRITE_CHAMPION",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_600",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 5,
+      "z": 22,
+      "y": 0
+    },
+    {
+      "id": "obj_C10R0112_1",
+      "spriteId": "SPRITE_SINNOH_DOCTOR",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_601",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 22,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 5,
+      "z": 2,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_HALL_OF_FAME",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "z": 23,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_CYNTHIA_ROOM",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

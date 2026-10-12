@@ -80,7 +80,7 @@ scr_seq_C04PC0101_005:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00F0
 	GetPartyLead 0x8000
-	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
+	BufferSpeciesName 0, 0x8000, 0, 0
 	NPCMsg msg_0948_C04PC0101_00007
 	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32768]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 120
