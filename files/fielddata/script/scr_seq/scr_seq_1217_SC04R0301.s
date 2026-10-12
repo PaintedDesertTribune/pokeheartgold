@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC04R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0955_SC04R0301_00000
@@ -93,7 +93,7 @@ _0125:
 	End
 
 scr_seq_SC04R0301_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_134
@@ -153,7 +153,7 @@ _01E0:
 	End
 
 scr_seq_SC04R0301_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x800C, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed

@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_ST07R0102_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2725
@@ -69,9 +69,9 @@ _00C1:
 
 _00CA:
 	CloseMsg
-	PlayFanfare 1634
+	PlayFanfare SEQ_SE_DP_FW367
 	Call _0104
-	WaitSE 1634
+	WaitSE SEQ_SE_DP_FW367
 	SetFlag FLAG_SINNOH_2725
 	SetVar 0x400A, 1
 	ApplyMovement 1, mv_ST07R0102_02C0
@@ -151,7 +151,7 @@ _01D5:
 	Return
 
 scr_seq_ST07R0102_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1249_ST07R0102_00010
@@ -161,7 +161,7 @@ scr_seq_ST07R0102_001:
 	End
 
 scr_seq_ST07R0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1249_ST07R0102_00011
@@ -171,7 +171,7 @@ scr_seq_ST07R0102_002:
 	End
 
 scr_seq_ST07R0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1249_ST07R0102_00012

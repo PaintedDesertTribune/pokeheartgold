@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_ST04R0501_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_279
@@ -86,7 +86,7 @@ _00FC:
 	End
 
 scr_seq_ST04R0501_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_279

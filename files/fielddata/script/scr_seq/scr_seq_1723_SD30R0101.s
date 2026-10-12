@@ -26,8 +26,8 @@ _001D:
 
 scr_seq_SD30R0101_002:
 	LockAll
-	PlayFanfare 1500
-	WaitSE 1500
+	PlayFanfare SEQ_SE_DP_SELECT
+	WaitSE SEQ_SE_DP_SELECT
 	NPCMsg msg_1208_SD30R0101_00000
 	CloseMsg
 	SetFlag FLAG_SINNOH_142

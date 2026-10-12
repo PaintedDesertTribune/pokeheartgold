@@ -31,7 +31,7 @@ _0042:
 	End
 
 scr_seq_SR202_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0872_SR202_00010

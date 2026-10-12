@@ -131,7 +131,7 @@ _0184:
 	BufferPlayersName 0
 	NPCMsg msg_0836_SC02R0103_00018
 	CloseMsg
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	// Diamond ScrCmd_ShakeCamera dropped: screen shake needs a HeartGold port (library cutscene)
 	NPCMsg msg_0836_SC02R0103_00019
 	CloseMsg
@@ -150,7 +150,7 @@ _0184:
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ApplyMovement 2, mv_SC02R0103_0290
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 2
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	SetVar VAR_SINNOH_4078, 4
@@ -165,7 +165,7 @@ _0184:
 	End
 
 scr_seq_SC02R0103_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -184,7 +184,7 @@ _0362:
 	End
 
 scr_seq_SC02R0103_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -203,7 +203,7 @@ _038B:
 	End
 
 scr_seq_SC02R0103_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00025
 	YesNo 0x800C
@@ -229,7 +229,7 @@ _03CD:
 	End
 
 scr_seq_SC02R0103_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00028
 	YesNo 0x800C
@@ -255,7 +255,7 @@ _040F:
 	End
 
 scr_seq_SC02R0103_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00031
 	YesNo 0x800C
@@ -281,7 +281,7 @@ _0451:
 	End
 
 scr_seq_SC02R0103_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00034
 	YesNo 0x800C
@@ -315,7 +315,7 @@ _0493:
 	End
 
 scr_seq_SC02R0103_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00039
 	YesNo 0x800C
@@ -349,7 +349,7 @@ _04FD:
 	End
 
 scr_seq_SC02R0103_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00044
 	YesNo 0x800C
@@ -375,7 +375,7 @@ _0567:
 	End
 
 scr_seq_SC02R0103_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00047
 	NPCMsg msg_0836_SC02R0103_00048
@@ -423,7 +423,7 @@ _05F0:
 	End
 
 scr_seq_SC02R0103_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0836_SC02R0103_00053
 	WaitButton

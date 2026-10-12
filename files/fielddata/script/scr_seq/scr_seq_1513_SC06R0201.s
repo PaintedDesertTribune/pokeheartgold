@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SC06R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2723
@@ -42,7 +42,7 @@ _0060:
 	End
 
 scr_seq_SC06R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1103_SC06R0201_00002

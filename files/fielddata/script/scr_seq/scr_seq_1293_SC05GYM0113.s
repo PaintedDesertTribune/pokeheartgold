@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_SC05GYM0113_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerFacing 0x800C
@@ -61,8 +61,8 @@ _0096:
 	NPCMsg msg_0993_SC05GYM0113_00001
 	BufferPlayersName 0
 	NPCMsg msg_0993_SC05GYM0113_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GiveBadge 4
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_CAMPER_DREW

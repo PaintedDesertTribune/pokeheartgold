@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SC01R0302_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0861_SC01R0302_00000
@@ -20,7 +20,7 @@ scr_seq_SC01R0302_000:
 	End
 
 scr_seq_SC01R0302_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0861_SC01R0302_00001

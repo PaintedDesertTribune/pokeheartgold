@@ -33,7 +33,7 @@ _0047:
 	End
 
 scr_seq_ST04_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1014_ST04_00000
@@ -43,7 +43,7 @@ scr_seq_ST04_000:
 	End
 
 scr_seq_ST04_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 4, 0x800C
@@ -63,7 +63,7 @@ _0088:
 	End
 
 scr_seq_ST04_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1014_ST04_00003
@@ -73,7 +73,7 @@ scr_seq_ST04_002:
 	End
 
 scr_seq_ST04_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1014_ST04_00004
@@ -83,7 +83,7 @@ scr_seq_ST04_003:
 	End
 
 scr_seq_ST04_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1014_ST04_00005
@@ -93,7 +93,7 @@ scr_seq_ST04_004:
 	End
 
 scr_seq_ST04_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)

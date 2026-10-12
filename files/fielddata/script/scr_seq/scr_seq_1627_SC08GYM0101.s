@@ -21,7 +21,7 @@ scr_seq_SC08GYM0101_001:
 	End
 
 scr_seq_SC08GYM0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 7, 0x800C
@@ -42,7 +42,7 @@ _0048:
 	End
 
 scr_seq_SC08GYM0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 7, 0x800C
 	CompareVarToValue 0x800C, 1

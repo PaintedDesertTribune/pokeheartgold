@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC05R0802_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1001_SC05R0802_00000
@@ -22,7 +22,7 @@ scr_seq_SC05R0802_000:
 	End
 
 scr_seq_SC05R0802_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1001_SC05R0802_00001
@@ -32,7 +32,7 @@ scr_seq_SC05R0802_001:
 	End
 
 scr_seq_SC05R0802_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1001_SC05R0802_00002
@@ -42,7 +42,7 @@ scr_seq_SC05R0802_002:
 	End
 
 scr_seq_SC05R0802_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1001_SC05R0802_00003

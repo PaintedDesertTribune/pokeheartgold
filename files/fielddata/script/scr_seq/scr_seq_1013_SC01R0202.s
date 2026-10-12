@@ -15,7 +15,7 @@ scr_seq_SC01R0202_002:
 	End
 
 scr_seq_SC01R0202_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0853_SC01R0202_00000
@@ -25,7 +25,7 @@ scr_seq_SC01R0202_000:
 	End
 
 scr_seq_SC01R0202_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_317

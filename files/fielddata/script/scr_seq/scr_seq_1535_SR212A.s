@@ -57,7 +57,7 @@ _0093:
 	End
 
 scr_seq_SR212A_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00000
@@ -91,7 +91,7 @@ scr_seq_SR212A_003:
 	End
 
 scr_seq_SR212A_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00001
@@ -101,7 +101,7 @@ scr_seq_SR212A_004:
 	End
 
 scr_seq_SR212A_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00002
@@ -111,7 +111,7 @@ scr_seq_SR212A_005:
 	End
 
 scr_seq_SR212A_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00003
@@ -121,7 +121,7 @@ scr_seq_SR212A_006:
 	End
 
 scr_seq_SR212A_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00004
@@ -131,7 +131,7 @@ scr_seq_SR212A_007:
 	End
 
 scr_seq_SR212A_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1114_SR212A_00005

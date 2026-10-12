@@ -67,7 +67,7 @@ scr_seq_SC01R0601_001:
 	End
 
 scr_seq_SC01R0601_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x800C, 0   // Diamond ScrCmd_CheckPartyForBadEgg: result fixed
@@ -223,7 +223,7 @@ _0340:
 	End
 
 scr_seq_SC01R0601_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00010
@@ -233,7 +233,7 @@ scr_seq_SC01R0601_003:
 	End
 
 scr_seq_SC01R0601_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00011
@@ -243,7 +243,7 @@ scr_seq_SC01R0601_004:
 	End
 
 scr_seq_SC01R0601_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00012
@@ -253,7 +253,7 @@ scr_seq_SC01R0601_005:
 	End
 
 scr_seq_SC01R0601_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00013
@@ -263,7 +263,7 @@ scr_seq_SC01R0601_006:
 	End
 
 scr_seq_SC01R0601_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00014
@@ -273,7 +273,7 @@ scr_seq_SC01R0601_007:
 	End
 
 scr_seq_SC01R0601_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0868_SC01R0601_00015

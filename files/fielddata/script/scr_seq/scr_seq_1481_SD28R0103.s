@@ -44,7 +44,7 @@ _0069:
 	Return
 
 scr_seq_SD28R0103_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	PlayCry 482, 0
@@ -76,7 +76,7 @@ _00CD:
 	End
 
 scr_seq_SD28R0103_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1087_SD28R0103_00000
 	CloseMsg

@@ -43,7 +43,7 @@ _006F:
 	End
 
 scr_seq_SR210A_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	HasItem 464, 1, 0x800C
@@ -163,7 +163,7 @@ _0240:
 	End
 
 scr_seq_SR210A_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1042_SR210A_00006
@@ -173,7 +173,7 @@ scr_seq_SR210A_001:
 	End
 
 scr_seq_SR210A_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_199
@@ -218,7 +218,7 @@ scr_seq_SR210A_004:
 	End
 
 scr_seq_SR210A_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1042_SR210A_00009

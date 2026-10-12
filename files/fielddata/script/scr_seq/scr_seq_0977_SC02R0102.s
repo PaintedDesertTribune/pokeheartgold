@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC02R0102_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -31,7 +31,7 @@ _0030:
 	End
 
 scr_seq_SC02R0102_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0835_SC02R0102_00002
 	WaitButton
@@ -40,7 +40,7 @@ scr_seq_SC02R0102_001:
 	End
 
 scr_seq_SC02R0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0835_SC02R0102_00003
 	WaitButton
@@ -49,7 +49,7 @@ scr_seq_SC02R0102_002:
 	End
 
 scr_seq_SC02R0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0835_SC02R0102_00004
 	WaitButton

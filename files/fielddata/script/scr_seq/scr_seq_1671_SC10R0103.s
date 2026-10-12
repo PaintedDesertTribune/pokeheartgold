@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SC10R0103_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_176
@@ -23,7 +23,7 @@ scr_seq_SC10R0103_000:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0060
 	SetFlag FLAG_SINNOH_176
-	PlayFanfare 1562
+	PlayFanfare SEQ_SE_DP_KI_GASYAN
 	HidePerson 2
 	// Diamond ScrCmd_Unk01CD dropped: Diamond misc save-data pointer setup
 	NPCMsg msg_1182_SC10R0103_00001
@@ -48,7 +48,7 @@ scr_seq_SC10R0103_001:
 	LockAll
 	ApplyMovement obj_player, mv_SC10R0103_0094
 	WaitMovement
-	PlayFanfare 1562
+	PlayFanfare SEQ_SE_DP_KI_GASYAN
 	ClearFlag FLAG_SINNOH_672
 	ShowPerson 1
 	SetVar 0x4001, 1

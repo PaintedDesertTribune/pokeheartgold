@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_ST03R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2730
@@ -43,7 +43,7 @@ _0064:
 	End
 
 scr_seq_ST03R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_128
@@ -65,7 +65,7 @@ _009E:
 	End
 
 scr_seq_ST03R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// TODO Diamond ScrCmd_AccessoriesShop 0x257 args []: no HeartGold mapping yet

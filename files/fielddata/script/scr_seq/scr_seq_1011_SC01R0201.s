@@ -94,7 +94,7 @@ scr_seq_SC01R0201_000:
 	End
 
 scr_seq_SC01R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0852_SC01R0201_00000
@@ -107,7 +107,7 @@ scr_seq_SC01R0201_002:
 	End
 
 scr_seq_SC01R0201_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40F2, 0
@@ -200,7 +200,7 @@ _0363:
 	End
 
 scr_seq_SC01R0201_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0852_SC01R0201_00021
@@ -210,7 +210,7 @@ scr_seq_SC01R0201_004:
 	End
 
 scr_seq_SC01R0201_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0852_SC01R0201_00022
@@ -223,7 +223,7 @@ scr_seq_SC01R0201_006:
 	End
 
 scr_seq_SC01R0201_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_IDOL_GRACE
@@ -258,7 +258,7 @@ _03F6:
 	End
 
 scr_seq_SC01R0201_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_REPORTER_KINSEY
@@ -293,7 +293,7 @@ _045B:
 	End
 
 scr_seq_SC01R0201_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_CAMERAMAN_TEVIN
@@ -328,7 +328,7 @@ _04C0:
 	End
 
 scr_seq_SC01R0201_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_CLOWN_LEE
@@ -363,7 +363,7 @@ _0525:
 	End
 
 scr_seq_SC01R0201_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_INTERVIEWERS_ROXY_OLI
@@ -408,7 +408,7 @@ _05A8:
 	End
 
 scr_seq_SC01R0201_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_INTERVIEWERS_ROXY_OLI
@@ -453,7 +453,7 @@ _062B:
 	End
 
 scr_seq_SC01R0201_014:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_POKE_KID_ARIEL
@@ -488,7 +488,7 @@ _0690:
 	End
 
 scr_seq_SC01R0201_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckTrainerFlag TRAINER_SINNOH_GUITARIST_ARTURO
@@ -528,7 +528,7 @@ _0700:
 	End
 
 scr_seq_SC01R0201_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0852_SC01R0201_00023

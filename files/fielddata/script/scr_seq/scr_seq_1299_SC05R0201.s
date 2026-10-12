@@ -18,7 +18,7 @@ scr_seq_SC05R0201_005:
 	End
 
 scr_seq_SC05R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_141
@@ -51,7 +51,7 @@ _008E:
 	End
 
 scr_seq_SC05R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8000
@@ -122,10 +122,10 @@ _014A:
 	End
 
 scr_seq_SC05R0201_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 54, 0
 	NPCMsg msg_0996_SC05R0201_00011
 	WaitCry
@@ -135,10 +135,10 @@ scr_seq_SC05R0201_002:
 	End
 
 scr_seq_SC05R0201_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 427, 0
 	NPCMsg msg_0996_SC05R0201_00012
 	WaitCry
@@ -148,10 +148,10 @@ scr_seq_SC05R0201_003:
 	End
 
 scr_seq_SC05R0201_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 35, 0
 	NPCMsg msg_0996_SC05R0201_00013
 	WaitCry

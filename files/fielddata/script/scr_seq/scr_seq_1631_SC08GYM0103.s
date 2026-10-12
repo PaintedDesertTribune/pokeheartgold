@@ -25,7 +25,7 @@ scr_seq_SC08GYM0103_002:
 	End
 
 scr_seq_SC08GYM0103_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 7, 0x800C
@@ -41,8 +41,8 @@ scr_seq_SC08GYM0103_003:
 	NPCMsg msg_1162_SC08GYM0103_00001
 	BufferPlayersName 0
 	NPCMsg msg_1162_SC08GYM0103_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GiveBadge 7
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_ACE_TRAINER_M_ZACHERY

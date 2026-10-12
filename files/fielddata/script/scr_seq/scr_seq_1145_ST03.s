@@ -82,7 +82,7 @@ _00F8:
 	End
 
 scr_seq_ST03_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	ApplyMovement 7, mv_ST03_0174
 	WaitMovement
@@ -97,7 +97,7 @@ scr_seq_ST03_002:
 	End
 
 scr_seq_ST03_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40CF, 2
@@ -119,7 +119,7 @@ _01B1:
 	End
 
 scr_seq_ST03_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0919_ST03_00010
@@ -129,7 +129,7 @@ scr_seq_ST03_004:
 	End
 
 scr_seq_ST03_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0919_ST03_00011
@@ -139,7 +139,7 @@ scr_seq_ST03_005:
 	End
 
 scr_seq_ST03_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0919_ST03_00012
@@ -149,7 +149,7 @@ scr_seq_ST03_006:
 	End
 
 scr_seq_ST03_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0919_ST03_00013

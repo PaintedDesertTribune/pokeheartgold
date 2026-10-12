@@ -42,7 +42,7 @@ _0073:
 	End
 
 scr_seq_SR222_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_206
@@ -71,7 +71,7 @@ _00CD:
 	End
 
 scr_seq_SR222_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1152_SR222_00003
@@ -113,7 +113,7 @@ scr_seq_SR222_005:
 	End
 
 scr_seq_SR222_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1152_SR222_00004

@@ -185,7 +185,7 @@ scr_seq_SD05R0114_002:
 	End
 
 scr_seq_SD05R0114_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_4098, 0
@@ -401,7 +401,7 @@ _073B:
 	Return
 
 scr_seq_SD05R0114_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1131_SD05R0114_00019
@@ -411,7 +411,7 @@ scr_seq_SD05R0114_010:
 	End
 
 scr_seq_SD05R0114_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1131_SD05R0114_00017
@@ -449,8 +449,8 @@ scr_seq_SD05R0114_004:
 	BufferRivalsName 0
 	BufferPlayersName 1
 	NPCMsg msg_1131_SD05R0114_00020
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	HealParty
 	NPCMsg msg_1131_SD05R0114_00021
 	NPCMsg msg_1131_SD05R0114_00022
@@ -586,7 +586,7 @@ _0A94:
 	ClearFlag FLAG_SINNOH_190
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [4, 32780]: no HeartGold mapping yet
 	Wait 30, 0x800C
-	PlayFanfare 1529
+	PlayFanfare SEQ_SE_DP_W025
 	Wait 90, 0x800C
 	SetVar 0x8005, 23
 	SetVar 0x8006, 24
@@ -616,7 +616,7 @@ _0A94:
 	CloseMsg
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [5, 32780]: no HeartGold mapping yet
 	Wait 30, 0x800C
-	PlayFanfare 1530
+	PlayFanfare SEQ_SE_DP_W060C
 
 _0B47:
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [6, 32780]: no HeartGold mapping yet
@@ -940,7 +940,7 @@ _10F7:
 scr_seq_SD05R0114_006:
 	CompareVarToValue VAR_SINNOH_4098, 3
 	GoToIf 5, _1161
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferPlayersName 0
@@ -960,7 +960,7 @@ _1161:
 	End
 
 _1181:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1131_SD05R0114_00047
@@ -970,7 +970,7 @@ _1181:
 	End
 
 _1194:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1131_SD05R0114_00046
@@ -982,7 +982,7 @@ _1194:
 scr_seq_SD05R0114_007:
 	CompareVarToValue VAR_SINNOH_4098, 3
 	GoToIf 5, _11DD
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferPlayersName 0
@@ -997,7 +997,7 @@ scr_seq_SD05R0114_007:
 
 _11DD:
 	BufferPlayersName 0
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1131_SD05R0114_00045

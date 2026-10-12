@@ -27,7 +27,7 @@ scr_seq_SC10_001:
 	End
 
 scr_seq_SC10_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1176_SC10_00000
 	WaitButton

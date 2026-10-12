@@ -41,7 +41,7 @@ scr_seq_SD02R0101_001:
 	End
 
 scr_seq_SD02R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0931_SD02R0101_00001
@@ -170,7 +170,7 @@ _0250:
 	End
 
 scr_seq_SD02R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40CF, 3
@@ -189,7 +189,7 @@ _031C:
 	End
 
 scr_seq_SD02R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40CF, 3

@@ -16,7 +16,7 @@ scr_seq_SC01R0101_003:
 	End
 
 scr_seq_SC01R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0849_SC01R0101_00000
@@ -147,7 +147,7 @@ _01B4:
 	End
 
 scr_seq_SC01R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0849_SC01R0101_00015
@@ -157,7 +157,7 @@ scr_seq_SC01R0101_001:
 	End
 
 scr_seq_SC01R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0849_SC01R0101_00016

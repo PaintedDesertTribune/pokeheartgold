@@ -22,8 +22,8 @@ _0017:
 
 scr_seq_SD20R0106_001:
 	LockAll
-	PlayFanfare 1500
-	WaitSE 1500
+	PlayFanfare SEQ_SE_DP_SELECT
+	WaitSE SEQ_SE_DP_SELECT
 	CheckFlag FLAG_SINNOH_282
 	GoToIf 1, _0081
 	// TODO Diamond ScrCmd_CheckRegis 0x26b args [32780]: no HeartGold mapping yet

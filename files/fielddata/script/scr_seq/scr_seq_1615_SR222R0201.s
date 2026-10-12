@@ -14,7 +14,7 @@ scr_seq_SR222R0201_000:
 	End
 
 scr_seq_SR222R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	PlayerHasSpecies 0x800C, 223

@@ -1,3 +1,4 @@
+#include "field/gymmick/sinnoh_canalave.h" // Sinnoh port
 #include "field/field_control.h"
 
 #include "error_handling.h"
@@ -651,6 +652,9 @@ static u16 GetInteractedMetatileScript(FieldSystem *fieldSystem, u8 metatileBeha
 }
 
 static BOOL FieldSystem_ProcessStep(FieldSystem *fieldSystem) {
+    if (FieldSystem_IsSaveGymmickTypeEqualTo(fieldSystem, GYMMICK_SINNOH_CANALAVE) && SinnohCanalaveGymmick_ProcessStep(fieldSystem)) { // Sinnoh port
+        return TRUE;
+    }
     if (FieldSystem_IsSaveGymmickTypeEqualTo(fieldSystem, GYMMICK_BLACKTHORN) && ov04_02255090(fieldSystem)) {
         return TRUE;
     } else if (ov01_021F3114(fieldSystem, fieldSystem->playerAvatar, PlayerAvatar_GetFacingDirection(fieldSystem->playerAvatar)) == 1) {

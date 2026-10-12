@@ -52,7 +52,7 @@ _0090:
 	End
 
 scr_seq_SD16R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_409E, 1

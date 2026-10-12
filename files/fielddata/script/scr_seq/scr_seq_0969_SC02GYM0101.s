@@ -12,11 +12,11 @@
 	ScrDefEnd
 
 scr_seq_SC02GYM0101_000:
-	// Diamond ScrCmd_InitCanalaveGym dropped: Canalave Gym lift puzzle needs a HeartGold port
+	SinnohCanalaveGymInit
 	End
 
 scr_seq_SC02GYM0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 5, 0x800C
@@ -32,8 +32,8 @@ scr_seq_SC02GYM0101_001:
 	NPCMsg msg_0831_SC02GYM0101_00001
 	BufferPlayersName 0
 	NPCMsg msg_0831_SC02GYM0101_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GiveBadge 5
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_BLACK_BELT_DAVID
@@ -91,7 +91,7 @@ _011C:
 	End
 
 scr_seq_SC02GYM0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 5, 0x800C
@@ -112,7 +112,7 @@ _0148:
 	End
 
 scr_seq_SC02GYM0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 5, 0x800C
 	CompareVarToValue 0x800C, 1

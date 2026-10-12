@@ -15,7 +15,7 @@ scr_seq_SW226R0101_000:
 	End
 
 scr_seq_SW226R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_245
@@ -87,7 +87,7 @@ _00DC:
 	End
 
 scr_seq_SW226R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1231_SW226R0101_00007
 	WaitButton

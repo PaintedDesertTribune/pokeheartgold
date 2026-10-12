@@ -14,7 +14,7 @@ scr_seq_SD24_000:
 	End
 
 scr_seq_SD24_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerFacing 0x8004
@@ -48,7 +48,7 @@ _006D:
 _0078:
 	ApplyMovement 0, mv_SD24_00C8
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement 0, mv_SD24_00D4
 	WaitMovement
 	Return
@@ -56,7 +56,7 @@ _0078:
 _0092:
 	ApplyMovement obj_player, mv_SD24_00DC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SD24_00D4
 	WaitMovement
 	Return
@@ -64,7 +64,7 @@ _0092:
 _00AC:
 	ApplyMovement obj_player, mv_SD24_00EC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SD24_00D4
 	WaitMovement
 	Return

@@ -132,7 +132,7 @@ _01BB:
 	CloseMsg
 	ApplyMovement 1, mv_SD27R0101_04D0
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 0
 	HidePerson 1
 	Wait 50, 0x800C
@@ -163,7 +163,7 @@ _01BB:
 	ClearFlag FLAG_SINNOH_429
 	ShowPerson 3
 	ShowPerson 2
-	PlayFanfare 1609
+	PlayFanfare SEQ_SE_DP_FW019
 	ApplyMovement 3, mv_SD27R0101_0650
 	ApplyMovement 2, mv_SD27R0101_0658
 	WaitMovement
@@ -263,7 +263,7 @@ _036C:
 	ApplyMovement 5, mv_SD27R0101_05A8
 	ApplyMovement obj_player, mv_SD27R0101_0634
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_VERITY_LAKEFRONT, 0, 81, 842, 1
@@ -273,7 +273,7 @@ _036C:
 	End
 
 scr_seq_SD27R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_184
@@ -295,7 +295,7 @@ _0685:
 	End
 
 scr_seq_SD27R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerGender 0x800C

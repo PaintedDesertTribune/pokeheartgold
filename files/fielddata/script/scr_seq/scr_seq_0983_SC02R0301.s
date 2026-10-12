@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC02R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_1
@@ -71,8 +71,8 @@ _0054:
 _0105:
 	// TODO Diamond ScrCmd_ForgetPartyMonMove 0x1c9 args [32770, 32769]: no HeartGold mapping yet
 	NPCMsg msg_0838_SC02R0301_00008
-	PlaySE 1165
-	WaitSE 1165
+	PlaySE SEQ_ME_WASURE
+	WaitSE SEQ_ME_WASURE
 	WaitButton
 	CloseMsg
 	End

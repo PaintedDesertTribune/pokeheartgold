@@ -24,7 +24,7 @@ scr_seq_ST01R0102_000:
 	ApplyMovement 0, mv_ST01R0102_006C
 	ApplyMovement obj_player, mv_ST01R0102_0084
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 0
 	CallStd std_sinnoh_default_bgm
 	SetFlag FLAG_SINNOH_234
@@ -35,7 +35,7 @@ scr_seq_ST01R0102_000:
 	End
 
 scr_seq_ST01R0102_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0884_ST01R0102_00002
 	WaitButton
@@ -44,7 +44,7 @@ scr_seq_ST01R0102_001:
 	End
 
 scr_seq_ST01R0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	BufferPlayersName 0
 	NPCMsg msg_0884_ST01R0102_00003

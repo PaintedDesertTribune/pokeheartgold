@@ -294,7 +294,7 @@ _04C4:
 	End
 
 scr_seq_SR201_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0881_SR201_00011
@@ -304,7 +304,7 @@ scr_seq_SR201_008:
 	End
 
 scr_seq_SR201_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0881_SR201_00014
@@ -314,7 +314,7 @@ scr_seq_SR201_010:
 	End
 
 scr_seq_SR201_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_144
@@ -333,7 +333,7 @@ _061A:
 	GoTo _0612
 
 scr_seq_SR201_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_108

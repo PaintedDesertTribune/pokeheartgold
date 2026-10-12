@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC04R0204_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	ApplyMovement 2, mv_SC04R0204_014C
@@ -90,10 +90,10 @@ _0146:
 	End
 
 scr_seq_SC04R0204_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 35, 0
 	NPCMsg msg_0954_SC04R0204_00002
 	WaitCry
@@ -103,10 +103,10 @@ scr_seq_SC04R0204_001:
 	End
 
 scr_seq_SC04R0204_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 427, 0
 	NPCMsg msg_0954_SC04R0204_00005
 	WaitCry
@@ -116,7 +116,7 @@ scr_seq_SC04R0204_002:
 	End
 
 scr_seq_SC04R0204_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_129

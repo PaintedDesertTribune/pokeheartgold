@@ -71,7 +71,7 @@ _00B6:
 	Return
 
 scr_seq_SR218R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0842_SR218R0201_00000

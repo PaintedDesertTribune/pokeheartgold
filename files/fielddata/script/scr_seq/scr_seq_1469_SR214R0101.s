@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SR214R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// TODO Diamond ScrCmd_CountSeenUnown 0x284 args [16384]: no HeartGold mapping yet

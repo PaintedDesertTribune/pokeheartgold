@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_SR204B_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0918_SR204B_00000
@@ -23,7 +23,7 @@ scr_seq_SR204B_000:
 	End
 
 scr_seq_SR204B_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_197

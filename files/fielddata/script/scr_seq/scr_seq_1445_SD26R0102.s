@@ -15,7 +15,7 @@
 	ScrDefEnd
 
 scr_seq_SD26R0102_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00000
 	YesNo 0x800C
@@ -29,8 +29,8 @@ _003A:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	HealParty
 	FadeScreen 6, 1, 1, 0
 	WaitFade
@@ -47,7 +47,7 @@ _0070:
 	End
 
 scr_seq_SD26R0102_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00003
 	WaitButton
@@ -56,7 +56,7 @@ scr_seq_SD26R0102_001:
 	End
 
 scr_seq_SD26R0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00004
 	WaitButton
@@ -65,7 +65,7 @@ scr_seq_SD26R0102_002:
 	End
 
 scr_seq_SD26R0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00005
 	WaitButton
@@ -74,7 +74,7 @@ scr_seq_SD26R0102_003:
 	End
 
 scr_seq_SD26R0102_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00006
 	WaitButton
@@ -83,7 +83,7 @@ scr_seq_SD26R0102_004:
 	End
 
 scr_seq_SD26R0102_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1069_SD26R0102_00007
 	WaitButton

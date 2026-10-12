@@ -3,6 +3,7 @@
 #include "global.h"
 
 #include "gymmick.h"
+#include "field/gymmick/sinnoh_canalave.h"
 #include "overlay_04.h"
 #include "save_misc_data.h"
 #include "scrcmd.h"
@@ -52,6 +53,7 @@ static const FieldSystemFunc1 sInitFuncs[] = {
     [GYMMICK_FUCHSIA] = GymmickInit_Fuchsia,
     [GYMMICK_VIRIDIAN] = GymmickInit_Viridian,
     [GYMMICK_SINJOH] = GymmickInit_Sinjoh,
+    [GYMMICK_SINNOH_CANALAVE] = GymmickInit_SinnohCanalave,
 };
 
 static const FieldSystemFunc1 sFreeFuncs[] = {
@@ -65,6 +67,7 @@ static const FieldSystemFunc1 sFreeFuncs[] = {
     [GYMMICK_FUCHSIA] = GymmickFree_Fuchsia,
     [GYMMICK_VIRIDIAN] = GymmickFree_Viridian,
     [GYMMICK_SINJOH] = GymmickFree_Sinjoh,
+    [GYMMICK_SINNOH_CANALAVE] = GymmickFree_SinnohCanalave,
 };
 
 static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
@@ -78,4 +81,5 @@ static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
     [GYMMICK_FUCHSIA] = NULL,
     [GYMMICK_VIRIDIAN] = NULL,
     [GYMMICK_SINJOH] = NULL,
+    [GYMMICK_SINNOH_CANALAVE] = GymmickCheckCollision_SinnohCanalave,
 };

@@ -154,7 +154,7 @@ _01F4:
 	End
 
 scr_seq_SC01_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 0, 0x800C
@@ -174,7 +174,7 @@ _025A:
 	End
 
 scr_seq_SC01_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00072
@@ -339,7 +339,7 @@ _0536:
 	End
 
 scr_seq_SC01_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 0, 0x800C
@@ -585,7 +585,7 @@ _0995:
 	End
 
 scr_seq_SC01_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00059
@@ -621,7 +621,7 @@ _0B56:
 	End
 
 scr_seq_SC01_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00063
@@ -631,7 +631,7 @@ scr_seq_SC01_006:
 	End
 
 scr_seq_SC01_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00067
@@ -641,7 +641,7 @@ scr_seq_SC01_009:
 	End
 
 scr_seq_SC01_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00064
@@ -651,7 +651,7 @@ scr_seq_SC01_007:
 	End
 
 scr_seq_SC01_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00068
@@ -677,7 +677,7 @@ _0BD0:
 	End
 
 scr_seq_SC01_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00065
@@ -784,7 +784,7 @@ _0D17:
 	Return
 
 scr_seq_SC01_017:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x8004, 0
@@ -823,8 +823,8 @@ _0DD7:
 	// Diamond ScrCmd_UnlockPoketchApp dropped: Pokétch dropped (decision 16)
 	BufferPlayersName 0
 	NPCMsg msg_0845_SC01_00025
-	PlaySE 1158
-	WaitSE 1158
+	PlaySE SEQ_ME_ITEM
+	WaitSE SEQ_ME_ITEM
 	NPCMsg msg_0845_SC01_00026
 	CloseMsg
 	GetPlayerFacing 0x800C
@@ -858,7 +858,7 @@ _0E89:
 	End
 
 scr_seq_SC01_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_237
@@ -872,7 +872,7 @@ scr_seq_SC01_013:
 	End
 
 _0F02:
-	PlayFanfare 1521
+	PlayFanfare SEQ_SE_DP_PINPON
 	NPCMsg msg_0845_SC01_00028
 	NPCMsg msg_0845_SC01_00030
 	NPCMsg msg_0845_SC01_00031
@@ -885,7 +885,7 @@ _0F02:
 	End
 
 _0F29:
-	PlayFanfare 1523
+	PlayFanfare SEQ_SE_DP_BOX03
 	NPCMsg msg_0845_SC01_00029
 	WaitButton
 	CloseMsg
@@ -900,7 +900,7 @@ _0F38:
 	End
 
 scr_seq_SC01_014:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_238
@@ -914,7 +914,7 @@ scr_seq_SC01_014:
 	End
 
 _0F79:
-	PlayFanfare 1521
+	PlayFanfare SEQ_SE_DP_PINPON
 	NPCMsg msg_0845_SC01_00034
 	NPCMsg msg_0845_SC01_00036
 	NPCMsg msg_0845_SC01_00037
@@ -927,7 +927,7 @@ _0F79:
 	End
 
 _0FA0:
-	PlayFanfare 1523
+	PlayFanfare SEQ_SE_DP_BOX03
 	NPCMsg msg_0845_SC01_00035
 	WaitButton
 	CloseMsg
@@ -942,7 +942,7 @@ _0FAF:
 	End
 
 scr_seq_SC01_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40E7, 2
@@ -958,7 +958,7 @@ scr_seq_SC01_015:
 	End
 
 _0FFD:
-	PlayFanfare 1521
+	PlayFanfare SEQ_SE_DP_PINPON
 	NPCMsg msg_0845_SC01_00040
 	NPCMsg msg_0845_SC01_00042
 	NPCMsg msg_0845_SC01_00043
@@ -972,7 +972,7 @@ _0FFD:
 	End
 
 _1030:
-	PlayFanfare 1523
+	PlayFanfare SEQ_SE_DP_BOX03
 	NPCMsg msg_0845_SC01_00041
 	WaitButton
 	CloseMsg
@@ -994,7 +994,7 @@ _104A:
 	End
 
 scr_seq_SC01_019:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00073
@@ -1004,7 +1004,7 @@ scr_seq_SC01_019:
 	End
 
 scr_seq_SC01_020:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00074

@@ -66,7 +66,7 @@ scr_seq_SC02R0401_001:
 	BufferPlayersName 0
 	NPCMsg msg_0839_SC02R0401_00001
 	CloseMsg
-	PlayFanfare 1590
+	PlayFanfare SEQ_SE_DP_MAZYO2
 	SetFlag FLAG_SINNOH_316
 	SetFlag FLAG_SINNOH_607
 	SetVar VAR_SINNOH_40F8, 2
@@ -92,8 +92,8 @@ scr_seq_SC02R0401_002:
 	LockAll
 	Call _0184
 	// Diamond ScrCmd_Unk02B5 dropped: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	BufferPlayersName 0
 	NPCMsg msg_0839_SC02R0401_00002
 	WaitButton

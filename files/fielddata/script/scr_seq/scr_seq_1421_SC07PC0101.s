@@ -16,7 +16,7 @@ scr_seq_SC07PC0101_000:
 	End
 
 scr_seq_SC07PC0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferTMHMMoveName 0, 422
@@ -27,7 +27,7 @@ scr_seq_SC07PC0101_001:
 	End
 
 scr_seq_SC07PC0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1057_SC07PC0101_00001

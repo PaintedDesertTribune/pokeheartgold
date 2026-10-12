@@ -949,6 +949,14 @@
 #define SINNOH_HIDDEN_ITEM_FIRST_IDX 231   // hidden-item indices from here on are Sinnoh's
 #define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x1060   // their flags (stock 800+idx would hit story flags)
 
+#define SINNOH_BM_CANALAVE_FLOOR_1 280   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_FLOOR_2 281   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_FLOOR_3 282   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_LIFT_TALL 279   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_LIFT_V 278   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_LIFT_X 277   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_CANALAVE_LIFT_Z 276   // Diamond build model, placed at runtime by gymmick code
+
 #define std_sinnoh_partner_theme 2072   // appended to HeartGold's misc std bank
 #define std_sinnoh_rival_theme 2073   // appended to HeartGold's misc std bank
 #define std_sinnoh_default_bgm 2074   // appended to HeartGold's misc std bank

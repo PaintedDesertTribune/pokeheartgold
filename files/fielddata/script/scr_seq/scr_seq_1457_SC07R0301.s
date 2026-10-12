@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_350
@@ -49,7 +49,7 @@ _0058:
 	End
 
 scr_seq_SC07R0301_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	HasItem 463, 1, 0x800C
@@ -76,8 +76,8 @@ _00AE:
 	BufferPlayersName 0
 	NPCMsg msg_1075_SC07R0301_00006
 	WaitButton
-	WaitSE 1500
-	PlayFanfare 1544
+	WaitSE SEQ_SE_DP_SELECT
+	PlayFanfare SEQ_SE_DP_DOOR10
 	ApplyMovement 3, mv_SC07R0301_00F0
 	ApplyMovement 4, mv_SC07R0301_00F8
 	WaitMovement

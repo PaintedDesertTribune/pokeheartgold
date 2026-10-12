@@ -31,7 +31,7 @@ _elev_SC05GYM0106_0016:
 
 scr_seq_SC05GYM0106_002:
 	LockAll
-	PlayFanfare 1572
+	PlayFanfare SEQ_SE_DP_UG_020
 	NPCMsg msg_0987_SC05GYM0106_00001
 	WaitButton
 	CloseMsg
@@ -39,10 +39,10 @@ scr_seq_SC05GYM0106_002:
 	End
 
 scr_seq_SC05GYM0106_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0987_SC05GYM0106_00000
-	PlayFanfare 1591
+	PlayFanfare SEQ_SE_DP_MAZYO4
 	WaitButton
 	CloseMsg
 	ReleaseAll

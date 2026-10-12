@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC05R0901_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_305
@@ -56,9 +56,9 @@ _0093:
 	GoToIf 1, _0118
 	NPCMsg msg_0995_SC05R0901_00004
 	BufferPlayersName 0
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_0995_SC05R0901_00005
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	GiveMon 133, 5, 0, 0, 0, 0x800C
 	SetFlag FLAG_SINNOH_305
 	NPCMsg msg_0995_SC05R0901_00006

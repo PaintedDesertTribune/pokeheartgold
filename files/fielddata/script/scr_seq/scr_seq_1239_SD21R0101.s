@@ -28,7 +28,7 @@ _002B:
 	End
 
 scr_seq_SD21R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	PlayerOnBikeSet 0
@@ -40,9 +40,9 @@ scr_seq_SD21R0101_001:
 	CheckFlag FLAG_SINNOH_224
 	CallIf 1, _0098
 	BufferPlayersName 0
-	PlaySE 1153
+	PlaySE SEQ_ME_HYOUKA2
 	NPCMsg msg_0966_SD21R0101_00001
-	WaitSE 1153
+	WaitSE SEQ_ME_HYOUKA2
 	SetFlag FLAG_SINNOH_224
 	SetVar VAR_SINNOH_4091, 1
 	NPCMsg msg_0966_SD21R0101_00002
@@ -143,7 +143,7 @@ _018A:
 	End
 
 scr_seq_SD21R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0966_SD21R0101_00006
@@ -153,7 +153,7 @@ scr_seq_SD21R0101_004:
 	End
 
 scr_seq_SD21R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0966_SD21R0101_00007

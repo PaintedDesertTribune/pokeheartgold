@@ -59,7 +59,7 @@ _00A6:
 	End
 
 scr_seq_SL02_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_262
 	GoToIf 1, _0155
@@ -146,7 +146,7 @@ _01EC:
 	End
 
 scr_seq_SL02_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1082_SL02_00004
@@ -197,7 +197,7 @@ _02F8:
 	End
 
 scr_seq_SL02_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1082_SL02_00009
@@ -207,7 +207,7 @@ scr_seq_SL02_004:
 	End
 
 scr_seq_SL02_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1082_SL02_00010
@@ -217,7 +217,7 @@ scr_seq_SL02_006:
 	End
 
 scr_seq_SL02_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	HasItem 451, 1, 0x800C
@@ -258,7 +258,7 @@ scr_seq_SL02_007:
 	End
 
 scr_seq_SL02_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1082_SL02_00012

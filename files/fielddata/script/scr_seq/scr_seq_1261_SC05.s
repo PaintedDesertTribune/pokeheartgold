@@ -261,7 +261,7 @@ _03F5:
 	Return
 
 scr_seq_SC05_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00006
@@ -271,7 +271,7 @@ scr_seq_SC05_002:
 	End
 
 scr_seq_SC05_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00007
@@ -281,7 +281,7 @@ scr_seq_SC05_003:
 	End
 
 scr_seq_SC05_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_251
@@ -298,9 +298,9 @@ _054C:
 	GetPartyCount 0x800C
 	CompareVarToValue 0x800C, 6
 	GoToIf 1, _058E
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_0977_SC05_00027
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	// TODO Diamond ScrCmd_GiveEgg 0x097 args [440, 9]: no HeartGold mapping yet
 	SetFlag FLAG_SINNOH_251
 	GoTo _0578
@@ -351,7 +351,7 @@ scr_seq_SC05_005:
 	End
 
 scr_seq_SC05_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00011
@@ -361,7 +361,7 @@ scr_seq_SC05_006:
 	End
 
 scr_seq_SC05_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00012
@@ -371,7 +371,7 @@ scr_seq_SC05_007:
 	End
 
 scr_seq_SC05_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00014
@@ -381,7 +381,7 @@ scr_seq_SC05_008:
 	End
 
 scr_seq_SC05_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00016
@@ -391,7 +391,7 @@ scr_seq_SC05_009:
 	End
 
 scr_seq_SC05_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00024
@@ -401,10 +401,10 @@ scr_seq_SC05_010:
 	End
 
 scr_seq_SC05_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 417, 0
 	NPCMsg msg_0977_SC05_00025
 	WaitCry
@@ -414,7 +414,7 @@ scr_seq_SC05_011:
 	End
 
 scr_seq_SC05_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_1
@@ -484,7 +484,7 @@ _077C:
 	End
 
 scr_seq_SC05_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00022
@@ -494,7 +494,7 @@ scr_seq_SC05_013:
 	End
 
 scr_seq_SC05_014:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00015
@@ -504,7 +504,7 @@ scr_seq_SC05_014:
 	End
 
 scr_seq_SC05_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0977_SC05_00023
 	WaitButton
@@ -513,7 +513,7 @@ scr_seq_SC05_015:
 	End
 
 scr_seq_SC05_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00031
@@ -760,7 +760,7 @@ _0C56:
 	End
 
 scr_seq_SC05_017:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00054
@@ -770,7 +770,7 @@ scr_seq_SC05_017:
 	End
 
 scr_seq_SC05_018:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0977_SC05_00055
 	WaitButton
@@ -779,7 +779,7 @@ scr_seq_SC05_018:
 	End
 
 scr_seq_SC05_019:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00056
@@ -789,7 +789,7 @@ scr_seq_SC05_019:
 	End
 
 scr_seq_SC05_020:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00057
@@ -799,7 +799,7 @@ scr_seq_SC05_020:
 	End
 
 scr_seq_SC05_021:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0977_SC05_00003

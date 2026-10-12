@@ -207,7 +207,7 @@ scr_seq_SL02R0101_002:
 	End
 
 scr_seq_SL02R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1085_SL02R0101_00000
@@ -217,7 +217,7 @@ scr_seq_SL02R0101_000:
 	End
 
 scr_seq_SL02R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_ARTIST_ISMAEL
 	CheckTrainerFlag TRAINER_SINNOH_ARTIST_ISMAEL
@@ -354,7 +354,7 @@ _04CF:
 	Return
 
 scr_seq_SL02R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_BEAUTY_HARLEY
 	CheckTrainerFlag TRAINER_SINNOH_BEAUTY_HARLEY
@@ -491,7 +491,7 @@ _0679:
 	Return
 
 scr_seq_SL02R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_RICH_BOY_ROMAN
 	CheckTrainerFlag TRAINER_SINNOH_RICH_BOY_ROMAN
@@ -628,7 +628,7 @@ _0823:
 	Return
 
 scr_seq_SL02R0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_LADY_KYLIE
 	CheckTrainerFlag TRAINER_SINNOH_LADY_KYLIE
@@ -765,7 +765,7 @@ _09CD:
 	Return
 
 scr_seq_SL02R0101_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_GENTLEMAN_LEONARDO
 	CheckTrainerFlag TRAINER_SINNOH_GENTLEMAN_LEONARDO
@@ -902,7 +902,7 @@ _0B77:
 	Return
 
 scr_seq_SL02R0101_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_SOCIALITE_REBECCA
 	CheckTrainerFlag TRAINER_SINNOH_SOCIALITE_REBECCA
@@ -1039,7 +1039,7 @@ _0D21:
 	Return
 
 scr_seq_SL02R0101_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_COLLECTOR_EUGENE
 	CheckTrainerFlag TRAINER_SINNOH_COLLECTOR_EUGENE
@@ -1176,7 +1176,7 @@ _0ECB:
 	Return
 
 scr_seq_SL02R0101_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_AROMA_LADY_ALISON
 	CheckTrainerFlag TRAINER_SINNOH_AROMA_LADY_ALISON
@@ -1313,7 +1313,7 @@ _1075:
 	Return
 
 scr_seq_SL02R0101_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_SCHOOL_KID_M_ESTEBAN
 	CheckTrainerFlag TRAINER_SINNOH_SCHOOL_KID_M_ESTEBAN
@@ -1450,7 +1450,7 @@ _121F:
 	Return
 
 scr_seq_SL02R0101_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_POKEFAN_F_MEREDITH
 	CheckTrainerFlag TRAINER_SINNOH_POKEFAN_F_MEREDITH
@@ -1587,7 +1587,7 @@ _13C9:
 	Return
 
 scr_seq_SL02R0101_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_VETERAN_EMANUEL
 	CheckTrainerFlag TRAINER_SINNOH_VETERAN_EMANUEL
@@ -1724,7 +1724,7 @@ _1573:
 	Return
 
 scr_seq_SL02R0101_014:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_LASS_BLYTHE
 	CheckTrainerFlag TRAINER_SINNOH_LASS_BLYTHE
@@ -1861,7 +1861,7 @@ _171D:
 	Return
 
 scr_seq_SL02R0101_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_CAMERAMAN_DARRYL
 	CheckTrainerFlag TRAINER_SINNOH_CAMERAMAN_DARRYL
@@ -1998,7 +1998,7 @@ _18C7:
 	Return
 
 scr_seq_SL02R0101_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_REPORTER_VALERIE
 	CheckTrainerFlag TRAINER_SINNOH_REPORTER_VALERIE
@@ -2135,7 +2135,7 @@ _1A71:
 	Return
 
 scr_seq_SL02R0101_017:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_PI_KENDRICK
 	CheckTrainerFlag TRAINER_SINNOH_PI_KENDRICK
@@ -2272,7 +2272,7 @@ _1C1B:
 	Return
 
 scr_seq_SL02R0101_018:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_BEAUTY_GABRIELLA
 	CheckTrainerFlag TRAINER_SINNOH_BEAUTY_GABRIELLA
@@ -2409,7 +2409,7 @@ _1DC5:
 	Return
 
 scr_seq_SL02R0101_019:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_SCIENTIST_EMILIO
 	CheckTrainerFlag TRAINER_SINNOH_SCIENTIST_EMILIO
@@ -2546,7 +2546,7 @@ _1F6F:
 	Return
 
 scr_seq_SL02R0101_020:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckTrainerFlag TRAINER_SINNOH_PKMN_BREEDER_F_KAYLEE
 	CheckTrainerFlag TRAINER_SINNOH_PKMN_BREEDER_F_KAYLEE

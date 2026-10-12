@@ -44,11 +44,11 @@ _006A:
 	End
 
 _009C:
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	ElevatorAnim 0x8004, 4
 	ApplyMovement obj_player, mv_SC08R0802_00C4
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	Return
 
 	.balign 4, 0

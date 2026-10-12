@@ -37,15 +37,15 @@ _005F:
 	End
 
 scr_seq_SC10R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_175
 	GoToIf 1, _00F3
 	NPCMsg msg_1180_SC10R0101_00002
 	CloseMsg
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GetPlayerFacing 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00B4
@@ -86,7 +86,7 @@ _00F3:
 	End
 
 scr_seq_SC10R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -96,7 +96,7 @@ scr_seq_SC10R0101_001:
 	End
 
 scr_seq_SC10R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -192,9 +192,9 @@ _0282:
 	GoTo _0292
 
 _0292:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 5
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	SetVar VAR_SINNOH_40EF, 1
 	ReleaseAll
 	End
@@ -206,7 +206,7 @@ _02A8:
 	End
 
 scr_seq_SC10R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1180_SC10R0101_00005

@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_ST06FS0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -25,7 +25,7 @@ scr_seq_ST06FS0101_001:
 	End
 
 scr_seq_ST06FS0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1224_ST06FS0101_00000
@@ -35,7 +35,7 @@ scr_seq_ST06FS0101_002:
 	End
 
 scr_seq_ST06FS0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1224_ST06FS0101_00001

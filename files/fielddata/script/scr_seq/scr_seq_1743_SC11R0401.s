@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC11R0401_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1218_SC11R0401_00000
@@ -21,7 +21,7 @@ scr_seq_SC11R0401_000:
 	End
 
 scr_seq_SC11R0401_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1218_SC11R0401_00001
@@ -31,10 +31,10 @@ scr_seq_SC11R0401_001:
 	End
 
 scr_seq_SC11R0401_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 255, 0
 	NPCMsg msg_1218_SC11R0401_00002
 	WaitCry

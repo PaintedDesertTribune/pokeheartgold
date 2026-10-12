@@ -21,7 +21,7 @@
 	ScrDefEnd
 
 scr_seq_SC03R0401_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0908_SC03R0401_00000
@@ -31,7 +31,7 @@ scr_seq_SC03R0401_000:
 	End
 
 scr_seq_SC03R0401_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_1
@@ -262,9 +262,9 @@ _03E6:
 	GoToIf 1, _047D
 	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	BufferPlayersName 0
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_0908_SC03R0401_00008
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	GiveMon VAR_SINNOH_40B4, 20, 0, 0, 0, 0x800C
 	SetVar VAR_SINNOH_40B4, 0
 	NPCMsg msg_0908_SC03R0401_00009
@@ -314,7 +314,7 @@ _0493:
 	End
 
 scr_seq_SC03R0401_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0908_SC03R0401_00013
@@ -324,7 +324,7 @@ scr_seq_SC03R0401_002:
 	End
 
 scr_seq_SC03R0401_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0908_SC03R0401_00014
@@ -334,7 +334,7 @@ scr_seq_SC03R0401_003:
 	End
 
 scr_seq_SC03R0401_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0908_SC03R0401_00015
@@ -344,7 +344,7 @@ scr_seq_SC03R0401_004:
 	End
 
 scr_seq_SC03R0401_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00016
 	WaitButton
@@ -353,7 +353,7 @@ scr_seq_SC03R0401_005:
 	End
 
 scr_seq_SC03R0401_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00017
 	WaitButton
@@ -362,7 +362,7 @@ scr_seq_SC03R0401_006:
 	End
 
 scr_seq_SC03R0401_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00018
 	WaitButton
@@ -371,7 +371,7 @@ scr_seq_SC03R0401_007:
 	End
 
 scr_seq_SC03R0401_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00019
 	WaitButton
@@ -380,7 +380,7 @@ scr_seq_SC03R0401_008:
 	End
 
 scr_seq_SC03R0401_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00020
 	WaitButton
@@ -389,7 +389,7 @@ scr_seq_SC03R0401_009:
 	End
 
 scr_seq_SC03R0401_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00021
 	WaitButton
@@ -398,7 +398,7 @@ scr_seq_SC03R0401_010:
 	End
 
 scr_seq_SC03R0401_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00022
 	WaitButton
@@ -407,7 +407,7 @@ scr_seq_SC03R0401_011:
 	End
 
 scr_seq_SC03R0401_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0908_SC03R0401_00023
 	WaitButton

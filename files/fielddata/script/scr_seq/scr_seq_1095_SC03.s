@@ -27,7 +27,7 @@
 	ScrDefEnd
 
 scr_seq_SC03_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_138
@@ -50,7 +50,7 @@ _0076:
 	End
 
 scr_seq_SC03_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 0, 0x800C
@@ -125,7 +125,7 @@ _0184:
 	GoTo _01AA
 
 _01AA:
-	PlayFanfare 1538
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
 	NPCMsg msg_0894_SC03_00002
 	CloseMsg
 	CallStd std_play_rival_intro_music
@@ -174,7 +174,7 @@ _0261:
 	GoTo _027B
 
 _027B:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 3
 	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_4079, 3
@@ -182,7 +182,7 @@ _027B:
 	End
 
 scr_seq_SC03_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00017
@@ -192,7 +192,7 @@ scr_seq_SC03_004:
 	End
 
 scr_seq_SC03_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00020
@@ -202,7 +202,7 @@ scr_seq_SC03_005:
 	End
 
 scr_seq_SC03_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_265
@@ -231,7 +231,7 @@ _03BC:
 	End
 
 scr_seq_SC03_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00023
@@ -241,7 +241,7 @@ scr_seq_SC03_007:
 	End
 
 scr_seq_SC03_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00024
@@ -334,7 +334,7 @@ _0538:
 	End
 
 scr_seq_SC03_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00025
@@ -344,7 +344,7 @@ scr_seq_SC03_009:
 	End
 
 scr_seq_SC03_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_122
@@ -363,7 +363,7 @@ _0649:
 	End
 
 scr_seq_SC03_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00018
@@ -373,7 +373,7 @@ scr_seq_SC03_011:
 	End
 
 scr_seq_SC03_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00016
@@ -383,7 +383,7 @@ scr_seq_SC03_012:
 	End
 
 scr_seq_SC03_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0894_SC03_00026
@@ -425,10 +425,10 @@ scr_seq_SC03_017:
 	End
 
 scr_seq_SC03_018:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 66, 0
 	NPCMsg msg_0894_SC03_00027
 	WaitCry

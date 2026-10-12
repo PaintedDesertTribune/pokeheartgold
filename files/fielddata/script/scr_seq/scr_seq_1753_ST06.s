@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_ST06_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1223_ST06_00001
@@ -23,7 +23,7 @@ scr_seq_ST06_000:
 	End
 
 scr_seq_ST06_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1223_ST06_00002
@@ -33,7 +33,7 @@ scr_seq_ST06_001:
 	End
 
 scr_seq_ST06_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1223_ST06_00003
@@ -43,7 +43,7 @@ scr_seq_ST06_002:
 	End
 
 scr_seq_ST06_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_215

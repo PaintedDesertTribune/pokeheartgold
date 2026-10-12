@@ -14,7 +14,7 @@
 	ScrDefEnd
 
 scr_seq_SR217_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1134_SR217_00001
 	WaitButton
@@ -31,7 +31,7 @@ scr_seq_SR217_001:
 	End
 
 scr_seq_SR217_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1134_SR217_00000

@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0401_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x4001, 19
@@ -44,8 +44,8 @@ _002B:
 	GiveItem 0x8000, 1, 0x800C
 	// TODO Diamond ScrCmd_TakeCoinsAddress 0x2a8 args [32769]: no HeartGold mapping yet
 	// Diamond ScrCmd_UpdateCoinBox dropped: HeartGold has no coin box window
-	PlayFanfare 1604
-	WaitSE 1604
+	PlayFanfare SEQ_SE_DP_REGI
+	WaitSE SEQ_SE_DP_REGI
 	GoTo _002B
 
 _00C8:
@@ -94,7 +94,7 @@ _0119:
 	Return
 
 scr_seq_SC07R0401_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1067_SC07R0401_00008
@@ -104,7 +104,7 @@ scr_seq_SC07R0401_001:
 	End
 
 scr_seq_SC07R0401_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1067_SC07R0401_00009

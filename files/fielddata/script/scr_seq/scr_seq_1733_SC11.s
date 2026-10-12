@@ -89,7 +89,7 @@ scr_seq_SC11_000:
 	End
 
 scr_seq_SC11_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00007
@@ -99,7 +99,7 @@ scr_seq_SC11_001:
 	End
 
 scr_seq_SC11_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00008
@@ -109,7 +109,7 @@ scr_seq_SC11_002:
 	End
 
 scr_seq_SC11_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00009
@@ -119,7 +119,7 @@ scr_seq_SC11_003:
 	End
 
 scr_seq_SC11_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00010
@@ -129,7 +129,7 @@ scr_seq_SC11_004:
 	End
 
 scr_seq_SC11_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00011
@@ -139,7 +139,7 @@ scr_seq_SC11_005:
 	End
 
 scr_seq_SC11_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00012
@@ -149,7 +149,7 @@ scr_seq_SC11_012:
 	End
 
 scr_seq_SC11_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00016
@@ -159,7 +159,7 @@ scr_seq_SC11_006:
 	End
 
 scr_seq_SC11_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferItemName 0, 447
@@ -219,7 +219,7 @@ scr_seq_SC11_010:
 	End
 
 scr_seq_SC11_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	FacePlayer
@@ -256,7 +256,7 @@ _0332:
 _0372:
 	ApplyMovement 18, mv_SC11_03DC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement 18, mv_SC11_03E8
 	WaitMovement
 	Return
@@ -264,7 +264,7 @@ _0372:
 _038C:
 	ApplyMovement obj_player, mv_SC11_03F0
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC11_03E8
 	WaitMovement
 	Return
@@ -272,7 +272,7 @@ _038C:
 _03A6:
 	ApplyMovement obj_player, mv_SC11_03FC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC11_03E8
 	WaitMovement
 	Return
@@ -280,13 +280,13 @@ _03A6:
 _03C0:
 	ApplyMovement obj_player, mv_SC11_040C
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC11_03E8
 	WaitMovement
 	Return
 
 scr_seq_SC11_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2738
@@ -372,7 +372,7 @@ _0532:
 	End
 
 scr_seq_SC11_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00005
@@ -382,7 +382,7 @@ scr_seq_SC11_015:
 	End
 
 scr_seq_SC11_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1213_SC11_00006

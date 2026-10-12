@@ -60,9 +60,9 @@ _008E:
 	CheckFlag FLAG_SINNOH_139
 	CallIf 1, _00E0
 	BufferPlayersName 0
-	PlaySE 1153
+	PlaySE SEQ_ME_HYOUKA2
 	NPCMsg msg_0934_SD03R0101_00001
-	WaitSE 1153
+	WaitSE SEQ_ME_HYOUKA2
 	SetFlag FLAG_SINNOH_139
 	SetVar VAR_SINNOH_40B1, 1
 	NPCMsg msg_0934_SD03R0101_00002
@@ -174,10 +174,10 @@ _027B:
 	GoTo _0293
 
 _0293:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	HidePerson 0
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	SetFlag FLAG_SINNOH_227
 	SetVar VAR_SINNOH_40B1, 2
 	ReleaseAll
@@ -202,7 +202,7 @@ scr_seq_SD03R0101_005:
 	End
 
 scr_seq_SD03R0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0934_SD03R0101_00007
@@ -212,7 +212,7 @@ scr_seq_SD03R0101_006:
 	End
 
 scr_seq_SD03R0101_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0934_SD03R0101_00009
@@ -276,7 +276,7 @@ scr_seq_SD03R0101_009:
 	End
 
 scr_seq_SD03R0101_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0934_SD03R0101_00008
 	WaitButton

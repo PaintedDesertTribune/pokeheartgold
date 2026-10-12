@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_ST04R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_220
@@ -204,7 +204,7 @@ _028F:
 	End
 
 scr_seq_ST04R0301_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1019_ST04R0301_00011
@@ -214,7 +214,7 @@ scr_seq_ST04R0301_001:
 	End
 
 scr_seq_ST04R0301_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1019_ST04R0301_00012
 	NPCMsg msg_1019_ST04R0301_00013

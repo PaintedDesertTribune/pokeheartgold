@@ -25,7 +25,7 @@ scr_seq_ST02R0101_000:
 	End
 
 scr_seq_ST02R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -165,8 +165,8 @@ _0248:
 	SetFlag FLAG_SINNOH_144
 	BufferPlayersName 0
 	NPCMsg msg_0877_ST02R0101_00013
-	PlaySE 1158
-	WaitSE 1158
+	PlaySE SEQ_ME_ITEM
+	WaitSE SEQ_ME_ITEM
 	BufferPlayersName 0
 	NPCMsg msg_0877_ST02R0101_00014
 	CloseMsg
@@ -226,7 +226,7 @@ _0301:
 	End
 
 scr_seq_ST02R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -248,7 +248,7 @@ _03BC:
 	End
 
 scr_seq_ST02R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -268,7 +268,7 @@ _03EF:
 	End
 
 scr_seq_ST02R0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0877_ST02R0101_00023
@@ -278,7 +278,7 @@ scr_seq_ST02R0101_006:
 	End
 
 scr_seq_ST02R0101_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00024
 	WaitButton
@@ -287,7 +287,7 @@ scr_seq_ST02R0101_007:
 	End
 
 scr_seq_ST02R0101_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00025
 	WaitButton
@@ -296,7 +296,7 @@ scr_seq_ST02R0101_008:
 	End
 
 scr_seq_ST02R0101_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00026
 	WaitButton
@@ -305,7 +305,7 @@ scr_seq_ST02R0101_009:
 	End
 
 scr_seq_ST02R0101_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00027
 	WaitButton
@@ -315,7 +315,7 @@ scr_seq_ST02R0101_010:
 
 scr_seq_ST02R0101_011:
 	BufferPlayersName 0
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00047
 	WaitButton
@@ -324,7 +324,7 @@ scr_seq_ST02R0101_011:
 	End
 
 scr_seq_ST02R0101_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00048
 	WaitButton
@@ -333,7 +333,7 @@ scr_seq_ST02R0101_012:
 	End
 
 scr_seq_ST02R0101_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0877_ST02R0101_00049
 	WaitButton
@@ -410,9 +410,9 @@ _04F0:
 	SetFlag FLAG_SINNOH_690
 	NatDexFlagAction 1, 0x800C
 	BufferPlayersName 0
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_0877_ST02R0101_00037
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	NPCMsg msg_0877_ST02R0101_00038
 	NPCMsg msg_0877_ST02R0101_00039
 	NPCMsg msg_0877_ST02R0101_00040

@@ -16,7 +16,7 @@ scr_seq_SC08R0101_004:
 	End
 
 scr_seq_SC08R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8000
@@ -30,10 +30,10 @@ scr_seq_SC08R0101_000:
 	GoToIf 0, _0077
 	NPCMsg msg_1163_SC08R0101_00001
 	GiveRibbon 0x8000, 24
-	PlaySE 1155
+	PlaySE SEQ_ME_LVUP
 	BufferPlayersName 1
 	NPCMsg msg_1163_SC08R0101_00002
-	WaitSE 1155
+	WaitSE SEQ_ME_LVUP
 	BufferSpeciesName 0, 0x8000, 0, 0
 	NPCMsg msg_1163_SC08R0101_00003
 	WaitButton
@@ -57,7 +57,7 @@ _0082:
 	End
 
 scr_seq_SC08R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1163_SC08R0101_00006
@@ -67,7 +67,7 @@ scr_seq_SC08R0101_001:
 	End
 
 scr_seq_SC08R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	HasItem 434, 1, 0x800C
@@ -135,7 +135,7 @@ _016B:
 	Return
 
 scr_seq_SC08R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1163_SC08R0101_00009

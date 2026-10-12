@@ -20,7 +20,7 @@ _0018:
 	Return
 
 scr_seq_SD17R0103_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CopyVar 0x8004, VAR_SINNOH_410B
 	CopyVar 0x8005, VAR_SINNOH_410C

@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_ST07R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1247_ST07R0201_00000
@@ -21,7 +21,7 @@ scr_seq_ST07R0201_000:
 	End
 
 scr_seq_ST07R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1247_ST07R0201_00001
@@ -31,7 +31,7 @@ scr_seq_ST07R0201_001:
 	End
 
 scr_seq_ST07R0201_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerGender 0x800C

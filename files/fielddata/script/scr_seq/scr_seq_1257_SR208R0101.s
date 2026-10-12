@@ -16,7 +16,7 @@ scr_seq_SR208R0101_000:
 	End
 
 scr_seq_SR208R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2720
@@ -48,7 +48,7 @@ _006E:
 	End
 
 scr_seq_SR208R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue 0x4000, 1
@@ -97,7 +97,7 @@ _00F9:
 	End
 
 scr_seq_SR208R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0975_SR208R0101_00007
@@ -145,7 +145,7 @@ _017C:
 	CompareVarToValue 0x8000, 3
 	CallIf 1, _02B1
 	UpdateMoneyBox
-	PlayFanfare 1604
+	PlayFanfare SEQ_SE_DP_REGI
 	GiveItem 0x8001, 1, 0x800C
 	BufferItemName 0, 0x8001
 	NPCMsg msg_0975_SR208R0101_00010

@@ -154,7 +154,7 @@ _01FF:
 	Return
 
 scr_seq_SC07_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerGender 0x8004
@@ -385,7 +385,7 @@ _05AE:
 	End
 
 scr_seq_SC07_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00025
@@ -395,7 +395,7 @@ scr_seq_SC07_001:
 	End
 
 scr_seq_SC07_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00032
@@ -405,7 +405,7 @@ scr_seq_SC07_002:
 	End
 
 scr_seq_SC07_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00026
@@ -415,7 +415,7 @@ scr_seq_SC07_003:
 	End
 
 scr_seq_SC07_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00027
@@ -425,7 +425,7 @@ scr_seq_SC07_004:
 	End
 
 scr_seq_SC07_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00029
@@ -435,7 +435,7 @@ scr_seq_SC07_005:
 	End
 
 scr_seq_SC07_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00033
@@ -445,7 +445,7 @@ scr_seq_SC07_006:
 	End
 
 scr_seq_SC07_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_204
@@ -474,7 +474,7 @@ _0782:
 	End
 
 scr_seq_SC07_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00030
@@ -484,7 +484,7 @@ scr_seq_SC07_008:
 	End
 
 scr_seq_SC07_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00031
@@ -507,7 +507,7 @@ scr_seq_SC07_010:
 	End
 
 scr_seq_SC07_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 2, 0x800C
@@ -527,7 +527,7 @@ _083E:
 	End
 
 scr_seq_SC07_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 2, 0x800C
@@ -547,7 +547,7 @@ _086F:
 	End
 
 scr_seq_SC07_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1056_SC07_00022
 	CloseMsg
@@ -598,7 +598,7 @@ _0930:
 	End
 
 scr_seq_SC07_014:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1056_SC07_00024
@@ -672,7 +672,7 @@ scr_seq_SC07_024:
 	End
 
 scr_seq_SC07_025:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_CheckPokemonInParty 0x262 args [386, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
@@ -687,7 +687,7 @@ scr_seq_SC07_025:
 	End
 
 scr_seq_SC07_026:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_CheckPokemonInParty 0x262 args [386, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
@@ -702,7 +702,7 @@ scr_seq_SC07_026:
 	End
 
 scr_seq_SC07_027:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_CheckPokemonInParty 0x262 args [386, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
@@ -717,7 +717,7 @@ scr_seq_SC07_027:
 	End
 
 scr_seq_SC07_028:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_CheckPokemonInParty 0x262 args [386, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0

@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SD07R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_MessageUnown 0x26d args [0]: no HeartGold mapping yet
 	WaitButton

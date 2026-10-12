@@ -26,9 +26,9 @@ scr_seq_ST01R0202_002:
 	LockAll
 	SetVar VAR_SINNOH_40F9, 1
 	NPCMsg msg_0886_ST01R0202_00001
-	PlaySE 1154
+	PlaySE SEQ_GS_RADIO_JINGLE
 	NPCMsg msg_0886_ST01R0202_00002
-	WaitSE 1154
+	WaitSE SEQ_GS_RADIO_JINGLE
 	CloseMsg
 	ResetBGM
 	ReleaseAll
@@ -36,7 +36,7 @@ scr_seq_ST01R0202_002:
 	End
 
 scr_seq_ST01R0202_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0886_ST01R0202_00005
 	WaitButton
@@ -45,7 +45,7 @@ scr_seq_ST01R0202_000:
 	End
 
 scr_seq_ST01R0202_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	BufferPlayersName 0
 	NPCMsg msg_0886_ST01R0202_00006
@@ -63,7 +63,7 @@ scr_seq_ST01R0202_003:
 	End
 
 scr_seq_ST01R0202_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0886_ST01R0202_00003
 	WaitButton

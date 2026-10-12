@@ -36,7 +36,7 @@ _005B:
 	End
 
 scr_seq_SR212AR0103_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2722
@@ -141,7 +141,7 @@ _01BD:
 	Return
 
 scr_seq_SR212AR0103_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -223,7 +223,7 @@ _0304:
 	End
 
 scr_seq_SR212AR0103_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1117_SR212AR0103_00016
@@ -247,7 +247,7 @@ scr_seq_SR212AR0103_004:
 	End
 
 scr_seq_SR212AR0103_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1117_SR212AR0103_00018
 	WaitButton
@@ -256,7 +256,7 @@ scr_seq_SR212AR0103_005:
 	End
 
 scr_seq_SR212AR0103_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1117_SR212AR0103_00019
 	WaitButton

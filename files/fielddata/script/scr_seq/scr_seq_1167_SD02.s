@@ -71,7 +71,7 @@ _00C1:
 	Return
 
 scr_seq_SD02_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0930_SD02_00000
@@ -104,7 +104,7 @@ _012F:
 	End
 
 scr_seq_SD02_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_159
 	GoToIf 1, _0168
@@ -143,7 +143,7 @@ scr_seq_SD02_004:
 	End
 
 scr_seq_SD02_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	PlayCry 425, 0

@@ -217,7 +217,7 @@ _0322:
 	End
 
 scr_seq_SC02_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0829_SC02_00001
@@ -301,7 +301,7 @@ _044B:
 	End
 
 scr_seq_SC02_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0829_SC02_00011
@@ -311,7 +311,7 @@ scr_seq_SC02_005:
 	End
 
 scr_seq_SC02_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerGender 0x800C
@@ -334,7 +334,7 @@ _04F0:
 	End
 
 scr_seq_SC02_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -353,7 +353,7 @@ _051D:
 	End
 
 scr_seq_SC02_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -366,7 +366,7 @@ _0541:
 	GoTo _051D
 
 scr_seq_SC02_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -379,7 +379,7 @@ _0566:
 	GoTo _051D
 
 scr_seq_SC02_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -392,7 +392,7 @@ _058B:
 	GoTo _051D
 
 scr_seq_SC02_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -407,7 +407,7 @@ _05B6:
 	GoTo _051D
 
 scr_seq_SC02_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_168
@@ -479,7 +479,7 @@ _0683:
 	End
 
 scr_seq_SC02_020:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0829_SC02_00040
 	WaitButton
@@ -528,7 +528,7 @@ _07F3:
 	CloseMsg
 	ApplyMovement 16, mv_SC02_0860
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement 16, mv_SC02_086C
 	WaitMovement
 	Return
@@ -536,7 +536,7 @@ _07F3:
 _0812:
 	ApplyMovement obj_player, mv_SC02_0874
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC02_086C
 	WaitMovement
 	Return
@@ -544,7 +544,7 @@ _0812:
 _082C:
 	ApplyMovement obj_player, mv_SC02_0884
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC02_086C
 	WaitMovement
 	Return
@@ -552,7 +552,7 @@ _082C:
 _0846:
 	ApplyMovement obj_player, mv_SC02_0890
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC02_086C
 	WaitMovement
 	Return

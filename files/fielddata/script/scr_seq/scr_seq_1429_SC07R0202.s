@@ -15,7 +15,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0202_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// TODO Diamond ScrCmd_Unk027E 0x27e args [32780]: no HeartGold mapping yet
@@ -84,7 +84,7 @@ _00E3:
 	End
 
 scr_seq_SC07R0202_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1061_SC07R0202_00007
@@ -94,7 +94,7 @@ scr_seq_SC07R0202_001:
 	End
 
 scr_seq_SC07R0202_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1061_SC07R0202_00008
@@ -104,7 +104,7 @@ scr_seq_SC07R0202_002:
 	End
 
 scr_seq_SC07R0202_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
@@ -137,7 +137,7 @@ _0163:
 	End
 
 scr_seq_SC07R0202_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -147,7 +147,7 @@ scr_seq_SC07R0202_004:
 	End
 
 scr_seq_SC07R0202_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -157,7 +157,7 @@ scr_seq_SC07R0202_005:
 	End
 
 scr_seq_SC07R0202_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1061_SC07R0202_00013
 	WaitButton

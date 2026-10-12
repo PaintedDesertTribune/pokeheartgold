@@ -52,7 +52,7 @@ _0088:
 	GoTo _0111
 
 scr_seq_SC09_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -108,7 +108,7 @@ _011B:
 	Return
 
 scr_seq_SC09_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1140_SC09_00004
@@ -118,7 +118,7 @@ scr_seq_SC09_003:
 	End
 
 scr_seq_SC09_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1140_SC09_00005
@@ -128,7 +128,7 @@ scr_seq_SC09_004:
 	End
 
 scr_seq_SC09_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1140_SC09_00006
@@ -138,7 +138,7 @@ scr_seq_SC09_005:
 	End
 
 scr_seq_SC09_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1140_SC09_00009
@@ -148,7 +148,7 @@ scr_seq_SC09_006:
 	End
 
 scr_seq_SC09_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_407F, 1
@@ -167,7 +167,7 @@ _01E0:
 	End
 
 scr_seq_SC09_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1140_SC09_00014
@@ -193,7 +193,7 @@ scr_seq_SC09_010:
 	End
 
 scr_seq_SC09_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2404
@@ -232,7 +232,7 @@ _0276:
 _0295:
 	ApplyMovement 8, mv_SC09_02CC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement 8, mv_SC09_02D8
 	WaitMovement
 	Return
@@ -240,7 +240,7 @@ _0295:
 _02AF:
 	ApplyMovement obj_player, mv_SC09_02E0
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	ApplyMovement obj_player, mv_SC09_02D8
 	WaitMovement
 	Return

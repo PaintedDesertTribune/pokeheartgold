@@ -9,7 +9,6 @@ MAP_AMITY_SQUARE: unmapped command ScrCmd_ClearAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_GetAmitySquareAccessory
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk01D3
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk027C
-MAP_CANALAVE_GYM: dropped ScrCmd_InitCanalaveGym: Canalave Gym lift puzzle needs a HeartGold port
 MAP_CANALAVE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_CANALAVE_HARBOR_INN: dropped ScrCmd_Unk02B5: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
 MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)

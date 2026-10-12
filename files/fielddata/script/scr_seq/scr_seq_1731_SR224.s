@@ -48,7 +48,7 @@ _0087:
 	Return
 
 scr_seq_SR224_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_301
@@ -68,7 +68,7 @@ _00AD:
 	End
 
 scr_seq_SR224_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_301
@@ -133,7 +133,7 @@ _01AD:
 	GoTo _00FB
 
 _01B8:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1212_SR224_00004

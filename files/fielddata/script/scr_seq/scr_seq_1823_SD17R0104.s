@@ -34,8 +34,8 @@ _0036:
 
 scr_seq_SD17R0104_001:
 	LockAll
-	PlayFanfare 1500
-	WaitSE 1500
+	PlayFanfare SEQ_SE_DP_SELECT
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 487, 0
 	NPCMsg msg_1258_SD17R0104_00000
 	CloseMsg
@@ -69,7 +69,7 @@ _00A8:
 	End
 
 scr_seq_SD17R0104_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CompareVarToValue VAR_SINNOH_410C, 3
 	GoToIf 1, _0105
@@ -104,7 +104,7 @@ _011D:
 	End
 
 scr_seq_SD17R0104_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1258_SD17R0104_00002
 	WaitButton

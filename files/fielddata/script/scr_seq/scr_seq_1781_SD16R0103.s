@@ -65,8 +65,8 @@ scr_seq_SD16R0103_002:
 	NPCMsg msg_1237_SD16R0103_00001
 	CloseMsg
 	HidePerson 3
-	WaitSE 1500
-	PlayFanfare 1628
+	WaitSE SEQ_SE_DP_SELECT
+	PlayFanfare SEQ_SE_DP_FW089
 	// Diamond ScrCmd_ShakeCamera dropped: screen shake needs a HeartGold port (library cutscene)
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ApplyMovement 2, mv_SD16R0103_0120
@@ -85,7 +85,7 @@ scr_seq_SD16R0103_002:
 
 scr_seq_SD16R0103_003:
 	BufferPlayersName 1
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1237_SD16R0103_00002
@@ -96,8 +96,8 @@ scr_seq_SD16R0103_003:
 
 scr_seq_SD16R0103_004:
 	LockAll
-	PlayFanfare 1500
-	WaitSE 1500
+	PlayFanfare SEQ_SE_DP_SELECT
+	WaitSE SEQ_SE_DP_SELECT
 	CheckFlag FLAG_SINNOH_215
 	CallIf 0, _01CB
 	SetVar VAR_SINNOH_409E, 2

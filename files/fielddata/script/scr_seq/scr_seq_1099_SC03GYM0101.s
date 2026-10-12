@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC03GYM0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 0, 0x800C
@@ -27,8 +27,8 @@ scr_seq_SC03GYM0101_000:
 	NPCMsg msg_0896_SC03GYM0101_00001
 	BufferPlayersName 0
 	NPCMsg msg_0896_SC03GYM0101_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	SetTrainerFlag TRAINER_SINNOH_YOUNGSTER_JONATHON
 	SetTrainerFlag TRAINER_SINNOH_YOUNGSTER_DARIUS
 	GiveBadge 0
@@ -84,7 +84,7 @@ _0113:
 	End
 
 scr_seq_SC03GYM0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 0, 0x800C
@@ -105,7 +105,7 @@ _013F:
 	End
 
 scr_seq_SC03GYM0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 0, 0x800C
 	CompareVarToValue 0x800C, 1

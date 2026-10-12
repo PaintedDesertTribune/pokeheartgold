@@ -20,16 +20,16 @@
 	ScrDefEnd
 
 scr_seq_SC01R0701_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferPlayersName 0
 	BufferRivalsName 1
 	NPCMsg msg_0869_SC01R0701_00000
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	BufferPlayersName 0
 	NPCMsg msg_0869_SC01R0701_00001
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	TakeItem 459, 1, 0x800C
 	BufferPlayersName 0
 	BufferRivalsName 1
@@ -67,9 +67,9 @@ _00D8:
 	GoTo _00F2
 
 _00F2:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 1
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	SetVar VAR_SINNOH_40E7, 1
 	SetFlag FLAG_SINNOH_241
 	ClearFlag FLAG_SINNOH_532
@@ -78,7 +78,7 @@ _00F2:
 	End
 
 scr_seq_SC01R0701_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0869_SC01R0701_00004
@@ -91,7 +91,7 @@ scr_seq_SC01R0701_002:
 	End
 
 scr_seq_SC01R0701_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0869_SC01R0701_00006
@@ -101,7 +101,7 @@ scr_seq_SC01R0701_003:
 	End
 
 scr_seq_SC01R0701_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0869_SC01R0701_00008
@@ -111,7 +111,7 @@ scr_seq_SC01R0701_004:
 	End
 
 scr_seq_SC01R0701_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0869_SC01R0701_00007
@@ -127,7 +127,7 @@ scr_seq_SC01R0701_007:
 	End
 
 scr_seq_SC01R0701_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_274
@@ -209,7 +209,7 @@ _0294:
 	End
 
 scr_seq_SC01R0701_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_269
@@ -272,7 +272,7 @@ _033F:
 	End
 
 scr_seq_SC01R0701_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0869_SC01R0701_00020
 	GoTo _0356
@@ -326,7 +326,7 @@ _0402:
 	End
 
 scr_seq_SC01R0701_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0869_SC01R0701_00027
 	WaitButton

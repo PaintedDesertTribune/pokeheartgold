@@ -14,7 +14,7 @@ scr_seq_SD25R0101_000:
 	End
 
 scr_seq_SD25R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0935_SD25R0101_00000
 	WaitButton

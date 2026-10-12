@@ -38,7 +38,7 @@ _005F:
 	Return
 
 scr_seq_ST01_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_144
@@ -223,7 +223,7 @@ scr_seq_ST01_001:
 	ApplyMovement 2, mv_ST01_05A4
 	ApplyMovement obj_player, mv_ST01_0588
 	WaitMovement
-	PlayFanfare 1538
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
 	NPCMsg msg_0882_ST01_00000
 	Wait 30, 0x800C
 	CallStd std_play_rival_intro_music
@@ -253,7 +253,7 @@ scr_seq_ST01_001:
 	End
 
 scr_seq_ST01_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0882_ST01_00011
@@ -263,7 +263,7 @@ scr_seq_ST01_004:
 	End
 
 scr_seq_ST01_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_144

@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_ST06R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_203

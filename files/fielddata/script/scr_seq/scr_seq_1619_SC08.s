@@ -110,7 +110,7 @@ _0162:
 	End
 
 scr_seq_SC08_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_154
@@ -187,7 +187,7 @@ _0245:
 	End
 
 scr_seq_SC08_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00010
@@ -197,7 +197,7 @@ scr_seq_SC08_001:
 	End
 
 scr_seq_SC08_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00016
@@ -207,7 +207,7 @@ scr_seq_SC08_002:
 	End
 
 scr_seq_SC08_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00011
@@ -217,7 +217,7 @@ scr_seq_SC08_003:
 	End
 
 scr_seq_SC08_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00013
@@ -227,7 +227,7 @@ scr_seq_SC08_004:
 	End
 
 scr_seq_SC08_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00014
@@ -237,7 +237,7 @@ scr_seq_SC08_005:
 	End
 
 scr_seq_SC08_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1156_SC08_00015
@@ -303,7 +303,7 @@ scr_seq_SC08_015:
 	End
 
 scr_seq_SC08_016:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -359,7 +359,7 @@ _04BC:
 	End
 
 scr_seq_SC08_017:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_354

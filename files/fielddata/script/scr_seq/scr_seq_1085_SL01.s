@@ -68,7 +68,7 @@ _00D8:
 _00F0:
 	SetVar VAR_SINNOH_4082, 1
 	ReleaseAll
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_LAKE_VERITY, 0, 46, 54, 0

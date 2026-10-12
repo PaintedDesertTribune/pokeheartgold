@@ -45,7 +45,7 @@ scr_seq_SC10R0111_001:
 	SetFlag FLAG_SINNOH_601
 	ApplyMovement obj_player, mv_SC10R0111_00F8
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_POKEMON_LEAGUE_HALL_OF_FAME_CORRIDOR, 0, 5, 23, 0

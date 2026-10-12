@@ -449,7 +449,7 @@ scr_seq_SD11R0101_012:
 scr_seq_SD11R0101_013:
 scr_seq_SD11R0101_014:
 scr_seq_SD11R0101_015:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferPartyMonNick 0, VAR_SINNOH_409D
@@ -702,7 +702,7 @@ scr_seq_SD11R0101_017:
 	GoTo _0B27
 
 _0B27:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	BufferPartyMonNick 0, VAR_SINNOH_409D
@@ -764,7 +764,7 @@ _0BCB:
 	End
 
 scr_seq_SD11R0101_018:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1005_SD11R0101_00023
@@ -774,10 +774,10 @@ scr_seq_SD11R0101_018:
 	End
 
 scr_seq_SD11R0101_019:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 425, 0
 	NPCMsg msg_1005_SD11R0101_00024
 	WaitCry
@@ -787,7 +787,7 @@ scr_seq_SD11R0101_019:
 	End
 
 scr_seq_SD11R0101_020:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1005_SD11R0101_00025
@@ -797,7 +797,7 @@ scr_seq_SD11R0101_020:
 	End
 
 scr_seq_SD11R0101_021:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1005_SD11R0101_00026
@@ -807,7 +807,7 @@ scr_seq_SD11R0101_021:
 	End
 
 scr_seq_SD11R0101_022:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1005_SD11R0101_00027
@@ -817,10 +817,10 @@ scr_seq_SD11R0101_022:
 	End
 
 scr_seq_SD11R0101_023:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1005_SD11R0101_00028
 	WaitCry
@@ -830,7 +830,7 @@ scr_seq_SD11R0101_023:
 	End
 
 scr_seq_SD11R0101_024:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1005_SD11R0101_00029
@@ -840,10 +840,10 @@ scr_seq_SD11R0101_024:
 	End
 
 scr_seq_SD11R0101_025:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 35, 0
 	NPCMsg msg_1005_SD11R0101_00030
 	WaitCry

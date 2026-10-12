@@ -54,7 +54,7 @@ scr_seq_SC02R0501_002:
 	GoToIf 1, _00E5
 	CompareVarToValue 0x8008, 3
 	GoToIf 1, _00F8
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0840_SC02R0501_00008
@@ -64,7 +64,7 @@ scr_seq_SC02R0501_002:
 	End
 
 _00E5:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0840_SC02R0501_00009
@@ -74,7 +74,7 @@ _00E5:
 	End
 
 _00F8:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0840_SC02R0501_00010
@@ -90,7 +90,7 @@ scr_seq_SC02R0501_001:
 	GoToIf 1, _0158
 	CompareVarToValue VAR_SINNOH_4106, 3
 	GoToIf 1, _0145
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0840_SC02R0501_00000
@@ -100,7 +100,7 @@ scr_seq_SC02R0501_001:
 	End
 
 _0145:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0840_SC02R0501_00004
@@ -117,7 +117,7 @@ _0158:
 	HasItem 453, 1, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _01D9
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	SetFlag FLAG_SINNOH_300
 	SetVar VAR_SINNOH_4106, 3
@@ -125,8 +125,8 @@ _0158:
 	BufferPlayersName 0
 	NPCMsg msg_0840_SC02R0501_00002
 	NPCMsg msg_0840_SC02R0501_00003
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	CloseMsg
 	Wait 15, 0x800C
 	Call _01FC
@@ -141,7 +141,7 @@ _0158:
 	End
 
 _01D9:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0840_SC02R0501_00001
 	WaitButton
@@ -155,8 +155,8 @@ _01EA:
 	GoTo _01D9
 
 _01FC:
-	PlayFanfare 1539
-	WaitSE 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitSE SEQ_SE_DP_KAIDAN2
 	ClearFlag FLAG_SINNOH_633
 	ShowPerson 2
 	Wait 5, 0x800C
@@ -190,8 +190,8 @@ _026E:
 	WaitMovement
 	SetFlag FLAG_SINNOH_633
 	HidePerson 2
-	PlayFanfare 1539
-	WaitSE 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
+	WaitSE SEQ_SE_DP_KAIDAN2
 	Return
 
 	.balign 4, 0

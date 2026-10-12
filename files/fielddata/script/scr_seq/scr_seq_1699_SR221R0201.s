@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SR221R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_311
@@ -112,7 +112,7 @@ _016F:
 	End
 
 scr_seq_SR221R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1196_SR221R0201_00005
 	WaitButton

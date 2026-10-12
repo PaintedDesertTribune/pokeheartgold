@@ -26,7 +26,7 @@ _002C:
 	End
 
 scr_seq_SR221_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1195_SR221_00000
@@ -36,7 +36,7 @@ scr_seq_SR221_000:
 	End
 
 scr_seq_SR221_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1195_SR221_00001

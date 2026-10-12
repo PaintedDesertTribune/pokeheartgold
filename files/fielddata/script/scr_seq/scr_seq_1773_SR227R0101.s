@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SR227R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1233_SR227R0101_00000
@@ -25,8 +25,8 @@ _0031:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	HealParty
 	FadeScreen 6, 1, 1, 0
 	WaitFade

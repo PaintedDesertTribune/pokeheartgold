@@ -14,7 +14,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0205_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1064_SC07R0205_00000
@@ -24,7 +24,7 @@ scr_seq_SC07R0205_000:
 	End
 
 scr_seq_SC07R0205_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1064_SC07R0205_00001
@@ -34,7 +34,7 @@ scr_seq_SC07R0205_001:
 	End
 
 scr_seq_SC07R0205_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_261
@@ -63,7 +63,7 @@ _0092:
 	End
 
 scr_seq_SC07R0205_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1064_SC07R0205_00004
@@ -73,7 +73,7 @@ scr_seq_SC07R0205_003:
 	End
 
 scr_seq_SC07R0205_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1064_SC07R0205_00005
 	WaitButton
@@ -82,7 +82,7 @@ scr_seq_SC07R0205_004:
 	End
 
 scr_seq_SC07R0205_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1064_SC07R0205_00006
 	ShowMoneyBox 20, 2
@@ -161,7 +161,7 @@ _017F:
 	CallIf 1, _0177
 	UpdateMoneyBox
 	BufferItemName 0, 0x8001
-	PlayFanfare 1559
+	PlayFanfare SEQ_SE_DP_JIHANKI
 	BufferItemName 0, 0x8001
 	NPCMsg msg_1064_SC07R0205_00007
 	CopyVar 0x8004, 0x8001
@@ -173,7 +173,7 @@ _017F:
 	HasSpaceForItem 0x8001, 1, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _026E
-	PlayFanfare 1559
+	PlayFanfare SEQ_SE_DP_JIHANKI
 	BufferItemName 0, 0x8001
 	NPCMsg msg_1064_SC07R0205_00008
 	CopyVar 0x8004, 0x8001

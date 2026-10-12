@@ -57,7 +57,7 @@ _0078:
 
 scr_seq_ST07R0101_000:
 	BufferPlayersName 0
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1248_ST07R0101_00002
@@ -67,7 +67,7 @@ scr_seq_ST07R0101_000:
 	End
 
 scr_seq_ST07R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8000
@@ -95,8 +95,8 @@ _012F:
 	GoToIf 1, _0239
 	SubMoneyImmediate 10000
 	UpdateMoneyBox
-	PlayFanfare 1604
-	WaitSE 1604
+	PlayFanfare SEQ_SE_DP_REGI
+	WaitSE SEQ_SE_DP_REGI
 	NPCMsg msg_1248_ST07R0101_00007
 	NPCMsg msg_1248_ST07R0101_00008
 	WaitButton
@@ -117,8 +117,8 @@ _0184:
 	GoToIf 1, _0239
 	SubMoneyImmediate 100000
 	UpdateMoneyBox
-	PlayFanfare 1604
-	WaitSE 1604
+	PlayFanfare SEQ_SE_DP_REGI
+	WaitSE SEQ_SE_DP_REGI
 	NPCMsg msg_1248_ST07R0101_00009
 	NPCMsg msg_1248_ST07R0101_00010
 	WaitButton
@@ -139,8 +139,8 @@ _01D9:
 	GoToIf 1, _0239
 	SubMoneyImmediate 999999
 	UpdateMoneyBox
-	PlayFanfare 1604
-	WaitSE 1604
+	PlayFanfare SEQ_SE_DP_REGI
+	WaitSE SEQ_SE_DP_REGI
 	NPCMsg msg_1248_ST07R0101_00011
 	NPCMsg msg_1248_ST07R0101_00012
 	WaitButton
@@ -174,7 +174,7 @@ _0246:
 	End
 
 scr_seq_ST07R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1248_ST07R0101_00015
@@ -184,7 +184,7 @@ scr_seq_ST07R0101_002:
 	End
 
 scr_seq_ST07R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPlayerGender 0x800C
@@ -209,10 +209,10 @@ _0299:
 	End
 
 scr_seq_ST07R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 300, 0
 	NPCMsg msg_1248_ST07R0101_00018
 	WaitCry
@@ -222,10 +222,10 @@ scr_seq_ST07R0101_004:
 	End
 
 scr_seq_ST07R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 54, 0
 	NPCMsg msg_1248_ST07R0101_00019
 	WaitCry

@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0801_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2732
@@ -38,8 +38,8 @@ scr_seq_SC07R0801_000:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	PlayFanfare 1634
-	WaitSE 1634
+	PlayFanfare SEQ_SE_DP_FW367
+	WaitSE SEQ_SE_DP_FW367
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	BufferPartyMonNick 0, 0x4000
@@ -83,7 +83,7 @@ _00F6:
 	End
 
 scr_seq_SC07R0801_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1076_SC07R0801_00009
@@ -93,10 +93,10 @@ scr_seq_SC07R0801_001:
 	End
 
 scr_seq_SC07R0801_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 417, 0
 	NPCMsg msg_1076_SC07R0801_00010
 	WaitCry

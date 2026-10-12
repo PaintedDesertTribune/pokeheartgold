@@ -55,7 +55,7 @@ scr_seq_SD09R0101_007:
 	End
 
 scr_seq_SD09R0101_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1171_SD09R0101_00000

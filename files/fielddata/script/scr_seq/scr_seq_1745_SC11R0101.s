@@ -40,7 +40,7 @@ scr_seq_SC11R0101_000:
 	End
 
 scr_seq_SC11R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1219_SC11R0101_00003
@@ -80,7 +80,7 @@ _00DB:
 	GoTo _0071
 
 scr_seq_SC11R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1219_SC11R0101_00008
@@ -113,7 +113,7 @@ _013F:
 	GoTo _00EF
 
 scr_seq_SC11R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1219_SC11R0101_00012
@@ -172,7 +172,7 @@ _01F2:
 	Return
 
 scr_seq_SC11R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1219_SC11R0101_00018
@@ -182,7 +182,7 @@ scr_seq_SC11R0101_004:
 	End
 
 scr_seq_SC11R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1219_SC11R0101_00028

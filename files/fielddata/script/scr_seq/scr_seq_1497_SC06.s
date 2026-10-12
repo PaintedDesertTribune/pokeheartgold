@@ -36,7 +36,7 @@ _004F:
 	End
 
 scr_seq_SC06_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00008
@@ -46,7 +46,7 @@ scr_seq_SC06_001:
 	End
 
 scr_seq_SC06_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00009
@@ -56,7 +56,7 @@ scr_seq_SC06_002:
 	End
 
 scr_seq_SC06_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00010
@@ -66,7 +66,7 @@ scr_seq_SC06_003:
 	End
 
 scr_seq_SC06_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00011
@@ -76,7 +76,7 @@ scr_seq_SC06_004:
 	End
 
 scr_seq_SC06_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 3, 0x800C
@@ -96,7 +96,7 @@ _00D7:
 	End
 
 scr_seq_SC06_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_296
@@ -137,7 +137,7 @@ _0157:
 	Return
 
 scr_seq_SC06_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00018
@@ -147,7 +147,7 @@ scr_seq_SC06_010:
 	End
 
 scr_seq_SC06_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00019
@@ -157,7 +157,7 @@ scr_seq_SC06_011:
 	End
 
 scr_seq_SC06_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1095_SC06_00014
@@ -167,10 +167,10 @@ scr_seq_SC06_006:
 	End
 
 scr_seq_SC06_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 35, 0
 	NPCMsg msg_1095_SC06_00015
 	WaitCry
@@ -180,7 +180,7 @@ scr_seq_SC06_007:
 	End
 
 scr_seq_SC06_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_258
 	GoToIf 1, _0263
@@ -272,7 +272,7 @@ _02F5:
 	GoTo _0315
 
 _0315:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 21
 	Wait 15, 0x800C
 	ClearFlag FLAG_SINNOH_455
@@ -374,7 +374,7 @@ _0496:
 	GoTo _04B0
 
 _04B0:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 22
 	SetFlag FLAG_SINNOH_259
 	ReleaseAll

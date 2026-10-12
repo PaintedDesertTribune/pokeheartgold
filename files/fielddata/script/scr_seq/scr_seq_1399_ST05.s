@@ -23,7 +23,7 @@ scr_seq_ST05_000:
 	End
 
 scr_seq_ST05_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1046_ST05_00001
@@ -102,9 +102,9 @@ _0162:
 	NPCMsg msg_1046_ST05_00005
 	BufferPlayersName 0
 	BufferItemName 1, 439
-	PlaySE 1158
+	PlaySE SEQ_ME_ITEM
 	NPCMsg msg_1046_ST05_00006
-	WaitSE 1158
+	WaitSE SEQ_ME_ITEM
 	TakeItem 439, 1, 0x800C
 	SetFlag FLAG_SINNOH_166
 	NPCMsg msg_1046_ST05_00007
@@ -135,7 +135,7 @@ _0242:
 	Return
 
 scr_seq_ST05_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_166
@@ -173,7 +173,7 @@ scr_seq_ST05_004:
 	End
 
 scr_seq_ST05_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1046_ST05_00011
@@ -183,7 +183,7 @@ scr_seq_ST05_005:
 	End
 
 scr_seq_ST05_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1046_ST05_00013
@@ -193,7 +193,7 @@ scr_seq_ST05_006:
 	End
 
 scr_seq_ST05_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1046_ST05_00012
@@ -211,7 +211,7 @@ scr_seq_ST05_008:
 	End
 
 scr_seq_ST05_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1046_ST05_00015
 	WaitButton
@@ -220,7 +220,7 @@ scr_seq_ST05_009:
 	End
 
 scr_seq_ST05_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1046_ST05_00016
 	WaitButton

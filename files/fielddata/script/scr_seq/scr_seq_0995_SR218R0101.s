@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SR218R0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0844_SR218R0101_00000
@@ -20,7 +20,7 @@ scr_seq_SR218R0101_000:
 	End
 
 scr_seq_SR218R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x8004, 445

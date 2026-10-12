@@ -59,7 +59,7 @@ _0091:
 	End
 
 scr_seq_SC04GYM0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 1, 0x800C
@@ -75,8 +75,8 @@ scr_seq_SC04GYM0102_002:
 	NPCMsg msg_0947_SC04GYM0102_00001
 	BufferPlayersName 0
 	NPCMsg msg_0947_SC04GYM0102_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GiveBadge 1
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_AROMA_LADY_JENNA
@@ -125,7 +125,7 @@ _0182:
 	End
 
 scr_seq_SC04GYM0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40AE, 1
@@ -153,7 +153,7 @@ _01D2:
 	End
 
 scr_seq_SC04GYM0102_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40AE, 2
@@ -183,7 +183,7 @@ _0233:
 	End
 
 scr_seq_SC04GYM0102_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40AE, 3
@@ -213,7 +213,7 @@ _0294:
 	End
 
 scr_seq_SC04GYM0102_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40AE, 4

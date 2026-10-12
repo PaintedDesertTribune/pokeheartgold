@@ -31,7 +31,7 @@ _0037:
 	End
 
 scr_seq_SR205A_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	ApplyMovement 13, mv_SR205A_0074
@@ -71,7 +71,7 @@ _00CA:
 	Return
 
 scr_seq_SR205A_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0928_SR205A_00006
@@ -81,7 +81,7 @@ scr_seq_SR205A_001:
 	End
 
 scr_seq_SR205A_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetFlag FLAG_SINNOH_280
@@ -92,7 +92,7 @@ scr_seq_SR205A_002:
 	End
 
 scr_seq_SR205A_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_145

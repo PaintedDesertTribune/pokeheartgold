@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_ST02R0202_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0879_ST02R0202_00000
 	WaitButton
@@ -19,7 +19,7 @@ scr_seq_ST02R0202_000:
 	End
 
 scr_seq_ST02R0202_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	BufferPlayersName 0
 	NPCMsg msg_0879_ST02R0202_00001

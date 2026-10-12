@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SC03R0103_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_124
@@ -43,10 +43,10 @@ _0064:
 	End
 
 scr_seq_SC03R0103_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 54, 0
 	NPCMsg msg_0901_SC03R0103_00002
 	WaitCry

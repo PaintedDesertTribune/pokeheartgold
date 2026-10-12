@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_ST02R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C
@@ -30,7 +30,7 @@ _002F:
 	End
 
 scr_seq_ST02R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NatDexFlagAction 2, 0x800C

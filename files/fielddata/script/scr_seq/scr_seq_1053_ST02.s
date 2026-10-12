@@ -192,7 +192,7 @@ _02B5:
 	WaitMovement
 	ApplyMovement 3, mv_ST02_0554
 	WaitMovement
-	PlayFanfare 1538
+	PlayFanfare SEQ_SE_DP_WALL_HIT2
 	NPCMsg msg_0873_ST02_00004
 	ApplyMovement 3, mv_ST02_055C
 	WaitMovement
@@ -350,7 +350,7 @@ _06B6:
 	End
 
 scr_seq_ST02_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0873_ST02_00017
@@ -360,7 +360,7 @@ scr_seq_ST02_003:
 	End
 
 scr_seq_ST02_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0873_ST02_00018
@@ -370,7 +370,7 @@ scr_seq_ST02_004:
 	End
 
 scr_seq_ST02_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0873_ST02_00019
@@ -380,7 +380,7 @@ scr_seq_ST02_005:
 	End
 
 scr_seq_ST02_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0873_ST02_00020

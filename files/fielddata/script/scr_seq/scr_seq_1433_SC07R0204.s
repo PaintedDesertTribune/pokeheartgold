@@ -14,7 +14,7 @@
 	ScrDefEnd
 
 scr_seq_SC07R0204_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// TODO Diamond ScrCmd_Unk027E 0x27e args [32780]: no HeartGold mapping yet
@@ -83,7 +83,7 @@ _00DF:
 	End
 
 scr_seq_SC07R0204_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1063_SC07R0204_00007
@@ -93,7 +93,7 @@ scr_seq_SC07R0204_001:
 	End
 
 scr_seq_SC07R0204_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1063_SC07R0204_00008
@@ -103,7 +103,7 @@ scr_seq_SC07R0204_002:
 	End
 
 scr_seq_SC07R0204_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -113,7 +113,7 @@ scr_seq_SC07R0204_003:
 	End
 
 scr_seq_SC07R0204_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -123,7 +123,7 @@ scr_seq_SC07R0204_004:
 	End
 
 scr_seq_SC07R0204_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1063_SC07R0204_00009
 	WaitButton

@@ -109,7 +109,7 @@ scr_seq_SD13R0101_003:
 	End
 
 scr_seq_SD13R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0926_SD13R0101_00010
@@ -166,7 +166,7 @@ scr_seq_SD13R0101_005:
 	End
 
 scr_seq_SD13R0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x8004, 438

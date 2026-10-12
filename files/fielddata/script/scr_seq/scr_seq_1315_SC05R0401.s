@@ -15,7 +15,7 @@ scr_seq_SC05R0401_002:
 	End
 
 scr_seq_SC05R0401_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1004_SC05R0401_00000
@@ -25,7 +25,7 @@ scr_seq_SC05R0401_000:
 	End
 
 scr_seq_SC05R0401_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1004_SC05R0401_00001

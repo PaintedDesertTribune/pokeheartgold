@@ -16,7 +16,7 @@ scr_seq_SR210AR0101_000:
 	End
 
 scr_seq_SR210AR0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1043_SR210AR0101_00000
@@ -26,7 +26,7 @@ scr_seq_SR210AR0101_001:
 	End
 
 scr_seq_SR210AR0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	ShowMoneyBox 20, 2
@@ -76,7 +76,7 @@ _00B4:
 	End
 
 scr_seq_SR210AR0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_263

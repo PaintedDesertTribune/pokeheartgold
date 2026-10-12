@@ -14,6 +14,7 @@ typedef enum GymmickType {
     GYMMICK_FUCHSIA,
     GYMMICK_VIRIDIAN,
     GYMMICK_SINJOH,
+    GYMMICK_SINNOH_CANALAVE, // Sinnoh port: Canalave Gym lifts
 } GymmickType;
 
 typedef union GymmickUnion {
@@ -45,6 +46,9 @@ typedef union GymmickUnion {
     struct {
         u32 choice;
     } sinjoh;
+    struct {
+        u32 liftBits; // Sinnoh port: one bit per Canalave lift (set = at its second position)
+    } sinnohCanalave;
 } GymmickUnion;
 
 typedef struct Gymmick {

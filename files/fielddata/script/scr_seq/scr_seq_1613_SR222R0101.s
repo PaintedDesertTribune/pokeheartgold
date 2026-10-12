@@ -19,10 +19,10 @@ scr_seq_SR222R0101_000:
 	End
 
 scr_seq_SR222R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1153_SR222R0101_00000
 	WaitCry
@@ -32,10 +32,10 @@ scr_seq_SR222R0101_001:
 	End
 
 scr_seq_SR222R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1153_SR222R0101_00001
 	WaitCry
@@ -45,10 +45,10 @@ scr_seq_SR222R0101_002:
 	End
 
 scr_seq_SR222R0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1153_SR222R0101_00002
 	WaitCry
@@ -58,10 +58,10 @@ scr_seq_SR222R0101_003:
 	End
 
 scr_seq_SR222R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1153_SR222R0101_00003
 	WaitCry
@@ -71,10 +71,10 @@ scr_seq_SR222R0101_004:
 	End
 
 scr_seq_SR222R0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 25, 0
 	NPCMsg msg_1153_SR222R0101_00004
 	WaitCry
@@ -84,7 +84,7 @@ scr_seq_SR222R0101_005:
 	End
 
 scr_seq_SR222R0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1153_SR222R0101_00005

@@ -203,7 +203,7 @@ _0307:
 	End
 
 scr_seq_SR207_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0968_SR207_00008
@@ -213,7 +213,7 @@ scr_seq_SR207_002:
 	End
 
 scr_seq_SR207_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_130

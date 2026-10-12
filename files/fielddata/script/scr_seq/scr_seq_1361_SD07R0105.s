@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SD07R0105_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1027_SD07R0105_00000
@@ -46,7 +46,7 @@ _007D:
 	GoTo _008D
 
 _008D:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 0
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ClearFlag FLAG_SINNOH_572

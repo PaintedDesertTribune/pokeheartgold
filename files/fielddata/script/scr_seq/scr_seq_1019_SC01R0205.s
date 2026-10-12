@@ -22,7 +22,7 @@
 	ScrDefEnd
 
 scr_seq_SC01R0205_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x8007, 0
@@ -234,7 +234,7 @@ _0333:
 	End
 
 scr_seq_SC01R0205_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -249,7 +249,7 @@ scr_seq_SC01R0205_001:
 	End
 
 scr_seq_SC01R0205_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -264,7 +264,7 @@ scr_seq_SC01R0205_002:
 	End
 
 scr_seq_SC01R0205_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -279,7 +279,7 @@ scr_seq_SC01R0205_003:
 	End
 
 scr_seq_SC01R0205_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -294,7 +294,7 @@ scr_seq_SC01R0205_004:
 	End
 
 scr_seq_SC01R0205_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -309,7 +309,7 @@ scr_seq_SC01R0205_005:
 	End
 
 scr_seq_SC01R0205_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -324,7 +324,7 @@ scr_seq_SC01R0205_006:
 	End
 
 scr_seq_SC01R0205_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -339,7 +339,7 @@ scr_seq_SC01R0205_007:
 	End
 
 scr_seq_SC01R0205_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -354,7 +354,7 @@ scr_seq_SC01R0205_008:
 	End
 
 scr_seq_SC01R0205_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -369,7 +369,7 @@ scr_seq_SC01R0205_009:
 	End
 
 scr_seq_SC01R0205_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -384,7 +384,7 @@ scr_seq_SC01R0205_010:
 	End
 
 scr_seq_SC01R0205_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// Diamond ScrCmd_CheckPortraitSlot dropped: Jubilife TV portrait feature dropped
 	CompareVarToValue 0x800C, 0
@@ -406,7 +406,7 @@ _066B:
 	End
 
 scr_seq_SC01R0205_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0856_SC01R0205_00016
@@ -416,7 +416,7 @@ scr_seq_SC01R0205_012:
 	End
 
 scr_seq_SC01R0205_013:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0856_SC01R0205_00017

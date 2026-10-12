@@ -41,9 +41,9 @@ scr_seq_SD16R0102_000:
 	CheckFlag FLAG_SINNOH_221
 	CallIf 1, _008D
 	BufferPlayersName 0
-	PlaySE 1153
+	PlaySE SEQ_ME_HYOUKA2
 	NPCMsg msg_1236_SD16R0102_00001
-	WaitSE 1153
+	WaitSE SEQ_ME_HYOUKA2
 	SetFlag FLAG_SINNOH_221
 	SetVar VAR_SINNOH_4094, 1
 	NPCMsg msg_1236_SD16R0102_00002
@@ -107,16 +107,16 @@ _013F:
 	CloseMsg
 	ApplyMovement 14, mv_SD16R0102_01A8
 	WaitMovement
-	WaitSE 1500
-	PlayFanfare 1539
+	WaitSE SEQ_SE_DP_SELECT
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 14
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	SetVar VAR_SINNOH_4094, 2
 	ReleaseAll
 	End
 
 scr_seq_SD16R0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1236_SD16R0102_00006
@@ -126,7 +126,7 @@ scr_seq_SD16R0102_003:
 	End
 
 scr_seq_SD16R0102_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1236_SD16R0102_00007

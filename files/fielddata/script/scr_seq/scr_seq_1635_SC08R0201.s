@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC08R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2724
@@ -91,9 +91,9 @@ _010E:
 	BufferSpeciesName 1, 0x8002, 0, 0
 	BufferPlayersName 2
 	NPCMsg msg_1164_SC08R0201_00004
-	PlaySE 1155
+	PlaySE SEQ_ME_LVUP
 	NPCMsg msg_1164_SC08R0201_00005
-	WaitSE 1155
+	WaitSE SEQ_ME_LVUP
 	NPCMsg msg_1164_SC08R0201_00006
 	GoTo _012B
 

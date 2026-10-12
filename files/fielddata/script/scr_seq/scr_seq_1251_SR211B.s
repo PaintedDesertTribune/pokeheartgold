@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_SR211B_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_198
 	GoToIf 1, _0066

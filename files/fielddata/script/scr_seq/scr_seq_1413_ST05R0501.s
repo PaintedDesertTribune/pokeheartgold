@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_ST05R0501_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_167
 	GoToIf 0, _0025

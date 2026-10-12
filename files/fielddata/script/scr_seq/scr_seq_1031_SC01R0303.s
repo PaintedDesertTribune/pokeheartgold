@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC01R0303_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0862_SC01R0303_00000

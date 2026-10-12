@@ -110,8 +110,8 @@ scr_seq_ST01R0201_002:
 	// TODO Diamond ScrCmd_GiveRunningShoes 0x15a args []: no HeartGold mapping yet
 	BufferPlayersName 0
 	NPCMsg msg_0885_ST01R0201_00008
-	PlaySE 1158
-	WaitSE 1158
+	PlaySE SEQ_ME_ITEM
+	WaitSE SEQ_ME_ITEM
 	NPCMsg msg_0885_ST01R0201_00009
 	WaitButton
 	CloseMsg
@@ -121,7 +121,7 @@ scr_seq_ST01R0201_002:
 	End
 
 scr_seq_ST01R0201_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_40A4, 7
@@ -187,10 +187,10 @@ _0310:
 	BufferPlayersName 0
 	NPCMsg msg_0885_ST01R0201_00018
 	CloseMsg
-	PlayFanfare 1541
+	PlayFanfare SEQ_SE_DP_DOOR_OPEN
 	ClearFlag FLAG_SINNOH_527
 	ShowPerson 1
-	WaitSE 1541
+	WaitSE SEQ_SE_DP_DOOR_OPEN
 	ApplyMovement 0, mv_ST01R0201_06F8
 	ApplyMovement obj_player, mv_ST01R0201_07A8
 	WaitMovement
@@ -344,7 +344,7 @@ _05A2:
 	GoTo _05BC
 
 _05BC:
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 1
 	SetVar VAR_SINNOH_40A4, 6
 	ReleaseAll
@@ -366,8 +366,8 @@ _05CE:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	PlaySE 1166
-	WaitSE 1166
+	PlaySE SEQ_ME_ASA
+	WaitSE SEQ_ME_ASA
 	HealParty
 	FadeScreen 6, 1, 1, 0
 	WaitFade
@@ -456,7 +456,7 @@ _0848:
 
 scr_seq_ST01R0201_005:
 	BufferRivalsName 1
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0885_ST01R0201_00026
@@ -480,7 +480,7 @@ scr_seq_ST01R0201_006:
 	End
 
 _08E9:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00029
 	WaitButton
@@ -489,7 +489,7 @@ _08E9:
 	End
 
 _08FA:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00030
 	WaitButton
@@ -498,7 +498,7 @@ _08FA:
 	End
 
 _090B:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00031
 	WaitButton
@@ -507,7 +507,7 @@ _090B:
 	End
 
 scr_seq_ST01R0201_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00032
 	WaitButton
@@ -516,7 +516,7 @@ scr_seq_ST01R0201_007:
 	End
 
 scr_seq_ST01R0201_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00033
 	WaitButton
@@ -525,7 +525,7 @@ scr_seq_ST01R0201_008:
 	End
 
 scr_seq_ST01R0201_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0885_ST01R0201_00034
 	WaitButton

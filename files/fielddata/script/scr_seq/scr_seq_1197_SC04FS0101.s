@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC04FS0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -22,7 +22,7 @@ scr_seq_SC04FS0101_000:
 	End
 
 scr_seq_SC04FS0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CallStd std_mart_intro
@@ -34,7 +34,7 @@ scr_seq_SC04FS0101_001:
 scr_seq_SC04FS0101_002:
 	BufferItemName 0, 26
 	BufferItemName 1, 330
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0945_SC04FS0101_00000
@@ -44,7 +44,7 @@ scr_seq_SC04FS0101_002:
 	End
 
 scr_seq_SC04FS0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0945_SC04FS0101_00001

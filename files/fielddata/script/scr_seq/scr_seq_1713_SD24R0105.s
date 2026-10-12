@@ -56,9 +56,9 @@ scr_seq_SD24R0105_002:
 	CheckFlag FLAG_SINNOH_225
 	CallIf 1, _00EE
 	BufferPlayersName 0
-	PlaySE 1153
+	PlaySE SEQ_ME_HYOUKA2
 	NPCMsg msg_1203_SD24R0105_00001
-	WaitSE 1153
+	WaitSE SEQ_ME_HYOUKA2
 	SetFlag FLAG_SINNOH_225
 	SetVar VAR_SINNOH_4092, 1
 	NPCMsg msg_1203_SD24R0105_00002
@@ -249,7 +249,7 @@ scr_seq_SD24R0105_006:
 	End
 
 scr_seq_SD24R0105_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_226

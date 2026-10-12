@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC06R0601_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8000
@@ -213,7 +213,7 @@ _0304:
 	Return
 
 scr_seq_SC06R0601_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1102_SC06R0601_00011
@@ -223,10 +223,10 @@ scr_seq_SC06R0601_001:
 	End
 
 scr_seq_SC06R0601_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 417, 0
 	NPCMsg msg_1102_SC06R0601_00012
 	WaitCry

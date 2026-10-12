@@ -35,7 +35,7 @@ scr_seq_SD26R0107_001:
 	End
 
 scr_seq_SD26R0107_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_2429
@@ -101,7 +101,7 @@ _011B:
 	End
 
 scr_seq_SD26R0107_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_2429
 	GoToIf 1, _0164
@@ -119,7 +119,7 @@ _0164:
 	End
 
 scr_seq_SD26R0107_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_2429
 	GoToIf 1, _018B
@@ -137,7 +137,7 @@ _018B:
 	End
 
 scr_seq_SD26R0107_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_2429
 	GoToIf 1, _01B2
@@ -164,7 +164,7 @@ scr_seq_SD26R0107_008:
 	End
 
 scr_seq_SD26R0107_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckFlag FLAG_SINNOH_2429
 	GoToIf 1, _02F1
@@ -178,7 +178,7 @@ scr_seq_SD26R0107_009:
 
 _01F7:
 	SetVar VAR_SINNOH_410D, 0
-	PlayFanfare 1509
+	PlayFanfare SEQ_SE_DP_BUTTON3
 	BufferPlayersName 0
 	NPCMsg msg_1073_SD26R0107_00006
 	CloseMsg
@@ -255,7 +255,7 @@ scr_seq_SD26R0107_013:
 	End
 
 scr_seq_SD26R0107_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1073_SD26R0107_00008
@@ -265,7 +265,7 @@ scr_seq_SD26R0107_010:
 	End
 
 scr_seq_SD26R0107_011:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1073_SD26R0107_00009
@@ -275,7 +275,7 @@ scr_seq_SD26R0107_011:
 	End
 
 scr_seq_SD26R0107_012:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1073_SD26R0107_00010

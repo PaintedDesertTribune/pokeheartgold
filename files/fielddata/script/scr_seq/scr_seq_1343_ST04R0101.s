@@ -20,7 +20,7 @@ _001B:
 	Return
 
 scr_seq_ST04R0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
@@ -42,7 +42,7 @@ _0051:
 	End
 
 scr_seq_ST04R0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1018_ST04R0101_00002
 	WaitButton

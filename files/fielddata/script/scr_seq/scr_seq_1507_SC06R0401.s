@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC06R0401_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// TODO Diamond ScrCmd_GetItemNameWithIndefArticle 0x2c4 args [4, 93]: no HeartGold mapping yet

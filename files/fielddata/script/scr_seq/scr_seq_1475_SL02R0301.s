@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SL02R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_1
@@ -37,8 +37,8 @@ _0057:
 	SetFlag FLAG_SINNOH_171
 	SetFlag FLAG_SINNOH_1
 	NPCMsg msg_1084_SL02R0301_00001
-	PlaySE 1158
-	WaitSE 1158
+	PlaySE SEQ_ME_ITEM
+	WaitSE SEQ_ME_ITEM
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
@@ -55,8 +55,8 @@ _0095:
 	SetFlag FLAG_SINNOH_172
 	SetFlag FLAG_SINNOH_1
 	NPCMsg msg_1084_SL02R0301_00002
-	PlaySE 1158
-	WaitSE 1158
+	PlaySE SEQ_ME_ITEM
+	WaitSE SEQ_ME_ITEM
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade

@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_SD05R0102_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1120_SD05R0102_00000
 	WaitButton

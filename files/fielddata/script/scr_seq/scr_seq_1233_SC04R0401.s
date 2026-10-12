@@ -22,7 +22,7 @@ _0027:
 	Return
 
 scr_seq_SC04R0401_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0963_SC04R0401_00002
@@ -43,7 +43,7 @@ scr_seq_SC04R0401_002:
 	End
 
 scr_seq_SC04R0401_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_267

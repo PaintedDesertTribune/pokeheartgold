@@ -13,7 +13,7 @@
 	ScrDefEnd
 
 scr_seq_SC06R0102_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	ShowMoneyBox 20, 2
 	NPCMsg msg_1106_SC06R0102_00000
@@ -45,7 +45,7 @@ _0063:
 	End
 
 scr_seq_SC06R0102_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1106_SC06R0102_00002
@@ -55,7 +55,7 @@ scr_seq_SC06R0102_001:
 	End
 
 scr_seq_SC06R0102_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1106_SC06R0102_00003
@@ -65,7 +65,7 @@ scr_seq_SC06R0102_002:
 	End
 
 scr_seq_SC06R0102_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1106_SC06R0102_00004
@@ -75,7 +75,7 @@ scr_seq_SC06R0102_003:
 	End
 
 scr_seq_SC06R0102_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1106_SC06R0102_00005

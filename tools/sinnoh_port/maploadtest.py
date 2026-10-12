@@ -72,17 +72,37 @@ def start_coords(name, dp_codes):
             return x, y
     return 8, 8
 
+INSTANCE = 0      # --instance N: run the test in melonDS instance N (open -n) so a game in instance 0 keeps running
+GDB_PORT = 3333   # --port: the ARM9 GDB stub port of that instance ([InstanceN.Gdb.ARM9] in melonDS.toml)
+_our_pids = set()
+
+def _melonds_pids():
+    out = subprocess.run(["pgrep", "-x", "melonDS"], capture_output=True, text=True).stdout.split()
+    return set(int(p) for p in out)
+
+def kill_emulator():
+    """Kill only the emulator this harness started (instance mode) or every melonDS (instance 0, the old behaviour)."""
+    if INSTANCE == 0:
+        subprocess.run(["pkill", "-9", "-x", "melonDS"], capture_output=True)
+    else:
+        for pid in list(_our_pids):
+            subprocess.run(["kill", "-9", str(pid)], capture_output=True)
+        _our_pids.clear()
+
 def run_one(name, mid, x, y, syms, timeout=70):
-    subprocess.run(["pkill", "-9", "-x", "melonDS"], capture_output=True)
+    kill_emulator()
     time.sleep(1.5)
-    subprocess.run(["open", "-a", MELONDS, ROM], check=True)
+    before = _melonds_pids()
+    subprocess.run((["open", "-n", "-a"] if INSTANCE else ["open", "-a"]) + [MELONDS, ROM], check=True)
     time.sleep(4)
+    if INSTANCE:
+        _our_pids.update(_melonds_pids() - before)
     loc = syms["sLocation_PlayerRoom"]
     script = f"""set pagination off
 set confirm off
 file {ELF}
 set remote binary-download-packet off
-target remote localhost:3333
+target remote localhost:{GDB_PORT}
 break Location_SetToPlayerRoom
 continue
 set {{int}}{loc:#x} = {mid}
@@ -158,7 +178,12 @@ def main():
     ap.add_argument("--out", default=os.path.join(ROOT, "tools/sinnoh_port/maploadtest_report.json"))
     ap.add_argument("--at", default="", help="override start tile for every map in this run, as x,y")
     ap.add_argument("--skip-passed", action="store_true", help="skip maps already PASS in --out")
+    ap.add_argument("--instance", type=int, default=0, help="melonDS instance to use (N>0: open -n, kill only ours; needs [InstanceN.Gdb] in melonDS.toml)")
+    ap.add_argument("--port", type=int, default=0, help="ARM9 GDB port (default 3333, or 3333 + 2*instance)")
     a = ap.parse_args()
+    global INSTANCE, GDB_PORT
+    INSTANCE = a.instance
+    GDB_PORT = a.port or (3333 + 2 * a.instance)
     syms = nm()
     ids = map_ids()
     global DP_DIMS
@@ -182,7 +207,7 @@ def main():
         results[name] = r
         print(f"[{i+1}/{len(names)}] {name}: {r['result']} {r.get('where', '')} {r.get('pc', '')}", flush=True)
         json.dump(sorted(results.values(), key=lambda r: r["map"]), open(a.out, "w"), indent=1)
-    subprocess.run(["pkill", "-9", "-x", "melonDS"], capture_output=True)
+    kill_emulator()
     counts = {}
     for r in results.values():
         counts[r["result"]] = counts.get(r["result"], 0) + 1

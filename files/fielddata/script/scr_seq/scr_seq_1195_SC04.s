@@ -47,7 +47,7 @@ _0090:
 	End
 
 scr_seq_SC04_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00010
@@ -57,7 +57,7 @@ scr_seq_SC04_004:
 	End
 
 scr_seq_SC04_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00011
@@ -67,7 +67,7 @@ scr_seq_SC04_006:
 	End
 
 scr_seq_SC04_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_129
@@ -86,7 +86,7 @@ _00DC:
 	End
 
 scr_seq_SC04_007:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_129
@@ -225,7 +225,7 @@ _02B2:
 	End
 
 scr_seq_SC04_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00003
@@ -235,7 +235,7 @@ scr_seq_SC04_001:
 	End
 
 scr_seq_SC04_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00004
@@ -245,7 +245,7 @@ scr_seq_SC04_002:
 	End
 
 scr_seq_SC04_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00005
@@ -255,7 +255,7 @@ scr_seq_SC04_003:
 	End
 
 scr_seq_SC04_008:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00012
@@ -265,7 +265,7 @@ scr_seq_SC04_008:
 	End
 
 scr_seq_SC04_009:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00013
@@ -275,7 +275,7 @@ scr_seq_SC04_009:
 	End
 
 scr_seq_SC04_010:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00014
@@ -288,7 +288,7 @@ scr_seq_SC04_017:
 	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 10
 	GoToIf 1, _03BC
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0944_SC04_00028
 	WaitButton
@@ -297,7 +297,7 @@ scr_seq_SC04_017:
 	End
 
 _03BC:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0944_SC04_00027
 	WaitButton
@@ -308,7 +308,7 @@ _03BC:
 scr_seq_SC04_018:
 	CompareVarToValue VAR_SINNOH_4114, 0
 	GoToIf 1, _03ED
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00017
@@ -318,7 +318,7 @@ scr_seq_SC04_018:
 	End
 
 _03ED:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0944_SC04_00016
@@ -408,7 +408,7 @@ _0509:
 	Return
 
 scr_seq_SC04_021:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_130

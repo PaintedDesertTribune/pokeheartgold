@@ -48,7 +48,7 @@ scr_seq_SR208_004:
 	End
 
 scr_seq_SR208_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_319

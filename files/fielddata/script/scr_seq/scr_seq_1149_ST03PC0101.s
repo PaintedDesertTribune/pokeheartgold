@@ -17,7 +17,7 @@ scr_seq_ST03PC0101_000:
 	End
 
 scr_seq_ST03PC0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0921_ST03PC0101_00000
@@ -27,7 +27,7 @@ scr_seq_ST03PC0101_001:
 	End
 
 scr_seq_ST03PC0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0921_ST03PC0101_00001
@@ -37,7 +37,7 @@ scr_seq_ST03PC0101_002:
 	End
 
 scr_seq_ST03PC0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0921_ST03PC0101_00002

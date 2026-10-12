@@ -23,7 +23,7 @@ _001C:
 scr_seq_SD17R0102_001:
 	CheckFlag FLAG_SINNOH_289
 	GoToIf 1, _0046
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1253_SD17R0102_00000
 	WaitButton
@@ -32,7 +32,7 @@ scr_seq_SD17R0102_001:
 	End
 
 _0046:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1253_SD17R0102_00001
 	WaitButton

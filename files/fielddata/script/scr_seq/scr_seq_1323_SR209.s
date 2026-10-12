@@ -50,7 +50,7 @@ _007F:
 	End
 
 scr_seq_SR209_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1008_SR209_00000
@@ -60,7 +60,7 @@ scr_seq_SR209_000:
 	End
 
 scr_seq_SR209_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CompareVarToValue VAR_SINNOH_408A, 1
 	GoToIf 1, _0102
@@ -100,7 +100,7 @@ _0102:
 	GoTo _0185
 
 _014D:
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 442, 0
 	NPCMsg msg_1008_SR209_00009
 	WaitCry
@@ -161,7 +161,7 @@ _01BC:
 	End
 
 scr_seq_SR209_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	SetVar 0x8004, 446
@@ -241,7 +241,7 @@ scr_seq_SR209_008:
 	End
 
 scr_seq_SR209_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1008_SR209_00017
@@ -251,7 +251,7 @@ scr_seq_SR209_005:
 	End
 
 scr_seq_SR209_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1008_SR209_00018

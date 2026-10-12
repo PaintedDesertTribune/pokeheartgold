@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_ST03R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0925_ST03R0301_00000
@@ -21,7 +21,7 @@ scr_seq_ST03R0301_000:
 	End
 
 scr_seq_ST03R0301_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_131
@@ -68,10 +68,10 @@ _009F:
 	End
 
 scr_seq_ST03R0301_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	PlayCry 35, 0
 	NPCMsg msg_0925_ST03R0301_00005
 	WaitCry

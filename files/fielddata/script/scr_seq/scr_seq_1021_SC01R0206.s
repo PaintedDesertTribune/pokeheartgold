@@ -15,28 +15,28 @@
 	ScrDefEnd
 
 scr_seq_SC01R0206_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_Unk01B5 0x1b5 args [0]: no HeartGold mapping yet
 	ReleaseAll
 	End
 
 scr_seq_SC01R0206_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_Unk01B5 0x1b5 args [1]: no HeartGold mapping yet
 	ReleaseAll
 	End
 
 scr_seq_SC01R0206_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	// TODO Diamond ScrCmd_Unk01B5 0x1b5 args [2]: no HeartGold mapping yet
 	ReleaseAll
 	End
 
 scr_seq_SC01R0206_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0857_SC01R0206_00000
@@ -46,7 +46,7 @@ scr_seq_SC01R0206_003:
 	End
 
 scr_seq_SC01R0206_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0857_SC01R0206_00001
@@ -56,7 +56,7 @@ scr_seq_SC01R0206_004:
 	End
 
 scr_seq_SC01R0206_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0857_SC01R0206_00002
@@ -66,7 +66,7 @@ scr_seq_SC01R0206_005:
 	End
 
 scr_seq_SC01R0206_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0857_SC01R0206_00003

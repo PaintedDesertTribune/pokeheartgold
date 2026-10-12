@@ -43,7 +43,7 @@ scr_seq_SC06GYM0101_003:
 	End
 
 scr_seq_SC06GYM0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 3, 0x800C
@@ -59,8 +59,8 @@ scr_seq_SC06GYM0101_004:
 	NPCMsg msg_1099_SC06GYM0101_00001
 	BufferPlayersName 0
 	NPCMsg msg_1099_SC06GYM0101_00002
-	PlaySE 1161
-	WaitSE 1161
+	PlaySE SEQ_ME_BADGE
+	WaitSE SEQ_ME_BADGE
 	GiveBadge 3
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_FISHERMAN_ERICK
@@ -111,7 +111,7 @@ _0163:
 	End
 
 scr_seq_SC06GYM0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 3, 0x800C
@@ -132,7 +132,7 @@ _018F:
 	End
 
 scr_seq_SC06GYM0101_006:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 3, 0x800C
 	CompareVarToValue 0x800C, 1

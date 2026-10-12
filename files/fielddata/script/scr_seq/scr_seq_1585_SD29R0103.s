@@ -26,7 +26,7 @@ _0021:
 	End
 
 scr_seq_SD29R0103_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	PlayCry 480, 0

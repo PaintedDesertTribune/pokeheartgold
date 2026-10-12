@@ -72,7 +72,7 @@ _00E1:
 	End
 
 scr_seq_SD26R0104_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	HasItem 440, 1, 0x800C
@@ -97,8 +97,8 @@ _0177:
 	BufferPlayersName 0
 	NPCMsg msg_1071_SD26R0104_00007
 	WaitButton
-	WaitSE 1500
-	PlayFanfare 1544
+	WaitSE SEQ_SE_DP_SELECT
+	PlayFanfare SEQ_SE_DP_DOOR10
 	ApplyMovement 1, mv_SD26R0104_01B4
 	ApplyMovement 2, mv_SD26R0104_01BC
 	WaitMovement
@@ -115,7 +115,7 @@ _01AB:
 	End
 
 scr_seq_SD26R0104_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1071_SD26R0104_00008
 	WaitButton
@@ -124,7 +124,7 @@ scr_seq_SD26R0104_002:
 	End
 
 scr_seq_SD26R0104_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1071_SD26R0104_00009
 	GoTo _01E6

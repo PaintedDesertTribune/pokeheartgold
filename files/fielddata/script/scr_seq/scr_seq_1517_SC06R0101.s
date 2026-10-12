@@ -44,7 +44,7 @@ _0082:
 	HasEnoughMoneyImmediate 0x800C, 500
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0137
-	PlayFanfare 1604
+	PlayFanfare SEQ_SE_DP_REGI
 	SubMoneyImmediate 500
 	UpdateMoneyBox
 	NPCMsg msg_1105_SC06R0101_00002
@@ -74,7 +74,7 @@ _00F8:
 	SetVar VAR_SINNOH_40DA, 1
 	// TODO Diamond ScrCmd_EnableDisableSafariZone 0x202 args [0]: no HeartGold mapping yet
 	SetDynamicWarp 125, 2, 5, 2, 1
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_GREAT_MARSH_AREA_6, 0, 68, 116, 0
@@ -157,7 +157,7 @@ scr_seq_SC06R0101_003:
 	End
 
 scr_seq_SC06R0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1105_SC06R0101_00012

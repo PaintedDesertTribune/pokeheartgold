@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_SC01R0208_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetDynamicWarpFloorNo VAR_SINNOH_40CE
@@ -132,7 +132,7 @@ _0245:
 	CloseMsg
 	ApplyMovement 0, mv_SC01R0208_029C
 	WaitMovement
-	WaitSE 1500
+	WaitSE SEQ_SE_DP_SELECT
 	ElevatorAnim 0x8004, 4
 	Return
 

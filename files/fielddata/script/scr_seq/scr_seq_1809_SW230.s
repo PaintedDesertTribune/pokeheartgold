@@ -20,7 +20,7 @@ scr_seq_SW230_000:
 	End
 
 scr_seq_SW230_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1251_SW230_00001
@@ -30,7 +30,7 @@ scr_seq_SW230_001:
 	End
 
 scr_seq_SW230_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1251_SW230_00002

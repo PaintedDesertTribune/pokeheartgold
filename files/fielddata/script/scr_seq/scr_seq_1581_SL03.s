@@ -46,7 +46,7 @@ _007D:
 	Return
 
 scr_seq_SL03_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 6, 0x800C
@@ -66,7 +66,7 @@ _00B5:
 	End
 
 scr_seq_SL03_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 6, 0x800C

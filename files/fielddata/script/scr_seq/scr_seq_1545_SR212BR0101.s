@@ -16,7 +16,7 @@ scr_seq_SR212BR0101_000:
 	End
 
 scr_seq_SR212BR0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1119_SR212BR0101_00000
@@ -26,7 +26,7 @@ scr_seq_SR212BR0101_001:
 	End
 
 scr_seq_SR212BR0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	Call _0534
@@ -344,7 +344,7 @@ _05B0:
 	End
 
 scr_seq_SR212BR0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_1119_SR212BR0101_00009
 	WaitButton

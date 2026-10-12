@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SR211A_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0971_SR211A_00000

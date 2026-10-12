@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_SR213R0601_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
@@ -32,7 +32,7 @@ _003A:
 	End
 
 scr_seq_SR213R0601_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)

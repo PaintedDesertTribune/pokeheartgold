@@ -67,7 +67,7 @@ _00C9:
 	ApplyMovement 1, mv_SC10R0112_0120
 	ApplyMovement obj_player, mv_SC10R0112_0198
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_POKEMON_LEAGUE_HALL_OF_FAME, 0, 8, 15, 0

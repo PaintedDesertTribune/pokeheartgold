@@ -73,6 +73,12 @@ PLACEHOLDER_TRAINER = 1
 DP_SPRITE_TABLES = "arm9/overlays/05/asm/ov05_021F0514.s"
 # Diamond prop "sprite" -> (fldeff member, BG event type). 91-96 are the town sign boards, 183 the trainer-school book,
 # 209 the Pokémon League door (Platinum's ov5 table; Diamond's fldeff members match).
+# Diamond building models that engine code places at runtime (not in any land data), per map: imported into that
+# map's area so the gymmick code can MapPropManager_LoadOne them; HeartGold ids land in include/constants/sinnoh.h
+EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "SINNOH_BM_CANALAVE_LIFT_X": 0x127,
+                                          "SINNOH_BM_CANALAVE_LIFT_V": 0x128, "SINNOH_BM_CANALAVE_LIFT_TALL": 0x129,
+                                          "SINNOH_BM_CANALAVE_FLOOR_1": 0x12C, "SINNOH_BM_CANALAVE_FLOOR_2": 0x12D,
+                                          "SINNOH_BM_CANALAVE_FLOOR_3": 0x12E}}
 SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
 BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
 FIRST_SINNOH_SPRITE = 1100   # HeartGold sprite ids above the follower-mon range
@@ -105,6 +111,14 @@ SHARED_MATRIX_NAME = "SINNOH"
 MAP_PROJ_X = (32, 30)
 MAP_PROJ_Y = (22, 30)
 DEFAULT_MUSIC = "SEQ_GS_C_ASAGI"
+SE_RENAMES = {   # Diamond jingles (BGM-range ids played with PlaySE/PlayFanfare) -> HeartGold's
+    "SEQ_FANFA1": "SEQ_ME_LVUP", "SEQ_FANFA2": "SEQ_ME_POKEGET", "SEQ_FANFA3": "SEQ_ME_HYOUKA2", "SEQ_FANFA4": "SEQ_ME_ITEM",
+    "SEQ_FANFA5": "SEQ_ME_KEYITEM", "SEQ_FANFA6": "SEQ_ME_ITEM", "SEQ_BADGE": "SEQ_ME_BADGE", "SEQ_WAZA": "SEQ_ME_WAZA",
+    "SEQ_ASA": "SEQ_ME_ASA", "SEQ_WASURE": "SEQ_ME_WASURE", "SEQ_GONIN": "SEQ_ME_HYOUKA2", "SEQ_TV_END": "SEQ_GS_RADIO_JINGLE",
+    "SEQ_KINOMI": "SEQ_ME_ITEM", "SEQ_KOUKAN": "SEQ_GS_KOUKAN", "SEQ_REPORT": "SEQ_ME_ITEM", "SEQ_PRESENT": "SEQ_ME_ITEM",
+    "SEQ_POCKETCH": "SEQ_ME_POKEGEAR_REGIST", "SEQ_ACCE": "SEQ_ME_ACCE",
+}
+HG_SE_IDS = set(re.findall(r"#define (SEQ_SE_\w+)", open("include/constants/sndseq.h").read()))   # names HeartGold knows
 BGM_EVENT = {   # Diamond event/encounter themes played from scripts -> HeartGold stand-ins
     "SEQ_TSURETEKE": "SEQ_GS_E_RIVAL1", "SEQ_THE_BOY": "SEQ_GS_E_SUPPORT_M", "SEQ_THE_GIRL": "SEQ_GS_E_SUPPORT_F",
     "SEQ_THE_EVENT01": "SEQ_GS_E_TSURETEKE1", "SEQ_THE_EVENT02": "SEQ_GS_E_TSURETEKE2", "SEQ_THE_EVENT03": "SEQ_GS_E_TSURETEKE1",
@@ -430,8 +444,8 @@ TRANSLATE = {
     "ScrCmd_Unk003A": ("TrainerTips", "mp"),
     "ScrCmd_Unk003B": ("WaitSignpost", "p"),
     "ScrCmd_Unk0042": ("ScrCmd_066", "bb"),
-    "ScrCmd_PlayFanfare": ("PlayFanfare", "v"),
-    "ScrCmd_PlayFanfareWait": ("WaitSE", "v"),
+    "ScrCmd_PlayFanfare": ("PlayFanfare", "E"),
+    "ScrCmd_PlayFanfareWait": ("WaitSE", "E"),
     "ScrCmd_PlayCry": ("PlayCry", "vv"),
     "ScrCmd_Unk005E": ("ApplyMovement", "oM"),
     "ScrCmd_WaitForMovement": ("WaitMovement", ""),
@@ -462,7 +476,7 @@ TRANSLATE = {
     "ScrCmd_AddSpecialGameStat": ("AddSpecialGameStat", "v"),
     "ScrCmd_GetItemName": ("BufferItemName", "bv"),
     "ScrCmd_GetTMHMMoveName": ("BufferTMHMMoveName", "bv"),
-    "ScrCmd_PlaySound": ("PlaySE", "v"),
+    "ScrCmd_PlaySound": ("PlaySE", "E"),
     "ScrCmd_PlaySoundWait": ("WaitSE", "v"),
     "ScrCmd_SetWarpPosition": ("MoveWarp", "vvv"),
     "ScrCmd_SetTrainerFlag": ("SetTrainerFlag", "t"),
@@ -510,6 +524,7 @@ TRANSLATE = {
     "ScrCmd_ClearTrainerFlag": ("ClearTrainerFlag", "t"),
     "ScrCmd_CheckTrainerFlag": ("CheckTrainerFlag", "t"),
     "ScrCmd_Unk0040": ("MenuInit", "bbbbp"),
+    "ScrCmd_InitCanalaveGym": ("SinnohCanalaveGymInit", ""),   # src/field/gymmick/sinnoh_canalave.c
     "ScrCmd_PlayBgm": ("PlayBGM", "B"),
     "ScrCmd_Unk0057": ("PlayBGM", "B"),          # Diamond's second play-BGM (used by its std 2040/2048 theme scripts)
     "ScrCmd_FadeOutBgm": ("FadeOutBGM", "vv"),   # (target volume, frames) in both games
@@ -564,7 +579,6 @@ DROP = {
     "ScrCmd_Unk029D": "Diamond scrolling list window (library bookshelf)",
     "ScrCmd_Unk01CD": "Diamond misc save-data pointer setup",
     "ScrCmd_Unk02B5": "Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id",
-    "ScrCmd_InitCanalaveGym": "Canalave Gym lift puzzle needs a HeartGold port",
     "ScrCmd_UnlockGenderEntries": "Pokédex gender pages; HeartGold has no toggle",
     "ScrCmd_CheckPoketch": "Pokétch dropped (decision 16)", "ScrCmd_CheckPoketchApp": "Pokétch dropped (decision 16)",
     "ScrCmd_GivePoketch": "Pokétch dropped (decision 16)", "ScrCmd_UnlockPoketchApp": "Pokétch dropped (decision 16)",
@@ -792,7 +806,8 @@ class Translator:
                     pc = nxt
                     continue
                 if name == "ScrCmd_PlaySound":
-                    last_se = str(raw[0]) if raw[0] < 0x4000 else self.var(raw[0])
+                    nm0 = self.dp.seq_name(raw[0]) if raw[0] < 0x4000 else None
+                    last_se = self.var(raw[0]) if raw[0] >= 0x4000 else (nm0 if nm0 in HG_SE_IDS else SE_RENAMES.get(nm0, str(raw[0])))
                 if name == "ScrCmd_MoveHearthomeGymElevator":
                     # Diamond lifts the player between the room's two floors in place (upper floor north of the lift tile,
                     # lower floor south; the height plates do not overlap), so a warp one tile north or south stands in
@@ -850,6 +865,21 @@ class Translator:
                             args.append(lbl)
                         elif k == "m":
                             args.append(f"{self.msg_prefix}_{v:05d}" if v < self.nmsgs else str(v))
+                        elif k == "E":   # a Diamond sound-effect id -> HeartGold's id for the same-named effect
+                            if v >= 0x4000:
+                                args.append(self.var(v))
+                            else:
+                                nm = self.dp.seq_name(v)
+                                if nm in HG_SE_IDS:
+                                    args.append(nm)
+                                elif nm in SE_RENAMES:
+                                    args.append(SE_RENAMES[nm])
+                                elif nm in BGM_EVENT or nm in MUSIC:
+                                    args.append(BGM_EVENT.get(nm) or MUSIC[nm])
+                                else:
+                                    args.append(str(v))
+                                    if nm:
+                                        self.todo.append(f"sound effect {nm} ({v}) is not in HeartGold; raw id kept")
                         elif k == "B":   # a Diamond BGM id -> the HeartGold stand-in (map music or event theme)
                             if v >= 0x4000:
                                 args.append(self.var(v))
@@ -1098,6 +1128,7 @@ def main():
     shared_matrix_idx = FIRST_MATRIX + len(maps)
     model_cache = {"field": {}, "room": {}}
     generated_scripts, generated_headers, generated_events, generated_msgs, generated_matrices = [], [], [], [], []
+    extra_model_defs = {}   # C name -> HeartGold build-model id (EXTRA_AREA_MODELS)
     header_entries, map_defines = [], []
     todo = []
 
@@ -1134,6 +1165,9 @@ def main():
                 bid = struct.unpack_from("<I", c, 0x10 + perm + i * 0x30)[0]
                 if bid not in area_models[h["area"]]:
                     area_models[h["area"]].append(bid)
+        for bid in EXTRA_AREA_MODELS.get(m["name"], {}).values():
+            if bid not in area_models[h["area"]]:
+                area_models[h["area"]].append(bid)
 
     for m in maps:
         h = m["dphdr"]
@@ -1151,6 +1185,10 @@ def main():
             dp_ids = list(area_models[h["area"]])
             dp_ids += [k for k in sorted(area_signs.get(h["area"], ())) if k not in dp_ids]
             hg_ids = import_models(dp_ids, kind)
+            for mname, extra in EXTRA_AREA_MODELS.items():
+                if any(mm["name"] == mname and mm["dphdr"]["area"] == h["area"] for mm in maps):
+                    for cname, bid in extra.items():
+                        extra_model_defs[cname] = hg_ids[dp_ids.index(bid)]
             if dp_tex not in tex_cache:
                 tex_cache[dp_tex] = narcs.append("tex", dp.file("areadata/area_map_tex/map_tex_set", dp_tex))
             list_idx = narcs.append("buildlist", struct.pack("<H", len(hg_ids)) + b"".join(struct.pack("<H", i) for i in hg_ids))
@@ -1558,6 +1596,7 @@ def main():
             "#define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)",
             f"#define SINNOH_HIDDEN_ITEM_FIRST_IDX {FIRST_HIDDEN_ITEM_IDX}   // hidden-item indices from here on are Sinnoh's",
             f"#define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x{SINNOH_HIDDEN_ITEM_FLAG_BASE:04X}   // their flags (stock 800+idx would hit story flags)", ""]
+    sin += [f"#define {cname} {hgid}   // Diamond build model, placed at runtime by gymmick code" for cname, hgid in sorted(extra_model_defs.items())] + [""]
     std3 = "files/fielddata/script/scr_seq/scr_seq_0003.s"
     std3_src = open(std3).read()
     std3_count = std3_src.count("\tScrDef ")

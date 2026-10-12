@@ -11,7 +11,7 @@
 	ScrDefEnd
 
 scr_seq_SC04GYM0101_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_0946_SC04GYM0101_00000
@@ -19,14 +19,14 @@ scr_seq_SC04GYM0101_000:
 	Wait 15, 0x800C
 	ApplyMovement 1, mv_SC04GYM0101_003C
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 1
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	ReleaseAll
 	End
 
 scr_seq_SC04GYM0101_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckBadge 1, 0x800C
@@ -47,7 +47,7 @@ _006A:
 	End
 
 scr_seq_SC04GYM0101_002:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 1, 0x800C
 	CompareVarToValue 0x800C, 1

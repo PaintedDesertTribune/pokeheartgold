@@ -26,7 +26,7 @@ _002F:
 	Return
 
 scr_seq_SD24R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1198_SD24R0201_00000
@@ -59,9 +59,9 @@ _00A8:
 _00B2:
 	ApplyMovement 0, mv_SD24R0201_00F0
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 0
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ReleaseAll
 	End
@@ -69,9 +69,9 @@ _00B2:
 _00D0:
 	ApplyMovement 0, mv_SD24R0201_00FC
 	WaitMovement
-	PlayFanfare 1539
+	PlayFanfare SEQ_SE_DP_KAIDAN2
 	HidePerson 0
-	WaitSE 1539
+	WaitSE SEQ_SE_DP_KAIDAN2
 	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ReleaseAll
 	End

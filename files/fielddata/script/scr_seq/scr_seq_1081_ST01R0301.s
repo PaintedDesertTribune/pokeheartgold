@@ -9,7 +9,7 @@
 	ScrDefEnd
 
 scr_seq_ST01R0301_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_4095, 1

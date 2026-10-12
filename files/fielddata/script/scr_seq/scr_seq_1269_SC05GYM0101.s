@@ -39,17 +39,17 @@ _elev_SC05GYM0101_0037:
 	End
 
 scr_seq_SC05GYM0101_003:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	NPCMsg msg_0981_SC05GYM0101_00000
-	PlayFanfare 1591
+	PlayFanfare SEQ_SE_DP_MAZYO4
 	WaitButton
 	CloseMsg
 	ReleaseAll
 	End
 
 scr_seq_SC05GYM0101_004:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	CheckFlag FLAG_SINNOH_165
@@ -89,7 +89,7 @@ _00A9:
 	End
 
 scr_seq_SC05GYM0101_005:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	CheckBadge 4, 0x800C
 	CompareVarToValue 0x800C, 1

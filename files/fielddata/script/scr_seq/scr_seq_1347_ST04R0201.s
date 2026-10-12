@@ -10,7 +10,7 @@
 	ScrDefEnd
 
 scr_seq_ST04R0201_000:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	GetPartyLead 0x800C
@@ -23,7 +23,7 @@ scr_seq_ST04R0201_000:
 	End
 
 scr_seq_ST04R0201_001:
-	PlayFanfare 1500
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
 	NPCMsg msg_1020_ST04R0201_00001
