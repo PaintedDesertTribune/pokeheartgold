@@ -54,11 +54,11 @@ FIRST_SCR_SEQ = 965         # first free scr_seq index
 FIRST_ZONE_EVENT = 491
 FIRST_MSG = 829
 FIRST_SINNOH_FLAG = 2912    # NUM_FLAGS of stock HeartGold; we grow NUM_FLAGS
-NUM_FLAGS_NEW = 4096
+NUM_FLAGS_NEW = 8192        # save audit 2026-10-11: 0xB60-0x115F Sinnoh flags, 0x1160-0x155F Sinnoh trainers,
+                            # 0x1560-0x159F Sinnoh fly points, 0x15A0-0x1FFF reserved for Hoenn
+NUM_VARS_NEW = 0x380        # vars 0x4170-0x426F Sinnoh, 0x4270-0x437F reserved for Hoenn
 FIRST_HIDDEN_ITEM_IDX = 231  # free indices in HeartGold's hidden item table
-FREE_VARS = [0x4105, 0x4109, 0x4111, 0x4112, 0x4128, 0x413C, 0x413D, 0x413E, 0x413F, 0x4140, 0x4141, 0x4152, 0x4153, 0x4154,
-             0x4155, 0x4156, 0x4157, 0x4158, 0x4159, 0x415A, 0x415B, 0x415C, 0x415D, 0x415E, 0x415F, 0x4160, 0x4161, 0x4162,
-             0x4163, 0x4164, 0x4165, 0x4166, 0x4167, 0x4168, 0x4169, 0x416A, 0x416B, 0x416C, 0x416D, 0x416E]
+FREE_VARS = list(range(0x4170, 0x4270))   # Sinnoh variables (save audit); the 40 unused stock vars stay free
 PLACEHOLDER_SPRITE = "SPRITE_GSBOY1"
 PLACEHOLDER_TRAINER = 1
 
@@ -1212,7 +1212,7 @@ def main():
             f"#define SINNOH_CELL_TO_MAP_X(cx) ((cx) * {MAP_PROJ_X[0]} / {MAP_PROJ_X[1]})",
             f"#define SINNOH_CELL_TO_MAP_Y(cy) ((cy) * {MAP_PROJ_Y[0]} / {MAP_PROJ_Y[1]})",
             f"#define SPAWN_MAPS_COUNT {num_spawns}            // HeartGold's 30 spawn rows plus one per Sinnoh town",
-            "#define SINNOH_FLYPOINT_FLAG_BASE 0xDC0   // fly-point flags 38+ (64 slots, below the Sinnoh trainer block)", "", "#endif"]
+            "#define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)", "", "#endif"]
     open("include/constants/sinnoh.h", "w").write("\n".join(sin) + "\n")
 
     if shared_cells:
@@ -1380,6 +1380,10 @@ def main():
     fl2 = re.sub(r"#define NUM_FLAGS \d+", f"#define NUM_FLAGS {NUM_FLAGS_NEW}", fl)
     if fl2 != fl:
         open("include/constants/flags.h", "w").write(fl2)
+    va = open("include/constants/vars.h").read()
+    va2 = re.sub(r"#define NUM_VARS \(0x[0-9A-Fa-f]+\)", f"#define NUM_VARS (0x{NUM_VARS_NEW:X})", va)
+    if va2 != va:
+        open("include/constants/vars.h", "w").write(va2)
 
     print(f"imported {len(maps)} maps; flags used {len(state.flags)}, vars used {len(state.vars)}/{len(FREE_VARS)}, hidden items {len(state.hidden_items)}")
     with open(os.path.join(HERE, "TODO.txt"), "w") as f:

@@ -381,7 +381,7 @@
 #define VAR_UNK_416E                       0x416E
 #define VAR_UNK_416F                       0x416F
 
-#define NUM_VARS (0x170)
+#define NUM_VARS (0x380)
 
 #define SPECIAL_VAR_BASE 0x8000
 #define NUM_SPECIAL_VARS 14

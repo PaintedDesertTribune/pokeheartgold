@@ -75,24 +75,24 @@
 #define FLAG_SINNOH_2729 2961
 #define FLAG_SINNOH_2735 2962
 
-#define VAR_SINNOH_4077 0x413C
-#define VAR_SINNOH_4078 0x4109
-#define VAR_SINNOH_4079 0x413E
-#define VAR_SINNOH_40B2 0x4111
-#define VAR_SINNOH_40CE 0x4152
-#define VAR_SINNOH_40D5 0x4153
-#define VAR_SINNOH_40E7 0x413D
-#define VAR_SINNOH_40F0 0x413F
-#define VAR_SINNOH_40F2 0x4140
-#define VAR_SINNOH_40F8 0x4105
-#define VAR_SINNOH_4105 0x4128
-#define VAR_SINNOH_4106 0x4112
-#define VAR_SINNOH_410A 0x4141
+#define VAR_SINNOH_4077 0x4175
+#define VAR_SINNOH_4078 0x4171
+#define VAR_SINNOH_4079 0x4177
+#define VAR_SINNOH_40B2 0x4172
+#define VAR_SINNOH_40CE 0x417B
+#define VAR_SINNOH_40D5 0x417C
+#define VAR_SINNOH_40E7 0x4176
+#define VAR_SINNOH_40F0 0x4178
+#define VAR_SINNOH_40F2 0x4179
+#define VAR_SINNOH_40F8 0x4170
+#define VAR_SINNOH_4105 0x4174
+#define VAR_SINNOH_4106 0x4173
+#define VAR_SINNOH_410A 0x417A
 
 #define SINNOH_MATRIX_ID NARC_map_matrix_map_matrix_0331_SINNOH_bin
 #define SINNOH_CELL_TO_MAP_X(cx) ((cx) * 32 / 30)
 #define SINNOH_CELL_TO_MAP_Y(cy) ((cy) * 22 / 30)
 #define SPAWN_MAPS_COUNT 32            // HeartGold's 30 spawn rows plus one per Sinnoh town
-#define SINNOH_FLYPOINT_FLAG_BASE 0xDC0   // fly-point flags 38+ (64 slots, below the Sinnoh trainer block)
+#define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)
 
 #endif

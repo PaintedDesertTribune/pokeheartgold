@@ -1392,7 +1392,8 @@
 // Trainer flags
 
 #define TRAINER_FLAG_BASE 0x550
-#define SINNOH_TRAINER_FLAG_BASE 0xE00 // Sinnoh trainers (ids >= FIRST_SINNOH_TRAINER); 512 slots below NUM_FLAGS 4096
+#define SINNOH_TRAINER_FLAG_BASE 0x1160 // Sinnoh trainers (ids >= FIRST_SINNOH_TRAINER); 1024 slots. Flag map after the 2026-10-11 save audit:
+                                        // 0xB60-0x115F Sinnoh event flags, 0x1160-0x155F Sinnoh trainers, 0x1560-0x159F Sinnoh fly points, 0x15A0-0x1FFF Hoenn (reserved)
 #define FLAG_TRAINER(tr)  (TRAINER_FLAG_BASE + (tr))
 
 #define FLAG_UNK_82E 0x82E
@@ -2221,7 +2222,7 @@
 #define FLAG_UNK_B5E                      0xB5E
 #define FLAG_UNK_B5F                      0xB5F
 
-#define NUM_FLAGS 4096
+#define NUM_FLAGS 8192
 
 #define NUM_TEMP_FLAGS 64
 #define TEMP_FLAG_BASE 0x4000
