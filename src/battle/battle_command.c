@@ -2154,7 +2154,7 @@ BOOL BtlCmd_PrintTrainerMessage(BattleSystem *battleSystem, BattleContext *ctx) 
     return FALSE;
 }
 
-extern u16 sPrizeMoneyTbl[0x81][2];
+extern u16 sPrizeMoneyTbl[0x84][2];
 
 u32 CalcPrizeMoney(BattleSystem *battleSystem, BattleContext *ctx, int trainerIndex) {
     int i;

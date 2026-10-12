@@ -16,8 +16,8 @@ scr_seq_C02FS0101_000:
 	LockAll
 	FacePlayer
 	CallStd 2019 /* TODO Diamond std script */
-	// TODO Diamond ScrCmd_Unk0035 0x035 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_NormalMart 0x147 args [1]: no HeartGold mapping yet
+	CloseMsg
+	MartBuy 1
 	ReleaseAll
 	End
 
@@ -26,8 +26,8 @@ scr_seq_C02FS0101_001:
 	LockAll
 	FacePlayer
 	CallStd 2019 /* TODO Diamond std script */
-	// TODO Diamond ScrCmd_Unk0035 0x035 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SpecialMart 0x148 args [16]: no HeartGold mapping yet
+	CloseMsg
+	SpecialMartBuy 16
 	ReleaseAll
 	End
 

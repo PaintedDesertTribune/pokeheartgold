@@ -32,11 +32,6 @@
 #define obj_C02_1 1
 #define obj_C02_2 2
 #define obj_C02_3 3
-#define obj_C02_4 4
-#define obj_C02_5 5
-#define obj_C02_6 6
-#define obj_C02_7 7
-#define obj_C02_8 8
 #define obj_C02_9 9
 #define obj_C02_10 10
 #define obj_C02_11 11
@@ -45,6 +40,5 @@
 #define obj_C02_14 14
 #define obj_C02_15 15
 #define obj_C02_16 16
-#define obj_C02_17 17
 
 #endif

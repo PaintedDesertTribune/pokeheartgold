@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_C02GYM0101_000:
-	// TODO Diamond ScrCmd_InitCanalaveGym 0x173 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_InitCanalaveGym dropped: Canalave Gym lift puzzle needs a HeartGold port
 	End
 
 scr_seq_C02GYM0101_001:
@@ -22,28 +22,28 @@ scr_seq_C02GYM0101_001:
 	CheckBadge 5, 0x800C
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _0103
-	// TODO Diamond ScrCmd_Unk01CD 0x1cd args [9, 35, 0, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk01CD dropped: Diamond misc save-data pointer setup
 	NPCMsg msg_0831_C02GYM0101_00000
 	CloseMsg
-	TrainerBattle 1, 0, 0, 0
-	// TODO Diamond ScrCmd_Unk00EC 0x0ec args [32780]: no HeartGold mapping yet
+	TrainerBattle TRAINER_SINNOH_LEADER_BYRON_BYRON, 0, 0, 0
+	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _011C
 	NPCMsg msg_0831_C02GYM0101_00001
 	BufferPlayersName 0
 	NPCMsg msg_0831_C02GYM0101_00002
 	PlaySE 1161
-	// TODO Diamond ScrCmd_PlaySoundWait 0x04f args []: mapping arity mismatch
+	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
 	GiveBadge 5
 	AddSpecialGameStat 23
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	SetTrainerFlag 1
-	// TODO Diamond ScrCmd_Unk01CD 0x1cd args [10, 35, 250, 0, 0]: no HeartGold mapping yet
+	SetTrainerFlag TRAINER_SINNOH_BLACK_BELT_DAVID
+	SetTrainerFlag TRAINER_SINNOH_WORKER_JACKSON
+	SetTrainerFlag TRAINER_SINNOH_WORKER_GARY
+	SetTrainerFlag TRAINER_SINNOH_ACE_TRAINER_M_CESAR
+	SetTrainerFlag TRAINER_SINNOH_ACE_TRAINER_F_BREANNA
+	SetTrainerFlag TRAINER_SINNOH_BLACK_BELT_RICKY
+	SetTrainerFlag TRAINER_SINNOH_WORKER_GERARDO
+	// Diamond ScrCmd_Unk01CD dropped: Diamond misc save-data pointer setup
 	ClearFlag FLAG_SINNOH_464
 	ClearFlag FLAG_SINNOH_470
 	ClearFlag FLAG_SINNOH_468
@@ -59,7 +59,7 @@ _00BB:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00F9
-	CallStd 2044 /* TODO Diamond std script */
+	CallStd std_obtain_item_verbose
 	SetFlag FLAG_SINNOH_146
 	BufferItemName 0, 0x8004
 	BufferTMHMMoveName 1, 0x8004
@@ -86,7 +86,7 @@ _0103:
 	End
 
 _011C:
-	// TODO Diamond ScrCmd_Unk00EB 0x0eb args []: no HeartGold mapping yet
+	WhiteOut
 	ReleaseAll
 	End
 

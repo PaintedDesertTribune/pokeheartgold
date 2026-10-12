@@ -24,10 +24,10 @@ _0035:
 _0037:
 	CheckFlag FLAG_SINNOH_300
 	GoToIf 1, _0035
-	// TODO Diamond ScrCmd_CheckGameCompleted 0x166 args [16384]: no HeartGold mapping yet
+	CheckGameClearFlag 0x4000
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _0035
-	// TODO Diamond ScrCmd_NationalDex 0x22d args [2, 16384]: no HeartGold mapping yet
+	NatDexFlagAction 2, 0x4000
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _0035
 	SetVar VAR_SINNOH_4106, 1
@@ -121,12 +121,12 @@ _0158:
 	LockAll
 	SetFlag FLAG_SINNOH_300
 	SetVar VAR_SINNOH_4106, 3
-	// TODO Diamond ScrCmd_TakeItem 0x07c args [453, 1, 32780]: no HeartGold mapping yet
+	TakeItem 453, 1, 0x800C
 	BufferPlayersName 0
 	NPCMsg msg_0840_C02R0501_00002
 	NPCMsg msg_0840_C02R0501_00003
 	PlaySE 1166
-	// TODO Diamond ScrCmd_PlaySoundWait 0x04f args []: mapping arity mismatch
+	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
 	CloseMsg
 	Wait 15, 0x800C
 	Call _01FC
@@ -194,27 +194,33 @@ _026E:
 	WaitSE 1539
 	Return
 
+	.balign 4, 0
 mv_C02R0501_0294:
 	.short 2, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_029C:
 	.short 0, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02A4:
 	.short 1, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02AC:
 	.short 3, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02B4:
 	.short 12, 2
 	.short 15, 2
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02C0:
 	.short 0, 1
 	.short 71, 1
@@ -222,10 +228,12 @@ mv_C02R0501_02C0:
 	.short 72, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02D4:
 	.short 15, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0501_02DC:
 	.short 14, 3
 	.short 13, 2

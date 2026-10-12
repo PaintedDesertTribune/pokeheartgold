@@ -21,7 +21,7 @@ scr_seq_C02R0201_000:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _005C
-	CallStd 2044 /* TODO Diamond std script */
+	CallStd std_obtain_item_verbose
 	SetFlag FLAG_SINNOH_201
 	GoTo _0051
 

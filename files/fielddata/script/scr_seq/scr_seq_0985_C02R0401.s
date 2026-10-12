@@ -22,7 +22,7 @@ _001F:
 	End
 
 _002C:
-	// TODO Diamond ScrCmd_NationalDex 0x22d args [2, 16384]: no HeartGold mapping yet
+	NatDexFlagAction 2, 0x4000
 	CompareVarToValue 0x4000, 1
 	GoToIf 1, _0040
 	End
@@ -34,7 +34,7 @@ _0040:
 	End
 
 _0057:
-	// TODO Diamond ScrCmd_CheckEventValidity 0x28b args [0, 16384]: no HeartGold mapping yet
+	SetVar 0x4000, 0   // Diamond ScrCmd_CheckEventValidity: result fixed
 	CompareVarToValue 0x4000, 1
 	GoToIf 1, _006B
 	End
@@ -70,29 +70,29 @@ scr_seq_C02R0401_001:
 	SetFlag FLAG_SINNOH_316
 	SetFlag FLAG_SINNOH_607
 	SetVar VAR_SINNOH_40F8, 2
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 3, 0, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 3, 1, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 3, 0, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 3, 1, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 6, 0, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
+	FadeScreen 6, 3, 0, 0
+	WaitFade
+	FadeScreen 6, 3, 1, 0
+	WaitFade
+	FadeScreen 6, 3, 0, 0
+	WaitFade
+	FadeScreen 6, 3, 1, 0
+	WaitFade
+	FadeScreen 6, 6, 0, 0
+	WaitFade
 	Wait 120, 0x800C
-	// TODO Diamond ScrCmd_Warp 0x0be args [320, 0, 152, 277, 1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 6, 1, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
+	Warp MAP_SINNOH_CANALAVE_HARBOR_INN, 0, 152, 277, 1
+	FadeScreen 6, 6, 1, 0
+	WaitFade
 	ReleaseAll
 	End
 
 scr_seq_C02R0401_002:
 	LockAll
 	Call _0184
-	// TODO Diamond ScrCmd_Unk02B5 0x2b5 args [33, 58, 714]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk02B5 dropped: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
 	PlaySE 1166
-	// TODO Diamond ScrCmd_PlaySoundWait 0x04f args []: mapping arity mismatch
+	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
 	BufferPlayersName 0
 	NPCMsg msg_0839_C02R0401_00002
 	WaitButton
@@ -110,6 +110,7 @@ _0197:
 	SetVar VAR_SINNOH_40F8, 3
 	Return
 
+	.balign 4, 0
 mv_C02R0401_0130:
 	.short 12, 1
 	.short 15, 3
@@ -118,6 +119,7 @@ mv_C02R0401_0130:
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0401_0148:
 	.short 15, 3
 	.short 12, 2

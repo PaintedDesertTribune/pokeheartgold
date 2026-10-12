@@ -438,19 +438,28 @@ BOOL TrainerNumIsDouble(u32 trainer) {
     return TrainerData_GetAttr(trainer, TRATTR_DOUBLEBTL) != 0;
 }
 
+// Sinnoh trainers are numbered past HeartGold's 0x550..0x834 trainer flag block, so their "beaten" flags
+// live in a separate block near the top of the (enlarged) flag array.
+static u32 TrainerFlagId(u32 trainer) {
+    if (trainer >= FIRST_SINNOH_TRAINER) {
+        return SINNOH_TRAINER_FLAG_BASE + (trainer - FIRST_SINNOH_TRAINER);
+    }
+    return trainer + TRAINER_FLAG_BASE;
+}
+
 BOOL TrainerFlagCheck(SaveData *saveData, u32 trainer) {
     SaveVarsFlags *varsFlags = Save_VarsFlags_Get(saveData);
-    return Save_VarsFlags_CheckFlagInArray(varsFlags, trainer + TRAINER_FLAG_BASE);
+    return Save_VarsFlags_CheckFlagInArray(varsFlags, TrainerFlagId(trainer));
 }
 
 void TrainerFlagSet(SaveData *saveData, u32 trainer) {
     SaveVarsFlags *varsFlags = Save_VarsFlags_Get(saveData);
-    Save_VarsFlags_SetFlagInArray(varsFlags, trainer + TRAINER_FLAG_BASE);
+    Save_VarsFlags_SetFlagInArray(varsFlags, TrainerFlagId(trainer));
 }
 
 void TrainerFlagClear(SaveData *saveData, u32 trainer) {
     SaveVarsFlags *varsFlags = Save_VarsFlags_Get(saveData);
-    Save_VarsFlags_ClearFlagInArray(varsFlags, trainer + TRAINER_FLAG_BASE);
+    Save_VarsFlags_ClearFlagInArray(varsFlags, TrainerFlagId(trainer));
 }
 
 u16 HiddenItemScriptNoToFlagId(u16 script) {

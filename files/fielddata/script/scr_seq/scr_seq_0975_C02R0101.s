@@ -70,6 +70,7 @@ scr_seq_C02R0101_003:
 	ReleaseAll
 	End
 
+	.balign 4, 0
 mv_C02R0101_0074:
 	.short 0, 1
 	EndMovement

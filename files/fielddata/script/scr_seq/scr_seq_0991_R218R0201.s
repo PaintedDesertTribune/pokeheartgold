@@ -13,7 +13,7 @@ scr_seq_R218R0201_001:
 	LockAll
 	Call _0060
 	BufferPlayersName 0
-	// TODO Diamond ScrCmd_GetFriendName 0x0cf args [1]: no HeartGold mapping yet
+	BufferFriendsName 1
 	GetPlayerGender 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _002F
@@ -30,7 +30,7 @@ _0038:
 _0041:
 	NPCMsg msg_0842_R218R0201_00004
 	CloseMsg
-	// TODO Diamond ScrCmd_UnlockGenderEntries 0x22c args []: no HeartGold mapping yet
+	// Diamond ScrCmd_UnlockGenderEntries dropped: Pokédex gender pages; HeartGold has no toggle
 	Call _0091
 	SetFlag FLAG_SINNOH_570
 	HidePerson 1
@@ -80,6 +80,7 @@ scr_seq_R218R0201_000:
 	ReleaseAll
 	End
 
+	.balign 4, 0
 mv_R218R0201_00C4:
 	.short 75, 1
 	.short 15, 1
@@ -87,16 +88,19 @@ mv_R218R0201_00C4:
 	.short 35, 1
 	EndMovement
 
+	.balign 4, 0
 mv_R218R0201_00D8:
 	.short 75, 1
 	.short 15, 1
 	EndMovement
 
+	.balign 4, 0
 mv_R218R0201_00E4:
 	.short 13, 1
 	.short 15, 4
 	EndMovement
 
+	.balign 4, 0
 mv_R218R0201_00F0:
 	.short 12, 1
 	.short 15, 3

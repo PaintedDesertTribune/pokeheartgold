@@ -33,16 +33,16 @@ _0049:
 	GoTo _0054
 
 _0054:
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 1, 0, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_ChoosePokemonMenu 0x191 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_GetSelectedPartySlot 0x193 args [32770]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_RestoreOverworld 0x0a1 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_FadeScreen 0x0bc args [6, 1, 1, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_WaitFadeScreen 0x0bd args []: no HeartGold mapping yet
+	FadeScreen 6, 1, 0, 0
+	WaitFade
+	PartySelectUI
+	GetPartySelection 0x8002
+	RestoreOverworld
+	FadeScreen 6, 1, 1, 0
+	WaitFade
 	CompareVarToValue 0x8002, 255
 	GoToIf 1, _0130
-	// TODO Diamond ScrCmd_GetPartyMonSpecies 0x198 args [32770, 32769, 17]: no HeartGold mapping yet
+	GetPartyMonSpecies 0x8002, 0x8001
 	// TODO unknown Diamond command cmd_8001 (0x8001); script truncated here
 	End
 

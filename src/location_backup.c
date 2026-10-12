@@ -13,8 +13,8 @@
 static const Location sLocation_PlayerRoom = {
     .mapId = MAP_SINNOH_CANALAVE,
     .warpId = 0xFFFFFFFF,
-    .x = 22,
-    .y = 30,
+    .x = 54,    // Sinnoh matrix coordinates: Canalave occupies cells (1,22)-(1,23)
+    .y = 734,
     .direction = 0x00000001,
 };
 #else

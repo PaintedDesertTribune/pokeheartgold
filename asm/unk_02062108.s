@@ -59,12 +59,16 @@ _02062146:
 	thumb_func_end MapObject_AreBitsSetForMovementScriptInit
 
 	thumb_func_start MapObject_SetHeldMovement
+	.extern gHackNote
 MapObject_SetHeldMovement: ; 0x0206214C
 	push {r3, r4, r5, lr}
 	add r4, r1, #0
 	add r5, r0, #0
 	cmp r4, #0x71
 	blt _0206215A
+	ldr r0, _hackNoteSetHeld ; HACK DIAGNOSTIC: command, object pointer
+	str r4, [r0]
+	str r5, [r0, #4]
 	bl GF_AssertFail
 _0206215A:
 	add r0, r5, #0
@@ -80,6 +84,8 @@ _0206215A:
 	mov r1, #0x20
 	bl MapObject_ClearFlagsBits
 	pop {r3, r4, r5, pc}
+	.balign 4, 0
+_hackNoteSetHeld: .word gHackNote
 	thumb_func_end MapObject_SetHeldMovement
 
 	thumb_func_start MapObject_ForceSetHeldMovement

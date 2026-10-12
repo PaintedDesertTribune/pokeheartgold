@@ -4,7 +4,7 @@
   "objects": [
     {
       "id": "obj_C02R0401_0",
-      "spriteId": "SPRITE_GSBOY1",
+      "spriteId": "SPRITE_SUNGLASSES",
       "movement": 0,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_607",

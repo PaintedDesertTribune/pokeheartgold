@@ -28498,6 +28498,564 @@
             "surfSwarm": "SPECIES_POLIWAG",
             "nightFish": "SPECIES_POLIWAG",
             "fishSwarm": "SPECIES_MAGIKARP"
+        },
+        {
+            "map": "C02",
+            "land": {
+                "rate": 0,
+                "mons": [
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_TENTACOOL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_WINGULL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_TENTACRUEL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PELIPPER"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PELIPPER"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_FINNEON"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_FINNEON"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_FINNEON"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 40
+                            },
+                            "species": "SPECIES_STARYU"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_NONE",
+                "SPECIES_NONE"
+            ],
+            "sinnoh": [
+                "SPECIES_NONE",
+                "SPECIES_NONE"
+            ],
+            "landSwarm": "SPECIES_NONE"
+        },
+        {
+            "map": "R218",
+            "land": {
+                "rate": 30,
+                "mons": [
+                    {
+                        "level": 28,
+                        "species": {
+                            "morn": "SPECIES_FLOATZEL",
+                            "day": "SPECIES_FLOATZEL",
+                            "nite": "SPECIES_FLOATZEL"
+                        }
+                    },
+                    {
+                        "level": 28,
+                        "species": {
+                            "morn": "SPECIES_SHELLOS",
+                            "day": "SPECIES_SHELLOS",
+                            "nite": "SPECIES_SHELLOS"
+                        }
+                    },
+                    {
+                        "level": 29,
+                        "species": {
+                            "morn": "SPECIES_FLOATZEL",
+                            "day": "SPECIES_FLOATZEL",
+                            "nite": "SPECIES_FLOATZEL"
+                        }
+                    },
+                    {
+                        "level": 28,
+                        "species": {
+                            "morn": "SPECIES_GASTRODON",
+                            "day": "SPECIES_GASTRODON",
+                            "nite": "SPECIES_GASTRODON"
+                        }
+                    },
+                    {
+                        "level": 29,
+                        "species": {
+                            "morn": "SPECIES_MR_MIME",
+                            "day": "SPECIES_MR_MIME",
+                            "nite": "SPECIES_MR_MIME"
+                        }
+                    },
+                    {
+                        "level": 29,
+                        "species": {
+                            "morn": "SPECIES_WINGULL",
+                            "day": "SPECIES_WINGULL",
+                            "nite": "SPECIES_WINGULL"
+                        }
+                    },
+                    {
+                        "level": 30,
+                        "species": {
+                            "morn": "SPECIES_FLOATZEL",
+                            "day": "SPECIES_FLOATZEL",
+                            "nite": "SPECIES_FLOATZEL"
+                        }
+                    },
+                    {
+                        "level": 29,
+                        "species": {
+                            "morn": "SPECIES_GASTRODON",
+                            "day": "SPECIES_GASTRODON",
+                            "nite": "SPECIES_GASTRODON"
+                        }
+                    },
+                    {
+                        "level": 30,
+                        "species": {
+                            "morn": "SPECIES_MR_MIME",
+                            "day": "SPECIES_MR_MIME",
+                            "nite": "SPECIES_MR_MIME"
+                        }
+                    },
+                    {
+                        "level": 30,
+                        "species": {
+                            "morn": "SPECIES_GASTRODON",
+                            "day": "SPECIES_GASTRODON",
+                            "nite": "SPECIES_GASTRODON"
+                        }
+                    },
+                    {
+                        "level": 30,
+                        "species": {
+                            "morn": "SPECIES_MR_MIME",
+                            "day": "SPECIES_MR_MIME",
+                            "nite": "SPECIES_MR_MIME"
+                        }
+                    },
+                    {
+                        "level": 30,
+                        "species": {
+                            "morn": "SPECIES_GASTRODON",
+                            "day": "SPECIES_GASTRODON",
+                            "nite": "SPECIES_GASTRODON"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_TENTACOOL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_WINGULL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_TENTACRUEL"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PELIPPER"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PELIPPER"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_FINNEON"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_FINNEON"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_FINNEON"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        },
+                        {
+                            "level": {
+                                "min": 40,
+                                "max": 55
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_LUMINEON"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_MR_MIME",
+                "SPECIES_GASTRODON"
+            ],
+            "sinnoh": [
+                "SPECIES_DITTO",
+                "SPECIES_DITTO"
+            ],
+            "landSwarm": "SPECIES_VOLTORB"
         }
     ]
 }

@@ -28,11 +28,11 @@ scr_seq_C02R0103_000:
 	End
 
 _0052:
-	SetVar VAR_SINNOH_4020, 97
+	SetVar 0x4020, SPRITE_SINNOH_HEROINE
 	End
 
 _005A:
-	SetVar VAR_SINNOH_4020, 0
+	SetVar 0x4020, SPRITE_SINNOH_HERO
 	End
 
 scr_seq_C02R0103_001:
@@ -45,7 +45,7 @@ scr_seq_C02R0103_001:
 	ApplyMovement obj_player, mv_C02R0103_0298
 	WaitMovement
 	GetPlayerCoords 0x8004, 0x8005
-	// TODO Diamond ScrCmd_LockCamera 0x066 args [32772, 32773]: no HeartGold mapping yet
+	// Diamond ScrCmd_LockCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
 	ApplyMovement 241, mv_C02R0103_02B0
 	WaitMovement
 	Wait 30, 0x800C
@@ -104,13 +104,13 @@ _0132:
 
 _0162:
 	NPCMsg msg_0836_C02R0103_00012
-	// TODO Diamond ScrCmd_GetFriendName 0x0cf args [0]: no HeartGold mapping yet
+	BufferFriendsName 0
 	NPCMsg msg_0836_C02R0103_00013
 	GoTo _0184
 
 _0173:
 	NPCMsg msg_0836_C02R0103_00014
-	// TODO Diamond ScrCmd_GetFriendName 0x0cf args [0]: no HeartGold mapping yet
+	BufferFriendsName 0
 	NPCMsg msg_0836_C02R0103_00015
 	GoTo _0184
 
@@ -132,7 +132,7 @@ _0184:
 	NPCMsg msg_0836_C02R0103_00018
 	CloseMsg
 	WaitSE 1500
-	// TODO Diamond ScrCmd_ShakeCamera 0x29f args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShakeCamera dropped: screen shake needs a HeartGold port (library cutscene)
 	NPCMsg msg_0836_C02R0103_00019
 	CloseMsg
 	ApplyMovement 3, mv_C02R0103_0318
@@ -142,17 +142,17 @@ _0184:
 	WaitMovement
 	HidePerson 4
 	HidePerson 3
-	// TODO Diamond ScrCmd_ReleaseCamera 0x067 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_ReleaseCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
 	ApplyMovement obj_player, mv_C02R0103_0248
 	WaitMovement
 	NPCMsg msg_0836_C02R0103_00020
 	CloseMsg
-	// TODO Diamond ScrCmd_StopFanfare 0x04a args [1500]: no HeartGold mapping yet
+	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	ApplyMovement 2, mv_C02R0103_0290
 	WaitMovement
 	PlayFanfare 1539
 	HidePerson 2
-	// TODO Diamond ScrCmd_StopFanfare 0x04a args [1539]: no HeartGold mapping yet
+	// Diamond ScrCmd_StopFanfare dropped: no stop-fanfare command in HeartGold
 	SetVar VAR_SINNOH_4078, 4
 	SetVar VAR_SINNOH_40B2, 2
 	SetFlag FLAG_SINNOH_168
@@ -379,11 +379,11 @@ scr_seq_C02R0103_010:
 	NPCMsg msg_0836_C02R0103_00047
 	NPCMsg msg_0836_C02R0103_00048
 	MenuInit 1, 1, 0, 1, 0x800C
-	// TODO Diamond ScrCmd_Unk029D 0x29d args [259, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk029D 0x29d args [260, 1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk029D 0x29d args [261, 2]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk029D 0x29d args [262, 3]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0043 0x043 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	// Diamond ScrCmd_Unk029D dropped: Diamond scrolling list window (library bookshelf)
+	// Diamond ScrCmd_Unk0043 dropped: Diamond scrolling list window (library bookshelf)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _05CF
 	CompareVarToValue 0x800C, 1
@@ -430,28 +430,34 @@ scr_seq_C02R0103_011:
 	ReleaseAll
 	End
 
+	.balign 4, 0
 mv_C02R0103_0248:
 	.short 32, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0250:
 	.short 11, 1
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_025C:
 	.short 14, 1
 	.short 32, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0268:
 	.short 34, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0270:
 	.short 32, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0278:
 	.short 15, 1
 	.short 12, 5
@@ -460,10 +466,12 @@ mv_C02R0103_0278:
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0290:
 	.short 35, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0298:
 	.short 63, 3
 	.short 33, 1
@@ -472,23 +480,28 @@ mv_C02R0103_0298:
 	.short 13, 2
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02B0:
 	.short 11, 3
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02B8:
 	.short 10, 3
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02C0:
 	.short 16, 2
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02CC:
 	.short 13, 2
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02D4:
 	.short 13, 1
 	.short 15, 2
@@ -498,6 +511,7 @@ mv_C02R0103_02D4:
 	.short 13, 2
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_02F0:
 	.short 16, 2
 	.short 18, 4
@@ -506,14 +520,17 @@ mv_C02R0103_02F0:
 	.short 69, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0308:
 	.short 39, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0310:
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0318:
 	.short 14, 1
 	.short 12, 5
@@ -523,10 +540,12 @@ mv_C02R0103_0318:
 	.short 69, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_0334:
 	.short 35, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02R0103_033C:
 	.short 32, 1
 	EndMovement

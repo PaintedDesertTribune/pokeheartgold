@@ -13,7 +13,7 @@
 
 scr_seq_C02PC0101_000:
 	SetVar 0x8007, 1
-	CallStd 2002 /* TODO Diamond std script */
+	CallStd std_nurse_joy
 	End
 
 scr_seq_C02PC0101_001:

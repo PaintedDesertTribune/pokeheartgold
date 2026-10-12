@@ -1392,6 +1392,7 @@
 // Trainer flags
 
 #define TRAINER_FLAG_BASE 0x550
+#define SINNOH_TRAINER_FLAG_BASE 0xE00 // Sinnoh trainers (ids >= FIRST_SINNOH_TRAINER); 512 slots below NUM_FLAGS 4096
 #define FLAG_TRAINER(tr)  (TRAINER_FLAG_BASE + (tr))
 
 #define FLAG_UNK_82E 0x82E

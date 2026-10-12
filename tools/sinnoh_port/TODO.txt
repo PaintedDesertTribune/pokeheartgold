@@ -1,70 +1,19 @@
+MAP_CANALAVE: dropped ScrCmd_ShipAnimation: Diamond ship cutscene, separate port job (decision 20)
 MAP_CANALAVE: item ball std 7145 contents unknown, variadic placeholder
-MAP_CANALAVE: sprite 101 (None) has no HeartGold match
-MAP_CANALAVE: sprite 148 (SPRITE_RIVEL) has no HeartGold match
-MAP_CANALAVE: sprite 164 (SPRITE_OLDMAN2) has no HeartGold match
-MAP_CANALAVE: sprite 74 (SPRITE_KODUCK) has no HeartGold match
-MAP_CANALAVE: sprite 91 (None) has no HeartGold match
-MAP_CANALAVE: sprite 93 (None) has no HeartGold match
-MAP_CANALAVE: sprite 95 (None) has no HeartGold match
-MAP_CANALAVE: trainer 476
-MAP_CANALAVE: trainer 477
-MAP_CANALAVE: trainer 478
-MAP_CANALAVE: unmapped command ScrCmd_CheckEventValidity
-MAP_CANALAVE: unmapped command ScrCmd_NationalDex
-MAP_CANALAVE: unmapped command ScrCmd_SetBgEventPosition
-MAP_CANALAVE: unmapped command ScrCmd_ShipAnimation
-MAP_CANALAVE: unmapped command ScrCmd_Unk00EB
-MAP_CANALAVE: unmapped command ScrCmd_Unk00EC
-MAP_CANALAVE_GYM: object 0 is Diamond trainer std 3231; placeholder trainer
-MAP_CANALAVE_GYM: object 2 is Diamond trainer std 3255; placeholder trainer
-MAP_CANALAVE_GYM: object 3 is Diamond trainer std 3256; placeholder trainer
-MAP_CANALAVE_GYM: object 5 is Diamond trainer std 3313; placeholder trainer
-MAP_CANALAVE_GYM: object 6 is Diamond trainer std 3278; placeholder trainer
-MAP_CANALAVE_GYM: object 7 is Diamond trainer std 3366; placeholder trainer
-MAP_CANALAVE_GYM: object 8 is Diamond trainer std 3282; placeholder trainer
-MAP_CANALAVE_GYM: sprite 168 (None) has no HeartGold match
+MAP_CANALAVE_GYM: dropped ScrCmd_InitCanalaveGym: Canalave Gym lift puzzle needs a HeartGold port
+MAP_CANALAVE_GYM: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_CANALAVE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_CANALAVE_GYM: std script 2017
-MAP_CANALAVE_GYM: std script 2044
-MAP_CANALAVE_GYM: trainer 232
-MAP_CANALAVE_GYM: trainer 250
-MAP_CANALAVE_GYM: trainer 256
-MAP_CANALAVE_GYM: trainer 257
-MAP_CANALAVE_GYM: trainer 279
-MAP_CANALAVE_GYM: trainer 283
-MAP_CANALAVE_GYM: trainer 314
-MAP_CANALAVE_GYM: trainer 367
-MAP_CANALAVE_GYM: unmapped command ScrCmd_InitCanalaveGym
-MAP_CANALAVE_GYM: unmapped command ScrCmd_PlaySoundWait
-MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk00EB
-MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk00EC
-MAP_CANALAVE_GYM: unmapped command ScrCmd_Unk01CD
-MAP_CANALAVE_HARBOR_INN: sprite 168 (None) has no HeartGold match
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_CheckEventValidity
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_FadeScreen
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_NationalDex
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_PlaySoundWait
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_Unk02B5
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_WaitFadeScreen
-MAP_CANALAVE_HARBOR_INN: unmapped command ScrCmd_Warp
-MAP_CANALAVE_LIBRARY_1F: sprite 163 (SPRITE_WOMAN6) has no HeartGold match
-MAP_CANALAVE_LIBRARY_3F: sprite 101 (None) has no HeartGold match
-MAP_CANALAVE_LIBRARY_3F: sprite 148 (SPRITE_RIVEL) has no HeartGold match
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_GetFriendName
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_LockCamera
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_ReleaseCamera
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_ShakeCamera
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_StopFanfare
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_Unk0043
-MAP_CANALAVE_LIBRARY_3F: unmapped command ScrCmd_Unk029D
-MAP_CANALAVE_MOVE_DELETER_HOUSE: sprite 164 (SPRITE_OLDMAN2) has no HeartGold match
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_ChoosePokemonMenu
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_FadeScreen
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_GetPartyMonSpecies
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_GetSelectedPartySlot
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_RestoreOverworld
-MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command ScrCmd_WaitFadeScreen
+MAP_CANALAVE_HARBOR_INN: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_CANALAVE_HARBOR_INN: dropped ScrCmd_Unk02B5: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
+MAP_CANALAVE_HARBOR_INN: warp to Diamond map MAP_NEWMOON_ISLAND_EXTERIOR not imported; points at this map
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_CANALAVE_LIBRARY_3F: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_CANALAVE_MOVE_DELETER_HOUSE: unmapped command cmd_8001
-MAP_CANALAVE_POKECENTER_1F: std script 2002
 MAP_CANALAVE_POKECENTER_1F: warp 2 to Diamond map MAP_CANALAVE_POKECENTER_B1F not imported; points at itself
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9000; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9012; dropped
@@ -75,20 +24,114 @@ MAP_CANALAVE_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for
 MAP_CANALAVE_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
 MAP_CANALAVE_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_CANALAVE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
+MAP_CANALAVE_POKEMART: SpecialMartBuy 16: Diamond mart id used against HeartGold's mart tables
 MAP_CANALAVE_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_CANALAVE_POKEMART: object 3 uses Diamond std script 10201; no script for now
 MAP_CANALAVE_POKEMART: std script 2019
-MAP_CANALAVE_POKEMART: unmapped command ScrCmd_NormalMart
-MAP_CANALAVE_POKEMART: unmapped command ScrCmd_SpecialMart
-MAP_CANALAVE_POKEMART: unmapped command ScrCmd_Unk0035
-MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_CheckGameCompleted
-MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_NationalDex
-MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_PlaySoundWait
-MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: unmapped command ScrCmd_TakeItem
+MAP_CANALAVE_SAILOR_ELDRITCH_HOUSE: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
 MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2017
-MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2044
 MAP_CANALAVE_WEST_HOUSE: object 0 uses Diamond std script 10159; no script for now
 MAP_CANALAVE_WEST_HOUSE: unmapped command ScrCmd_Unk0238
-MAP_ROUTE_218_CANALAVE_GATEHOUSE: unmapped command ScrCmd_GetFriendName
-MAP_ROUTE_218_CANALAVE_GATEHOUSE: unmapped command ScrCmd_UnlockGenderEntries
-MAP_ROUTE_218_CANALAVE_GATEHOUSE: warp 1 to Diamond map MAP_ROUTE_218 not imported; points at itself
+MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
+MAP_JUBLIFE: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_JUBLIFE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
+MAP_JUBLIFE: dropped ScrCmd_UnlockPoketchApp: Pokétch dropped (decision 16)
+MAP_JUBLIFE: object 20 uses Diamond std script 65535; no script for now
+MAP_JUBLIFE: object 21 uses Diamond std script 65535; no script for now
+MAP_JUBLIFE: object 22 uses Diamond std script 9300; no script for now
+MAP_JUBLIFE: std script 2016
+MAP_JUBLIFE: std script 2040
+MAP_JUBLIFE: std script 2041
+MAP_JUBLIFE: unmapped command ScrCmd_Unk0044
+MAP_JUBLIFE: unmapped command ScrCmd_Unk0046
+MAP_JUBLIFE: unmapped command ScrCmd_Unk0047
+MAP_JUBLIFE: unmapped command ScrCmd_Unk00D5
+MAP_JUBLIFE: unmapped command ScrCmd_Unk01D2
+MAP_JUBLIFE: unmapped command ScrCmd_Unk01D5
+MAP_JUBLIFE: unmapped command ScrCmd_Unk02A0
+MAP_JUBLIFE: unmapped command ScrCmd_Unk02CF
+MAP_JUBLIFE: warp 10 to Diamond map MAP_JUBLIFE_UNUSED_HOUSE_2 not imported; points at itself
+MAP_JUBLIFE: warp 11 to Diamond map MAP_JUBLIFE_UNUSED_HOUSE_3 not imported; points at itself
+MAP_JUBLIFE_CONDOMINIUMS_1F: std script 2016
+MAP_JUBLIFE_CONDOMINIUMS_1F: std script 2017
+MAP_JUBLIFE_CONDOMINIUMS_4F: std script 2016
+MAP_JUBLIFE_CONDOMINIUMS_4F: std script 2017
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: BG event 0 uses Diamond std script 2025; no script for now
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: BG event 1 uses Diamond std script 2025; no script for now
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_CloseDoorAnimation: scripted door animation
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_FreeDoorAnimation: scripted door animation
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_OpenDoorAnimation: scripted door animation
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_WaitDoorAnimation: scripted door animation
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: std script 2006
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: std script 9016
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B2
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B3
+MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk02B2
+MAP_JUBLIFE_POKECENTER_1F: object 4 uses Diamond std script 2035; no script for now
+MAP_JUBLIFE_POKECENTER_1F: warp 2 to Diamond map MAP_JUBLIFE_POKECENTER_B1F not imported; points at itself
+MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9000; dropped
+MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9012; dropped
+MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
+MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
+MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
+MAP_JUBLIFE_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
+MAP_JUBLIFE_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
+MAP_JUBLIFE_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
+MAP_JUBLIFE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_JUBLIFE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
+MAP_JUBLIFE_POKEMART: SpecialMartBuy 0: Diamond mart id used against HeartGold's mart tables
+MAP_JUBLIFE_POKEMART: level script uses Diamond std script 10200; dropped
+MAP_JUBLIFE_POKEMART: object 4 uses Diamond std script 10201; no script for now
+MAP_JUBLIFE_POKEMART: std script 2019
+MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
+MAP_JUBLIFE_POKETCH_COMPANY_1F: object 1 uses Diamond std script 10155; no script for now
+MAP_JUBLIFE_POKETCH_COMPANY_1F: std script 2009
+MAP_JUBLIFE_POKETCH_COMPANY_1F: unmapped command ScrCmd_Unk0238
+MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketch: Pokétch dropped (decision 16)
+MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
+MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_JUBLIFE_POKETCH_COMPANY_3F: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
+MAP_JUBLIFE_TRAINER_SCHOOL: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_JUBLIFE_TRAINER_SCHOOL: std script 2017
+MAP_JUBLIFE_TRAINER_SCHOOL: unmapped command ScrCmd_Unk0048
+MAP_JUBLIFE_TV_1F: unmapped command ScrCmd_Unk024E
+MAP_JUBLIFE_TV_2F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
+MAP_JUBLIFE_TV_2F: dropped ScrCmd_GetFashionNameWithArticle: Contest dress-up dropped (decision 16)
+MAP_JUBLIFE_TV_2F: object 2 uses Diamond std script 10158; no script for now
+MAP_JUBLIFE_TV_2F: std script 2015
+MAP_JUBLIFE_TV_2F: unmapped command ScrCmd_Unk0238
+MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_CheckPortraitSlot: Jubilife TV portrait feature dropped
+MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_DressupPokemon: Contest dress-up dropped (decision 16)
+MAP_JUBLIFE_TV_2F_GALLERY: dropped ScrCmd_ShowDressedPokemon: Contest dress-up dropped (decision 16)
+MAP_JUBLIFE_TV_2F_GALLERY: unmapped command ScrCmd_Unk0130
+MAP_JUBLIFE_TV_2F_GALLERY: unmapped command ScrCmd_Unk0243
+MAP_JUBLIFE_TV_2F_GALLERY: unmapped command ScrCmd_Unk0245
+MAP_JUBLIFE_TV_2F_GALLERY: unmapped command cmd_800c
+MAP_JUBLIFE_TV_3F: dropped ScrCmd_ActivateMysteryGift: Mystery Gift is HeartGold's own
+MAP_JUBLIFE_TV_3F: dropped ScrCmd_CompareMysteryGiftEasyChatInput: Mystery Gift is HeartGold's own
+MAP_JUBLIFE_TV_3F: dropped ScrCmd_GiveWallpaper: PC wallpaper gift; HeartGold command unknown
+MAP_JUBLIFE_TV_3F: unmapped command ScrCmd_Unk0244
+MAP_JUBLIFE_TV_3F_GLOBAL_RANKINGS: unmapped command ScrCmd_Unk01B5
+MAP_JUBLIFE_TV_3F_GROUP_RANKINGS: unmapped command ScrCmd_Unk01B5
+MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
+MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_JUBLIFE_TV_ELEVATOR: unmapped command ScrCmd_Unk00D5
+MAP_JUBLIFE_TV_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
+MAP_ROUTE_218: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_218: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_218: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_218: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_218: item ball std 7143 contents unknown, variadic placeholder
+MAP_ROUTE_218: item ball std 7144 contents unknown, variadic placeholder
+MAP_ROUTE_218: object 10 uses Diamond std script 2800; no script for now
+MAP_ROUTE_218: object 11 uses Diamond std script 2800; no script for now
+MAP_ROUTE_218: object 12 uses Diamond std script 2027; no script for now
+MAP_ROUTE_218: object 13 uses Diamond std script 2027; no script for now
+MAP_ROUTE_218: object 8 uses Diamond std script 2800; no script for now
+MAP_ROUTE_218: object 9 uses Diamond std script 2800; no script for now
+MAP_ROUTE_218_CANALAVE_GATEHOUSE: dropped ScrCmd_UnlockGenderEntries: Pokédex gender pages; HeartGold has no toggle
+new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated
+trainer classes: TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY, TRAINERCLASS_SINNOH_LEADER_BYRON, TRAINERCLASS_SINNOH_INTERVIEWERS use the default encounter jingle and battle music; the intro animation is blank

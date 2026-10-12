@@ -1,0 +1,15 @@
+{
+  "header": "fielddata/script/scr_seq/event_C01R0304.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 8,
+      "z": 3,
+      "header": "MAP_SINNOH_JUBLIFE_SOUTHEAST_HOUSE_3F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

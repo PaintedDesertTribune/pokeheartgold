@@ -1,4 +1,5 @@
 #include "party.h"
+#include "error_handling.h"
 
 #include "global.h"
 
@@ -7,6 +8,9 @@
 #include "save.h"
 
 #define PARTY_ASSERT_SLOT(party, slot) ({     \
+    if ((slot) < 0 || (slot) >= (party)->core.curCount) { /* HACK DIAGNOSTIC: slot, count, max */ \
+        gHackNote[0] = (u32)(slot); gHackNote[1] = (u32)(party)->core.curCount; gHackNote[2] = (u32)(party)->core.maxCount; \
+    }                                         \
     GF_ASSERT(slot >= 0);                     \
     GF_ASSERT(slot < (party)->core.curCount); \
     GF_ASSERT(slot < (party)->core.maxCount); \

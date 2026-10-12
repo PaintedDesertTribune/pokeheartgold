@@ -83,11 +83,11 @@ _012A:
 	Return
 
 _0140:
-	SetVar VAR_SINNOH_4020, 97
+	SetVar 0x4020, SPRITE_SINNOH_HEROINE
 	End
 
 _0148:
-	SetVar VAR_SINNOH_4020, 0
+	SetVar 0x4020, SPRITE_SINNOH_HERO
 	End
 
 _0150:
@@ -101,13 +101,13 @@ _0160:
 	GoToIf 1, _01C2
 	CheckFlag FLAG_SINNOH_2404
 	GoToIf 0, _01C2
-	// TODO Diamond ScrCmd_NationalDex 0x22d args [2, 16384]: no HeartGold mapping yet
+	NatDexFlagAction 2, 0x4000
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _01C2
 	HasItem 454, 1, 0x4000
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _01C2
-	// TODO Diamond ScrCmd_CheckEventValidity 0x28b args [0, 16384]: no HeartGold mapping yet
+	SetVar 0x4000, 0   // Diamond ScrCmd_CheckEventValidity: result fixed
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _01C2
 	CheckFlag FLAG_SINNOH_300
@@ -126,7 +126,7 @@ scr_seq_C02_023:
 	End
 
 _01DF:
-	// TODO Diamond ScrCmd_SetBgEventPosition 0x18b args [0, 58, 713]: no HeartGold mapping yet
+	MoveBGEvent 0, 58, 713
 	MoveWarp 5, 59, 712
 	Return
 
@@ -184,19 +184,19 @@ _0282:
 	GoTo _02CD
 
 _02CD:
-	TrainerBattle 1, 0, 0, 0
+	TrainerBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_10, 0, 0, 0
 	GoTo _02F1
 
 _02D9:
-	TrainerBattle 1, 0, 0, 0
+	TrainerBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_11, 0, 0, 0
 	GoTo _02F1
 
 _02E5:
-	TrainerBattle 1, 0, 0, 0
+	TrainerBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_12, 0, 0, 0
 	GoTo _02F1
 
 _02F1:
-	// TODO Diamond ScrCmd_Unk00EC 0x0ec args [32780]: no HeartGold mapping yet
+	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0322
 	BufferRivalsName 0
@@ -211,7 +211,7 @@ _02F1:
 
 _0322:
 	SetFlag FLAG_SINNOH_464
-	// TODO Diamond ScrCmd_Unk00EB 0x0eb args []: no HeartGold mapping yet
+	WhiteOut
 	ReleaseAll
 	End
 
@@ -520,7 +520,7 @@ _0772:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	// TODO Diamond ScrCmd_ShipAnimation 0x23d args [3, 2, 260, 39, 277]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShipAnimation dropped: Diamond ship cutscene, separate port job (decision 20)
 	ReleaseAll
 	End
 
@@ -606,88 +606,106 @@ scr_seq_C02_022:
 	ReleaseAll
 	End
 
+	.balign 4, 0
 mv_C02_032C:
 	.short 19, 8
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0334:
 	.short 18, 9
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0384:
 	.short 17, 1
 	.short 18, 5
 	.short 16, 10
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0394:
 	.short 63, 1
 	.short 34, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0468:
 	.short 34, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0470:
 	.short 33, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0478:
 	.short 63, 2
 	.short 32, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0484:
 	.short 18, 5
 	.short 16, 2
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0490:
 	.short 17, 6
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0498:
 	.short 32, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_04A0:
 	.short 17, 3
 	.short 19, 9
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0860:
 	.short 3, 1
 	.short 64, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_086C:
 	.short 69, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0874:
 	.short 13, 1
 	.short 3, 1
 	.short 64, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0884:
 	.short 15, 1
 	.short 64, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_0890:
 	.short 12, 1
 	.short 3, 1
 	.short 64, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_093C:
 	.short 75, 1
 	.short 15, 3
 	.short 12, 1
 	EndMovement
 
+	.balign 4, 0
 mv_C02_094C:
 	.short 13, 1
 	.short 14, 3

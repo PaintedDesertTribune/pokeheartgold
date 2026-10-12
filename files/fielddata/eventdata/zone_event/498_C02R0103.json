@@ -215,7 +215,7 @@
     },
     {
       "id": "obj_C02R0103_2",
-      "spriteId": "SPRITE_DOCTOR",
+      "spriteId": "SPRITE_SINNOH_DOCTOR",
       "movement": 14,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_469",
@@ -232,7 +232,7 @@
     },
     {
       "id": "obj_C02R0103_3",
-      "spriteId": "SPRITE_GSBOY1",
+      "spriteId": "SPRITE_VAR_1",
       "movement": 14,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_468",
@@ -249,7 +249,7 @@
     },
     {
       "id": "obj_C02R0103_4",
-      "spriteId": "SPRITE_GSBOY1",
+      "spriteId": "SPRITE_SINNOH_RIVEL",
       "movement": 17,
       "type": 0,
       "eventFlag": "FLAG_SINNOH_470",

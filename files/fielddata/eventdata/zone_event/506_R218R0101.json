@@ -1,0 +1,57 @@
+{
+  "header": "fielddata/script/scr_seq/event_R218R0101.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_R218R0101_0",
+      "spriteId": "SPRITE_POLICEMAN",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_R218R0101_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 7,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_R218R0101_1",
+      "spriteId": "SPRITE_FISHING",
+      "movement": 2,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_R218R0101_001 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 8,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 1,
+      "z": 7,
+      "header": "MAP_SINNOH_ROUTE_218",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 10,
+      "z": 7,
+      "header": "MAP_SINNOH_JUBLIFE",
+      "anchor": 12,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

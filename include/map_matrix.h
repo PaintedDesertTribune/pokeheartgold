@@ -4,7 +4,7 @@
 #include "heap.h"
 #include "save.h"
 
-#define MAP_MATRIX_MAX_SIZE        799
+#define MAP_MATRIX_MAX_SIZE        900 // was 799 (Johto 47x17); Diamond's Sinnoh matrix is 30x30
 #define MAP_MATRIX_MAX_NAME_LENGTH 16
 
 typedef struct MAPDATA {

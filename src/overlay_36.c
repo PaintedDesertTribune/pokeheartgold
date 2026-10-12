@@ -18,6 +18,10 @@
 #include "field_system.h"
 #include "friend_group.h"
 #include "heap.h"
+#include "script_pokemon_util.h"
+#include "constants/items.h"
+#include "constants/maps.h"
+#include "bag.h"
 #include "location_backup.h"
 #include "mail.h"
 #include "main.h"
@@ -127,6 +131,21 @@ static void HackSkipIntro_SetDefaults(SaveData *saveData) {
     DestroyMsgData(names);
     DestroyMsgData(rivalNames);
 }
+
+// A skipped intro means no starter: give a usable test team and bag so battles and the sailor can be tested.
+static void HackSkipIntro_GiveTestTeam(SaveData *saveData) {
+    static const u16 team[][2] = { { SPECIES_TYPHLOSION, 50 }, { SPECIES_FERALIGATR, 50 }, { SPECIES_AMPHAROS, 50 } };
+    Bag *bag = Save_Bag_Get(saveData);
+    int i;
+    for (i = 0; i < 3; i++) {
+        GiveMon(HEAPID_OV36, saveData, team[i][0], team[i][1], 0, 0, ITEM_NONE, MAP_SINNOH_CANALAVE, 24);   // met-at map and encounter type, as ScrCmd_GiveMon passes them
+    }
+    Bag_AddItem(bag, ITEM_MASTER_BALL, 2, HEAPID_OV36);
+    Bag_AddItem(bag, ITEM_ULTRA_BALL, 20, HEAPID_OV36);
+    Bag_AddItem(bag, ITEM_FULL_RESTORE, 20, HEAPID_OV36);
+    Bag_AddItem(bag, ITEM_RARE_CANDY, 20, HEAPID_OV36);
+    Bag_AddItem(bag, ITEM_MAX_REPEL, 20, HEAPID_OV36);
+}
 #endif
 
 BOOL ov36_TitleScreen_NewGame_AppExit(OverlayManager *man, int *state) {
@@ -156,6 +175,9 @@ BOOL ov36_App_InitGameState_AfterOakSpeech_AppExec(OverlayManager *man, int *sta
     struct UnkStruct_02111868_sub *unk_work = OverlayManager_GetArgs(man);
     SaveData *saveData = unk_work->saveData;
     InitGameStateAfterOakSpeech_Internal(HEAPID_OV36, saveData, TRUE);
+#if HACK_SKIP_INTRO
+    HackSkipIntro_GiveTestTeam(saveData);
+#endif
     sub_0201838C(Save_PlayerData_GetIGTAddr(saveData));
 
     return TRUE;

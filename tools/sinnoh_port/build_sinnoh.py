@@ -25,6 +25,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nsbtx  # noqa: E402
+import bdhc  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -42,7 +43,10 @@ ARCHIVES = {
     "area": "files/a/0/4/2",
 }
 MATSHP = {"field": "files/fielddata/build_model/bm_field_matshp.dat", "room": "files/fielddata/build_model/bm_room_matshp.dat"}
-RESTORE = list(ARCHIVES.values()) + list(MATSHP.values())
+ENC_JSON = "files/fielddata/encountdata/gs_enc_data.json"
+TRAINER_FILES = [ENC_JSON, "files/poketool/trainer/trainers.json", "files/msgdata/msg/msg_0728.json", "files/msgdata/msg/msg_0730.json",
+                 "files/poketool/trmsg/trtbl.narc", "files/poketool/trmsg/trtblofs.narc", "files/a/0/5/8"]
+RESTORE = list(ARCHIVES.values()) + list(MATSHP.values()) + TRAINER_FILES
 
 FIRST_MAP_ID = 540          # first free HeartGold map id
 FIRST_MATRIX = 288          # first free matrix index
@@ -58,11 +62,40 @@ FREE_VARS = [0x4105, 0x4109, 0x4111, 0x4112, 0x4128, 0x413C, 0x413D, 0x413E, 0x4
 PLACEHOLDER_SPRITE = "SPRITE_GSBOY1"
 PLACEHOLDER_TRAINER = 1
 
+# Diamond overworld graphics. Overlay 5 maps a sprite id to an mmodel member (ov05_021FA0AC) and to a flags word
+# (ov05_021F9A9C, low nibble 1 = billboard NSBTX). Town signs (ids 91-96) are not sprites: Diamond draws them as
+# small 3D props from data/mmodel/fldeff. We place those as buildings and turn the object event into a signpost
+# BG event, which is how HeartGold does its own town signs.
+DP_SPRITE_TABLES = "arm9/overlays/05/asm/ov05_021F0514.s"
+# Diamond prop "sprite" -> (fldeff member, BG event type). 91-96 are the town sign boards, 183 the trainer-school book,
+# 209 the Pokémon League door (Platinum's ov5 table; Diamond's fldeff members match).
+SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
+BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
+FIRST_SINNOH_SPRITE = 1100   # HeartGold sprite ids above the follower-mon range
+FIRST_SINNOH_MMODEL = 863    # the stock mmodel archive has members 0..862
+MMODEL_DIR = "files/data/mmodel/mmodel"
+
+# Trainers. Diamond trainers are appended to HeartGold's trainers.json; their dialogue goes to msg_0728 plus the
+# prebuilt trtbl/trtblofs lookup tables; classes HeartGold lacks (Byron, Barry) are added with Diamond's battle
+# picture. Indices 738-740 stay empty because std_trainer(740) is HeartGold's trainer-approach script id.
+FIRST_SINNOH_TRAINER = 741
+FIRST_SINNOH_TRCLASS = 129          # HeartGold's classes end at 128 (DAWN_PT)
+TRCLASS_TEMPLATE = 14               # BLACK_BELT: its intro-animation cell data is reused with blank tiles
+DP_TRCLASS_NAME_BANK = 560
+PRIZE_DEFAULT = 8
+
 MUSIC = {  # Diamond sequence name -> HeartGold placeholder
     "SEQ_CITY02_D": "SEQ_GS_C_ASAGI", "SEQ_CITY02_N": "SEQ_GS_C_ASAGI",
     "SEQ_FS": "SEQ_GS_FS", "SEQ_GYM": "SEQ_GS_GYM", "SEQ_PC_01": "SEQ_GS_POKESEN", "SEQ_PC_02": "SEQ_GS_POKESEN",
     "SEQ_D_03": "SEQ_GS_C_ASAGI",
+    "SEQ_CITY01_D": "SEQ_GS_C_KOGANE", "SEQ_CITY01_N": "SEQ_GS_C_KOGANE",       # Jubilife -> Goldenrod for now
+    "SEQ_ROAD_B_D": "SEQ_GS_R_1_30", "SEQ_ROAD_B_N": "SEQ_GS_R_1_30",           # Route 218 -> Route 30 for now
+    "SEQ_BLD_TV": "SEQ_GS_C_KOGANE", "SEQ_BLD_BLD_GTC": "SEQ_GS_C_KOGANE",
 }
+# Diamond's Sinnoh overworld is one 30x30 matrix (matrix 0) with a map header per cell; HeartGold's Johto/Kanto works
+# the same way, so every imported outdoor map goes into one shared "SINNOH" matrix with absolute coordinates. The
+# header/zone switch when walking across a cell boundary is HeartGold's own (FieldMap_ChangeZone).
+SHARED_MATRIX_NAME = "SINNOH"
 DEFAULT_MUSIC = "SEQ_GS_C_ASAGI"
 
 # Hand tweaks per Diamond map. TILE_OVERRIDES: (DP land id, x, z) -> (type, collision).
@@ -70,7 +103,7 @@ DEFAULT_MUSIC = "SEQ_GS_C_ASAGI"
 TILE_OVERRIDES = {}
 EXTRA_WARPS = {
     "MAP_CANALAVE": [
-        {"x": 13, "z": 45, "header": "MAP_OLIVINE", "anchor": 8, "y": 0},   # arrival point from Olivine's harbor, in front of the sailor
+        {"x": 45, "z": 749, "header": "MAP_OLIVINE", "anchor": 8, "y": 0},   # arrival point from Olivine's harbor, in front of the sailor (Sinnoh matrix coords)
     ],
 }
 # Extra dialogue lines appended to a map's text bank (ids continue after Diamond's).
@@ -202,6 +235,14 @@ class Diamond:
         self.rows = [l for l in hdr if l.strip().startswith("{ NARC_area_data")]
         self.sprites = {int(v): k for k, v in re.findall(r"#define (SPRITE_\w+)\s+(\d+)", open(f"{repo}/include/constants/sprites.h").read())}
         self.models, _ = narc_read(f"{repo}/files/fielddata/build_model/build_model.narc")
+        self.sprite_flags, self.sprite_model = self._sprite_tables()
+        self.trainers = {int(v): k for k, v in re.findall(r"#define (TRAINER_\w+)\s+(\d+)", open(f"{repo}/include/constants/trainers.h").read())}
+        self.trclasses = {k: int(v) for k, v in re.findall(r"#define (TRAINER_CLASS_\w+)\s+(\d+)", open(f"{repo}/include/constants/trainer_classes.h").read())}
+        self.trclass_gender = {k: int(v) for k, v in re.findall(r"/\*(TRAINER_CLASS_\w+)\*/ (\d+)", open(f"{repo}/arm9/src/trainer_data.c").read())}
+        self.trdata = json.load(open(f"{repo}/files/poketool/trainer/trdata.json"))["trdata"]
+        tt, _ = narc_read(f"{repo}/files/poketool/trmsg/trtbl.narc")
+        self.trmsg_rows = [struct.unpack_from("<HH", tt[0], i) for i in range(0, len(tt[0]), 4)]
+        self.trgra, _ = narc_read(f"{repo}/files/poketool/trgra/trfgra.narc")
         self.cmd_names = self._cmd_table()
         self.cmd_layout = self._cmd_layouts()
         self.matrix0 = self._matrix(0)
@@ -212,12 +253,35 @@ class Diamond:
         music = re.search(r"(SEQ_\w+), (SEQ_\w+)", l).groups()
         tail = re.search(r"MAPSEC_(\w+),\s*(.*?)\s*\}", l)
         mapsec, rest = tail.group(1), [x.strip() for x in tail.group(2).split(",")]
-        return dict(area=banks[0], mm=banks[1], matrix=banks[2], scripts=banks[3], lvl=banks[4], msg=banks[5], events=banks[-1],
+        return dict(area=banks[0], mm=banks[1], matrix=banks[2], scripts=banks[3], lvl=banks[4], msg=banks[5], events=banks[-1], enc=(int(em.group(1)) if (em := re.search(r"d_enc_data_narc_(\d+)_bin", l)) else None),
                     music=music, mapsec=mapsec, weather=int(rest[0]), camera=int(rest[1]), maptype=int(rest[2]), battlebg=int(rest[3]),
                     bike=rest[4] == "TRUE", escape=rest[6] == "TRUE", fly=rest[7] == "TRUE")
 
     def file(self, sub, idx):
         return open(f"{self.repo}/files/fielddata/{sub}/narc_{idx:04d}.bin", "rb").read()
+
+    def _sprite_tables(self):
+        asm = open(f"{self.repo}/{DP_SPRITE_TABLES}").read()
+
+        def table(label):
+            m = re.search(r"^" + label + r":.*?\n(.*?)\n\s*\n", asm, re.S | re.M)
+            bs = bytes(int(x, 16) for x in re.findall(r"0x([0-9A-Fa-f]{2})", m.group(1)))
+            rows = {}
+            for i in range(0, len(bs), 8):
+                a, b_ = struct.unpack_from("<II", bs, i)
+                if a == 0xFFFF:
+                    break
+                rows[a] = b_
+            return rows
+        return table("ov05_021F9A9C"), table("ov05_021FA0AC")
+
+    def mmodel(self, idx):
+        import glob
+        return open(glob.glob(f"{self.repo}/files/data/mmodel/mmodel/narc_{idx:04d}.*")[0], "rb").read()
+
+    def fldeff(self, idx):
+        import glob
+        return open(glob.glob(f"{self.repo}/files/data/mmodel/fldeff/narc_{idx:04d}.*")[0], "rb").read()
 
     def _matrix(self, idx):
         b = self.file("mapmatrix/map_matrix", idx)
@@ -331,6 +395,7 @@ TRANSLATE = {
     "ScrCmd_SetEventDefaultDirection": ("SetObjectFacing", "ov"),
     "ScrCmd_RunScriptWait": ("CallStd", "s"),
     "ScrCmd_Unk00E5": ("TrainerBattle", "tt"),
+    "ScrCmd_Unk00EC": ("CheckBattleWon", "p"),
     "ScrCmd_YesNoMenu": ("YesNo", "p"),
     "ScrCmd_RestartCurrentScript": ("RestartCurrentScript", ""),
     "ScrCmd_Wait": ("Wait", "hp"),
@@ -348,6 +413,33 @@ TRANSLATE = {
     "ScrCmd_PlaySoundWait": ("WaitSE", "v"),
     "ScrCmd_SetWarpPosition": ("MoveWarp", "vvv"),
     "ScrCmd_SetTrainerFlag": ("SetTrainerFlag", "t"),
+    "ScrCmd_FadeScreen": ("FadeScreen", "hhhh"),
+    "ScrCmd_WaitFadeScreen": ("WaitFade", ""),
+    "ScrCmd_Warp": ("Warp", "Ghvvh"),
+    "ScrCmd_RestoreOverworld": ("RestoreOverworld", ""),
+    "ScrCmd_TakeItem": ("TakeItem", "vvp"),
+    "ScrCmd_GetFriendName": ("BufferFriendsName", "b"),
+    "ScrCmd_NationalDex": ("NatDexFlagAction", "bp"),
+    "ScrCmd_CheckGameCompleted": ("CheckGameClearFlag", "p"),
+    "ScrCmd_Unk0035": ("CloseMsg", ""),
+    "ScrCmd_Unk00EB": ("WhiteOut", ""),
+    "ScrCmd_GetPartyMonSpecies": ("GetPartyMonSpecies", "vph"),   # Diamond has a third, unused halfword
+    "ScrCmd_CountPartyMons": ("GetPartyCount", "p"),
+    "ScrCmd_CountPartyMons_OmitEggs": ("PartyCountNotEgg", "p"),
+    "ScrCmd_GetTotalEarnedBadges": ("CountBadges", "p"),
+    "ScrCmd_HideEvent": ("HidePerson", "v"),
+    "ScrCmd_ShowEvent": ("ShowPerson", "v"),
+    "ScrCmd_Random": ("Random", "pv"),
+    "ScrCmd_SetDynamicWarp": ("SetDynamicWarp", "vvvvv"),
+    "ScrCmd_GetDynamicWarpFloorNumber": ("GetDynamicWarpFloorNo", "p"),
+    "ScrCmd_ElevatorAnimation": ("ElevatorAnim", "vv"),
+    "ScrCmd_PlayCryWait": ("WaitCry", ""),
+    "ScrCmd_HealParty": ("HealParty", ""),
+    "ScrCmd_GetSelectedPartySlot": ("GetPartySelection", "p"),
+    "ScrCmd_ChoosePokemonMenu": ("PartySelectUI", ""),
+    "ScrCmd_NormalMart": ("MartBuy", "v"),            # mart ids index HeartGold's tables; wrong stock until remapped
+    "ScrCmd_SpecialMart": ("SpecialMartBuy", "v"),
+    "ScrCmd_SetBgEventPosition": ("MoveBGEvent", "vvv"),
     "ScrCmd_ClearTrainerFlag": ("ClearTrainerFlag", "t"),
     "ScrCmd_CheckTrainerFlag": ("CheckTrainerFlag", "t"),
     "ScrCmd_Unk0040": ("MenuInit", "bbbbp"),
@@ -360,12 +452,167 @@ TRANSLATE = {
     "ScrCmd_SetFlagVar": ("SetFlagVar", "F"),
     "ScrCmd_ClearFlagVar": ("ClearFlagVar", "F"),
 }
-DP_STD = {2000: "std_signpost", 2042: "std_play_rival_intro_music"}
+DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose"}
+
+# Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
+DROP = {
+    "ScrCmd_PlaySoundWait": "waits for the current sound effect; HeartGold's WaitSE needs the effect id",
+    "ScrCmd_StopFanfare": "no stop-fanfare command in HeartGold",
+    "ScrCmd_LockCamera": "scripted camera moves need a HeartGold port (library cutscene)",
+    "ScrCmd_ReleaseCamera": "scripted camera moves need a HeartGold port (library cutscene)",
+    "ScrCmd_ShakeCamera": "screen shake needs a HeartGold port (library cutscene)",
+    "ScrCmd_Unk0043": "Diamond scrolling list window (library bookshelf)",
+    "ScrCmd_Unk029D": "Diamond scrolling list window (library bookshelf)",
+    "ScrCmd_Unk01CD": "Diamond misc save-data pointer setup",
+    "ScrCmd_Unk02B5": "Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id",
+    "ScrCmd_ShipAnimation": "Diamond ship cutscene, separate port job (decision 20)",
+    "ScrCmd_InitCanalaveGym": "Canalave Gym lift puzzle needs a HeartGold port",
+    "ScrCmd_UnlockGenderEntries": "Pokédex gender pages; HeartGold has no toggle",
+    "ScrCmd_CheckPoketch": "Pokétch dropped (decision 16)", "ScrCmd_CheckPoketchApp": "Pokétch dropped (decision 16)",
+    "ScrCmd_GivePoketch": "Pokétch dropped (decision 16)", "ScrCmd_UnlockPoketchApp": "Pokétch dropped (decision 16)",
+    "ScrCmd_ActivateMysteryGift": "Mystery Gift is HeartGold's own", "ScrCmd_CompareMysteryGiftEasyChatInput": "Mystery Gift is HeartGold's own",
+    "ScrCmd_DressupPokemon": "Contest dress-up dropped (decision 16)", "ScrCmd_ShowDressedPokemon": "Contest dress-up dropped (decision 16)",
+    "ScrCmd_GetFashionName": "Contest dress-up dropped (decision 16)", "ScrCmd_GetFashionNameWithArticle": "Contest dress-up dropped (decision 16)",
+    "ScrCmd_CheckPortraitSlot": "Jubilife TV portrait feature dropped", "ScrCmd_GiveWallpaper": "PC wallpaper gift; HeartGold command unknown",
+    "ScrCmd_PrepareDoorAnimation": "scripted door animation; HeartGold animates doors itself", "ScrCmd_OpenDoorAnimation": "scripted door animation",
+    "ScrCmd_WaitDoorAnimation": "scripted door animation", "ScrCmd_CloseDoorAnimation": "scripted door animation", "ScrCmd_FreeDoorAnimation": "scripted door animation",
+    "ScrCmd_SetEventPosition": "object teleport (5 args) needs a HeartGold equivalent", "ScrCmd_ShowCurrentFloorNumber": "elevator floor box (cosmetic)",
+}
+# Diamond commands whose only effect is a result variable HeartGold cannot compute: emit SetVar <var>, <value>.
+CONST_RESULT = {
+    "ScrCmd_CheckEventValidity": ("bp", 0), "ScrCmd_CheckPartyForBadEgg": ("p", 0), "ScrCmd_CountPCFreeSpace": ("p", 1),
+    "ScrCmd_GetDayOfWeek": ("p", 0), "ScrCmd_CountAvailablePartyMons_IgnoreSlot": ("pv", 1),
+}
+
+
+def dp_encounters(dp, species, code, idx):
+    """Diamond wild-encounter member -> HeartGold gs_enc_data.json entry. Diamond: u32 walk rate, 12 x (u32 level,
+    u32 species), swarm/day/night/radar/forms/dual-slot species, then surf, rock smash, old/good/super rod as
+    u32 rate + 5 x (u8 min, u8 max, u16 pad, u32 species). Day/night species replace land slots 2 and 3."""
+    b = dp.file("encountdata/d_enc_data", idx)
+    u = struct.unpack_from(f"<{len(b) // 4}I", b, 0)
+    name = lambda n: species.get(n, "SPECIES_NONE")  # noqa: E731
+    land = [(u[1 + 2 * i], u[2 + 2 * i]) for i in range(12)]
+    o = 25
+    swarm, day, night, radar = u[o:o + 2], u[o + 2:o + 4], u[o + 4:o + 6], u[o + 6:o + 10]
+    o += 16
+    dual = u[o:o + 10]
+    o += 10
+    mons = []
+    for i, (lvl, sp) in enumerate(land):
+        if i in (2, 3):
+            mons.append({"level": lvl, "species": {"morn": name(day[i - 2]), "day": name(day[i - 2]), "nite": name(night[i - 2])}})
+        else:
+            mons.append({"level": lvl, "species": {"morn": name(sp), "day": name(sp), "nite": name(sp)}})
+
+    def slots(o):
+        rate = u[o]
+        o += 1
+        out = []
+        for i in range(5):
+            lv, sp = u[o + 2 * i], u[o + 2 * i + 1]
+            out.append({"level": {"min": (lv >> 8) & 0xFF, "max": lv & 0xFF}, "species": name(sp)})
+        return {"rate": rate, "mons": out if rate else []}, o + 10
+    surf, o = slots(o)
+    rock, o = slots(o)
+    old, o = slots(o)
+    good, o = slots(o)
+    sup, o = slots(o)
+    return {"map": code, "land": {"rate": u[0], "mons": mons}, "surf": surf, "rock_smash": rock,
+            "fishing": {"old_rod": old, "good_rod": good, "super_rod": sup},
+            "hoenn": [name(dual[0]), name(dual[1])], "sinnoh": [name(radar[0]), name(radar[1])], "landSwarm": name(swarm[0])}
+
+
+class Sprites:
+    """Maps Diamond sprite ids to HeartGold sprite constants; ports the Diamond NSBTX when HeartGold lacks it."""
+    def __init__(self, dp, hg_sprites):
+        self.dp, self.hg = dp, hg_sprites
+        self.ported = {}   # dp sprite id -> (SPRITE_ name, MMODEL_ name, mmodel index, bytes)
+        mm = {k: int(v) for k, v in re.findall(r"#define (MMODEL_\w+)\s+(\d+)", open("include/constants/mmodel.h").read())}
+        rows = dict(re.findall(r"\.short (SPRITE_\w+), (MMODEL_\w+),", open("asm/overlay_01_sprite_data.s").read()))
+        self.hg_file = {sp: f"{MMODEL_DIR}/mmodel_{mm[m]:08d}.NSBTX" for sp, m in rows.items() if m in mm}
+        self.cache = {}
+        self.todo = []
+
+    def tex_name(self, dp_id):
+        mid = self.dp.sprite_model.get(dp_id)
+        if mid is None:
+            return None
+        tex, _ = nsbtx.read_tex0(self.dp.mmodel(mid))
+        return next(iter(tex)).rstrip(b"\0").decode().split(".")[0] if tex else None
+
+    def hg_name(self, dp_id):
+        if dp_id in self.cache:
+            return self.cache[dp_id]
+        name = PLACEHOLDER_SPRITE
+        tex = self.tex_name(dp_id)
+        same = self.dp.sprites.get(dp_id) if self.dp.sprites.get(dp_id) in self.hg else (f"SPRITE_{tex.upper()}" if tex and f"SPRITE_{tex.upper()}" in self.hg else None)
+        if same and self.dp.sprite_model.get(dp_id) is not None and os.path.exists(self.hg_file.get(same, "")):
+            # same name, but HeartGold may have redrawn it (Professor Elm vs Rowan); keep Diamond's art when the bytes differ
+            if open(self.hg_file[same], "rb").read() != self.dp.mmodel(self.dp.sprite_model[dp_id]):
+                same = None
+        if 101 <= dp_id <= 117:                                   # variable sprites: same mechanism and ids in both games
+            name = f"SPRITE_VAR_{dp_id - 100}" if f"SPRITE_VAR_{dp_id - 100}" in self.hg else str(dp_id)
+        elif same:
+            name = same
+        elif tex and (self.dp.sprite_flags.get(dp_id, 0) & 0xF) == 1:   # Diamond billboard NSBTX: port the file
+            name = f"SPRITE_SINNOH_{tex.upper()}"
+            self.ported[dp_id] = (name, f"MMODEL_SINNOH_{tex.upper()}", FIRST_SINNOH_MMODEL + len(self.ported),
+                                  self.dp.mmodel(self.dp.sprite_model[dp_id]))
+        else:
+            self.todo.append(f"sprite {dp_id} ({self.dp.sprites.get(dp_id)}) has no HeartGold match and is not a billboard; placeholder")
+        self.cache[dp_id] = name
+        return name
+
+
+class Trainers:
+    """Maps Diamond trainer ids to HeartGold trainer constants; the trainers are appended to trainers.json later."""
+    def __init__(self, dp, hg_classes):
+        self.dp, self.hg_classes = dp, hg_classes
+        self.used = {}          # dp trainer id -> TRAINER_SINNOH_ name, in allocation order
+        self.new_classes = {}   # dp class name -> (TRAINERCLASS_SINNOH_ name, id)
+
+    def hg_class(self, dpcls):
+        short = dpcls[len("TRAINER_CLASS_"):]
+        if f"TRAINERCLASS_{short}" in self.hg_classes:
+            return f"TRAINERCLASS_{short}"
+        if dpcls not in self.new_classes:
+            self.new_classes[dpcls] = (f"TRAINERCLASS_SINNOH_{short}", FIRST_SINNOH_TRCLASS + len(self.new_classes))
+        return self.new_classes[dpcls][0]
+
+    def hg_name(self, dp_id):
+        if dp_id not in self.used:
+            base = self.dp.trainers.get(dp_id, f"TRAINER_{dp_id}")
+            self.used[dp_id] = f"TRAINER_SINNOH_{base[len('TRAINER_'):]}"
+        return self.used[dp_id]
+
+    def entries(self):
+        """[(hg index, name, trainers.json entry, [(dp text index, msg type)])] in allocation order."""
+        out = []
+        for n, (dp_id, name) in enumerate(self.used.items()):
+            t = self.dp.trdata[dp_id]
+            party = []
+            for p in t["party"]:
+                q = {"difficulty": p["difficulty"], "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+                     "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF", "level": p["level"], "species": p["species"]}
+                if "item" in p:
+                    q["item"] = p["item"]
+                if "moves" in p:
+                    q["moves"] = p["moves"]
+                q["capsule"] = 0
+                party.append(q)
+            entry = {"type": t["type"], "class": self.hg_class(t["class"]), "name": t["name"], "items": t["items"],
+                     "ai_flags": t.get("unkC", 0), "double": t["doubleBattle"], "party": party, "messages": []}
+            msgs = [(i, m) for i, (tid, m) in enumerate(self.dp.trmsg_rows) if tid == dp_id]
+            out.append((FIRST_SINNOH_TRAINER + n, name, entry, msgs))
+        return out
 
 
 class Translator:
-    def __init__(self, dp, state, code, msg_prefix, nmsgs):
+    def __init__(self, dp, state, code, msg_prefix, nmsgs, sprites=None, trainers=None, maps=None, hgmap=None):
         self.dp, self.state, self.code, self.msg_prefix, self.nmsgs = dp, state, code, msg_prefix, nmsgs
+        self.sprites, self.trainers = sprites, trainers
+        self.maps, self.hgmap = maps or {}, hgmap   # Diamond map id -> HeartGold map name; this map's own name
         self.todo = []
 
     def flag(self, dpflag):
@@ -419,6 +666,17 @@ class Translator:
                         v = struct.unpack_from("<i", b, q)[0]; q += 4
                         raw.append(q + v)
                 nxt = q
+                if name in DROP:
+                    lines[pc] = f"\t// Diamond {name} dropped: {DROP[name]}"
+                    self.todo.append(f"dropped {name}: {DROP[name]}")
+                    pc = nxt
+                    continue
+                if name in CONST_RESULT:
+                    kinds, value = CONST_RESULT[name]
+                    var = raw[kinds.index("p")]
+                    lines[pc] = f"\tSetVar {self.var(var)}, {value}   // Diamond {name}: result fixed"
+                    pc = nxt
+                    continue
                 if tr is None:
                     lines[pc] = f"\t// TODO Diamond {name} 0x{cmd:03x} args {raw}: no HeartGold mapping yet"
                     stubbed.add(name)
@@ -435,6 +693,12 @@ class Translator:
                             lbl = labels.setdefault(v, f"_{v:04X}")
                             work.append(v)
                             args.append(lbl)
+                        elif k == "G":
+                            if v in self.maps:
+                                args.append(self.maps[v])
+                            else:
+                                args.append(self.hgmap)
+                                self.todo.append(f"warp to Diamond map {self.dp.id2map.get(v, v)} not imported; points at this map")
                         elif k == "M":
                             lbl = f"mv_{self.code}_{v:04X}"
                             movements[v] = lbl
@@ -457,15 +721,19 @@ class Translator:
                                 args.append(f"{v} /* TODO Diamond std script */")
                                 self.todo.append(f"std script {v}")
                         elif k == "t":
-                            args.append(str(PLACEHOLDER_TRAINER) if v else "0")
-                            if v:
-                                self.todo.append(f"trainer {v}")
+                            args.append(self.trainers.hg_name(v) if v else "0")
                         elif k == "F":
                             args.append(self.var(v) if v >= 0x4000 else self.flag(v))
                         else:
                             args.append(str(v))
                     if macro == "TrainerBattle":
                         args = [args[0], args[1], "0", "0"]
+                    if macro == "SetVar" and 0x4020 <= raw[0] <= 0x402F and raw[1] < 0x4000 and self.sprites:
+                        args[1] = self.sprites.hg_name(raw[1])   # object-graphics variables hold sprite ids
+                    if macro == "GetPartyMonSpecies":
+                        args = args[:2]
+                    if macro in ("MartBuy", "SpecialMartBuy"):
+                        self.todo.append(f"{macro} {args[0]}: Diamond mart id used against HeartGold's mart tables")
                     lines[pc] = f"\t{macro} {', '.join(args)}".rstrip()
                 pc = nxt
                 if name in ("ScrCmd_End", "ScrCmd_Return", "ScrCmd_GoTo", "ScrCmd_RestartCurrentScript"):
@@ -481,7 +749,7 @@ class Translator:
                 if c == 0xFE:
                     break
                 body.append(f"\t.short {c}, {n}")
-            mv_text.append(f"{lbl}:\n" + "\n".join(body) + "\n\tEndMovement\n")
+            mv_text.append(f"\t.balign 4, 0\n{lbl}:\n" + "\n".join(body) + "\n\tEndMovement\n")   # movement data must be aligned, as stock scripts do
         out = []
         for s in sorted(set(starts)):
             pass
@@ -509,7 +777,7 @@ class State:
     def var(self, dpvar):
         if dpvar < 0x4000:
             return str(dpvar)
-        if 0x4000 <= dpvar <= 0x400F or dpvar >= 0x8000:  # temp and special vars, same in both games
+        if 0x4000 <= dpvar <= 0x400F or 0x4020 <= dpvar <= 0x402F or dpvar >= 0x8000:  # temp, object-graphics and special vars, same in both games
             return f"0x{dpvar:04X}"
         if dpvar not in self.vars:
             assert len(self.vars) < len(FREE_VARS), "out of free HeartGold variables"
@@ -545,6 +813,8 @@ def main():
     narcs = Narcs()
     state = State()
     hg_sprites = set(re.findall(r"#define (SPRITE_\w+)", open("include/constants/sprites.h").read()))
+    sprites = Sprites(dp, hg_sprites)
+    trainers = Trainers(dp, set(re.findall(r"#define (TRAINERCLASS_\w+)", open("include/constants/trainer_class.h").read())))
     flat_bdhc = narcs.member("land", 1)[len(narcs.member("land", 1)) - struct.unpack_from("<I", narcs.member("land", 1), 12)[0]:]
 
     # id allocation
@@ -557,18 +827,44 @@ def main():
                          matrix=FIRST_MATRIX + i, dphdr=dp.header(mid)))
     dp2hg = {m["dpid"]: m["hgname"] for m in maps}
 
+    # Diamond's town signs are 3D props hung on object events; collect them per map up front so the area's
+    # building list and texture set, and the land chunks, can carry them as buildings.
+    def read_objects(h):
+        eb = dp.file("eventdata/zone_event_release", h["events"])
+        p = 4 + struct.unpack_from("<I", eb, 0)[0] * 0x14
+        return [struct.unpack_from("<14Hi", eb, p + 4 + i * 0x20) for i in range(struct.unpack_from("<I", eb, p)[0])]
+    area_signs = {}
+    all_shared = set()   # every imported cell of the shared Sinnoh matrix, to fence off its unimported neighbours
+    for m in maps:
+        if m["dphdr"]["matrix"] == 0:
+            cs, og, _ = dp.map_cells(m["dpid"], m["dphdr"])
+            all_shared.update((x + og[0], y + og[1]) for x, y, _, _ in cs)
+    for m in maps:
+        _, origin, _ = dp.map_cells(m["dpid"], m["dphdr"])
+        ox, oy = (0, 0) if m["dphdr"]["matrix"] == 0 else (origin[0] * 32, origin[1] * 32)
+        m["signs"] = [(o[1], o[12] - ox, o[13] - oy) for o in read_objects(m["dphdr"]) if o[1] in SIGN_MODELS]
+        area_signs.setdefault(m["dphdr"]["area"], set()).update(("fldeff", SIGN_MODELS[sp][0]) for sp, _, _ in m["signs"])
+
     land_cache, area_cache, tex_cache = {}, {}, {}
+    shared_cells = {}                           # (matrix x, y) -> (hg land id, altitude, hg map id)
+    enc_json = json.load(open(ENC_JSON))
+    enc_defs = []
+    hg_species = {int(v): k for k, v in re.findall(r"#define (SPECIES_\w+)\s+(\d+)", open("include/constants/species.h").read())}
+    shared_matrix_idx = FIRST_MATRIX + len(maps)
     model_cache = {"field": {}, "room": {}}
     generated_scripts, generated_headers, generated_events, generated_msgs, generated_matrices = [], [], [], [], []
     header_entries, map_defines = [], []
     todo = []
+
+    def model_blob(bid):
+        return dp.models[bid] if isinstance(bid, int) else dp.fldeff(bid[1])
 
     def import_models(ids, kind):
         key_models, key_anim = ("field_models", "field_anim") if kind == "field" else ("room_models", "room_anim")
         out = []
         for bid in ids:
             if bid not in model_cache[kind]:
-                model_cache[kind][bid] = narcs.append(key_models, dp.models[bid])
+                model_cache[kind][bid] = narcs.append(key_models, model_blob(bid))
                 narcs.append(key_anim, b"\xff\xff" + b"\x00" * 6 + b"\xff" * 16)
                 narcs.matshp_add[kind] += 1
             out.append(model_cache[kind][bid])
@@ -583,7 +879,7 @@ def main():
             a = dp.file("areadata/area_data", h["area"])
             dp_build, dp_tex = struct.unpack_from("<HH", a, 0)
             ab = dp.file("areadata/area_build_model/area_build", dp_build)
-            dp_ids = list(struct.unpack_from(f"<{len(ab)//2}H", ab, 0))
+            dp_ids = list(dict.fromkeys(struct.unpack_from(f"<{len(ab)//2}H", ab, 0)))   # Diamond lists can repeat an id; HeartGold asserts on that
             cells, _, _ = dp.map_cells(m["dpid"], h)
             for _, _, land_id, _ in cells:
                 c = dp.file("land_data/land_data_release", land_id)
@@ -592,22 +888,26 @@ def main():
                     bid = struct.unpack_from("<I", c, 0x10 + perm + i * 0x30)[0]
                     if bid not in dp_ids:
                         dp_ids.append(bid)
+            dp_ids += [k for k in sorted(area_signs.get(h["area"], ())) if k not in dp_ids]
             hg_ids = import_models(dp_ids, kind)
             if dp_tex not in tex_cache:
                 tex_cache[dp_tex] = narcs.append("tex", dp.file("areadata/area_map_tex/map_tex_set", dp_tex))
             list_idx = narcs.append("buildlist", struct.pack("<H", len(hg_ids)) + b"".join(struct.pack("<H", i) for i in hg_ids))
-            merged, _, _ = nsbtx.merge_models([dp.models[b] for b in dp_ids])
+            merged, _, _ = nsbtx.merge_models([model_blob(b) for b in dp_ids])
             assert narcs.append("buildtex", merged) == list_idx
             area_cache[h["area"]] = narcs.append("area", struct.pack("<HHHBB", list_idx, tex_cache[dp_tex], 0xFFFF, 1 if outdoor else 0, 1 if outdoor else 0))
         m["hgarea"] = area_cache[h["area"]]
         # --- land data + matrix
         cells, origin, (w, hgt) = dp.map_cells(m["dpid"], h)
         m["origin"] = origin
+        shared = h["matrix"] == 0
+        if shared:
+            cells = [(x + origin[0], y + origin[1], l, a) for x, y, l, a in cells]
         grid = {}
         for x, y, land_id, alt in cells:
             if land_id not in land_cache:
                 c = dp.file("land_data/land_data_release", land_id)
-                perm, bld, mdl, bdhc = struct.unpack_from("<4I", c, 0)
+                perm, bld, mdl, bdhc_len = struct.unpack_from("<4I", c, 0)
                 body = bytearray(c[0x10:0x10 + perm + bld + mdl])
                 for (lid, tx, tz), (tt, tc) in TILE_OVERRIDES.items():
                     if lid == land_id:
@@ -617,16 +917,44 @@ def main():
                     off = perm + i * 0x30
                     old = struct.unpack_from("<I", body, off)[0]
                     struct.pack_into("<I", body, off, model_cache[kind][old])
-                body += flat_bdhc
-                land_cache[land_id] = narcs.append("land", struct.pack("<4IHH", perm, bld, mdl, len(flat_bdhc), 0x1234, 0) + bytes(body))
+                extra = b""
+                for spr, sx, sz in m["signs"]:
+                    if (sx // 32, sz // 32) != (x, y):
+                        continue
+                    tx, tz = sx % 32, sz % 32
+                    body[(tz * 32 + tx) * 2 + 1] = 0x80          # the sign's tile blocks movement, like the object did
+                    extra += struct.pack("<Iiii", model_cache[kind][("fldeff", SIGN_MODELS[spr][0])],
+                                         ((tx - 16) * 16 + 8) << 12, 0, ((tz - 16) * 16 + 8) << 12)
+                    extra += struct.pack("<3I", 0, 0, 0) + struct.pack("<3I", 0x1000, 0x1000, 0x1000) + bytes(8)
+                if shared:   # wall off edges that face cells not imported yet (no land there)
+                    for (dx, dy), tiles in (((0, -1), [(tx, 0) for tx in range(32)]), ((0, 1), [(tx, 31) for tx in range(32)]),
+                                            ((-1, 0), [(0, tz) for tz in range(32)]), ((1, 0), [(31, tz) for tz in range(32)])):
+                        if (x + dx, y + dy) not in all_shared:
+                            for tx, tz in tiles:
+                                body[(tz * 32 + tx) * 2 + 1] = 0x80
+                body[perm + bld:perm + bld] = extra
+                bld += len(extra)
+                try:   # Diamond's height map, rewritten in HeartGold's layout
+                    hg_bdhc = bdhc.convert(c[0x10 + perm + (bld - len(extra)) + mdl:0x10 + perm + (bld - len(extra)) + mdl + bdhc_len])
+                except Exception as e:  # noqa: BLE001
+                    todo.append(f"{m['name']}: land {land_id} height map not converted ({e}); flat ground")
+                    hg_bdhc = flat_bdhc
+                body += hg_bdhc
+                land_cache[land_id] = narcs.append("land", struct.pack("<4IHH", perm, bld, mdl, len(hg_bdhc), 0x1234, 0) + bytes(body))
             grid[(x, y)] = (land_cache[land_id], alt)
-        mname = m["code"].encode()[:15]
-        mx = struct.pack("<BBBBB", w, hgt, 0, 1, len(mname)) + mname
-        mx += bytes(grid.get((x, y), (0, 0))[1] for y in range(hgt) for x in range(w))
-        mx += b"".join(struct.pack("<H", grid.get((x, y), (0xFFFF, 0))[0]) for y in range(hgt) for x in range(w))
-        mpath = f"files/fielddata/mapmatrix/map_matrix/map_matrix_{m['matrix']:04d}_{m['code']}.bin"
-        open(mpath, "wb").write(mx)
-        generated_matrices.append(os.path.basename(mpath))
+        if shared:
+            for (x, y), (lid, alt) in grid.items():
+                shared_cells[(x, y)] = (lid, alt, m["hgid"])
+            m["matrix_ref"] = f"NARC_map_matrix_map_matrix_{shared_matrix_idx:04d}_{SHARED_MATRIX_NAME}_bin"
+        else:
+            mname = m["code"].encode()[:15]
+            mx = struct.pack("<BBBBB", w, hgt, 0, 1, len(mname)) + mname
+            mx += bytes(grid.get((x, y), (0, 0))[1] for y in range(hgt) for x in range(w))
+            mx += b"".join(struct.pack("<H", grid.get((x, y), (0xFFFF, 0))[0]) for y in range(hgt) for x in range(w))
+            mpath = f"files/fielddata/mapmatrix/map_matrix/map_matrix_{m['matrix']:04d}_{m['code']}.bin"
+            open(mpath, "wb").write(mx)
+            generated_matrices.append(os.path.basename(mpath))
+            m["matrix_ref"] = f"NARC_map_matrix_map_matrix_{m['matrix']:04d}_{m['code']}_bin"
         # --- text
         bank_name = f"msg_{m['msg']:04d}_{m['code']}"
         js, nmsgs = gmm_to_json(dp, h["msg"], bank_name)
@@ -637,7 +965,7 @@ def main():
         json.dump(js, open(f"files/msgdata/msg/{bank_name}.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
         generated_msgs.append(bank_name)
         # --- scripts
-        tr = Translator(dp, state, m["code"], bank_name, nmsgs)
+        tr = Translator(dp, state, m["code"], bank_name, nmsgs, sprites, trainers, dp2hg, m["hgname"])
         asm, nscripts, stubbed = tr.translate(h["scripts"], SCRIPT_OVERRIDES.get(m["name"]))
         todo += [f"{m['name']}: {t}" for t in tr.todo] + [f"{m['name']}: unmapped command {s}" for s in sorted(stubbed)]
         scr_name = f"scr_seq_{m['scr']:04d}_{m['code']}"
@@ -688,7 +1016,7 @@ def main():
         generated_scripts += [scr_name, hdr_name]
         # --- events
         eb = dp.file("eventdata/zone_event_release", h["events"])
-        ox, oy = origin[0] * 32, origin[1] * 32
+        ox, oy = (0, 0) if shared else (origin[0] * 32, origin[1] * 32)
         p = 0
         nb = struct.unpack_from("<I", eb, p)[0]; p += 4
         bgs = []
@@ -699,6 +1027,10 @@ def main():
                 idx = FIRST_HIDDEN_ITEM_IDX + len(state.hidden_items)
                 state.hidden_items.append((r[0] if r else 1, r[1] if r else 1, idx, m["code"]))
                 sid_s = str(8000 + idx)
+            elif sid >= 2000:   # a Diamond std script on a BG event
+                sid_s = DP_STD.get(sid, "0")
+                if sid not in DP_STD:
+                    todo.append(f"{m['name']}: BG event {i} uses Diamond std script {sid}; no script for now")
             else:
                 sid_s = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
             bgs.append({"scriptId": sid_s, "type": typ, "x": x - ox, "z": z - oy, "y": y, "dir": d})
@@ -707,17 +1039,13 @@ def main():
         objs, obj_names = [], []
         for i in range(no):
             o = struct.unpack_from("<14Hi", eb, p + i * 0x20)
-            spr = dp.sprites.get(o[1])
-            spr_s = spr if spr in hg_sprites else PLACEHOLDER_SPRITE
-            if spr_s == PLACEHOLDER_SPRITE:
-                todo.append(f"{m['name']}: sprite {o[1]} ({spr}) has no HeartGold match")
             sid = o[5]
             if sid >= 7000 and sid < 8000:
                 sid_s = "std_itemball_variadic"
                 todo.append(f"{m['name']}: item ball std {sid} contents unknown, variadic placeholder")
-            elif 3000 <= sid < 7000:
-                sid_s = str(3000 + PLACEHOLDER_TRAINER)   # HeartGold's NPC-trainer std range, placeholder trainer
-                todo.append(f"{m['name']}: object {i} is Diamond trainer std {sid}; placeholder trainer")
+            elif 3000 <= sid < 7000:   # Diamond's NPC-trainer std ids: 3000/5000 + trainer - 1, same scheme as HeartGold
+                macro = "std_trainer" if sid < 5000 else "std_trainer_2"
+                sid_s = f"{macro}({trainers.hg_name(sid - (3000 if sid < 5000 else 5000) + 1)})"
             elif sid >= 2000:
                 sid_s = "0"
                 todo.append(f"{m['name']}: object {i} uses Diamond std script {sid}; no script for now")
@@ -725,8 +1053,15 @@ def main():
                 sid_s = "0"
             else:
                 sid_s = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
-            oname = f"obj_{m['code']}_{i}"
-            obj_names.append(oname)
+            if o[1] in SIGN_MODELS:   # 3D prop: a BG event on its tile (the model is placed as a building in the land data)
+                bgs.append({"scriptId": sid_s, "type": SIGN_MODELS[o[1]][1], "x": o[12] - ox, "z": o[13] - oy, "y": 0, "dir": 4})
+                continue
+            if o[1] == BERRY_PLOT_SPRITE:
+                todo.append(f"{m['name']}: berry plot object {o[0]} skipped; Diamond's soft-soil berry system is not in HeartGold")
+                continue
+            spr_s = sprites.hg_name(o[1])
+            oname = f"obj_{m['code']}_{o[0]}"
+            obj_names.append((oname, o[0]))
             objs.append({"id": oname, "spriteId": spr_s, "movement": o[2], "type": o[3],
                          "eventFlag": state.flag(o[4]) if o[4] else "0", "scriptId": sid_s, "facingDirection": o[6],
                          "param0": o[7], "param1": o[8], "param2": o[9], "xRange": o[10], "yRange": o[11],
@@ -747,7 +1082,13 @@ def main():
         coords = []
         for i in range(nc):
             sid, x, z, cw, ch, y, val, var = struct.unpack_from("<8H", eb, p + i * 16)
-            coords.append({"scriptId": f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1", "x": x - ox, "z": z - oy, "w": cw, "h": ch, "y": y,
+            if sid >= 2000:
+                csid = DP_STD.get(sid, "0")
+                if sid not in DP_STD:
+                    todo.append(f"{m['name']}: coord event {i} uses Diamond std script {sid}; no script for now")
+            else:
+                csid = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
+            coords.append({"scriptId": csid, "x": x - ox, "z": z - oy, "w": cw, "h": ch, "y": y,
                            "val": val, "var": state.var(var)})
         ev = {"header": f"fielddata/script/scr_seq/event_{m['code']}.h", "bgs": bgs, "objects": objs, "warps": warps, "coords": coords}
         evname = f"{m['evt']:03d}_{m['code']}"
@@ -755,22 +1096,27 @@ def main():
         generated_events.append(evname)
         evh = [f"#ifndef SCR_SEQ_{m['code']}_H_", f"#define SCR_SEQ_{m['code']}_H_", "", '#include "constants/sinnoh.h"', ""]
         evh += [f"#define _EV_scr_seq_{m['code']}_{i:03d} {i}" for i in range(nscripts)] + [""]
-        evh += [f"#define {n} {i}" for i, n in enumerate(obj_names)] + ["", "#endif"]
+        evh += [f"#define {n} {i}" for n, i in obj_names] + ["", "#endif"]
         open(f"files/fielddata/script/scr_seq/event_{m['code']}.h", "w").write("\n".join(evh) + "\n")
         generated_headers.append(f"event_{m['code']}.h")
         # --- map header entry
         music = [MUSIC.get(h["music"][0], DEFAULT_MUSIC), MUSIC.get(h["music"][1], DEFAULT_MUSIC)]
+        encref = "ENCDATA_NA"
+        if h["enc"] is not None:
+            encref = f"ENCDATA_SINNOH_{m['code']}"
+            enc_defs.append(f"#define {encref} ENCDATA(_{len(enc_json['encounters']):08d})")
+            enc_json["encounters"].append(dp_encounters(dp, hg_species, m["code"], h["enc"]))
         if outdoor:
             extra = ".cameraType = 0,\n                        .followMode = MAP_FOLLOWMODE_ALLOW,\n                        .battleBg = BATTLE_BG_CITY,\n                        .mapType = MAP_TYPE_CITY_TOWN,"
         else:
             extra = ".cameraType = 4,\n                        .followMode = MAP_FOLLOWMODE_HEIGHT_RESTRICT,\n                        .battleBg = BATTLE_BG_BUILDING_1,\n                        .mapType = MAP_TYPE_INTERIOR,"
         header_entries.append(f"""    [{m['hgname']}] = {{
-                        .wildEncounterBank = ENCDATA_NA,
+                        .wildEncounterBank = {encref},
                         .areaDataBank = {m['hgarea']},
                         .moveModelBank = 15,
                         .worldMapX = 0,
                         .worldMapY = 0,
-                        .matrixId = NARC_map_matrix_map_matrix_{m['matrix']:04d}_{m['code']}_bin,
+                        .matrixId = {m['matrix_ref']},
                         .scriptsBank = {scr_name}_bin,
                         .scriptHeaderBank = {hdr_name}_bin,
                         .msgBank = {bank_name},
@@ -801,6 +1147,22 @@ def main():
     sin += [f"#define VAR_SINNOH_{k:04X} 0x{v:04X}" for k, v in sorted(state.vars.items())] + ["", "#endif"]
     open("include/constants/sinnoh.h", "w").write("\n".join(sin) + "\n")
 
+    if shared_cells:
+        dm = dp.matrix0
+        w, hgt = dm["w"], dm["h"]
+        name = SHARED_MATRIX_NAME.encode()
+        mx = struct.pack("<BBBBB", w, hgt, 1, 1, len(name)) + name
+        mx += b"".join(struct.pack("<H", shared_cells.get((x, y), (0, 0, 0))[2]) for y in range(hgt) for x in range(w))
+        mx += bytes(shared_cells.get((x, y), (0, 0, 0))[1] for y in range(hgt) for x in range(w))
+        mx += b"".join(struct.pack("<H", shared_cells.get((x, y), (0xFFFF, 0, 0))[0]) for y in range(hgt) for x in range(w))
+        mpath = f"files/fielddata/mapmatrix/map_matrix/map_matrix_{shared_matrix_idx:04d}_{SHARED_MATRIX_NAME}.bin"
+        open(mpath, "wb").write(mx)
+        generated_matrices.append(os.path.basename(mpath))
+
+    json.dump(enc_json, open(ENC_JSON, "w", encoding="utf-8"), indent=4, ensure_ascii=False)
+    ensure_markers("include/encounter_tables_narc.h", "#endif // POKEHEARTGOLD_ENCOUNTER_TABLES_NARC_H", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("include/encounter_tables_narc.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(d + "\n" for d in enc_defs))
+
     ensure_markers("include/constants/maps.h", "#define MAP_ID_MAX", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
     replace_block("include/constants/maps.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "\n".join(map_defines) + "\n")
     s = open("include/constants/maps.h").read()
@@ -828,6 +1190,97 @@ def main():
 
     meson_block("files/fielddata/mapmatrix/map_matrix/meson.build", r"map_matrix_bin = copy_gen\.process\(files\(", generated_matrices)
     meson_block("files/fielddata/eventdata/zone_event/meson.build", r"zone_event_json = files\(", [f"{e}.json" for e in generated_events])
+
+    # Diamond sprites HeartGold lacks: the NSBTX goes into the overworld model archive, the sprite gets a constant
+    # and a class-0 row (plain billboard person, what Diamond's flag word 0x451 means) in overlay 1's sprite table.
+    import glob
+    for f in glob.glob(f"{MMODEL_DIR}/mmodel_*.NSBTX"):
+        if int(re.search(r"mmodel_(\d+)", f).group(1)) >= FIRST_SINNOH_MMODEL:
+            os.remove(f)
+    ported = sorted(sprites.ported.values(), key=lambda t: t[2])
+    for _, _, idx, blob in ported:
+        open(f"{MMODEL_DIR}/mmodel_{idx:08d}.NSBTX", "wb").write(blob)
+    meson_block(f"{MMODEL_DIR}/meson.build", r"mmodel_nsbtx = copy_gen\.process\(files\(", [f"mmodel_{idx:08d}.NSBTX" for _, _, idx, _ in ported])
+    ensure_markers("include/constants/mmodel.h", "#endif // POKEHEARTGOLD_CONSTANTS_MMODEL_H", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("include/constants/mmodel.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"#define {mm} {idx}\n" for _, mm, idx, _ in ported))
+    ensure_markers("include/constants/sprites.h", "#endif // POKEHEARTGOLD_CONSTANTS_SPRITES_H", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("include/constants/sprites.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"#define {sp} {FIRST_SINNOH_SPRITE + n}\n" for n, (sp, _, _, _) in enumerate(ported)))
+    ensure_markers("asm/overlay_01_sprite_data.s", "\t.short 0xFFFF, 0x0000, 0x000 | (63 << 10)", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("asm/overlay_01_sprite_data.s", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"\t.short {sp}, {mm}, 0x000 | (0 << 10)\n" for sp, mm, _, _ in ported))
+    todo += [f"sprites: {t}" for t in sprites.todo]
+
+    # --- trainers: append to trainers.json (restored from master), dialogue to msg_0728 + trtbl/trtblofs
+    tj = json.load(open("files/poketool/trainer/trainers.json"))
+    while len(tj["trainers"]) < FIRST_SINNOH_TRAINER:
+        tj["trainers"].append({"type": "TRTYPE_MON", "class": "TRAINERCLASS_PKMN_TRAINER_ETHAN", "name": "{TRNAME} -",
+                               "items": [], "ai_flags": 0, "double": 0, "party": [], "messages": []})
+    trmsg_names = {int(v): k for k, v in re.findall(r"#define (TRMSG_\w+)\s+(\d+)", open("include/constants/trainers.h").read())}
+    dp_trtext, _ = gmm_to_json(dp, 558, "msg_0728")
+    m728 = json.load(open("files/msgdata/msg/msg_0728.json"))
+    tt, tt_fnt = narc_read("files/poketool/trmsg/trtbl.narc")
+    to, to_fnt = narc_read("files/poketool/trmsg/trtblofs.narc")
+    rows = [struct.unpack_from("<HH", tt[0], i) for i in range(0, len(tt[0]), 4)]
+    assert len(rows) == len(m728["messages"]), "trainer text table and msg_0728 out of sync"
+    tr_entries = trainers.entries()
+    tr_defines = ["#define FIRST_SINNOH_TRAINER %d" % FIRST_SINNOH_TRAINER]
+    for idx, name, entry, msgs in tr_entries:
+        for ti, mt in msgs:
+            text = dp_trtext["messages"][ti]["en_US"]
+            flat = "".join(text) if isinstance(text, list) else text
+            entry["messages"].append({"type": trmsg_names.get(mt, str(mt)), "message": flat.replace("\n", "\\n").replace("\r", "\\r").replace("\f", "\\f")})
+            rows.append((idx, mt))
+            m728["messages"].append({"id": f"msg_0728_{len(m728['messages']):05d}", "en_US": text})
+        tj["trainers"].append(entry)
+        tr_defines.append(f"#define {name} {idx}")
+    json.dump(tj, open("files/poketool/trainer/trainers.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    json.dump(m728, open("files/msgdata/msg/msg_0728.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    tbl = b"".join(struct.pack("<HH", a, b_) for a, b_ in rows)
+    first = {}
+    for i, (a, _) in enumerate(rows):
+        first.setdefault(a, i * 4)
+    ntr = max(len(to[0]) // 2, (tr_entries[-1][0] + 1) if tr_entries else 0)
+    ofs = []
+    for t in range(ntr):
+        nxt = [first[a] for a in first if a >= t]
+        ofs.append(min(nxt) if nxt else len(tbl))
+    narc_write("files/poketool/trmsg/trtbl.narc", [tbl], tt_fnt)
+    narc_write("files/poketool/trmsg/trtblofs.narc", [b"".join(struct.pack("<H", o) for o in ofs)], to_fnt)
+    ensure_markers("include/constants/trainers.h", "#define LAST_TRAINER_INDEX", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("include/constants/trainers.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "\n".join(tr_defines) + "\n")
+
+    # --- trainer classes HeartGold lacks: constant, gender, class name, battle picture (Diamond's static art, blank
+    # intro animation), prize money, gym-leader victory music
+    newcls = sorted(trainers.new_classes.items(), key=lambda kv: kv[1][1])
+    ensure_markers("include/constants/trainer_class.h", "// Only used to display attributes of phone contacts", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("include/constants/trainer_class.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"#define {hg} {cid}\n" for dpc, (hg, cid) in newcls))
+    gend = "    TRAINER_FEMALE, // TRAINERCLASS_PKMN_TRAINER_DAWN_PT\n"
+    gend += "".join(f"    {'TRAINER_FEMALE' if dp.trclass_gender.get(dpc, 0) == 1 else 'TRAINER_MALE'}, // {hg}\n" for dpc, (hg, cid) in newcls)
+    ensure_markers("src/trainer_data.c", "};\n\nTrainerGender TrainerClass_GetGenderOrTrainerCount", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("src/trainer_data.c", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", gend)
+    m730 = json.load(open("files/msgdata/msg/msg_0730.json"))
+    dp_clsnames, _ = gmm_to_json(dp, DP_TRCLASS_NAME_BANK, "msg_0730")
+    pics, pic_fnt = narc_read("files/a/0/5/8")
+    tmpl = pics[TRCLASS_TEMPLATE * 5:TRCLASS_TEMPLATE * 5 + 5]
+    for dpc, (hg, cid) in newcls:
+        assert cid == len(m730["messages"]) and cid * 5 == len(pics), (cid, len(m730["messages"]), len(pics))
+        m730["messages"].append({"id": f"msg_0730_{cid:05d}", "en_US": dp_clsnames["messages"][dp.trclasses[dpc]]["en_US"]})
+        dpcls = dp.trclasses[dpc]
+        anim = bytearray(tmpl[0]); anim[0x30:] = bytes(len(anim) - 0x30)
+        pal = bytearray(tmpl[1]); pal[0x28:0x48] = dp.trgra[dpcls * 2 + 1][0x28:0x48]
+        pics += [bytes(anim), bytes(pal), tmpl[2], tmpl[3], dp.trgra[dpcls * 2]]
+    json.dump(m730, open("files/msgdata/msg/msg_0730.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    narc_write("files/a/0/5/8", pics, pic_fnt)
+    ensure_markers("asm/overlay_12_battle_command.s", "\t.short TRAINERCLASS_BIRD_KEEPER, 8\n", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", before=False)
+    replace_block("asm/overlay_12_battle_command.s", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END",
+                  "".join(f"\t.short {hg}, {30 if 'LEADER' in hg else 16 if 'BARRY' in hg else PRIZE_DEFAULT}\n" for dpc, (hg, cid) in newcls))
+    bc = open("src/battle/battle_command.c").read()
+    bc = re.sub(r"sPrizeMoneyTbl\[0x[0-9A-Fa-f]+\]", f"sPrizeMoneyTbl[0x{0x81 + len(newcls):X}]", bc)
+    open("src/battle/battle_command.c", "w").write(bc)
+    ensure_markers("src/battle/battle_controller_player.c", "        case TRAINERCLASS_LEADER_BLUE:\n            PlayBGM(SEQ_GS_WIN3);", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
+    replace_block("src/battle/battle_controller_player.c", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"        case {hg}:\n" for dpc, (hg, cid) in newcls if "LEADER" in hg))
+    if newcls:
+        todo.append("trainer classes: " + ", ".join(hg for _, (hg, _) in newcls) + " use the default encounter jingle and battle music; the intro animation is blank")
+    todo.append("new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated")
     s = open("files/fielddata/script/scr_seq/meson.build").read()
     if "# SINNOH_PORT_HDR_BEGIN" not in s:
         i = s.index("scr_seq_event_headers = files(")
