@@ -1,7 +1,6 @@
 MAP_ACUITY_CAVERN: warp 0 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
-MAP_AMITY_SQUARE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_AMITY_SQUARE: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_AMITY_SQUARE: unmapped command ScrCmd_CheckAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_ClearAmitySquareSteps
@@ -111,14 +110,13 @@ MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_HOUSE: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
-MAP_JUBLIFE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
+MAP_JUBLIFE: dropped ScrCmd_Unk0044: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
+MAP_JUBLIFE: dropped ScrCmd_Unk0046: Diamond coin-case window update
+MAP_JUBLIFE: dropped ScrCmd_Unk0047: Diamond coin-case window close
 MAP_JUBLIFE: dropped ScrCmd_Unk02CF: Diamond list-window option tweak
 MAP_JUBLIFE: dropped ScrCmd_UnlockPoketchApp: Pokétch dropped (decision 16)
 MAP_JUBLIFE: object 22 uses Diamond std script 9300; no script for now
 MAP_JUBLIFE: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
-MAP_JUBLIFE: unmapped command ScrCmd_Unk0044
-MAP_JUBLIFE: unmapped command ScrCmd_Unk0046
-MAP_JUBLIFE: unmapped command ScrCmd_Unk0047
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D2
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D5
 MAP_JUBLIFE: warp 10 to Diamond map MAP_JUBLIFE_UNUSED_HOUSE_2 not imported; points at itself
@@ -171,7 +169,6 @@ MAP_MOUNT_CORONET_SPEAR_PILLAR: coord event 6 uses Diamond std script 2039; no s
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_ScopeMode: Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending
-MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk0058: Diamond sound player volume tweak
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk005D: Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed
 MAP_MOUNT_CORONET_SPEAR_PILLAR: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
@@ -202,7 +199,6 @@ MAP_PASTORIA: berry plot object 14 skipped; Diamond's soft-soil berry system is 
 MAP_PASTORIA: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_PASTORIA: berry plot object 16 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_PASTORIA: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
-MAP_PASTORIA: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_1F: unmapped command ScrCmd_EnableDisableSafariZone
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_2F: unmapped command ScrCmd_UseGreatMarshBinoculars
 MAP_PASTORIA_GYM: dropped ScrCmd_CheckPastoriaGymButton: Pastoria Gym water buttons not ported yet (gym stays walkable)
@@ -289,11 +285,11 @@ MAP_ROUTE_207: berry plot object 12 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_207: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_207: dropped ScrCmd_Unk0044: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
+MAP_ROUTE_207: dropped ScrCmd_Unk0046: Diamond coin-case window update
+MAP_ROUTE_207: dropped ScrCmd_Unk0047: Diamond coin-case window close
 MAP_ROUTE_207: dropped ScrCmd_Unk02CF: Diamond list-window option tweak
 MAP_ROUTE_207: unmapped command ScrCmd_GetPoketchAppName
-MAP_ROUTE_207: unmapped command ScrCmd_Unk0044
-MAP_ROUTE_207: unmapped command ScrCmd_Unk0046
-MAP_ROUTE_207: unmapped command ScrCmd_Unk0047
 MAP_ROUTE_208: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -521,7 +517,6 @@ MAP_VALOR_LAKEFRONT: dropped ScrCmd_CloseDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
-MAP_VALOR_LAKEFRONT: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_WaitDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
 MAP_VALOR_LAKEFRONT: warp 4 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
@@ -563,13 +558,13 @@ MAP_VEILSTONE_POKECENTER_1F: warp 2 to Diamond map MAP_VEILSTONE_POKECENTER_B1F 
 MAP_VEILSTONE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_HideCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_ShowCoinBox: HeartGold has no coin box window
+MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_Unk0044: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
+MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_Unk0046: Diamond coin-case window update
+MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_Unk0047: Diamond coin-case window close
 MAP_VEILSTONE_PRIZE_EXCHANGE: dropped ScrCmd_UpdateCoinBox: HeartGold has no coin box window
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_GetPrizeItemIdAndCost
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_HasEnoughCoinsAddress
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_TakeCoinsAddress
-MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0044
-MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0046
-MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0047
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0280
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_KeepEvent: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs

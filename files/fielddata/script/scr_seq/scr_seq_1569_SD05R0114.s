@@ -865,8 +865,8 @@ _0F30:
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	Warp MAP_SINNOH_MOUNT_CORONET_SPEAR_PILLAR, 0, 31, 52, 1
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 7, 32, 10, 51, 1
+	MovePersonFacing 8, 30, 10, 51, 1
 	ClearFlag FLAG_SINNOH_509
 	ClearFlag FLAG_SINNOH_510
 	ClearFlag FLAG_SINNOH_511
@@ -923,18 +923,18 @@ _1088:
 	Return
 
 _10C3:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 7, 30, 10, 0x8005, 0
+	MovePersonFacing 8, 31, 10, 0x8005, 0
 	Return
 
 _10DD:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 7, 31, 10, 0x8005, 0
+	MovePersonFacing 8, 32, 10, 0x8005, 0
 	Return
 
 _10F7:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 7, 32, 10, 0x8005, 0
+	MovePersonFacing 8, 31, 10, 0x8005, 0
 	Return
 
 scr_seq_SD05R0114_006:

@@ -135,11 +135,11 @@ _0202:
 _0219:
 	BufferPlayersName 0
 	NPCMsg msg_0968_SR207_00000
-	// TODO Diamond ScrCmd_Unk0044 0x044 args [30, 13, 0, 0, 32780]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0044 dropped: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [137, 255, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [138, 255, 1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0047 0x047 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0047 dropped: Diamond coin-case window close
 	NPCMsg msg_0968_SR207_00001
 	Call _0295
 	NPCMsg msg_0968_SR207_00002
@@ -150,11 +150,11 @@ _0219:
 _0257:
 	BufferPlayersName 0
 	NPCMsg msg_0968_SR207_00004
-	// TODO Diamond ScrCmd_Unk0044 0x044 args [30, 13, 0, 0, 32780]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0044 dropped: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [137, 255, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [138, 255, 1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0047 0x047 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0047 dropped: Diamond coin-case window close
 	NPCMsg msg_0968_SR207_00005
 	Call _0295
 	NPCMsg msg_0968_SR207_00006

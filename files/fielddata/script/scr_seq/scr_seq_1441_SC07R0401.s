@@ -79,18 +79,18 @@ _00F6:
 _0105:
 	SetVar 0x8008, 0
 	SetVar 0x8009, 0
-	// TODO Diamond ScrCmd_Unk0044 0x044 args [1, 1, 0, 1, 32780]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0044 dropped: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
 
 _0119:
 	// TODO Diamond ScrCmd_GetPrizeItemIdAndCost 0x2a6 args [32776, 32768, 32769]: no HeartGold mapping yet
 	BufferItemName 0, 0x8000
 	// TODO Diamond ScrCmd_Unk0280 0x280 args [1, 32769, 1, 5]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [168, 255, 32776]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
 	AddVar 0x8008, 1
 	CompareVarToVar 0x8008, 0x4001
 	GoToIf 0, _0119
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [169, 255, 32776]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0047 0x047 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0047 dropped: Diamond coin-case window close
 	Return
 
 scr_seq_SC07R0401_001:

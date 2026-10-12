@@ -589,12 +589,12 @@ scr_seq_SC01_005:
 	LockAll
 	FacePlayer
 	NPCMsg msg_0845_SC01_00059
-	// TODO Diamond ScrCmd_Unk0044 0x044 args [29, 11, 0, 0, 32780]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0044 dropped: Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [45, 255, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [46, 255, 1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0046 0x046 args [47, 255, 2]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0047 0x047 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0046 dropped: Diamond coin-case window update
+	// Diamond ScrCmd_Unk0047 dropped: Diamond coin-case window close
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
 	GoToIf 1, _0B4B
@@ -962,7 +962,7 @@ _0FFD:
 	NPCMsg msg_0845_SC01_00040
 	NPCMsg msg_0845_SC01_00042
 	NPCMsg msg_0845_SC01_00043
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 24, 174, 1, 771, 1
 	SetVar 0x8004, 462
 	SetVar 0x8005, 1
 	SetFlag FLAG_SINNOH_239

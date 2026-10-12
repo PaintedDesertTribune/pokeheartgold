@@ -345,11 +345,11 @@ _05BD:
 	End
 
 _061E:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 0x8002, 12, 2, 47, 2
 	Return
 
 _062C:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 0x8002, 51, 2, 47, 3
 	Return
 
 scr_seq_SD11R0101_002:

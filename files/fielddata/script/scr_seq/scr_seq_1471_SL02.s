@@ -94,7 +94,7 @@ _0129:
 	GoTo _0141
 
 _0141:
-	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	MovePersonFacing 5, 723, 1, 769, 0
 	SetFlag FLAG_SINNOH_262
 	ReleaseAll
 	End

@@ -539,6 +539,7 @@ TRANSLATE = {
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
     "ScrCmd_GiveEgg": ("GiveEgg", "vv"),
+    "ScrCmd_SetEventPosition": ("MovePersonFacing", "ovvvv"),   # (object, x, z, height, facing) in both games
     "ScrCmd_PartyMonHasMove": ("MonHasMove", "pvv"),
     "ScrCmd_SealsMart": ("SealMart", "v"),                  # HeartGold's seal shop lists, same index range
     "ScrCmd_Unk02A0": ("MultiBattle", "ttt0"),              # (partner, opponent 1, opponent 2): Spear Pillar tag battle with Barry
@@ -592,6 +593,8 @@ DP_STD_SILENT = {2027, 2037, 2025, 2035, 8803, 8804, 8805, 8806, 8807, 8808}   #
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_Unk0044": "Diamond coin-case window (Game Corner); HeartGold's Game Corner is Voltorb Flip",
+    "ScrCmd_Unk0046": "Diamond coin-case window update", "ScrCmd_Unk0047": "Diamond coin-case window close",
     "ScrCmd_Unk005D": "Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed",
     "ScrCmd_Unk0058": "Diamond sound player volume tweak",
     "ScrCmd_ScopeMode": "Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending",
@@ -625,8 +628,7 @@ DROP = {
     "ScrCmd_GetFashionName": "Contest dress-up dropped (decision 16)", "ScrCmd_GetFashionNameWithArticle": "Contest dress-up dropped (decision 16)",
     "ScrCmd_CheckPortraitSlot": "Jubilife TV portrait feature dropped", "ScrCmd_GiveWallpaper": "PC wallpaper gift; HeartGold command unknown",
     "ScrCmd_PrepareDoorAnimation": "scripted door animation; HeartGold animates doors itself", "ScrCmd_OpenDoorAnimation": "scripted door animation",
-    "ScrCmd_WaitDoorAnimation": "scripted door animation", "ScrCmd_CloseDoorAnimation": "scripted door animation", "ScrCmd_FreeDoorAnimation": "scripted door animation",
-    "ScrCmd_SetEventPosition": "object teleport (5 args) needs a HeartGold equivalent", "ScrCmd_ShowCurrentFloorNumber": "elevator floor box (cosmetic)",
+    "ScrCmd_WaitDoorAnimation": "scripted door animation", "ScrCmd_CloseDoorAnimation": "scripted door animation", "ScrCmd_FreeDoorAnimation": "scripted door animation", "ScrCmd_ShowCurrentFloorNumber": "elevator floor box (cosmetic)",
 }
 # Diamond commands whose only effect is a result variable HeartGold cannot compute: emit SetVar <var>, <value>.
 CONST_RESULT = {
