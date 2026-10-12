@@ -154,6 +154,7 @@ typedef enum NarcId {
     NARC_application_pokegear_radio_pgradio_gra = 147,
     NARC_a_1_4_8 = 148,
     NARC_a_1_4_9 = 149,
+    NARC_arc_ship_demo = 267,
     NARC_a_1_5_0 = 150,
     NARC_a_1_5_1 = 151,
     NARC_system_touch_subwindow = 152,
@@ -543,6 +544,7 @@ char *sNarcFileList[] = {
     "a/2/6/2",
     "a/2/6/3",
     "a/2/6/4",
+    "arc/ship_demo", // Diamond ship cutscene (Sinnoh port)
 };
 #else
 extern char *sNarcFileList[];

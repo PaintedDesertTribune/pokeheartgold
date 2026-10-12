@@ -163,6 +163,7 @@ enum HeapID {
     HEAP_ID_RANKINGS_APP,
     HEAP_ID_159,
     HEAP_ID_VOLTORB_FLIP,
+    HEAP_ID_SINNOH_SHIP,   // Diamond ship cutscene (Sinnoh port)
     HEAP_ID_MAX
 };
 

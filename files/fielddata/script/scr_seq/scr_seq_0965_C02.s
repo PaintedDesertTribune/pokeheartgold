@@ -495,11 +495,7 @@ scr_seq_C02_019:
 	CloseMsg
 	FadeScreen 6, 1, 0, RGB_BLACK
 	WaitFade
-	PlaySE SEQ_SE_DP_SHIP01
-	Wait 90, VAR_TEMP_x4000
-	PlaySE SEQ_SE_DP_SHIP02
-	Wait 60, VAR_TEMP_x4000
-	Warp MAP_OLIVINE, 0, 279, 277, DIR_SOUTH
+	SinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
 	FadeScreen 6, 1, 1, RGB_BLACK
 	WaitFade
 	ReleaseAll
@@ -520,7 +516,7 @@ _0772:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	// Diamond ScrCmd_ShipAnimation dropped: Diamond ship cutscene, separate port job (decision 20)
+	SinnohShipCutscene 3, 2, MAP_SINNOH_CANALAVE, 39, 277
 	ReleaseAll
 	End
 

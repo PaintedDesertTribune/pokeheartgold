@@ -137,3 +137,6 @@ safari_enc_narc = custom_target('safari_enc.narc',
 
 nitrofs_files += safari_enc_narc
 naix_headers += safari_enc_narc[1]
+
+# Diamond's ship cutscene model and animations (tools/sinnoh_port step 4), prebuilt
+nitrofs_files += fs.copyfile('ship_demo.narc')

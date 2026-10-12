@@ -1,5 +1,5 @@
-MAP_CANALAVE: dropped ScrCmd_ShipAnimation: Diamond ship cutscene, separate port job (decision 20)
 MAP_CANALAVE: item ball std 7145 contents unknown, variadic placeholder
+MAP_CANALAVE: warp to Diamond map MAP_FULLMOON_ISLAND_EXTERIOR not imported; points at this map
 MAP_CANALAVE_GYM: dropped ScrCmd_InitCanalaveGym: Canalave Gym lift puzzle needs a HeartGold port
 MAP_CANALAVE_GYM: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
 MAP_CANALAVE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup

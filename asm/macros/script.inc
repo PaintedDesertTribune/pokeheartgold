@@ -1052,6 +1052,16 @@
 	.short 175
 	.endm
 
+	// Sinnoh port: Diamond ship cutscene then warp. travelDir 0-3 picks the ship_demo.narc variant.
+	.macro SinnohShipCutscene travelDir, exitDir, map, x, z
+	.short 853
+	.byte \travelDir
+	.byte \exitDir
+	.short \map
+	.short \x
+	.short \z
+	.endm
+
 	.macro Warp arg0, arg1=0, arg2, arg3, arg4
 	.short 176
 	.short \arg0

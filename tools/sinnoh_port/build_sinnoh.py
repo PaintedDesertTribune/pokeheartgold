@@ -130,11 +130,7 @@ SCRIPT_OVERRIDES = {
 \tCloseMsg
 \tFadeScreen 6, 1, 0, RGB_BLACK
 \tWaitFade
-\tPlaySE SEQ_SE_DP_SHIP01
-\tWait 90, VAR_TEMP_x4000
-\tPlaySE SEQ_SE_DP_SHIP02
-\tWait 60, VAR_TEMP_x4000
-\tWarp MAP_OLIVINE, 0, 279, 277, DIR_SOUTH
+\tSinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
 \tFadeScreen 6, 1, 1, RGB_BLACK
 \tWaitFade
 \tReleaseAll
@@ -420,6 +416,7 @@ TRANSLATE = {
     "ScrCmd_FadeScreen": ("FadeScreen", "hhhh"),
     "ScrCmd_WaitFadeScreen": ("WaitFade", ""),
     "ScrCmd_Warp": ("Warp", "Ghvvh"),
+    "ScrCmd_ShipAnimation": ("SinnohShipCutscene", "bbGhh"),   # src/sinnoh_ship_cutscene.c
     "ScrCmd_RestoreOverworld": ("RestoreOverworld", ""),
     "ScrCmd_TakeItem": ("TakeItem", "vvp"),
     "ScrCmd_GetFriendName": ("BufferFriendsName", "b"),
@@ -469,7 +466,6 @@ DROP = {
     "ScrCmd_Unk029D": "Diamond scrolling list window (library bookshelf)",
     "ScrCmd_Unk01CD": "Diamond misc save-data pointer setup",
     "ScrCmd_Unk02B5": "Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id",
-    "ScrCmd_ShipAnimation": "Diamond ship cutscene, separate port job (decision 20)",
     "ScrCmd_InitCanalaveGym": "Canalave Gym lift puzzle needs a HeartGold port",
     "ScrCmd_UnlockGenderEntries": "Pokédex gender pages; HeartGold has no toggle",
     "ScrCmd_CheckPoketch": "Pokétch dropped (decision 16)", "ScrCmd_CheckPoketchApp": "Pokétch dropped (decision 16)",

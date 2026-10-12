@@ -390,6 +390,7 @@ Static main
 	Library MSL_CPP_NITRO_Ai_LE.a
 	Library FP_fastI_v5t_LE.a
 	Library NITRO_Runtime_Ai_LE.a
+    Object main.nef.p/src_sinnoh_ship_cutscene.c.o
 }
 
 Autoload ITCM

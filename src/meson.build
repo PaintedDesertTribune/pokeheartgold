@@ -18,6 +18,7 @@ pokeheartgold_c = files(
     'certificates_app.c',
     'choose_starter.c',
     'choose_starter_app.c',
+    'sinnoh_ship_cutscene.c',
     'coins.c',
     'communication_error.c',
     'daycare.c',
