@@ -956,6 +956,13 @@
 #define SINNOH_BM_CANALAVE_LIFT_V 278   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_X 277   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_Z 276   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_0 408   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_1 409   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_2 410   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_3 411   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_4 412   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_5 413   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_SUNYSHORE_GEAR_6 414   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_VEILSTONE_BAG_0 382   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_VEILSTONE_BAG_1 383   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_VEILSTONE_BAG_2 384   // Diamond build model, placed at runtime by gymmick code

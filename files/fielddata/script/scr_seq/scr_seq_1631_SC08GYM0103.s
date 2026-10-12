@@ -13,15 +13,15 @@
 
 scr_seq_SC08GYM0103_000:
 	SetVar 0x4000, 0
-	// Diamond ScrCmd_InitSunyshoreGym dropped: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
+	SinnohSunyshoreGymInit 2
 	End
 
 scr_seq_SC08GYM0103_001:
-	// Diamond ScrCmd_RotateSunyshoreGymGear dropped: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
+	SinnohSunyshoreGymRotate 0
 	End
 
 scr_seq_SC08GYM0103_002:
-	// Diamond ScrCmd_RotateSunyshoreGymGear dropped: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
+	SinnohSunyshoreGymRotate 2
 	End
 
 scr_seq_SC08GYM0103_003:

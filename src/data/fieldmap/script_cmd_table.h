@@ -859,6 +859,8 @@ const ScrCmdFunc gScriptCmdTable[] = {
     ScrCmd_SinnohShipCutscene, // 853: Sinnoh port, Diamond ship cutscene
     ScrCmd_SinnohCanalaveGymInit, // 854: Sinnoh port, Canalave Gym lifts
     ScrCmd_SinnohVeilstoneGymInit, // 855: Sinnoh port, Veilstone Gym bags
+    ScrCmd_SinnohSunyshoreGymInit, // 856: Sinnoh port, Sunyshore Gym gears (room)
+    ScrCmd_SinnohSunyshoreGymRotate, // 857: Sinnoh port, Sunyshore Gym gears (direction)
 };
 const u32 sNumScriptCmds = NELEMS(gScriptCmdTable);
 

@@ -419,6 +419,7 @@ pokeheartgold_c = files(
         'field/gymmick/violet.c',
         'field/gymmick/sinnoh_canalave.c',
         'field/gymmick/sinnoh_veilstone.c',
+        'field/gymmick/sinnoh_sunyshore.c',
         'field/gymmick/viridian.c',
     ##############################
     ###        FRONTIER        ###

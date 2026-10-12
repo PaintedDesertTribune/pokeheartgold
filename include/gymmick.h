@@ -16,6 +16,7 @@ typedef enum GymmickType {
     GYMMICK_SINJOH,
     GYMMICK_SINNOH_CANALAVE, // Sinnoh port: Canalave Gym lifts
     GYMMICK_SINNOH_VEILSTONE, // Sinnoh port: Veilstone Gym punching bags
+    GYMMICK_SINNOH_SUNYSHORE, // Sinnoh port: Sunyshore Gym gears
 } GymmickType;
 
 typedef union GymmickUnion {
@@ -53,6 +54,10 @@ typedef union GymmickUnion {
     struct {
         u32 bagBits; // Sinnoh port: one bit per Veilstone bag (set = at its second position)
     } sinnohVeilstone;
+    struct {
+        s8 rotation; // Sinnoh port: quarter turns of the current room's gears
+        u8 room;
+    } sinnohSunyshore;
 } GymmickUnion;
 
 typedef struct Gymmick {

@@ -1070,6 +1070,16 @@
 	.short 855
 	.endm
 
+	.macro SinnohSunyshoreGymInit room
+	.short 856
+	.byte \room
+	.endm
+
+	.macro SinnohSunyshoreGymRotate dir
+	.short 857
+	.byte \dir
+	.endm
+
 	.macro Warp arg0, arg1=0, arg2, arg3, arg4
 	.short 176
 	.short \arg0

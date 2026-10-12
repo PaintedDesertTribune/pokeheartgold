@@ -393,6 +393,7 @@ Static main
     Object main.nef.p/src_sinnoh_ship_cutscene.c.o
     Object main.nef.p/src_field_gymmick_sinnoh_canalave.c.o
     Object main.nef.p/src_field_gymmick_sinnoh_veilstone.c.o
+    Object main.nef.p/src_field_gymmick_sinnoh_sunyshore.c.o
 }
 
 Autoload ITCM

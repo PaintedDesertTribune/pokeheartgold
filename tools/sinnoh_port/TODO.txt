@@ -513,12 +513,6 @@ MAP_STARK_MOUNTAIN_INTERIOR_3: unmapped command ScrCmd_Unk00ED
 MAP_SUNYSHORE: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE: warp 7 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_1 not imported; points at itself
 MAP_SUNYSHORE: warp 8 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_2 not imported; points at itself
-MAP_SUNYSHORE_GYM_ROOM_1: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
-MAP_SUNYSHORE_GYM_ROOM_1: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
-MAP_SUNYSHORE_GYM_ROOM_2: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
-MAP_SUNYSHORE_GYM_ROOM_2: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
-MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
-MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
 MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_GetRibbonName
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0243

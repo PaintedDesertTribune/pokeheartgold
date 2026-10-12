@@ -872,6 +872,8 @@ BOOL ScrCmd_BufferDeptStoreFloorNo(ScriptContext *ctx);
 BOOL ScrCmd_SinnohShipCutscene(ScriptContext *ctx); // Sinnoh port
 BOOL ScrCmd_SinnohCanalaveGymInit(ScriptContext *ctx); // Sinnoh port (src/field/gymmick/sinnoh_canalave.c)
 BOOL ScrCmd_SinnohVeilstoneGymInit(ScriptContext *ctx); // Sinnoh port (src/field/gymmick/sinnoh_veilstone.c)
+BOOL ScrCmd_SinnohSunyshoreGymInit(ScriptContext *ctx); // Sinnoh port (src/field/gymmick/sinnoh_sunyshore.c)
+BOOL ScrCmd_SinnohSunyshoreGymRotate(ScriptContext *ctx); // Sinnoh port
 
 MessageFormat *sub_0204B538(SaveData *saveData, u16 numEligblePokemon, u16 a2, u8 a3, u8 *numLegendaryPokemonSeen);
 void ov01_021EF564(ScriptContext *ctx, u16 messageBank, u16 messageNum, u16 word1, s16 word2, u8 canABSpeedUp);
