@@ -35413,6 +35413,162 @@
       ]
     },
     {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_FLOATZEL",
+          "moves": [
+            "MOVE_AQUA_JET",
+            "MOVE_CRUNCH",
+            "MOVE_ICE_FANG",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_FIRE_BLAST",
+            "MOVE_SUNNY_DAY",
+            "MOVE_BOUNCE",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_BODY_SLAM",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_REST"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 64,
+          "species": "SPECIES_TORTERRA",
+          "moves": [
+            "MOVE_LEAF_STORM",
+            "MOVE_EARTHQUAKE",
+            "MOVE_CRUNCH",
+            "MOVE_LEECH_SEED"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "Oh, yeah? When the going gets tough,\\nmy Pokémon get tougher!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou’re telling me I lost again?!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_GALACTIC",
+      "name": "{TRNAME}Grunt",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 9,
+          "species": "SPECIES_ZUBAT",
+          "moves": [
+            "MOVE_LEECH_LIFE",
+            "MOVE_ASTONISH"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "How is this madness possible?\\nThe two of us, losing to children?\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SINNOH_GALACTIC",
+      "name": "{TRNAME}Grunt",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 9,
+          "species": "SPECIES_WURMPLE",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "This won’t do... Time to retreat.\\nThis mission is a failure.\\n"
+        }
+      ]
+    },
+    {
       "type": "TRTYPE_MON",
       "class": "TRAINERCLASS_IDOL",
       "name": "{TRNAME}Grace",
@@ -43249,6 +43405,70 @@
       ]
     },
     {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SINNOH_GALACTIC",
+      "name": "{TRNAME}Grunt",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 25,
+          "species": "SPECIES_BEAUTIFLY",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 25,
+          "species": "SPECIES_STUNKY",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Done in by two kids?!\\nThis isn’t right!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SINNOH_GALACTIC",
+      "name": "{TRNAME}Grunt",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 25,
+          "species": "SPECIES_DUSTOX",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 25,
+          "species": "SPECIES_CROAGUNK",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I should have kept my head down and\\njust watched our warehouse...\\n"
+        }
+      ]
+    },
+    {
       "type": "TRTYPE_MON_ITEM_MOVES",
       "class": "TRAINERCLASS_SINNOH_LEADER_MAYLENE",
       "name": "{TRNAME}Maylene",
@@ -47521,6 +47741,128 @@
         {
           "type": "TRMSG_AFTER",
           "message": "We couldn’t stop you...\\nWe’ll be discarded as useless...\\rOur boss is ruthless that way...\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_ITEM_MOVES",
+      "class": "TRAINERCLASS_SINNOH_COMMANDER_MARS",
+      "name": "{TRNAME}Mars",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 41,
+          "species": "SPECIES_BRONZOR",
+          "item": "ITEM_NONE",
+          "moves": [
+            "MOVE_GYRO_BALL",
+            "MOVE_EXTRASENSORY",
+            "MOVE_LIGHT_SCREEN",
+            "MOVE_CONFUSE_RAY"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 42,
+          "species": "SPECIES_GOLBAT",
+          "item": "ITEM_NONE",
+          "moves": [
+            "MOVE_AIR_CUTTER",
+            "MOVE_BITE",
+            "MOVE_POISON_FANG",
+            "MOVE_CONFUSE_RAY"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 45,
+          "species": "SPECIES_PURUGLY",
+          "item": "ITEM_SITRUS_BERRY",
+          "moves": [
+            "MOVE_SLASH",
+            "MOVE_SHADOW_CLAW",
+            "MOVE_AERIAL_ACE",
+            "MOVE_HYPNOSIS"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Sheesh... I should have done the\\nfighting myself.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_ITEM_MOVES",
+      "class": "TRAINERCLASS_SINNOH_COMMANDER_JUPITER",
+      "name": "{TRNAME}Jupiter",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 41,
+          "species": "SPECIES_BRONZOR",
+          "item": "ITEM_NONE",
+          "moves": [
+            "MOVE_GYRO_BALL",
+            "MOVE_EXTRASENSORY",
+            "MOVE_ROCK_SLIDE",
+            "MOVE_REFLECT"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 41,
+          "species": "SPECIES_GOLBAT",
+          "item": "ITEM_NONE",
+          "moves": [
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_AIR_CUTTER",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_MEAN_LOOK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 46,
+          "species": "SPECIES_SKUNTANK",
+          "item": "ITEM_SITRUS_BERRY",
+          "moves": [
+            "MOVE_NIGHT_SLASH",
+            "MOVE_POISON_JAB",
+            "MOVE_FLAMETHROWER",
+            "MOVE_SMOKE_SCREEN"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Humph! You’ve toughened up.\\nBut you’re no match for our boss.\\n"
         }
       ]
     },
@@ -54850,110 +55192,6 @@
         {
           "type": "TRMSG_LOSE",
           "message": "What just went down?!\\nYou wait! I’ll get tougher!\\n"
-        }
-      ]
-    },
-    {
-      "type": "TRTYPE_MON_MOVES",
-      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
-      "name": "{TRNAME}Cedric",
-      "items": [],
-      "ai_flags": 1,
-      "double": 0,
-      "party": [
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 58,
-          "species": "SPECIES_STARAPTOR",
-          "moves": [
-            "MOVE_CLOSE_COMBAT",
-            "MOVE_AERIAL_ACE",
-            "MOVE_STEEL_WING",
-            "MOVE_U_TURN"
-          ],
-          "capsule": 0
-        },
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 59,
-          "species": "SPECIES_FLOATZEL",
-          "moves": [
-            "MOVE_AQUA_JET",
-            "MOVE_CRUNCH",
-            "MOVE_ICE_FANG",
-            "MOVE_BRICK_BREAK"
-          ],
-          "capsule": 0
-        },
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 60,
-          "species": "SPECIES_HERACROSS",
-          "moves": [
-            "MOVE_MEGAHORN",
-            "MOVE_CLOSE_COMBAT",
-            "MOVE_NIGHT_SLASH",
-            "MOVE_ROCK_SLIDE"
-          ],
-          "capsule": 0
-        },
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 59,
-          "species": "SPECIES_RAPIDASH",
-          "moves": [
-            "MOVE_FIRE_BLAST",
-            "MOVE_SUNNY_DAY",
-            "MOVE_BOUNCE",
-            "MOVE_WILL_O_WISP"
-          ],
-          "capsule": 0
-        },
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 60,
-          "species": "SPECIES_SNORLAX",
-          "moves": [
-            "MOVE_BODY_SLAM",
-            "MOVE_CRUNCH",
-            "MOVE_EARTHQUAKE",
-            "MOVE_REST"
-          ],
-          "capsule": 0
-        },
-        {
-          "difficulty": 250,
-          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
-          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
-          "level": 64,
-          "species": "SPECIES_TORTERRA",
-          "moves": [
-            "MOVE_LEAF_STORM",
-            "MOVE_EARTHQUAKE",
-            "MOVE_CRUNCH",
-            "MOVE_LEECH_SEED"
-          ],
-          "capsule": 0
-        }
-      ],
-      "messages": [
-        {
-          "type": "TRMSG_LAST_POKE_HALF",
-          "message": "Oh, yeah? When the going gets tough,\\nmy Pokémon get tougher!\\n"
-        },
-        {
-          "type": "TRMSG_LOSE",
-          "message": "What just went down?!\\nYou’re telling me I lost again?!\\n"
         }
       ]
     },

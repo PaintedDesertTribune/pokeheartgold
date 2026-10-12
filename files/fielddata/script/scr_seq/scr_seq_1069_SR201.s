@@ -88,7 +88,7 @@ _0117:
 	// TODO Diamond ScrCmd_Unk0164 0x164 args []: no HeartGold mapping yet
 	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 2, 48
-	// TODO Diamond ScrCmd_KeepEvent 0x06c args [2, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_KeepEvent dropped: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 	SetFlag FLAG_SINNOH_400
 	SetVar VAR_SINNOH_4086, 1
 	ReleaseAll
@@ -191,7 +191,7 @@ _034B:
 _0385:
 	BufferFriendsName 0
 	// TODO Diamond ScrCmd_GetPlayerStarterName 0x0db args [1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_GetRivalStarterName 0x0dc args [2]: no HeartGold mapping yet
+	BufferDPPtRivalStarterSpeciesName 2
 	NPCMsg msg_0881_SR201_00004
 	CloseMsg
 	ApplyMovement 5, mv_SR201_054C
@@ -278,7 +278,7 @@ _04C4:
 	NPCMsg msg_0881_SR201_00010
 	CloseMsg
 	SetVar VAR_SINNOH_4086, 3
-	// TODO Diamond ScrCmd_KeepEvent 0x06c args [254, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_KeepEvent dropped: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetFlag FLAG_SINNOH_400
 	SetFlag FLAG_SINNOH_435

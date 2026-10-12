@@ -44,7 +44,7 @@ _0085:
 	End
 
 _0087:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [3, 0]: no HeartGold mapping yet
+	SetObjectFacing 3, 0
 	Return
 
 scr_seq_SR224_002:

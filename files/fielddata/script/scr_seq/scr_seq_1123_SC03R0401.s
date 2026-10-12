@@ -281,7 +281,7 @@ _0449:
 	SubVar 0x4000, 1
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	// TODO Diamond ScrCmd_NamePokemonScreen 0x0bb args [16384, 32780]: no HeartGold mapping yet
+	NicknameInput 0x4000, 0x800C
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	ReleaseAll

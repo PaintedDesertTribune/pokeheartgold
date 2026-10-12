@@ -285,7 +285,7 @@ scr_seq_SC04_010:
 	End
 
 scr_seq_SC04_017:
-	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [32780]: no HeartGold mapping yet
+	GetGameVersion 0x800C
 	CompareVarToValue 0x800C, 10
 	GoToIf 1, _03BC
 	PlayFanfare SEQ_SE_DP_SELECT

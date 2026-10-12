@@ -43,7 +43,7 @@ scr_seq_ST05R0101_001:
 
 _0060:
 	NPCMsg msg_1050_ST05R0101_00003
-	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [32780]: no HeartGold mapping yet
+	GetGameVersion 0x800C
 	CompareVarToValue 0x800C, 10
 	CallIf 1, _0092
 	CompareVarToValue 0x800C, 11
@@ -57,12 +57,12 @@ _0060:
 	End
 
 _0092:
-	// TODO Diamond ScrCmd_ShowPokemonPic 0x208 args [484, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShowPokemonPic dropped: Diamond's in-field Pokémon portrait window has no HeartGold script command
 	NPCMsg msg_1050_ST05R0101_00004
 	Return
 
 _009D:
-	// TODO Diamond ScrCmd_ShowPokemonPic 0x208 args [483, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShowPokemonPic dropped: Diamond's in-field Pokémon portrait window has no HeartGold script command
 	NPCMsg msg_1050_ST05R0101_00005
 	Return
 

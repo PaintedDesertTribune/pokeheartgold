@@ -46,7 +46,7 @@ _007E:
 
 _0086:
 	SetVar 0x4021, SPRITE_SINNOH_SPPOKE4
-	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [16384]: no HeartGold mapping yet
+	GetGameVersion 0x4000
 	CompareVarToValue 0x4000, 10
 	GoToIf 1, _00A3
 	SetVar 0x4021, SPRITE_SINNOH_SPPOKE5
@@ -55,7 +55,7 @@ _00A3:
 	Return
 
 _00A5:
-	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [16384]: no HeartGold mapping yet
+	GetGameVersion 0x4000
 	CompareVarToValue 0x4000, 10
 	GoToIf 1, _00BC
 	SetFlag FLAG_SINNOH_1023
@@ -147,7 +147,7 @@ _01DA:
 	End
 
 _01E8:
-	// TODO Diamond ScrCmd_GetGameVersion 0x246 args [32780]: no HeartGold mapping yet
+	GetGameVersion 0x800C
 	CopyVar 0x8004, 0x8005
 	CompareVarToValue 0x800C, 10
 	GoToIf 1, _0205
@@ -171,7 +171,7 @@ scr_seq_SD05R0114_002:
 	ApplyMovement 0, mv_SD05R0114_0270
 	ApplyMovement 3, mv_SD05R0114_0280
 	WaitMovement
-	// TODO Diamond ScrCmd_Unk00EE 0x0ee args [32780]: no HeartGold mapping yet
+	PartyCheckForDouble 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 5, _02C2
 	NPCMsg msg_1131_SD05R0114_00001
@@ -190,7 +190,7 @@ scr_seq_SD05R0114_005:
 	FacePlayer
 	CompareVarToValue VAR_SINNOH_4098, 0
 	GoToIf 5, _02FE
-	// TODO Diamond ScrCmd_Unk00EE 0x0ee args [32780]: no HeartGold mapping yet
+	PartyCheckForDouble 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _02EF
 
@@ -237,14 +237,14 @@ scr_seq_SD05R0114_003:
 	SetVar 0x8005, 3
 	SetVar 0x8006, 4
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	CloseMsg
 	FadeOutBGM 0, 60
 	ApplyMovement 1, mv_SD05R0114_0504
 	WaitMovement
 	ApplyMovement 241, mv_SD05R0114_069C
 	WaitMovement
-	// TODO Diamond ScrCmd_Unk005D 0x05d args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk005D dropped: Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [0, 32780]: no HeartGold mapping yet
 	Wait 162, 0x800C
 	PlayBGM SEQ_GS_E_TSURETEKE2
@@ -259,9 +259,9 @@ _036A:
 	SetVar 0x8005, 5
 	SetVar 0x8006, 6
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0058 0x058 args [1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_ScopeMode 0x2c3 args [1]: no HeartGold mapping yet
+	NPCMsg 32772
+	// Diamond ScrCmd_Unk0058 dropped: Diamond sound player volume tweak
+	// Diamond ScrCmd_ScopeMode dropped: Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	// Diamond ScrCmd_ReleaseCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
@@ -299,12 +299,12 @@ _036A:
 	WaitMovement
 	FadeScreen 6, 1, 1, 0
 	WaitFade
-	// TODO Diamond ScrCmd_Unk0058 0x058 args [0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_ScopeMode 0x2c3 args [0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0058 dropped: Diamond sound player volume tweak
+	// Diamond ScrCmd_ScopeMode dropped: Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending
 	SetVar 0x8005, 7
 	SetVar 0x8006, 8
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	CloseMsg
 	ApplyMovement 241, mv_SD05R0114_069C
 	WaitMovement
@@ -315,7 +315,7 @@ _036A:
 	SetVar 0x8005, 9
 	SetVar 0x8006, 10
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitCry
 	CloseMsg
 	ApplyMovement 241, mv_SD05R0114_06A8
@@ -441,7 +441,7 @@ scr_seq_SD05R0114_004:
 	NPCMsg msg_1131_SD05R0114_00015
 	CloseMsg
 	Call _09B0
-	// TODO Diamond ScrCmd_Unk02A0 0x2a0 args [32772, 528, 407]: no HeartGold mapping yet
+	MultiBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_19, TRAINER_SINNOH_COMMANDER_MARS_MARS_3, TRAINER_SINNOH_COMMANDER_JUPITER_JUPITER_2, 0
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0857
@@ -456,7 +456,7 @@ scr_seq_SD05R0114_004:
 	NPCMsg msg_1131_SD05R0114_00022
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 1]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 1
 	ApplyMovement 6, mv_SD05R0114_0A8C
 	WaitMovement
 	HidePerson 6
@@ -486,7 +486,7 @@ _08A0:
 	ShowPerson 6
 	ApplyMovement 6, mv_SD05R0114_0A80
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 3]: no HeartGold mapping yet
+	SetObjectFacing 6, 3
 	Return
 
 _08BE:
@@ -494,7 +494,7 @@ _08BE:
 	ShowPerson 6
 	ApplyMovement 6, mv_SD05R0114_0A80
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 2]: no HeartGold mapping yet
+	SetObjectFacing 6, 2
 	Return
 
 _08DC:
@@ -502,7 +502,7 @@ _08DC:
 	ShowPerson 6
 	ApplyMovement 6, mv_SD05R0114_0A80
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 2]: no HeartGold mapping yet
+	SetObjectFacing 6, 2
 	Return
 
 _08FA:
@@ -517,21 +517,21 @@ _08FA:
 	Return
 
 _092F:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 2]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 2
 	ApplyMovement 4, mv_SD05R0114_0980
 	ApplyMovement 2, mv_SD05R0114_0988
 	WaitMovement
 	Return
 
 _0949:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 3]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 3
 	ApplyMovement 4, mv_SD05R0114_0990
 	ApplyMovement 2, mv_SD05R0114_0998
 	WaitMovement
 	Return
 
 _0963:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 3]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 3
 	ApplyMovement 4, mv_SD05R0114_09A0
 	ApplyMovement 2, mv_SD05R0114_09A8
 	WaitMovement
@@ -562,23 +562,23 @@ _09E2:
 	Return
 
 _0A17:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 3]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 2]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 3
+	SetObjectFacing 6, 2
 	Return
 
 _0A25:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 2]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 3]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 2
+	SetObjectFacing 6, 3
 	Return
 
 _0A33:
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 2]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [6, 3]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 2
+	SetObjectFacing 6, 3
 	Return
 
 _0A94:
 	LockAll
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 0]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 0
 	GetPlayerCoords 0x8004, 0x8005
 	// Diamond ScrCmd_LockCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
 	Call _0C35
@@ -591,7 +591,7 @@ _0A94:
 	SetVar 0x8005, 23
 	SetVar 0x8006, 24
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	CloseMsg
 	Wait 60, 0x800C
 	PlayBGM SEQ_GS_E_LUGIA
@@ -652,7 +652,7 @@ _0B47:
 	SetVar 0x8005, 30
 	SetVar 0x8006, 31
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
@@ -735,12 +735,12 @@ _0D44:
 	ApplyMovement 7, mv_SD05R0114_0E44
 	ApplyMovement 8, mv_SD05R0114_0E4C
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 1]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 1
 	BufferPlayersName 0
 	SetVar 0x8005, 36
 	SetVar 0x8006, 37
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	BufferPlayersName 0
 	BufferRivalsName 1
@@ -783,7 +783,7 @@ _0E22:
 	SetVar 0x8005, 40
 	SetVar 0x8006, 39
 	Call _0207
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	Return
 
 scr_seq_SD05R0114_008:
@@ -792,7 +792,7 @@ scr_seq_SD05R0114_008:
 	SetVar 0x8005, 38
 	SetVar 0x8006, 38
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	CloseMsg
 	ApplyMovement obj_player, mv_SD05R0114_0E84
 	WaitMovement
@@ -810,7 +810,7 @@ scr_seq_SD05R0114_009:
 	SetVar 0x8005, 32
 	SetVar 0x8006, 33
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	WaitCry
 	CloseMsg
@@ -823,7 +823,7 @@ scr_seq_SD05R0114_009:
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _100E
-	// TODO Diamond ScrCmd_Unk02BC 0x2bc args [32780]: no HeartGold mapping yet
+	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _0F16
 	SetFlag FLAG_SINNOH_351
@@ -833,7 +833,7 @@ _0F16:
 	SetVar 0x8005, 34
 	SetVar 0x8006, 35
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	CloseMsg
 
@@ -842,14 +842,14 @@ _0F30:
 	ApplyMovement 8, mv_SD05R0114_111C
 	ApplyMovement 7, mv_SD05R0114_1114
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [255, 1]: no HeartGold mapping yet
+	SetObjectFacing obj_player, 1
 	BufferPlayersName 1
 	NPCMsg msg_1131_SD05R0114_00041
 	BufferPlayersName 1
 	SetVar 0x8005, 43
 	SetVar 0x8006, 42
 	Call _0207
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	CloseMsg
 	GetPlayerCoords 0x8004, 0x8005
 	// Diamond ScrCmd_LockCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
@@ -858,7 +858,7 @@ _0F30:
 	ApplyMovement 7, mv_SD05R0114_1130
 	ApplyMovement obj_player, mv_SD05R0114_1130
 	WaitMovement
-	// TODO Diamond ScrCmd_SetEventDirection 0x18c args [8, 1]: no HeartGold mapping yet
+	SetObjectFacing 8, 1
 	NPCMsg msg_1131_SD05R0114_00044
 	WaitButton
 	CloseMsg
@@ -989,7 +989,7 @@ scr_seq_SD05R0114_007:
 	SetVar 0x8005, 36
 	SetVar 0x8006, 37
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	CloseMsg
 	ReleaseAll
@@ -1017,7 +1017,7 @@ scr_seq_SD05R0114_013:
 	SetVar 0x8005, 32
 	SetVar 0x8006, 33
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	WaitCry
 	CloseMsg
@@ -1031,7 +1031,7 @@ scr_seq_SD05R0114_013:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _129F
 	SetVar VAR_SINNOH_4098, 4
-	// TODO Diamond ScrCmd_Unk02BC 0x2bc args [32780]: no HeartGold mapping yet
+	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _1281
 	SetFlag FLAG_SINNOH_351
@@ -1042,7 +1042,7 @@ _1281:
 	SetVar 0x8005, 34
 	SetVar 0x8006, 35
 	Call _01E8
-	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
+	NPCMsg 32772
 	WaitButton
 	CloseMsg
 	ReleaseAll

@@ -198,7 +198,7 @@ _02CE:
 	HealParty
 	BufferRivalsName 0
 	// TODO Diamond ScrCmd_GetPlayerStarterName 0x0db args [1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_GetRivalStarterName 0x0dc args [2]: no HeartGold mapping yet
+	BufferDPPtRivalStarterSpeciesName 2
 	NPCMsg msg_0890_SD27R0101_00019
 	CloseMsg
 	ClearFlag FLAG_SINNOH_434

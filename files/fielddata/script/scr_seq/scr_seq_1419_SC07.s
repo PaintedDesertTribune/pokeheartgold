@@ -212,7 +212,7 @@ _030E:
 	CompareVarToValue 0x800C, 0
 	CallIf 1, _050A
 	Call _045C
-	// TODO Diamond ScrCmd_Unk02A0 0x2a0 args [32772, 848, 849]: no HeartGold mapping yet
+	MultiBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_19, TRAINER_SINNOH_GALACTIC_GRUNT_37, TRAINER_SINNOH_GALACTIC_GRUNT_38, 0
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _05AE

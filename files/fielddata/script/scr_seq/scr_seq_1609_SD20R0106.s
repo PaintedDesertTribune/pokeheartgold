@@ -57,7 +57,7 @@ _0081:
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00D1
-	// TODO Diamond ScrCmd_Unk00ED 0x0ed args [32780]: no HeartGold mapping yet
+	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _00C6
 	SetFlag FLAG_SINNOH_283

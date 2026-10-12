@@ -430,7 +430,7 @@ _0713:
 	ApplyMovement 7, mv_SC01_0A24
 	WaitMovement
 	Call _07AD
-	// TODO Diamond ScrCmd_Unk02A0 0x2a0 args [32772, 414, 415]: no HeartGold mapping yet
+	MultiBattle TRAINER_SINNOH_PKMN_TRAINER_BARRY_CEDRIC_19, TRAINER_SINNOH_GALACTIC_GRUNT_9, TRAINER_SINNOH_GALACTIC_GRUNT_10, 0
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0995
@@ -590,7 +590,7 @@ scr_seq_SC01_005:
 	FacePlayer
 	NPCMsg msg_0845_SC01_00059
 	// TODO Diamond ScrCmd_Unk0044 0x044 args [29, 11, 0, 0, 32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk02CF 0x2cf args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
 	// TODO Diamond ScrCmd_Unk0046 0x046 args [45, 255, 0]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_Unk0046 0x046 args [46, 255, 1]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_Unk0046 0x046 args [47, 255, 2]: no HeartGold mapping yet

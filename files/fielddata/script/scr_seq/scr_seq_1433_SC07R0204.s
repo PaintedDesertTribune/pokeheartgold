@@ -17,7 +17,7 @@ scr_seq_SC07R0204_000:
 	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_Unk027E 0x27e args [32780]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk027E dropped: Diamond progress check (sub_0205F710 >= 5) with no HeartGold equivalent
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _005B
 	NPCMsg msg_1063_SC07R0204_00000

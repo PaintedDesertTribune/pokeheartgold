@@ -266,6 +266,7 @@ class Narcs:
 LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh", "ScrCmd_Unk0250": ""}   # Unk0250: new-game save-field init, no args
 HG_NPC_TRADE_COUNT = 13          # NPC_TRADE_MAX in stock HeartGold; Diamond's trades are appended
 DP_TRADE_NAME_BANK = 326
+DP_PARTNER_BARRY = 837      # TRAINER_PKMN_TRAINER_BARRY_CEDRIC_19: Barry's team for the Spear Pillar tag battle
 DP_MENU_TEXT_BANK = 321     # list-window labels (PART 1, EXIT, ...): Diamond's menu code loads this bank itself
 _shared_msg_cache = {}         # Diamond msg bank: 4 nicknames then 4 OT names
 
@@ -536,6 +537,15 @@ TRANSLATE = {
     "ScrCmd_InitVeilstoneGym": ("SinnohVeilstoneGymInit", ""),   # src/field/gymmick/sinnoh_veilstone.c
     "ScrCmd_InitSunyshoreGym": ("SinnohSunyshoreGymInit", "b"),   # src/field/gymmick/sinnoh_sunyshore.c
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
+    "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
+    "ScrCmd_Unk02A0": ("MultiBattle", "ttt0"),              # (partner, opponent 1, opponent 2): Spear Pillar tag battle with Barry
+    "ScrCmd_Unk00ED": ("CheckBattleWon", "p"), "ScrCmd_Unk02BC": ("CheckBattleWon", "p"),
+    "ScrCmd_Unk00EE": ("PartyCheckForDouble", "p"),
+    "ScrCmd_Unk002D": ("NPCMsg", "m"),                      # message window variant
+    "ScrCmd_GetRivalStarterName": ("BufferDPPtRivalStarterSpeciesName", "b"),
+    "ScrCmd_GetGameVersion": ("GetGameVersion", "p"),       # HeartGold's version id: Diamond/Pearl branches take the "other version" path
+    "ScrCmd_SetEventDirection": ("SetObjectFacing", "ov"),
+    "ScrCmd_MessageUnown": ("NPCMsg", "m"),                 # Solaceon Ruins Unown text shown in the normal font
     "ScrCmd_PlayBgm": ("PlayBGM", "B"),
     "ScrCmd_Unk0057": ("PlayBGM", "B"),          # Diamond's second play-BGM (used by its std 2040/2048 theme scripts)
     "ScrCmd_FadeOutBgm": ("FadeOutBGM", "vv"),   # (target volume, frames) in both games
@@ -551,6 +561,7 @@ TRANSLATE = {
 }
 DP_STD = {2000: "std_signpost", 2019: "std_mart_intro",   # 2019 = "Welcome! What do you need?"
           9950: "std_in_person_evaluate_dex", 9952: "std_in_person_evaluate_dex",   # Rowan and Oak evaluate the Pokédex in person
+          9500: "std_daycare_man", 9501: "std_daycare_lady",   # Solaceon Day Care: HeartGold's own Day Care scripts
           2040: "std_sinnoh_partner_theme", 2048: "std_sinnoh_rival_theme", 2041: "std_sinnoh_default_bgm", 2043: "std_sinnoh_default_bgm", 2049: "std_sinnoh_default_bgm", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose",
           # Diamond's field-move objects (bank 375 holds its 10000-10015 field-move prompts): HeartGold has the same three
           10000: "std_field_cut", 10001: "std_field_rock_smash", 10002: "std_field_strength",
@@ -574,10 +585,18 @@ DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokét
                2015: "Contest accessory gift (dress-up dropped, decision 16)", 2036: "Contest accessory gift (dress-up dropped, decision 16)",
                2045: "Contest backdrop gift (dress-up dropped, decision 16)"}
 # Diamond std scripts whose objects can stay mute without a note: 2027 is the cave vent hole's one-line message.
-DP_STD_SILENT = {2027, 2037, 8803, 8804, 8805, 8806, 8807, 8808}   # 8803+: Great Marsh observatory binoculars (not ported)   # 2037 is an empty script (used on scenery objects)
+DP_STD_SILENT = {2027, 2037, 2025, 2035, 8803, 8804, 8805, 8806, 8807, 8808}   # 2025 GTS Geonet globe, 2035 Underground stairs guard   # 8803+: Great Marsh observatory binoculars (not ported)   # 2037 is an empty script (used on scenery objects)
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_Unk005D": "Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed",
+    "ScrCmd_Unk0058": "Diamond sound player volume tweak",
+    "ScrCmd_ScopeMode": "Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending",
+    "ScrCmd_Unk0238": "unknown Diamond variable transform (sub_02042214)",
+    "ScrCmd_Unk027E": "Diamond progress check (sub_0205F710 >= 5) with no HeartGold equivalent",
+    "ScrCmd_Unk02CF": "Diamond list-window option tweak",
+    "ScrCmd_ShowPokemonPic": "Diamond's in-field Pokémon portrait window has no HeartGold script command",
+    "ScrCmd_KeepEvent": "Diamond's keep-object-across-load flag; HeartGold objects persist by map data",
     "ScrCmd_InitPastoriaGym": "Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet",
     "ScrCmd_CheckPastoriaGymButton": "Pastoria Gym water buttons not ported yet (gym stays walkable)",
     "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
@@ -944,7 +963,11 @@ class Translator:
                                 args.append(f"{v} /* TODO Diamond std script */")
                                 self.todo.append(f"std script {v}")
                         elif k == "t":
-                            args.append(self.trainers.hg_name(v) if v else "0")
+                            if v >= 0x4000:   # a trainer id held in a variable: only the Spear Pillar tag battle does this (partner Barry)
+                                args.append(self.trainers.hg_name(DP_PARTNER_BARRY))
+                                self.todo.append("tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)")
+                            else:
+                                args.append(self.trainers.hg_name(v) if v else "0")
                         elif k == "F":
                             args.append(self.var(v) if v >= 0x4000 else self.flag(v))
                         else:

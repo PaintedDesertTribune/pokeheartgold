@@ -11,7 +11,7 @@
 scr_seq_SD07R0101_000:
 	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
-	// TODO Diamond ScrCmd_MessageUnown 0x26d args [0]: no HeartGold mapping yet
+	NPCMsg msg_1026_SD07R0101_00000
 	WaitButton
 	CloseMsg
 	ReleaseAll

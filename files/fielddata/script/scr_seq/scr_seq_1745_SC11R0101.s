@@ -48,7 +48,7 @@ scr_seq_SC11R0101_001:
 _0071:
 	NPCMsg msg_1219_SC11R0101_00004
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 9, 0, 1, 32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk02CF 0x2cf args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
 	ScrCmd_066 20, 0
 	ScrCmd_066 21, 1
 	ScrCmd_066 22, 2
@@ -88,7 +88,7 @@ scr_seq_SC11R0101_002:
 _00EF:
 	NPCMsg msg_1219_SC11R0101_00009
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 11, 0, 1, 32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk02CF 0x2cf args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
 	ScrCmd_066 23, 0
 	ScrCmd_066 24, 1
 	ScrCmd_066 19, 2
@@ -121,7 +121,7 @@ scr_seq_SC11R0101_003:
 _0153:
 	NPCMsg msg_1219_SC11R0101_00013
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 9, 0, 1, 32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk02CF 0x2cf args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
 	ScrCmd_066 25, 0
 	ScrCmd_066 26, 1
 	ScrCmd_066 27, 2

@@ -76,7 +76,7 @@ _00D9:
 	SetVar 0x800C, 0
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	// TODO Diamond ScrCmd_NamePokemonScreen 0x0bb args [32773, 32780]: no HeartGold mapping yet
+	NicknameInput 0x8005, 0x800C
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	CompareVarToValue 0x800C, 1

@@ -17,7 +17,7 @@ scr_seq_SD15R0101_001:
 	LockAll
 	PlayFanfare SEQ_SE_DP_SELECT
 	WaitSE SEQ_SE_DP_SELECT
-	// TODO Diamond ScrCmd_ShowPokemonPic 0x208 args [488, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_ShowPokemonPic dropped: Diamond's in-field Pokémon portrait window has no HeartGold script command
 	WaitButton
 	// TODO Diamond ScrCmd_Unk0209 0x209 args []: no HeartGold mapping yet
 	PlayCry 488, 0

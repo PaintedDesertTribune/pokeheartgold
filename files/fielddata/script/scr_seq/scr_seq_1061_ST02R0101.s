@@ -96,7 +96,7 @@ _012E:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	// TODO Diamond ScrCmd_NamePokemonScreen 0x0bb args [0, 32780]: no HeartGold mapping yet
+	NicknameInput 0, 0x800C
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	NPCMsg msg_0877_ST02R0101_00005
@@ -209,7 +209,7 @@ _02DF:
 
 _02F0:
 	BufferPlayersName 0
-	// TODO Diamond ScrCmd_GetRivalStarterName 0x0dc args [1]: no HeartGold mapping yet
+	BufferDPPtRivalStarterSpeciesName 1
 	NPCMsg msg_0877_ST02R0101_00020
 	GoTo _0301
 

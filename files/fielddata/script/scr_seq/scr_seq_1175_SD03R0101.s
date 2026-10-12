@@ -71,7 +71,7 @@ _008E:
 	SetVar VAR_SINNOH_403F, 608
 	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 0, 48
-	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_KeepEvent dropped: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 	ReleaseAll
 	End
 
@@ -89,7 +89,7 @@ scr_seq_SD03R0101_001:
 	LockAll
 	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 0, 15
-	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_KeepEvent dropped: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 	ApplyMovement 0, mv_SD03R0101_0190
 	WaitMovement
 	NPCMsg msg_0934_SD03R0101_00004

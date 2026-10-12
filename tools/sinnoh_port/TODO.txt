@@ -1,4 +1,3 @@
-MAP_ACUITY_CAVERN: unmapped command ScrCmd_Unk00ED
 MAP_ACUITY_CAVERN: warp 0 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
@@ -24,27 +23,24 @@ MAP_CANALAVE_POKECENTER_1F: warp 2 to Diamond map MAP_CANALAVE_POKECENTER_B1F no
 MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_CANALAVE_WEST_HOUSE: object 0 uses Diamond std script 10159; no script for now
 MAP_CANALAVE_WEST_HOUSE: unmapped command ScrCmd_Unk0238
-MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_GetGameVersion
-MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_ShowPokemonPic
+MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: dropped ScrCmd_ShowPokemonPic: Diamond's in-field Pokémon portrait window has no HeartGold script command
 MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_Unk0209
 MAP_CELESTIC_POKECENTER_1F: warp 2 to Diamond map MAP_CELESTIC_POKECENTER_B1F not imported; points at itself
 MAP_CELESTIC_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_CELESTIC_SOUTHWEST_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_ETERNA: unmapped command ScrCmd_GetGameVersion
 MAP_ETERNA_BIKE_SHOP: unmapped command ScrCmd_SetSpawn
 MAP_ETERNA_CONDOMINIUMS_1F: dropped ScrCmd_OpenTradeScreen: the trade screen is part of HeartGold's NPCTradeExec
 MAP_ETERNA_CONDOMINIUMS_1F: unmapped command ScrCmd_CheckPartyMonOTID
-MAP_ETERNA_CONDOMINIUMS_1F: unmapped command ScrCmd_NamePokemonScreen
 MAP_ETERNA_CONDOMINIUMS_1F: unmapped command ScrCmd_Unk02B8
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 0 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 1 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 2 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: berry plot object 3 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ETERNA_FOREST_EXTERIOR: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
+MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_KeepEvent: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_ETERNA_FOREST_INTERIOR: object 0 uses Diamond std script 9702; no script for now
-MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_KeepEvent
 MAP_ETERNA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_ETERNA_POKECENTER_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ETERNA_POKECENTER_1F: warp 2 to Diamond map MAP_ETERNA_POKECENTER_B1F not imported; points at itself
@@ -57,8 +53,8 @@ MAP_FIGHT_AREA: berry plot object 11 skipped; Diamond's soft-soil berry system i
 MAP_FIGHT_AREA: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FIGHT_AREA: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FIGHT_AREA: unmapped command ScrCmd_Unk028F
+MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: dropped ScrCmd_Unk02CF: Diamond list-window option tweak
 MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: unmapped command ScrCmd_Unk0041
-MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: unmapped command ScrCmd_Unk02CF
 MAP_FIGHT_AREA_BATTLE_PARK_GATEHOUSE: warp 1 to Diamond map MAP_BATTLE_PARK not imported; points at itself
 MAP_FIGHT_AREA_POKECENTER_1F: warp 2 to Diamond map MAP_FIGHT_AREA_POKECENTER_B1F not imported; points at itself
 MAP_FIGHT_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
@@ -72,9 +68,9 @@ MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 1 skipped; Diamond's soft-soil b
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 2 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 3 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FULLMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
+MAP_FULLMOON_ISLAND_INTERIOR: dropped ScrCmd_ShowPokemonPic: Diamond's in-field Pokémon portrait window has no HeartGold script command
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_BlinkEvent
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_CreateRoamer
-MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_ShowPokemonPic
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk0209
 MAP_GREAT_MARSH_AREA_1: BG event 0 uses Diamond std script 8803; no script for now
 MAP_GREAT_MARSH_AREA_2: BG event 0 uses Diamond std script 8804; no script for now
@@ -94,7 +90,6 @@ MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: object 2 uses Diamond std script 1016
 MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: unmapped command ScrCmd_Unk0238
 MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: object 3 uses Diamond std script 10162; no script for now
 MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: unmapped command ScrCmd_Unk0238
-MAP_HEARTHOME_BEBE_HOUSE: unmapped command ScrCmd_NamePokemonScreen
 MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_GYM_FOURTH_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_GYM_LEADER_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
@@ -119,15 +114,15 @@ MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_HOUSE: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
 MAP_JUBLIFE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
+MAP_JUBLIFE: dropped ScrCmd_Unk02CF: Diamond list-window option tweak
 MAP_JUBLIFE: dropped ScrCmd_UnlockPoketchApp: Pokétch dropped (decision 16)
 MAP_JUBLIFE: object 22 uses Diamond std script 9300; no script for now
+MAP_JUBLIFE: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0044
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0046
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0047
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D2
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D5
-MAP_JUBLIFE: unmapped command ScrCmd_Unk02A0
-MAP_JUBLIFE: unmapped command ScrCmd_Unk02CF
 MAP_JUBLIFE: warp 10 to Diamond map MAP_JUBLIFE_UNUSED_HOUSE_2 not imported; points at itself
 MAP_JUBLIFE: warp 11 to Diamond map MAP_JUBLIFE_UNUSED_HOUSE_3 not imported; points at itself
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: BG event 0 uses Diamond std script 2025; no script for now
@@ -140,7 +135,6 @@ MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_WaitDoorAnimation: scripted doo
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B2
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B3
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk02B2
-MAP_JUBLIFE_POKECENTER_1F: object 4 uses Diamond std script 2035; no script for now
 MAP_JUBLIFE_POKECENTER_1F: warp 2 to Diamond map MAP_JUBLIFE_POKECENTER_B1F not imported; points at itself
 MAP_JUBLIFE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
@@ -174,27 +168,19 @@ MAP_LAKE_VERITY: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGol
 MAP_LAKE_VERITY: unmapped command ScrCmd_EndStarterSelectionScreen
 MAP_LAKE_VERITY: unmapped command ScrCmd_FirstBattle
 MAP_LAKE_VERITY: unmapped command ScrCmd_GetPlayerStarterName
-MAP_LAKE_VERITY: unmapped command ScrCmd_GetRivalStarterName
 MAP_LAKE_VERITY: unmapped command ScrCmd_StarterSelectionScreen
 MAP_MOUNT_CORONET_SPEAR_PILLAR: coord event 6 uses Diamond std script 2039; no script for now
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_ScopeMode: Diamond's wide camera mode (Spear Pillar); HeartGold camera port pending
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
+MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk0058: Diamond sound player volume tweak
+MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk005D: Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed
+MAP_MOUNT_CORONET_SPEAR_PILLAR: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_DebugWatch
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_GetGameVersion
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_ScopeMode
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_SetEventDirection
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_SpearPillarSequence
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk002D
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk0058
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk005D
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk00EE
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk02A0
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk02BC
 MAP_NEWMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
-MAP_NEWMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk02BC
 MAP_OLD_CHATEAU_1F: unmapped command ScrCmd_Unk0292
-MAP_OLD_CHATEAU_2F_ROOM_2: unmapped command ScrCmd_Unk02BC
 MAP_OLD_CHATEAU_2F_ROOM_4: unmapped command ScrCmd_Unk0292
 MAP_OREBURGH: event uses script 45 but the bank has 19 scripts; no script for now
 MAP_OREBURGH_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
@@ -203,7 +189,6 @@ MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk00DA: buffers a message from Diamo
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_CountFossils
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilMinimumAmount
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilPokemon
-MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_NamePokemonScreen
 MAP_OREBURGH_NORTH_HOUSE_1F: dropped ScrCmd_OpenTradeScreen: the trade screen is part of HeartGold's NPCTradeExec
 MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_CapitalizeFirstChar
 MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_SetPlayerAvatar
@@ -280,12 +265,11 @@ MAP_RESORT_AREA_RIBBON_SYNDICATE_1F: unmapped command ScrCmd_CountTotalPartyRibb
 MAP_RESORT_AREA_RIBBON_SYNDICATE_2F: unmapped command ScrCmd_AddPartyMonFriendship
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
+MAP_ROUTE_201: dropped ScrCmd_KeepEvent: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 MAP_ROUTE_201: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_ROUTE_201: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_ROUTE_201: object 2 uses Diamond std script 9700; no script for now
 MAP_ROUTE_201: unmapped command ScrCmd_GetPlayerStarterName
-MAP_ROUTE_201: unmapped command ScrCmd_GetRivalStarterName
-MAP_ROUTE_201: unmapped command ScrCmd_KeepEvent
 MAP_ROUTE_201: unmapped command ScrCmd_Unk0164
 MAP_ROUTE_202: unmapped command ScrCmd_CatchTutorial
 MAP_ROUTE_205_NORTH: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -307,11 +291,11 @@ MAP_ROUTE_207: berry plot object 12 skipped; Diamond's soft-soil berry system is
 MAP_ROUTE_207: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_207: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_207: dropped ScrCmd_Unk02CF: Diamond list-window option tweak
 MAP_ROUTE_207: unmapped command ScrCmd_GetPoketchAppName
 MAP_ROUTE_207: unmapped command ScrCmd_Unk0044
 MAP_ROUTE_207: unmapped command ScrCmd_Unk0046
 MAP_ROUTE_207: unmapped command ScrCmd_Unk0047
-MAP_ROUTE_207: unmapped command ScrCmd_Unk02CF
 MAP_ROUTE_208: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 14 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_208: berry plot object 15 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -401,7 +385,6 @@ MAP_ROUTE_224: berry plot object 6 skipped; Diamond's soft-soil berry system is 
 MAP_ROUTE_224: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_ROUTE_224: unmapped command ScrCmd_GetWhiteRockInscription
-MAP_ROUTE_224: unmapped command ScrCmd_SetEventDirection
 MAP_ROUTE_224: unmapped command ScrCmd_WriteWhiteRockInscription
 MAP_ROUTE_225: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_225: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -434,7 +417,6 @@ MAP_SANDGEM: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_SANDGEM: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_SANDGEM: dropped ScrCmd_WaitDoorAnimation: scripted door animation
 MAP_SANDGEM: object 4 uses Diamond std script 10300; no script for now
-MAP_SANDGEM_POKECENTER_1F: object 4 uses Diamond std script 2035; no script for now
 MAP_SANDGEM_POKECENTER_1F: warp 2 to Diamond map MAP_SANDGEM_POKECENTER_B1F not imported; points at itself
 MAP_SANDGEM_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
@@ -445,9 +427,7 @@ MAP_SANDGEM_ROWANS_LAB: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unkn
 MAP_SANDGEM_ROWANS_LAB: object 3 uses Diamond std script 10300; no script for now
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CheckSinnohDexComplete
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CountSinnohDexSeen
-MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_GetRivalStarterName
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_GiveSinnohDex
-MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_NamePokemonScreen
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_Unk02CA
 MAP_SENDOFF_SPRING: warp 0 to Diamond map MAP_SPRING_PATH not imported; points at itself
 MAP_SENDOFF_SPRING: warp 1 to Diamond map MAP_SPRING_PATH not imported; points at itself
@@ -459,17 +439,14 @@ MAP_SNOWPOINT_POKECENTER_1F: warp 2 to Diamond map MAP_SNOWPOINT_POKECENTER_B1F 
 MAP_SNOWPOINT_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_CheckRegis
 MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_ShakeEvent
-MAP_SNOWPOINT_TEMPLE_B5F: unmapped command ScrCmd_Unk00ED
 MAP_SOLACEON: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_SOLACEON: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_SOLACEON: berry plot object 12 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_SOLACEON: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_SOLACEON: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_SOLACEON: object 3 uses Diamond std script 9500; no script for now
 MAP_SOLACEON: unmapped command ScrCmd_CountSinnohDexSeen
 MAP_SOLACEON: unmapped command ScrCmd_Unk01BF
 MAP_SOLACEON_DAYCARE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_SOLACEON_DAYCARE: object 0 uses Diamond std script 9501; no script for now
 MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0218
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0219
@@ -478,11 +455,8 @@ MAP_SOLACEON_NORTHEAST_HOUSE: unmapped command ScrCmd_GetNatureName
 MAP_SOLACEON_NORTHEAST_HOUSE: unmapped command ScrCmd_GetPartyMonNature
 MAP_SOLACEON_POKECENTER_1F: warp 2 to Diamond map MAP_SOLACEON_POKECENTER_B1F not imported; points at itself
 MAP_SOLACEON_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SOLACEON_RUINS_1F_MAIN_ROOM: unmapped command ScrCmd_MessageUnown
-MAP_SOLACEON_RUINS_2F: unmapped command ScrCmd_MessageUnown
 MAP_SOLACEON_RUINS_2F: warp 1 to Diamond map MAP_RUIN_MANIAC_CAVE_STAGE_3 not imported; points at itself
 MAP_SOLACEON_RUINS_B1F_MAIN_ROOM: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
-MAP_SOLACEON_RUINS_B4F_ROOM_2: unmapped command ScrCmd_MessageUnown
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetPokemonForm
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetSealCountFromId
 MAP_SOLACEON_SEAL_HOUSE: unmapped command ScrCmd_GetSealName
@@ -493,7 +467,6 @@ MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0162: Diamond partner-trainer c
 MAP_STARK_MOUNTAIN_INTERIOR_2: object 14 uses Diamond std script 9703; no script for now
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
-MAP_STARK_MOUNTAIN_INTERIOR_3: unmapped command ScrCmd_Unk00ED
 MAP_SUNYSHORE: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE: warp 7 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_1 not imported; points at itself
 MAP_SUNYSHORE: warp 8 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_2 not imported; points at itself
@@ -517,7 +490,6 @@ MAP_SUNYSHORE_VISTA_LIGHTHOUSE_OBSERVATION_DECK: unmapped command ScrCmd_UseSuny
 MAP_SURVIVAL_AREA_POKECENTER_1F: warp 2 to Diamond map MAP_SURVIVAL_AREA_POKECENTER_B1F not imported; points at itself
 MAP_SURVIVAL_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_TURNBACK_CAVE_ENTRANCE: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
-MAP_TURNBACK_CAVE_GIRATINA_ROOM: unmapped command ScrCmd_Unk00ED
 MAP_TURNBACK_CAVE_PILLAR_ROOM: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
 MAP_TURNBACK_CAVE_RANDOM_ROOM_10: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
 MAP_TURNBACK_CAVE_RANDOM_ROOM_11: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
@@ -550,7 +522,6 @@ MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_FreeDoorAnimation: scripted door a
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_VALOR_CAVERN: unmapped command ScrCmd_Unk00ED
 MAP_VALOR_CAVERN: warp 0 to Diamond map MAP_LAKE_VALOR_GALACTIC not imported; points at itself
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_CloseDoorAnimation: scripted door animation
 MAP_VALOR_LAKEFRONT: dropped ScrCmd_FreeDoorAnimation: scripted door animation
@@ -565,17 +536,17 @@ MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_CheckSinnohDex
 MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_RegisterNationalPokedex
 MAP_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM: unmapped command ScrCmd_RegisterSinnohPokedex
 MAP_VALOR_LAKEFRONT_SEVEN_STARS_RESTAURANT: unmapped command ScrCmd_DummyRandom
+MAP_VEILSTONE: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
 MAP_VEILSTONE: unmapped command ScrCmd_CheckPokemonInParty
 MAP_VEILSTONE: unmapped command ScrCmd_SetDeoxysForm
-MAP_VEILSTONE: unmapped command ScrCmd_Unk02A0
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionNameWithArticle: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
-MAP_VEILSTONE_DEPARTMENT_STORE_2F: unmapped command ScrCmd_Unk027E
+MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_Unk027E: Diamond progress check (sub_0205F710 >= 5) with no HeartGold equivalent
+MAP_VEILSTONE_DEPARTMENT_STORE_3F: dropped ScrCmd_Unk027E: Diamond progress check (sub_0205F710 >= 5) with no HeartGold equivalent
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: unmapped command ScrCmd_DummyRandom
-MAP_VEILSTONE_DEPARTMENT_STORE_3F: unmapped command ScrCmd_Unk027E
+MAP_VEILSTONE_DEPARTMENT_STORE_4F: dropped ScrCmd_Unk027E: Diamond progress check (sub_0205F710 >= 5) with no HeartGold equivalent
 MAP_VEILSTONE_DEPARTMENT_STORE_4F: unmapped command ScrCmd_GoodsMart
-MAP_VEILSTONE_DEPARTMENT_STORE_4F: unmapped command ScrCmd_Unk027E
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: warp 7 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
@@ -606,11 +577,11 @@ MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0044
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0046
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0047
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0280
+MAP_VERITY_LAKEFRONT: dropped ScrCmd_KeepEvent: Diamond's keep-object-across-load flag; HeartGold objects persist by map data
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_VERITY_LAKEFRONT: object 0 uses Diamond std script 9701; no script for now
 MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_EventStopFollowing
-MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_KeepEvent
 MAP_VERITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 MAP_VERITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 MAP_VICTORY_ROAD_1F_BACK_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
