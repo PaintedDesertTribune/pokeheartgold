@@ -43,8 +43,49 @@ _0054:
 	CompareVarToValue 0x8002, 255
 	GoToIf 1, _0130
 	GetPartyMonSpecies 0x8002, 0x8001
-	// TODO unknown Diamond command cmd_8001 (0x8001); script truncated here
+	CompareVarToValue 0x8001, 0
+	GoToIf 1, _011A
+	// TODO Diamond ScrCmd_CountPartyMonMoves 0x1c8 args [32780, 32770]: no HeartGold mapping yet
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0125
+	NPCMsg msg_0838_SC02R0301_00006
+	CloseMsg
+	FadeScreen 6, 1, 0, 0
+	WaitFade
+	// TODO Diamond ScrCmd_Unk01C6 0x1c6 args [32770]: no HeartGold mapping yet
+	// TODO Diamond ScrCmd_Unk01C7 0x1c7 args [32769]: no HeartGold mapping yet
+	RestoreOverworld
+	FadeScreen 6, 1, 1, 0
+	WaitFade
+	CompareVarToValue 0x8001, 255
+	GoToIf 1, _0049
+	// TODO Diamond ScrCmd_GetPokemonMoveName 0x1cb args [0, 32770, 32769]: no HeartGold mapping yet
+	NPCMsg msg_0838_SC02R0301_00007
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _0105
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0049
 	End
+
+_0105:
+	// TODO Diamond ScrCmd_ForgetPartyMonMove 0x1c9 args [32770, 32769]: no HeartGold mapping yet
+	NPCMsg msg_0838_SC02R0301_00008
+	PlaySE 1165
+	WaitSE 1165
+	WaitButton
+	CloseMsg
+	End
+
+_011A:
+	NPCMsg msg_0838_SC02R0301_00005
+	CloseMsg
+	GoTo _0054
+
+_0125:
+	NPCMsg msg_0838_SC02R0301_00004
+	CloseMsg
+	GoTo _0054
 
 _0130:
 	NPCMsg msg_0838_SC02R0301_00003

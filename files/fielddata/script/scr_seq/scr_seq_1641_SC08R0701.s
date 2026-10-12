@@ -65,20 +65,35 @@ _00A7:
 
 _00C5:
 	GetPartyMonSpecies 0x8000, 0x8001
-	// TODO Diamond ScrCmd_Nop 0x000 args []: no HeartGold mapping yet
-	// TODO unknown Diamond command cmd_2c80 (0x2c80); script truncated here
+	BufferSpeciesName 0, 0x8000, 0, 0
+	NPCMsg msg_1167_SC08R0701_00004
+	SetVar 0x8004, 16
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
+	WaitButton
+	CloseMsg
+	ReleaseAll
 	End
 
 _00E5:
 	GetPartyMonSpecies 0x8000, 0x8001
-	// TODO Diamond ScrCmd_Nop 0x000 args []: no HeartGold mapping yet
-	// TODO unknown Diamond command cmd_2c80 (0x2c80); script truncated here
+	BufferSpeciesName 0, 0x8000, 0, 0
+	NPCMsg msg_1167_SC08R0701_00005
+	SetVar 0x8004, 17
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
+	WaitButton
+	CloseMsg
+	ReleaseAll
 	End
 
 _0105:
 	GetPartyMonSpecies 0x8000, 0x8001
-	// TODO Diamond ScrCmd_Nop 0x000 args []: no HeartGold mapping yet
-	// TODO unknown Diamond command cmd_2c80 (0x2c80); script truncated here
+	BufferSpeciesName 0, 0x8000, 0, 0
+	NPCMsg msg_1167_SC08R0701_00006
+	SetVar 0x8004, 18
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
+	WaitButton
+	CloseMsg
+	ReleaseAll
 	End
 
 _0125:

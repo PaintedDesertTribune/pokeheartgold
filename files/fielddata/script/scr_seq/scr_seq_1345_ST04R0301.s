@@ -173,7 +173,7 @@ _024B:
 	NPCMsg msg_1019_ST04R0301_00007
 	ClearFlag FLAG_SINNOH_220
 	SetVar VAR_SINNOH_40E5, 0
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End

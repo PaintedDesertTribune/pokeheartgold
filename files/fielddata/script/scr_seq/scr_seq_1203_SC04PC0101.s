@@ -93,7 +93,7 @@ _00F0:
 	NPCMsg msg_0948_SC04PC0101_00005
 	SetVar 0x4000, 1
 	SetVar 0x8004, 5
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	WaitButton
 	CloseMsg
 	ReleaseAll

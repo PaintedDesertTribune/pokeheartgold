@@ -49,7 +49,7 @@ _006D:
 	GoTo _00C2
 
 _00C2:
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	ClearFlag FLAG_SINNOH_311
 	SetFlag FLAG_SINNOH_2734
 	AddVar VAR_SINNOH_4108, 1

@@ -96,7 +96,7 @@ scr_seq_SC05GYM0113_001:
 	End
 
 scr_seq_SC05GYM0113_002:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

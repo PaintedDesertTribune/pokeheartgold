@@ -49,7 +49,42 @@ _0066:
 	CompareVarToValue 0x8005, 255
 	GoToIf 1, _005B
 	GetPartyMonSpecies 0x8005, 0x800C
-	// TODO unknown Diamond command cmd_800c (0x800c); script truncated here
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _0116
+	// TODO Diamond ScrCmd_Unk021F 0x21f args [32780, 32773]: no HeartGold mapping yet
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _010B
+	NPCMsg msg_1100_SC06R0401_00004
+	CloseMsg
+	FadeScreen 6, 1, 0, 0
+	WaitFade
+	// TODO Diamond ScrCmd_Unk0221 0x221 args [32773]: no HeartGold mapping yet
+	// TODO Diamond ScrCmd_Unk0223 0x223 args [32780]: no HeartGold mapping yet
+	RestoreOverworld
+	FadeScreen 6, 1, 1, 0
+	WaitFade
+	CompareVarToValue 0x800C, 255
+	GoToIf 1, _005B
+	TakeItem 93, 1, 0x800C
+	BufferPlayersName 3
+	NPCMsg msg_1100_SC06R0401_00016
+	WaitButton
+	CloseMsg
+	ReleaseAll
+	End
+
+_010B:
+	NPCMsg msg_1100_SC06R0401_00005
+	WaitButton
+	CloseMsg
+	ReleaseAll
+	End
+
+_0116:
+	NPCMsg msg_1100_SC06R0401_00006
+	WaitButton
+	CloseMsg
+	ReleaseAll
 	End
 
 

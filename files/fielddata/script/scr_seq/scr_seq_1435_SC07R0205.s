@@ -57,7 +57,7 @@ _0087:
 	End
 
 _0092:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End
@@ -190,7 +190,7 @@ _0265:
 	GoTo _027A
 
 _026E:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	HideMoneyBox
 	ReleaseAll

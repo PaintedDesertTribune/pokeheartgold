@@ -29,7 +29,7 @@ scr_seq_SR208R0101_001:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _006E
 	SetFlag FLAG_SINNOH_2720
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
@@ -42,7 +42,7 @@ _0063:
 	End
 
 _006E:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End
@@ -68,7 +68,7 @@ _00C3:
 	NPCMsg msg_0975_SR208R0101_00003
 	SetVar 0x4000, 1
 	SetVar 0x8004, 7
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	WaitButton
 	CloseMsg
 	ReleaseAll

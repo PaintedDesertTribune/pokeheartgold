@@ -45,7 +45,7 @@ scr_seq_SR210AR0101_002:
 	SubMoneyImmediate 500
 	UpdateMoneyBox
 	NPCMsg msg_1043_SR210AR0101_00002
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	HideMoneyBox
 	ReleaseAll

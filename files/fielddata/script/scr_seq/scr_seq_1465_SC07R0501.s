@@ -62,7 +62,7 @@ _009F:
 	SetVar 0x8004, 444
 	SetVar 0x8005, 1
 	SetFlag FLAG_SINNOH_188
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End

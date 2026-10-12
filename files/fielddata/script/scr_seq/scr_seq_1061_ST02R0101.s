@@ -65,7 +65,164 @@ scr_seq_ST02R0101_001:
 	WaitMovement
 	SetVar 0x8004, 0
 	GetPartyMonSpecies 0x8004, 0x800C
-	// TODO unknown Diamond command cmd_8008 (0x8008); script truncated here
+	CopyVar 0x8008, 0x800C
+	CompareVarToValue 0x8008, 387
+	GoToIf 1, _00F8
+	CompareVarToValue 0x8008, 390
+	GoToIf 1, _00F8
+	CompareVarToValue 0x8008, 393
+	GoToIf 1, _00F8
+	GoTo _0101
+
+_00F8:
+	NPCMsg msg_0877_ST02R0101_00001
+	GoTo _010A
+
+_0101:
+	NPCMsg msg_0877_ST02R0101_00002
+	GoTo _010A
+
+_010A:
+	BufferSpeciesName 0, 0, 0, 0
+	NPCMsg msg_0877_ST02R0101_00003
+	NPCMsg msg_0877_ST02R0101_00004
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0170
+	GoTo _012E
+
+_012E:
+	SetVar 0x800C, 0
+	CloseMsg
+	FadeScreen 6, 1, 0, 0
+	WaitFade
+	// TODO Diamond ScrCmd_NamePokemonScreen 0x0bb args [0, 32780]: no HeartGold mapping yet
+	FadeScreen 6, 1, 1, 0
+	WaitFade
+	NPCMsg msg_0877_ST02R0101_00005
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _012E
+	GoTo _0170
+
+_0170:
+	BufferSpeciesName 0, 0, 0, 0
+	BufferRivalsName 1
+	NPCMsg msg_0877_ST02R0101_00006
+	CloseMsg
+	ApplyMovement 3, mv_ST02R0101_034C
+	WaitMovement
+	ApplyMovement obj_player, mv_ST02R0101_0370
+	WaitMovement
+	Wait 15, 0x800C
+	GetPlayerGender 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _01B0
+	GoTo _01CA
+
+_01B0:
+	BufferFriendsName 0
+	NPCMsg msg_0877_ST02R0101_00007
+	CloseMsg
+	ApplyMovement 3, mv_ST02R0101_0384
+	WaitMovement
+	GoTo _01E4
+
+_01CA:
+	BufferFriendsName 0
+	NPCMsg msg_0877_ST02R0101_00008
+	CloseMsg
+	ApplyMovement 3, mv_ST02R0101_0384
+	WaitMovement
+	GoTo _01E4
+
+_01E4:
+	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 40]: no HeartGold mapping yet
+	ApplyMovement 0, mv_ST02R0101_0330
+	ApplyMovement obj_player, mv_ST02R0101_0368
+	WaitMovement
+	Wait 35, 0x800C
+	SetFlag FLAG_SINNOH_2451
+	PlayBGM 1098
+	NPCMsg msg_0877_ST02R0101_00009
+	NPCMsg msg_0877_ST02R0101_00010
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0229
+	GoTo _0248
+
+_0229:
+	BufferPlayersName 0
+	NPCMsg msg_0877_ST02R0101_00011
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0229
+	GoTo _0248
+
+_0248:
+	NPCMsg msg_0877_ST02R0101_00012
+	// TODO Diamond ScrCmd_GiveSinnohDex 0x158 args []: no HeartGold mapping yet
+	SetFlag FLAG_SINNOH_144
+	BufferPlayersName 0
+	NPCMsg msg_0877_ST02R0101_00013
+	PlaySE 1158
+	WaitSE 1158
+	BufferPlayersName 0
+	NPCMsg msg_0877_ST02R0101_00014
+	CloseMsg
+	ApplyMovement 3, mv_ST02R0101_0354
+	WaitMovement
+	Wait 15, 0x800C
+	GetPlayerGender 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _028E
+	GoTo _029C
+
+_028E:
+	BufferFriendsName 0
+	NPCMsg msg_0877_ST02R0101_00015
+	GoTo _02AA
+
+_029C:
+	BufferFriendsName 0
+	NPCMsg msg_0877_ST02R0101_00016
+	GoTo _02AA
+
+_02AA:
+	BufferPlayersName 0
+	NPCMsg msg_0877_ST02R0101_00017
+	CloseMsg
+	ApplyMovement 3, mv_ST02R0101_0354
+	WaitMovement
+	ApplyMovement obj_player, mv_ST02R0101_0370
+	WaitMovement
+	GetPlayerGender 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _02DF
+	GoTo _02F0
+
+_02DF:
+	BufferPlayersName 0
+	// TODO Diamond ScrCmd_Unk02CA 0x2ca args [1]: no HeartGold mapping yet
+	NPCMsg msg_0877_ST02R0101_00019
+	GoTo _0301
+
+_02F0:
+	BufferPlayersName 0
+	// TODO Diamond ScrCmd_GetRivalStarterName 0x0dc args [1]: no HeartGold mapping yet
+	NPCMsg msg_0877_ST02R0101_00020
+	GoTo _0301
+
+_0301:
+	CloseMsg
+	ApplyMovement obj_player, mv_ST02R0101_0378
+	ApplyMovement 3, mv_ST02R0101_038C
+	WaitMovement
+	HidePerson 3
+	ClearFlag FLAG_SINNOH_405
+	SetVar VAR_SINNOH_40A6, 1
+	ReleaseAll
+	ReleaseAll
 	End
 
 scr_seq_ST02R0101_004:
@@ -331,6 +488,11 @@ mv_ST02R0101_0328:
 	EndMovement
 
 	.balign 4, 0
+mv_ST02R0101_0330:
+	.short 33, 1
+	EndMovement
+
+	.balign 4, 0
 mv_ST02R0101_0338:
 	.short 65, 1
 	.short 12, 8
@@ -339,9 +501,45 @@ mv_ST02R0101_0338:
 	EndMovement
 
 	.balign 4, 0
+mv_ST02R0101_034C:
+	.short 34, 1
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_0354:
+	.short 34, 1
+	EndMovement
+
+	.balign 4, 0
 mv_ST02R0101_035C:
 	.short 65, 1
 	.short 12, 9
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_0368:
+	.short 32, 1
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_0370:
+	.short 35, 1
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_0378:
+	.short 63, 1
+	.short 33, 1
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_0384:
+	.short 34, 1
+	EndMovement
+
+	.balign 4, 0
+mv_ST02R0101_038C:
+	.short 13, 8
 	EndMovement
 
 	.balign 4, 0

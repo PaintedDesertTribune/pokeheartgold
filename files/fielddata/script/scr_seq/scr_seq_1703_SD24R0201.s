@@ -51,7 +51,7 @@ scr_seq_SD24R0201_001:
 	End
 
 _00A8:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

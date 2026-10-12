@@ -45,7 +45,8 @@ ARCHIVES = {
 MATSHP = {"field": "files/fielddata/build_model/bm_field_matshp.dat", "room": "files/fielddata/build_model/bm_room_matshp.dat"}
 ENC_JSON = "files/fielddata/encountdata/gs_enc_data.json"
 TRAINER_FILES = [ENC_JSON, "files/poketool/trainer/trainers.json", "files/msgdata/msg/msg_0728.json", "files/msgdata/msg/msg_0730.json",
-                 "files/poketool/trmsg/trtbl.narc", "files/poketool/trmsg/trtblofs.narc", "files/a/0/5/8"]
+                 "files/poketool/trmsg/trtbl.narc", "files/poketool/trmsg/trtblofs.narc", "files/a/0/5/8",
+                 "files/a/1/1/2", "files/msgdata/msg/msg_0200.json"]
 RESTORE = list(ARCHIVES.values()) + list(MATSHP.values()) + TRAINER_FILES
 
 FIRST_MAP_ID = 540          # first free HeartGold map id
@@ -225,6 +226,12 @@ class Narcs:
 
 
 # ----------------------------------------------------------------------------- Diamond side
+# Diamond command argument layouts the source scan gets wrong (it counts a "ScriptGetVarPointer" in a comment).
+LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh"}
+HG_NPC_TRADE_COUNT = 13          # NPC_TRADE_MAX in stock HeartGold; Diamond's trades are appended
+DP_TRADE_NAME_BANK = 326         # Diamond msg bank: 4 nicknames then 4 OT names
+
+
 class Diamond:
     def __init__(self, repo):
         self.repo = repo
@@ -246,6 +253,7 @@ class Diamond:
         self.trgra, _ = narc_read(f"{repo}/files/poketool/trgra/trfgra.narc")
         self.cmd_names = self._cmd_table()
         self.cmd_layout = self._cmd_layouts()
+        self.cmd_layout.update(LAYOUT_OVERRIDES)   # where the source-scanning heuristic miscounts
         self.matrix0 = self._matrix(0)
         self.claims = {}   # shared-matrix filler cells (header MAP_EVERYWHERE) claimed by an imported neighbour map
 
@@ -321,6 +329,7 @@ class Diamond:
         src = ""
         for f in glob.glob(f"{self.repo}/arm9/src/scrcmd*.c"):
             src += open(f, errors="replace").read()
+        src = re.sub(r"//[^\n]*", "", re.sub(r"/\*.*?\*/", "", src, flags=re.S))   # a comment once added a phantom argument
         lay = {}
         for mm in re.finditer(r"BOOL\s+(ScrCmd_\w+)\s*\([^)]*\)[^{]*\{", src):
             i, d = mm.end(), 1
@@ -429,6 +438,9 @@ TRANSLATE = {
     "ScrCmd_LegendaryBattle": ("WildBattle", "vv"),   # Diamond's no-flee variant; HeartGold's plain wild battle for now
     "ScrCmd_GetPokemonName": ("BufferSpeciesName", "bv00"), "ScrCmd_ReleaseEvent": ("Release", "o"),
     "ScrCmd_GetPartyMonFriendship": ("MonGetFriendship", "pv"), "ScrCmd_PartyMonHasRibbon": ("MonHasRibbon", "pvv"),
+    "ScrCmd_NPCTradeInit": ("LoadNPCTrade", "b"), "ScrCmd_NPCTradeGetOfferedSpecies": ("GetOfferedSpecies", "p"),
+    "ScrCmd_NPCTradeGetRequestedSpecies": ("NPCTradeGetReqSpecies", "p"), "ScrCmd_NPCTradeExecute": ("NPCTradeExec", "v"),
+    "ScrCmd_NPCTradeEnd": ("NPCTradeEnd", ""),
     "ScrCmd_GivePartyMonRibbon": ("GiveRibbon", "vv"), "ScrCmd_Unk00D5": ("BufferInt", "bv"),
     "ScrCmd_SetEventMovement": ("SetObjectMovementType", "oh"), "ScrCmd_RideBike": ("PlayerOnBikeSet", "b"),
     "ScrCmd_ShipAnimation": ("SinnohShipCutscene", "bbGhh"),   # src/sinnoh_ship_cutscene.c
@@ -439,7 +451,7 @@ TRANSLATE = {
     "ScrCmd_CheckGameCompleted": ("CheckGameClearFlag", "p"),
     "ScrCmd_Unk0035": ("CloseMsg", ""),
     "ScrCmd_Unk00EB": ("WhiteOut", ""),
-    "ScrCmd_GetPartyMonSpecies": ("GetPartyMonSpecies", "vph"),   # Diamond has a third, unused halfword
+    "ScrCmd_GetPartyMonSpecies": ("GetPartyMonSpecies", "vp"),   # the layout scanner once counted a comment as a third arg
     "ScrCmd_CountPartyMons": ("GetPartyCount", "p"),
     "ScrCmd_CountPartyMons_OmitEggs": ("PartyCountNotEgg", "p"),
     "ScrCmd_GetTotalEarnedBadges": ("CountBadges", "p"),
@@ -473,13 +485,18 @@ DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_int
           10000: "std_field_cut", 10001: "std_field_rock_smash", 10002: "std_field_strength",
           # Pokémon Center 2F counter, left to right in Diamond (x 3, 7, 12) matched to HeartGold's counter row (x 2, 6, 11)
           9011: "std_trainer_card_explain", 9003: "std_union_room", 9001: "std_wireless_colosseum",
-          10201: "std_mystery_gift_deliveryman"}   # same deliveryman sprite in both games
+          10201: "std_mystery_gift_deliveryman",   # same deliveryman sprite in both games
+          # Diamond's bank-205 helpers called from scripts: 2016 = give an item with the fanfare and bag check,
+          # 2017 = "bag is full" message (identified by disassembly; the same 0x8004/0x8005 item/quantity convention)
+          2016: "std_give_item_verbose", 2017: "std_bag_is_full"}
+# Diamond std calls that do nothing worth keeping: 2037 is an empty script, 2009 hands out a Pokétch coupon (decision 16).
+DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokétch dropped, decision 16)"}
 # Diamond std scripts whose objects can stay mute without a note: 2027 is the cave vent hole's one-line message.
-DP_STD_SILENT = {2027}
+DP_STD_SILENT = {2027, 2037}   # 2037 is an empty script (used on scenery objects)
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
-    "ScrCmd_NPCTradeInit": "Diamond in-game trades need their trade table imported", "ScrCmd_OpenTradeScreen": "Diamond in-game trades need their trade table imported",
+    "ScrCmd_OpenTradeScreen": "the trade screen is part of HeartGold's NPCTradeExec",
     "ScrCmd_Unk025B": "Great Marsh observatory binoculars", "ScrCmd_Unk025C": "Great Marsh observatory binoculars", "ScrCmd_Unk025D": "Great Marsh observatory binoculars",
     "ScrCmd_Unk0161": "Diamond partner-trainer set; HeartGold's following system differs", "ScrCmd_Unk0162": "Diamond partner-trainer clear; HeartGold's following system differs",
     "ScrCmd_Unk0285": "Great Marsh area shuttle warp", "ScrCmd_Unk00EA": "plays a map's music by Diamond map id", "ScrCmd_Unk00DA": "buffers a message from Diamond's common text bank",
@@ -744,6 +761,7 @@ class Translator:
                         pc = nxt
                         continue
                     args = []
+                    noop_std = None
                     rawit = iter(raw)
                     for k in kinds:
                         if k == "0":          # a HeartGold argument Diamond's command does not have
@@ -777,7 +795,10 @@ class Translator:
                         elif k == "o":
                             args.append("obj_player" if v == 0xFF else (self.var(v) if v >= 0x4000 else str(v)))
                         elif k == "s":
-                            if v in DP_STD:
+                            if v in DP_STD_NOOP:
+                                args.append("0")
+                                noop_std = DP_STD_NOOP[v]
+                            elif v in DP_STD:
                                 args.append(DP_STD[v])
                             else:
                                 item = self.dp.std_item(205, v - 1999) if 2000 <= v < 2256 else None
@@ -793,8 +814,14 @@ class Translator:
                         args = [args[0], args[1], "0", "0"]
                     if macro == "SetVar" and 0x4020 <= raw[0] <= 0x402F and raw[1] < 0x4000 and self.sprites:
                         args[1] = self.sprites.hg_name(raw[1])   # object-graphics variables hold sprite ids
-                    if macro == "GetPartyMonSpecies":
-                        args = args[:2]
+                    if noop_std:
+                        lines[pc] = f"\t// Diamond std call dropped: {noop_std}"
+                        pc = nxt
+                        if name in ("ScrCmd_End", "ScrCmd_Return", "ScrCmd_GoTo", "ScrCmd_RestartCurrentScript"):
+                            break
+                        continue
+                    if macro == "LoadNPCTrade":
+                        args[0] = str(raw[0] + HG_NPC_TRADE_COUNT)   # Diamond's four trades follow HeartGold's (files/a/1/1/2)
                     if macro == "SpecialMartBuy" and raw[0] < 0x4000:
                         args[0] = str(raw[0] + 30)   # Diamond's 19 special marts sit after HeartGold's 30 (src/scrcmd_mart.c)
                     # MartBuy: HeartGold's Poké Mart ignores the id and stocks by badge count, so Diamond's id is harmless
@@ -1553,9 +1580,54 @@ def main():
     open("src/battle/battle_command.c", "w").write(bc)
     ensure_markers("src/battle/battle_controller_player.c", "        case TRAINERCLASS_LEADER_BLUE:\n            PlayBGM(SEQ_GS_WIN3);", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
     replace_block("src/battle/battle_controller_player.c", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(f"        case {hg}:\n" for dpc, (hg, cid) in newcls if "LEADER" in hg))
-    if newcls:
-        todo.append("trainer classes: " + ", ".join(hg for _, (hg, _) in newcls) + " use the default encounter jingle and battle music; the intro animation is blank")
+    # Battle intro and music: NPCTrainerGetBattleIntroAndMusicParam (asm/unk_020517A4.s) scans a table of
+    # trainer class | (param << 10); the param picks a transition and a VS theme. Reuse HeartGold's params.
+    e4_seen = []
+    def music_param(hg):
+        if "ELITE_FOUR" in hg:            # Will, Koga, Bruno, Karen have params 16-19; hand them out in order
+            if hg not in e4_seen:
+                e4_seen.append(hg)
+            return 16 + e4_seen.index(hg) % 4
+        for key, prm in (("CHAMPION", 20), ("GALACTIC_BOSS", 34), ("COMMANDER", 30), ("GALACTIC", 29), ("BARRY", 21), ("LEADER", 0)):
+            if key in hg:
+                return prm
+        return None
+    music_rows = []
+    for dpc, (hg, cid) in newcls:
+        prm = music_param(hg)
+        if prm is not None:
+            music_rows.append(f"\t.short {hg} | ({prm} << 10)\n")
+    replace_block("asm/unk_020517A4.s", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "".join(music_rows))
+    sh = open("include/constants/sinnoh.h").read()
+    sh = sh.replace("#endif", f"#define TRCLASS_MUSIC_ROWS {32 + len(music_rows)}   // asm/unk_020517A4.s class-to-battle-music rows\n#endif", 1)
+    open("include/constants/sinnoh.h", "w").write(sh)
+    plain = [hg for _, (hg, _) in newcls if music_param(hg) is None]
+    if plain:
+        todo.append("trainer classes: " + ", ".join(plain) + " use the default encounter jingle and battle music; every class's intro animation is blank")
     todo.append("new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated")
+    todo.append("hidden items: Diamond's contents live in an engine table (its std 8000+ scripts read 0x8000-0x8002); the importer "
+                "currently copies the item-ball list instead, so Sinnoh hidden items hold the wrong items until that table is found")
+    todo.append("std bank 207 (Diamond std 9000-9016) holds the Pokémon Center stair/counter scripts; level scripts call 9000/9012-9015 "
+                "for the upstairs partner walk; HeartGold's own Pokémon Center handles that, so they stay dropped")
+    # --- Diamond's four in-game trades: records are HeartGold's NPCTrade minus its trailing word; names go into msg_0200
+    # (17 nicknames then 17 OT names once appended) and NpcTradeNum gains four entries before NPC_TRADE_MAX.
+    dp_trades, _ = narc_read(f"{dp.repo}/files/fielddata/pokemon_trade/fld_trade.narc")
+    hg_trades, hg_trade_fnt = narc_read("files/a/1/1/2")
+    assert len(hg_trades) == HG_NPC_TRADE_COUNT, len(hg_trades)
+    narc_write("files/a/1/1/2", hg_trades + [t + bytes(4) for t in dp_trades], hg_trade_fnt)
+    names, _ = gmm_to_json(dp, DP_TRADE_NAME_BANK, "msg_0326")
+    m200 = json.load(open("files/msgdata/msg/msg_0200.json"))
+    assert len(m200["messages"]) == 2 * HG_NPC_TRADE_COUNT, len(m200["messages"])
+    nicks = [{"en_US": names["messages"][i]["en_US"]} for i in range(len(dp_trades))]
+    ots = [{"en_US": names["messages"][len(dp_trades) + i]["en_US"]} for i in range(len(dp_trades))]
+    msgs = m200["messages"][:HG_NPC_TRADE_COUNT] + nicks + m200["messages"][HG_NPC_TRADE_COUNT:] + ots
+    for i, msg in enumerate(msgs):
+        msg["id"] = f"msg_0200_{i:05d}"
+    m200["messages"] = msgs
+    json.dump(m200, open("files/msgdata/msg/msg_0200.json", "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    ensure_markers("include/constants/npc_trade.h", "    NPC_TRADE_MAX,", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", before=True)
+    replace_block("include/constants/npc_trade.h", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END",
+                  "".join(f"    NPC_TRADE_SINNOH_{i},   // Diamond trade {i}: {nicks[i]['en_US']} from {ots[i]['en_US']}\n" for i in range(len(dp_trades))))
     s = open("files/fielddata/script/scr_seq/meson.build").read()
     if "# SINNOH_PORT_HDR_BEGIN" not in s:
         i = s.index("scr_seq_event_headers = files(")

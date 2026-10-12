@@ -82,7 +82,7 @@ _00D8:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _011D
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	HidePerson 1
 	ClearFlag FLAG_SINNOH_662
@@ -98,7 +98,7 @@ _0111:
 	GoTo _00D8
 
 _011D:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

@@ -74,7 +74,7 @@ _00B6:
 	End
 
 _00F4:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

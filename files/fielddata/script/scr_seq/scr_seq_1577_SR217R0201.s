@@ -22,13 +22,13 @@ scr_seq_SR217R0201_000:
 	GoToIf 1, _004F
 	SetFlag FLAG_SINNOH_315
 	SetFlag FLAG_SINNOH_637
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
 
 _004F:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

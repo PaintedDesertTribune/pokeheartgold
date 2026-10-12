@@ -25,17 +25,34 @@ _0037:
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	// Diamond ScrCmd_OpenTradeScreen dropped: Diamond in-game trades need their trade table imported
+	// Diamond ScrCmd_OpenTradeScreen dropped: the trade screen is part of HeartGold's NPCTradeExec
 	GetPartySelection 0x800C
 	RestoreOverworld
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	CompareVarToValue 0x800C, 255
 	GoToIf 1, _00A8
-	// Diamond ScrCmd_NPCTradeInit dropped: Diamond in-game trades need their trade table imported
+	LoadNPCTrade 13
 	CopyVar 0x8004, 0x800C
 	GetPartyMonSpecies 0x8004, 0x8005
-	// TODO unknown Diamond command cmd_800c (0x800c); script truncated here
+	NPCTradeGetReqSpecies 0x800C
+	CompareVarToVar 0x8005, 0x800C
+	GoToIf 5, _009B
+	NPCTradeExec 0x8004
+	NPCTradeEnd
+	SetFlag FLAG_SINNOH_133
+	NPCMsg msg_0903_SC03R0201_00001
+	WaitButton
+	CloseMsg
+	ReleaseAll
+	End
+
+_009B:
+	NPCTradeEnd
+	NPCMsg msg_0903_SC03R0201_00002
+	WaitButton
+	CloseMsg
+	ReleaseAll
 	End
 
 _00A8:

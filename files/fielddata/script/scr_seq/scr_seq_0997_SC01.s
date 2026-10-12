@@ -879,7 +879,7 @@ _0F02:
 	SetVar 0x8004, 460
 	SetVar 0x8005, 1
 	SetFlag FLAG_SINNOH_237
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
@@ -921,7 +921,7 @@ _0F79:
 	SetVar 0x8004, 461
 	SetVar 0x8005, 1
 	SetFlag FLAG_SINNOH_238
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
@@ -966,7 +966,7 @@ _0FFD:
 	SetVar 0x8004, 462
 	SetVar 0x8005, 1
 	SetFlag FLAG_SINNOH_239
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End

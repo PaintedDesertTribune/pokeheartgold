@@ -345,7 +345,7 @@ scr_seq_SR201_009:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0673
 	SetFlag FLAG_SINNOH_108
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
@@ -358,7 +358,7 @@ _0668:
 	End
 
 _0673:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

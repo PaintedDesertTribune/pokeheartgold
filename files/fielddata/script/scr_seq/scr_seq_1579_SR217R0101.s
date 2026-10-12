@@ -42,7 +42,7 @@ _0044:
 	GoTo _0039
 
 _0076:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

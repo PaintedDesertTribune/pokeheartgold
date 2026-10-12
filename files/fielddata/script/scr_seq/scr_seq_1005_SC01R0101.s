@@ -67,7 +67,7 @@ _0106:
 _011D:
 	NPCMsg msg_0849_SC01R0101_00002
 	SetVar 0x8004, 2
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	NPCMsg msg_0849_SC01R0101_00003
 	WaitButton
 	CloseMsg
@@ -77,7 +77,7 @@ _011D:
 _0135:
 	NPCMsg msg_0849_SC01R0101_00005
 	SetVar 0x8004, 12
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	NPCMsg msg_0849_SC01R0101_00006
 	WaitButton
 	CloseMsg
@@ -87,7 +87,7 @@ _0135:
 _014D:
 	NPCMsg msg_0849_SC01R0101_00008
 	SetVar 0x8004, 13
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	NPCMsg msg_0849_SC01R0101_00009
 	WaitButton
 	CloseMsg
@@ -97,7 +97,7 @@ _014D:
 _0165:
 	NPCMsg msg_0849_SC01R0101_00011
 	SetVar 0x8004, 15
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	NPCMsg msg_0849_SC01R0101_00012
 	WaitButton
 	CloseMsg

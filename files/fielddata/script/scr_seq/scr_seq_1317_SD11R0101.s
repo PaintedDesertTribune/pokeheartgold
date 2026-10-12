@@ -144,9 +144,209 @@ _026C:
 	SetVar 0x400A, 0
 	GetPartyCount 0x400B
 	SetVar 0x400C, 0
+
+_027C:
 	GetPartyMonSpecies 0x400A, 0x800C
-	// TODO unknown Diamond command cmd_800c (0x800c); script truncated here
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _030E
+	CompareVarToValue 0x4000, 0
+	CallIf 1, _033A
+	CompareVarToValue 0x4000, 1
+	CallIf 1, _03AB
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _030E
+	BufferPartyMonNick 0, 0x400A
+	CompareVarToValue 0x400C, 0
+	GoToIf 1, _02CE
+	GoTo _02EE
+
+_02CE:
+	AddVar 0x400C, 1
+	NPCMsg msg_1005_SD11R0101_00002
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _0450
+	GoTo _030E
+
+_02EE:
+	AddVar 0x400C, 1
+	NPCMsg msg_1005_SD11R0101_00004
+	YesNo 0x800C
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _0450
+	GoTo _030E
+
+_030E:
+	AddVar 0x400A, 1
+	SubVar 0x400B, 1
+	CompareVarToValue 0x400B, 0
+	GoToIf 5, _027C
+	NPCMsg msg_1005_SD11R0101_00005
+	CloseMsg
+	ApplyMovement obj_player, mv_SD11R0101_07A4
+	WaitMovement
+	ReleaseAll
 	End
+
+_033A:
+	GetPartyMonSpecies 0x400A, 0x800C
+	CompareVarToValue 0x800C, 25
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 35
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 54
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 417
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 425
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 427
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 440
+	GoToIf 1, _03A3
+	SetVar 0x800C, 0
+	Return
+
+_03A3:
+	SetVar 0x800C, 1
+	Return
+
+_03AB:
+	GetPartyMonSpecies 0x400A, 0x800C
+	CompareVarToValue 0x800C, 25
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 35
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 54
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 417
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 425
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 427
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 440
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 39
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 255
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 300
+	GoToIf 1, _03A3
+	CompareVarToValue 0x800C, 285
+	GoToIf 1, _03A3
+	SetVar 0x800C, 0
+	Return
+
+_0450:
+	HealParty
+	FadeScreen 6, 1, 0, 0
+	WaitFade
+	CopyVar VAR_SINNOH_409D, 0x400A
+	GetPartyMonSpecies 0x400A, VAR_SINNOH_409A
+	CopyVar 0x8008, VAR_SINNOH_409A
+	CompareVarToValue 0x8008, 25
+	GoToIf 1, _050D
+	CompareVarToValue 0x8008, 255
+	GoToIf 1, _051D
+	CompareVarToValue 0x8008, 35
+	GoToIf 1, _052D
+	CompareVarToValue 0x8008, 54
+	GoToIf 1, _053D
+	CompareVarToValue 0x8008, 417
+	GoToIf 1, _054D
+	CompareVarToValue 0x8008, 425
+	GoToIf 1, _055D
+	CompareVarToValue 0x8008, 427
+	GoToIf 1, _056D
+	CompareVarToValue 0x8008, 440
+	GoToIf 1, _057D
+	CompareVarToValue 0x8008, 39
+	GoToIf 1, _058D
+	CompareVarToValue 0x8008, 300
+	GoToIf 1, _059D
+	CompareVarToValue 0x8008, 285
+	GoToIf 1, _05AD
+	FadeScreen 6, 1, 1, 0
+	WaitFade
+	End
+
+_050D:
+	SetVar 0x8002, 5
+	ClearFlag FLAG_SINNOH_512
+	GoTo _05BD
+
+_051D:
+	SetVar 0x8002, 6
+	ClearFlag FLAG_SINNOH_513
+	GoTo _05BD
+
+_052D:
+	SetVar 0x8002, 15
+	ClearFlag FLAG_SINNOH_585
+	GoTo _05BD
+
+_053D:
+	SetVar 0x8002, 16
+	ClearFlag FLAG_SINNOH_586
+	GoTo _05BD
+
+_054D:
+	SetVar 0x8002, 17
+	ClearFlag FLAG_SINNOH_587
+	GoTo _05BD
+
+_055D:
+	SetVar 0x8002, 18
+	ClearFlag FLAG_SINNOH_588
+	GoTo _05BD
+
+_056D:
+	SetVar 0x8002, 19
+	ClearFlag FLAG_SINNOH_589
+	GoTo _05BD
+
+_057D:
+	SetVar 0x8002, 20
+	ClearFlag FLAG_SINNOH_590
+	GoTo _05BD
+
+_058D:
+	SetVar 0x8002, 21
+	ClearFlag FLAG_SINNOH_591
+	GoTo _05BD
+
+_059D:
+	SetVar 0x8002, 22
+	ClearFlag FLAG_SINNOH_592
+	GoTo _05BD
+
+_05AD:
+	SetVar 0x8002, 23
+	ClearFlag FLAG_SINNOH_593
+	GoTo _05BD
+
+_05BD:
+	ShowPerson 0x8002
+	CompareVarToValue 0x8001, 1
+	CallIf 1, _061E
+	CompareVarToValue 0x8001, 2
+	CallIf 1, _062C
+	FadeScreen 6, 1, 1, 0
+	WaitFade
+	SetVar VAR_SINNOH_4099, 1
+	// TODO Diamond ScrCmd_ClearAmitySquareSteps 0x215 args []: no HeartGold mapping yet
+	Call _0858
+	// TODO unknown Diamond command ScrCmd_Unk027C (0x27c); script truncated here
+	End
+
+_061E:
+	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	Return
+
+_062C:
+	// Diamond ScrCmd_SetEventPosition dropped: object teleport (5 args) needs a HeartGold equivalent
+	Return
 
 scr_seq_SD11R0101_002:
 scr_seq_SD11R0101_004:

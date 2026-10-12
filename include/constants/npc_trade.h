@@ -15,6 +15,12 @@ typedef enum NpcTradeNum {
     NPC_TRADE_VOLTY_PIKACHU,
     NPC_TRADE_HORNLETTE_RHYHORN,
     NPC_TRADE_IRON_BELDUM,
+// SINNOH_PORT_BEGIN
+    NPC_TRADE_SINNOH_0,   // Diamond trade 0: Kazza from Hilary
+    NPC_TRADE_SINNOH_1,   // Diamond trade 1: Charap from Norton
+    NPC_TRADE_SINNOH_2,   // Diamond trade 2: Gaspar from Mindy
+    NPC_TRADE_SINNOH_3,   // Diamond trade 3: Foppa from Meister
+// SINNOH_PORT_END
     NPC_TRADE_MAX,
 } NpcTradeNum;
 

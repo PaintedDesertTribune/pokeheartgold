@@ -101,8 +101,9 @@ _0121:
 	CompareVarToValue 0x4002, 255
 	GoToIf 1, _02B5
 	GetPartyMonSpecies 0x4002, 0x800C
-	// TODO unknown Diamond command cmd_800c (0x800c); script truncated here
-	End
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _02C0
+	GoTo _016E
 
 _016E:
 	NPCMsg msg_0856_SC01R0205_00005
@@ -191,6 +192,10 @@ _02B5:
 	CloseMsg
 	ReleaseAll
 	End
+
+_02C0:
+	NPCMsg msg_0856_SC01R0205_00013
+	GoTo _0121
 
 _02C9:
 	FadeScreen 6, 1, 0, 0

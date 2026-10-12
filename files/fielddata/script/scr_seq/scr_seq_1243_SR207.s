@@ -167,7 +167,7 @@ _0295:
 
 _02AB:
 	SetVar 0x8004, 6
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	// TODO Diamond ScrCmd_GetPoketchAppName 0x0d7 args [1, 6]: no HeartGold mapping yet
 	Return
 

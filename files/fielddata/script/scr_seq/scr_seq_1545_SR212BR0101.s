@@ -292,7 +292,7 @@ _04FC:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0529
 	TakeItem 0x8006, 10, 0x800C
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End

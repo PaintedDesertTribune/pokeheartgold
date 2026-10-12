@@ -28,7 +28,7 @@ scr_seq_ST04R0101_001:
 	GoToIf 1, _0051
 	NPCMsg msg_1018_ST04R0101_00000
 	SetVar 0x8004, 8
-	CallStd 2009 /* TODO Diamond std script */
+	// Diamond std call dropped: Pokétch coupon (Pokétch dropped, decision 16)
 	WaitButton
 	CloseMsg
 	ReleaseAll

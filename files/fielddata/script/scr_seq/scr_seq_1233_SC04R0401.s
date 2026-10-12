@@ -75,13 +75,13 @@ _00B2:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00FA
 	SetFlag FLAG_SINNOH_267
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
 
 _00FA:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

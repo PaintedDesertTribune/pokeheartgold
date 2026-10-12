@@ -26,13 +26,13 @@ scr_seq_SD04R0101_001:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0055
 	SetFlag FLAG_SINNOH_312
-	CallStd 2016 /* TODO Diamond std script */
+	CallStd std_give_item_verbose
 	CloseMsg
 	ReleaseAll
 	End
 
 _0055:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	CloseMsg
 	ReleaseAll
 	End

@@ -93,7 +93,7 @@ _00F6:
 	GoTo _0186
 
 _017F:
-	CallStd 2017 /* TODO Diamond std script */
+	CallStd std_bag_is_full
 	NPCMsg msg_0926_SD13R0101_00012
 
 _0186:

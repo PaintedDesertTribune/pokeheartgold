@@ -1,6 +1,7 @@
 #include "constants/sndseq.h"
 #include "constants/species.h"
 #include "constants/trainer_class.h"
+#include "constants/sinnoh.h"
 	.include "macros.inc"
 	.include "unk_020517A4.inc"
 	.include "global.inc"
@@ -52,6 +53,27 @@ _020FC3CA:
 	.short TRAINERCLASS_TEAM_ROCKET_F | (29 << 10)
 	.short TRAINERCLASS_KIMONO_GIRL | (43 << 10)
 	.short TRAINERCLASS_PKMN_TRAINER_RED | (44 << 10)
+// SINNOH_PORT_BEGIN
+	.short TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY | (21 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_BYRON | (0 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_ROARK | (0 << 10)
+	.short TRAINERCLASS_SINNOH_GALACTIC | (29 << 10)
+	.short TRAINERCLASS_SINNOH_COMMANDER_MARS | (30 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_GARDENIA | (0 << 10)
+	.short TRAINERCLASS_SINNOH_GALACTIC_F | (29 << 10)
+	.short TRAINERCLASS_SINNOH_COMMANDER_JUPITER | (30 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_FANTINA | (0 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_MAYLENE | (0 << 10)
+	.short TRAINERCLASS_SINNOH_GALACTIC_BOSS | (34 << 10)
+	.short TRAINERCLASS_SINNOH_COMMANDER_SATURN | (30 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_WAKE | (0 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_CANDICE | (0 << 10)
+	.short TRAINERCLASS_SINNOH_LEADER_VOLKNER | (0 << 10)
+	.short TRAINERCLASS_SINNOH_ELITE_FOUR_AARON | (16 << 10)
+	.short TRAINERCLASS_SINNOH_ELITE_FOUR_BERTHA | (17 << 10)
+	.short TRAINERCLASS_SINNOH_ELITE_FOUR_FLINT | (18 << 10)
+	.short TRAINERCLASS_SINNOH_ELITE_FOUR_LUCIEN | (19 << 10)
+// SINNOH_PORT_END
 _020FC40A:
 	.short 12, SEQ_GS_VS_GYMREADER         ; 00
 	.short 13, SEQ_GS_VS_GYMREADER         ; 01
@@ -292,7 +314,7 @@ _0205186C:
 _02051882:
 	add r2, r2, #1
 	add r3, r3, #2
-	cmp r2, #0x20
+	cmp r2, #TRCLASS_MUSIC_ROWS   ; SINNOH PORT: 32 stock rows plus the Sinnoh classes
 	blo _0205186C
 	mov r0, #0x29
 	bx lr
