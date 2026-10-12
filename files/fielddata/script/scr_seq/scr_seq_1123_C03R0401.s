@@ -265,7 +265,7 @@ _03E6:
 	PlaySE 1158
 	NPCMsg msg_0908_C03R0401_00008
 	WaitSE 1158
-	// TODO Diamond ScrCmd_GiveMon 0x096 args [16564, 20, 0, 32780]: no HeartGold mapping yet
+	GiveMon VAR_SINNOH_40B4, 20, 0, 0, 0, 0x800C
 	SetVar VAR_SINNOH_40B4, 0
 	NPCMsg msg_0908_C03R0401_00009
 	YesNo 0x800C

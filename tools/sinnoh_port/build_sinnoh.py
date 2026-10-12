@@ -338,6 +338,8 @@ class Diamond:
             off = struct.unpack_from("<I", b, p)[0]
             p += 4
             starts.append(p + off)
+        if not (0 < idx1 <= len(starts)):
+            return None
         s = starts[idx1 - 1]
         if struct.unpack_from("<H", b, s)[0] == 0x28 and struct.unpack_from("<H", b, s + 6)[0] == 0x28:
             return struct.unpack_from("<H", b, s + 4)[0], struct.unpack_from("<H", b, s + 10)[0]
@@ -470,6 +472,7 @@ DP_STD_SILENT = {2027}
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_ShowCoinBox": "HeartGold has no coin box window", "ScrCmd_HideCoinBox": "HeartGold has no coin box window", "ScrCmd_UpdateCoinBox": "HeartGold has no coin box window",
     "ScrCmd_StopFanfare": "no stop-fanfare command in HeartGold",
     "ScrCmd_LockCamera": "scripted camera moves need a HeartGold port (library cutscene)",
     "ScrCmd_ReleaseCamera": "scripted camera moves need a HeartGold port (library cutscene)",
@@ -492,6 +495,7 @@ DROP = {
 }
 # Diamond commands whose only effect is a result variable HeartGold cannot compute: emit SetVar <var>, <value>.
 CONST_RESULT = {
+    "ScrCmd_GetHour": ("p", 12),   # Diamond's clock hour; HeartGold scripts see noon
     "ScrCmd_GetTimeOfDay": ("p", 1),   # Diamond's day period; HeartGold keeps its own clock, scripts see "day"
     "ScrCmd_CheckEventValidity": ("bp", 0), "ScrCmd_CheckPartyForBadEgg": ("p", 0), "ScrCmd_CountPCFreeSpace": ("p", 1),
     "ScrCmd_GetDayOfWeek": ("p", 0), "ScrCmd_CountAvailablePartyMons_IgnoreSlot": ("pv", 1),
@@ -645,9 +649,9 @@ class Translator:
         overrides = overrides or {}
         b = self.dp.file("script/scr_seq_release", bank)
         starts, p = [], 0
-        while p + 2 <= len(b) and struct.unpack_from("<H", b, p)[0] != 0xFD13:
-            off = struct.unpack_from("<I", b, p)[0]
-            p += 4
+        while p + 2 <= len(b) and struct.unpack_from("<H", b, p)[0] != 0xFD13 and not (starts and p >= min(starts)):
+            off = struct.unpack_from("<I", b, p)[0]   # some banks (Hearthome's gym leader room) have no terminator:
+            p += 4                                    # the table ends where the first script begins
             if not (p <= p + off < len(b)):   # not a script bank after all (a few Diamond banks hold other data)
                 self.todo.append(f"script bank {bank} has no valid header table; treated as empty")
                 starts = []

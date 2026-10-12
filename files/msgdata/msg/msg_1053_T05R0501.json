@@ -1,0 +1,71 @@
+{
+  "key": 8725,
+  "messages": [
+    {
+      "id": "msg_1053_T05R0501_00000",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} examined the ancient\n",
+        "cave painting.\r",
+        "Mysterious designs cover a whole\n",
+        "section of the wall.\r",
+        "There are three strange things\n",
+        "forming a triangle.\r",
+        "In the middle of them, a shining\n",
+        "sphere?\r",
+        "What is this all about?\r"
+      ]
+    },
+    {
+      "id": "msg_1053_T05R0501_00001",
+      "en_US": [
+        "The cave painting’s meaning seems\n",
+        "to be this...\r",
+        "There existed a being...\r",
+        "A being so powerful, it was\n",
+        "considered a deity at the time.\r",
+        "Opposing this powerful being\n",
+        "were three Pokémon.\r",
+        "The three kept balance with the\n",
+        "being, as if they formed a triangle.\r",
+        "It’s an ancient legend of Sinnoh\n",
+        "that is still told in Celestic Town.\r"
+      ]
+    },
+    {
+      "id": "msg_1053_T05R0501_00002",
+      "en_US": [
+        "Oh, yes. I found something useful.\n",
+        "You should take this.\r",
+        "It belonged to my granddaughter,\n",
+        "but she doesn’t use it anymore.\r"
+      ]
+    },
+    {
+      "id": "msg_1053_T05R0501_00003",
+      "en_US": [
+        "If a Pokémon learns Surf, it can\n",
+        "carry you across water and the sea.\r",
+        "But my granddaughter said something\n",
+        "about this hidden move...\r",
+        "Oh, yes! To use Surf outside of\n",
+        "battle, the Hearthome Gym Badge\\fmust first be obtained.\r",
+        "On that matter, you will have to\n",
+        "handle it yourself, I’m afraid.\r"
+      ]
+    },
+    {
+      "id": "msg_1053_T05R0501_00004",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} examined the ancient\n",
+        "cave painting.\r",
+        "Mysterious designs cover a whole\n",
+        "section of the wall.\r",
+        "There are three strange things\n",
+        "forming a triangle.\r",
+        "In the middle of them, a shining\n",
+        "sphere?\r",
+        "What is this all about?"
+      ]
+    }
+  ]
+}

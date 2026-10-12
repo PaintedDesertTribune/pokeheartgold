@@ -31,6 +31,28 @@ def map_ids():
                 ids.setdefault(m.group(1), int(m.group(2)))
     return ids
 
+DP_DIMS = {}
+
+def dp_matrix_dims():
+    """Diamond map name -> (w, h) in chunks; (0, 0) for maps on the shared outdoor matrix."""
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "tools/sinnoh_port"))
+        import build_sinnoh as B
+        dp = B.Diamond(os.path.expanduser("~/code/pokediamond"))
+    except Exception:
+        return {}
+    out = {}
+    for name in open(os.path.join(ROOT, "tools/sinnoh_port/maps.txt")).read().split():
+        if not name.startswith("MAP_") or name not in dp.maps:
+            continue
+        h = dp.header(dp.maps[name])
+        if h["matrix"] == 0:
+            out[name] = (0, 0)
+        else:
+            m = dp._matrix(h["matrix"])
+            out[name] = (m["w"], m["h"])
+    return out
+
 def start_coords(name, dp_codes):
     """A walkable tile: in front of the map's first warp (its door), else the middle of a small interior."""
     import glob
@@ -40,7 +62,13 @@ def start_coords(name, dp_codes):
         d = json.load(open(path))
         if d.get("warps"):
             w = d["warps"][0]
-            return w["x"], w["z"] + 1
+            x, y = w["x"], w["z"] + 1
+            # Interiors are one chunk unless Diamond's matrix says otherwise; a door at the chunk edge can put
+            # x or y past it, which crashes the sound-plate lookup, so fall back to the chunk centre.
+            dims = DP_DIMS.get("MAP_" + name[len("MAP_SINNOH_"):])
+            if dims and dims != (0, 0) and not (0 <= x < dims[0] * 32 and 0 <= y < dims[1] * 32):
+                return 16, 16
+            return x, y
     return 8, 8
 
 def run_one(name, mid, x, y, syms, timeout=70):
@@ -132,6 +160,8 @@ def main():
     a = ap.parse_args()
     syms = nm()
     ids = map_ids()
+    global DP_DIMS
+    DP_DIMS = dp_matrix_dims()
     dp_codes = {k: c[4:] for k, c in re.findall(r"#define (MAP_\w+)\s+\d+\s*// (MAP_\w+)", open(os.path.expanduser("~/code/pokediamond/include/constants/maps.h")).read())}
     names = [n for n in a.maps.split(",") if n] or sorted(n for n in ids if n.startswith(a.prefix))
     prev = {}

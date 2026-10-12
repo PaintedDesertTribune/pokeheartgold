@@ -349,7 +349,7 @@ _05BC:
 
 _05CE:
 	BufferPlayersName 0
-	// TODO Diamond ScrCmd_GetTimeOfDay 0x1b6 args [32780]: no HeartGold mapping yet
+	SetVar 0x800C, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed
 	CompareVarToValue 0x800C, 0
 	CallIf 1, _063A
 	CompareVarToValue 0x800C, 1
@@ -463,7 +463,7 @@ scr_seq_T01R0201_005:
 	End
 
 scr_seq_T01R0201_006:
-	// TODO Diamond ScrCmd_GetTimeOfDay 0x1b6 args [32780]: no HeartGold mapping yet
+	SetVar 0x800C, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _08E9
 	CompareVarToValue 0x800C, 1

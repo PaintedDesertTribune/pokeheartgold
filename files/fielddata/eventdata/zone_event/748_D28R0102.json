@@ -1,0 +1,61 @@
+{
+  "header": "fielddata/script/scr_seq/event_D28R0102.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_D28R0102_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1226",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 53,
+      "z": 46,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 51,
+      "z": 8,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 32,
+      "z": 32,
+      "header": "MAP_SINNOH_VALOR_CAVERN",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 51,
+      "z": 7,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 4,
+      "y": 0
+    },
+    {
+      "x": 52,
+      "z": 10,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 5,
+      "y": 0
+    },
+    {
+      "x": 52,
+      "z": 11,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 6,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

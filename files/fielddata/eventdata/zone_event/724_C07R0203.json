@@ -1,0 +1,124 @@
+{
+  "header": "fielddata/script/scr_seq/event_C07R0203.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_C07R0203_005 + 1",
+      "type": 0,
+      "x": 13,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_C07R0203_0",
+      "spriteId": "SPRITE_SINNOH_WOMAN6",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0203_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 18,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0203_1",
+      "spriteId": "SPRITE_BABYGIRL1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0203_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 10,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0203_2",
+      "spriteId": "SPRITE_MAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0203_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 7,
+      "z": 4,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0203_3",
+      "spriteId": "SPRITE_SHOPW1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0203_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 4,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0203_4",
+      "spriteId": "SPRITE_SHOPM1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0203_004 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 11,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 7,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE_DEPARTMENT_STORE_2F",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE_DEPARTMENT_STORE_4F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 15,
+      "z": 2,
+      "header": "MAP_SINNOH_VEILSTONE_DEPARTMENT_STORE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -16,7 +16,7 @@
 	ScrDefEnd
 
 scr_seq_R206_007:
-	// TODO Diamond ScrCmd_RideBike 0x0c8 args [1]: no HeartGold mapping yet
+	PlayerOnBikeSet 1
 	SetVar VAR_SINNOH_411C, 0
 	End
 

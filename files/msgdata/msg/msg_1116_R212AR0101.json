@@ -1,0 +1,37 @@
+{
+  "key": 8631,
+  "messages": [
+    {
+      "id": "msg_1116_R212AR0101_00000",
+      "en_US": [
+        "Mr. Backlot is the master of this\n",
+        "house. This is his office."
+      ]
+    },
+    {
+      "id": "msg_1116_R212AR0101_00001",
+      "en_US": [
+        "This is the way out to the trophy\n",
+        "garden.\r",
+        "The garden is open for all visitors\n",
+        "to enjoy.\r",
+        "However, please beware--wild Pokémon\n",
+        "may appear in the garden."
+      ]
+    },
+    {
+      "id": "msg_1116_R212AR0101_00002",
+      "en_US": [
+        "I’m so sorry... Everything beyond\n",
+        "this point is secret and off-limits."
+      ]
+    },
+    {
+      "id": "msg_1116_R212AR0101_00003",
+      "en_US": [
+        "I’m so sorry. Everything beyond this\n",
+        "point is strictly off-limits."
+      ]
+    }
+  ]
+}

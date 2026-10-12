@@ -13,7 +13,7 @@ scr_seq_T04R0201_000:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_GetLeadingPartyMonSlot 0x247 args [32780]: no HeartGold mapping yet
+	GetPartyLead 0x800C
 	// TODO Diamond ScrCmd_GetPartyMonNature 0x212 args [32772, 32780]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_GetNatureName 0x17c args [0, 32772]: no HeartGold mapping yet
 	NPCMsg msg_1020_T04R0201_00000

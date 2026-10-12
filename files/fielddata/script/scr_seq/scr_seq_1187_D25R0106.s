@@ -21,7 +21,7 @@ scr_seq_D25R0106_000:
 	NatDexFlagAction 2, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00BF
-	// TODO Diamond ScrCmd_GetTimeOfDay 0x1b6 args [32780]: no HeartGold mapping yet
+	SetVar 0x800C, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed
 	CompareVarToValue 0x800C, 3
 	GoToIf 0, _00BF
 	NPCMsg msg_0940_D25R0106_00001
@@ -34,7 +34,7 @@ scr_seq_D25R0106_000:
 	PlayCry 479, 0
 	WaitCry
 	SetFlag FLAG_SINNOH_2736
-	// TODO Diamond ScrCmd_WildBattle 0x124 args [479, 15]: no HeartGold mapping yet
+	WildBattle 479, 15
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00CA

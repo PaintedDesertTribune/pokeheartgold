@@ -1,0 +1,78 @@
+{
+  "key": 8338,
+  "messages": [
+    {
+      "id": "msg_1075_C07R0301_00000",
+      "en_US": [
+        "Whoa, whoa, whoa! What have we here?\n",
+        "You are so not Team Galactic!\\fAnd you’re a little kid to boot!\r",
+        "Those things we made with the energy\n",
+        "we took from the Valley Windworks\\fare already in Pastoria City.\r",
+        "Huh?\n",
+        "That’s not what this is about?"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00001",
+      "en_US": [
+        "Whoa, whoa, whoa! What have we here?\n",
+        "You are so not Team Galactic!\r",
+        "And you’re a little kid!\n",
+        "Ummm... Are you maybe a visitor?\r",
+        "If you’re a visitor, you can get to\n",
+        "our HQ by taking those stairs.\r",
+        "Huh?\n",
+        "That’s not what this is about?"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00002",
+      "en_US": [
+        "Whoa, whoa, whoa! Hold it there!\n",
+        "Do you have the key?\r",
+        "I don’t know if you do or not, but\n",
+        "a Storage Key is safe with our guard\\fin front of the HQ.\r",
+        "Huh?\n",
+        "That’s not what this is about?"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00003",
+      "en_US": [
+        "Whoa, whoa, whoa!\n",
+        "What’s going on here?\r",
+        "All my fellow Team Galactic members\n",
+        "have disappeared!\r",
+        "But nobody relieved me from guarding\n",
+        "the warehouse, so I’m staying put!\r",
+        "Huh?\n",
+        "That’s not what this is about?"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00004",
+      "en_US": [
+        "The rust-encrusted door is locked.\n",
+        "It appears to take a special key.\n"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00005",
+      "en_US": [
+        "The rust-encrusted door is locked.\n",
+        "It appears to take a special key.\r",
+        "Use the Storage Key?"
+      ]
+    },
+    {
+      "id": "msg_1075_C07R0301_00006",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} inserted and turned the\n",
+        "Storage Key.\r",
+        "The rusty door creaked open!\r",
+        "The Storage Key snapped off inside\n",
+        "the keyhole..."
+      ]
+    }
+  ]
+}

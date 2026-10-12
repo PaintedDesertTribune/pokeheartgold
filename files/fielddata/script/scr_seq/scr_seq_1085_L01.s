@@ -79,7 +79,7 @@ _00F0:
 scr_seq_L01_003:
 	LockAll
 	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [254, 15]: no HeartGold mapping yet
+	SetObjectMovementType 254, 15
 	ApplyMovement 254, mv_L01_01DC
 	WaitMovement
 	BufferRivalsName 0
@@ -108,7 +108,7 @@ _01B6:
 
 _01CE:
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [254, 48]: no HeartGold mapping yet
+	SetObjectMovementType 254, 48
 	ReleaseAll
 	End
 
@@ -123,7 +123,7 @@ scr_seq_L01_004:
 	ApplyMovement 0, mv_L01_0248
 	WaitMovement
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [0, 48]: no HeartGold mapping yet
+	SetObjectMovementType 0, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 1]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_EventStopFollowing 0x06e args []: no HeartGold mapping yet
 	SetVar VAR_SINNOH_4082, 3

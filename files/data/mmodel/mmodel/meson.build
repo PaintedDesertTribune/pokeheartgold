@@ -885,6 +885,15 @@ mmodel_nsbtx = copy_gen.process(files(
     'mmodel_00000893.NSBTX',
     'mmodel_00000894.NSBTX',
     'mmodel_00000895.NSBTX',
+    'mmodel_00000896.NSBTX',
+    'mmodel_00000897.NSBTX',
+    'mmodel_00000898.NSBTX',
+    'mmodel_00000899.NSBTX',
+    'mmodel_00000900.NSBTX',
+    'mmodel_00000901.NSBTX',
+    'mmodel_00000902.NSBTX',
+    'mmodel_00000903.NSBTX',
+    'mmodel_00000904.NSBTX',
     # SINNOH_PORT_END
 ))
 

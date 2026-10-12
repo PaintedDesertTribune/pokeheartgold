@@ -59,7 +59,7 @@ _0093:
 	PlaySE 1158
 	NPCMsg msg_0995_C05R0901_00005
 	WaitSE 1158
-	// TODO Diamond ScrCmd_GiveMon 0x096 args [133, 5, 0, 32780]: no HeartGold mapping yet
+	GiveMon 133, 5, 0, 0, 0, 0x800C
 	SetFlag FLAG_SINNOH_305
 	NPCMsg msg_0995_C05R0901_00006
 	YesNo 0x800C

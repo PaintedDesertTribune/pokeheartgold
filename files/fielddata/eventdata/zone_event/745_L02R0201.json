@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_L02R0201.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_L02R0201_0",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_636",
+      "scriptId": "_EV_scr_seq_L02R0201_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 5,
+      "z": 3,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 6,
+      "z": 8,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

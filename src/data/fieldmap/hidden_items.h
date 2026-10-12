@@ -301,6 +301,63 @@ static const struct HiddenItemData sHiddenItemParam[] = {
     { 45, 1, 0, 0, 294 }, // Diamond R210A
     { 24, 1, 0, 0, 295 }, // Diamond R210A
     { 326, 1, 0, 0, 296 }, // Diamond R210A
+    { 245, 1, 0, 0, 297 }, // Diamond R210B
+    { 222, 1, 0, 0, 298 }, // Diamond R210B
+    { 52, 1, 0, 0, 299 }, // Diamond R215
+    { 376, 1, 0, 0, 300 }, // Diamond R215
+    { 348, 1, 0, 0, 301 }, // Diamond R215
+    { 26, 1, 0, 0, 302 }, // Diamond C07
+    { 51, 1, 0, 0, 303 }, // Diamond C07
+    { 411, 1, 0, 0, 304 }, // Diamond D26R0101
+    { 389, 1, 0, 0, 305 }, // Diamond D26R0102
+    { 52, 1, 0, 0, 306 }, // Diamond D26R0102
+    { 333, 1, 0, 0, 307 }, // Diamond D26R0103
+    { 61, 1, 0, 0, 308 }, // Diamond D26R0103
+    { 28, 1, 0, 0, 309 }, // Diamond D26R0103
+    { 76, 1, 0, 0, 310 }, // Diamond D26R0104
+    { 409, 1, 0, 0, 311 }, // Diamond R214
+    { 339, 1, 0, 0, 312 }, // Diamond R214
+    { 28, 1, 0, 0, 313 }, // Diamond R214
+    { 3, 1, 0, 0, 314 }, // Diamond L02
+    { 397, 1, 0, 0, 315 }, // Diamond L02
+    { 23, 1, 0, 0, 316 }, // Diamond L02
+    { 363, 1, 0, 0, 317 }, // Diamond L02
+    { 22, 1, 0, 0, 318 }, // Diamond R213
+    { 18, 1, 0, 0, 319 }, // Diamond R213
+    { 26, 1, 0, 0, 320 }, // Diamond R213
+    { 24, 1, 0, 0, 321 }, // Diamond R213
+    { 269, 1, 0, 0, 322 }, // Diamond R213
+    { 90, 1, 0, 0, 323 }, // Diamond R213
+    { 23, 1, 0, 0, 324 }, // Diamond R213
+    { 29, 1, 0, 0, 325 }, // Diamond R213
+    { 40, 1, 0, 0, 326 }, // Diamond R213
+    { 440, 1, 0, 0, 327 }, // Diamond R213
+    { 45, 1, 0, 0, 328 }, // Diamond R213
+    { 427, 1, 0, 0, 329 }, // Diamond R213R0601
+    { 79, 1, 0, 0, 330 }, // Diamond C06
+    { 1, 1, 0, 0, 331 }, // Diamond D06R0201
+    { 89, 1, 0, 0, 332 }, // Diamond D06R0201
+    { 1, 1, 0, 0, 333 }, // Diamond D06R0202
+    { 326, 1, 0, 0, 334 }, // Diamond D06R0202
+    { 1, 1, 0, 0, 335 }, // Diamond D06R0203
+    { 50, 1, 0, 0, 336 }, // Diamond D06R0203
+    { 1, 1, 0, 0, 337 }, // Diamond D06R0204
+    { 280, 1, 0, 0, 338 }, // Diamond D06R0204
+    { 1, 1, 0, 0, 339 }, // Diamond D06R0205
+    { 234, 1, 0, 0, 340 }, // Diamond D06R0205
+    { 1, 1, 0, 0, 341 }, // Diamond D06R0206
+    { 327, 1, 0, 0, 342 }, // Diamond D06R0206
+    { 319, 1, 0, 0, 343 }, // Diamond R212A
+    { 366, 1, 0, 0, 344 }, // Diamond R212A
+    { 330, 1, 0, 0, 345 }, // Diamond R212B
+    { 57, 1, 0, 0, 346 }, // Diamond R212B
+    { 4, 1, 0, 0, 347 }, // Diamond R212B
+    { 336, 1, 0, 0, 348 }, // Diamond R212B
+    { 17, 1, 0, 0, 349 }, // Diamond R212B
+    { 351, 1, 0, 0, 350 }, // Diamond R212B
+    { 21, 1, 0, 0, 351 }, // Diamond R212B
+    { 18, 1, 0, 0, 352 }, // Diamond R212B
+    { 237, 1, 0, 0, 353 }, // Diamond R212AR0102
     // SINNOH_PORT_END
 };
 #endif //_IN_FIELDMAP_C

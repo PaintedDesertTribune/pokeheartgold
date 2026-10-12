@@ -22,7 +22,7 @@ scr_seq_C04R0301_000:
 
 _0032:
 	NPCMsg msg_0955_C04R0301_00001
-	// TODO Diamond ScrCmd_WaitButtonAB 0x030 args []: no HeartGold mapping yet
+	WaitButton
 	CloseMsg
 	FadeScreen 6, 1, 0, 0
 	WaitFade
@@ -92,7 +92,7 @@ scr_seq_C04R0301_002:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_GetTimeOfDay 0x1b6 args [32780]: no HeartGold mapping yet
+	SetVar 0x800C, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed
 	CompareVarToValue 0x800C, 4
 	GoToIf 1, _0217
 	GoTo _020C

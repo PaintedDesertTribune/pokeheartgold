@@ -1,0 +1,271 @@
+{
+  "header": "fielddata/script/scr_seq/event_T05.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_T05_009 + 1",
+      "type": 0,
+      "x": 459,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_009 + 1",
+      "type": 0,
+      "x": 460,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_009 + 1",
+      "type": 0,
+      "x": 461,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_010 + 1",
+      "type": 0,
+      "x": 465,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_010 + 1",
+      "type": 0,
+      "x": 466,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_010 + 1",
+      "type": 0,
+      "x": 467,
+      "z": 521,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T05_008 + 1",
+      "type": 1,
+      "x": 466,
+      "z": 537,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 488,
+      "z": 529,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 440,
+      "z": 526,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_T05_0",
+      "spriteId": "SPRITE_OLDMAN1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_T05_005 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 3,
+      "yRange": 0,
+      "x": 469,
+      "z": 518,
+      "y": 458752
+    },
+    {
+      "id": "obj_T05_1",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_T05_007 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 454,
+      "z": 541,
+      "y": 0
+    },
+    {
+      "id": "obj_T05_2",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_461",
+      "scriptId": "_EV_scr_seq_T05_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 463,
+      "z": 522,
+      "y": 458752
+    },
+    {
+      "id": "obj_T05_3",
+      "spriteId": "SPRITE_OLDWOMAN1",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_458",
+      "scriptId": "_EV_scr_seq_T05_001 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 462,
+      "z": 538,
+      "y": 458752
+    },
+    {
+      "id": "obj_T05_4",
+      "spriteId": "SPRITE_SINNOH_GINGABOSS",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_475",
+      "scriptId": "0",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 461,
+      "z": 523,
+      "y": 458752
+    },
+    {
+      "id": "obj_T05_8",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 8,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_T05_006 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 2,
+      "x": 454,
+      "z": 516,
+      "y": 0
+    },
+    {
+      "id": "obj_T05_9",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 476,
+      "z": 542,
+      "y": 0
+    },
+    {
+      "id": "obj_T05_10",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 470,
+      "z": 542,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 463,
+      "z": 515,
+      "header": "MAP_SINNOH_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 450,
+      "z": 515,
+      "header": "MAP_SINNOH_CELESTIC_SHOP",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 473,
+      "z": 515,
+      "header": "MAP_SINNOH_CELESTIC_NORTHEAST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 454,
+      "z": 538,
+      "header": "MAP_SINNOH_CELESTIC_SOUTHWEST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 463,
+      "z": 521,
+      "header": "MAP_SINNOH_CELESTIC_RUINS",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 472,
+      "z": 538,
+      "header": "MAP_SINNOH_CELESTIC_POKECENTER_1F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_T05_002 + 1",
+      "x": 463,
+      "z": 538,
+      "w": 3,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_40F1"
+    }
+  ]
+}

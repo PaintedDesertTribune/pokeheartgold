@@ -49,7 +49,7 @@ _0081:
 	// TODO Diamond ScrCmd_Unk021A 0x21a args [32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _027E
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 16613]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, VAR_SINNOH_40E5
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0262
 	GoTo _00AE

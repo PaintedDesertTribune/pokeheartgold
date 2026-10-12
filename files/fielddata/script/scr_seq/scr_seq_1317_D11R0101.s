@@ -70,25 +70,25 @@ _00CC:
 
 _00E4:
 	SetVar 0x4000, 0
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 25]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 25
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 35]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 35
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 54]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 54
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 417]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 417
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 425]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 425
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 427]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 427
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 440]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 440
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
 	NPCMsg msg_1005_D11R0101_00000
@@ -100,37 +100,37 @@ _00E4:
 
 _0182:
 	SetVar 0x4000, 1
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 25]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 25
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 35]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 35
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 54]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 54
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 417]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 417
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 425]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 425
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 427]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 427
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 440]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 440
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 39]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 39
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 255]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 255
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 300]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 300
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 285]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 285
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _026C
 	NPCMsg msg_1005_D11R0101_00001
@@ -248,7 +248,7 @@ scr_seq_D11R0101_015:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	// TODO Diamond ScrCmd_CheckAmitySquareSteps 0x216 args [32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 200
 	GoToIf 4, _0950
@@ -400,7 +400,7 @@ _0A10:
 	GoTo _0992
 
 _0A37:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00013
 	WaitCry
@@ -410,7 +410,7 @@ _0A37:
 	End
 
 _0A4F:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00014
 	WaitCry
@@ -420,7 +420,7 @@ _0A4F:
 	End
 
 _0A67:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00015
 	WaitCry
@@ -430,7 +430,7 @@ _0A67:
 	End
 
 _0A7F:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00016
 	WaitCry
@@ -440,7 +440,7 @@ _0A7F:
 	End
 
 _0A97:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00017
 	WaitCry
@@ -450,7 +450,7 @@ _0A97:
 	End
 
 _0AAF:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00018
 	WaitCry
@@ -460,7 +460,7 @@ _0AAF:
 	End
 
 _0AC7:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00019
 	WaitCry
@@ -470,7 +470,7 @@ _0AC7:
 	End
 
 _0ADF:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00020
 	WaitCry
@@ -480,7 +480,7 @@ _0ADF:
 	End
 
 _0AF7:
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	PlayCry VAR_SINNOH_409A, 0
 	NPCMsg msg_1005_D11R0101_00021
 	WaitCry
@@ -501,7 +501,7 @@ _0B27:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 16541]: no HeartGold mapping yet
+	BufferPartyMonNick 0, VAR_SINNOH_409D
 	Random 0x800C, 6
 	CompareVarToValue 0x800C, 0
 	CallIf 1, _0B9B

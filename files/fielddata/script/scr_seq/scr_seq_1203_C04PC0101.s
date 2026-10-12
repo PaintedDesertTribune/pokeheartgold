@@ -79,7 +79,7 @@ scr_seq_C04PC0101_005:
 	// Diamond ScrCmd_CheckPoketchApp dropped: Pokétch dropped (decision 16)
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00F0
-	// TODO Diamond ScrCmd_GetLeadingPartyMonSlot 0x247 args [32768]: no HeartGold mapping yet
+	GetPartyLead 0x8000
 	// TODO Diamond ScrCmd_GetPokemonName 0x0d0 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_0948_C04PC0101_00007
 	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32768]: no HeartGold mapping yet

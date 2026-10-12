@@ -1,0 +1,138 @@
+{
+  "header": "fielddata/script/scr_seq/event_D26R0108.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 10,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 11,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 17,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 21,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 22,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 25,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 26,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 29,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D26R0108_002 + 1",
+      "type": 0,
+      "x": 30,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D26R0108_0",
+      "spriteId": "SPRITE_ASSISTANTM",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_597",
+      "scriptId": "_EV_scr_seq_D26R0108_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 8,
+      "z": 13,
+      "y": 0
+    },
+    {
+      "id": "obj_D26R0108_1",
+      "spriteId": "SPRITE_ASSISTANTW",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_597",
+      "scriptId": "_EV_scr_seq_D26R0108_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 3,
+      "x": 36,
+      "z": 10,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 1,
+      "z": 11,
+      "header": "MAP_SINNOH_VEILSTONE_GALACTIC_HEADQUARTERS_4F_1",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 36,
+      "z": 2,
+      "header": "MAP_SINNOH_VEILSTONE_GALACTIC_HEADQUARTERS_4F_BACK",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

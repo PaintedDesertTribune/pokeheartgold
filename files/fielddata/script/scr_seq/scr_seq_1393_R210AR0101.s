@@ -29,12 +29,12 @@ scr_seq_R210AR0101_002:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_ShowMoneyBox 0x072 args [20, 2]: no HeartGold mapping yet
+	ShowMoneyBox 20, 2
 	NPCMsg msg_1043_R210AR0101_00001
 	YesNo 0x800C
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _00B4
-	// TODO Diamond ScrCmd_HasEnoughMoneyImmediate 0x071 args [32780, 585]: no HeartGold mapping yet
+	HasEnoughMoneyImmediate 0x800C, 500
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00A7
 	SetVar 0x8004, 33
@@ -42,12 +42,12 @@ scr_seq_R210AR0101_002:
 	HasSpaceForItem 0x8004, 0x8005, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _009A
-	// TODO Diamond ScrCmd_TakeMoneyImmediate 0x070 args [637]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_UpdateMoneyBox 0x074 args []: no HeartGold mapping yet
+	SubMoneyImmediate 500
+	UpdateMoneyBox
 	NPCMsg msg_1043_R210AR0101_00002
 	CallStd 2016 /* TODO Diamond std script */
 	CloseMsg
-	// TODO Diamond ScrCmd_HideMoneyBox 0x073 args []: no HeartGold mapping yet
+	HideMoneyBox
 	ReleaseAll
 	End
 
@@ -55,7 +55,7 @@ _009A:
 	NPCMsg msg_1043_R210AR0101_00003
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideMoneyBox 0x073 args []: no HeartGold mapping yet
+	HideMoneyBox
 	ReleaseAll
 	End
 
@@ -63,7 +63,7 @@ _00A7:
 	NPCMsg msg_1043_R210AR0101_00004
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideMoneyBox 0x073 args []: no HeartGold mapping yet
+	HideMoneyBox
 	ReleaseAll
 	End
 
@@ -71,7 +71,7 @@ _00B4:
 	NPCMsg msg_1043_R210AR0101_00005
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideMoneyBox 0x073 args []: no HeartGold mapping yet
+	HideMoneyBox
 	ReleaseAll
 	End
 

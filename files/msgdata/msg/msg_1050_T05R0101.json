@@ -1,0 +1,109 @@
+{
+  "key": 8721,
+  "messages": [
+    {
+      "id": "msg_1050_T05R0101_00000",
+      "en_US": [
+        "Where are you from?\r",
+        "...\r",
+        "Hm, Twinleaf Town, you say.\n",
+        "Isn’t that close to Lake Verity?\r",
+        "That lake is said to be home to\n",
+        "MESPRIT, the being of emotion.\r",
+        "It must be looking over you."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00001",
+      "en_US": [
+        "Hm? If you get the Gym Badge from\n",
+        "Hearthome, you can use Surf anytime.\r",
+        "Using Surf, you’ll be able to go to\n",
+        "places that were once out of reach.\r",
+        "You may be in for some surprises\n",
+        "as to where you can go using Surf."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00002",
+      "en_US": [
+        "Celestic Town is the oldest town in\n",
+        "all of Sinnoh.\r",
+        "The town was founded to honor\n",
+        "Pokémon from the distant past.\r",
+        "Or at least that’s the legend..."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00003",
+      "en_US": [
+        "Well, hello!\n",
+        "You look good.\r",
+        "I did some research of my own since\n",
+        "that spot of trouble last time.\r",
+        "Mt. Coronet acting up had me very\n",
+        "concerned, too.\r",
+        "Well, this is what I found in the\n",
+        "shrine.\r",
+        "It’s a book, and it’s quite old.\n",
+        "See for yourself.\r"
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00004",
+      "en_US": [
+        "“PALKIA, the Pokémon that binds the\n",
+        "spatial dimensions,” it is written...\r"
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00005",
+      "en_US": [
+        "“DIALGA, the guardian Pokémon of\n",
+        "time,” it is written...\r"
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00006",
+      "en_US": [
+        "It seems that there were two\n",
+        "Pokémon in ancient Sinnoh.\r",
+        "They respectively stood as symbols\n",
+        "of time and spatial dimensions..."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00007",
+      "en_US": [
+        "My big sister is studying the myths\n",
+        "of Sinnoh.\r",
+        "She wants to know how people and\n",
+        "Pokémon interacted in the days of\\fmyths.\r",
+        "Were things different back then?\n",
+        "Or were they the same as now?\r",
+        "She says that’s the focus of her\n",
+        "research."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00008",
+      "en_US": [
+        "It’s hard to tell for sure, but it’s\n",
+        "probably an invaluable scroll."
+      ]
+    },
+    {
+      "id": "msg_1050_T05R0101_00009",
+      "en_US": [
+        "It’s an old book.\n",
+        "{STRVAR_1 3, 0, 0} began reading it.\r",
+        "“When that Pokémon was born,\n",
+        "intelligence bloomed among us,\\fenriching our lives.\r",
+        "“When that Pokémon was born,\n",
+        "emotions bloomed among us,\\fgiving us joy and sorrow.\r",
+        "“When that Pokémon was born,\n",
+        "willpower bloomed among us,\\fspurring us into action...”"
+      ]
+    }
+  ]
+}

@@ -101,7 +101,7 @@ scr_seq_R208R0101_003:
 	LockAll
 	FacePlayer
 	NPCMsg msg_0975_R208R0101_00007
-	// TODO Diamond ScrCmd_ShowMoneyBox 0x072 args [20, 2]: no HeartGold mapping yet
+	ShowMoneyBox 20, 2
 	MenuInit 1, 1, 0, 1, 0x800C
 	ScrCmd_066 223, 0
 	ScrCmd_066 224, 1
@@ -144,7 +144,7 @@ _017C:
 	CallIf 1, _02A9
 	CompareVarToValue 0x8000, 3
 	CallIf 1, _02B1
-	// TODO Diamond ScrCmd_UpdateMoneyBox 0x074 args []: no HeartGold mapping yet
+	UpdateMoneyBox
 	PlayFanfare 1604
 	GiveItem 0x8001, 1, 0x800C
 	BufferItemName 0, 0x8001
@@ -155,7 +155,7 @@ _017C:
 _0225:
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_HideMoneyBox 0x073 args []: no HeartGold mapping yet
+	HideMoneyBox
 	ReleaseAll
 	End
 
@@ -184,35 +184,35 @@ _0265:
 	GoTo _017C
 
 _0271:
-	// TODO Diamond ScrCmd_HasEnoughMoneyImmediate 0x071 args [32780, 833]: no HeartGold mapping yet
+	HasEnoughMoneyImmediate 0x800C, 200
 	Return
 
 _027B:
-	// TODO Diamond ScrCmd_HasEnoughMoneyImmediate 0x071 args [32780, 843]: no HeartGold mapping yet
+	HasEnoughMoneyImmediate 0x800C, 200
 	Return
 
 _0285:
-	// TODO Diamond ScrCmd_HasEnoughMoneyImmediate 0x071 args [32780, 853]: no HeartGold mapping yet
+	HasEnoughMoneyImmediate 0x800C, 200
 	Return
 
 _028F:
-	// TODO Diamond ScrCmd_HasEnoughMoneyImmediate 0x071 args [32780, 863]: no HeartGold mapping yet
+	HasEnoughMoneyImmediate 0x800C, 200
 	Return
 
 _0299:
-	// TODO Diamond ScrCmd_TakeMoneyImmediate 0x070 args [871]: no HeartGold mapping yet
+	SubMoneyImmediate 200
 	Return
 
 _02A1:
-	// TODO Diamond ScrCmd_TakeMoneyImmediate 0x070 args [879]: no HeartGold mapping yet
+	SubMoneyImmediate 200
 	Return
 
 _02A9:
-	// TODO Diamond ScrCmd_TakeMoneyImmediate 0x070 args [887]: no HeartGold mapping yet
+	SubMoneyImmediate 200
 	Return
 
 _02B1:
-	// TODO Diamond ScrCmd_TakeMoneyImmediate 0x070 args [895]: no HeartGold mapping yet
+	SubMoneyImmediate 200
 	Return
 
 

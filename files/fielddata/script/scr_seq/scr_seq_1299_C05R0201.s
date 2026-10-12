@@ -54,8 +54,8 @@ scr_seq_C05R0201_001:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_GetLeadingPartyMonSlot 0x247 args [32768]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_GetPokemonNickname 0x0d6 args [0, 32768]: no HeartGold mapping yet
+	GetPartyLead 0x8000
+	BufferPartyMonNick 0, 0x8000
 	NPCMsg msg_0996_C05R0201_00003
 	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32768]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 255

@@ -30,7 +30,7 @@ _003F:
 
 scr_seq_D03R0101_000:
 	LockAll
-	// TODO Diamond ScrCmd_RideBike 0x0c8 args [0]: no HeartGold mapping yet
+	PlayerOnBikeSet 0
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8004, 28
 	GoToIf 1, _006E
@@ -64,7 +64,7 @@ _008E:
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 608
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [0, 48]: no HeartGold mapping yet
+	SetObjectMovementType 0, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 1]: no HeartGold mapping yet
 	ReleaseAll
 	End
@@ -82,7 +82,7 @@ _00E0:
 scr_seq_D03R0101_001:
 	LockAll
 	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [0, 15]: no HeartGold mapping yet
+	SetObjectMovementType 0, 15
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 0]: no HeartGold mapping yet
 	ApplyMovement 0, mv_D03R0101_0190
 	WaitMovement

@@ -1,0 +1,41 @@
+{
+  "key": 8459,
+  "messages": [
+    {
+      "id": "msg_1074_D26R0106_00000",
+      "en_US": [
+        "Team Galactic will set free all\n",
+        "Pokémon, all of nature!\r",
+        "Uwahahaha! Team Galactic will then\n",
+        "own it all!"
+      ]
+    },
+    {
+      "id": "msg_1074_D26R0106_00001",
+      "en_US": [
+        "I’ve been with Team Galactic for five\n",
+        "years.\r",
+        "I haven’t gotten a promotion yet..."
+      ]
+    },
+    {
+      "id": "msg_1074_D26R0106_00002",
+      "en_US": [
+        "The door is locked.\n",
+        "A special key is needed."
+      ]
+    },
+    {
+      "id": "msg_1074_D26R0106_00003",
+      "en_US": [
+        "The door is locked.\n",
+        "A special key is needed.\r",
+        "Use the Galactic Key?"
+      ]
+    },
+    {
+      "id": "msg_1074_D26R0106_00004",
+      "en_US": "The door opened."
+    }
+  ]
+}

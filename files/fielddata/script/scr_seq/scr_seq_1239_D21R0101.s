@@ -27,7 +27,7 @@ scr_seq_D21R0101_001:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	// TODO Diamond ScrCmd_RideBike 0x0c8 args [0]: no HeartGold mapping yet
+	PlayerOnBikeSet 0
 	CompareVarToValue VAR_SINNOH_4091, 1
 	GoToIf 4, _009D
 	BufferPlayersName 0
@@ -46,7 +46,7 @@ scr_seq_D21R0101_001:
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 612
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [4, 48]: no HeartGold mapping yet
+	SetObjectMovementType 4, 48
 	ReleaseAll
 	End
 
@@ -92,7 +92,7 @@ scr_seq_D21R0101_002:
 scr_seq_D21R0101_003:
 	LockAll
 	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [4, 16]: no HeartGold mapping yet
+	SetObjectMovementType 4, 16
 	GetPlayerFacing 0x800C
 	CompareVarToValue 0x800C, 2
 	GoToIf 1, _010B

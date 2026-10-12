@@ -184,7 +184,7 @@ _01BB:
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	GetStarterChoice 0x8000
-	// TODO Diamond ScrCmd_GiveMon 0x096 args [32768, 5, 0, 32780]: no HeartGold mapping yet
+	GiveMon 0x8000, 5, 0, 0, 0, 0x800C
 	SetFlag FLAG_SINNOH_142
 	// TODO Diamond ScrCmd_FirstBattle 0x125 args [396, 2]: no HeartGold mapping yet
 	ClearFlag FLAG_SINNOH_142

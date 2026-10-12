@@ -1,0 +1,92 @@
+{
+  "header": "fielddata/script/scr_seq/event_D06R0204.h",
+  "bgs": [
+    {
+      "scriptId": "8337",
+      "type": 0,
+      "x": 69,
+      "z": 80,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "8338",
+      "type": 2,
+      "x": 93,
+      "z": 79,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_D06R0204_001 + 1",
+      "type": 1,
+      "x": 74,
+      "z": 88,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 59,
+      "z": 85,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D06R0204_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1057",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 75,
+      "z": 71,
+      "y": 0
+    },
+    {
+      "id": "obj_D06R0204_1",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1055",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 90,
+      "z": 77,
+      "y": 0
+    },
+    {
+      "id": "obj_D06R0204_3",
+      "spriteId": "SPRITE_BOY3",
+      "movement": 11,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_D06R0204_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 77,
+      "z": 78,
+      "y": 0
+    }
+  ],
+  "warps": [],
+  "coords": []
+}

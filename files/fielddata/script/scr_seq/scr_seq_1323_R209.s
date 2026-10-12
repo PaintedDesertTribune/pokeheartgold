@@ -17,7 +17,7 @@
 	ScrDefEnd
 
 scr_seq_R209_007:
-	// TODO Diamond ScrCmd_GetTimeOfDay 0x1b6 args [16384]: no HeartGold mapping yet
+	SetVar 0x4000, 1   // Diamond ScrCmd_GetTimeOfDay: result fixed
 	CompareVarToValue 0x4000, 0
 	GoToIf 1, _006D
 	CompareVarToValue 0x4000, 1
@@ -100,7 +100,7 @@ _014D:
 	NPCMsg msg_1008_R209_00009
 	WaitCry
 	CloseMsg
-	// TODO Diamond ScrCmd_WildBattle 0x124 args [442, 25]: no HeartGold mapping yet
+	WildBattle 442, 25
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _017F

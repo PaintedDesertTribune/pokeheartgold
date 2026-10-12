@@ -17,7 +17,7 @@ scr_seq_T04R0501_000:
 	GoToIf 0, _00FC
 	CheckFlag FLAG_SINNOH_1
 	CallIf 0, _00F4
-	// TODO Diamond ScrCmd_GetLeadingPartyMonSlot 0x247 args [32772]: no HeartGold mapping yet
+	GetPartyLead 0x8004
 	GetPartyMonSpecies 0x8004, 0x8005
 	// TODO unknown Diamond command cmd_8005 (0x8005); script truncated here
 	End

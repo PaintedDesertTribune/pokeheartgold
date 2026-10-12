@@ -1,0 +1,34 @@
+{
+  "key": 8322,
+  "messages": [
+    {
+      "id": "msg_1103_C06R0201_00000",
+      "en_US": [
+        "I’ve been hiking all around the\n",
+        "Sinnoh region.\r",
+        "I love planting Berries wherever\n",
+        "I go.\r",
+        "I’ll give you a Berry, too.\n",
+        "Please plant it somewhere.\r"
+      ]
+    },
+    {
+      "id": "msg_1103_C06R0201_00001",
+      "en_US": [
+        "Planting Berries is good for\n",
+        "Pokémon.\r",
+        "It provides them with more things\n",
+        "to eat in the wild."
+      ]
+    },
+    {
+      "id": "msg_1103_C06R0201_00002",
+      "en_US": [
+        "My sister gathers Berries every day!\n",
+        "Please come visit again!\r",
+        "We cook the Berries, too!\n",
+        "We mix them up! They’re yummy!"
+      ]
+    }
+  ]
+}

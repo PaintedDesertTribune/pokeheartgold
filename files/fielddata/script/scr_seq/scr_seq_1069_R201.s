@@ -87,7 +87,7 @@ _0117:
 	CloseMsg
 	// TODO Diamond ScrCmd_Unk0164 0x164 args []: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [2, 48]: no HeartGold mapping yet
+	SetObjectMovementType 2, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [2, 1]: no HeartGold mapping yet
 	SetFlag FLAG_SINNOH_400
 	SetVar VAR_SINNOH_4086, 1
@@ -119,7 +119,7 @@ scr_seq_R201_002:
 
 _01F6:
 	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [2, 15]: no HeartGold mapping yet
+	SetObjectMovementType 2, 15
 	ApplyMovement obj_player, mv_R201_0238
 	ApplyMovement 2, mv_R201_0224
 	WaitMovement
@@ -127,7 +127,7 @@ _01F6:
 
 _0216:
 	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_SetEventMovement 0x06d args [2, 48]: no HeartGold mapping yet
+	SetObjectMovementType 2, 48
 	ReleaseAll
 	End
 

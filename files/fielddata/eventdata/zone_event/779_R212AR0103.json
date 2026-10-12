@@ -1,0 +1,112 @@
+{
+  "header": "fielddata/script/scr_seq/event_R212AR0103.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_R212AR0103_005 + 1",
+      "type": 0,
+      "x": 16,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_R212AR0103_006 + 1",
+      "type": 0,
+      "x": 16,
+      "z": 6,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_R212AR0103_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1043",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 21,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_R212AR0103_1",
+      "spriteId": "SPRITE_SINNOH_MIDDLEMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_R212AR0103_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 16,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_R212AR0103_2",
+      "spriteId": "SPRITE_SINNOH_OLDMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_R212AR0103_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 15,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_R212AR0103_3",
+      "spriteId": "SPRITE_POLICEMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_681",
+      "scriptId": "_EV_scr_seq_R212AR0103_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 17,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 16,
+      "z": 10,
+      "header": "MAP_SINNOH_ROUTE_212_POKEMON_MANSION_LOBBY",
+      "anchor": 4,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_R212AR0103_004 + 1",
+      "x": 16,
+      "z": 4,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_4116"
+    }
+  ]
+}

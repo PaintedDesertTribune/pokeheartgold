@@ -1,0 +1,51 @@
+{
+  "key": 8321,
+  "messages": [
+    {
+      "id": "msg_1106_C06R0102_00000",
+      "en_US": [
+        "It’s a pair of binoculars...\n",
+        "Put $100 in it?"
+      ]
+    },
+    {
+      "id": "msg_1106_C06R0102_00001",
+      "en_US": "Not enough money..."
+    },
+    {
+      "id": "msg_1106_C06R0102_00002",
+      "en_US": [
+        "Tell me I’m not imagining this...\r",
+        "The Great Marsh’s Pokémon seem to be\n",
+        "different from the ones yesterday..."
+      ]
+    },
+    {
+      "id": "msg_1106_C06R0102_00003",
+      "en_US": [
+        "Use a pair of binoculars to look out\n",
+        "over the Great Marsh.\r",
+        "You can see what kinds of Pokémon\n",
+        "can be caught, and where they are."
+      ]
+    },
+    {
+      "id": "msg_1106_C06R0102_00004",
+      "en_US": [
+        "There are shuttle trains in the\n",
+        "marsh called Quick Trams.\r",
+        "You should take those if you’re going\n",
+        "to a deeper area in the marsh."
+      ]
+    },
+    {
+      "id": "msg_1106_C06R0102_00005",
+      "en_US": [
+        "When you’re walking on the bog,\n",
+        "you sometimes sink right in...\r",
+        "I get so flustered trying to get out,\n",
+        "I have no luck catching anything."
+      ]
+    }
+  ]
+}

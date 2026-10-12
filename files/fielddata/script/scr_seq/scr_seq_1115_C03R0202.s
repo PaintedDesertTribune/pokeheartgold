@@ -36,7 +36,7 @@ scr_seq_C03R0202_002:
 	FacePlayer
 	CheckFlag FLAG_SINNOH_193
 	GoToIf 1, _00A1
-	// TODO Diamond ScrCmd_CheckPartyForSpecies 0x1c0 args [32780, 41]: no HeartGold mapping yet
+	PlayerHasSpecies 0x800C, 41
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0096
 	NPCMsg msg_0904_C03R0202_00003

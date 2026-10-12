@@ -1,0 +1,67 @@
+{
+  "header": "fielddata/script/scr_seq/event_C07R0601.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C07R0601_0",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0601_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0601_1",
+      "spriteId": "SPRITE_SINNOH_OLDWOMAN2",
+      "movement": 9,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0601_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 6,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0601_2",
+      "spriteId": "SPRITE_SINNOH_MIMITUTO",
+      "movement": 9,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0601_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE",
+      "anchor": 8,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

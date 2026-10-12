@@ -560,6 +560,22 @@
     {
       "id": "msg_0730_00139",
       "en_US": "Belle & Pa"
+    },
+    {
+      "id": "msg_0730_00140",
+      "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00141",
+      "en_US": "Galactic Boss"
+    },
+    {
+      "id": "msg_0730_00142",
+      "en_US": "Commander"
+    },
+    {
+      "id": "msg_0730_00143",
+      "en_US": "Leader"
     }
   ]
 }

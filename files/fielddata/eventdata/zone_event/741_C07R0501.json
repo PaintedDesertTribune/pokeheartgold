@@ -1,0 +1,50 @@
+{
+  "header": "fielddata/script/scr_seq/event_C07R0501.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C07R0501_0",
+      "spriteId": "SPRITE_CLOWN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0501_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 6,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_C07R0501_1",
+      "spriteId": "SPRITE_FIGHTER",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C07R0501_001 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 3,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE",
+      "anchor": 7,
+      "y": 0
+    }
+  ],
+  "coords": []
+}
