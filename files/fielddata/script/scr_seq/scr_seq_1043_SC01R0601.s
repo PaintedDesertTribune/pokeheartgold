@@ -139,7 +139,7 @@ _01DA:
 	End
 
 _01E5:
-	CallStd 2006 /* TODO Diamond std script */
+	// Diamond std call dropped: GTS save prompt (Global Terminal dropped)
 	CopyVar 0x800C, 0x4000
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _02C2
@@ -216,7 +216,7 @@ _0310:
 	End
 
 _0340:
-	CallStd 9016 /* TODO Diamond std script */
+	// Diamond std call dropped: GTS counter line (Global Terminal dropped)
 	WaitButton
 	CloseMsg
 	ReleaseAll

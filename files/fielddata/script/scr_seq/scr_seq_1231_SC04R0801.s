@@ -210,13 +210,13 @@ _0237:
 	NPCMsg msg_0962_SC04R0801_00010
 	SetVar 0x8004, 1
 	SetVar 0x8005, 1
-	CallStd 2014 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground sphere gift (Underground not in HeartGold)
 	SetVar 0x8004, 3
 	SetVar 0x8005, 1
-	CallStd 2014 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground sphere gift (Underground not in HeartGold)
 	SetVar 0x8004, 4
 	SetVar 0x8005, 1
-	CallStd 2014 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground sphere gift (Underground not in HeartGold)
 	NPCMsg msg_0962_SC04R0801_00011
 	WaitButton
 	CloseMsg
@@ -250,16 +250,16 @@ _02D3:
 	NPCMsg msg_0962_SC04R0801_00018
 	SetVar 0x8004, 11
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	SetVar 0x8004, 9
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	SetVar 0x8004, 17
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	SetVar 0x8004, 113
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	NPCMsg msg_0962_SC04R0801_00019
 	WaitButton
 	CloseMsg
@@ -293,19 +293,19 @@ _0379:
 _039D:
 	SetVar 0x8004, 101
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	Return
 
 _03AF:
 	SetVar 0x8004, 102
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	Return
 
 _03C1:
 	SetVar 0x8004, 103
 	SetVar 0x8005, 1
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	Return
 
 _03D3:
@@ -322,7 +322,7 @@ _03D3:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0565
-	CallStd 2046 /* TODO Diamond std script */
+	// Diamond std call dropped: Secret base decoration gift (Underground not in HeartGold)
 	SetVar VAR_SINNOH_40B6, 6
 	ClearFlag FLAG_SINNOH_273
 	ClearFlag FLAG_SINNOH_252

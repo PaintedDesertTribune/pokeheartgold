@@ -51,7 +51,7 @@ scr_seq_SC07R0801_000:
 	GoToIf 1, _00F6
 	NPCMsg msg_1076_SC07R0801_00007
 	SetVar 0x8005, 1
-	CallStd 2047 /* TODO Diamond std script */
+	// Diamond std call dropped: Contest accessory gift (dress-up dropped, decision 16)
 	GoTo _00F6
 
 _00D5:

@@ -543,6 +543,7 @@ TRANSLATE = {
     "ScrCmd_ClearFlagVar": ("ClearFlagVar", "F"),
 }
 DP_STD = {2000: "std_signpost", 2019: "std_mart_intro",   # 2019 = "Welcome! What do you need?"
+          9950: "std_in_person_evaluate_dex", 9952: "std_in_person_evaluate_dex",   # Rowan and Oak evaluate the Pokédex in person
           2040: "std_sinnoh_partner_theme", 2048: "std_sinnoh_rival_theme", 2041: "std_sinnoh_default_bgm", 2043: "std_sinnoh_default_bgm", 2049: "std_sinnoh_default_bgm", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose",
           # Diamond's field-move objects (bank 375 holds its 10000-10015 field-move prompts): HeartGold has the same three
           10000: "std_field_cut", 10001: "std_field_rock_smash", 10002: "std_field_strength",
@@ -556,16 +557,24 @@ DP_STD = {2000: "std_signpost", 2019: "std_mart_intro",   # 2019 = "Welcome! Wha
 # Diamond level-script std calls dropped on purpose (HeartGold handles the job itself or the feature is dropped)
 DP_LEVEL_STD_DROPPED = {9000: "Pokémon Center 2F partner walk (HeartGold's Center does its own)", 9012: "Pokémon Center 2F partner walk",
                         9013: "Pokémon Center 2F partner walk", 9014: "Pokémon Center 2F partner walk", 9015: "Pokémon Center 2F partner walk",
-                        10200: "Poké Mart Pokétch-app check (Pokétch dropped, decision 16)"}
+                        10200: "Poké Mart Pokétch-app check (Pokétch dropped, decision 16)",
+                        8800: "Great Marsh entrance (Diamond's Safari-style game is not ported; the marsh is plain terrain)"}
 DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokétch dropped, decision 16)",
+               2006: "GTS save prompt (Global Terminal dropped)", 2014: "Underground sphere gift (Underground not in HeartGold)",
+               2046: "Secret base decoration gift (Underground not in HeartGold)", 2047: "Contest accessory gift (dress-up dropped, decision 16)",
+               9016: "GTS counter line (Global Terminal dropped)",
                2012: "Underground decoration gift (Underground not in HeartGold)", 2013: "Underground trap gift (Underground not in HeartGold)",
                2015: "Contest accessory gift (dress-up dropped, decision 16)", 2036: "Contest accessory gift (dress-up dropped, decision 16)",
                2045: "Contest backdrop gift (dress-up dropped, decision 16)"}
 # Diamond std scripts whose objects can stay mute without a note: 2027 is the cave vent hole's one-line message.
-DP_STD_SILENT = {2027, 2037}   # 2037 is an empty script (used on scenery objects)
+DP_STD_SILENT = {2027, 2037, 8803, 8804, 8805, 8806, 8807, 8808}   # 8803+: Great Marsh observatory binoculars (not ported)   # 2037 is an empty script (used on scenery objects)
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_InitSunyshoreGym": "Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet",
+    "ScrCmd_RotateSunyshoreGymGear": "Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)",
+    "ScrCmd_InitPastoriaGym": "Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet",
+    "ScrCmd_CheckPastoriaGymButton": "Pastoria Gym water buttons not ported yet (gym stays walkable)",
     "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
     "ScrCmd_Unk0250": "Diamond new-game save-field init; HeartGold does its own",
     "ScrCmd_InitPokemonRecordSize": "Diamond new-game record init; HeartGold does its own",
@@ -1765,7 +1774,6 @@ def main():
     plain = [hg for _, (hg, _) in newcls if music_param(hg) is None]
     if plain:
         todo.append("trainer classes: " + ", ".join(plain) + " use the default encounter jingle and battle music; every class's intro animation is blank")
-    todo.append("new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated")
     todo += [f"level scripts calling Diamond std {k} are dropped: {v}" for k, v in sorted(DP_LEVEL_STD_DROPPED.items())]
     # --- Diamond's four in-game trades: records are HeartGold's NPCTrade minus its trailing word; names go into msg_0200
     # (17 nicknames then 17 OT names once appended) and NpcTradeNum gains four entries before NPC_TRADE_MAX.

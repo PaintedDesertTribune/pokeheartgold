@@ -48,14 +48,11 @@ MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0162: Diamond partner-trainer clea
 MAP_ETERNA_FOREST_INTERIOR: object 0 uses Diamond std script 9702; no script for now
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_KeepEvent
 MAP_ETERNA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_ETERNA_OAK_HOUSE: std script 9952
 MAP_ETERNA_POKECENTER_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ETERNA_POKECENTER_1F: warp 2 to Diamond map MAP_ETERNA_POKECENTER_B1F not imported; points at itself
 MAP_ETERNA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_ETERNA_ROUTE_206_GATEHOUSE: unmapped command ScrCmd_CountNationalDexSeen
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_ETERNA_UNDERGROUND_MAN_HOUSE: std script 2014
-MAP_ETERNA_UNDERGROUND_MAN_HOUSE: std script 2046
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: unmapped command ScrCmd_HasSpaceForDecoration
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: unmapped command ScrCmd_Unk024A
 MAP_FIGHT_AREA: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -84,17 +81,11 @@ MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_CreateRoamer
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_ShowPokemonPic
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk0209
 MAP_GREAT_MARSH_AREA_1: BG event 0 uses Diamond std script 8803; no script for now
-MAP_GREAT_MARSH_AREA_1: level script uses Diamond std script 8800; dropped
 MAP_GREAT_MARSH_AREA_2: BG event 0 uses Diamond std script 8804; no script for now
-MAP_GREAT_MARSH_AREA_2: level script uses Diamond std script 8800; dropped
 MAP_GREAT_MARSH_AREA_3: BG event 0 uses Diamond std script 8805; no script for now
-MAP_GREAT_MARSH_AREA_3: level script uses Diamond std script 8800; dropped
 MAP_GREAT_MARSH_AREA_4: BG event 0 uses Diamond std script 8806; no script for now
-MAP_GREAT_MARSH_AREA_4: level script uses Diamond std script 8800; dropped
 MAP_GREAT_MARSH_AREA_5: BG event 0 uses Diamond std script 8807; no script for now
-MAP_GREAT_MARSH_AREA_5: level script uses Diamond std script 8800; dropped
 MAP_GREAT_MARSH_AREA_6: BG event 0 uses Diamond std script 8808; no script for now
-MAP_GREAT_MARSH_AREA_6: level script uses Diamond std script 8800; dropped
 MAP_HEARTHOME: unmapped command ScrCmd_GiveEgg
 MAP_HEARTHOME: unmapped command ScrCmd_HasSpaceForDecoration
 MAP_HEARTHOME: unmapped command ScrCmd_Unk0286
@@ -151,8 +142,6 @@ MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_OpenDoorAnimation: scripted doo
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_JUBLIFE_GLOBAL_TRADE_STATION: std script 2006
-MAP_JUBLIFE_GLOBAL_TRADE_STATION: std script 9016
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B2
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk00B3
 MAP_JUBLIFE_GLOBAL_TRADE_STATION: unmapped command ScrCmd_Unk02B2
@@ -244,9 +233,9 @@ MAP_PASTORIA: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 
 MAP_PASTORIA: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_1F: unmapped command ScrCmd_EnableDisableSafariZone
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_2F: unmapped command ScrCmd_UseGreatMarshBinoculars
+MAP_PASTORIA_GYM: dropped ScrCmd_CheckPastoriaGymButton: Pastoria Gym water buttons not ported yet (gym stays walkable)
+MAP_PASTORIA_GYM: dropped ScrCmd_InitPastoriaGym: Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet
 MAP_PASTORIA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_PASTORIA_GYM: unmapped command ScrCmd_CheckPastoriaGymButton
-MAP_PASTORIA_GYM: unmapped command ScrCmd_InitPastoriaGym
 MAP_PASTORIA_MOVE_TUTOR_HOUSE: unmapped command ScrCmd_GetItemNameWithIndefArticle
 MAP_PASTORIA_MOVE_TUTOR_HOUSE: unmapped command ScrCmd_Unk021F
 MAP_PASTORIA_MOVE_TUTOR_HOUSE: unmapped command ScrCmd_Unk0221
@@ -468,7 +457,6 @@ MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetSwarmInfo
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_Unk021B
 MAP_SANDGEM_ROWANS_LAB: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_SANDGEM_ROWANS_LAB: object 3 uses Diamond std script 10300; no script for now
-MAP_SANDGEM_ROWANS_LAB: std script 9950
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CheckSinnohDexComplete
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CountSinnohDexSeen
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_GetRivalStarterName
@@ -525,13 +513,13 @@ MAP_STARK_MOUNTAIN_INTERIOR_3: unmapped command ScrCmd_Unk00ED
 MAP_SUNYSHORE: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE: warp 7 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_1 not imported; points at itself
 MAP_SUNYSHORE: warp 8 to Diamond map MAP_SUNYSHORE_UNUSED_HOUSE_2 not imported; points at itself
-MAP_SUNYSHORE_GYM_ROOM_1: unmapped command ScrCmd_InitSunyshoreGym
-MAP_SUNYSHORE_GYM_ROOM_1: unmapped command ScrCmd_RotateSunyshoreGymGear
-MAP_SUNYSHORE_GYM_ROOM_2: unmapped command ScrCmd_InitSunyshoreGym
-MAP_SUNYSHORE_GYM_ROOM_2: unmapped command ScrCmd_RotateSunyshoreGymGear
+MAP_SUNYSHORE_GYM_ROOM_1: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
+MAP_SUNYSHORE_GYM_ROOM_1: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
+MAP_SUNYSHORE_GYM_ROOM_2: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
+MAP_SUNYSHORE_GYM_ROOM_2: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
+MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_InitSunyshoreGym: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
+MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_RotateSunyshoreGymGear: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
 MAP_SUNYSHORE_GYM_ROOM_3: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_SUNYSHORE_GYM_ROOM_3: unmapped command ScrCmd_InitSunyshoreGym
-MAP_SUNYSHORE_GYM_ROOM_3: unmapped command ScrCmd_RotateSunyshoreGymGear
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_GetRibbonName
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0243
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0245
@@ -634,7 +622,6 @@ MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Nop
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_SlotMachine
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Unk0275
 MAP_VEILSTONE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: std script 2047
 MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: unmapped command ScrCmd_AddPartyMonFriendship
 MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: unmapped command ScrCmd_Unk026C
 MAP_VEILSTONE_POKECENTER_1F: warp 2 to Diamond map MAP_VEILSTONE_POKECENTER_B1F not imported; points at itself
@@ -663,11 +650,11 @@ MAP_VICTORY_ROAD_1F_BACK_2: object 28 uses Diamond std script 9705; no script fo
 MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
 MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 level scripts calling Diamond std 10200 are dropped: Poké Mart Pokétch-app check (Pokétch dropped, decision 16)
+level scripts calling Diamond std 8800 are dropped: Great Marsh entrance (Diamond's Safari-style game is not ported; the marsh is plain terrain)
 level scripts calling Diamond std 9000 are dropped: Pokémon Center 2F partner walk (HeartGold's Center does its own)
 level scripts calling Diamond std 9012 are dropped: Pokémon Center 2F partner walk
 level scripts calling Diamond std 9013 are dropped: Pokémon Center 2F partner walk
 level scripts calling Diamond std 9014 are dropped: Pokémon Center 2F partner walk
 level scripts calling Diamond std 9015 are dropped: Pokémon Center 2F partner walk
-new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated
 sprites: sprite 118 (None) has no HeartGold match and is not a billboard; placeholder
 trainer classes: TRAINERCLASS_SINNOH_INTERVIEWERS, TRAINERCLASS_SINNOH_POKEFAN_F, TRAINERCLASS_SINNOH_BELLE__PA, TRAINERCLASS_SINNOH_ACE_TRAINER_SNOW_M, TRAINERCLASS_SINNOH_ACE_TRAINER_SNOW_F, TRAINERCLASS_SINNOH_SKIER_M, TRAINERCLASS_SINNOH_SKIER_F use the default encounter jingle and battle music; every class's intro animation is blank

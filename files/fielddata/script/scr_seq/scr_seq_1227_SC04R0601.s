@@ -34,7 +34,7 @@ scr_seq_SC04R0601_000:
 	End
 
 _0062:
-	CallStd 9952 /* TODO Diamond std script */
+	CallStd std_in_person_evaluate_dex
 	End
 
 _0068:

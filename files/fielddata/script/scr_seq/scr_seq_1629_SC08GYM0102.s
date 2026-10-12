@@ -13,15 +13,15 @@
 
 scr_seq_SC08GYM0102_000:
 	SetVar 0x4000, 0
-	// TODO Diamond ScrCmd_InitSunyshoreGym 0x175 args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_InitSunyshoreGym dropped: Sunyshore Gym gears: the gear rooms are walkable without them (collision only closes with the gear hook); gear models and rotation menu not ported yet
 	End
 
 scr_seq_SC08GYM0102_001:
-	// TODO Diamond ScrCmd_RotateSunyshoreGymGear 0x176 args [0]: no HeartGold mapping yet
+	// Diamond ScrCmd_RotateSunyshoreGymGear dropped: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
 	End
 
 scr_seq_SC08GYM0102_002:
-	// TODO Diamond ScrCmd_RotateSunyshoreGymGear 0x176 args [1]: no HeartGold mapping yet
+	// Diamond ScrCmd_RotateSunyshoreGymGear dropped: Sunyshore Gym gear rotation menu not ported yet (gyms stays walkable)
 	End
 
 scr_seq_SC08GYM0102_003:
