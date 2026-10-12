@@ -18,29 +18,19 @@ MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_CANALAVE_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_CANALAVE_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_CANALAVE_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_CANALAVE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_CANALAVE_POKEMART: SpecialMartBuy 16: Diamond mart id used against HeartGold's mart tables
 MAP_CANALAVE_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_CANALAVE_POKEMART: object 3 uses Diamond std script 10201; no script for now
 MAP_CANALAVE_POKEMART: std script 2019
 MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2017
 MAP_CANALAVE_WEST_HOUSE: object 0 uses Diamond std script 10159; no script for now
 MAP_CANALAVE_WEST_HOUSE: unmapped command ScrCmd_Unk0238
 MAP_ETERNA: item ball std 7039 contents unknown, variadic placeholder
 MAP_ETERNA: item ball std 7041 contents unknown, variadic placeholder
-MAP_ETERNA: object 13 uses Diamond std script 65535; no script for now
-MAP_ETERNA: object 14 uses Diamond std script 10000; no script for now
-MAP_ETERNA: object 15 uses Diamond std script 10000; no script for now
-MAP_ETERNA: object 16 uses Diamond std script 10000; no script for now
-MAP_ETERNA: object 17 uses Diamond std script 10000; no script for now
 MAP_ETERNA: object 18 uses Diamond std script 2027; no script for now
 MAP_ETERNA: object 19 uses Diamond std script 2027; no script for now
 MAP_ETERNA: object 20 uses Diamond std script 2027; no script for now
-MAP_ETERNA: object 25 uses Diamond std script 65535; no script for now
 MAP_ETERNA: object 29 uses Diamond std script 2027; no script for now
 MAP_ETERNA: unmapped command ScrCmd_GetGameVersion
 MAP_ETERNA_BIKE_SHOP: unmapped command ScrCmd_SetSpawn
@@ -64,10 +54,6 @@ MAP_ETERNA_FOREST_EXTERIOR: object 0 uses Diamond std script 2800; no script for
 MAP_ETERNA_FOREST_EXTERIOR: object 1 uses Diamond std script 2800; no script for now
 MAP_ETERNA_FOREST_EXTERIOR: object 2 uses Diamond std script 2800; no script for now
 MAP_ETERNA_FOREST_EXTERIOR: object 3 uses Diamond std script 2800; no script for now
-MAP_ETERNA_FOREST_EXTERIOR: object 4 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_EXTERIOR: object 5 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_EXTERIOR: object 6 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_EXTERIOR: object 7 uses Diamond std script 10000; no script for now
 MAP_ETERNA_FOREST_EXTERIOR: std script 2015
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7029 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7030 contents unknown, variadic placeholder
@@ -76,11 +62,6 @@ MAP_ETERNA_FOREST_INTERIOR: item ball std 7032 contents unknown, variadic placeh
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7033 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7034 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: object 0 uses Diamond std script 9702; no script for now
-MAP_ETERNA_FOREST_INTERIOR: object 19 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_INTERIOR: object 20 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_INTERIOR: object 21 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_INTERIOR: object 22 uses Diamond std script 10000; no script for now
-MAP_ETERNA_FOREST_INTERIOR: object 23 uses Diamond std script 10000; no script for now
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_KeepEvent
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_RideBike
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_SetEventMovement
@@ -102,14 +83,10 @@ MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_ETERNA_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_ETERNA_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_ETERNA_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_ETERNA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_ETERNA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_ETERNA_POKEMART: SpecialMartBuy 3: Diamond mart id used against HeartGold's mart tables
 MAP_ETERNA_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_ETERNA_POKEMART: object 4 uses Diamond std script 10201; no script for now
 MAP_ETERNA_POKEMART: std script 2019
 MAP_ETERNA_ROUTE_206_GATEHOUSE: std script 2016
 MAP_ETERNA_ROUTE_206_GATEHOUSE: std script 2017
@@ -145,14 +122,10 @@ MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_FLOAROMA_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_FLOAROMA_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_FLOAROMA_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_FLOAROMA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_FLOAROMA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_FLOAROMA_POKEMART: SpecialMartBuy 2: Diamond mart id used against HeartGold's mart tables
 MAP_FLOAROMA_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_FLOAROMA_POKEMART: object 4 uses Diamond std script 10201; no script for now
 MAP_FLOAROMA_POKEMART: std script 2019
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 0 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 1 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -171,8 +144,6 @@ MAP_FUEGO_IRONWORKS_INTERIOR: std script 2017
 MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
 MAP_JUBLIFE: dropped ScrCmd_SetEventPosition: object teleport (5 args) needs a HeartGold equivalent
 MAP_JUBLIFE: dropped ScrCmd_UnlockPoketchApp: Pokétch dropped (decision 16)
-MAP_JUBLIFE: object 20 uses Diamond std script 65535; no script for now
-MAP_JUBLIFE: object 21 uses Diamond std script 65535; no script for now
 MAP_JUBLIFE: object 22 uses Diamond std script 9300; no script for now
 MAP_JUBLIFE: std script 2016
 MAP_JUBLIFE: std script 2040
@@ -211,14 +182,10 @@ MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_JUBLIFE_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_JUBLIFE_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_JUBLIFE_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_JUBLIFE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_JUBLIFE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_JUBLIFE_POKEMART: SpecialMartBuy 0: Diamond mart id used against HeartGold's mart tables
 MAP_JUBLIFE_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_JUBLIFE_POKEMART: object 4 uses Diamond std script 10201; no script for now
 MAP_JUBLIFE_POKEMART: std script 2019
 MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_JUBLIFE_POKETCH_COMPANY_1F: object 1 uses Diamond std script 10155; no script for now
@@ -286,36 +253,16 @@ MAP_OREBURGH: std script 2043
 MAP_OREBURGH: std script 2048
 MAP_OREBURGH: std script 2049
 MAP_OREBURGH_EAST_HOUSE_2F: std script 2017
-MAP_OREBURGH_GATE_1F: object 2 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 3 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 4 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 5 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 6 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 7 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 8 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_1F: object 9 uses Diamond std script 10001; no script for now
 MAP_OREBURGH_GATE_B1F: item ball std 7005 contents unknown, variadic placeholder
 MAP_OREBURGH_GATE_B1F: item ball std 7006 contents unknown, variadic placeholder
 MAP_OREBURGH_GATE_B1F: item ball std 7007 contents unknown, variadic placeholder
 MAP_OREBURGH_GATE_B1F: item ball std 7008 contents unknown, variadic placeholder
 MAP_OREBURGH_GATE_B1F: item ball std 7009 contents unknown, variadic placeholder
-MAP_OREBURGH_GATE_B1F: object 1 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 10 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 2 uses Diamond std script 10002; no script for now
-MAP_OREBURGH_GATE_B1F: object 3 uses Diamond std script 10002; no script for now
-MAP_OREBURGH_GATE_B1F: object 4 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 5 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 6 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 7 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 8 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_GATE_B1F: object 9 uses Diamond std script 10001; no script for now
 MAP_OREBURGH_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_OREBURGH_GYM: std script 2017
 MAP_OREBURGH_MINE_B1F: item ball std 7011 contents unknown, variadic placeholder
 MAP_OREBURGH_MINE_B2F: item ball std 7012 contents unknown, variadic placeholder
 MAP_OREBURGH_MINE_B2F: item ball std 7013 contents unknown, variadic placeholder
-MAP_OREBURGH_MINE_B2F: object 1 uses Diamond std script 10001; no script for now
-MAP_OREBURGH_MINE_B2F: object 2 uses Diamond std script 10001; no script for now
 MAP_OREBURGH_MINE_B2F: unmapped command ScrCmd_Unk029E
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
@@ -349,49 +296,16 @@ MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_OREBURGH_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_OREBURGH_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_OREBURGH_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_OREBURGH_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_OREBURGH_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_OREBURGH_POKEMART: SpecialMartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_OREBURGH_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_OREBURGH_POKEMART: object 4 uses Diamond std script 10201; no script for now
 MAP_OREBURGH_POKEMART: std script 2019
 MAP_RAVAGED_PATH: item ball std 7017 contents unknown, variadic placeholder
 MAP_RAVAGED_PATH: item ball std 7018 contents unknown, variadic placeholder
 MAP_RAVAGED_PATH: item ball std 7019 contents unknown, variadic placeholder
 MAP_RAVAGED_PATH: item ball std 7020 contents unknown, variadic placeholder
-MAP_RAVAGED_PATH: object 0 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 1 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 10 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 11 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 12 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 13 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 14 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 15 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 16 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 17 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 18 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 19 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 2 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 20 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 21 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 22 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 23 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 24 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 25 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 26 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 3 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 4 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 5 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 6 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 7 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 8 uses Diamond std script 10001; no script for now
-MAP_RAVAGED_PATH: object 9 uses Diamond std script 10001; no script for now
 MAP_ROUTE_201: object 2 uses Diamond std script 9700; no script for now
-MAP_ROUTE_201: object 7 uses Diamond std script 65535; no script for now
-MAP_ROUTE_201: object 8 uses Diamond std script 65535; no script for now
 MAP_ROUTE_201: std script 2016
 MAP_ROUTE_201: std script 2017
 MAP_ROUTE_201: unmapped command ScrCmd_GetPlayerStarterName
@@ -406,11 +320,8 @@ MAP_ROUTE_202: std script 2040
 MAP_ROUTE_202: unmapped command ScrCmd_CatchTutorial
 MAP_ROUTE_203: item ball std 7003 contents unknown, variadic placeholder
 MAP_ROUTE_203: item ball std 7004 contents unknown, variadic placeholder
-MAP_ROUTE_203: object 13 uses Diamond std script 65535; no script for now
-MAP_ROUTE_203: object 14 uses Diamond std script 65535; no script for now
 MAP_ROUTE_204_NORTH: item ball std 7021 contents unknown, variadic placeholder
 MAP_ROUTE_204_NORTH: item ball std 7022 contents unknown, variadic placeholder
-MAP_ROUTE_204_NORTH: object 8 uses Diamond std script 10000; no script for now
 MAP_ROUTE_204_NORTH: std script 2017
 MAP_ROUTE_204_SOUTH: item ball std 7014 contents unknown, variadic placeholder
 MAP_ROUTE_204_SOUTH: item ball std 7015 contents unknown, variadic placeholder
@@ -421,7 +332,6 @@ MAP_ROUTE_205_NORTH: berry plot object 8 skipped; Diamond's soft-soil berry syst
 MAP_ROUTE_205_NORTH: berry plot object 9 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_205_NORTH: item ball std 7038 contents unknown, variadic placeholder
 MAP_ROUTE_205_NORTH: object 10 uses Diamond std script 2800; no script for now
-MAP_ROUTE_205_NORTH: object 11 uses Diamond std script 65535; no script for now
 MAP_ROUTE_205_NORTH: object 7 uses Diamond std script 2800; no script for now
 MAP_ROUTE_205_NORTH: object 8 uses Diamond std script 2800; no script for now
 MAP_ROUTE_205_NORTH: object 9 uses Diamond std script 2800; no script for now
@@ -437,7 +347,6 @@ MAP_ROUTE_205_SOUTH: object 14 uses Diamond std script 2800; no script for now
 MAP_ROUTE_205_SOUTH: object 15 uses Diamond std script 2800; no script for now
 MAP_ROUTE_205_SOUTH: object 16 uses Diamond std script 2800; no script for now
 MAP_ROUTE_205_SOUTH: object 17 uses Diamond std script 2800; no script for now
-MAP_ROUTE_205_SOUTH: object 19 uses Diamond std script 65535; no script for now
 MAP_ROUTE_205_SOUTH: object 22 uses Diamond std script 2027; no script for now
 MAP_ROUTE_205_SOUTH: object 23 uses Diamond std script 2027; no script for now
 MAP_ROUTE_205_SOUTH: object 24 uses Diamond std script 2027; no script for now
@@ -453,14 +362,10 @@ MAP_ROUTE_206: item ball std 7045 contents unknown, variadic placeholder
 MAP_ROUTE_206: item ball std 7046 contents unknown, variadic placeholder
 MAP_ROUTE_206: item ball std 7047 contents unknown, variadic placeholder
 MAP_ROUTE_206: item ball std 7048 contents unknown, variadic placeholder
-MAP_ROUTE_206: object 10 uses Diamond std script 10000; no script for now
-MAP_ROUTE_206: object 11 uses Diamond std script 10000; no script for now
-MAP_ROUTE_206: object 12 uses Diamond std script 10000; no script for now
 MAP_ROUTE_206: object 15 uses Diamond std script 2800; no script for now
 MAP_ROUTE_206: object 16 uses Diamond std script 2800; no script for now
 MAP_ROUTE_206: object 17 uses Diamond std script 2800; no script for now
 MAP_ROUTE_206: object 18 uses Diamond std script 2800; no script for now
-MAP_ROUTE_206: object 19 uses Diamond std script 65535; no script for now
 MAP_ROUTE_206: unmapped command ScrCmd_CyclingRoad
 MAP_ROUTE_206: unmapped command ScrCmd_GetPreviousMapID
 MAP_ROUTE_206: unmapped command ScrCmd_RideBike
@@ -478,8 +383,6 @@ MAP_ROUTE_207: object 12 uses Diamond std script 2800; no script for now
 MAP_ROUTE_207: object 13 uses Diamond std script 2800; no script for now
 MAP_ROUTE_207: object 14 uses Diamond std script 2800; no script for now
 MAP_ROUTE_207: object 15 uses Diamond std script 2800; no script for now
-MAP_ROUTE_207: object 16 uses Diamond std script 65535; no script for now
-MAP_ROUTE_207: object 17 uses Diamond std script 65535; no script for now
 MAP_ROUTE_207: object 19 uses Diamond std script 2027; no script for now
 MAP_ROUTE_207: object 20 uses Diamond std script 2027; no script for now
 MAP_ROUTE_207: object 21 uses Diamond std script 2027; no script for now
@@ -504,19 +407,9 @@ MAP_ROUTE_211_EAST: object 13 uses Diamond std script 2800; no script for now
 MAP_ROUTE_211_EAST: object 14 uses Diamond std script 2800; no script for now
 MAP_ROUTE_211_EAST: object 15 uses Diamond std script 2800; no script for now
 MAP_ROUTE_211_EAST: object 16 uses Diamond std script 2800; no script for now
-MAP_ROUTE_211_EAST: object 18 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 3 uses Diamond std script 10000; no script for now
-MAP_ROUTE_211_EAST: object 4 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 5 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 6 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 7 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 8 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_EAST: object 9 uses Diamond std script 10002; no script for now
 MAP_ROUTE_211_EAST: std script 2017
 MAP_ROUTE_211_EAST: warp 0 to Diamond map MAP_MOUNT_CORONET_NORTH_1F_ROOM_1 not imported; points at itself
 MAP_ROUTE_211_WEST: item ball std 7042 contents unknown, variadic placeholder
-MAP_ROUTE_211_WEST: object 4 uses Diamond std script 10001; no script for now
-MAP_ROUTE_211_WEST: object 6 uses Diamond std script 65535; no script for now
 MAP_ROUTE_211_WEST: warp 0 to Diamond map MAP_MOUNT_CORONET_NORTH_1F_ROOM_1 not imported; points at itself
 MAP_ROUTE_218: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -536,11 +429,7 @@ MAP_SANDGEM: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_SANDGEM: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_SANDGEM: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_SANDGEM: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_SANDGEM: object 10 uses Diamond std script 65535; no script for now
-MAP_SANDGEM: object 11 uses Diamond std script 65535; no script for now
 MAP_SANDGEM: object 4 uses Diamond std script 10300; no script for now
-MAP_SANDGEM: object 8 uses Diamond std script 65535; no script for now
-MAP_SANDGEM: object 9 uses Diamond std script 65535; no script for now
 MAP_SANDGEM: std script 2048
 MAP_SANDGEM: std script 2049
 MAP_SANDGEM_POKECENTER_1F: object 4 uses Diamond std script 2035; no script for now
@@ -550,13 +439,9 @@ MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9012; dropped
 MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9015; dropped
-MAP_SANDGEM_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
-MAP_SANDGEM_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
-MAP_SANDGEM_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
 MAP_SANDGEM_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_SANDGEM_POKEMART: MartBuy 0: Diamond mart id used against HeartGold's mart tables
 MAP_SANDGEM_POKEMART: level script uses Diamond std script 10200; dropped
-MAP_SANDGEM_POKEMART: object 3 uses Diamond std script 10201; no script for now
 MAP_SANDGEM_POKEMART: std script 2019
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetMapName
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetSwarmInfo
@@ -574,7 +459,6 @@ MAP_TWINLEAF: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_TWINLEAF: dropped ScrCmd_OpenDoorAnimation: scripted door animation
 MAP_TWINLEAF: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
 MAP_TWINLEAF: dropped ScrCmd_WaitDoorAnimation: scripted door animation
-MAP_TWINLEAF: object 7 uses Diamond std script 65535; no script for now
 MAP_TWINLEAF: std script 2043
 MAP_TWINLEAF_PLAYER_HOUSE_2F: std script 2043
 MAP_TWINLEAF_RIVAL_HOUSE_1F: unmapped command ScrCmd_GetTimeOfDay
@@ -589,7 +473,6 @@ MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_PrepareDoorAnimation: scripted doo
 MAP_VALLEY_WINDWORKS_EXTERIOR: dropped ScrCmd_WaitDoorAnimation: scripted door animation
 MAP_VALLEY_WINDWORKS_EXTERIOR: item ball std 7023 contents unknown, variadic placeholder
 MAP_VALLEY_WINDWORKS_EXTERIOR: item ball std 7024 contents unknown, variadic placeholder
-MAP_VALLEY_WINDWORKS_EXTERIOR: object 2 uses Diamond std script 65535; no script for now
 MAP_VALLEY_WINDWORKS_EXTERIOR: unmapped command ScrCmd_LegendaryBattle
 MAP_VERITY_LAKEFRONT: object 0 uses Diamond std script 9701; no script for now
 MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_EventStopFollowing
@@ -603,22 +486,6 @@ MAP_WAYWARD_CAVE_1F: item ball std 7049 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7050 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7051 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7052 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_1F: object 15 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 16 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 17 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 18 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 19 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 20 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 21 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 22 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 23 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 24 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 25 uses Diamond std script 10001; no script for now
-MAP_WAYWARD_CAVE_1F: object 26 uses Diamond std script 10002; no script for now
-MAP_WAYWARD_CAVE_1F: object 27 uses Diamond std script 10002; no script for now
-MAP_WAYWARD_CAVE_1F: object 28 uses Diamond std script 10002; no script for now
-MAP_WAYWARD_CAVE_1F: object 29 uses Diamond std script 10002; no script for now
-MAP_WAYWARD_CAVE_1F: object 30 uses Diamond std script 10002; no script for now
 MAP_WAYWARD_CAVE_1F: unmapped command ScrCmd_RideBike
 MAP_WAYWARD_CAVE_1F: unmapped command ScrCmd_SetEventMovement
 MAP_WAYWARD_CAVE_1F: unmapped command ScrCmd_Unk0161

@@ -453,7 +453,12 @@ TRANSLATE = {
     "ScrCmd_SetFlagVar": ("SetFlagVar", "F"),
     "ScrCmd_ClearFlagVar": ("ClearFlagVar", "F"),
 }
-DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose"}
+DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_intro_music", 2044: "std_obtain_item_verbose",
+          # Diamond's field-move objects (bank 375 holds its 10000-10015 field-move prompts): HeartGold has the same three
+          10000: "std_field_cut", 10001: "std_field_rock_smash", 10002: "std_field_strength",
+          # Pokémon Center 2F counter, left to right in Diamond (x 3, 7, 12) matched to HeartGold's counter row (x 2, 6, 11)
+          9011: "std_trainer_card_explain", 9003: "std_union_room", 9001: "std_wireless_colosseum",
+          10201: "std_mystery_gift_deliveryman"}   # same deliveryman sprite in both games
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
@@ -1090,9 +1095,12 @@ def main():
             elif 3000 <= sid < 7000:   # Diamond's NPC-trainer std ids: 3000/5000 + trainer - 1, same scheme as HeartGold
                 macro = "std_trainer" if sid < 5000 else "std_trainer_2"
                 sid_s = f"{macro}({trainers.hg_name(sid - (3000 if sid < 5000 else 5000) + 1)})"
-            elif sid >= 2000:
+            elif sid == 0xFFFF:   # Diamond's "no script"
                 sid_s = "0"
-                todo.append(f"{m['name']}: object {i} uses Diamond std script {sid}; no script for now")
+            elif sid >= 2000:
+                sid_s = DP_STD.get(sid, "0")
+                if sid not in DP_STD:
+                    todo.append(f"{m['name']}: object {i} uses Diamond std script {sid}; no script for now")
             elif sid == 0:
                 sid_s = "0"
             else:
