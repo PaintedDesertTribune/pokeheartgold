@@ -1,0 +1,92 @@
+{
+  "header": "fielddata/script/scr_seq/event_L01.h",
+  "bgs": [
+    {
+      "scriptId": "8235",
+      "type": 2,
+      "x": 86,
+      "z": 849,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_L01_005 + 1",
+      "type": 1,
+      "x": 79,
+      "z": 846,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_L01_0",
+      "spriteId": "SPRITE_SINNOH_RIVEL",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_435",
+      "scriptId": "0",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 80,
+      "z": 843,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 81,
+      "z": 843,
+      "header": "MAP_SINNOH_LAKE_VERITY",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 80,
+      "z": 843,
+      "header": "MAP_SINNOH_LAKE_VERITY",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 80,
+      "z": 843,
+      "header": "MAP_SINNOH_VERITY_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 81,
+      "z": 843,
+      "header": "MAP_SINNOH_VERITY_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_L01_002 + 1",
+      "x": 80,
+      "z": 844,
+      "w": 2,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_4082"
+    },
+    {
+      "scriptId": "_EV_scr_seq_L01_003 + 1",
+      "x": 80,
+      "z": 844,
+      "w": 2,
+      "h": 1,
+      "y": 0,
+      "val": 3,
+      "var": "VAR_SINNOH_4082"
+    }
+  ]
+}

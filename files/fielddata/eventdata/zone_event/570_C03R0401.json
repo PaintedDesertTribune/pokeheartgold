@@ -1,0 +1,358 @@
+{
+  "header": "fielddata/script/scr_seq/event_C03R0401.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_005 + 1",
+      "type": 0,
+      "x": 10,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_005 + 1",
+      "type": 0,
+      "x": 11,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_006 + 1",
+      "type": 0,
+      "x": 12,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_006 + 1",
+      "type": 0,
+      "x": 13,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_007 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_007 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_008 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 10,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_008 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 10,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_009 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 13,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_009 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 13,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 7,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 7,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 7,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 10,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 10,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 10,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 13,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 13,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 13,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_008 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_008 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 6,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 6,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_010 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 6,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_011 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 9,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 19,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_012 + 1",
+      "type": 0,
+      "x": 20,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_009 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_C03R0401_009 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_C03R0401_0",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0401_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 8,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0401_1",
+      "spriteId": "SPRITE_BABYGIRL1",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0401_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0401_2",
+      "spriteId": "SPRITE_BOY1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0401_004 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 8,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0401_3",
+      "spriteId": "SPRITE_ASSISTANTM",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0401_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 6,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0401_4",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0401_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 3,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 5,
+      "z": 13,
+      "header": "MAP_SINNOH_OREBURGH",
+      "anchor": 6,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

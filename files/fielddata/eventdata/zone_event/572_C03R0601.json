@@ -1,0 +1,74 @@
+{
+  "header": "fielddata/script/scr_seq/event_C03R0601.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C03R0601_0",
+      "spriteId": "SPRITE_MIDDLEMAN1",
+      "movement": 4,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0601_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 1,
+      "x": 16,
+      "z": 10,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0601_1",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 5,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0601_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 14,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_C03R0601_2",
+      "spriteId": "SPRITE_MAN3",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C03R0601_002 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 10,
+      "z": 8,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 11,
+      "z": 12,
+      "header": "MAP_SINNOH_OREBURGH",
+      "anchor": 7,
+      "y": 0
+    },
+    {
+      "x": 15,
+      "z": 3,
+      "header": "MAP_SINNOH_OREBURGH_EAST_HOUSE_2F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

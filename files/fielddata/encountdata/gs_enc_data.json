@@ -29056,6 +29056,1797 @@
                 "SPECIES_DITTO"
             ],
             "landSwarm": "SPECIES_VOLTORB"
+        },
+        {
+            "map": "R202",
+            "land": {
+                "rate": 30,
+                "mons": [
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_SHINX",
+                            "day": "SPECIES_SHINX",
+                            "nite": "SPECIES_SHINX"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_KRICKETOT"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_KRICKETOT"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_SHINX",
+                            "day": "SPECIES_SHINX",
+                            "nite": "SPECIES_SHINX"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 0,
+                "mons": []
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "good_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "super_rod": {
+                    "rate": 0,
+                    "mons": []
+                }
+            },
+            "hoenn": [
+                "SPECIES_STARLY",
+                "SPECIES_BIDOOF"
+            ],
+            "sinnoh": [
+                "SPECIES_SENTRET",
+                "SPECIES_SENTRET"
+            ],
+            "landSwarm": "SPECIES_ZIGZAGOON"
+        },
+        {
+            "map": "R201",
+            "land": {
+                "rate": 30,
+                "mons": [
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 0,
+                "mons": []
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "good_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "super_rod": {
+                    "rate": 0,
+                    "mons": []
+                }
+            },
+            "hoenn": [
+                "SPECIES_STARLY",
+                "SPECIES_STARLY"
+            ],
+            "sinnoh": [
+                "SPECIES_NIDORAN_F",
+                "SPECIES_NIDORAN_F"
+            ],
+            "landSwarm": "SPECIES_DODUO"
+        },
+        {
+            "map": "T01",
+            "land": {
+                "rate": 0,
+                "mons": [
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    },
+                    {
+                        "level": 0,
+                        "species": {
+                            "morn": "SPECIES_NONE",
+                            "day": "SPECIES_NONE",
+                            "nite": "SPECIES_NONE"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 40,
+                                "max": 55
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_NONE",
+                "SPECIES_NONE"
+            ],
+            "sinnoh": [
+                "SPECIES_NONE",
+                "SPECIES_NONE"
+            ],
+            "landSwarm": "SPECIES_NONE"
+        },
+        {
+            "map": "D27R0101",
+            "land": {
+                "rate": 30,
+                "mons": [
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 2,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 3,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 40,
+                                "max": 55
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_SOLROCK",
+                "SPECIES_SOLROCK"
+            ],
+            "sinnoh": [
+                "SPECIES_WOBBUFFET",
+                "SPECIES_WOBBUFFET"
+            ],
+            "landSwarm": "SPECIES_SURSKIT"
+        },
+        {
+            "map": "R203",
+            "land": {
+                "rate": 30,
+                "mons": [
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_SHINX",
+                            "day": "SPECIES_SHINX",
+                            "nite": "SPECIES_SHINX"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_KRICKETOT"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_ABRA",
+                            "day": "SPECIES_ABRA",
+                            "nite": "SPECIES_ABRA"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_ABRA",
+                            "day": "SPECIES_ABRA",
+                            "nite": "SPECIES_ABRA"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_SHINX",
+                            "day": "SPECIES_SHINX",
+                            "nite": "SPECIES_SHINX"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_STARLY",
+                            "day": "SPECIES_STARLY",
+                            "nite": "SPECIES_STARLY"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_BIDOOF",
+                            "day": "SPECIES_BIDOOF",
+                            "nite": "SPECIES_BIDOOF"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 30,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_GOLDEEN"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 40,
+                                "max": 55
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_SEAKING"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_SEEDOT",
+                "SPECIES_SEEDOT"
+            ],
+            "sinnoh": [
+                "SPECIES_RALTS",
+                "SPECIES_RALTS"
+            ],
+            "landSwarm": "SPECIES_CUBONE"
+        },
+        {
+            "map": "D14R0101",
+            "land": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 4,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 0,
+                "mons": []
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "good_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "super_rod": {
+                    "rate": 0,
+                    "mons": []
+                }
+            },
+            "hoenn": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "sinnoh": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "landSwarm": "SPECIES_GEODUDE"
+        },
+        {
+            "map": "D14R0102",
+            "land": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_PSYDUCK",
+                            "day": "SPECIES_PSYDUCK",
+                            "nite": "SPECIES_PSYDUCK"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_PSYDUCK",
+                            "day": "SPECIES_PSYDUCK",
+                            "nite": "SPECIES_PSYDUCK"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_PSYDUCK",
+                            "day": "SPECIES_PSYDUCK",
+                            "nite": "SPECIES_PSYDUCK"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_PSYDUCK",
+                            "day": "SPECIES_PSYDUCK",
+                            "nite": "SPECIES_PSYDUCK"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_ZUBAT"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 30
+                        },
+                        "species": "SPECIES_PSYDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLBAT"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    },
+                    {
+                        "level": {
+                            "min": 20,
+                            "max": 40
+                        },
+                        "species": "SPECIES_GOLDUCK"
+                    }
+                ]
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 25,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 4,
+                                "max": 6
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 3,
+                                "max": 7
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 5,
+                                "max": 10
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        }
+                    ]
+                },
+                "good_rod": {
+                    "rate": 50,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 15,
+                                "max": 20
+                            },
+                            "species": "SPECIES_BARBOACH"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_MAGIKARP"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_BARBOACH"
+                        },
+                        {
+                            "level": {
+                                "min": 10,
+                                "max": 25
+                            },
+                            "species": "SPECIES_BARBOACH"
+                        }
+                    ]
+                },
+                "super_rod": {
+                    "rate": 75,
+                    "mons": [
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 30,
+                                "max": 40
+                            },
+                            "species": "SPECIES_WHISCASH"
+                        },
+                        {
+                            "level": {
+                                "min": 40,
+                                "max": 55
+                            },
+                            "species": "SPECIES_GYARADOS"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_WHISCASH"
+                        },
+                        {
+                            "level": {
+                                "min": 20,
+                                "max": 50
+                            },
+                            "species": "SPECIES_WHISCASH"
+                        }
+                    ]
+                }
+            },
+            "hoenn": [
+                "SPECIES_ZUBAT",
+                "SPECIES_ZUBAT"
+            ],
+            "sinnoh": [
+                "SPECIES_PSYDUCK",
+                "SPECIES_ZUBAT"
+            ],
+            "landSwarm": "SPECIES_ZUBAT"
+        },
+        {
+            "map": "D01R0101",
+            "land": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ONIX",
+                            "day": "SPECIES_ONIX",
+                            "nite": "SPECIES_ONIX"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ONIX",
+                            "day": "SPECIES_ONIX",
+                            "nite": "SPECIES_ONIX"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 5,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 0,
+                "mons": []
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "good_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "super_rod": {
+                    "rate": 0,
+                    "mons": []
+                }
+            },
+            "hoenn": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "sinnoh": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "landSwarm": "SPECIES_GEODUDE"
+        },
+        {
+            "map": "D01R0102",
+            "land": {
+                "rate": 10,
+                "mons": [
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 7,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_ZUBAT",
+                            "day": "SPECIES_ZUBAT",
+                            "nite": "SPECIES_ZUBAT"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 8,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_ONIX",
+                            "day": "SPECIES_ONIX",
+                            "nite": "SPECIES_ONIX"
+                        }
+                    },
+                    {
+                        "level": 9,
+                        "species": {
+                            "morn": "SPECIES_ONIX",
+                            "day": "SPECIES_ONIX",
+                            "nite": "SPECIES_ONIX"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 10,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    },
+                    {
+                        "level": 6,
+                        "species": {
+                            "morn": "SPECIES_GEODUDE",
+                            "day": "SPECIES_GEODUDE",
+                            "nite": "SPECIES_GEODUDE"
+                        }
+                    }
+                ]
+            },
+            "surf": {
+                "rate": 0,
+                "mons": []
+            },
+            "rock_smash": {
+                "rate": 0,
+                "mons": []
+            },
+            "fishing": {
+                "old_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "good_rod": {
+                    "rate": 0,
+                    "mons": []
+                },
+                "super_rod": {
+                    "rate": 0,
+                    "mons": []
+                }
+            },
+            "hoenn": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "sinnoh": [
+                "SPECIES_GEODUDE",
+                "SPECIES_GEODUDE"
+            ],
+            "landSwarm": "SPECIES_GEODUDE"
         }
     ]
 }

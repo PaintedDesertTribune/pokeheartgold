@@ -10885,6 +10885,450 @@
         "I like to study a lot...\n",
         "I thought I could win...\n"
       ]
+    },
+    {
+      "id": "msg_0728_01794",
+      "en_US": [
+        "You’re a Pokémon Trainer!\n",
+        "I happen to be a Pokémon Trainer!\r",
+        "Our eyes met, so battle we must!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01795",
+      "en_US": [
+        "Too strong!\n",
+        "Too strong!"
+      ]
+    },
+    {
+      "id": "msg_0728_01796",
+      "en_US": [
+        "Don’t be shy about talking to\n",
+        "Trainers you’d like to battle.\r",
+        "Pokémon grow stronger and stronger\n",
+        "from battling."
+      ]
+    },
+    {
+      "id": "msg_0728_01797",
+      "en_US": [
+        "Did you get better since we met?\n",
+        "I... Well, here, just look!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01798",
+      "en_US": [
+        "I spy, with my little eye...\n",
+        "A Trainer!\r",
+        "A battle, please!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01799",
+      "en_US": [
+        "Oh, boo!\n",
+        "I can’t win!"
+      ]
+    },
+    {
+      "id": "msg_0728_01800",
+      "en_US": [
+        "My Pokémon are all tuckered out!\n",
+        "I need to go to a Poké Center!"
+      ]
+    },
+    {
+      "id": "msg_0728_01801",
+      "en_US": [
+        "Oh, hi!\n",
+        "I remember you, Trainer!\r",
+        "A battle, please!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01802",
+      "en_US": [
+        "Let’s have a Pokémon battle!\n",
+        "Humph! But I’m gonna win!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01803",
+      "en_US": "You’re, like, wow!"
+    },
+    {
+      "id": "msg_0728_01804",
+      "en_US": [
+        "It’s fun to battle others!\n",
+        "I’m gonna battle all sorts of people!"
+      ]
+    },
+    {
+      "id": "msg_0728_01805",
+      "en_US": [
+        "Let’s have another Pokémon battle!\n",
+        "This time, I’m gonna win!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01806",
+      "en_US": [
+        "Don’t get cocky, kid!\n",
+        "This isn’t over yet!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01807",
+      "en_US": [
+        "My Pokémon’s HP is low...\n",
+        "This could be a close fight.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01808",
+      "en_US": [
+        "What just happened?\n",
+        "I lost?!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01809",
+      "en_US": [
+        "Don’t get cocky, kid!\n",
+        "This isn’t over yet!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01810",
+      "en_US": [
+        "My Pokémon’s HP is low...\n",
+        "This could be a close fight.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01811",
+      "en_US": [
+        "What just happened?\n",
+        "I lost?!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01812",
+      "en_US": [
+        "Forget it!\n",
+        "This isn’t over yet!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01813",
+      "en_US": [
+        "My Pokémon’s HP is low...\n",
+        "This could be a bit tight.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01814",
+      "en_US": [
+        "What’s going on here?\n",
+        "What, I lost?!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01815",
+      "en_US": [
+        "Gimme a battle so I can see if I’m\n",
+        "ready for the Pokémon Gym challenge!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01816",
+      "en_US": [
+        "I guess it means I’m not ready for\n",
+        "the Gym challenge yet...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01817",
+      "en_US": [
+        "I guess if you don’t have a single\n",
+        "Gym Badge, you’re a total nobody...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01818",
+      "en_US": [
+        "I’m about to take the Pokémon Gym\n",
+        "challenge.\r",
+        "But before I go, I wanna spar with\n",
+        "you.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01819",
+      "en_US": [
+        "I’m full of energy because I get\n",
+        "power from my Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01820",
+      "en_US": "Oh! My poor BIDOOF and ZUBAT!"
+    },
+    {
+      "id": "msg_0728_01821",
+      "en_US": [
+        "Avoid tall grass...\n",
+        "Or avoid Trainers...\\fDo you have trouble deciding?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01822",
+      "en_US": [
+        "You look familiar, Trainer.\n",
+        "Can I have another match?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01823",
+      "en_US": [
+        "I found a Trainer while looking for\n",
+        "some Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01824",
+      "en_US": "Hunh? You’re finished so soon?\n"
+    },
+    {
+      "id": "msg_0728_01825",
+      "en_US": [
+        "I walk through tall grass until I\n",
+        "find the Pokémon I want.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01826",
+      "en_US": "I found a familiar-looking Trainer!\r"
+    },
+    {
+      "id": "msg_0728_01827",
+      "en_US": [
+        "We’re always together.\n",
+        "I’ll show you how we’ve bonded!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01828",
+      "en_US": "It’s got me down...\n"
+    },
+    {
+      "id": "msg_0728_01829",
+      "en_US": [
+        "I don’t bear grudges over losing.\n",
+        "But I promise I’ll get tougher!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01830",
+      "en_US": [
+        "I’m always with my Pokémon.\r",
+        "Actually, you’re always with your\n",
+        "Pokémon too, aren’t you?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01831",
+      "en_US": [
+        "I got a nifty-keen Gym Badge from\n",
+        "the Gym Leader in Oreburgh City!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01832",
+      "en_US": "Oh, I lost! Lalala!\n"
+    },
+    {
+      "id": "msg_0728_01833",
+      "en_US": [
+        "I’m going to collect lots of Gym\n",
+        "Badges! I’ll work with my Pokémon!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01834",
+      "en_US": [
+        "I got a nifty-keen Gym Badge from\n",
+        "the Gym Leader in Oreburgh City!\r",
+        "...Did I show you already?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01835",
+      "en_US": [
+        "To celebrate my getting through this\n",
+        "cave, I’m going to battle you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01836",
+      "en_US": [
+        "Well, I guess losing is something\n",
+        "to commemorate, too...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01837",
+      "en_US": [
+        "Getting through that cave feels\n",
+        "like an adventure.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01838",
+      "en_US": [
+        "We Trainers will accept challenges\n",
+        "anywhere! It’s what we do.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01839",
+      "en_US": [
+        "Hmm...\n",
+        "Insufficiently raised?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01840",
+      "en_US": [
+        "Gee... When you’re in a cave, wild\n",
+        "Pokémon can appear anytime!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01841",
+      "en_US": [
+        "I’m a Veteran, yes, but don’t you\n",
+        "dare treat me like a senior citizen!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01842",
+      "en_US": [
+        "Hnuuurgh...\n",
+        "So much skill for one so young!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01843",
+      "en_US": [
+        "I’ll always remain young at heart.\n",
+        "Never let them say you’re too old!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01844",
+      "en_US": [
+        "Think you can take down the \n",
+        "next Pokémon like you did earlier?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01845",
+      "en_US": [
+        "No way! Not yet!\n",
+        "Not giving up!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01846",
+      "en_US": [
+        "W-what? That can’t be!\n",
+        "My buffed-up Pokémon!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01847",
+      "en_US": [
+        "You avoided the long way around?\n",
+        "Let’s see why you’d do that!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01848",
+      "en_US": [
+        "Now I understand why you decided to\n",
+        "battle with me.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01849",
+      "en_US": [
+        "You should go whichever way you\n",
+        "want, shortcut or the long way!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01850",
+      "en_US": [
+        "Only those who want to win can\n",
+        "challenge a Pokémon Gym!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01851",
+      "en_US": [
+        "Gggh...\n",
+        "This is humiliating!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01852",
+      "en_US": [
+        "One day, I’m going to become a tough\n",
+        "Trainer like you.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01853",
+      "en_US": [
+        "Fine, all righty then.\n",
+        "Just a quick battle on my break!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01854",
+      "en_US": [
+        "Wahaha!\n",
+        "Mercy, I cry mercy!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01855",
+      "en_US": [
+        "I’d better get on back to work...\r",
+        "You know, I’d rather be traveling\n",
+        "around with Pokémon the way you do.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01856",
+      "en_US": [
+        "I’m gonna let you in on a secret...\n",
+        "I snuck my Pokémon to work!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01857",
+      "en_US": "Well, now aren’t you something!\n"
+    },
+    {
+      "id": "msg_0728_01858",
+      "en_US": [
+        "OK, OK, time for work! I’ll work up\n",
+        "a thirst with my Pokémon!\n"
+      ]
     }
   ]
 }

@@ -3596,6 +3596,7 @@ static BOOL ov12_0224D7EC(BattleSystem *battleSystem, BattleContext *ctx) {
         case TRAINERCLASS_LEADER_BLAINE:
 // SINNOH_PORT_BEGIN
         case TRAINERCLASS_SINNOH_LEADER_BYRON:
+        case TRAINERCLASS_SINNOH_LEADER_ROARK:
 // SINNOH_PORT_END
         case TRAINERCLASS_LEADER_BLUE:
             PlayBGM(SEQ_GS_WIN3);

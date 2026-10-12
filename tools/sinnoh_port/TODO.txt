@@ -120,6 +120,122 @@ MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor b
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_JUBLIFE_TV_ELEVATOR: unmapped command ScrCmd_Unk00D5
 MAP_JUBLIFE_TV_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
+MAP_LAKE_VERITY: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_LAKE_VERITY: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_LAKE_VERITY: item ball std 7000 contents unknown, variadic placeholder
+MAP_LAKE_VERITY: std script 2040
+MAP_LAKE_VERITY: std script 2041
+MAP_LAKE_VERITY: unmapped command ScrCmd_EndStarterSelectionScreen
+MAP_LAKE_VERITY: unmapped command ScrCmd_FirstBattle
+MAP_LAKE_VERITY: unmapped command ScrCmd_GetPlayerStarterName
+MAP_LAKE_VERITY: unmapped command ScrCmd_GetRivalStarterName
+MAP_LAKE_VERITY: unmapped command ScrCmd_GiveMon
+MAP_LAKE_VERITY: unmapped command ScrCmd_StarterSelectionScreen
+MAP_LAKE_VERITY: unmapped command ScrCmd_Unk0162
+MAP_OREBURGH: event uses script 45 but the bank has 19 scripts; no script for now
+MAP_OREBURGH: object 10 uses Diamond std script 2027; no script for now
+MAP_OREBURGH: object 11 uses Diamond std script 2027; no script for now
+MAP_OREBURGH: object 12 uses Diamond std script 2027; no script for now
+MAP_OREBURGH: object 13 uses Diamond std script 2027; no script for now
+MAP_OREBURGH: object 14 uses Diamond std script 2027; no script for now
+MAP_OREBURGH: std script 2017
+MAP_OREBURGH: std script 2043
+MAP_OREBURGH: std script 2048
+MAP_OREBURGH: std script 2049
+MAP_OREBURGH_EAST_HOUSE_2F: std script 2017
+MAP_OREBURGH_GATE_1F: object 2 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 3 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 4 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 5 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 6 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 7 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 8 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_1F: object 9 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: item ball std 7005 contents unknown, variadic placeholder
+MAP_OREBURGH_GATE_B1F: item ball std 7006 contents unknown, variadic placeholder
+MAP_OREBURGH_GATE_B1F: item ball std 7007 contents unknown, variadic placeholder
+MAP_OREBURGH_GATE_B1F: item ball std 7008 contents unknown, variadic placeholder
+MAP_OREBURGH_GATE_B1F: item ball std 7009 contents unknown, variadic placeholder
+MAP_OREBURGH_GATE_B1F: object 1 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 10 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 2 uses Diamond std script 10002; no script for now
+MAP_OREBURGH_GATE_B1F: object 3 uses Diamond std script 10002; no script for now
+MAP_OREBURGH_GATE_B1F: object 4 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 5 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 6 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 7 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 8 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GATE_B1F: object 9 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_GYM: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_OREBURGH_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
+MAP_OREBURGH_GYM: std script 2017
+MAP_OREBURGH_MINE_B1F: item ball std 7011 contents unknown, variadic placeholder
+MAP_OREBURGH_MINE_B2F: item ball std 7012 contents unknown, variadic placeholder
+MAP_OREBURGH_MINE_B2F: item ball std 7013 contents unknown, variadic placeholder
+MAP_OREBURGH_MINE_B2F: object 1 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_MINE_B2F: object 2 uses Diamond std script 10001; no script for now
+MAP_OREBURGH_MINE_B2F: unmapped command ScrCmd_Unk029E
+MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_CountFossils
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilMinimumAmount
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilPokemon
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GiveMon
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_NamePokemonScreen
+MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_Unk00DA
+MAP_OREBURGH_NORTHWEST_HOUSE_2F: std script 2016
+MAP_OREBURGH_NORTHWEST_HOUSE_2F: std script 2017
+MAP_OREBURGH_NORTHWEST_HOUSE_3F: std script 2016
+MAP_OREBURGH_NORTHWEST_HOUSE_3F: std script 2017
+MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command ScrCmd_NPCTradeInit
+MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command ScrCmd_OpenTradeScreen
+MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command cmd_800c
+MAP_OREBURGH_NORTH_HOUSE_2F: std script 2016
+MAP_OREBURGH_NORTH_HOUSE_2F: std script 2017
+MAP_OREBURGH_NORTH_HOUSE_2F: unmapped command ScrCmd_CheckPartyForSpecies
+MAP_OREBURGH_POKECENTER_1F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_CapitalizeFirstChar
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_SetPlayerAvatar
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk00D9
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk0154
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk0155
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk029C
+MAP_OREBURGH_POKECENTER_1F: unmapped command ScrCmd_Unk02CC
+MAP_OREBURGH_POKECENTER_1F: warp 2 to Diamond map MAP_OREBURGH_POKECENTER_B1F not imported; points at itself
+MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9000; dropped
+MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9012; dropped
+MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9013; dropped
+MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9014; dropped
+MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9015; dropped
+MAP_OREBURGH_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
+MAP_OREBURGH_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
+MAP_OREBURGH_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
+MAP_OREBURGH_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_OREBURGH_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
+MAP_OREBURGH_POKEMART: SpecialMartBuy 1: Diamond mart id used against HeartGold's mart tables
+MAP_OREBURGH_POKEMART: level script uses Diamond std script 10200; dropped
+MAP_OREBURGH_POKEMART: object 4 uses Diamond std script 10201; no script for now
+MAP_OREBURGH_POKEMART: std script 2019
+MAP_ROUTE_201: object 2 uses Diamond std script 9700; no script for now
+MAP_ROUTE_201: object 7 uses Diamond std script 65535; no script for now
+MAP_ROUTE_201: object 8 uses Diamond std script 65535; no script for now
+MAP_ROUTE_201: std script 2016
+MAP_ROUTE_201: std script 2017
+MAP_ROUTE_201: unmapped command ScrCmd_GetPlayerStarterName
+MAP_ROUTE_201: unmapped command ScrCmd_GetRivalStarterName
+MAP_ROUTE_201: unmapped command ScrCmd_KeepEvent
+MAP_ROUTE_201: unmapped command ScrCmd_SetEventMovement
+MAP_ROUTE_201: unmapped command ScrCmd_Unk0161
+MAP_ROUTE_201: unmapped command ScrCmd_Unk0162
+MAP_ROUTE_201: unmapped command ScrCmd_Unk0164
+MAP_ROUTE_202: item ball std 7001 contents unknown, variadic placeholder
+MAP_ROUTE_202: std script 2040
+MAP_ROUTE_202: unmapped command ScrCmd_CatchTutorial
+MAP_ROUTE_203: item ball std 7003 contents unknown, variadic placeholder
+MAP_ROUTE_203: item ball std 7004 contents unknown, variadic placeholder
+MAP_ROUTE_203: object 13 uses Diamond std script 65535; no script for now
+MAP_ROUTE_203: object 14 uses Diamond std script 65535; no script for now
 MAP_ROUTE_218: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_218: berry plot object 8 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -133,5 +249,67 @@ MAP_ROUTE_218: object 13 uses Diamond std script 2027; no script for now
 MAP_ROUTE_218: object 8 uses Diamond std script 2800; no script for now
 MAP_ROUTE_218: object 9 uses Diamond std script 2800; no script for now
 MAP_ROUTE_218_CANALAVE_GATEHOUSE: dropped ScrCmd_UnlockGenderEntries: Pokédex gender pages; HeartGold has no toggle
+MAP_SANDGEM: dropped ScrCmd_CloseDoorAnimation: scripted door animation
+MAP_SANDGEM: dropped ScrCmd_FreeDoorAnimation: scripted door animation
+MAP_SANDGEM: dropped ScrCmd_OpenDoorAnimation: scripted door animation
+MAP_SANDGEM: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
+MAP_SANDGEM: dropped ScrCmd_WaitDoorAnimation: scripted door animation
+MAP_SANDGEM: object 10 uses Diamond std script 65535; no script for now
+MAP_SANDGEM: object 11 uses Diamond std script 65535; no script for now
+MAP_SANDGEM: object 4 uses Diamond std script 10300; no script for now
+MAP_SANDGEM: object 8 uses Diamond std script 65535; no script for now
+MAP_SANDGEM: object 9 uses Diamond std script 65535; no script for now
+MAP_SANDGEM: std script 2048
+MAP_SANDGEM: std script 2049
+MAP_SANDGEM_POKECENTER_1F: object 4 uses Diamond std script 2035; no script for now
+MAP_SANDGEM_POKECENTER_1F: warp 2 to Diamond map MAP_SANDGEM_POKECENTER_B1F not imported; points at itself
+MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9000; dropped
+MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9012; dropped
+MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9013; dropped
+MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9014; dropped
+MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9015; dropped
+MAP_SANDGEM_POKECENTER_2F: object 0 uses Diamond std script 9003; no script for now
+MAP_SANDGEM_POKECENTER_2F: object 1 uses Diamond std script 9001; no script for now
+MAP_SANDGEM_POKECENTER_2F: object 2 uses Diamond std script 9011; no script for now
+MAP_SANDGEM_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
+MAP_SANDGEM_POKEMART: MartBuy 0: Diamond mart id used against HeartGold's mart tables
+MAP_SANDGEM_POKEMART: level script uses Diamond std script 10200; dropped
+MAP_SANDGEM_POKEMART: object 3 uses Diamond std script 10201; no script for now
+MAP_SANDGEM_POKEMART: std script 2019
+MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetMapName
+MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetSwarmInfo
+MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_Unk00DA
+MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_Unk021B
+MAP_SANDGEM_ROWANS_LAB: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_SANDGEM_ROWANS_LAB: object 3 uses Diamond std script 10300; no script for now
+MAP_SANDGEM_ROWANS_LAB: std script 9950
+MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CheckSinnohDexComplete
+MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CountSinnohDexSeen
+MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_Unk00D5
+MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_Unk0270
+MAP_SANDGEM_ROWANS_LAB: unmapped command cmd_8008
+MAP_TWINLEAF: dropped ScrCmd_CloseDoorAnimation: scripted door animation
+MAP_TWINLEAF: dropped ScrCmd_FreeDoorAnimation: scripted door animation
+MAP_TWINLEAF: dropped ScrCmd_OpenDoorAnimation: scripted door animation
+MAP_TWINLEAF: dropped ScrCmd_PrepareDoorAnimation: scripted door animation; HeartGold animates doors itself
+MAP_TWINLEAF: dropped ScrCmd_WaitDoorAnimation: scripted door animation
+MAP_TWINLEAF: object 7 uses Diamond std script 65535; no script for now
+MAP_TWINLEAF: std script 2043
+MAP_TWINLEAF_PLAYER_HOUSE_2F: std script 2043
+MAP_TWINLEAF_RIVAL_HOUSE_1F: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_TWINLEAF_RIVAL_HOUSE_1F: unmapped command ScrCmd_GetTimeOfDay
+MAP_TWINLEAF_RIVAL_HOUSE_1F: unmapped command ScrCmd_GiveRunningShoes
+MAP_TWINLEAF_RIVAL_HOUSE_1F: unmapped command ScrCmd_Unk01CC
+MAP_TWINLEAF_RIVAL_HOUSE_2F: dropped ScrCmd_PlaySoundWait: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+MAP_TWINLEAF_RIVAL_HOUSE_2F: unmapped command ScrCmd_PlayDefaultBgm
+MAP_TWINLEAF_RIVAL_HOUSE_2F: unmapped command ScrCmd_SetVolume
+MAP_VERITY_LAKEFRONT: object 0 uses Diamond std script 9701; no script for now
+MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_EventStopFollowing
+MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_KeepEvent
+MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_SetEventMovement
+MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_Unk0161
+MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_Unk0162
+MAP_VERITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
+MAP_VERITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated
-trainer classes: TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY, TRAINERCLASS_SINNOH_LEADER_BYRON, TRAINERCLASS_SINNOH_INTERVIEWERS use the default encounter jingle and battle music; the intro animation is blank
+trainer classes: TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY, TRAINERCLASS_SINNOH_LEADER_BYRON, TRAINERCLASS_SINNOH_INTERVIEWERS, TRAINERCLASS_SINNOH_LEADER_ROARK use the default encounter jingle and battle music; the intro animation is blank

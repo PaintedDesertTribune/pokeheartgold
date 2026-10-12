@@ -1,0 +1,53 @@
+{
+  "key": 8259,
+  "messages": [
+    {
+      "id": "msg_0903_C03R0201_00000",
+      "en_US": [
+        "Listen, listen. Do you have a Pokémon\n",
+        "called MACHOP?\r",
+        "Would you be willing to trade your\n",
+        "MACHOP for my ABRA?"
+      ]
+    },
+    {
+      "id": "msg_0903_C03R0201_00001",
+      "en_US": [
+        "Be nice to my ABRA!\r",
+        "I’ll be sure to look after your\n",
+        "MACHOP in return!"
+      ]
+    },
+    {
+      "id": "msg_0903_C03R0201_00002",
+      "en_US": "What I asked for was a MACHOP..."
+    },
+    {
+      "id": "msg_0903_C03R0201_00003",
+      "en_US": [
+        "Oh, OK...\n",
+        "Well, I can’t make you trade me.\r",
+        "But if you change your mind,\n",
+        "I’ll be right here waiting!"
+      ]
+    },
+    {
+      "id": "msg_0903_C03R0201_00004",
+      "en_US": [
+        "Thanks to Pokémon, I got to be\n",
+        "friends with you!"
+      ]
+    },
+    {
+      "id": "msg_0903_C03R0201_00005",
+      "en_US": [
+        "A Pokémon obtained in a trade\n",
+        "grows quickly.\r",
+        "But if a Pokémon grows too much,\n",
+        "it will often ignore the Trainer.\r",
+        "Of course, it won’t matter if you\n",
+        "have lots of Gym Badges."
+      ]
+    }
+  ]
+}

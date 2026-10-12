@@ -1,0 +1,56 @@
+{
+  "header": "fielddata/script/scr_seq/event_T01R0202.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_T01R0202_000 + 1",
+      "type": 0,
+      "x": 5,
+      "z": 4,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_T01R0202_001 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 4,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T01R0202_003 + 1",
+      "type": 1,
+      "x": 7,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T01R0202_005 + 1",
+      "type": 0,
+      "x": 4,
+      "z": 4,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_T01R0202_005 + 1",
+      "type": 0,
+      "x": 3,
+      "z": 4,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 8,
+      "z": 4,
+      "header": "MAP_SINNOH_TWINLEAF_RIVAL_HOUSE_1F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

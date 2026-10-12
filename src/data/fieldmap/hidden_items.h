@@ -237,6 +237,10 @@ static const struct HiddenItemData sHiddenItemParam[] = {
     // SINNOH_PORT_BEGIN
     { 2, 1, 0, 0, 231 }, // Diamond C02
     { 78, 1, 0, 0, 232 }, // Diamond C01
+    { 78, 1, 0, 0, 233 }, // Diamond R202
+    { 52, 1, 0, 0, 234 }, // Diamond T01
+    { 396, 1, 0, 0, 235 }, // Diamond L01
+    { 22, 1, 0, 0, 236 }, // Diamond C03
     // SINNOH_PORT_END
 };
 #endif //_IN_FIELDMAP_C

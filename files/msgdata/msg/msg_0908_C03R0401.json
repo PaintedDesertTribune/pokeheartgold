@@ -1,0 +1,197 @@
+{
+  "key": 8264,
+  "messages": [
+    {
+      "id": "msg_0908_C03R0401_00000",
+      "en_US": [
+        "Hello! Welcome to the Oreburgh\n",
+        "Mining Museum!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00001",
+      "en_US": [
+        "Hello, hello!\n",
+        "How are you?\r",
+        "I study Pokémon Fossils!\n",
+        "Me! Right here and now!\r"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00002",
+      "en_US": [
+        "You have a Fossil for me, yes?\n",
+        "Shall I turn it into a Pokémon?"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00003",
+      "en_US": [
+        "Which Fossil should I turn back\n",
+        "into a Pokémon? Choose! Now!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00004",
+      "en_US": [
+        "OK, I will do that! Turn that Fossil\n",
+        "back into a Pokémon, surely I will!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00005",
+      "en_US": [
+        "You don’t wish that I extract any\n",
+        "Pokémon from a Fossil. Fine, then!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00006",
+      "en_US": [
+        "I am in the process of extracting\n",
+        "your Pokémon from a Fossil.\r",
+        "You go outside, yes, please. Now!\n",
+        "Time alone is what I now need. NOW!!!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00007",
+      "en_US": [
+        "You were gone too long!\n",
+        "You kept us waiting! Unacceptable!\r",
+        "This is your {STRVAR_1 0, 0, 0}!\n",
+        "You be good to it, OK!\r"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00008",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received\n",
+        "the {STRVAR_1 0, 1, 0}!\r"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00009",
+      "en_US": [
+        "Give a nickname to the {STRVAR_1 0, 1, 0}\n",
+        "you received?"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00010",
+      "en_US": [
+        "But, no, I cannot do this!\n",
+        "You have too many Pokémon with you!\r",
+        "I must hold it for you, so come back,\n",
+        "you, and take it away, please."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00011",
+      "en_US": [
+        "If it is a Fossil that you obtain,\n",
+        "bring it to me if you must."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00012",
+      "en_US": [
+        "On the verge of a breakthrough,\n",
+        "I am, to achieve extraction from\\fFossils.\r",
+        "From Fossils I can extract Pokémon,\n",
+        "but not yet, not yet."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00013",
+      "en_US": [
+        "Whoa! So this is coal?\n",
+        "I never expected something this big!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00014",
+      "en_US": [
+        "Wow! The Pokémon that carried this\n",
+        "must be terribly strong!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00015",
+      "en_US": [
+        "Well, how about that!\r",
+        "The Oreburgh Mine extends\n",
+        "under the seafloor!"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00016",
+      "en_US": [
+        "How Coal Is Made   1\r",
+        "“In a time long before history,\n",
+        "vegetative matter was swept along\r",
+        "by rain and rivers. It came to be\n",
+        "buried under the ground.”"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00017",
+      "en_US": [
+        "How Coal Is Made   2\r",
+        "“The buried plant matter was\n",
+        "forced ever deeper under the ground\r",
+        "due to tremors and fissures caused\n",
+        "by the shifting landmasses.”"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00018",
+      "en_US": [
+        "How Coal Is Made   3\r",
+        "“Deep under the ground, the\n",
+        "plant matter was subjected to heavy\r",
+        "pressure and the heat of magma.\n",
+        "It gradually turned into coal.”"
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00019",
+      "en_US": [
+        "Samples of coal from different regions\n",
+        "are displayed."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00020",
+      "en_US": [
+        "The box contains categorized samples\n",
+        "of coal."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00021",
+      "en_US": [
+        "Different kinds of lamps are\n",
+        "displayed.\r",
+        "They appear to have been worn\n",
+        "on someone’s head while underground."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00022",
+      "en_US": [
+        "Badly scarred wooden tools are\n",
+        "displayed.\r",
+        "They apparently dug out coal using\n",
+        "these tools in the olden days."
+      ]
+    },
+    {
+      "id": "msg_0908_C03R0401_00023",
+      "en_US": [
+        "The everyday items and tools of\n",
+        "past mine workers are displayed."
+      ]
+    }
+  ]
+}

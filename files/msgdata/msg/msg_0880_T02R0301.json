@@ -1,0 +1,21 @@
+{
+  "key": 8704,
+  "messages": [
+    {
+      "id": "msg_0880_T02R0301_00000",
+      "en_US": [
+        "Pokémon grow steadily stronger from\n",
+        "battling against other Pokémon.\r",
+        "At first, you should heal your\n",
+        "Pokémon regularly at Poké Centers\\fwhile you’re leveling them up."
+      ]
+    },
+    {
+      "id": "msg_0880_T02R0301_00001",
+      "en_US": [
+        "A good Trainer is one that takes care\n",
+        "not to let their Pokémon faint from\\flosing HP."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "key": 8696,
+  "messages": [
+    {
+      "id": "msg_0888_T01R0401_00000",
+      "en_US": [
+        "Did you hear?\r",
+        "The Pokémon Professor returned\n",
+        "to the next town over.\r",
+        "They say he was gone for four long\n",
+        "years.\r",
+        "I wonder if he found some amazing\n",
+        "Pokémon while he was gone?"
+      ]
+    },
+    {
+      "id": "msg_0888_T01R0401_00001",
+      "en_US": [
+        "Well! Professor Rowan gave you a\n",
+        "Pokédex, did he?"
+      ]
+    },
+    {
+      "id": "msg_0888_T01R0401_00002",
+      "en_US": [
+        "Listen, listen, {STRVAR_1 3, 0, 0}.\n",
+        "I want a cute Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_0888_T01R0401_00003",
+      "en_US": [
+        "Listen, listen, {STRVAR_1 3, 0, 0}.\r",
+        "Do you think I can be friends with\n",
+        "Pokémon like you are?"
+      ]
+    }
+  ]
+}

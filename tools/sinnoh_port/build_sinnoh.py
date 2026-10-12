@@ -994,6 +994,9 @@ def main():
                     return DP_STD[sid]
                 todo.append(f"{m['name']}: level script uses Diamond std script {sid}; dropped")
                 return None
+            if sid - 1 >= nscripts:
+                todo.append(f"{m['name']}: level script uses script {sid} but the bank has {nscripts} scripts; dropped")
+                return None
             return f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
         for t, sid in entries:
             ref = script_ref(sid)
@@ -1020,6 +1023,11 @@ def main():
         ox, oy = (0, 0) if shared else (origin[0] * 32, origin[1] * 32)
         p = 0
         nb = struct.unpack_from("<I", eb, p)[0]; p += 4
+        def ev_script(sid):
+            if sid - 1 >= nscripts:   # Diamond's Oreburgh has a sign pointing past its bank
+                todo.append(f"{m['name']}: event uses script {sid} but the bank has {nscripts} scripts; no script for now")
+                return "0"
+            return f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
         bgs = []
         for i in range(nb):
             sid, typ, x, z, y, d = struct.unpack_from("<HHIIII", eb, p + i * 0x14)
@@ -1033,7 +1041,7 @@ def main():
                 if sid not in DP_STD:
                     todo.append(f"{m['name']}: BG event {i} uses Diamond std script {sid}; no script for now")
             else:
-                sid_s = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
+                sid_s = ev_script(sid)
             bgs.append({"scriptId": sid_s, "type": typ, "x": x - ox, "z": z - oy, "y": y, "dir": d})
         p += nb * 0x14
         no = struct.unpack_from("<I", eb, p)[0]; p += 4
@@ -1053,7 +1061,7 @@ def main():
             elif sid == 0:
                 sid_s = "0"
             else:
-                sid_s = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
+                sid_s = ev_script(sid)
             if o[1] in SIGN_MODELS:   # 3D prop: a BG event on its tile (the model is placed as a building in the land data)
                 bgs.append({"scriptId": sid_s, "type": SIGN_MODELS[o[1]][1], "x": o[12] - ox, "z": o[13] - oy, "y": 0, "dir": 4})
                 continue
@@ -1088,7 +1096,7 @@ def main():
                 if sid not in DP_STD:
                     todo.append(f"{m['name']}: coord event {i} uses Diamond std script {sid}; no script for now")
             else:
-                csid = f"_EV_scr_seq_{m['code']}_{sid-1:03d} + 1"
+                csid = ev_script(sid)
             coords.append({"scriptId": csid, "x": x - ox, "z": z - oy, "w": cw, "h": ch, "y": y,
                            "val": val, "var": state.var(var)})
         ev = {"header": f"fielddata/script/scr_seq/event_{m['code']}.h", "bgs": bgs, "objects": objs, "warps": warps, "coords": coords}
@@ -1192,14 +1200,22 @@ def main():
         ev = json.load(open(f"files/fielddata/eventdata/zone_event/{m['evt']:03d}_{m['code']}.json"))
         land = next(((w["x"], w["z"] + 1) for w in ev["warps"] if pc and w["header"] == pc["hgname"]), None)
         if land is None:
+            house = hg_by_name.get(m["hgname"] + "_PLAYER_HOUSE_1F")
+            land = next(((w["x"], w["z"] + 1) for w in ev["warps"] if house and w["header"] == house["hgname"]), None)
+        if land is None:
             xs = [c[0] for c in m["cells"]]; ys = [c[1] for c in m["cells"]]
             land = (sorted(xs)[len(xs) // 2] * 32 + 16, sorted(ys)[len(ys) // 2] * 32 + 16)
+        # The blackout spawn must be an interior: its coordinates are packed into one byte each. A town
+        # without a Pokémon Center (Twinleaf) respawns in the player's house, else in its first interior.
+        if not pc:
+            pc = hg_by_name.get(m["hgname"] + "_PLAYER_HOUSE_1F") or next((x for x in maps if x["hgname"].startswith(m["hgname"] + "_") and x is not m), None)
         if pc:
             pev = json.load(open(f"files/fielddata/eventdata/zone_event/{pc['evt']:03d}_{pc['code']}.json"))
             door = next(((w["x"], w["z"] - 1) for w in pev["warps"] if w["header"] == m["hgname"]), (8, 13))
             inside = (pc["hgname"], door[0], door[1])
         else:
-            inside = (m["hgname"], land[0], land[1])
+            inside = (m["hgname"], min(land[0], 255), min(land[1], 255))
+            todo.append(f"{m['name']}: no interior for the blackout spawn; coordinates clipped")
         spawn_rows.append(f"\tspawn {38 + i}, 1, 1, {inside[0]}, {inside[1]}, {inside[2]}, {m['hgname']}, {land[0]}, {land[1]}, {m['hgname']}, {land[0]}, {land[1]}")
     ensure_markers("asm/unk_0203BA5C.s", "\n\t.text\n\n\tthumb_func_start SpawnIdToTableIndex", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END")
     replace_block("asm/unk_0203BA5C.s", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "\n".join(spawn_rows) + ("\n" if spawn_rows else ""))
