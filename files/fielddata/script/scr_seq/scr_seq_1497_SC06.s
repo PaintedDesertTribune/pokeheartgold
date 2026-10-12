@@ -111,7 +111,7 @@ scr_seq_SC06_009:
 	// Diamond ScrCmd_GetFashionName dropped: Contest dress-up dropped (decision 16)
 	NPCMsg msg_1095_SC06_00016
 	SetVar 0x8005, 1
-	CallStd 2015 /* TODO Diamond std script */
+	// Diamond std call dropped: Contest accessory gift (dress-up dropped, decision 16)
 	SetFlag FLAG_SINNOH_296
 	CloseMsg
 	ReleaseAll

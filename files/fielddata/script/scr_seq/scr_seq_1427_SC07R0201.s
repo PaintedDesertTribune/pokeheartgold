@@ -49,7 +49,7 @@ scr_seq_SC07R0201_003:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 38
 	ReleaseAll
@@ -59,7 +59,7 @@ scr_seq_SC07R0201_004:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 39
 	ReleaseAll
@@ -100,7 +100,7 @@ scr_seq_SC07R0201_007:
 	// Diamond ScrCmd_GetFashionNameWithArticle dropped: Contest dress-up dropped (decision 16)
 	NPCMsg msg_1060_SC07R0201_00003
 	SetVar 0x8005, 1
-	CallStd 2015 /* TODO Diamond std script */
+	// Diamond std call dropped: Contest accessory gift (dress-up dropped, decision 16)
 	SetFlag FLAG_SINNOH_297
 	CloseMsg
 	ReleaseAll

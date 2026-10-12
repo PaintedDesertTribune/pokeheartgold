@@ -123,7 +123,7 @@ _01F0:
 	ClearFlag FLAG_SINNOH_490
 	ShowPerson 18
 	Lock 18
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	Return
 
 _0202:
@@ -196,7 +196,7 @@ _02EF:
 
 _0307:
 	HidePerson 18
-	CallStd 2041 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_408C, 1
 	SetVar VAR_SINNOH_411B, 2
 	ReleaseAll

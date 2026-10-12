@@ -74,7 +74,7 @@ scr_seq_SC08R0101_002:
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00D5
 	NPCMsg msg_1163_SC08R0101_00007
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	Call _00E0
 	ReleaseAll

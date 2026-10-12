@@ -68,7 +68,7 @@ scr_seq_SC07_015:
 	LockAll
 	ApplyMovement 6, mv_SC07_0214
 	WaitMovement
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8004, 681
 	CallIf 1, _0193
@@ -94,7 +94,7 @@ scr_seq_SC07_015:
 	CompareVarToValue 0x8004, 684
 	CallIf 1, _01FF
 	HidePerson 6
-	CallStd 2041 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_40F5, 1
 	ReleaseAll
 	End

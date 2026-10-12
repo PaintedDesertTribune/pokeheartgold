@@ -30,7 +30,7 @@ scr_seq_ST01R0202_002:
 	NPCMsg msg_0886_ST01R0202_00002
 	WaitSE 1154
 	CloseMsg
-	// TODO Diamond ScrCmd_PlayDefaultBgm 0x052 args []: no HeartGold mapping yet
+	ResetBGM
 	ReleaseAll
 	ReleaseAll
 	End

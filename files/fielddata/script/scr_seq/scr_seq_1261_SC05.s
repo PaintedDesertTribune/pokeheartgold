@@ -554,7 +554,7 @@ _0904:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_330
 	CloseMsg
 	ReleaseAll
@@ -572,7 +572,7 @@ _094C:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_331
 	CloseMsg
 	ReleaseAll
@@ -589,7 +589,7 @@ _099A:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_332
 	CloseMsg
 	ReleaseAll
@@ -606,7 +606,7 @@ _09E2:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_333
 	CloseMsg
 	ReleaseAll
@@ -623,7 +623,7 @@ _0A2A:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_334
 	CloseMsg
 	ReleaseAll
@@ -640,7 +640,7 @@ _0A72:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_335
 	CloseMsg
 	ReleaseAll
@@ -657,7 +657,7 @@ _0ABA:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_336
 	CloseMsg
 	ReleaseAll
@@ -675,7 +675,7 @@ _0B02:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_337
 	CloseMsg
 	ReleaseAll
@@ -693,7 +693,7 @@ _0B50:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_338
 	CloseMsg
 	ReleaseAll
@@ -711,7 +711,7 @@ _0B9E:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_339
 	CloseMsg
 	ReleaseAll
@@ -729,7 +729,7 @@ _0BEC:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C4B
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetFlag FLAG_SINNOH_340
 	CloseMsg
 	ReleaseAll

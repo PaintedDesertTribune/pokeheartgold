@@ -277,6 +277,7 @@
 #define FLAG_SINNOH_437 2987
 #define FLAG_SINNOH_438 2929
 #define FLAG_SINNOH_439 2997
+#define FLAG_SINNOH_440 3734
 #define FLAG_SINNOH_441 3129
 #define FLAG_SINNOH_442 2951
 #define FLAG_SINNOH_443 2954
@@ -306,6 +307,7 @@
 #define FLAG_SINNOH_468 2927
 #define FLAG_SINNOH_469 2928
 #define FLAG_SINNOH_470 2926
+#define FLAG_SINNOH_472 3733
 #define FLAG_SINNOH_474 3419
 #define FLAG_SINNOH_475 3326
 #define FLAG_SINNOH_476 3370
@@ -318,6 +320,7 @@
 #define FLAG_SINNOH_486 3516
 #define FLAG_SINNOH_487 3518
 #define FLAG_SINNOH_488 3517
+#define FLAG_SINNOH_489 3735
 #define FLAG_SINNOH_490 3198
 #define FLAG_SINNOH_491 3512
 #define FLAG_SINNOH_492 3505
@@ -344,6 +347,7 @@
 #define FLAG_SINNOH_515 3632
 #define FLAG_SINNOH_516 3583
 #define FLAG_SINNOH_517 3637
+#define FLAG_SINNOH_519 3736
 #define FLAG_SINNOH_527 3014
 #define FLAG_SINNOH_528 3009
 #define FLAG_SINNOH_529 3536
@@ -367,6 +371,7 @@
 #define FLAG_SINNOH_560 2960
 #define FLAG_SINNOH_563 2972
 #define FLAG_SINNOH_564 2939
+#define FLAG_SINNOH_565 3739
 #define FLAG_SINNOH_567 3258
 #define FLAG_SINNOH_568 3422
 #define FLAG_SINNOH_569 3398
@@ -458,6 +463,8 @@
 #define FLAG_SINNOH_657 3337
 #define FLAG_SINNOH_658 3340
 #define FLAG_SINNOH_659 3338
+#define FLAG_SINNOH_660 3737
+#define FLAG_SINNOH_661 3738
 #define FLAG_SINNOH_662 3728
 #define FLAG_SINNOH_663 3643
 #define FLAG_SINNOH_664 3537
@@ -485,6 +492,7 @@
 #define FLAG_SINNOH_689 2923
 #define FLAG_SINNOH_690 2994
 #define FLAG_SINNOH_691 3373
+#define FLAG_SINNOH_692 3732
 #define FLAG_SINNOH_986 2986
 #define FLAG_SINNOH_987 3022
 #define FLAG_SINNOH_988 3023
@@ -940,6 +948,10 @@
 #define SINNOH_FLYPOINT_FLAG_BASE 0x1560   // fly-point flags 38+ (64 slots, above the Sinnoh trainer block)
 #define SINNOH_HIDDEN_ITEM_FIRST_IDX 231   // hidden-item indices from here on are Sinnoh's
 #define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x1060   // their flags (stock 800+idx would hit story flags)
+
+#define std_sinnoh_partner_theme 2072   // appended to HeartGold's misc std bank
+#define std_sinnoh_rival_theme 2073   // appended to HeartGold's misc std bank
+#define std_sinnoh_default_bgm 2074   // appended to HeartGold's misc std bank
 
 #define TRCLASS_MUSIC_ROWS 51   // asm/unk_020517A4.s class-to-battle-music rows
 #endif

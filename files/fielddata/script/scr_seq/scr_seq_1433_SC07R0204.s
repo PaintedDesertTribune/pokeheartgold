@@ -106,7 +106,7 @@ scr_seq_SC07R0204_003:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	// TODO Diamond ScrCmd_GoodsMart 0x149 args [0]: no HeartGold mapping yet
 	ReleaseAll
@@ -116,7 +116,7 @@ scr_seq_SC07R0204_004:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	// TODO Diamond ScrCmd_GoodsMart 0x149 args [1]: no HeartGold mapping yet
 	ReleaseAll

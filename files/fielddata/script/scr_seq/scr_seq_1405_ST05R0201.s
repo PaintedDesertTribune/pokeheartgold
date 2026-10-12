@@ -16,7 +16,7 @@ scr_seq_ST05R0201_000:
 	LockAll
 	FacePlayer
 	NPCMsg msg_1049_ST05R0201_00000
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	MartBuy 1
 	ReleaseAll
@@ -26,7 +26,7 @@ scr_seq_ST05R0201_001:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	MartBuy 1
 	ReleaseAll
@@ -36,7 +36,7 @@ scr_seq_ST05R0201_002:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 44
 	ReleaseAll

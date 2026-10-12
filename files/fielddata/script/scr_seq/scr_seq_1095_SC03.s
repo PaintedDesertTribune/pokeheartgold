@@ -176,7 +176,7 @@ _0261:
 _027B:
 	PlayFanfare 1539
 	HidePerson 3
-	CallStd 2043 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_4079, 3
 	ReleaseAll
 	End
@@ -288,7 +288,7 @@ _0471:
 _048B:
 	NPCMsg msg_0894_SC03_00006
 	CloseMsg
-	CallStd 2048 /* TODO Diamond std script */
+	CallStd std_sinnoh_rival_theme
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8005, 748
 	GoToIf 1, _04D0
@@ -328,7 +328,7 @@ _0538:
 	NPCMsg msg_0894_SC03_00007
 	WaitButton
 	CloseMsg
-	CallStd 2049 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_4079, 1
 	ReleaseAll
 	End

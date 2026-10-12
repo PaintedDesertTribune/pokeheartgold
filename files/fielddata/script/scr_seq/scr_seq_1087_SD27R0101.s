@@ -159,7 +159,7 @@ _01BB:
 	NPCMsg msg_0890_SD27R0101_00016
 	CloseMsg
 	StopBGM 1070
-	PlayBGM 1140
+	PlayBGM SEQ_GS_E_TSURETEKE1
 	ClearFlag FLAG_SINNOH_429
 	ShowPerson 3
 	ShowPerson 2
@@ -205,7 +205,7 @@ _02CE:
 	MovePerson 1, 47, 51
 	ShowPerson 1
 	Lock 1
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	ApplyMovement 1, mv_SD27R0101_04DC
 	ApplyMovement 5, mv_SD27R0101_0574
 	ApplyMovement obj_player, mv_SD27R0101_05F4
@@ -243,7 +243,7 @@ _036C:
 	ApplyMovement obj_player, mv_SD27R0101_0614
 	WaitMovement
 	HidePerson 1
-	CallStd 2041 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	BufferRivalsName 0
 	NPCMsg msg_0890_SD27R0101_00024
 	CloseMsg

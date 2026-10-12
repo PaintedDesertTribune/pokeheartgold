@@ -246,7 +246,7 @@ scr_seq_ST01_001:
 	// Diamond ScrCmd_WaitDoorAnimation dropped: scripted door animation
 	// Diamond ScrCmd_FreeDoorAnimation dropped: scripted door animation
 	HidePerson 2
-	CallStd 2043 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_4070, 1
 	SetVar VAR_SINNOH_40E6, 1
 	ReleaseAll

@@ -26,7 +26,7 @@ scr_seq_ST01R0102_000:
 	WaitMovement
 	PlayFanfare 1539
 	HidePerson 0
-	CallStd 2043 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetFlag FLAG_SINNOH_234
 	SetVar VAR_SINNOH_40A3, 1
 	SetVar VAR_SINNOH_4070, 2

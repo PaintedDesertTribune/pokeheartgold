@@ -15,7 +15,7 @@ scr_seq_SC11FS0101_000:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	MartBuy 1
 	ReleaseAll

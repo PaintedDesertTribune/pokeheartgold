@@ -118,14 +118,14 @@ _014D:
 	End
 
 _0178:
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	BufferFriendsName 0
 	BufferPlayersName 1
 	NPCMsg msg_0872_SR202_00002
 	GoTo _019E
 
 _018B:
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	BufferFriendsName 0
 	BufferPlayersName 1
 	NPCMsg msg_0872_SR202_00007

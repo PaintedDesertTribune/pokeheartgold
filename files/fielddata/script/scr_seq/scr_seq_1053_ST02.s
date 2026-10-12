@@ -265,7 +265,7 @@ _05AF:
 
 _05BE:
 	CloseMsg
-	CallStd 2048 /* TODO Diamond std script */
+	CallStd std_sinnoh_rival_theme
 	ApplyMovement 4, mv_ST02_071C
 	ApplyMovement obj_player, mv_ST02_06DC
 	WaitMovement
@@ -342,7 +342,7 @@ _06B6:
 	ApplyMovement 4, mv_ST02_0744
 	ApplyMovement obj_player, mv_ST02_0700
 	WaitMovement
-	CallStd 2049 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	HidePerson 4
 	SetVar VAR_SINNOH_4071, 2
 	ReleaseAll

@@ -187,13 +187,13 @@ _01D9:
 	NPCMsg msg_0962_SC04R0801_00006
 	SetVar 0x8004, 1
 	SetVar 0x8005, 1
-	CallStd 2013 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground trap gift (Underground not in HeartGold)
 	SetVar 0x8004, 23
 	SetVar 0x8005, 1
-	CallStd 2013 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground trap gift (Underground not in HeartGold)
 	SetVar 0x8004, 28
 	SetVar 0x8005, 1
-	CallStd 2013 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground trap gift (Underground not in HeartGold)
 	NPCMsg msg_0962_SC04R0801_00007
 	WaitButton
 	CloseMsg
@@ -233,7 +233,7 @@ _0295:
 	NPCMsg msg_0962_SC04R0801_00014
 	SetVar 0x8004, 33
 	SetVar 0x8005, 1
-	CallStd 2013 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground trap gift (Underground not in HeartGold)
 	NPCMsg msg_0962_SC04R0801_00015
 	WaitButton
 	CloseMsg
@@ -349,7 +349,7 @@ _0442:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0565
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetVar VAR_SINNOH_40B6, 7
 	ClearFlag FLAG_SINNOH_252
 	CloseMsg
@@ -373,7 +373,7 @@ _04A3:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0565
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetVar VAR_SINNOH_40B6, 8
 	ClearFlag FLAG_SINNOH_252
 	CloseMsg
@@ -397,7 +397,7 @@ _0504:
 	// TODO Diamond ScrCmd_HasSpaceForDecoration 0x085 args [32772, 32773, 32780]: no HeartGold mapping yet
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0565
-	CallStd 2012 /* TODO Diamond std script */
+	// Diamond std call dropped: Underground decoration gift (Underground not in HeartGold)
 	SetVar VAR_SINNOH_40B6, 9
 	ClearFlag FLAG_SINNOH_252
 	CloseMsg

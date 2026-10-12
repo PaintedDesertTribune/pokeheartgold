@@ -87,7 +87,7 @@ _0122:
 	Lock 7
 	ApplyMovement 7, mv_SC01_0214
 	WaitMovement
-	CallStd 2040 /* TODO Diamond std script */
+	CallStd std_sinnoh_partner_theme
 	ApplyMovement 7, mv_SC01_0224
 	WaitMovement
 	GetPlayerGender 0x800C
@@ -148,7 +148,7 @@ _01F4:
 	ApplyMovement 7, mv_SC01_022C
 	WaitMovement
 	HidePerson 7
-	CallStd 2041 /* TODO Diamond std script */
+	CallStd std_sinnoh_default_bgm
 	SetVar VAR_SINNOH_4077, 1
 	ReleaseAll
 	End

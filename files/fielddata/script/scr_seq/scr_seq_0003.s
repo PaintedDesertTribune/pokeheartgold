@@ -77,6 +77,9 @@
 	ScrDef scr_seq_0003_069
 	ScrDef scr_seq_0003_070
 	ScrDef scr_seq_0003_071
+	ScrDef std_sinnoh_partner_theme_body
+	ScrDef std_sinnoh_rival_theme_body
+	ScrDef std_sinnoh_default_bgm_body
 	ScrDefEnd
 
 scr_seq_0003_002:
@@ -1750,4 +1753,32 @@ scr_seq_0003_064:
 	CloseMsg
 	ReleaseAll
 	End
+	.balign 4, 0
+
+std_sinnoh_partner_theme_body:
+	StopBGM 0
+	GetPlayerGender VAR_SPECIAL_RESULT
+	Compare VAR_SPECIAL_RESULT, 0
+	GoToIfEq _sinnoh_partner_f
+	PlayBGM SEQ_GS_E_SUPPORT_M
+	RestartCurrentScript
+	End
+
+_sinnoh_partner_f:
+	PlayBGM SEQ_GS_E_SUPPORT_F
+	RestartCurrentScript
+	End
+
+std_sinnoh_rival_theme_body:
+	StopBGM 0
+	PlayBGM SEQ_GS_E_RIVAL1
+	RestartCurrentScript
+	End
+
+std_sinnoh_default_bgm_body:
+	FadeOutBGM 0, 30
+	ResetBGM
+	RestartCurrentScript
+	End
+
 	.balign 4, 0

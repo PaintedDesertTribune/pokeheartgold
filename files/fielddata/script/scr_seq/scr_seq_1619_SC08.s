@@ -306,7 +306,7 @@ scr_seq_SC08_016:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SetVar 0x800C, 0   // Diamond ScrCmd_GetDayOfWeek: result fixed
 	CopyVar 0x8008, 0x800C

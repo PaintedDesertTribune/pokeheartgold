@@ -239,7 +239,7 @@ scr_seq_SD05R0114_003:
 	Call _01E8
 	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
 	CloseMsg
-	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 60]: no HeartGold mapping yet
+	FadeOutBGM 0, 60
 	ApplyMovement 1, mv_SD05R0114_0504
 	WaitMovement
 	ApplyMovement 241, mv_SD05R0114_069C
@@ -247,7 +247,7 @@ scr_seq_SD05R0114_003:
 	// TODO Diamond ScrCmd_Unk005D 0x05d args []: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [0, 32780]: no HeartGold mapping yet
 	Wait 162, 0x800C
-	PlayBGM 1144
+	PlayBGM SEQ_GS_E_TSURETEKE2
 
 _036A:
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [1, 32780]: no HeartGold mapping yet
@@ -270,7 +270,7 @@ _036A:
 	ShowPerson 255
 	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [7, 32780]: no HeartGold mapping yet
 	FadeScreen 6, 1, 1, 0
-	PlayBGM 1145
+	PlayBGM SEQ_GS_E_TSURETEKE1
 	WaitFade
 	Wait 90, 0x800C
 	FadeScreen 6, 1, 0, 0
@@ -594,7 +594,7 @@ _0A94:
 	// TODO Diamond ScrCmd_Unk002D 0x02d args [32772]: no HeartGold mapping yet
 	CloseMsg
 	Wait 60, 0x800C
-	PlayBGM 1065
+	PlayBGM SEQ_GS_E_LUGIA
 	Wait 90, 0x800C
 	NPCMsg msg_1131_SD05R0114_00025
 	Wait 60, 0x800C
@@ -638,9 +638,9 @@ _0B47:
 	WaitCry
 	Wait 60, 0x800C
 	HidePerson 10
-	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 60]: no HeartGold mapping yet
+	FadeOutBGM 0, 60
 	Wait 30, 0x800C
-	// TODO Diamond ScrCmd_PlayDefaultBgm 0x052 args []: no HeartGold mapping yet
+	ResetBGM
 	NPCMsg msg_1131_SD05R0114_00029
 	WaitButton
 	CloseMsg
@@ -648,7 +648,7 @@ _0B47:
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0C29
-	// TODO Diamond ScrCmd_PlayDefaultBgm 0x052 args []: no HeartGold mapping yet
+	ResetBGM
 	SetVar 0x8005, 30
 	SetVar 0x8006, 31
 	Call _01E8

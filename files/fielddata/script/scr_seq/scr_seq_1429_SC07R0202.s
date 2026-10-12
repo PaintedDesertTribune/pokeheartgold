@@ -140,7 +140,7 @@ scr_seq_SC07R0202_004:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 40
 	ReleaseAll
@@ -150,7 +150,7 @@ scr_seq_SC07R0202_005:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 41
 	ReleaseAll

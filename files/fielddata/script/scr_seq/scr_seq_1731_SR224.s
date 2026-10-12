@@ -104,7 +104,7 @@ _00FB:
 	GoToIf 1, _00FB
 	Call _0225
 	Wait 15, 0x800C
-	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 10]: no HeartGold mapping yet
+	FadeOutBGM 0, 10
 	FadeScreen 6, 6, 0, 32767
 	WaitFade
 	// Diamond ScrCmd_Unk0270 dropped: Diamond save-flag toggle of unknown purpose
@@ -116,7 +116,7 @@ _00FB:
 	NPCMsg msg_1212_SR224_00004
 	WaitButton
 	CloseMsg
-	// TODO Diamond ScrCmd_FadeInBgm 0x055 args [10]: no HeartGold mapping yet
+	FadeInBGM 10
 	SetFlag FLAG_SINNOH_301
 	SetFlag FLAG_SINNOH_624
 	SetVar VAR_SINNOH_408D, 0

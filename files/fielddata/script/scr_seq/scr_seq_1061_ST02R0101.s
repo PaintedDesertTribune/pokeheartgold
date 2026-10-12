@@ -137,13 +137,13 @@ _01CA:
 	GoTo _01E4
 
 _01E4:
-	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 40]: no HeartGold mapping yet
+	FadeOutBGM 0, 40
 	ApplyMovement 0, mv_ST02R0101_0330
 	ApplyMovement obj_player, mv_ST02R0101_0368
 	WaitMovement
 	Wait 35, 0x800C
 	SetFlag FLAG_SINNOH_2451
-	PlayBGM 1098
+	PlayBGM SEQ_GS_E_TSURETEKE2
 	NPCMsg msg_0877_ST02R0101_00009
 	NPCMsg msg_0877_ST02R0101_00010
 	YesNo 0x800C

@@ -16,7 +16,7 @@ scr_seq_SC06FS0101_000:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	MartBuy 1
 	ReleaseAll
@@ -26,7 +26,7 @@ scr_seq_SC06FS0101_001:
 	PlayFanfare 1500
 	LockAll
 	FacePlayer
-	CallStd 2019 /* TODO Diamond std script */
+	CallStd std_mart_intro
 	CloseMsg
 	SpecialMartBuy 37
 	ReleaseAll
