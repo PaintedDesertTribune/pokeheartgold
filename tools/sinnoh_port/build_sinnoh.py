@@ -78,7 +78,10 @@ DP_SPRITE_TABLES = "arm9/overlays/05/asm/ov05_021F0514.s"
 EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "SINNOH_BM_CANALAVE_LIFT_X": 0x127,
                                           "SINNOH_BM_CANALAVE_LIFT_V": 0x128, "SINNOH_BM_CANALAVE_LIFT_TALL": 0x129,
                                           "SINNOH_BM_CANALAVE_FLOOR_1": 0x12C, "SINNOH_BM_CANALAVE_FLOOR_2": 0x12D,
-                                          "SINNOH_BM_CANALAVE_FLOOR_3": 0x12E}}
+                                          "SINNOH_BM_CANALAVE_FLOOR_3": 0x12E},
+                     "MAP_VEILSTONE_GYM": {"SINNOH_BM_VEILSTONE_BAG_0": 0x11F, "SINNOH_BM_VEILSTONE_BAG_1": 0x120, "SINNOH_BM_VEILSTONE_BAG_2": 0x121,
+                                           "SINNOH_BM_VEILSTONE_BAG_3": 0x122, "SINNOH_BM_VEILSTONE_BAG_4": 0x123, "SINNOH_BM_VEILSTONE_BAG_5": 0x124,
+                                           "SINNOH_BM_VEILSTONE_BAG_6": 0x125}}
 SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
 BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
 FIRST_SINNOH_SPRITE = 1100   # HeartGold sprite ids above the follower-mon range
@@ -525,6 +528,7 @@ TRANSLATE = {
     "ScrCmd_CheckTrainerFlag": ("CheckTrainerFlag", "t"),
     "ScrCmd_Unk0040": ("MenuInit", "bbbbp"),
     "ScrCmd_InitCanalaveGym": ("SinnohCanalaveGymInit", ""),   # src/field/gymmick/sinnoh_canalave.c
+    "ScrCmd_InitVeilstoneGym": ("SinnohVeilstoneGymInit", ""),   # src/field/gymmick/sinnoh_veilstone.c
     "ScrCmd_PlayBgm": ("PlayBGM", "B"),
     "ScrCmd_Unk0057": ("PlayBGM", "B"),          # Diamond's second play-BGM (used by its std 2040/2048 theme scripts)
     "ScrCmd_FadeOutBgm": ("FadeOutBGM", "vv"),   # (target volume, frames) in both games

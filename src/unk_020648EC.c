@@ -4,6 +4,7 @@
 
 #include "gymmick.h"
 #include "field/gymmick/sinnoh_canalave.h"
+#include "field/gymmick/sinnoh_veilstone.h"
 #include "overlay_04.h"
 #include "save_misc_data.h"
 #include "scrcmd.h"
@@ -54,6 +55,7 @@ static const FieldSystemFunc1 sInitFuncs[] = {
     [GYMMICK_VIRIDIAN] = GymmickInit_Viridian,
     [GYMMICK_SINJOH] = GymmickInit_Sinjoh,
     [GYMMICK_SINNOH_CANALAVE] = GymmickInit_SinnohCanalave,
+    [GYMMICK_SINNOH_VEILSTONE] = GymmickInit_SinnohVeilstone,
 };
 
 static const FieldSystemFunc1 sFreeFuncs[] = {
@@ -68,6 +70,7 @@ static const FieldSystemFunc1 sFreeFuncs[] = {
     [GYMMICK_VIRIDIAN] = GymmickFree_Viridian,
     [GYMMICK_SINJOH] = GymmickFree_Sinjoh,
     [GYMMICK_SINNOH_CANALAVE] = GymmickFree_SinnohCanalave,
+    [GYMMICK_SINNOH_VEILSTONE] = GymmickFree_SinnohVeilstone,
 };
 
 static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
@@ -82,4 +85,5 @@ static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
     [GYMMICK_VIRIDIAN] = NULL,
     [GYMMICK_SINJOH] = NULL,
     [GYMMICK_SINNOH_CANALAVE] = GymmickCheckCollision_SinnohCanalave,
+    [GYMMICK_SINNOH_VEILSTONE] = GymmickCheckCollision_SinnohVeilstone,
 };

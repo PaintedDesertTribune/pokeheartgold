@@ -956,6 +956,13 @@
 #define SINNOH_BM_CANALAVE_LIFT_V 278   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_X 277   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_Z 276   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_0 382   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_1 383   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_2 384   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_3 385   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_4 386   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_5 387   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_VEILSTONE_BAG_6 388   // Diamond build model, placed at runtime by gymmick code
 
 #define std_sinnoh_partner_theme 2072   // appended to HeartGold's misc std bank
 #define std_sinnoh_rival_theme 2073   // appended to HeartGold's misc std bank

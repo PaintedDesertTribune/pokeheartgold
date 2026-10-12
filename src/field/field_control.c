@@ -1,4 +1,5 @@
 #include "field/gymmick/sinnoh_canalave.h" // Sinnoh port
+#include "field/gymmick/sinnoh_veilstone.h" // Sinnoh port
 #include "field/field_control.h"
 
 #include "error_handling.h"
@@ -238,6 +239,9 @@ int FieldInput_Process(FieldInput *fieldInput, FieldSystem *fieldSystem) {
         playerEvent |= PLAYER_EVENT_USED_WATERFALL;
     }
 
+    if (FieldSystem_IsSaveGymmickTypeEqualTo(fieldSystem, GYMMICK_SINNOH_VEILSTONE) && SinnohVeilstoneGymmick_TryPush(fieldSystem, direction)) { // Sinnoh port
+        return 1;
+    }
     if (ov01_021F1D94(fieldSystem, fieldSystem->playerAvatar, direction, playerEvent) == TRUE) {
         return 1;
     }

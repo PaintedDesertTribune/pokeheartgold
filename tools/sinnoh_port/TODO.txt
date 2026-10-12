@@ -634,7 +634,6 @@ MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Nop
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_SlotMachine
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Unk0275
 MAP_VEILSTONE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_VEILSTONE_GYM: unmapped command ScrCmd_InitVeilstoneGym
 MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: std script 2047
 MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: unmapped command ScrCmd_AddPartyMonFriendship
 MAP_VEILSTONE_MASSAGE_GIRL_HOUSE: unmapped command ScrCmd_Unk026C

@@ -12,7 +12,7 @@
 	ScrDefEnd
 
 scr_seq_SC07GYM0101_000:
-	// TODO Diamond ScrCmd_InitVeilstoneGym 0x174 args []: no HeartGold mapping yet
+	SinnohVeilstoneGymInit
 	End
 
 scr_seq_SC07GYM0101_001:

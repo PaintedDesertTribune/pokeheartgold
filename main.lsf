@@ -392,6 +392,7 @@ Static main
 	Library NITRO_Runtime_Ai_LE.a
     Object main.nef.p/src_sinnoh_ship_cutscene.c.o
     Object main.nef.p/src_field_gymmick_sinnoh_canalave.c.o
+    Object main.nef.p/src_field_gymmick_sinnoh_veilstone.c.o
 }
 
 Autoload ITCM
