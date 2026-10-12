@@ -1,0 +1,117 @@
+{
+  "header": "fielddata/script/scr_seq/event_D02.h",
+  "bgs": [
+    {
+      "scriptId": "8249",
+      "type": 2,
+      "x": 235,
+      "z": 650,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_D02_003 + 1",
+      "type": 0,
+      "x": 243,
+      "z": 654,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_D02_004 + 1",
+      "type": 1,
+      "x": 240,
+      "z": 659,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 215,
+      "z": 659,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D02_0",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_428",
+      "scriptId": "_EV_scr_seq_D02_002 + 1",
+      "facingDirection": 1,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 243,
+      "z": 655,
+      "y": 0
+    },
+    {
+      "id": "obj_D02_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1001",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 242,
+      "z": 644,
+      "y": 0
+    },
+    {
+      "id": "obj_D02_4",
+      "spriteId": "SPRITE_SINNOH_BALLOON",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_553",
+      "scriptId": "_EV_scr_seq_D02_005 + 1",
+      "facingDirection": 1,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 241,
+      "z": 660,
+      "y": 0
+    },
+    {
+      "id": "obj_D02_5",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1238",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 246,
+      "z": 660,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 243,
+      "z": 654,
+      "header": "MAP_SINNOH_VALLEY_WINDWORKS_INTERIOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

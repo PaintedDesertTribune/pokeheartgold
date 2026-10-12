@@ -126,7 +126,7 @@ _0158:
 	NPCMsg msg_0840_C02R0501_00002
 	NPCMsg msg_0840_C02R0501_00003
 	PlaySE 1166
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1166
 	CloseMsg
 	Wait 15, 0x800C
 	Call _01FC

@@ -1,0 +1,32 @@
+{
+  "key": 8287,
+  "messages": [
+    {
+      "id": "msg_0960_C04R0601_00000",
+      "en_US": [
+        "Oak: Ah, it’s you! Good to see you!\n",
+        "How is your Pokédex coming along?\r",
+        "Capturing every kind of Pokémon is\n",
+        "no easy feat, I’ll grant you that.\r",
+        "But I’m sure you can accomplish it!\r"
+      ]
+    },
+    {
+      "id": "msg_0960_C04R0601_00001",
+      "en_US": [
+        "Oak: Ah, yes!\r",
+        "An acquaintance from Kanto has sent\n",
+        "me something quite interesting.\r",
+        "I think you’d make better use of it\n",
+        "than I ever could.\r"
+      ]
+    },
+    {
+      "id": "msg_0960_C04R0601_00002",
+      "en_US": [
+        "I understand there is a Pokémon that\n",
+        "evolves when it is traded while holding\\fthat Up-Grade."
+      ]
+    }
+  ]
+}

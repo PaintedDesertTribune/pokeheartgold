@@ -1,0 +1,91 @@
+{
+  "header": "fielddata/script/scr_seq/event_C04R0201.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C04R0201_0",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_539",
+      "scriptId": "_EV_scr_seq_C04R0201_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 15,
+      "z": 9,
+      "y": 0
+    },
+    {
+      "id": "obj_C04R0201_1",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 16,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_539",
+      "scriptId": "_EV_scr_seq_C04R0201_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 8,
+      "z": 10,
+      "y": 0
+    },
+    {
+      "id": "obj_C04R0201_2",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 16,
+      "type": 1,
+      "eventFlag": "FLAG_SINNOH_539",
+      "scriptId": "std_trainer(TRAINER_SINNOH_GALACTIC_GRUNT_5)",
+      "facingDirection": 2,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 18,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_C04R0201_3",
+      "spriteId": "SPRITE_SINNOH_GINGAW",
+      "movement": 17,
+      "type": 1,
+      "eventFlag": "FLAG_SINNOH_539",
+      "scriptId": "std_trainer(TRAINER_SINNOH_GALACTIC_F_GRUNT)",
+      "facingDirection": 3,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 14,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 11,
+      "z": 12,
+      "header": "MAP_SINNOH_ETERNA",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 15,
+      "z": 3,
+      "header": "MAP_SINNOH_ETERNA_GALACTIC_BUILDING_2F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

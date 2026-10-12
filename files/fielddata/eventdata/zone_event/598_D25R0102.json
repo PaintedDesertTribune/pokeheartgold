@@ -1,0 +1,42 @@
+{
+  "header": "fielddata/script/scr_seq/event_D25R0102.h",
+  "bgs": [
+    {
+      "scriptId": "8252",
+      "type": 2,
+      "x": 6,
+      "z": 3,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D25R0102_0",
+      "spriteId": "SPRITE_SINNOH_OLDMAN2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_665",
+      "scriptId": "0",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 19,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 19,
+      "z": 11,
+      "header": "MAP_SINNOH_OLD_CHATEAU_ENTRANCE",
+      "anchor": 2,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

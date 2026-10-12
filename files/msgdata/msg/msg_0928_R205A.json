@@ -1,0 +1,96 @@
+{
+  "key": 8612,
+  "messages": [
+    {
+      "id": "msg_0928_R205A_00000",
+      "en_US": [
+        "Help, help, Trainer!\r",
+        "Please, can you get my papa for me?\n",
+        "He works at the Valley Windworks.\r",
+        "But the people dressed like spacemen\n",
+        "are mean and won’t let me in..."
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00001",
+      "en_US": [
+        "Please, Trainer! Get my papa from\n",
+        "the Valley Windworks!"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00002",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0928_R205A_00003",
+      "en_US": [
+        "We, Team Galactic, are conducting\n",
+        "research in the Eterna Forest!\r",
+        "This is as far as you will go!\r"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00004",
+      "en_US": [
+        "Our research involves catching\n",
+        "Pokémon in the flowery meadows of\\fFloaroma Town.\r",
+        "We are also using the energy of the\n",
+        "Valley Windworks for something.\r",
+        "But that is of no concern to you!\r"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00005",
+      "en_US": [
+        "Our research involves catching\n",
+        "Pokémon in the flowery meadows of\\fFloaroma Town.\r",
+        "We are also using the energy of the\n",
+        "Valley Windworks for something.\r",
+        "But that is of no concern to you!"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00006",
+      "en_US": [
+        "Many Poison-type Pokémon make the\n",
+        "Eterna Forest their home.\r",
+        "But I didn’t buy any Antidotes.\n",
+        "What should I do?\\fDo I press on, or do I go back?"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00007",
+      "en_US": [
+        "If you slather sweet Honey on\n",
+        "a sweet-smelling tree...\r",
+        "Pokémon may be attracted by that\n",
+        "sweet scent."
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00008",
+      "en_US": [
+        "Rt. 205\n",
+        "Floaroma Town"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00009",
+      "en_US": [
+        "Rt. 205\n",
+        "Eterna Forest"
+      ]
+    },
+    {
+      "id": "msg_0928_R205A_00010",
+      "en_US": [
+        "Trainer Tips!\r",
+        "The items placed in your Bag are\n",
+        "automatically sorted to the\\fappropriate pockets.\r",
+        "It’s very convenient!\n",
+        "It’s a Trainer’s best friend!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "header": "fielddata/script/scr_seq/event_D13R0101.h",
+  "bgs": [
+    {
+      "scriptId": "8237",
+      "type": 2,
+      "x": 52,
+      "z": 31,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8238",
+      "type": 2,
+      "x": 20,
+      "z": 27,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8239",
+      "type": 2,
+      "x": 17,
+      "z": 18,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8240",
+      "type": 2,
+      "x": 44,
+      "z": 20,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8241",
+      "type": 2,
+      "x": 39,
+      "z": 23,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8242",
+      "type": 2,
+      "x": 11,
+      "z": 35,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8243",
+      "type": 2,
+      "x": 28,
+      "z": 25,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8244",
+      "type": 2,
+      "x": 32,
+      "z": 37,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8245",
+      "type": 2,
+      "x": 35,
+      "z": 32,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8246",
+      "type": 2,
+      "x": 36,
+      "z": 17,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8247",
+      "type": 2,
+      "x": 24,
+      "z": 30,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_D13R0101_0",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_445",
+      "scriptId": "_EV_scr_seq_D13R0101_002 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 12,
+      "z": 47,
+      "y": 0
+    },
+    {
+      "id": "obj_D13R0101_1",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_446",
+      "scriptId": "_EV_scr_seq_D13R0101_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 13,
+      "z": 47,
+      "y": 0
+    },
+    {
+      "id": "obj_D13R0101_2",
+      "spriteId": "SPRITE_MIDDLEMAN1",
+      "movement": 16,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_D13R0101_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 12,
+      "z": 46,
+      "y": 0
+    },
+    {
+      "id": "obj_D13R0101_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_444",
+      "scriptId": "_EV_scr_seq_D13R0101_006 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 13,
+      "z": 47,
+      "y": 0
+    },
+    {
+      "id": "obj_D13R0101_4",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1132",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 14,
+      "z": 15,
+      "y": 0
+    },
+    {
+      "id": "obj_D13R0101_5",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1220",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 46,
+      "z": 28,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 50,
+      "z": 9,
+      "header": "MAP_SINNOH_FLOAROMA",
+      "anchor": 5,
+      "y": 0
+    },
+    {
+      "x": 51,
+      "z": 9,
+      "header": "MAP_SINNOH_FLOAROMA",
+      "anchor": 6,
+      "y": 0
+    },
+    {
+      "x": 39,
+      "z": 45,
+      "header": "MAP_SINNOH_FLOAROMA_MEADOW_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "z": 54,
+      "header": "MAP_SINNOH_FLOAROMA",
+      "anchor": 7,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "z": 54,
+      "header": "MAP_SINNOH_FLOAROMA",
+      "anchor": 8,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_D13R0101_001 + 1",
+      "x": 12,
+      "z": 48,
+      "w": 2,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_40E9"
+    }
+  ]
+}

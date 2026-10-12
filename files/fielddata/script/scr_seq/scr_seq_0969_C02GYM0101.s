@@ -33,7 +33,7 @@ scr_seq_C02GYM0101_001:
 	BufferPlayersName 0
 	NPCMsg msg_0831_C02GYM0101_00002
 	PlaySE 1161
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1161
 	GiveBadge 5
 	AddSpecialGameStat 23
 	SetTrainerFlag TRAINER_SINNOH_BLACK_BELT_DAVID

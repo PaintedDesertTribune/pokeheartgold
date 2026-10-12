@@ -241,6 +241,47 @@ static const struct HiddenItemData sHiddenItemParam[] = {
     { 52, 1, 0, 0, 234 }, // Diamond T01
     { 396, 1, 0, 0, 235 }, // Diamond L01
     { 22, 1, 0, 0, 236 }, // Diamond C03
+    { 26, 1, 0, 0, 237 }, // Diamond D13R0101
+    { 46, 1, 0, 0, 238 }, // Diamond D13R0101
+    { 324, 1, 0, 0, 239 }, // Diamond D13R0101
+    { 52, 1, 0, 0, 240 }, // Diamond D13R0101
+    { 249, 1, 0, 0, 241 }, // Diamond D13R0101
+    { 255, 1, 0, 0, 242 }, // Diamond D13R0101
+    { 28, 1, 0, 0, 243 }, // Diamond D13R0101
+    { 380, 1, 0, 0, 244 }, // Diamond D13R0101
+    { 279, 1, 0, 0, 245 }, // Diamond D13R0101
+    { 48, 1, 0, 0, 246 }, // Diamond D13R0101
+    { 109, 1, 0, 0, 247 }, // Diamond D13R0101
+    { 50, 1, 0, 0, 248 }, // Diamond R205A
+    { 365, 1, 0, 0, 249 }, // Diamond D02
+    { 350, 1, 0, 0, 250 }, // Diamond R205B
+    { 17, 1, 0, 0, 251 }, // Diamond D03R0101
+    { 41, 1, 0, 0, 252 }, // Diamond D25R0102
+    { 18, 1, 0, 0, 253 }, // Diamond C04
+    { 350, 1, 0, 0, 254 }, // Diamond C04
+    { 79, 1, 0, 0, 255 }, // Diamond C04
+    { 38, 1, 0, 0, 256 }, // Diamond C04
+    { 4, 1, 0, 0, 257 }, // Diamond R206
+    { 328, 1, 0, 0, 258 }, // Diamond R206
+    { 358, 1, 0, 0, 259 }, // Diamond D21R0101
+    { 90, 1, 0, 0, 260 }, // Diamond D21R0101
+    { 305, 1, 0, 0, 261 }, // Diamond D21R0101
+    { 50, 1, 0, 0, 262 }, // Diamond D21R0101
+    { 40, 1, 0, 0, 263 }, // Diamond D21R0101
+    { 108, 1, 0, 0, 264 }, // Diamond D21R0101
+    { 58, 1, 0, 0, 265 }, // Diamond D21R0102
+    { 4, 1, 0, 0, 266 }, // Diamond D21R0102
+    { 78, 1, 0, 0, 267 }, // Diamond R207
+    { 305, 1, 0, 0, 268 }, // Diamond R207
+    { 72, 1, 0, 0, 269 }, // Diamond R207
+    { 2, 1, 0, 0, 270 }, // Diamond R207
+    { 352, 1, 0, 0, 271 }, // Diamond D04
+    { 107, 1, 0, 0, 272 }, // Diamond D04
+    { 76, 1, 0, 0, 273 }, // Diamond D04R0101
+    { 27, 1, 0, 0, 274 }, // Diamond D04R0101
+    { 79, 1, 0, 0, 275 }, // Diamond R211A
+    { 38, 1, 0, 0, 276 }, // Diamond R211A
+    { 109, 1, 0, 0, 277 }, // Diamond R211B
     // SINNOH_PORT_END
 };
 #endif //_IN_FIELDMAP_C

@@ -28,7 +28,7 @@ scr_seq_T01R0202_002:
 	NPCMsg msg_0886_T01R0202_00001
 	PlaySE 1154
 	NPCMsg msg_0886_T01R0202_00002
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1154
 	CloseMsg
 	// TODO Diamond ScrCmd_PlayDefaultBgm 0x052 args []: no HeartGold mapping yet
 	ReleaseAll

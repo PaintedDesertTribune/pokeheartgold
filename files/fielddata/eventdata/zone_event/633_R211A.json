@@ -1,0 +1,142 @@
+{
+  "header": "fielddata/script/scr_seq/event_R211A.h",
+  "bgs": [
+    {
+      "scriptId": "8275",
+      "type": 2,
+      "x": 355,
+      "z": 521,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8276",
+      "type": 2,
+      "x": 347,
+      "z": 517,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_R211A_001 + 1",
+      "type": 1,
+      "x": 379,
+      "z": 531,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 344,
+      "z": 530,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_R211A_002 + 1",
+      "type": 1,
+      "x": 353,
+      "z": 531,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_R211A_0",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_BIRD_KEEPER_ALEXANDRA)",
+      "facingDirection": 1,
+      "param0": 2,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 367,
+      "z": 523,
+      "y": 0
+    },
+    {
+      "id": "obj_R211A_1",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 9,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_HIKER_LOUIS)",
+      "facingDirection": 1,
+      "param0": 4,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 377,
+      "z": 529,
+      "y": 0
+    },
+    {
+      "id": "obj_R211A_2",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 53,
+      "type": 2,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_NINJA_BOY_ZACH)",
+      "facingDirection": 1,
+      "param0": 1,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 361,
+      "z": 525,
+      "y": 0
+    },
+    {
+      "id": "obj_R211A_4",
+      "spriteId": "SPRITE_BREAKROCK",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_32",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 379,
+      "z": 527,
+      "y": 0
+    },
+    {
+      "id": "obj_R211A_5",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1013",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 368,
+      "z": 535,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 380,
+      "z": 532,
+      "header": "MAP_SINNOH_ROUTE_211_WEST",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

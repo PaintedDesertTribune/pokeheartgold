@@ -11329,6 +11329,1865 @@
         "OK, OK, time for work! I’ll work up\n",
         "a thirst with my Pokémon!\n"
       ]
+    },
+    {
+      "id": "msg_0728_01859",
+      "en_US": [
+        "Oh, a weak-looking Trainer...\n",
+        "Do you want to have a go?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01860",
+      "en_US": [
+        "Aww...\n",
+        "I should have said no.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01861",
+      "en_US": [
+        "I didn’t know you’re so tough...\n",
+        "I’m going to train harder too!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01862",
+      "en_US": [
+        "Hi, pretty-tough Trainer!\n",
+        "Will you give me a rematch?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01863",
+      "en_US": [
+        "May I please trouble you for a\n",
+        "battle?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01864",
+      "en_US": [
+        "Oh...\n",
+        "You’re so strong...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01865",
+      "en_US": [
+        "Maybe I could have won if my Pokémon\n",
+        "was holding a Berry...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01866",
+      "en_US": [
+        "Oh, thank you for the last time.\r",
+        "May I please trouble you for\n",
+        "another battle?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01867",
+      "en_US": [
+        "My dad gave me some Pokémon!\n",
+        "They’re gonna win for me!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01868",
+      "en_US": [
+        "But they’re Pokémon I got from my\n",
+        "dad...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01869",
+      "en_US": [
+        "Who gave you your first Pokémon?\r",
+        "Your first Pokémon is the one with\n",
+        "the most fond memories, I think.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01870",
+      "en_US": [
+        "I’m gonna win this time with the\n",
+        "Pokémon I got from my dad!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01871",
+      "en_US": [
+        "Say, listen. What’s your opinion on\n",
+        "bug Pokémon?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01872",
+      "en_US": [
+        "I’m not going to be able to explain\n",
+        "the charms of bug Pokémon this way!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01873",
+      "en_US": [
+        "Bug Pokémon grow quickly, and they do\n",
+        "stuff like poison and paralyze, and\\fthey’re cute and yet cool.\r",
+        "You gotta believe me. They’re good!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01874",
+      "en_US": [
+        "So, listen. Tell me you’ve grown to\n",
+        "like bug Pokémon since we last met?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01875",
+      "en_US": [
+        "Let’s have a battle while smelling\n",
+        "the aroma of flowers!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01876",
+      "en_US": [
+        "Even though I lost, I’m not angry\n",
+        "because it smells so nice.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01877",
+      "en_US": [
+        "Maybe I’ll put some Accessories on\n",
+        "my Pokémon at the TV station in\\fJubilife City.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01878",
+      "en_US": [
+        "You came back to me because you\n",
+        "couldn’t forget the smell of flowers!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01879",
+      "en_US": [
+        "Liv: We can one-shot this Trainer,\n",
+        "can’t we, Liz?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01880",
+      "en_US": "Liv: Oh, oh, oh?\n"
+    },
+    {
+      "id": "msg_0728_01881",
+      "en_US": "Liv: Awww! That is so bad!\n"
+    },
+    {
+      "id": "msg_0728_01882",
+      "en_US": [
+        "Liv: You only have one Pokémon?\n",
+        "That’s so boring!"
+      ]
+    },
+    {
+      "id": "msg_0728_01883",
+      "en_US": [
+        "Liv: Oh! You’re that Trainer!\n",
+        "Let’s get payback, Liz!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01884",
+      "en_US": [
+        "Liz: We’re the strongest in our\n",
+        "class!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01885",
+      "en_US": "Liz: Oh, but, wait!\n"
+    },
+    {
+      "id": "msg_0728_01886",
+      "en_US": [
+        "Liz: I wish I could be strong like\n",
+        "you when I get bigger.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01887",
+      "en_US": [
+        "Liz: Um, will you battle with us?\n",
+        "Me and Liv?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01888",
+      "en_US": [
+        "Liz: We’re the best in our class.\n",
+        "We can’t be losers all the time!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01889",
+      "en_US": [
+        "...This is why I’m gonna be stuck as\n",
+        "a grunt forever...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01890",
+      "en_US": [
+        "...If only I had some decent\n",
+        "Pokémon...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01891",
+      "en_US": [
+        "There’s no mountain here, but I’m\n",
+        "dressed to hike! Gahaha! Here goes!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01892",
+      "en_US": [
+        "Oh, yeah!\n",
+        "A refreshing battle that was!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01893",
+      "en_US": [
+        "You can find the same kinds of\n",
+        "Pokémon in all sorts of places.\r",
+        "There’s no law saying a Hiker can’t\n",
+        "go searching off in the mountains!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01894",
+      "en_US": [
+        "If you meet someone in the mountains,\n",
+        "they’re no longer strangers.\r",
+        "Meet them twice, and they’re your\n",
+        "friend!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01895",
+      "en_US": [
+        "I love Pokémon that smell sweet.\n",
+        "Like this one--get a whiff of this!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01896",
+      "en_US": [
+        "Did you understand what I meant?\n",
+        "Didn’t my Pokémon smell nice?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01897",
+      "en_US": [
+        "If you plant lots of Berries, you\n",
+        "can be surrounded by sweet scents.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01898",
+      "en_US": [
+        "Sniff... Oh?\n",
+        "Your Pokémon smells nice!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01899",
+      "en_US": [
+        "How about a quick battle before\n",
+        "I leave for Eterna Forest?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01900",
+      "en_US": "That really dampened my spirits.\n"
+    },
+    {
+      "id": "msg_0728_01901",
+      "en_US": [
+        "They say there are rough Pokémon\n",
+        "in Eterna Forest.\r",
+        "I’d better be more prepared than\n",
+        "this.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01902",
+      "en_US": [
+        "You’ve been to Eterna Forest\n",
+        "already, right? How was it?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01903",
+      "en_US": [
+        "What kinds of Pokémon live around\n",
+        "here, I wonder?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01904",
+      "en_US": [
+        "I’m shocked!\n",
+        "How did I lose?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01905",
+      "en_US": [
+        "What can I tell you about Pokémon?\r",
+        "Well, there are males and females.\n",
+        "And some that you can’t tell!"
+      ]
+    },
+    {
+      "id": "msg_0728_01906",
+      "en_US": [
+        "Oh, hi! We meet again!\n",
+        "Have you seen any rare Pokémon?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01907",
+      "en_US": [
+        "Of all places possible, I’ve lost\n",
+        "my way here...\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01908",
+      "en_US": [
+        "Having lost his way, the Trainer lost\n",
+        "the battle too...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01909",
+      "en_US": [
+        "From being lost in the mountains so\n",
+        "long, I became a Hiker...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01910",
+      "en_US": [
+        "I’ve lost my way again... I’m\n",
+        "betrayed by my sense of direction.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01911",
+      "en_US": [
+        "Osu!\n",
+        "I’m not trained to hold back!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01912",
+      "en_US": [
+        "I... I concede!\n",
+        "You’re in a different class...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01913",
+      "en_US": [
+        "You taught me how I measure up!\n",
+        "Thank you!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01914",
+      "en_US": [
+        "Osu!\n",
+        "This time, I’m fully committed!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01915",
+      "en_US": [
+        "Oh, I don’t know.\n",
+        "Should I play a little?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01916",
+      "en_US": [
+        "Oh, boo!\n",
+        "How insulting!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01917",
+      "en_US": [
+        "Listen very closely...\n",
+        "Can you hear the cries of Pokémon?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01918",
+      "en_US": [
+        "Oh, I don’t know.\n",
+        "Should I play a little again?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01919",
+      "en_US": [
+        "It’s a long way between Floaroma\n",
+        "and Eterna City. So, let’s battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01920",
+      "en_US": [
+        "Wawawaah!\n",
+        "I’m out of Pokémon that can go!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01921",
+      "en_US": [
+        "With my Pokémon by my side, I’m\n",
+        "sure any camping will be a blast!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01922",
+      "en_US": [
+        "While I was enjoying camping, my\n",
+        "Pokémon got all buffed up!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01923",
+      "en_US": [
+        "Yeah, like I’m really supposed to\n",
+        "win with a Pokémon like this..."
+      ]
+    },
+    {
+      "id": "msg_0728_01924",
+      "en_US": [
+        "What do you think you’re doing to my\n",
+        "Pokémon?!"
+      ]
+    },
+    {
+      "id": "msg_0728_01925",
+      "en_US": [
+        "This can’t be?! I lost?!\n",
+        "You...you uppity brat!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01926",
+      "en_US": [
+        "I ain’t fooling around, kid.\n",
+        "This is how a professional does it!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01927",
+      "en_US": [
+        "You messed up my job...\n",
+        "Now I’m not gonna get a bonus...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01928",
+      "en_US": [
+        "I hear they’re going to do something\n",
+        "with electricity, I think.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01929",
+      "en_US": [
+        "Collecting electricity from the Valley\n",
+        "Windworks... That’s our mission.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01930",
+      "en_US": [
+        "I really don’t like kids who also\n",
+        "happen to be tough Trainers...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01931",
+      "en_US": [
+        "You don’t have an inkling of what\n",
+        "Team Galactic is trying to achieve!\r",
+        "Of course, they don’t tell a grunt\n",
+        "like me anything, either... But still!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01932",
+      "en_US": [
+        "Nothing’s biting...\n",
+        "I could use a break, I suppose.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01933",
+      "en_US": [
+        "Oh, well. I should’ve been a little\n",
+        "more serious about this.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01934",
+      "en_US": [
+        "!\r",
+        "Yank your fishing rod when that\n",
+        "appears. That’s how you fish.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01935",
+      "en_US": [
+        "All right! I caught some tough\n",
+        "Pokémon. I’m ready for battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01936",
+      "en_US": [
+        "I landed myself a feisty Trainer!\n",
+        "Let’s go!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01937",
+      "en_US": "I let a big win slip away...\n"
+    },
+    {
+      "id": "msg_0728_01938",
+      "en_US": [
+        "Do you have a fishing rod?\n",
+        "Catch some big ones!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01939",
+      "en_US": [
+        "Hey, you feisty tyke! I caught a big\n",
+        "one! Let’s battle again!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01940",
+      "en_US": [
+        "I fished up some tough Pokémon!\n",
+        "Let’s have ourselves a battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01941",
+      "en_US": [
+        "Losing has my emotions all knotted\n",
+        "up!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01942",
+      "en_US": [
+        "My feet are tangled, too!\n",
+        "Ouch! Ouch!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01943",
+      "en_US": [
+        "I’m going to win this time!\n",
+        "I said I’ll win, and I mean it!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01944",
+      "en_US": [
+        "What’s cool, you might ask? No?\n",
+        "I’ll tell you anyway: bug Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01945",
+      "en_US": [
+        "It bugs me when people ignore the\n",
+        "awesome coolness of bug Pokémon!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01946",
+      "en_US": [
+        "It would seem that coolness alone\n",
+        "doesn’t add up to any wins...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01947",
+      "en_US": "Here comes the swarm!\r"
+    },
+    {
+      "id": "msg_0728_01948",
+      "en_US": "Whoooh...\n"
+    },
+    {
+      "id": "msg_0728_01949",
+      "en_US": [
+        "Did you know? “Swarm” is the name\n",
+        "of a Pokémon ability.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01950",
+      "en_US": [
+        "A strange presence has been felt...\n",
+        "It is emanating from...you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01951",
+      "en_US": "Oh! Be one with me, my MEDITITE!"
+    },
+    {
+      "id": "msg_0728_01952",
+      "en_US": [
+        "The Old Chateau... I sense...\n",
+        "a particularly strong presence there."
+      ]
+    },
+    {
+      "id": "msg_0728_01953",
+      "en_US": [
+        "I see it...\n",
+        "I see it...\r",
+        "I see you going down in defeat...\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01954",
+      "en_US": "It is I that has gone down in defeat."
+    },
+    {
+      "id": "msg_0728_01955",
+      "en_US": [
+        "The Old Chateau...lies abandoned,\n",
+        "with none living in its walls...\r",
+        "And yet, and yet, there permeates a\n",
+        "presence..."
+      ]
+    },
+    {
+      "id": "msg_0728_01956",
+      "en_US": "We’re just out on a power walk!\r"
+    },
+    {
+      "id": "msg_0728_01957",
+      "en_US": "Oh, you!\n"
+    },
+    {
+      "id": "msg_0728_01958",
+      "en_US": [
+        "Eewww, nasty! There are only bug\n",
+        "Pokémon in the forest...\r",
+        "I also forgot to buy some Antidotes.\n",
+        "It’s just the worst thing ever!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01959",
+      "en_US": [
+        "My senses tingle...\n",
+        "I’ve spotted a rare Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01960",
+      "en_US": "Awawawawah...\n"
+    },
+    {
+      "id": "msg_0728_01961",
+      "en_US": [
+        "I thought it was a rare Pokémon, but\n",
+        "it turned out to be just a Trainer!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01962",
+      "en_US": [
+        "When a Trainer and a Pokémon bond\n",
+        "as one, a wondrous power is born...\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01963",
+      "en_US": "Hmm...\n"
+    },
+    {
+      "id": "msg_0728_01964",
+      "en_US": [
+        "There still remain many mysteries yet\n",
+        "to be solved in this strange world...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01965",
+      "en_US": [
+        "This forest is strange, you know...\n",
+        "It seems to fill me with energy...\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01966",
+      "en_US": [
+        "Your victory...\n",
+        "There is nothing strange about it."
+      ]
+    },
+    {
+      "id": "msg_0728_01967",
+      "en_US": [
+        "Forests are mystifying... They seem\n",
+        "to gather such unexplainable energy."
+      ]
+    },
+    {
+      "id": "msg_0728_01968",
+      "en_US": "It’s not the end yet."
+    },
+    {
+      "id": "msg_0728_01969",
+      "en_US": [
+        "Are you saying something?\n",
+        "You think you have me cornered?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01970",
+      "en_US": [
+        "Amazing!\n",
+        "You’re very good, aren’t you?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01971",
+      "en_US": [
+        "My Grass-type Pokémon can dole out\n",
+        "special attacks...\r",
+        "I won’t let you win easily!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01972",
+      "en_US": [
+        "The more beautiful a flower,\n",
+        "the faster it withers...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01973",
+      "en_US": [
+        "Oh, that’s right...\n",
+        "A hint about the next Trainer...\r",
+        "In the middle of three trees.\n",
+        "That’s my hint. Good luck.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01974",
+      "en_US": [
+        "Even concealed, there is no hiding\n",
+        "the aroma of flowers.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01975",
+      "en_US": [
+        "Just like your inability to conceal\n",
+        "your abundant skill.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01976",
+      "en_US": [
+        "Your next opponent is under four\n",
+        "flowers.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01977",
+      "en_US": [
+        "A forest inside a Gym...\n",
+        "Shocking, isn’t it?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01978",
+      "en_US": [
+        "I was going to beat you while you\n",
+        "were still in a state of shock...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01979",
+      "en_US": [
+        "OK, the next Trainer is at the end,\n",
+        "past two boulders.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01980",
+      "en_US": [
+        "Giggle! You found me!\n",
+        "Of course, let’s battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01981",
+      "en_US": [
+        "Aww, boo!\n",
+        "Look, you’ve beaten me!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01982",
+      "en_US": [
+        "Giggle! There’s only our Gym Leader\n",
+        "left. Go on, don’t be afraid!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01983",
+      "en_US": [
+        "We are gathering Pokémon for\n",
+        "an astonishing undertaking!\r",
+        "Your meddling won’t be tolerated!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01984",
+      "en_US": "I feel like I got meddled with...\n"
+    },
+    {
+      "id": "msg_0728_01985",
+      "en_US": [
+        "Our astonishing undertaking is\n",
+        "most certainly breathtaking.\r",
+        "If you ever hope to see its glorious\n",
+        "unveiling, then don’t meddle with us!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01986",
+      "en_US": [
+        "Sorry, deary! Team Galactic doesn’t\n",
+        "accept children as members!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01987",
+      "en_US": "B-but, deary, you’re just a kid!\n"
+    },
+    {
+      "id": "msg_0728_01988",
+      "en_US": [
+        "You wanted to go up?\n",
+        "Well, why didn’t you?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01989",
+      "en_US": [
+        "Let’s see how good this Pokémon is!\n",
+        "I stole it from some weak Trainer.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01990",
+      "en_US": "What is this?!\n"
+    },
+    {
+      "id": "msg_0728_01991",
+      "en_US": [
+        "Wimpy little Pokémon...\r",
+        "When I get promoted, I’ll demand\n",
+        "better stolen Pokémon.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01992",
+      "en_US": [
+        "Our objectives are incredible!\n",
+        "Too incredible for me to understand!\r",
+        "I’ll fight blindly to defend them,\n",
+        "and your intrusion won’t be forgiven!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01993",
+      "en_US": "What was I fighting for, again?"
+    },
+    {
+      "id": "msg_0728_01994",
+      "en_US": [
+        "What do you have against taking\n",
+        "Pokémon from others?\r",
+        "Look in any field or forest!\n",
+        "Those things aren’t exactly rare!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01995",
+      "en_US": [
+        "Why, thank you!\r",
+        "We love it when people come to us\n",
+        "to donate their Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01996",
+      "en_US": "What do you think you’re doing?!\n"
+    },
+    {
+      "id": "msg_0728_01997",
+      "en_US": [
+        "You can catch Pokémon anywhere.\n",
+        "What’s so special about them?\r",
+        "Trainers that lose theirs should\n",
+        "quit whining and catch some more!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_01998",
+      "en_US": [
+        "Our mission is to implement our\n",
+        "operations without question.\r",
+        "It is all for the new world order\n",
+        "that our boss will lead!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_01999",
+      "en_US": "This won’t go unpunished...\n"
+    },
+    {
+      "id": "msg_0728_02000",
+      "en_US": [
+        "I’m quite prepared to do anything\n",
+        "to be promoted.\r",
+        "One day, and soon, you will learn\n",
+        "the true might of Team Galactic!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02001",
+      "en_US": [
+        "How insolent.\n",
+        "Take a bite of this, child!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02002",
+      "en_US": [
+        "Losing to some child...\n",
+        "Being careless cost me too much.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02003",
+      "en_US": [
+        "Yo!\n",
+        "Having a good time cycling?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02004",
+      "en_US": "Hey, not bad, you!\n"
+    },
+    {
+      "id": "msg_0728_02005",
+      "en_US": [
+        "Cycling Road’s teeming with\n",
+        "Pokémon Trainers, too!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02006",
+      "en_US": [
+        "I’m sure I’ve seen your face before.\n",
+        "Did we maybe battle?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02007",
+      "en_US": [
+        "I worked up a good sweat riding!\n",
+        "I’m feeling great! Let’s battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02008",
+      "en_US": [
+        "Whew!\n",
+        "You worked us over.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02009",
+      "en_US": [
+        "Do you find yourself pedaling\n",
+        "backward going downhill?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02010",
+      "en_US": [
+        "I worked up a good sweat riding!\n",
+        "I feel ready for a rematch!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02011",
+      "en_US": [
+        "Hey! Watch where you’re going!\n",
+        "Or did you want to challenge me?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02012",
+      "en_US": "My efforts were meaningless...\n"
+    },
+    {
+      "id": "msg_0728_02013",
+      "en_US": [
+        "I might try racing through Cycling\n",
+        "Road in one long shot.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02014",
+      "en_US": [
+        "There you are!\r",
+        "I’ve been riding in this spot so I’d\n",
+        "get a rematch with you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02015",
+      "en_US": [
+        "You and I, we’re both riding\n",
+        "Bikes.\r",
+        "And you’ve got Pokémon.\n",
+        "I don’t want to lose to you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02016",
+      "en_US": [
+        "Oh, geez...\n",
+        "I seem to have fallen off my Bike."
+      ]
+    },
+    {
+      "id": "msg_0728_02017",
+      "en_US": [
+        "Instead of a battle, I should’ve\n",
+        "challenged you to a Bike race!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02018",
+      "en_US": [
+        "I hate knowing you’ve beaten me.\n",
+        "This time, I’m going to win!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02019",
+      "en_US": [
+        "Your Bike is the type that can shift\n",
+        "gears, huh?\r",
+        "Let me see if you know how to ride\n",
+        "it properly.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02020",
+      "en_US": "Crash! Tinkle...\n"
+    },
+    {
+      "id": "msg_0728_02021",
+      "en_US": [
+        "Huh? I was supposed to be checking\n",
+        "if you know how to shift gears.\\fWhy am I checking out your Pokémon?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02022",
+      "en_US": [
+        "Let me see if you’ve learned how to\n",
+        "ride your Bike properly.\\fI’ll check you out again!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02023",
+      "en_US": [
+        "I love my Bike!\r",
+        "But I’m not very good at fixing flat\n",
+        "tires...\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02024",
+      "en_US": "Kerrrash!"
+    },
+    {
+      "id": "msg_0728_02025",
+      "en_US": [
+        "I admire people who understand\n",
+        "gadgets.\r",
+        "I’m clueless about how my Pokétch\n",
+        "works.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02026",
+      "en_US": [
+        "I want to practice repairing flat\n",
+        "tires...\r",
+        "But I’ve been practicing with my\n",
+        "Pokémon to get our revenge!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02027",
+      "en_US": [
+        "A Bicycle can only take you as far as\n",
+        "your energy will allow.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02028",
+      "en_US": "Gasp... Gasp... Gasp...\n"
+    },
+    {
+      "id": "msg_0728_02029",
+      "en_US": [
+        "My Pokémon are out of gas.\n",
+        "So am I.\r",
+        "I’m going to head home soon...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02030",
+      "en_US": [
+        "I got plenty of rest at home.\n",
+        "I’m not losing this time!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02031",
+      "en_US": [
+        "Some people compete over speed, and\n",
+        "some compete over technique.\r",
+        "Which kind are you?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02032",
+      "en_US": "You’re a speedy technician!\n"
+    },
+    {
+      "id": "msg_0728_02033",
+      "en_US": [
+        "I enjoy the scenery.\r",
+        "Don’t you think the area below\n",
+        "Cycling Road looks nice?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02034",
+      "en_US": [
+        "I polished up both my speed and\n",
+        "techniques. Can you beat me now?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02035",
+      "en_US": [
+        "Whoa! You startled me!\n",
+        "Well, we may as well battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02036",
+      "en_US": "Your power startles me!\n"
+    },
+    {
+      "id": "msg_0728_02037",
+      "en_US": [
+        "We Hikers are bighearted guys!\n",
+        "Losing doesn’t bother us!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02038",
+      "en_US": [
+        "Whoa! You startled me!\n",
+        "We may as well have a rematch!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02039",
+      "en_US": [
+        "Humph! You’re lost, aren’t you?\n",
+        "I’ll guide you if you can beat me.\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02040",
+      "en_US": "I said I’m going to win!\n"
+    },
+    {
+      "id": "msg_0728_02041",
+      "en_US": [
+        "I’m not lost, I tell you!\n",
+        "I’m camping! That’s my story!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02042",
+      "en_US": [
+        "Where am I? Am I lost? Who are you?\n",
+        "Are you a Pokémon Trainer?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02043",
+      "en_US": [
+        "OK, so we’re both Trainers.\n",
+        "That’s a start, right?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02044",
+      "en_US": [
+        "I just wanted to have a picnic under\n",
+        "the Cycling Road.\r",
+        "I didn’t think I would get lost\n",
+        "in a place like this..."
+      ]
+    },
+    {
+      "id": "msg_0728_02045",
+      "en_US": [
+        "Hush now, lost little Pokémon, don’t\n",
+        "you cry.\r",
+        "I’m here to take care of you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02046",
+      "en_US": "Sniffle... W-who’s crying now?\n"
+    },
+    {
+      "id": "msg_0728_02047",
+      "en_US": [
+        "Speaking of crying, I’m positive I\n",
+        "heard crying from deeper in the cave.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02048",
+      "en_US": [
+        "Did you come to play, too?\n",
+        "Wanna play battle with me?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02049",
+      "en_US": "You were just toying with me!"
+    },
+    {
+      "id": "msg_0728_02050",
+      "en_US": [
+        "I’m playing hide-and-seek here.\n",
+        "I like some underground tag, too.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02051",
+      "en_US": "Look! A Trainer lost in Wayward Cave!\r"
+    },
+    {
+      "id": "msg_0728_02052",
+      "en_US": "I strayed from the battle plan!\n"
+    },
+    {
+      "id": "msg_0728_02053",
+      "en_US": [
+        "Me? No, I’m not lost.\n",
+        "I live here!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02054",
+      "en_US": [
+        "You look like you might just have\n",
+        "the Pokémon I’ve been looking for!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02055",
+      "en_US": [
+        "You didn’t have a single Pokémon\n",
+        "I wanted... You’re no Collector!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02056",
+      "en_US": [
+        "I’m very picky, so I want to collect\n",
+        "every Pokémon without anyone’s help.\r",
+        "...I do have friends, though.\n",
+        "No, seriously! I do!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02057",
+      "en_US": [
+        "What every good picnic needs is a\n",
+        "cute setting, good food, and a fun\\fbattle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02058",
+      "en_US": "That wasn’t any fun for me!\n"
+    },
+    {
+      "id": "msg_0728_02059",
+      "en_US": [
+        "Why have a picnic here? I don’t know.\n",
+        "There’s no deep meaning to it."
+      ]
+    },
+    {
+      "id": "msg_0728_02060",
+      "en_US": [
+        "Huh? Are you lost too?\n",
+        "No? It doesn’t matter.\\fLet’s have a quick Pokémon battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02061",
+      "en_US": [
+        "Not fair!\n",
+        "We’re not on the same level!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02062",
+      "en_US": [
+        "I got separated from my friends...\r",
+        "I’ve got my Pokémon with me, so I’m\n",
+        "OK, but...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02063",
+      "en_US": [
+        "In deep tunnels and caves, there’re\n",
+        "a couple things you’re sure to see.\r",
+        "ZUBAT and Ruin Maniacs!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02064",
+      "en_US": [
+        "Your awesome power...\n",
+        "It’s mystifying.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02065",
+      "en_US": [
+        "I’ve scoured every inch of this\n",
+        "place... Most of it while I was lost.\r",
+        "Anyway, if there’s one thing I can\n",
+        "say, this place can’t be called ruins!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02066",
+      "en_US": [
+        "Wandering around, I got hungry, so\n",
+        "I ate some wild mushrooms...\r",
+        "They gave me gas, and now I can’t\n",
+        "stop burping! Bluurrf!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02067",
+      "en_US": [
+        "Bleff! Hurk!\n",
+        "I think...I’m getting better...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02068",
+      "en_US": [
+        "I hear there’s a Pokémon that has\n",
+        "mushrooms growing on its back.\r",
+        "Not around here, somewhere far away.\n",
+        "I wonder if they taste any good?"
+      ]
+    },
+    {
+      "id": "msg_0728_02069",
+      "en_US": [
+        "Go for it, my Pokémon!\n",
+        "I’ll do my best, too!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02070",
+      "en_US": [
+        "Oh...\n",
+        "We lost...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02071",
+      "en_US": [
+        "Did you know? You can dig up Fossils\n",
+        "in the Underground!\r",
+        "Those Fossils can be turned back into\n",
+        "Pokémon at the mining museum!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02072",
+      "en_US": [
+        "Go for it, my Pokémon!\n",
+        "I’ll do more than my best this time!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02073",
+      "en_US": [
+        "Go do it, my Pokémon!\n",
+        "I’ll work hard, too!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02074",
+      "en_US": [
+        "Oh...\n",
+        "We lost..."
+      ]
+    },
+    {
+      "id": "msg_0728_02075",
+      "en_US": [
+        "I think we’ll go visit the TV station\n",
+        "in Jubilife City next.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02076",
+      "en_US": [
+        "Ummm... You’re the Trainer who beat\n",
+        "us before, aren’t you?\r",
+        "We’re feeling good today, so let’s\n",
+        "have another battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02077",
+      "en_US": [
+        "I wear shorts the whole year!\n",
+        "I’ve got energy to burn!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02078",
+      "en_US": [
+        "Having lots of energy isn’t good\n",
+        "enough...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02079",
+      "en_US": [
+        "My Pokémon don’t wear anything.\n",
+        "I worry that they’ll be cold.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02080",
+      "en_US": [
+        "I wear shorts! I have lots of\n",
+        "energy! I’m not losing to you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02081",
+      "en_US": [
+        "I just got through Mt. Coronet, but\n",
+        "we’ve still got fuel in the tank!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02082",
+      "en_US": [
+        "Whoops!\n",
+        "Didn’t take much to beat us!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02083",
+      "en_US": [
+        "We need to rest up in Oreburgh City\n",
+        "before heading to Mt. Coronet again.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02084",
+      "en_US": [
+        "I just got through Mt. Coronet,\n",
+        "and who do I see?\r",
+        "A Trainer who we’ve battled before!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02085",
+      "en_US": [
+        "Wahaha!\n",
+        "Laughter brings good fortune!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02086",
+      "en_US": [
+        "Wahahaha! There’s nothing that\n",
+        "I can do but laugh!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02087",
+      "en_US": [
+        "Wahaha!\n",
+        "...Go ahead and laugh at me.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02088",
+      "en_US": [
+        "Wahaha!\r",
+        "Laughter brings good fortune!\n",
+        "Forgetting your gloves brings a cold!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02089",
+      "en_US": [
+        "OK, OK!\n",
+        "Let’s be quick about this!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02090",
+      "en_US": [
+        "No way! Give us another battle!\n",
+        "...Oh, right. I’m out of Pokémon.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02091",
+      "en_US": [
+        "Yup!\n",
+        "I like the way you battle.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02092",
+      "en_US": [
+        "What took you so long?\n",
+        "We’ve waited here a long time for\\fa rematch with you!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02093",
+      "en_US": [
+        "I work at a red-hot foundry.\n",
+        "Watch out, I’m on fire!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02094",
+      "en_US": "I burned out...\n"
+    },
+    {
+      "id": "msg_0728_02095",
+      "en_US": [
+        "I toughened up my muscles from\n",
+        "honest work.\r",
+        "Pokémon have nothing on me!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02096",
+      "en_US": [
+        "Well! It’s not often we get a visitor\n",
+        "like you to the ironworks!\r",
+        "Let’s mark the occasion with\n",
+        "a battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02097",
+      "en_US": "Fire!\n"
+    },
+    {
+      "id": "msg_0728_02098",
+      "en_US": [
+        "The floor panels move automatically.\n",
+        "We’re pretty proud of them here!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02099",
+      "en_US": [
+        "Are you maybe getting annoyed by\n",
+        "where the floor panels take you?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02100",
+      "en_US": "I’m going down in flames!\n"
+    },
+    {
+      "id": "msg_0728_02101",
+      "en_US": [
+        "The sweat of a working man is\n",
+        "beautiful to behold...\r",
+        "There is also beauty in the tears\n",
+        "wept from defeat...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02102",
+      "en_US": "Look at these beautiful wings!\r"
+    },
+    {
+      "id": "msg_0728_02103",
+      "en_US": [
+        "Oh, you!\n",
+        "I’m going to peck you for that!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02104",
+      "en_US": [
+        "People say there’s a bird Pokémon\n",
+        "that can learn human speech.\r",
+        "Do you know anything about it?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02105",
+      "en_US": [
+        "My bird Pokémon has such gorgeous\n",
+        "wings.\r",
+        "It must have been some sort of a\n",
+        "mistake that we lost last time!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02106",
+      "en_US": [
+        "See how Mt. Coronet towers above us.\n",
+        "I want to be big like that one day!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02107",
+      "en_US": [
+        "A powerful presence towers before\n",
+        "me... It is you!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02108",
+      "en_US": [
+        "Mt. Coronet has long been known as\n",
+        "an ancient and mysterious mountain.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02109",
+      "en_US": [
+        "Hmm?! You tower before\n",
+        "me again?\r",
+        "It’s as if you’re Mt. Coronet!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02110",
+      "en_US": [
+        "ZUBAT! Doesn’t that sound like a\n",
+        "ninja bursting from cover?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02111",
+      "en_US": [
+        "Oh!\n",
+        "My ZUBAT tristars...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02112",
+      "en_US": [
+        "Sowing confusion among the foe is\n",
+        "one way a ninja battles.\r",
+        "A Pokémon can’t overcome its\n",
+        "confusion unless it switches out.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02113",
+      "en_US": [
+        "The shinobi live by speed!\n",
+        "I’ll get in my attacks before you do!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02114",
+      "en_US": [
+        "I go everywhere with my NOCTOWL.\n",
+        "We’re gonna show you owl best! Ha!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02115",
+      "en_US": [
+        "We did our best. That’s what\n",
+        "matters. Right?\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02116",
+      "en_US": [
+        "Even on cold days, just being with\n",
+        "my NOCTOWL keeps me warm!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02117",
+      "en_US": [
+        "I curled up inside my NOCTOWL’s wings\n",
+        "and waited for you to return!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02118",
+      "en_US": [
+        "Speed is a ninja’s best weapon!\n",
+        "Can you keep up?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02119",
+      "en_US": "I did a lot to conceal myself, too...\n"
+    },
+    {
+      "id": "msg_0728_02120",
+      "en_US": [
+        "I’ll wait here for a weaker-looking\n",
+        "Trainer and then ambush them!\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02121",
+      "en_US": [
+        "I became even faster!\n",
+        "How can you hope to keep up?\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02122",
+      "en_US": [
+        "Hah! Hah!\n",
+        "I’m psyched for this! Here goes!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02123",
+      "en_US": "I don’t get why we can’t win.\n"
+    },
+    {
+      "id": "msg_0728_02124",
+      "en_US": [
+        "I guess I ought to study winning\n",
+        "techniques for a change...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02125",
+      "en_US": [
+        "Hah! Hah!\n",
+        "This time, I’m psyched up!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02126",
+      "en_US": [
+        "Whilst exploring the ruins, I spotted\n",
+        "a Trainer! I must investigate!\r"
+      ]
+    },
+    {
+      "id": "msg_0728_02127",
+      "en_US": [
+        "My investigation has revealed the\n",
+        "Trainer to be tough! Ouch...\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02128",
+      "en_US": [
+        "Celestic Town is an old town.\n",
+        "I’m sure to find something cool.\n"
+      ]
+    },
+    {
+      "id": "msg_0728_02129",
+      "en_US": [
+        "Whilst exploring the ruins, I spotted\n",
+        "you again! I will now investigate!\r"
+      ]
     }
   ]
 }

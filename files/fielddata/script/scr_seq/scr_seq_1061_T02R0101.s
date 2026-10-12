@@ -255,7 +255,7 @@ _04F0:
 	BufferPlayersName 0
 	PlaySE 1158
 	NPCMsg msg_0877_T02R0101_00037
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1158
 	NPCMsg msg_0877_T02R0101_00038
 	NPCMsg msg_0877_T02R0101_00039
 	NPCMsg msg_0877_T02R0101_00040

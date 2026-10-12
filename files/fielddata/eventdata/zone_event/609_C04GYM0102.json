@@ -1,0 +1,101 @@
+{
+  "header": "fielddata/script/scr_seq/event_C04GYM0102.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C04GYM0102_0",
+      "spriteId": "SPRITE_LEADER2",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_421",
+      "scriptId": "_EV_scr_seq_C04GYM0102_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 15,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_C04GYM0102_1",
+      "spriteId": "SPRITE_WOMAN1",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_418",
+      "scriptId": "_EV_scr_seq_C04GYM0102_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 27,
+      "y": 0
+    },
+    {
+      "id": "obj_C04GYM0102_2",
+      "spriteId": "SPRITE_WOMAN1",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_419",
+      "scriptId": "_EV_scr_seq_C04GYM0102_005 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 22,
+      "z": 18,
+      "y": 0
+    },
+    {
+      "id": "obj_C04GYM0102_3",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_420",
+      "scriptId": "_EV_scr_seq_C04GYM0102_006 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 20,
+      "z": 9,
+      "y": 0
+    },
+    {
+      "id": "obj_C04GYM0102_4",
+      "spriteId": "SPRITE_GIRL1",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_417",
+      "scriptId": "_EV_scr_seq_C04GYM0102_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 10,
+      "z": 13,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 16,
+      "z": 29,
+      "header": "MAP_SINNOH_ETERNA_GYM_ENTRANCE",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

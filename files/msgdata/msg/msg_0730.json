@@ -532,6 +532,26 @@
     {
       "id": "msg_0730_00132",
       "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00133",
+      "en_US": "Galactic"
+    },
+    {
+      "id": "msg_0730_00134",
+      "en_US": "Commander"
+    },
+    {
+      "id": "msg_0730_00135",
+      "en_US": "Leader"
+    },
+    {
+      "id": "msg_0730_00136",
+      "en_US": "Galactic"
+    },
+    {
+      "id": "msg_0730_00137",
+      "en_US": "Commander"
     }
   ]
 }

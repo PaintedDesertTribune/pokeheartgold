@@ -264,7 +264,7 @@ _03E6:
 	BufferPlayersName 0
 	PlaySE 1158
 	NPCMsg msg_0908_C03R0401_00008
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1158
 	// TODO Diamond ScrCmd_GiveMon 0x096 args [16564, 20, 0, 32780]: no HeartGold mapping yet
 	SetVar VAR_SINNOH_40B4, 0
 	NPCMsg msg_0908_C03R0401_00009

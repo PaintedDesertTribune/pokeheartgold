@@ -109,7 +109,7 @@ scr_seq_T01R0201_002:
 	BufferPlayersName 0
 	NPCMsg msg_0885_T01R0201_00008
 	PlaySE 1158
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1158
 	NPCMsg msg_0885_T01R0201_00009
 	WaitButton
 	CloseMsg
@@ -364,7 +364,7 @@ _05CE:
 	FadeScreen 6, 1, 0, 0
 	WaitFade
 	PlaySE 1166
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1166
 	HealParty
 	FadeScreen 6, 1, 1, 0
 	WaitFade

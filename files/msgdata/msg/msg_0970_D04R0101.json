@@ -1,0 +1,27 @@
+{
+  "key": 8407,
+  "messages": [
+    {
+      "id": "msg_0970_D04R0101_00000",
+      "en_US": [
+        "Mr. Fuego: Well, hello!\n",
+        "It’s not often I get a visitor here.\r",
+        "I tried to make the ironworks run\n",
+        "better with the moving floor tiles.\r",
+        "But no one was happy about it! They\n",
+        "said the moving floor made them dizzy!\r",
+        "But you don’t want to listen to me\n",
+        "whine. Here’s a souvenir!\r"
+      ]
+    },
+    {
+      "id": "msg_0970_D04R0101_00001",
+      "en_US": [
+        "Mr. Fuego: My ironworks would be\n",
+        "nothing if there were no iron.\r",
+        "That’s why I’m always thankful for\n",
+        "nature supplying me with iron."
+      ]
+    }
+  ]
+}

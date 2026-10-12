@@ -457,7 +457,6 @@ DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_int
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
-    "ScrCmd_PlaySoundWait": "waits for the current sound effect; HeartGold's WaitSE needs the effect id",
     "ScrCmd_StopFanfare": "no stop-fanfare command in HeartGold",
     "ScrCmd_LockCamera": "scripted camera moves need a HeartGold port (library cutscene)",
     "ScrCmd_ReleaseCamera": "scripted camera moves need a HeartGold port (library cutscene)",
@@ -565,6 +564,12 @@ class Sprites:
         return name
 
 
+# Diamond's decomp spells seven moves differently from HeartGold's (same ids).
+MOVE_RENAMES = {"MOVE_VISE_GRIP": "MOVE_VICE_GRIP", "MOVE_SMOKESCREEN": "MOVE_SMOKE_SCREEN", "MOVE_SELF_DESTRUCT": "MOVE_SELFDESTRUCT",
+                "MOVE_SOFT_BOILED": "MOVE_SOFTBOILED", "MOVE_HIGH_JUMP_KICK": "MOVE_HI_JUMP_KICK", "MOVE_FEINT_ATTACK": "MOVE_FAINT_ATTACK",
+                "MOVE_SMELLING_SALTS": "MOVE_SMELLING_SALT"}
+
+
 class Trainers:
     """Maps Diamond trainer ids to HeartGold trainer constants; the trainers are appended to trainers.json later."""
     def __init__(self, dp, hg_classes):
@@ -598,7 +603,7 @@ class Trainers:
                 if "item" in p:
                     q["item"] = p["item"]
                 if "moves" in p:
-                    q["moves"] = p["moves"]
+                    q["moves"] = [MOVE_RENAMES.get(mv, mv) for mv in p["moves"]]
                 q["capsule"] = 0
                 party.append(q)
             entry = {"type": t["type"], "class": self.hg_class(t["class"]), "name": t["name"], "items": t["items"],
@@ -630,7 +635,13 @@ class Translator:
             off = struct.unpack_from("<I", b, p)[0]
             p += 4
             starts.append(p + off)
-        labels = {s: f"scr_seq_{self.code}_{i:03d}" for i, s in enumerate(starts)}
+        labels, extra_labels = {}, {}   # two script entries can share one start offset (Eterna Forest)
+        for i, s in enumerate(starts):
+            name = f"scr_seq_{self.code}_{i:03d}"
+            if s in labels:
+                extra_labels.setdefault(s, []).append(name)
+            else:
+                labels[s] = name
         movements = {}
         lines = {}
         work = list(starts)
@@ -644,6 +655,7 @@ class Translator:
             pc = work.pop(0)
             if pc in seen or pc >= len(b):
                 continue
+            last_se = None
             while pc < len(b) and pc not in seen:
                 seen.add(pc)
                 cmd = struct.unpack_from("<H", b, pc)[0]
@@ -666,6 +678,12 @@ class Translator:
                         v = struct.unpack_from("<i", b, q)[0]; q += 4
                         raw.append(q + v)
                 nxt = q
+                if name == "ScrCmd_PlaySoundWait":   # Diamond waits for whatever is playing; HeartGold's WaitSE wants the id
+                    lines[pc] = f"\tWaitSE {last_se}" if last_se else "\t// Diamond PlaySoundWait with no sound effect before it"
+                    pc = nxt
+                    continue
+                if name == "ScrCmd_PlaySound":
+                    last_se = str(raw[0]) if raw[0] < 0x4000 else self.var(raw[0])
                 if name in DROP:
                     lines[pc] = f"\t// Diamond {name} dropped: {DROP[name]}"
                     self.todo.append(f"dropped {name}: {DROP[name]}")
@@ -756,6 +774,7 @@ class Translator:
         for addr in sorted(lines):
             if addr in labels:
                 out.append(f"\n{labels[addr]}:")
+                out.extend(f"{n}:" for n in extra_labels.get(addr, []))
             out.append(lines[addr])
         return "\n".join(out) + "\n\n" + "\n".join(mv_text), len(starts), stubbed
 
@@ -870,24 +889,40 @@ def main():
             out.append(model_cache[kind][bid])
         return out
 
+    # Every model a Diamond area needs: its own build list plus every building placed in any imported map that
+    # uses the area. Collected up front because several maps share one area and the list is written once.
+    area_models = {}
+    area_kind = {}
+    for m in maps:
+        h = m["dphdr"]
+        if h["area"] not in area_models:
+            a = dp.file("areadata/area_data", h["area"])
+            dp_build, _ = struct.unpack_from("<HH", a, 0)
+            ab = dp.file("areadata/area_build_model/area_build", dp_build)
+            area_models[h["area"]] = list(dict.fromkeys(struct.unpack_from(f"<{len(ab)//2}H", ab, 0)))   # Diamond lists can repeat an id; HeartGold asserts on that
+        cells, _, _ = dp.map_cells(m["dpid"], h)
+        for _, _, land_id, _ in cells:
+            c = dp.file("land_data/land_data_release", land_id)
+            perm, bld = struct.unpack_from("<2I", c, 0)
+            for i in range(bld // 0x30):
+                bid = struct.unpack_from("<I", c, 0x10 + perm + i * 0x30)[0]
+                if bid not in area_models[h["area"]]:
+                    area_models[h["area"]].append(bid)
+
     for m in maps:
         h = m["dphdr"]
         outdoor = h["maptype"] in (1, 2, 3)  # Diamond map_type: 1 town/city, 2 route, 3 cave? interiors are 4/6/7/8
         kind = "field" if outdoor else "room"
+        if h["area"] in area_kind:          # maps sharing an area must use the archive the area was imported into
+            kind = area_kind[h["area"]]
+            outdoor = kind == "field"
+        else:
+            area_kind[h["area"]] = kind
         # --- area
         if h["area"] not in area_cache:
             a = dp.file("areadata/area_data", h["area"])
             dp_build, dp_tex = struct.unpack_from("<HH", a, 0)
-            ab = dp.file("areadata/area_build_model/area_build", dp_build)
-            dp_ids = list(dict.fromkeys(struct.unpack_from(f"<{len(ab)//2}H", ab, 0)))   # Diamond lists can repeat an id; HeartGold asserts on that
-            cells, _, _ = dp.map_cells(m["dpid"], h)
-            for _, _, land_id, _ in cells:
-                c = dp.file("land_data/land_data_release", land_id)
-                perm, bld = struct.unpack_from("<2I", c, 0)
-                for i in range(bld // 0x30):
-                    bid = struct.unpack_from("<I", c, 0x10 + perm + i * 0x30)[0]
-                    if bid not in dp_ids:
-                        dp_ids.append(bid)
+            dp_ids = list(area_models[h["area"]])
             dp_ids += [k for k in sorted(area_signs.get(h["area"], ())) if k not in dp_ids]
             hg_ids = import_models(dp_ids, kind)
             if dp_tex not in tex_cache:

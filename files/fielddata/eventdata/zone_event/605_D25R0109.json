@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_D25R0109.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_D25R0109_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1234",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 10,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 10,
+      "z": 7,
+      "header": "MAP_SINNOH_OLD_CHATEAU_2F_CORRIDOR",
+      "anchor": 5,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

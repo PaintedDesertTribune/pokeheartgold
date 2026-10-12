@@ -1,0 +1,264 @@
+{
+  "key": 8270,
+  "messages": [
+    {
+      "id": "msg_0944_C04_00000",
+      "en_US": [
+        "Oh, is that a Pokédex?\n",
+        "You must be helping Professor Rowan?\r",
+        "What’s your name?\r",
+        "...\r",
+        "OK, hello, {STRVAR_1 3, 0, 0}.\n",
+        "I’ll be sure to remember that name!\r",
+        "My name is Cynthia.\n",
+        "I’m a Trainer just like you.\r",
+        "I’ve been studying Pokémon mythology\n",
+        "lately, just out of curiosity.\r"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00001",
+      "en_US": [
+        "Here in Eterna City, there is a\n",
+        "statue of an ancient Pokémon.\r",
+        "According to myth, it was an\n",
+        "extremely powerful Pokémon.\r",
+        "Who knows? You may encounter\n",
+        "something like it while you’re\\ftraveling with your Pokédex.\r",
+        "Try using this.\n",
+        "It should help you on your way.\r"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00002",
+      "en_US": [
+        "Cynthia: Remember, the hidden move\n",
+        "Cut can be used in the field.\r",
+        "It will let you go places that were\n",
+        "previously inaccessible to you.\r",
+        "That’s important for filling up your\n",
+        "Pokédex, right?\r",
+        "Then luck be with you, young Trainer!\r"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00003",
+      "en_US": [
+        "Hey! You there, kid!\n",
+        "Stay away from that Pokémon statue!\r",
+        "Team Galactic is conducting an\n",
+        "official investigation here!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00004",
+      "en_US": [
+        "Hey, you! Yeah, you, Trainer!\r",
+        "Errr...\n",
+        "It’s OK. Never mind. You look tough.\r",
+        "I won’t take... Um, I’ll just let you\n",
+        "keep your Pokémon. Carry on!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00005",
+      "en_US": [
+        "Have you seen our building?\r",
+        "Team Galactic is so stinking rich\n",
+        "that we can have one built instantly!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00006",
+      "en_US": [
+        "Since that Team Galactic building went\n",
+        "up, the city’s atmosphere has gotten\\fall creepy and tense.\r",
+        "I don’t know what those people are\n",
+        "doing up in that place..."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00007",
+      "en_US": [
+        "With Team Galactic gone, what’s going\n",
+        "to happen to their building?"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00008",
+      "en_US": [
+        "My friend said Team Galactic took his\n",
+        "favorite Pokémon away.\r",
+        "I don’t think he’s telling the truth.\n",
+        "Team Galactic looks so cool.\\fThey don’t look like common thugs."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00009",
+      "en_US": [
+        "Do you use Bike stands?\r",
+        "It looks so cool to hop off your Bike\n",
+        "and then lean on it. It looks so smooth!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00010",
+      "en_US": [
+        "If you’re visiting Eterna, you need to\n",
+        "get yourself a Bicycle and take a\\fride down the Cycling Road."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00011",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0944_C04_00012",
+      "en_US": [
+        "They say this is an old city.\r",
+        "It doesn’t look it, though.\n",
+        "Not with all these tall buildings."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00013",
+      "en_US": [
+        "Eterna City’s not anything like it\n",
+        "was before, way back in the day."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00014",
+      "en_US": [
+        "They say this is a Pokémon that lived\n",
+        "long, long ago."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00015",
+      "en_US": [
+        "Oh, don’t tell me you don’t have\n",
+        "an Explorer Kit?\r",
+        "You should have a word with the man\n",
+        "next door to the Pokémon Center.\r"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00016",
+      "en_US": [
+        "Oh, don’t tell me you don’t have\n",
+        "an Explorer Kit?\r",
+        "You should have a word with the man\n",
+        "next door to the Pokémon Center."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00017",
+      "en_US": [
+        "Going underground with the Explorer\n",
+        "Kit is a blast, isn’t it?"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00018",
+      "en_US": [
+        "Oh, wow!\n",
+        "You got a Bicycle!\r",
+        "You can ride down Cycling Road\n",
+        "and end up in Hearthome City.\r",
+        "It’s a fast and fun ride.\n",
+        "You should check it out!\r"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00019",
+      "en_US": [
+        "Oh, wow!\n",
+        "You got a Bicycle!\r",
+        "You can ride down Cycling Road\n",
+        "and end up in Hearthome City.\r",
+        "It’s a fast and fun ride.\n",
+        "You should check it out!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00020",
+      "en_US": [
+        "It feels great riding a Bike with the\n",
+        "wind in your face, doesn’t it?"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00021",
+      "en_US": [
+        "Eterna City\n",
+        "History Living"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00022",
+      "en_US": [
+        "Eterna City Pokémon Gym\n",
+        "Leader: Gardenia\\fMaster of Vivid Plant Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00023",
+      "en_US": [
+        "Rad Rickshaw’s Cycle Shop\n",
+        "Get On and Ride!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00024",
+      "en_US": [
+        "Team Galactic Eterna Building\n",
+        "We Want Your Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00025",
+      "en_US": [
+        "Underground Man’s House\n",
+        "Goin’ Down for Adventure!"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00026",
+      "en_US": [
+        "Eterna Condominiums\n",
+        "Name-Rating Services Available"
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00027",
+      "en_US": [
+        "There is some writing on the\n",
+        "Pokémon statue...\r",
+        "...creation of DIA...\n",
+        "...giver of time...\r",
+        "In laughter, there is tears...\n",
+        "And, likewise...\r",
+        "The same time flows...\n",
+        "...the blessing of DIA...\r",
+        "The text is barely legible and\n",
+        "has faded completely in places..."
+      ]
+    },
+    {
+      "id": "msg_0944_C04_00028",
+      "en_US": [
+        "There is some writing on the\n",
+        "Pokémon statue...\r",
+        "...birth of PAL...\n",
+        "...creator of parallel dimensions...\r",
+        "Alive, yet not alive...\n",
+        "...rifts in space...\r",
+        "To arrive in the same univer...\n",
+        "...the blessing of PAL...\r",
+        "The text is barely legible and\n",
+        "has faded completely in places..."
+      ]
+    }
+  ]
+}

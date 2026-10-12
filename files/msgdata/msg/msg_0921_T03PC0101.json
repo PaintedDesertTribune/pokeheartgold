@@ -1,0 +1,31 @@
+{
+  "key": 8707,
+  "messages": [
+    {
+      "id": "msg_0921_T03PC0101_00000",
+      "en_US": [
+        "If you’ve got Pokémon with you,\n",
+        "it’s safe for even a kid like you\\fto go off traveling alone."
+      ]
+    },
+    {
+      "id": "msg_0921_T03PC0101_00001",
+      "en_US": [
+        "I had a battle the other day,\n",
+        "and my Pokémon’s HP got low,\r",
+        "and I thought we were done for,\r",
+        "and then, all of a sudden, my Pokémon\n",
+        "ate the Berry it was holding! Whew!"
+      ]
+    },
+    {
+      "id": "msg_0921_T03PC0101_00002",
+      "en_US": [
+        "We’re kinda close to Eterna City,\n",
+        "but it’s still quite far away.\r",
+        "You should be prepared for a long\n",
+        "journey."
+      ]
+    }
+  ]
+}

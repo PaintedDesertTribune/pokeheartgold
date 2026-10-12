@@ -92,7 +92,7 @@ scr_seq_C02R0401_002:
 	Call _0184
 	// Diamond ScrCmd_Unk02B5 dropped: Diamond special spawn point (map, x, y); HeartGold's SetSpawn takes a spawn id
 	PlaySE 1166
-	// Diamond ScrCmd_PlaySoundWait dropped: waits for the current sound effect; HeartGold's WaitSE needs the effect id
+	WaitSE 1166
 	BufferPlayersName 0
 	NPCMsg msg_0839_C02R0401_00002
 	WaitButton

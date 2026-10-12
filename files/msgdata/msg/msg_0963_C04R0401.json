@@ -1,0 +1,89 @@
+{
+  "key": 8285,
+  "messages": [
+    {
+      "id": "msg_0963_C04R0401_00000",
+      "en_US": [
+        "You need a Bicycle to go out on\n",
+        "Cycling Road!"
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00001",
+      "en_US": [
+        "You need a Bicycle to go out on\n",
+        "Cycling Road!\r"
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00002",
+      "en_US": [
+        "Learn how to shift gears, and you’ll\n",
+        "be able to ride anywhere."
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00003",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}, long time, no see!\r",
+        "Oh? You look puzzled.\n",
+        "You’re wondering who I am.\r",
+        "I’m Professor Rowan’s assistant and\n",
+        "{STRVAR_1 3, 1, 0}’s father.\r",
+        "I’ve come a long way to help you on\n",
+        "your adventure at the professor’s\\fbehest.\r",
+        "{STRVAR_1 3, 0, 0}, let me ask you,\n",
+        "how many Pokémon have you met?\r"
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00004",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}, long time, no see!\r",
+        "Oh? You look puzzled.\n",
+        "You’re wondering who I am.\r",
+        "I’m Professor Rowan’s assistant and\n",
+        "{STRVAR_1 3, 1, 0}’s father.\r",
+        "I’ve come a long way to help you on\n",
+        "your adventure at the professor’s\\fbehest.\r",
+        "{STRVAR_1 3, 0, 0}, let me ask you,\n",
+        "how many Pokémon have you met?\r"
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00005",
+      "en_US": [
+        "Oh, my!\n",
+        "You’ve met {STRVAR_1 52, 1, 0} Pokémon!\r",
+        "Wonderful! Yes, bravo!\n",
+        "Professor Rowan should be delighted!\r",
+        "Here is something for you!\r"
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00006",
+      "en_US": [
+        "A Pokémon holding an Exp. Share\n",
+        "will be given some of the Exp. Points\\ffrom battle.\r",
+        "It will get Exp. Points even if it\n",
+        "didn’t actually battle.\r",
+        "I would say an Exp. Share is quite\n",
+        "useful for raising weak Pokémon.\r",
+        "Also, a Pokémon you get in a trade\n",
+        "may disobey you if it is too high\\fin level.\r",
+        "Don’t worry, though. It will obey if\n",
+        "you have enough Gym Badges."
+      ]
+    },
+    {
+      "id": "msg_0963_C04R0401_00007",
+      "en_US": [
+        "You’ve met only {STRVAR_1 52, 1, 0} Pokémon?\r",
+        "Hmm...\n",
+        "You’ve got to find at least 35.\r",
+        "If you can’t, it will be tough to\n",
+        "complete the Sinnoh Pokédex."
+      ]
+    }
+  ]
+}
