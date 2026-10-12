@@ -20,6 +20,8 @@
 #include "heap.h"
 #include "script_pokemon_util.h"
 #include "constants/items.h"
+#include "player_data.h"
+#include "constants/moves.h"
 #include "constants/maps.h"
 #include "bag.h"
 #include "location_backup.h"
@@ -137,8 +139,19 @@ static void HackSkipIntro_GiveTestTeam(SaveData *saveData) {
     static const u16 team[][2] = { { SPECIES_TYPHLOSION, 50 }, { SPECIES_FERALIGATR, 50 }, { SPECIES_AMPHAROS, 50 } };
     Bag *bag = Save_Bag_Get(saveData);
     int i;
+    Party *party = SaveArray_Party_Get(saveData);
+    PlayerProfile *profile = Save_PlayerData_GetProfile(saveData);
     for (i = 0; i < 3; i++) {
         GiveMon(HEAPID_OV36, saveData, team[i][0], team[i][1], 0, 0, ITEM_NONE, MAP_SINNOH_CANALAVE, 24);   // met-at map and encounter type, as ScrCmd_GiveMon passes them
+    }
+    // Field moves for getting around Sinnoh (Route 218 needs Surf), and every badge so the field moves are allowed.
+    MonSetMoveInSlot(Party_GetMonByIndex(party, 1), MOVE_SURF, 0);
+    MonSetMoveInSlot(Party_GetMonByIndex(party, 1), MOVE_WATERFALL, 1);
+    MonSetMoveInSlot(Party_GetMonByIndex(party, 1), MOVE_WHIRLPOOL, 2);
+    MonSetMoveInSlot(Party_GetMonByIndex(party, 0), MOVE_ROCK_SMASH, 0);
+    MonSetMoveInSlot(Party_GetMonByIndex(party, 2), MOVE_FLY, 0);
+    for (i = 0; i < 16; i++) {
+        PlayerProfile_SetBadgeFlag(profile, i);
     }
     Bag_AddItem(bag, ITEM_MASTER_BALL, 2, HEAPID_OV36);
     Bag_AddItem(bag, ITEM_ULTRA_BALL, 20, HEAPID_OV36);
