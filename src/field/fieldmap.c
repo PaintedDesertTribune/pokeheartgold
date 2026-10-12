@@ -656,7 +656,7 @@ static void InitGraphicsAndManagers(FieldSystem *fieldSystem) {
     G3_SwapBuffers(GX_SORTMODE_AUTO, gG3dDepthBufferingMode);
 
     fieldSystem->areaDataManager = AreaDataManager_Alloc(MapHeader_GetAreaDataBank(fieldSystem->location->mapId));
-    fieldSystem->renderObjManager = Field3dRenderObjManager_New(HEAP_ID_FIELD1, 550, 128, AreaDataManager_GetMapPropModelFile(fieldSystem->areaDataManager));
+    fieldSystem->renderObjManager = Field3dRenderObjManager_New(HEAP_ID_FIELD1, AREA_DATA_MAX_BUILD_MODELS, 128, AreaDataManager_GetMapPropModelFile(fieldSystem->areaDataManager));
 
     u16 moveModelBank = MapHeader_GetMoveModelBank(fieldSystem->location->mapId);
 

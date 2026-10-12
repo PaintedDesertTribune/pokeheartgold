@@ -1,0 +1,15 @@
+{
+  "header": "fielddata/script/scr_seq/event_D07R0118.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 5,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B3F_MAIN_ROOM_2",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

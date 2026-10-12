@@ -1,0 +1,21 @@
+{
+  "key": 8712,
+  "messages": [
+    {
+      "id": "msg_1015_T04FS0101_00000",
+      "en_US": [
+        "Someone gave me a Seal Case, but\n",
+        "I can’t buy any Seals here."
+      ]
+    },
+    {
+      "id": "msg_1015_T04FS0101_00001",
+      "en_US": [
+        "If you use a Repel, it keeps weak\n",
+        "Pokémon away from you.\r",
+        "It’s useful if you need to get\n",
+        "somewhere in a hurry."
+      ]
+    }
+  ]
+}

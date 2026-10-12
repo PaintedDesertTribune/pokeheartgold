@@ -13,6 +13,9 @@
 	.include "global.inc"
 
 	.text
+; SINNOH PORT: the AreaDataManager keeps one model-file slot per global building-model id. Stock HeartGold has
+; 550 models; the imported Sinnoh buildings push past that, so the table holds 1024 slots (AREA_DATA_MAX_BUILD_MODELS)
+; and every struct offset after it moved up by 0x768. Keep in step with Field3dRenderObjManager_New in fieldmap.c.
 
 	thumb_func_start ov01_021FB878
 ov01_021FB878: ; 0x021FB878
@@ -55,8 +58,9 @@ AreaDataManager_Alloc: ; 0x021FB888
 	mov r0, #0x6b
 	mov r1, #4
 	bl NARC_New
-	mov r1, #0x23
-	lsl r1, r1, #6
+	mov r1, #0x81
+	lsl r1, r1, #5
+	add r1, #8
 	str r0, [r4, r1]
 	mov r0, #0x28
 	mov r1, #4
@@ -66,8 +70,9 @@ _021FB8D8:
 	mov r0, #0x6c
 	mov r1, #4
 	bl NARC_New
-	mov r1, #0x23
-	lsl r1, r1, #6
+	mov r1, #0x81
+	lsl r1, r1, #5
+	add r1, #8
 	str r0, [r4, r1]
 	mov r0, #0x94
 	mov r1, #4
@@ -79,15 +84,16 @@ _021FB8EE:
 	add r0, r4, #0
 	pop {r3, r4, r5, pc}
 	.balign 4, 0
-_021FB8F8: .word 0x000008C4
-_021FB8FC: .word 0x000008B8
-_021FB900: .word 0x000008B6
+_021FB8F8: .word 0x0000102C
+_021FB8FC: .word 0x00001020
+_021FB900: .word 0x0000101E
 	thumb_func_end AreaDataManager_Alloc
 
 	thumb_func_start ov01_021FB904
 ov01_021FB904: ; 0x021FB904
-	mov r1, #0x23
-	lsl r1, r1, #6
+	mov r1, #0x81
+	lsl r1, r1, #5
+	add r1, #8
 	ldr r0, [r0, r1]
 	bx lr
 	thumb_func_end ov01_021FB904
@@ -187,10 +193,10 @@ _021FB976:
 	str r0, [r5]
 	pop {r3, r4, r5, r6, r7, pc}
 	nop
-_021FB9BC: .word 0x000008AC
-_021FB9C0: .word 0x00000226
-_021FB9C4: .word 0x000008BC
-_021FB9C8: .word 0x0000089C
+_021FB9BC: .word 0x00001014
+_021FB9C0: .word 0x00000400
+_021FB9C4: .word 0x00001024
+_021FB9C8: .word 0x00001004
 	thumb_func_end AreaDataManager_Free
 
 	thumb_func_start AreaDataManager_GetMapTexture
@@ -204,7 +210,7 @@ _021FB9D6:
 	ldr r0, [r4, r0]
 	pop {r4, pc}
 	.balign 4, 0
-_021FB9DC: .word 0x000008A4
+_021FB9DC: .word 0x0000100C
 	thumb_func_end AreaDataManager_GetMapTexture
 
 	thumb_func_start ov01_021FB9E0
@@ -218,7 +224,7 @@ _021FB9EA:
 	ldr r0, [r4, r0]
 	pop {r4, pc}
 	.balign 4, 0
-_021FB9F0: .word 0x000008A8
+_021FB9F0: .word 0x00001010
 	thumb_func_end ov01_021FB9E0
 
 	thumb_func_start ov01_021FB9F4
@@ -227,7 +233,7 @@ ov01_021FB9F4: ; 0x021FB9F4
 	ldr r0, [r0, r1]
 	bx lr
 	nop
-_021FB9FC: .word 0x000008AC
+_021FB9FC: .word 0x00001014
 	thumb_func_end ov01_021FB9F4
 
 	thumb_func_start ov01_021FBA00
@@ -242,7 +248,7 @@ _021FBA0C:
 	mov r0, #0
 	bx lr
 	.balign 4, 0
-_021FBA10: .word 0x000008B7
+_021FBA10: .word 0x0000101F
 	thumb_func_end ov01_021FBA00
 
 	thumb_func_start AreaDataManager_GetAreaLightArchiveID
@@ -269,7 +275,7 @@ _021FBA32:
 	mov r0, #0
 	bx lr
 	nop
-_021FBA38: .word 0x000008B7
+_021FBA38: .word 0x0000101F
 	thumb_func_end AreaDataManager_GetAreaLightArchiveID
 
 	thumb_func_start AreaDataManager_Load
@@ -311,8 +317,9 @@ _021FBA70:
 	ldrh r1, [r5, r1]
 	mov r0, #0x46
 	bl AllocAndReadWholeNarcMemberByIdPair
-	mov r1, #0x8a
-	lsl r1, r1, #4
+	mov r1, #0x80
+	lsl r1, r1, #5
+	add r1, #8
 	str r0, [r5, r1]
 	sub r0, r1, #4
 	ldr r0, [r5, r0]
@@ -354,8 +361,9 @@ _021FBAC8:
 	bne _021FBAE8
 	bl GF_AssertFail
 _021FBAE8:
-	mov r1, #0x8a
-	lsl r1, r1, #4
+	mov r1, #0x80
+	lsl r1, r1, #5
+	add r1, #8
 	ldr r0, [r5, r1]
 	add r1, #8
 	ldr r1, [r5, r1]
@@ -412,8 +420,9 @@ _021FBB4C:
 	mov r2, #4
 	bl NARC_AllocAndReadWholeMember
 	str r0, [r7, #4]
-	mov r0, #0x23
-	lsl r0, r0, #6
+	mov r0, #0x81
+	lsl r0, r0, #5
+	add r0, #8
 	ldr r0, [r5, r0]
 	add r1, r4, #0
 	add r2, sp, #0x24
@@ -560,19 +569,19 @@ _021FBC76:
 	add sp, #0x13c
 	pop {r4, r5, r6, r7, pc}
 	nop
-_021FBC94: .word 0x000008B8
-_021FBC98: .word 0x000008BC
-_021FBC9C: .word 0x00000226
-_021FBCA0: .word 0x000008B2
-_021FBCA4: .word 0x0000089C
-_021FBCA8: .word 0x000008A4
-_021FBCAC: .word 0x000008A8
-_021FBCB0: .word 0x000008B4
+_021FBC94: .word 0x00001020
+_021FBC98: .word 0x00001024
+_021FBC9C: .word 0x00000400
+_021FBCA0: .word 0x0000101A
+_021FBCA4: .word 0x00001004
+_021FBCA8: .word 0x0000100C
+_021FBCAC: .word 0x00001010
+_021FBCB0: .word 0x0000101C
 _021FBCB4: .word 0x0000FFFF
-_021FBCB8: .word 0x000008AC
+_021FBCB8: .word 0x00001014
 _021FBCBC: .word 0x04000060
 _021FBCC0: .word 0xFFFFCFFF
-_021FBCC4: .word 0x000008B7
+_021FBCC4: .word 0x0000101F
 _021FBCC8: .word ov01_02208BA0
 _021FBCCC: .word ov01_02208BB0
 _021FBCD0: .word ov01_02209A88

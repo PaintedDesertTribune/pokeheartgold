@@ -5,6 +5,9 @@
 
 #include "filesystem.h"
 
+// Global building-model id limit (stock 550). asm/overlay_01_021FB878.s sizes its per-model table with the same number.
+#define AREA_DATA_MAX_BUILD_MODELS 1024
+
 typedef struct AreaDataManager_Sub8AC AreaDataManager_Sub8AC;
 typedef struct AreaDataManager AreaDataManager;
 

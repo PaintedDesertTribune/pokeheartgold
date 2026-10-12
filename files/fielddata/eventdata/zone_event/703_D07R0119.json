@@ -1,0 +1,24 @@
+{
+  "header": "fielddata/script/scr_seq/event_D07R0119.h",
+  "bgs": [
+    {
+      "scriptId": "8291",
+      "type": 2,
+      "x": 4,
+      "z": 3,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 2,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B4F_MAIN_ROOM",
+      "anchor": 3,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

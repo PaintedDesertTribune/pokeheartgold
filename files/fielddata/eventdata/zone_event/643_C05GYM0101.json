@@ -1,0 +1,90 @@
+{
+  "header": "fielddata/script/scr_seq/event_C05GYM0101.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_C05GYM0101_003 + 1",
+      "type": 0,
+      "x": 9,
+      "z": 7,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C05GYM0101_005 + 1",
+      "type": 0,
+      "x": 6,
+      "z": 20,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_C05GYM0101_005 + 1",
+      "type": 0,
+      "x": 12,
+      "z": 20,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_C05GYM0101_0",
+      "spriteId": "SPRITE_SUNGLASSES",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C05GYM0101_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 11,
+      "z": 20,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 9,
+      "z": 2,
+      "header": "MAP_SINNOH_HEARTHOME_GYM_FIRST_QUESTION_TRAINER_ROOM_2",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "z": 2,
+      "header": "MAP_SINNOH_HEARTHOME_GYM_FIRST_QUESTION_TRAINER_ROOM_1",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 14,
+      "z": 2,
+      "header": "MAP_SINNOH_HEARTHOME_GYM_SECOND_QUESTION_ROOM",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 9,
+      "z": 22,
+      "header": "MAP_SINNOH_HEARTHOME",
+      "anchor": 8,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_C05GYM0101_002 + 1",
+      "x": 9,
+      "z": 13,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "0x4000"
+    }
+  ]
+}

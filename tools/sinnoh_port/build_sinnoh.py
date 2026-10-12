@@ -416,6 +416,12 @@ TRANSLATE = {
     "ScrCmd_FadeScreen": ("FadeScreen", "hhhh"),
     "ScrCmd_WaitFadeScreen": ("WaitFade", ""),
     "ScrCmd_Warp": ("Warp", "Ghvvh"),
+    "ScrCmd_ShowMoneyBox": ("ShowMoneyBox", "vv"), "ScrCmd_HideMoneyBox": ("HideMoneyBox", ""), "ScrCmd_UpdateMoneyBox": ("UpdateMoneyBox", ""),
+    "ScrCmd_HasEnoughMoneyImmediate": ("HasEnoughMoneyImmediate", "pW"), "ScrCmd_TakeMoneyImmediate": ("SubMoneyImmediate", "W"),
+    "ScrCmd_GetPokemonNickname": ("BufferPartyMonNick", "bv"), "ScrCmd_CheckPartyForSpecies": ("PlayerHasSpecies", "pv"),
+    "ScrCmd_GetLeadingPartyMonSlot": ("GetPartyLead", "p"), "ScrCmd_WaitButtonAB": ("WaitButton", ""),
+    "ScrCmd_GiveMon": ("GiveMon", "vvv00p"), "ScrCmd_WildBattle": ("WildBattle", "vv"),
+    "ScrCmd_SetEventMovement": ("SetObjectMovementType", "oh"), "ScrCmd_RideBike": ("PlayerOnBikeSet", "b"),
     "ScrCmd_ShipAnimation": ("SinnohShipCutscene", "bbGhh"),   # src/sinnoh_ship_cutscene.c
     "ScrCmd_RestoreOverworld": ("RestoreOverworld", ""),
     "ScrCmd_TakeItem": ("TakeItem", "vvp"),
@@ -459,6 +465,8 @@ DP_STD = {2000: "std_signpost", 2002: "std_nurse_joy", 2042: "std_play_rival_int
           # Pokémon Center 2F counter, left to right in Diamond (x 3, 7, 12) matched to HeartGold's counter row (x 2, 6, 11)
           9011: "std_trainer_card_explain", 9003: "std_union_room", 9001: "std_wireless_colosseum",
           10201: "std_mystery_gift_deliveryman"}   # same deliveryman sprite in both games
+# Diamond std scripts whose objects can stay mute without a note: 2027 is the cave vent hole's one-line message.
+DP_STD_SILENT = {2027}
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
@@ -484,6 +492,7 @@ DROP = {
 }
 # Diamond commands whose only effect is a result variable HeartGold cannot compute: emit SetVar <var>, <value>.
 CONST_RESULT = {
+    "ScrCmd_GetTimeOfDay": ("p", 1),   # Diamond's day period; HeartGold keeps its own clock, scripts see "day"
     "ScrCmd_CheckEventValidity": ("bp", 0), "ScrCmd_CheckPartyForBadEgg": ("p", 0), "ScrCmd_CountPCFreeSpace": ("p", 1),
     "ScrCmd_GetDayOfWeek": ("p", 0), "ScrCmd_CountAvailablePartyMons_IgnoreSlot": ("pv", 1),
 }
@@ -636,9 +645,13 @@ class Translator:
         overrides = overrides or {}
         b = self.dp.file("script/scr_seq_release", bank)
         starts, p = [], 0
-        while struct.unpack_from("<H", b, p)[0] != 0xFD13:
+        while p + 2 <= len(b) and struct.unpack_from("<H", b, p)[0] != 0xFD13:
             off = struct.unpack_from("<I", b, p)[0]
             p += 4
+            if not (p <= p + off < len(b)):   # not a script bank after all (a few Diamond banks hold other data)
+                self.todo.append(f"script bank {bank} has no valid header table; treated as empty")
+                starts = []
+                break
             starts.append(p + off)
         labels, extra_labels = {}, {}   # two script entries can share one start offset (Eterna Forest)
         for i, s in enumerate(starts):
@@ -674,14 +687,15 @@ class Translator:
                 # read raw args
                 q = pc + 2
                 raw = []
-                for k in lay:
+                mkinds = [k for k in tr[1] if k != "0"] if isinstance(tr, tuple) else ""
+                for li, k in enumerate(lay):
                     if k == "b":
                         raw.append(b[q]); q += 1
                     elif k in "hvp":
                         raw.append(struct.unpack_from("<H", b, q)[0]); q += 2
                     elif k == "w":
                         v = struct.unpack_from("<i", b, q)[0]; q += 4
-                        raw.append(q + v)
+                        raw.append(v if li < len(mkinds) and mkinds[li] == "W" else q + v)   # 'W': a plain 32-bit value
                 nxt = q
                 if name == "ScrCmd_PlaySoundWait":   # Diamond waits for whatever is playing; HeartGold's WaitSE wants the id
                     lines[pc] = f"\tWaitSE {last_se}" if last_se else "\t// Diamond PlaySoundWait with no sound effect before it"
@@ -705,14 +719,21 @@ class Translator:
                     stubbed.add(name)
                 else:
                     macro, kinds = tr
-                    if len(kinds) != len(raw):
+                    if len(kinds.replace("0", "")) != len(raw):
                         lines[pc] = f"\t// TODO Diamond {name} 0x{cmd:03x} args {raw}: mapping arity mismatch"
                         stubbed.add(name)
                         pc = nxt
                         continue
                     args = []
-                    for k, v in zip(kinds, raw):
-                        if k == "w":
+                    rawit = iter(raw)
+                    for k in kinds:
+                        if k == "0":          # a HeartGold argument Diamond's command does not have
+                            args.append("0")
+                            continue
+                        v = next(rawit)
+                        if k == "W":
+                            args.append(str(v))
+                        elif k == "w":
                             lbl = labels.setdefault(v, f"_{v:04X}")
                             work.append(v)
                             args.append(lbl)
@@ -1095,7 +1116,9 @@ def main():
             elif 3000 <= sid < 7000:   # Diamond's NPC-trainer std ids: 3000/5000 + trainer - 1, same scheme as HeartGold
                 macro = "std_trainer" if sid < 5000 else "std_trainer_2"
                 sid_s = f"{macro}({trainers.hg_name(sid - (3000 if sid < 5000 else 5000) + 1)})"
-            elif sid == 0xFFFF:   # Diamond's "no script"
+            elif sid == 0xFFFF or o[1] == BERRY_PLOT_SPRITE:   # Diamond's "no script"; berry plots are dropped below
+                sid_s = "0"
+            elif sid in DP_STD_SILENT:
                 sid_s = "0"
             elif sid >= 2000:
                 sid_s = DP_STD.get(sid, "0")

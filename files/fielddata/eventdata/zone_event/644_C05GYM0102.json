@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_C05GYM0102.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C05GYM0102_0",
+      "spriteId": "SPRITE_BOY2",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_YOUNGSTER_DONNY)",
+      "facingDirection": 1,
+      "param0": 4,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 7,
+      "z": 6,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 7,
+      "z": 10,
+      "header": "MAP_SINNOH_HEARTHOME_GYM_FIRST_QUESTION_ROOM",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

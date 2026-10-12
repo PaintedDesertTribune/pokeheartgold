@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Unattended map-load test over melonDS's GDB stub.
 
+melonDS 1.1 does not un-escape gdb's binary X packets, so memory writes go through the hex M packet
+(`set remote binary-download-packet off`); otherwise values containing 0x23/0x24/0x2A/0x7D bytes are corrupted.
+
 For each map: relaunch melonDS (configured with the ARM9 GDB stub and BreakOnStartup), attach gdb, let the game
 boot (HACK_AUTO_NEWGAME starts a new game by itself), patch the new-game start location in RAM when the game
 reads it, then wait for either the field to run (PASS), an assertion (ASSERT: file, line, backtrace), another
@@ -49,6 +52,7 @@ def run_one(name, mid, x, y, syms, timeout=70):
     script = f"""set pagination off
 set confirm off
 file {ELF}
+set remote binary-download-packet off
 target remote localhost:3333
 break Location_SetToPlayerRoom
 continue
@@ -60,8 +64,11 @@ break GF_AssertFail
 break PlayerAvatar_UpdateMovement
 continue
 echo \\n=== STOP ===\\n
-info registers r0 r1 pc lr sp
+info registers r0 r1 r2 r3 r4 r5 r6 r7 pc lr sp
 x/s $r0
+print/x gHackAllocFailHeap
+print/x gHackAllocFailSize
+print/x gHackNote
 bt 10
 x/96wx $sp
 detach
@@ -79,7 +86,11 @@ quit
         return {"map": name, "id": mid, "x": x, "y": y, "result": "PASS_NOASSERT", "seconds": round(time.time() - t0)}
     stop = out.split("=== STOP ===")[-1] if "=== STOP ===" in out else ""
     res = {"map": name, "id": mid, "x": x, "y": y, "seconds": round(time.time() - t0)}
-    if "GF_AssertFail" in stop.split("\n", 3)[0] or re.search(r"Breakpoint \d+, 0x020260f0", out):
+    logdir = os.environ.get("MAPLOADTEST_LOGDIR")
+    if logdir:
+        os.makedirs(logdir, exist_ok=True)
+        open(os.path.join(logdir, name + ".log"), "w").write(out)
+    if re.search(r"Breakpoint \d+, 0x%08x" % syms["GF_AssertFail"], out) or re.search(r"^pc\s+0x%08x" % syms["GF_AssertFail"], stop, re.M):
         res["result"] = "ASSERT"
         m = re.search(r'0x[0-9a-f]+:\s+"([^"]*)"', stop)
         r1 = re.search(r"^r1\s+0x[0-9a-f]+\s+(\d+)", stop, re.M)
@@ -92,6 +103,7 @@ quit
         pc = re.search(r"^pc\s+(0x[0-9a-f]+)", stop, re.M)
         res["pc"] = pc.group(1) if pc else "?"
         res["stack"] = resolve_stack(stop, syms)
+        res["tail"] = out[-700:]
     else:
         res["result"] = "NOATTACH"
         res["tail"] = out[-400:]
@@ -115,6 +127,7 @@ def main():
     ap.add_argument("--maps", default="")
     ap.add_argument("--prefix", default="MAP_SINNOH_")
     ap.add_argument("--out", default=os.path.join(ROOT, "tools/sinnoh_port/maploadtest_report.json"))
+    ap.add_argument("--at", default="", help="override start tile for every map in this run, as x,y")
     ap.add_argument("--skip-passed", action="store_true", help="skip maps already PASS in --out")
     a = ap.parse_args()
     syms = nm()
@@ -132,6 +145,8 @@ def main():
         if a.skip_passed and prev.get(name, {}).get("result") == "PASS":
             continue
         x, y = start_coords(name, dp_codes)
+        if a.at:
+            x, y = (int(v) for v in a.at.split(","))
         r = run_one(name, ids[name], x, y, syms)
         results[name] = r
         print(f"[{i+1}/{len(names)}] {name}: {r['result']} {r.get('where', '')} {r.get('pc', '')}", flush=True)

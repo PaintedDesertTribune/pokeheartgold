@@ -282,6 +282,25 @@ static const struct HiddenItemData sHiddenItemParam[] = {
     { 79, 1, 0, 0, 275 }, // Diamond R211A
     { 38, 1, 0, 0, 276 }, // Diamond R211A
     { 109, 1, 0, 0, 277 }, // Diamond R211B
+    { 17, 1, 0, 0, 278 }, // Diamond D05R0101
+    { 22, 1, 0, 0, 279 }, // Diamond R208
+    { 254, 1, 0, 0, 280 }, // Diamond R208
+    { 45, 1, 0, 0, 281 }, // Diamond C05
+    { 38, 1, 0, 0, 282 }, // Diamond R209
+    { 94, 1, 0, 0, 283 }, // Diamond R209
+    { 54, 1, 0, 0, 284 }, // Diamond R209
+    { 242, 1, 0, 0, 285 }, // Diamond R209
+    { 28, 1, 0, 0, 286 }, // Diamond R209R0102
+    { 407, 1, 0, 0, 287 }, // Diamond R209R0104
+    { 17, 1, 0, 0, 288 }, // Diamond T04
+    { 312, 1, 0, 0, 289 }, // Diamond D07R0104
+    { 417, 1, 0, 0, 290 }, // Diamond D07R0112
+    { 17, 1, 0, 0, 291 }, // Diamond D07R0119
+    { 373, 1, 0, 0, 292 }, // Diamond R210A
+    { 39, 1, 0, 0, 293 }, // Diamond R210A
+    { 45, 1, 0, 0, 294 }, // Diamond R210A
+    { 24, 1, 0, 0, 295 }, // Diamond R210A
+    { 326, 1, 0, 0, 296 }, // Diamond R210A
     // SINNOH_PORT_END
 };
 #endif //_IN_FIELDMAP_C

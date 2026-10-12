@@ -1,0 +1,50 @@
+{
+  "header": "fielddata/script/scr_seq/event_C05R0102.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_C05R0102_0",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C05R0102_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 11,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_C05R0102_1",
+      "spriteId": "SPRITE_SINNOH_PIPPI",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_C05R0102_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 10,
+      "z": 7,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 18,
+      "z": 2,
+      "header": "MAP_SINNOH_HEARTHOME_SOUTHEAST_HOUSE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}
