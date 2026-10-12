@@ -15,7 +15,7 @@
 
 scr_seq_SC05GYM0101_000:
 	SetVar 0x4000, 0
-	// TODO Diamond ScrCmd_InitHearthomeGym 0x171 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_InitHearthomeGym dropped: Hearthome Gym lift state; the lift is a warp here (no state needed)
 	CheckFlag FLAG_SINNOH_2445
 	GoToIf 0, scr_seq_SC05GYM0101_001
 	End
@@ -25,7 +25,17 @@ scr_seq_SC05GYM0101_001:
 	End
 
 scr_seq_SC05GYM0101_002:
-	// TODO Diamond ScrCmd_MoveHearthomeGymElevator 0x172 args []: no HeartGold mapping yet
+	GetPlayerFacing VAR_SPECIAL_RESULT
+	GetPlayerCoords VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
+	Compare VAR_SPECIAL_RESULT, DIR_NORTH
+	GoToIfEq _elev_SC05GYM0101_0037
+	AddVar VAR_SPECIAL_x8005, 1
+	Warp MAP_SINNOH_HEARTHOME_GYM_FIRST_QUESTION_ROOM, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_SOUTH
+	End
+_elev_SC05GYM0101_0037:
+	SubVar VAR_SPECIAL_x8005, 1
+	Warp MAP_SINNOH_HEARTHOME_GYM_FIRST_QUESTION_ROOM, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_NORTH
+	End
 	End
 
 scr_seq_SC05GYM0101_003:

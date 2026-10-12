@@ -47,7 +47,8 @@ ENC_JSON = "files/fielddata/encountdata/gs_enc_data.json"
 TRAINER_FILES = [ENC_JSON, "files/poketool/trainer/trainers.json", "files/msgdata/msg/msg_0728.json", "files/msgdata/msg/msg_0730.json",
                  "files/poketool/trmsg/trtbl.narc", "files/poketool/trmsg/trtblofs.narc", "files/a/0/5/8",
                  "files/a/1/1/2", "files/msgdata/msg/msg_0200.json", "files/fielddata/script/scr_seq/scr_seq_0145.s",
-                 "files/fielddata/script/scr_seq/scr_seq_0003.s"]
+                 "files/fielddata/script/scr_seq/scr_seq_0003.s", "files/fielddata/script/scr_seq/scr_seq_0149.s"]
+DP_NEW_GAME_BANK = 377   # Diamond's new-game script: the hide flags and vars its intro expects to be set
 RESTORE = list(ARCHIVES.values()) + list(MATSHP.values()) + TRAINER_FILES
 
 FIRST_MAP_ID = 540          # first free HeartGold map id
@@ -112,7 +113,7 @@ BGM_EVENT = {   # Diamond event/encounter themes played from scripts -> HeartGol
 # Standard scripts HeartGold lacks, appended to its misc std bank (scr_seq_0003); ids are 2000 + stock count + position
 SINNOH_STD = [
     ("std_sinnoh_partner_theme",   # Diamond 2040: the partner's theme by player gender (Dawn/Lucas -> Lyra/Ethan)
-     "\tStopBGM 0\n\tGetPlayerGender VAR_SPECIAL_x800C\n\tCompare VAR_SPECIAL_x800C, 0\n\tGoToIfEq _sinnoh_partner_f\n"
+     "\tStopBGM 0\n\tGetPlayerGender VAR_SPECIAL_RESULT\n\tCompare VAR_SPECIAL_RESULT, 0\n\tGoToIfEq _sinnoh_partner_f\n"
      "\tPlayBGM SEQ_GS_E_SUPPORT_M\n\tRestartCurrentScript\n\tEnd\n\n_sinnoh_partner_f:\n\tPlayBGM SEQ_GS_E_SUPPORT_F\n\tRestartCurrentScript\n\tEnd\n"),
     ("std_sinnoh_rival_theme",     # Diamond 2048: Barry's theme
      "\tStopBGM 0\n\tPlayBGM SEQ_GS_E_RIVAL1\n\tRestartCurrentScript\n\tEnd\n"),
@@ -244,7 +245,7 @@ class Narcs:
 
 # ----------------------------------------------------------------------------- Diamond side
 # Diamond command argument layouts the source scan gets wrong (it counts a "ScriptGetVarPointer" in a comment).
-LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh"}
+LAYOUT_OVERRIDES = {"ScrCmd_GetPartyMonSpecies": "hh", "ScrCmd_Unk0250": ""}   # Unk0250: new-game save-field init, no args
 HG_NPC_TRADE_COUNT = 13          # NPC_TRADE_MAX in stock HeartGold; Diamond's trades are appended
 DP_TRADE_NAME_BANK = 326         # Diamond msg bank: 4 nicknames then 4 OT names
 
@@ -533,6 +534,10 @@ DP_STD = {2000: "std_signpost", 2019: "std_mart_intro",   # 2019 = "Welcome! Wha
           # 2017 = "bag is full" message (identified by disassembly; the same 0x8004/0x8005 item/quantity convention)
           2016: "std_give_item_verbose", 2017: "std_bag_is_full"}
 # Diamond std calls that do nothing worth keeping: 2037 is an empty script, 2009 hands out a Pokétch coupon (decision 16).
+# Diamond level-script std calls dropped on purpose (HeartGold handles the job itself or the feature is dropped)
+DP_LEVEL_STD_DROPPED = {9000: "Pokémon Center 2F partner walk (HeartGold's Center does its own)", 9012: "Pokémon Center 2F partner walk",
+                        9013: "Pokémon Center 2F partner walk", 9014: "Pokémon Center 2F partner walk", 9015: "Pokémon Center 2F partner walk",
+                        10200: "Poké Mart Pokétch-app check (Pokétch dropped, decision 16)"}
 DP_STD_NOOP = {2037: "Diamond std 2037 is empty", 2009: "Pokétch coupon (Pokétch dropped, decision 16)",
                2012: "Underground decoration gift (Underground not in HeartGold)", 2013: "Underground trap gift (Underground not in HeartGold)",
                2015: "Contest accessory gift (dress-up dropped, decision 16)", 2036: "Contest accessory gift (dress-up dropped, decision 16)",
@@ -542,6 +547,9 @@ DP_STD_SILENT = {2027, 2037}   # 2037 is an empty script (used on scenery object
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
+    "ScrCmd_Unk0250": "Diamond new-game save-field init; HeartGold does its own",
+    "ScrCmd_InitPokemonRecordSize": "Diamond new-game record init; HeartGold does its own",
     "ScrCmd_OpenTradeScreen": "the trade screen is part of HeartGold's NPCTradeExec",
     "ScrCmd_Unk025B": "Great Marsh observatory binoculars", "ScrCmd_Unk025C": "Great Marsh observatory binoculars", "ScrCmd_Unk025D": "Great Marsh observatory binoculars",
     "ScrCmd_Unk0161": "Diamond partner-trainer set; HeartGold's following system differs", "ScrCmd_Unk0162": "Diamond partner-trainer clear; HeartGold's following system differs",
@@ -785,6 +793,16 @@ class Translator:
                     continue
                 if name == "ScrCmd_PlaySound":
                     last_se = str(raw[0]) if raw[0] < 0x4000 else self.var(raw[0])
+                if name == "ScrCmd_MoveHearthomeGymElevator":
+                    # Diamond lifts the player between the room's two floors in place (upper floor north of the lift tile,
+                    # lower floor south; the height plates do not overlap), so a warp one tile north or south stands in
+                    lbl = f"_elev_{self.code}_{pc:04X}"
+                    lines[pc] = (f"\tGetPlayerFacing VAR_SPECIAL_RESULT\n\tGetPlayerCoords VAR_SPECIAL_x8004, VAR_SPECIAL_x8005\n"
+                                 f"\tCompare VAR_SPECIAL_RESULT, DIR_NORTH\n\tGoToIfEq {lbl}\n"
+                                 f"\tAddVar VAR_SPECIAL_x8005, 1\n\tWarp {self.hgmap}, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_SOUTH\n\tEnd\n"
+                                 f"{lbl}:\n\tSubVar VAR_SPECIAL_x8005, 1\n\tWarp {self.hgmap}, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_NORTH\n\tEnd")
+                    pc = nxt
+                    continue
                 if name in DROP:
                     lines[pc] = f"\t// Diamond {name} dropped: {DROP[name]}"
                     self.todo.append(f"dropped {name}: {DROP[name]}")
@@ -1264,6 +1282,8 @@ def main():
             if sid >= 2000:
                 if sid in DP_STD:
                     return DP_STD[sid]
+                if sid in DP_LEVEL_STD_DROPPED:   # known, deliberately dropped (reason recorded once in TODO.txt)
+                    return None
                 todo.append(f"{m['name']}: level script uses Diamond std script {sid}; dropped")
                 return None
             if sid - 1 >= nscripts_bank:
@@ -1515,6 +1535,19 @@ def main():
     replace_block("asm/unk_0203BA5C.s", "// SINNOH_PORT_BEGIN", "// SINNOH_PORT_END", "\n".join(spawn_rows) + ("\n" if spawn_rows else ""))
     num_spawns = 30 + len(spawn_rows)
 
+    # Diamond's new-game flags/vars go into HeartGold's std_init (scr_seq_0149, run once at New Game)
+    tr = Translator(dp, state, "INIT", "msg_INIT", 0, sprites, trainers, {}, "MAP_X")
+    init_asm, _, _ = tr.translate(DP_NEW_GAME_BANK)
+    init_lines = [l for l in init_asm.splitlines() if re.match(r"\t(SetFlag|ClearFlag|SetVar) ", l)]
+    assert len(init_lines) > 50, "Diamond's new-game script translated short; check DP_NEW_GAME_BANK"
+    std149 = "files/fielddata/script/scr_seq/scr_seq_0149.s"
+    s149 = open(std149).read()
+    i0 = s149.index("scr_seq_0149_000:")
+    iend = s149.index("\tEnd\n", i0)
+    s149 = s149[:iend] + "\t// SINNOH_PORT_BEGIN: Diamond's new-game state\n" + "\n".join(init_lines) + "\n\t// SINNOH_PORT_END\n" + s149[iend:]
+    if '#include "constants/sinnoh.h"' not in s149:
+        s149 = s149.replace('#include "macros/script.inc"', '#include "constants/sinnoh.h"\n#include "macros/script.inc"', 1)
+    open(std149, "w").write(s149)
     sin = ["#ifndef POKEHEARTGOLD_CONSTANTS_SINNOH_H", "#define POKEHEARTGOLD_CONSTANTS_SINNOH_H", "", "// Generated by tools/sinnoh_port/build_sinnoh.py. Do not edit.", ""]
     sin += [f"#define FLAG_SINNOH_{k} {v}" for k, v in sorted(state.flags.items())] + [""]
     sin += [f"#define VAR_SINNOH_{k:04X} 0x{v:04X}" for k, v in sorted(state.vars.items())]
@@ -1690,8 +1723,7 @@ def main():
     if plain:
         todo.append("trainer classes: " + ", ".join(plain) + " use the default encounter jingle and battle music; every class's intro animation is blank")
     todo.append("new-game state: Diamond sets its hide flags (Canalave 464-470 etc.) during the intro; cutscene NPCs stay visible until that is replicated")
-    todo.append("std bank 207 (Diamond std 9000-9016) holds the Pokémon Center stair/counter scripts; level scripts call 9000/9012-9015 "
-                "for the upstairs partner walk; HeartGold's own Pokémon Center handles that, so they stay dropped")
+    todo += [f"level scripts calling Diamond std {k} are dropped: {v}" for k, v in sorted(DP_LEVEL_STD_DROPPED.items())]
     # --- Diamond's four in-game trades: records are HeartGold's NPCTrade minus its trailing word; names go into msg_0200
     # (17 nicknames then 17 OT names once appended) and NpcTradeNum gains four entries before NPC_TRADE_MAX.
     dp_trades, _ = narc_read(f"{dp.repo}/files/fielddata/pokemon_trade/fld_trade.narc")
