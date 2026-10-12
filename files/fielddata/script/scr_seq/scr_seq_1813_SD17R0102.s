@@ -12,7 +12,7 @@
 scr_seq_SD17R0102_000:
 	SetFlag FLAG_SINNOH_2516
 	Call _001C
-	// TODO Diamond ScrCmd_Unk0285 0x285 args [16651, 16652]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0285 dropped: Great Marsh area shuttle warp
 	End
 
 _001C:

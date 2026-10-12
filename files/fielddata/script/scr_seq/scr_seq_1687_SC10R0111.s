@@ -10,13 +10,13 @@
 	ScrDefEnd
 
 scr_seq_SC10R0111_000:
-	// TODO Diamond ScrCmd_Unk025B 0x25b args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025B dropped: Great Marsh observatory binoculars
 	End
 
 scr_seq_SC10R0111_001:
 	ApplyMovement obj_player, mv_SC10R0111_00E8
 	WaitMovement
-	// TODO Diamond ScrCmd_Unk00EA 0x0ea args [267]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00EA dropped: plays a map's music by Diamond map id
 	CheckFlag FLAG_SINNOH_2404
 	CallIf 0, _00D1
 	CheckFlag FLAG_SINNOH_2404
@@ -39,7 +39,7 @@ scr_seq_SC10R0111_001:
 	ApplyMovement 0, mv_SC10R0111_010C
 	WaitMovement
 	Wait 30, 0x800C
-	// TODO Diamond ScrCmd_Unk025C 0x25c args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025C dropped: Great Marsh observatory binoculars
 	Wait 30, 0x800C
 	SetFlag FLAG_SINNOH_600
 	SetFlag FLAG_SINNOH_601

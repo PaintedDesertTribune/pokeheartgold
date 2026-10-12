@@ -11,11 +11,11 @@
 	ScrDefEnd
 
 scr_seq_SD24R0106_000:
-	// TODO Diamond ScrCmd_Unk025B 0x25b args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025B dropped: Great Marsh observatory binoculars
 	End
 
 scr_seq_SD24R0106_001:
-	// TODO Diamond ScrCmd_Unk025C 0x25c args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025C dropped: Great Marsh observatory binoculars
 	End
 
 scr_seq_SD24R0106_002:

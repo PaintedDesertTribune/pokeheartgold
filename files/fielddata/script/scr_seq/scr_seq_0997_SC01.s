@@ -102,7 +102,7 @@ _0166:
 	BufferPlayersName 1
 	NPCMsg msg_0845_SC01_00000
 	GetPartyCount 0x800C
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 32780]: no HeartGold mapping yet
+	BufferInt 0, 0x800C
 	CompareVarToValue 0x800C, 4
 	CallIf 4, _01A3
 	CompareVarToValue 0x800C, 3
@@ -125,7 +125,7 @@ _01AD:
 	BufferPlayersName 1
 	NPCMsg msg_0845_SC01_00005
 	GetPartyCount 0x800C
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 32780]: no HeartGold mapping yet
+	BufferInt 0, 0x800C
 	CompareVarToValue 0x800C, 4
 	CallIf 4, _01EA
 	CompareVarToValue 0x800C, 3

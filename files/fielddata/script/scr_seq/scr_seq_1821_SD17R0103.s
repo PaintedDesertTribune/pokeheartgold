@@ -11,7 +11,7 @@
 
 scr_seq_SD17R0103_000:
 	Call _0018
-	// TODO Diamond ScrCmd_Unk0285 0x285 args [16651, 16652]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0285 dropped: Great Marsh area shuttle warp
 	End
 
 _0018:
@@ -24,8 +24,8 @@ scr_seq_SD17R0103_001:
 	LockAll
 	CopyVar 0x8004, VAR_SINNOH_410B
 	CopyVar 0x8005, VAR_SINNOH_410C
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 32772]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [1, 32773]: no HeartGold mapping yet
+	BufferInt 0, 0x8004
+	BufferInt 1, 0x8005
 	NPCMsg msg_1257_SD17R0103_00000
 	WaitButton
 	CloseMsg

@@ -18,7 +18,7 @@ scr_seq_SR221R0201_000:
 	CheckFlag FLAG_SINNOH_2734
 	GoToIf 1, _016F
 	// TODO Diamond ScrCmd_Unk0277 0x277 args [32768]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 32768]: no HeartGold mapping yet
+	BufferInt 0, 0x8000
 	GetPartyCount 0x8002
 	SetVar 0x8003, 0
 

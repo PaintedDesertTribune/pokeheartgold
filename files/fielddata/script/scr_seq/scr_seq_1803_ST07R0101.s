@@ -73,13 +73,13 @@ scr_seq_ST07R0101_001:
 	GetPartyLead 0x8000
 	BufferPlayersName 0
 	BufferSpeciesName 2, 0x8000, 0, 0
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32768, 68]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8000, 68
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _022E
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32768, 67]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8000, 67
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _01D9
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32768, 66]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8000, 66
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _0184
 	GoTo _012F
@@ -100,7 +100,7 @@ _012F:
 	NPCMsg msg_1248_ST07R0101_00007
 	NPCMsg msg_1248_ST07R0101_00008
 	WaitButton
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32768, 66]: no HeartGold mapping yet
+	GiveRibbon 0x8000, 66
 	CloseMsg
 	HideMoneyBox
 	ReleaseAll
@@ -122,7 +122,7 @@ _0184:
 	NPCMsg msg_1248_ST07R0101_00009
 	NPCMsg msg_1248_ST07R0101_00010
 	WaitButton
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32768, 67]: no HeartGold mapping yet
+	GiveRibbon 0x8000, 67
 	CloseMsg
 	HideMoneyBox
 	ReleaseAll
@@ -144,7 +144,7 @@ _01D9:
 	NPCMsg msg_1248_ST07R0101_00011
 	NPCMsg msg_1248_ST07R0101_00012
 	WaitButton
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32768, 68]: no HeartGold mapping yet
+	GiveRibbon 0x8000, 68
 	CloseMsg
 	HideMoneyBox
 	ReleaseAll

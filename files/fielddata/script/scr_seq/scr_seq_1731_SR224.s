@@ -104,7 +104,7 @@ _00FB:
 	// TODO Diamond ScrCmd_FadeOutBgm 0x054 args [0, 10]: no HeartGold mapping yet
 	FadeScreen 6, 6, 0, 32767
 	WaitFade
-	// TODO Diamond ScrCmd_Unk0270 0x270 args [3, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0270 dropped: Diamond save-flag toggle of unknown purpose
 	Warp MAP_SINNOH_ROUTE_224, 0, 908, 492, 0
 	Wait 15, 0x800C
 	FadeScreen 6, 6, 1, 32767

@@ -27,7 +27,7 @@ scr_seq_SC08FS0101_001:
 	FacePlayer
 	CallStd 2019 /* TODO Diamond std script */
 	CloseMsg
-	SpecialMartBuy 17
+	SpecialMartBuy 47
 	ReleaseAll
 	End
 

@@ -65,7 +65,7 @@ _00A9:
 
 _00B2:
 	// TODO Diamond ScrCmd_CountNationalDexSeen 0x120 args [32772]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [1, 32772]: no HeartGold mapping yet
+	BufferInt 1, 0x8004
 	CompareVarToValue 0x8004, 35
 	GoToIf 0, _010F
 	NPCMsg msg_0963_SC04R0401_00005

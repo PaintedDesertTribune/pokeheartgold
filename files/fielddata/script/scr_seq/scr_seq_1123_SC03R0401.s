@@ -255,12 +255,12 @@ _03DB:
 	End
 
 _03E6:
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 16564, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_0908_SC03R0401_00007
 	GetPartyCount 0x800C
 	CompareVarToValue 0x800C, 6
 	GoToIf 1, _047D
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [1, 16564, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	BufferPlayersName 0
 	PlaySE 1158
 	NPCMsg msg_0908_SC03R0401_00008

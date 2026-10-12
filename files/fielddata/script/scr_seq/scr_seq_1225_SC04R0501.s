@@ -16,7 +16,7 @@ scr_seq_SC04R0501_000:
 	FacePlayer
 	NPCMsg msg_0959_SC04R0501_00000
 	CloseMsg
-	SpecialMartBuy 4
+	SpecialMartBuy 34
 	ReleaseAll
 	End
 

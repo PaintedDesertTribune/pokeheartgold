@@ -78,7 +78,7 @@ _00F0:
 
 scr_seq_SL01_003:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 254, 15
 	ApplyMovement 254, mv_SL01_01DC
 	WaitMovement
@@ -107,7 +107,7 @@ _01B6:
 	GoTo _01CE
 
 _01CE:
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 254, 48
 	ReleaseAll
 	End
@@ -122,7 +122,7 @@ scr_seq_SL01_004:
 	CloseMsg
 	ApplyMovement 0, mv_SL01_0248
 	WaitMovement
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 0, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 1]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_EventStopFollowing 0x06e args []: no HeartGold mapping yet

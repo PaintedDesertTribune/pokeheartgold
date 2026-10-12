@@ -20,7 +20,7 @@ scr_seq_SC08R0101_000:
 	LockAll
 	FacePlayer
 	GetPartyLead 0x8000
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 0, 24]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0, 24
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _0082
 	BufferSpeciesName 0, 0x8000, 0, 0
@@ -29,7 +29,7 @@ scr_seq_SC08R0101_000:
 	CompareVarToValue 0x800C, 510
 	GoToIf 0, _0077
 	NPCMsg msg_1163_SC08R0101_00001
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32768, 24]: no HeartGold mapping yet
+	GiveRibbon 0x8000, 24
 	PlaySE 1155
 	BufferPlayersName 1
 	NPCMsg msg_1163_SC08R0101_00002

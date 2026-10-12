@@ -86,7 +86,7 @@ _00EC:
 	WaitButton
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 610
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 28, 48
 	ReleaseAll
 	End
@@ -107,7 +107,7 @@ scr_seq_SD09R0104_001:
 	NPCMsg msg_1174_SD09R0104_00004
 	CloseMsg
 	SetVar VAR_SINNOH_4090, 0
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 28, 14
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8005, 55
@@ -160,7 +160,7 @@ _026D:
 
 scr_seq_SD09R0104_002:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 28, 14
 	ApplyMovement obj_player, mv_SD09R0104_03B4
 	ApplyMovement 28, mv_SD09R0104_03E0

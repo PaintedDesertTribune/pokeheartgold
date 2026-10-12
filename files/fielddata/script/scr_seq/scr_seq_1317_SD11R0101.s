@@ -153,7 +153,7 @@ scr_seq_SD11R0101_004:
 	LockAll
 	FadeScreen 6, 1, 0, 0
 	WaitFade
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	CopyVar 0x8008, VAR_SINNOH_409A
 	CompareVarToValue 0x8008, 25
 	GoToIf 1, _0700

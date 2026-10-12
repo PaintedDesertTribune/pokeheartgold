@@ -346,7 +346,7 @@ scr_seq_SC07R0101_019:
 scr_seq_SC07R0101_020:
 	CompareVarToValue VAR_SINNOH_4040, 999
 	GoToIf 2, _0443
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 16448]: no HeartGold mapping yet
+	BufferInt 0, VAR_SINNOH_4040
 	PlayFanfare 1500
 	LockAll
 	NPCMsg msg_1066_SC07R0101_00022
@@ -356,7 +356,7 @@ scr_seq_SC07R0101_020:
 	End
 
 _0443:
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 999]: no HeartGold mapping yet
+	BufferInt 0, 999
 	PlayFanfare 1500
 	LockAll
 	NPCMsg msg_1066_SC07R0101_00022

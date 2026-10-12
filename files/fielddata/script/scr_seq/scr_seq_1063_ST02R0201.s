@@ -80,7 +80,7 @@ _00C4:
 	BufferPlayersName 0
 	// TODO Diamond ScrCmd_GetSwarmInfo 0x0e3 args [16385, 16384]: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_GetMapName 0x0e2 args [1, 16385]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [2, 16384, 0, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	GetPlayerGender 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _00FA

@@ -82,7 +82,7 @@ _00D8:
 _00FB:
 	// TODO Diamond ScrCmd_Unk01EC 0x1ec args []: no HeartGold mapping yet
 	// TODO Diamond ScrCmd_Unk01ED 0x1ed args [32768]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 32768, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_1117_SR212AR0103_00006
 	GetPlayerCoords 0x8001, 0x8002
 	ApplyMovement 2, mv_SR212AR0103_01D4
@@ -103,7 +103,7 @@ _00FB:
 
 _0155:
 	// TODO Diamond ScrCmd_Unk01ED 0x1ed args [32768]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 32768, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_1117_SR212AR0103_00010
 	WaitButton
 	CloseMsg
@@ -212,7 +212,7 @@ _02FF:
 
 _0304:
 	// TODO Diamond ScrCmd_Unk01ED 0x1ed args [32768]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 32768, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_1117_SR212AR0103_00014
 	WaitButton
 	CloseMsg

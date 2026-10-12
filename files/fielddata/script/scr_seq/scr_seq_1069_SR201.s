@@ -86,7 +86,7 @@ _0117:
 	WaitButton
 	CloseMsg
 	// TODO Diamond ScrCmd_Unk0164 0x164 args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 2, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [2, 1]: no HeartGold mapping yet
 	SetFlag FLAG_SINNOH_400
@@ -118,7 +118,7 @@ scr_seq_SR201_002:
 	End
 
 _01F6:
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 2, 15
 	ApplyMovement obj_player, mv_SR201_0238
 	ApplyMovement 2, mv_SR201_0224
@@ -126,7 +126,7 @@ _01F6:
 	GoTo _0216
 
 _0216:
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 2, 48
 	ReleaseAll
 	End
@@ -279,7 +279,7 @@ _04C4:
 	CloseMsg
 	SetVar VAR_SINNOH_4086, 3
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [254, 0]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetFlag FLAG_SINNOH_400
 	SetFlag FLAG_SINNOH_435
 	SetVar VAR_SINNOH_4082, 4

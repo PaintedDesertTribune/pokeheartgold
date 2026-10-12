@@ -63,7 +63,7 @@ _008E:
 	WaitButton
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 608
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 0, 48
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 1]: no HeartGold mapping yet
 	ReleaseAll
@@ -81,7 +81,7 @@ _00E0:
 
 scr_seq_SD03R0101_001:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 0, 15
 	// TODO Diamond ScrCmd_KeepEvent 0x06c args [0, 0]: no HeartGold mapping yet
 	ApplyMovement 0, mv_SD03R0101_0190
@@ -169,7 +169,7 @@ _027B:
 
 _0293:
 	PlayFanfare 1539
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	HidePerson 0
 	WaitSE 1539
 	SetFlag FLAG_SINNOH_227

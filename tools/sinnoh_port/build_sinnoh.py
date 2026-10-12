@@ -428,6 +428,8 @@ TRANSLATE = {
     "ScrCmd_GiveMon": ("GiveMon", "vvv00p"), "ScrCmd_WildBattle": ("WildBattle", "vv"),
     "ScrCmd_LegendaryBattle": ("WildBattle", "vv"),   # Diamond's no-flee variant; HeartGold's plain wild battle for now
     "ScrCmd_GetPokemonName": ("BufferSpeciesName", "bv00"), "ScrCmd_ReleaseEvent": ("Release", "o"),
+    "ScrCmd_GetPartyMonFriendship": ("MonGetFriendship", "pv"), "ScrCmd_PartyMonHasRibbon": ("MonHasRibbon", "pvv"),
+    "ScrCmd_GivePartyMonRibbon": ("GiveRibbon", "vv"), "ScrCmd_Unk00D5": ("BufferInt", "bv"),
     "ScrCmd_SetEventMovement": ("SetObjectMovementType", "oh"), "ScrCmd_RideBike": ("PlayerOnBikeSet", "b"),
     "ScrCmd_ShipAnimation": ("SinnohShipCutscene", "bbGhh"),   # src/sinnoh_ship_cutscene.c
     "ScrCmd_RestoreOverworld": ("RestoreOverworld", ""),
@@ -477,6 +479,11 @@ DP_STD_SILENT = {2027}
 
 # Diamond commands with no HeartGold counterpart worth faking: emitted as a comment, logged once per map.
 DROP = {
+    "ScrCmd_NPCTradeInit": "Diamond in-game trades need their trade table imported", "ScrCmd_OpenTradeScreen": "Diamond in-game trades need their trade table imported",
+    "ScrCmd_Unk025B": "Great Marsh observatory binoculars", "ScrCmd_Unk025C": "Great Marsh observatory binoculars", "ScrCmd_Unk025D": "Great Marsh observatory binoculars",
+    "ScrCmd_Unk0161": "Diamond partner-trainer set; HeartGold's following system differs", "ScrCmd_Unk0162": "Diamond partner-trainer clear; HeartGold's following system differs",
+    "ScrCmd_Unk0285": "Great Marsh area shuttle warp", "ScrCmd_Unk00EA": "plays a map's music by Diamond map id", "ScrCmd_Unk00DA": "buffers a message from Diamond's common text bank",
+    "ScrCmd_Unk0270": "Diamond save-flag toggle of unknown purpose",
     "ScrCmd_ShowCoinBox": "HeartGold has no coin box window", "ScrCmd_HideCoinBox": "HeartGold has no coin box window", "ScrCmd_UpdateCoinBox": "HeartGold has no coin box window",
     "ScrCmd_StopFanfare": "no stop-fanfare command in HeartGold",
     "ScrCmd_LockCamera": "scripted camera moves need a HeartGold port (library cutscene)",
@@ -788,8 +795,9 @@ class Translator:
                         args[1] = self.sprites.hg_name(raw[1])   # object-graphics variables hold sprite ids
                     if macro == "GetPartyMonSpecies":
                         args = args[:2]
-                    if macro in ("MartBuy", "SpecialMartBuy"):
-                        self.todo.append(f"{macro} {args[0]}: Diamond mart id used against HeartGold's mart tables")
+                    if macro == "SpecialMartBuy" and raw[0] < 0x4000:
+                        args[0] = str(raw[0] + 30)   # Diamond's 19 special marts sit after HeartGold's 30 (src/scrcmd_mart.c)
+                    # MartBuy: HeartGold's Poké Mart ignores the id and stocks by badge count, so Diamond's id is harmless
                     lines[pc] = f"\t{macro} {', '.join(args)}".rstrip()
                 pc = nxt
                 if name == "ScrCmd_End" and origin in frame_scripts:

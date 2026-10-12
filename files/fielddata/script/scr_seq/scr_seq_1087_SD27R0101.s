@@ -44,7 +44,7 @@ _005B:
 
 scr_seq_SD27R0101_002:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	ApplyMovement 5, mv_SD27R0101_050C
 	ApplyMovement obj_player, mv_SD27R0101_05C4
 	WaitMovement

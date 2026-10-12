@@ -21,11 +21,11 @@ scr_seq_ST07R0103_000:
 	End
 
 _0034:
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 2]: no HeartGold mapping yet
+	BufferInt 0, 2
 	GoTo _004A
 
 _003F:
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 1]: no HeartGold mapping yet
+	BufferInt 0, 1
 	GoTo _004A
 
 _004A:

@@ -60,31 +60,31 @@ _0070:
 	GoTo _0104
 
 _00C8:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 65]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 65
 	Return
 
 _00D2:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 59]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 59
 	Return
 
 _00DC:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 60]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 60
 	Return
 
 _00E6:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 61]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 61
 	Return
 
 _00F0:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 62]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 62
 	Return
 
 _00FA:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 63]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 63
 	Return
 
 _0104:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 64]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 64
 	Return
 
 _010E:
@@ -143,7 +143,7 @@ _019E:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00021
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 65]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 65
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 65]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -162,7 +162,7 @@ _01F2:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00003
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 59]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 59
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 59]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -181,7 +181,7 @@ _0246:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00011
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 60]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 60
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 60]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -200,7 +200,7 @@ _029A:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00013
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 61]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 61
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 61]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -219,7 +219,7 @@ _02EE:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00015
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 62]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 62
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 62]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -238,7 +238,7 @@ _0342:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00017
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 63]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 63
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 63]: no HeartGold mapping yet
 	GoTo _010E
 
@@ -257,7 +257,7 @@ _0396:
 	// TODO Diamond ScrCmd_Unk0245 0x245 args [0, 32768]: no HeartGold mapping yet
 	NPCMsg msg_1164_SC08R0201_00019
 	SetFlag FLAG_SINNOH_2724
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 64]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 64
 	// TODO Diamond ScrCmd_GetRibbonName 0x232 args [3, 64]: no HeartGold mapping yet
 	GoTo _010E
 

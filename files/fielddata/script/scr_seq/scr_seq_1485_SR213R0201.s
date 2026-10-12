@@ -136,7 +136,7 @@ _01BF:
 	GoTo _0392
 
 _01D2:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _03F6
 	CompareVarToValue 0x800C, 200
@@ -148,7 +148,7 @@ _01D2:
 	GoTo _03D2
 
 _0212:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _0423
 	CompareVarToValue 0x800C, 200
@@ -160,7 +160,7 @@ _0212:
 	GoTo _03FF
 
 _0252:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _0450
 	CompareVarToValue 0x800C, 200
@@ -172,7 +172,7 @@ _0252:
 	GoTo _042C
 
 _0292:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _047D
 	CompareVarToValue 0x800C, 200
@@ -184,7 +184,7 @@ _0292:
 	GoTo _0459
 
 _02D2:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _04AA
 	CompareVarToValue 0x800C, 200
@@ -196,7 +196,7 @@ _02D2:
 	GoTo _0486
 
 _0312:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _04D7
 	CompareVarToValue 0x800C, 200
@@ -208,7 +208,7 @@ _0312:
 	GoTo _04B3
 
 _0352:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _0504
 	CompareVarToValue 0x800C, 200
@@ -220,7 +220,7 @@ _0352:
 	GoTo _04E0
 
 _0392:
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _0531
 	CompareVarToValue 0x800C, 200
@@ -392,23 +392,23 @@ _0531:
 	GoTo _0555
 
 _053A:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 69]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 69
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _05FE
 	GoTo _05A1
 
 _0555:
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 69]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 69
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _062F
 	GoTo _05C0
 
 _0570:
 	NPCMsg msg_1089_SR213R0201_00050
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32770]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8002
 	CompareVarToValue 0x800C, 255
 	GoToIf 0, _05DF
-	// TODO Diamond ScrCmd_PartyMonHasRibbon 0x230 args [32780, 32770, 69]: no HeartGold mapping yet
+	MonHasRibbon 0x800C, 0x8002, 69
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0660
 	GoTo _05DF
@@ -455,7 +455,7 @@ _05FE:
 	PlaySE 1155
 	NPCMsg msg_1089_SR213R0201_00008
 	WaitSE 1155
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 69]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 69
 	NPCMsg msg_1089_SR213R0201_00009
 	WaitButton
 	CloseMsg
@@ -471,7 +471,7 @@ _062F:
 	PlaySE 1155
 	NPCMsg msg_1089_SR213R0201_00008
 	WaitSE 1155
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 69]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 69
 	NPCMsg msg_1089_SR213R0201_00009
 	WaitButton
 	CloseMsg
@@ -487,7 +487,7 @@ _0660:
 	PlaySE 1155
 	NPCMsg msg_1089_SR213R0201_00008
 	WaitSE 1155
-	// TODO Diamond ScrCmd_GivePartyMonRibbon 0x231 args [32770, 69]: no HeartGold mapping yet
+	GiveRibbon 0x8002, 69
 	NPCMsg msg_1089_SR213R0201_00009
 	WaitButton
 	CloseMsg

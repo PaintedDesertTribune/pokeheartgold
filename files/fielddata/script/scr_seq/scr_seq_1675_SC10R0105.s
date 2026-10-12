@@ -15,7 +15,7 @@ scr_seq_SC10R0105_000:
 	FacePlayer
 	CheckFlag FLAG_SINNOH_177
 	GoToIf 1, _0066
-	// TODO Diamond ScrCmd_Unk00EA 0x0ea args [262]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00EA dropped: plays a map's music by Diamond map id
 	NPCMsg msg_1184_SC10R0105_00000
 	CloseMsg
 	TrainerBattle TRAINER_SINNOH_ELITE_FOUR_BERTHA_BERTHA, 0, 0, 0

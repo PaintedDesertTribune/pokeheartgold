@@ -11,7 +11,7 @@
 
 scr_seq_SD15_000:
 	SetFlag FLAG_SINNOH_2512
-	// TODO Diamond ScrCmd_Unk0270 0x270 args [0, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0270 dropped: Diamond save-flag toggle of unknown purpose
 	End
 
 scr_seq_SD15_001:

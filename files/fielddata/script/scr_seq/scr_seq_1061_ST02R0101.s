@@ -212,7 +212,7 @@ _04C9:
 
 _04D4:
 	// TODO Diamond ScrCmd_CountSinnohDexSeen 0x11e args [32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [0, 32780]: no HeartGold mapping yet
+	BufferInt 0, 0x800C
 	NPCMsg msg_0877_ST02R0101_00029
 	BufferPlayersName 0
 	NPCMsg msg_0877_ST02R0101_00031
@@ -286,7 +286,7 @@ _04F0:
 	End
 
 _0610:
-	// TODO Diamond ScrCmd_Unk0270 0x270 args [2, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0270 dropped: Diamond save-flag toggle of unknown purpose
 	Return
 
 _0617:

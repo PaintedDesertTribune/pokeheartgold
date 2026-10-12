@@ -37,7 +37,7 @@ _0060:
 	// TODO Diamond ScrCmd_Unk0218 0x218 args [32780]: no HeartGold mapping yet
 	CopyVar VAR_SINNOH_40E5, 0x800C
 	// TODO Diamond ScrCmd_Unk0219 0x219 args [1]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 16613, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_1019_ST04R0301_00002
 	WaitButton
 	CloseMsg
@@ -55,7 +55,7 @@ _0081:
 	GoTo _00AE
 
 _00AE:
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 16613, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	NPCMsg msg_1019_ST04R0301_00004
 	Random 0x800C, 12
 	CompareVarToValue 0x800C, 0
@@ -179,9 +179,9 @@ _024B:
 	End
 
 _0262:
-	// TODO Diamond ScrCmd_Unk00DA 0x0da args [0, 16613, 0, 0]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk00DA dropped: buffers a message from Diamond's common text bank
 	// TODO Diamond ScrCmd_Unk021A 0x21a args [32780]: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk00D5 0x0d5 args [1, 32780]: no HeartGold mapping yet
+	BufferInt 1, 0x800C
 	NPCMsg msg_1019_ST04R0301_00008
 	WaitButton
 	CloseMsg

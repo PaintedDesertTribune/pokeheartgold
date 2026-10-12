@@ -3,6 +3,7 @@ MAP_ACUITY_CAVERN: warp 0 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; 
 MAP_ACUITY_LAKEFRONT: item ball std 7176 contents unknown, variadic placeholder
 MAP_ACUITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
 MAP_ACUITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_ACUITY_GALACTIC not imported; points at itself
+MAP_AMITY_SQUARE: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_AMITY_SQUARE: item ball std 7064 contents unknown, variadic placeholder
 MAP_AMITY_SQUARE: item ball std 7065 contents unknown, variadic placeholder
 MAP_AMITY_SQUARE: item ball std 7066 contents unknown, variadic placeholder
@@ -10,7 +11,6 @@ MAP_AMITY_SQUARE: item ball std 7067 contents unknown, variadic placeholder
 MAP_AMITY_SQUARE: unmapped command ScrCmd_CheckAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_ClearAmitySquareSteps
 MAP_AMITY_SQUARE: unmapped command ScrCmd_GetAmitySquareAccessory
-MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk0162
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk01D3
 MAP_AMITY_SQUARE: unmapped command ScrCmd_Unk027C
 MAP_AMITY_SQUARE: unmapped command cmd_800c
@@ -33,8 +33,6 @@ MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_CANALAVE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_CANALAVE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_CANALAVE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_CANALAVE_POKEMART: SpecialMartBuy 16: Diamond mart id used against HeartGold's mart tables
 MAP_CANALAVE_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_CANALAVE_POKEMART: std script 2019
 MAP_CANALAVE_SOUTHEAST_HOUSE: std script 2017
@@ -44,7 +42,6 @@ MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_GetGameVersion
 MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_ShowPokemonPic
 MAP_CELESTIC_CYNTHIA_GRANDPARENTS_HOUSE: unmapped command ScrCmd_Unk0209
 MAP_CELESTIC_POKECENTER_1F: std script 2017
-MAP_CELESTIC_POKECENTER_1F: unmapped command ScrCmd_GetPartyMonFriendship
 MAP_CELESTIC_POKECENTER_1F: warp 2 to Diamond map MAP_CELESTIC_POKECENTER_B1F not imported; points at itself
 MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9000; dropped
 MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9012; dropped
@@ -52,8 +49,6 @@ MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_CELESTIC_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_CELESTIC_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_CELESTIC_SHOP: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_CELESTIC_SHOP: SpecialMartBuy 14: Diamond mart id used against HeartGold's mart tables
 MAP_CELESTIC_SHOP: std script 2019
 MAP_CELESTIC_SOUTHWEST_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_CELESTIC_SOUTHWEST_HOUSE: std script 2009
@@ -61,8 +56,8 @@ MAP_ETERNA: item ball std 7039 contents unknown, variadic placeholder
 MAP_ETERNA: item ball std 7041 contents unknown, variadic placeholder
 MAP_ETERNA: unmapped command ScrCmd_GetGameVersion
 MAP_ETERNA_BIKE_SHOP: unmapped command ScrCmd_SetSpawn
-MAP_ETERNA_CONDOMINIUMS_1F: unmapped command ScrCmd_NPCTradeInit
-MAP_ETERNA_CONDOMINIUMS_1F: unmapped command ScrCmd_OpenTradeScreen
+MAP_ETERNA_CONDOMINIUMS_1F: dropped ScrCmd_NPCTradeInit: Diamond in-game trades need their trade table imported
+MAP_ETERNA_CONDOMINIUMS_1F: dropped ScrCmd_OpenTradeScreen: Diamond in-game trades need their trade table imported
 MAP_ETERNA_CONDOMINIUMS_1F: unmapped command cmd_800c
 MAP_ETERNA_CONDOMINIUMS_2F: std script 2016
 MAP_ETERNA_CONDOMINIUMS_2F: std script 2017
@@ -76,6 +71,8 @@ MAP_ETERNA_FOREST_EXTERIOR: dropped ScrCmd_GetFashionName: Contest dress-up drop
 MAP_ETERNA_FOREST_EXTERIOR: item ball std 7043 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_EXTERIOR: item ball std 7044 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_EXTERIOR: std script 2015
+MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_ETERNA_FOREST_INTERIOR: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7029 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7030 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7031 contents unknown, variadic placeholder
@@ -84,16 +81,12 @@ MAP_ETERNA_FOREST_INTERIOR: item ball std 7033 contents unknown, variadic placeh
 MAP_ETERNA_FOREST_INTERIOR: item ball std 7034 contents unknown, variadic placeholder
 MAP_ETERNA_FOREST_INTERIOR: object 0 uses Diamond std script 9702; no script for now
 MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_KeepEvent
-MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_Unk0161
-MAP_ETERNA_FOREST_INTERIOR: unmapped command ScrCmd_Unk0162
 MAP_ETERNA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_ETERNA_GYM: std script 2017
-MAP_ETERNA_HERB_SHOP: SpecialMartBuy 4: Diamond mart id used against HeartGold's mart tables
 MAP_ETERNA_OAK_HOUSE: std script 2017
 MAP_ETERNA_OAK_HOUSE: std script 9952
 MAP_ETERNA_POKECENTER_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ETERNA_POKECENTER_1F: std script 2009
-MAP_ETERNA_POKECENTER_1F: unmapped command ScrCmd_GetPartyMonFriendship
 MAP_ETERNA_POKECENTER_1F: warp 2 to Diamond map MAP_ETERNA_POKECENTER_B1F not imported; points at itself
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9000; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9012; dropped
@@ -101,14 +94,11 @@ MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_ETERNA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_ETERNA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_ETERNA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_ETERNA_POKEMART: SpecialMartBuy 3: Diamond mart id used against HeartGold's mart tables
 MAP_ETERNA_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_ETERNA_POKEMART: std script 2019
 MAP_ETERNA_ROUTE_206_GATEHOUSE: std script 2016
 MAP_ETERNA_ROUTE_206_GATEHOUSE: std script 2017
 MAP_ETERNA_ROUTE_206_GATEHOUSE: unmapped command ScrCmd_CountNationalDexSeen
-MAP_ETERNA_ROUTE_206_GATEHOUSE: unmapped command ScrCmd_Unk00D5
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: std script 2012
 MAP_ETERNA_UNDERGROUND_MAN_HOUSE: std script 2013
@@ -132,7 +122,6 @@ MAP_FIGHT_AREA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_FIGHT_AREA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_FIGHT_AREA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_FIGHT_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_FIGHT_AREA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_FIGHT_AREA_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_FIGHT_AREA_POKEMART: std script 2017
 MAP_FIGHT_AREA_POKEMART: std script 2019
@@ -153,8 +142,6 @@ MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_FLOAROMA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_FLOAROMA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_FLOAROMA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_FLOAROMA_POKEMART: SpecialMartBuy 2: Diamond mart id used against HeartGold's mart tables
 MAP_FLOAROMA_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_FLOAROMA_POKEMART: std script 2019
 MAP_FUEGO_IRONWORKS_EXTERIOR: berry plot object 0 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -167,7 +154,7 @@ MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7134 contents unknown, variadic plac
 MAP_FUEGO_IRONWORKS_INTERIOR: item ball std 7135 contents unknown, variadic placeholder
 MAP_FUEGO_IRONWORKS_INTERIOR: std script 2016
 MAP_FUEGO_IRONWORKS_INTERIOR: std script 2017
-MAP_FULLMOON_ISLAND_EXTERIOR: unmapped command ScrCmd_Unk0270
+MAP_FULLMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_FULLMOON_ISLAND_INTERIOR: item ball std 7252 contents unknown, variadic placeholder
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_BlinkEvent
 MAP_FULLMOON_ISLAND_INTERIOR: unmapped command ScrCmd_CreateRoamer
@@ -220,37 +207,34 @@ MAP_HEARTHOME_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_HEARTHOME_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_HEARTHOME_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_HEARTHOME_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_HEARTHOME_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_HEARTHOME_POKEMART: SpecialMartBuy 5: Diamond mart id used against HeartGold's mart tables
 MAP_HEARTHOME_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_HEARTHOME_POKEMART: std script 2019
 MAP_HEARTHOME_POKEMON_FAN_CLUB: object 5 uses Diamond std script 10153; no script for now
 MAP_HEARTHOME_POKEMON_FAN_CLUB: std script 2017
-MAP_HEARTHOME_POKEMON_FAN_CLUB: unmapped command ScrCmd_GetPartyMonFriendship
 MAP_HEARTHOME_POKEMON_FAN_CLUB: unmapped command ScrCmd_Unk0238
 MAP_HEARTHOME_SOUTHEAST_HOUSE_2F: std script 2016
 MAP_HEARTHOME_SOUTHEAST_HOUSE_2F: std script 2017
 MAP_HEARTHOME_SOUTHEAST_HOUSE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_IRON_ISLAND_B1F_ROOM_1: item ball std 7146 contents unknown, variadic placeholder
+MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_IRON_ISLAND_B1F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B1F_ROOM_2: item ball std 7147 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B1F_ROOM_2: item ball std 7148 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B1F_ROOM_2: unmapped command ScrCmd_Unk025B
-MAP_IRON_ISLAND_B1F_ROOM_2: unmapped command ScrCmd_Unk025C
 MAP_IRON_ISLAND_B2F_ROOM_1: item ball std 7149 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_1: item ball std 7150 contents unknown, variadic placeholder
+MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
+MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_IRON_ISLAND_B2F_ROOM_2: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7151 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7152 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7153 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: item ball std 7154 contents unknown, variadic placeholder
 MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_GiveEgg
-MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk0161
-MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk0162
-MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk025B
-MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk025C
 MAP_IRON_ISLAND_B2F_ROOM_2: unmapped command ScrCmd_Unk02B6
+MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_IRON_ISLAND_B3F: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
 MAP_IRON_ISLAND_B3F: item ball std 7155 contents unknown, variadic placeholder
-MAP_IRON_ISLAND_B3F: unmapped command ScrCmd_Unk025B
-MAP_IRON_ISLAND_B3F: unmapped command ScrCmd_Unk025C
 MAP_IRON_ISLAND_HOUSE: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_IRON_ISLAND_HOUSE: std script 2017
 MAP_JUBLIFE: dropped ScrCmd_GivePoketch: Pokétch dropped (decision 16)
@@ -263,7 +247,6 @@ MAP_JUBLIFE: std script 2041
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0044
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0046
 MAP_JUBLIFE: unmapped command ScrCmd_Unk0047
-MAP_JUBLIFE: unmapped command ScrCmd_Unk00D5
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D2
 MAP_JUBLIFE: unmapped command ScrCmd_Unk01D5
 MAP_JUBLIFE: unmapped command ScrCmd_Unk02A0
@@ -295,8 +278,6 @@ MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_JUBLIFE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_JUBLIFE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_JUBLIFE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_JUBLIFE_POKEMART: SpecialMartBuy 0: Diamond mart id used against HeartGold's mart tables
 MAP_JUBLIFE_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_JUBLIFE_POKEMART: std script 2019
 MAP_JUBLIFE_POKETCH_COMPANY_1F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
@@ -330,12 +311,12 @@ MAP_JUBLIFE_TV_3F_GLOBAL_RANKINGS: unmapped command ScrCmd_Unk01B5
 MAP_JUBLIFE_TV_3F_GROUP_RANKINGS: unmapped command ScrCmd_Unk01B5
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_JUBLIFE_TV_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_JUBLIFE_TV_ELEVATOR: unmapped command ScrCmd_Unk00D5
 MAP_JUBLIFE_TV_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_LAKE_ACUITY: item ball std 7177 contents unknown, variadic placeholder
 MAP_LAKE_VALOR: item ball std 7156 contents unknown, variadic placeholder
 MAP_LAKE_VERITY: dropped ScrCmd_LockCamera: scripted camera moves need a HeartGold port (library cutscene)
 MAP_LAKE_VERITY: dropped ScrCmd_ReleaseCamera: scripted camera moves need a HeartGold port (library cutscene)
+MAP_LAKE_VERITY: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_LAKE_VERITY: item ball std 7000 contents unknown, variadic placeholder
 MAP_LAKE_VERITY: std script 2040
 MAP_LAKE_VERITY: std script 2041
@@ -344,7 +325,6 @@ MAP_LAKE_VERITY: unmapped command ScrCmd_FirstBattle
 MAP_LAKE_VERITY: unmapped command ScrCmd_GetPlayerStarterName
 MAP_LAKE_VERITY: unmapped command ScrCmd_GetRivalStarterName
 MAP_LAKE_VERITY: unmapped command ScrCmd_StarterSelectionScreen
-MAP_LAKE_VERITY: unmapped command ScrCmd_Unk0162
 MAP_MOUNT_CORONET_B1F: item ball std 7163 contents unknown, variadic placeholder
 MAP_MOUNT_CORONET_B1F: item ball std 7164 contents unknown, variadic placeholder
 MAP_MOUNT_CORONET_B1F: item ball std 7165 contents unknown, variadic placeholder
@@ -380,7 +360,7 @@ MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk005D
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk00EE
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk02A0
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_Unk02BC
-MAP_NEWMOON_ISLAND_EXTERIOR: unmapped command ScrCmd_Unk0270
+MAP_NEWMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_NEWMOON_ISLAND_INTERIOR: unmapped command ScrCmd_Unk02BC
 MAP_OLD_CHATEAU_1F: unmapped command ScrCmd_Unk0292
 MAP_OLD_CHATEAU_2F_ROOM_1: item ball std 7036 contents unknown, variadic placeholder
@@ -408,18 +388,18 @@ MAP_OREBURGH_MINE_B2F: item ball std 7012 contents unknown, variadic placeholder
 MAP_OREBURGH_MINE_B2F: item ball std 7013 contents unknown, variadic placeholder
 MAP_OREBURGH_MINE_B2F: unmapped command ScrCmd_Unk029E
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
 MAP_OREBURGH_MINING_MUSEUM: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_CountFossils
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilMinimumAmount
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_GetFossilPokemon
 MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_NamePokemonScreen
-MAP_OREBURGH_MINING_MUSEUM: unmapped command ScrCmd_Unk00DA
 MAP_OREBURGH_NORTHWEST_HOUSE_2F: std script 2016
 MAP_OREBURGH_NORTHWEST_HOUSE_2F: std script 2017
 MAP_OREBURGH_NORTHWEST_HOUSE_3F: std script 2016
 MAP_OREBURGH_NORTHWEST_HOUSE_3F: std script 2017
-MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command ScrCmd_NPCTradeInit
-MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command ScrCmd_OpenTradeScreen
+MAP_OREBURGH_NORTH_HOUSE_1F: dropped ScrCmd_NPCTradeInit: Diamond in-game trades need their trade table imported
+MAP_OREBURGH_NORTH_HOUSE_1F: dropped ScrCmd_OpenTradeScreen: Diamond in-game trades need their trade table imported
 MAP_OREBURGH_NORTH_HOUSE_1F: unmapped command cmd_800c
 MAP_OREBURGH_NORTH_HOUSE_2F: std script 2016
 MAP_OREBURGH_NORTH_HOUSE_2F: std script 2017
@@ -438,8 +418,6 @@ MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_OREBURGH_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_OREBURGH_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_OREBURGH_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_OREBURGH_POKEMART: SpecialMartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_OREBURGH_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_OREBURGH_POKEMART: std script 2019
 MAP_PASTORIA: berry plot object 13 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -465,50 +443,46 @@ MAP_PASTORIA_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_PASTORIA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_PASTORIA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_PASTORIA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_PASTORIA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_PASTORIA_POKEMART: SpecialMartBuy 7: Diamond mart id used against HeartGold's mart tables
 MAP_PASTORIA_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_PASTORIA_POKEMART: std script 2019
 MAP_PASTORIA_SCARF_GUY_HOUSE: unmapped command ScrCmd_GetPartyMonContestCondition
 MAP_PASTORIA_SOUTHWEST_HOUSE: std script 2016
 MAP_PASTORIA_SOUTHWEST_HOUSE: std script 2017
 MAP_PASTORIA_WEST_HOUSE: unmapped command ScrCmd_CheckBurmyForms
-MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: unmapped command ScrCmd_Unk025D
+MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_AARON_BERTHA_LINK: dropped ScrCmd_Unk025D: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_AARON_ROOM: dropped ScrCmd_Unk00EA: plays a map's music by Diamond map id
 MAP_POKEMON_LEAGUE_AARON_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_POKEMON_LEAGUE_AARON_ROOM: object 1 uses Diamond std script 2037; no script for now
 MAP_POKEMON_LEAGUE_AARON_ROOM: object 2 uses Diamond std script 2037; no script for now
-MAP_POKEMON_LEAGUE_AARON_ROOM: unmapped command ScrCmd_Unk00EA
-MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: unmapped command ScrCmd_Unk025D
+MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_BERTHA_FLINT_LINK: dropped ScrCmd_Unk025D: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_BERTHA_ROOM: dropped ScrCmd_Unk00EA: plays a map's music by Diamond map id
 MAP_POKEMON_LEAGUE_BERTHA_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_POKEMON_LEAGUE_BERTHA_ROOM: object 1 uses Diamond std script 2037; no script for now
 MAP_POKEMON_LEAGUE_BERTHA_ROOM: object 2 uses Diamond std script 2037; no script for now
-MAP_POKEMON_LEAGUE_BERTHA_ROOM: unmapped command ScrCmd_Unk00EA
+MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: dropped ScrCmd_Unk00EA: plays a map's music by Diamond map id
 MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: unmapped command ScrCmd_Unk00EA
-MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_ENTRANCE: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_ENTRANCE: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_ENTRANCE: unmapped command ScrCmd_Unk025D
-MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: unmapped command ScrCmd_Unk025D
+MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_CYNTHIA_ROOM: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_ENTRANCE: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_ENTRANCE: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_ENTRANCE: dropped ScrCmd_Unk025D: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_FLINT_LUCIAN_LINK: dropped ScrCmd_Unk025D: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_FLINT_ROOM: dropped ScrCmd_Unk00EA: plays a map's music by Diamond map id
 MAP_POKEMON_LEAGUE_FLINT_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_POKEMON_LEAGUE_FLINT_ROOM: object 1 uses Diamond std script 2037; no script for now
 MAP_POKEMON_LEAGUE_FLINT_ROOM: object 2 uses Diamond std script 2037; no script for now
-MAP_POKEMON_LEAGUE_FLINT_ROOM: unmapped command ScrCmd_Unk00EA
+MAP_POKEMON_LEAGUE_HALL_OF_FAME: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_DebugWatch
 MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_IncrementGameStat
 MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_ShowEndGameScreen
 MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_Unk025A
-MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_Unk0270
 MAP_POKEMON_LEAGUE_HALL_OF_FAME: unmapped command ScrCmd_Unk028F
-MAP_POKEMON_LEAGUE_LOBBY_1F: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_POKEMON_LEAGUE_LOBBY_1F: SpecialMartBuy 18: Diamond mart id used against HeartGold's mart tables
 MAP_POKEMON_LEAGUE_LOBBY_1F: std script 2019
 MAP_POKEMON_LEAGUE_LOBBY_1F: warp 3 to Diamond map MAP_POKEMON_LEAGUE_LOBBY_B1F not imported; points at itself
 MAP_POKEMON_LEAGUE_LOBBY_2F: level script uses Diamond std script 9000; dropped
@@ -517,15 +491,13 @@ MAP_POKEMON_LEAGUE_LOBBY_2F: level script uses Diamond std script 9013; dropped
 MAP_POKEMON_LEAGUE_LOBBY_2F: level script uses Diamond std script 9014; dropped
 MAP_POKEMON_LEAGUE_LOBBY_2F: level script uses Diamond std script 9015; dropped
 MAP_POKEMON_LEAGUE_LOBBY_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: unmapped command ScrCmd_Unk025B
-MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: unmapped command ScrCmd_Unk025C
-MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: unmapped command ScrCmd_Unk025D
+MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: dropped ScrCmd_Unk025B: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: dropped ScrCmd_Unk025C: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_LUCIAN_CYNTHIA_LINK: dropped ScrCmd_Unk025D: Great Marsh observatory binoculars
+MAP_POKEMON_LEAGUE_LUCIAN_ROOM: dropped ScrCmd_Unk00EA: plays a map's music by Diamond map id
 MAP_POKEMON_LEAGUE_LUCIAN_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_POKEMON_LEAGUE_LUCIAN_ROOM: object 1 uses Diamond std script 2037; no script for now
 MAP_POKEMON_LEAGUE_LUCIAN_ROOM: object 2 uses Diamond std script 2037; no script for now
-MAP_POKEMON_LEAGUE_LUCIAN_ROOM: unmapped command ScrCmd_Unk00EA
-MAP_POKEMON_LEAGUE_POKECENTER_1F: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_POKEMON_LEAGUE_POKECENTER_1F: SpecialMartBuy 18: Diamond mart id used against HeartGold's mart tables
 MAP_POKEMON_LEAGUE_POKECENTER_1F: std script 2019
 MAP_POKEMON_LEAGUE_POKECENTER_1F: warp 2 to Diamond map MAP_POKEMON_LEAGUE_POKECENTER_B1F not imported; points at itself
 MAP_POKEMON_LEAGUE_POKECENTER_2F: level script uses Diamond std script 9000; dropped
@@ -551,21 +523,18 @@ MAP_RESORT_AREA_POKECENTER_2F: level script uses Diamond std script 9014; droppe
 MAP_RESORT_AREA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_RESORT_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
 MAP_RESORT_AREA_RIBBON_SYNDICATE_1F: unmapped command ScrCmd_CountTotalPartyRibbons
-MAP_RESORT_AREA_RIBBON_SYNDICATE_1F: unmapped command ScrCmd_GivePartyMonRibbon
-MAP_RESORT_AREA_RIBBON_SYNDICATE_1F: unmapped command ScrCmd_PartyMonHasRibbon
 MAP_RESORT_AREA_RIBBON_SYNDICATE_2F: unmapped command ScrCmd_AddPartyMonFriendship
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: unmapped command ScrCmd_Unk00D5
 MAP_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
+MAP_ROUTE_201: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_ROUTE_201: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_ROUTE_201: object 2 uses Diamond std script 9700; no script for now
 MAP_ROUTE_201: std script 2016
 MAP_ROUTE_201: std script 2017
 MAP_ROUTE_201: unmapped command ScrCmd_GetPlayerStarterName
 MAP_ROUTE_201: unmapped command ScrCmd_GetRivalStarterName
 MAP_ROUTE_201: unmapped command ScrCmd_KeepEvent
-MAP_ROUTE_201: unmapped command ScrCmd_Unk0161
-MAP_ROUTE_201: unmapped command ScrCmd_Unk0162
 MAP_ROUTE_201: unmapped command ScrCmd_Unk0164
 MAP_ROUTE_202: item ball std 7001 contents unknown, variadic placeholder
 MAP_ROUTE_202: std script 2040
@@ -683,8 +652,8 @@ MAP_ROUTE_212_NORTH: berry plot object 17 skipped; Diamond's soft-soil berry sys
 MAP_ROUTE_212_NORTH: item ball std 7068 contents unknown, variadic placeholder
 MAP_ROUTE_212_NORTH: item ball std 7069 contents unknown, variadic placeholder
 MAP_ROUTE_212_NORTH: item ball std 7070 contents unknown, variadic placeholder
+MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: item ball std 7071 contents unknown, variadic placeholder
-MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk00DA
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01EC
 MAP_ROUTE_212_POKEMON_MANSION_EAST_ROOM: unmapped command ScrCmd_Unk01ED
 MAP_ROUTE_212_POKEMON_MANSION_LOBBY: warp 5 to Diamond map MAP_TROPHY_GARDEN not imported; points at itself
@@ -715,10 +684,7 @@ MAP_ROUTE_213: item ball std 7092 contents unknown, variadic placeholder
 MAP_ROUTE_213: item ball std 7093 contents unknown, variadic placeholder
 MAP_ROUTE_213: item ball std 7094 contents unknown, variadic placeholder
 MAP_ROUTE_213: item ball std 7095 contents unknown, variadic placeholder
-MAP_ROUTE_213_FOOTSTEP_HOUSE: unmapped command ScrCmd_GetPartyMonFriendship
 MAP_ROUTE_213_FOOTSTEP_HOUSE: unmapped command ScrCmd_GetPokemonFootprint
-MAP_ROUTE_213_FOOTSTEP_HOUSE: unmapped command ScrCmd_GivePartyMonRibbon
-MAP_ROUTE_213_FOOTSTEP_HOUSE: unmapped command ScrCmd_PartyMonHasRibbon
 MAP_ROUTE_213_GRAND_LAKE_NORTHEAST_ROOM: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_ROUTE_213_GRAND_LAKE_NORTHEAST_ROOM: std script 2009
 MAP_ROUTE_213_GRAND_LAKE_WEST_ROOM: std script 2017
@@ -778,7 +744,6 @@ MAP_ROUTE_221: warp 1 to Diamond map MAP_ROUTE_221_PAL_PARK_ENTRANCE not importe
 MAP_ROUTE_221: warp 2 to Diamond map MAP_ROUTE_221_PAL_PARK_ENTRANCE not imported; points at itself
 MAP_ROUTE_221_LEVEL_ITEM_HOUSE: std script 2016
 MAP_ROUTE_221_LEVEL_ITEM_HOUSE: unmapped command ScrCmd_GetPartyMonLevel
-MAP_ROUTE_221_LEVEL_ITEM_HOUSE: unmapped command ScrCmd_Unk00D5
 MAP_ROUTE_221_LEVEL_ITEM_HOUSE: unmapped command ScrCmd_Unk0277
 MAP_ROUTE_222: berry plot object 21 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_222: berry plot object 22 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -794,6 +759,7 @@ MAP_ROUTE_224: berry plot object 4 skipped; Diamond's soft-soil berry system is 
 MAP_ROUTE_224: berry plot object 5 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: berry plot object 6 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_224: berry plot object 7 skipped; Diamond's soft-soil berry system is not in HeartGold
+MAP_ROUTE_224: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_ROUTE_224: item ball std 7211 contents unknown, variadic placeholder
 MAP_ROUTE_224: item ball std 7212 contents unknown, variadic placeholder
 MAP_ROUTE_224: item ball std 7213 contents unknown, variadic placeholder
@@ -801,7 +767,6 @@ MAP_ROUTE_224: unmapped command ScrCmd_FadeInBgm
 MAP_ROUTE_224: unmapped command ScrCmd_FadeOutBgm
 MAP_ROUTE_224: unmapped command ScrCmd_GetWhiteRockInscription
 MAP_ROUTE_224: unmapped command ScrCmd_SetEventDirection
-MAP_ROUTE_224: unmapped command ScrCmd_Unk0270
 MAP_ROUTE_224: unmapped command ScrCmd_WriteWhiteRockInscription
 MAP_ROUTE_225: berry plot object 10 skipped; Diamond's soft-soil berry system is not in HeartGold
 MAP_ROUTE_225: berry plot object 11 skipped; Diamond's soft-soil berry system is not in HeartGold
@@ -822,8 +787,8 @@ MAP_ROUTE_226: berry plot object 7 skipped; Diamond's soft-soil berry system is 
 MAP_ROUTE_226: item ball std 7223 contents unknown, variadic placeholder
 MAP_ROUTE_226: item ball std 7224 contents unknown, variadic placeholder
 MAP_ROUTE_226: item ball std 7225 contents unknown, variadic placeholder
-MAP_ROUTE_226_HOUSE: unmapped command ScrCmd_NPCTradeInit
-MAP_ROUTE_226_HOUSE: unmapped command ScrCmd_OpenTradeScreen
+MAP_ROUTE_226_HOUSE: dropped ScrCmd_NPCTradeInit: Diamond in-game trades need their trade table imported
+MAP_ROUTE_226_HOUSE: dropped ScrCmd_OpenTradeScreen: Diamond in-game trades need their trade table imported
 MAP_ROUTE_226_HOUSE: unmapped command ScrCmd_UnlockForeignEntries
 MAP_ROUTE_226_HOUSE: unmapped command cmd_800c
 MAP_ROUTE_227: item ball std 7226 contents unknown, variadic placeholder
@@ -867,19 +832,17 @@ MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SANDGEM_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SANDGEM_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SANDGEM_POKEMART: MartBuy 0: Diamond mart id used against HeartGold's mart tables
 MAP_SANDGEM_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SANDGEM_POKEMART: std script 2019
+MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetMapName
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_GetSwarmInfo
-MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_Unk00DA
 MAP_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F: unmapped command ScrCmd_Unk021B
+MAP_SANDGEM_ROWANS_LAB: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_SANDGEM_ROWANS_LAB: object 3 uses Diamond std script 10300; no script for now
 MAP_SANDGEM_ROWANS_LAB: std script 9950
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CheckSinnohDexComplete
 MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_CountSinnohDexSeen
-MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_Unk00D5
-MAP_SANDGEM_ROWANS_LAB: unmapped command ScrCmd_Unk0270
 MAP_SANDGEM_ROWANS_LAB: unmapped command cmd_8008
 MAP_SENDOFF_SPRING: warp 0 to Diamond map MAP_SPRING_PATH not imported; points at itself
 MAP_SENDOFF_SPRING: warp 1 to Diamond map MAP_SPRING_PATH not imported; points at itself
@@ -905,8 +868,8 @@ MAP_SNOWPOINT_GYM: object 9 uses Diamond std script 2037; no script for now
 MAP_SNOWPOINT_GYM: std script 2017
 MAP_SNOWPOINT_NORTHEAST_HOUSE: unmapped command ScrCmd_BufferRandomTrendySaying
 MAP_SNOWPOINT_NORTHEAST_HOUSE: unmapped command ScrCmd_Unk027F
-MAP_SNOWPOINT_NORTHWEST_HOUSE: unmapped command ScrCmd_NPCTradeInit
-MAP_SNOWPOINT_NORTHWEST_HOUSE: unmapped command ScrCmd_OpenTradeScreen
+MAP_SNOWPOINT_NORTHWEST_HOUSE: dropped ScrCmd_NPCTradeInit: Diamond in-game trades need their trade table imported
+MAP_SNOWPOINT_NORTHWEST_HOUSE: dropped ScrCmd_OpenTradeScreen: Diamond in-game trades need their trade table imported
 MAP_SNOWPOINT_NORTHWEST_HOUSE: unmapped command cmd_800c
 MAP_SNOWPOINT_POKECENTER_1F: warp 2 to Diamond map MAP_SNOWPOINT_POKECENTER_B1F not imported; points at itself
 MAP_SNOWPOINT_POKECENTER_2F: level script uses Diamond std script 9000; dropped
@@ -915,8 +878,6 @@ MAP_SNOWPOINT_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_SNOWPOINT_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SNOWPOINT_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SNOWPOINT_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SNOWPOINT_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_SNOWPOINT_POKEMART: SpecialMartBuy 15: Diamond mart id used against HeartGold's mart tables
 MAP_SNOWPOINT_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SNOWPOINT_POKEMART: std script 2019
 MAP_SNOWPOINT_TEMPLE_B1F: item ball std 7178 contents unknown, variadic placeholder
@@ -937,10 +898,9 @@ MAP_SOLACEON_DAYCARE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision
 MAP_SOLACEON_DAYCARE: object 0 uses Diamond std script 9501; no script for now
 MAP_SOLACEON_DAYCARE: std script 2009
 MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
+MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk00DA: buffers a message from Diamond's common text bank
 MAP_SOLACEON_NEWS_PRESS: dropped ScrCmd_Unk029D: Diamond scrolling list window (library bookshelf)
 MAP_SOLACEON_NEWS_PRESS: std script 2016
-MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk00D5
-MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk00DA
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0218
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk0219
 MAP_SOLACEON_NEWS_PRESS: unmapped command ScrCmd_Unk021A
@@ -953,8 +913,6 @@ MAP_SOLACEON_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_SOLACEON_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SOLACEON_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SOLACEON_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SOLACEON_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_SOLACEON_POKEMART: SpecialMartBuy 6: Diamond mart id used against HeartGold's mart tables
 MAP_SOLACEON_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SOLACEON_POKEMART: std script 2019
 MAP_SOLACEON_RUINS_1F_MAIN_ROOM: unmapped command ScrCmd_MessageUnown
@@ -973,6 +931,8 @@ MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7230 contents unknown, variadic pla
 MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7231 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7232 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_1: item ball std 7233 contents unknown, variadic placeholder
+MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_STARK_MOUNTAIN_INTERIOR_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7234 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7235 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7236 contents unknown, variadic placeholder
@@ -982,8 +942,6 @@ MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7239 contents unknown, variadic pla
 MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7240 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: item ball std 7241 contents unknown, variadic placeholder
 MAP_STARK_MOUNTAIN_INTERIOR_2: object 14 uses Diamond std script 9703; no script for now
-MAP_STARK_MOUNTAIN_INTERIOR_2: unmapped command ScrCmd_Unk0161
-MAP_STARK_MOUNTAIN_INTERIOR_2: unmapped command ScrCmd_Unk0162
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_ShakeCamera: screen shake needs a HeartGold port (library cutscene)
 MAP_STARK_MOUNTAIN_INTERIOR_3: dropped ScrCmd_StopFanfare: no stop-fanfare command in HeartGold
 MAP_STARK_MOUNTAIN_INTERIOR_3: unmapped command ScrCmd_Unk00ED
@@ -1001,14 +959,10 @@ MAP_SUNYSHORE_GYM_ROOM_3: std script 2017
 MAP_SUNYSHORE_GYM_ROOM_3: unmapped command ScrCmd_InitSunyshoreGym
 MAP_SUNYSHORE_GYM_ROOM_3: unmapped command ScrCmd_RotateSunyshoreGymGear
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_GetRibbonName
-MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_GivePartyMonRibbon
-MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_PartyMonHasRibbon
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0243
 MAP_SUNYSHORE_JULIA_HOUSE: unmapped command ScrCmd_Unk0245
 MAP_SUNYSHORE_MARKET: std script 2019
 MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_GetTotalPokemonEVs
-MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_GivePartyMonRibbon
-MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_PartyMonHasRibbon
 MAP_SUNYSHORE_MARKET: unmapped command ScrCmd_SealsMart
 MAP_SUNYSHORE_POKECENTER_1F: warp 2 to Diamond map MAP_SUNYSHORE_POKECENTER_B1F not imported; points at itself
 MAP_SUNYSHORE_POKECENTER_2F: level script uses Diamond std script 9000; dropped
@@ -1017,8 +971,6 @@ MAP_SUNYSHORE_POKECENTER_2F: level script uses Diamond std script 9013; dropped
 MAP_SUNYSHORE_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SUNYSHORE_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SUNYSHORE_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SUNYSHORE_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
-MAP_SUNYSHORE_POKEMART: SpecialMartBuy 17: Diamond mart id used against HeartGold's mart tables
 MAP_SUNYSHORE_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SUNYSHORE_POKEMART: std script 2019
 MAP_SUNYSHORE_POKETCH_DEVELOPER_HOUSE: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
@@ -1039,34 +991,32 @@ MAP_SURVIVAL_AREA_POKECENTER_2F: level script uses Diamond std script 9013; drop
 MAP_SURVIVAL_AREA_POKECENTER_2F: level script uses Diamond std script 9014; dropped
 MAP_SURVIVAL_AREA_POKECENTER_2F: level script uses Diamond std script 9015; dropped
 MAP_SURVIVAL_AREA_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself
-MAP_SURVIVAL_AREA_POKEMART: MartBuy 1: Diamond mart id used against HeartGold's mart tables
 MAP_SURVIVAL_AREA_POKEMART: level script uses Diamond std script 10200; dropped
 MAP_SURVIVAL_AREA_POKEMART: std script 2019
 MAP_SURVIVAL_AREA_SOUTH_HOUSE: std script 2017
-MAP_TURNBACK_CAVE_ENTRANCE: unmapped command ScrCmd_Unk0285
+MAP_TURNBACK_CAVE_ENTRANCE: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
 MAP_TURNBACK_CAVE_GIRATINA_ROOM: std script 2016
 MAP_TURNBACK_CAVE_GIRATINA_ROOM: std script 2017
 MAP_TURNBACK_CAVE_GIRATINA_ROOM: unmapped command ScrCmd_Unk00ED
-MAP_TURNBACK_CAVE_PILLAR_ROOM: unmapped command ScrCmd_Unk00D5
-MAP_TURNBACK_CAVE_PILLAR_ROOM: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_10: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_11: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_12: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_13: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_14: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_15: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_16: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_17: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_18: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_1: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_2: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_3: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_4: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_5: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_6: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_7: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_8: unmapped command ScrCmd_Unk0285
-MAP_TURNBACK_CAVE_RANDOM_ROOM_9: unmapped command ScrCmd_Unk0285
+MAP_TURNBACK_CAVE_PILLAR_ROOM: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_10: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_11: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_12: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_13: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_14: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_15: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_16: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_17: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_18: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_1: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_2: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_3: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_4: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_5: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_6: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_7: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_8: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
+MAP_TURNBACK_CAVE_RANDOM_ROOM_9: dropped ScrCmd_Unk0285: Great Marsh area shuttle warp
 MAP_TWINLEAF: dropped ScrCmd_CloseDoorAnimation: scripted door animation
 MAP_TWINLEAF: dropped ScrCmd_FreeDoorAnimation: scripted door animation
 MAP_TWINLEAF: dropped ScrCmd_OpenDoorAnimation: scripted door animation
@@ -1113,21 +1063,15 @@ MAP_VEILSTONE: std script 2041
 MAP_VEILSTONE: unmapped command ScrCmd_CheckPokemonInParty
 MAP_VEILSTONE: unmapped command ScrCmd_SetDeoxysForm
 MAP_VEILSTONE: unmapped command ScrCmd_Unk02A0
-MAP_VEILSTONE_DEPARTMENT_STORE_1F: SpecialMartBuy 8: Diamond mart id used against HeartGold's mart tables
-MAP_VEILSTONE_DEPARTMENT_STORE_1F: SpecialMartBuy 9: Diamond mart id used against HeartGold's mart tables
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: dropped ScrCmd_GetFashionNameWithArticle: Contest dress-up dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: std script 2015
 MAP_VEILSTONE_DEPARTMENT_STORE_1F: std script 2019
-MAP_VEILSTONE_DEPARTMENT_STORE_2F: SpecialMartBuy 10: Diamond mart id used against HeartGold's mart tables
-MAP_VEILSTONE_DEPARTMENT_STORE_2F: SpecialMartBuy 11: Diamond mart id used against HeartGold's mart tables
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_CheckPoketchApp: Pokétch dropped (decision 16)
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: std script 2009
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: std script 2019
 MAP_VEILSTONE_DEPARTMENT_STORE_2F: unmapped command ScrCmd_Unk027E
-MAP_VEILSTONE_DEPARTMENT_STORE_3F: SpecialMartBuy 12: Diamond mart id used against HeartGold's mart tables
-MAP_VEILSTONE_DEPARTMENT_STORE_3F: SpecialMartBuy 13: Diamond mart id used against HeartGold's mart tables
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: std script 2019
 MAP_VEILSTONE_DEPARTMENT_STORE_3F: unmapped command ScrCmd_DummyRandom
@@ -1140,7 +1084,6 @@ MAP_VEILSTONE_DEPARTMENT_STORE_5F: dropped ScrCmd_Unk0043: Diamond scrolling lis
 MAP_VEILSTONE_DEPARTMENT_STORE_5F: std script 2017
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_ShowCurrentFloorNumber: elevator floor box (cosmetic)
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
-MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: unmapped command ScrCmd_Unk00D5
 MAP_VEILSTONE_DEPARTMENT_STORE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: item ball std 7182 contents unknown, variadic placeholder
 MAP_VEILSTONE_GALACTIC_HEADQUARTERS_1F: warp 7 to Diamond map MAP_VEILSTONE_GALACTIC_HEADQUARTERS_B1F not imported; points at itself
@@ -1166,7 +1109,6 @@ MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_CanGiveCoins
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_GiveCoins
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Nop
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_SlotMachine
-MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Unk00D5
 MAP_VEILSTONE_GAME_CORNER: unmapped command ScrCmd_Unk0275
 MAP_VEILSTONE_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_VEILSTONE_GYM: std script 2017
@@ -1191,11 +1133,11 @@ MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0047
 MAP_VEILSTONE_PRIZE_EXCHANGE: unmapped command ScrCmd_Unk0280
 MAP_VEILSTONE_SOUTH_HOUSE: dropped ScrCmd_Unk0043: Diamond scrolling list window (library bookshelf)
 MAP_VEILSTONE_SOUTH_HOUSE: std script 2016
+MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_VERITY_LAKEFRONT: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_VERITY_LAKEFRONT: object 0 uses Diamond std script 9701; no script for now
 MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_EventStopFollowing
 MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_KeepEvent
-MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_Unk0161
-MAP_VERITY_LAKEFRONT: unmapped command ScrCmd_Unk0162
 MAP_VERITY_LAKEFRONT: warp 2 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 MAP_VERITY_LAKEFRONT: warp 3 to Diamond map MAP_LAKE_VERITY_GALACTIC not imported; points at itself
 MAP_VICTORY_ROAD_1F: item ball std 7198 contents unknown, variadic placeholder
@@ -1203,24 +1145,24 @@ MAP_VICTORY_ROAD_1F: item ball std 7199 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F: item ball std 7200 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F: item ball std 7201 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F: item ball std 7202 contents unknown, variadic placeholder
+MAP_VICTORY_ROAD_1F_BACK_2: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_VICTORY_ROAD_1F_BACK_2: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7208 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7209 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7210 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: item ball std 7214 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_1F_BACK_2: object 28 uses Diamond std script 9705; no script for now
-MAP_VICTORY_ROAD_1F_BACK_2: unmapped command ScrCmd_Unk0161
-MAP_VICTORY_ROAD_1F_BACK_2: unmapped command ScrCmd_Unk0162
 MAP_VICTORY_ROAD_2F: item ball std 7203 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_2F: item ball std 7204 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_2F: item ball std 7205 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_2F: item ball std 7206 contents unknown, variadic placeholder
 MAP_VICTORY_ROAD_B1F: item ball std 7207 contents unknown, variadic placeholder
+MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0161: Diamond partner-trainer set; HeartGold's following system differs
+MAP_WAYWARD_CAVE_1F: dropped ScrCmd_Unk0162: Diamond partner-trainer clear; HeartGold's following system differs
 MAP_WAYWARD_CAVE_1F: item ball std 7049 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7050 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7051 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_1F: item ball std 7052 contents unknown, variadic placeholder
-MAP_WAYWARD_CAVE_1F: unmapped command ScrCmd_Unk0161
-MAP_WAYWARD_CAVE_1F: unmapped command ScrCmd_Unk0162
 MAP_WAYWARD_CAVE_B1F: item ball std 7053 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_B1F: item ball std 7054 contents unknown, variadic placeholder
 MAP_WAYWARD_CAVE_B1F: item ball std 7055 contents unknown, variadic placeholder

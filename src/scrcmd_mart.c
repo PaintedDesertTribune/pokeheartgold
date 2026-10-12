@@ -130,6 +130,32 @@ const u16 _020FBB16[] = { ITEM_POKE_DOLL, ITEM_FRESH_WATER, ITEM_SODA_POP, ITEM_
 const u16 _020FBAB8[] = { ITEM_TINYMUSHROOM, ITEM_POKE_BALL, ITEM_POTION, 0xFFFF };
 const u16 _020FBBD8[] = { ITEM_GREAT_BALL, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_ANTIDOTE, ITEM_PARLYZ_HEAL, ITEM_SUPER_REPEL, ITEM_REVIVE, ITEM_AIR_MAIL, 0xFFFF };
 
+// SINNOH_PORT_BEGIN
+// Diamond's 19 special marts (arm9/src/scrcmd_mart.c sSpecialMartPointers), appended after HeartGold's 30 so
+// SpecialMartBuy 30+n sells what Diamond's special mart n sold. Written by tools/sinnoh_port/build_sinnoh.py's author by hand;
+// regenerate this block from Diamond's source if that table changes.
+static const u16 sSinnohSpecialMart_00[] = { ITEM_AIR_MAIL, ITEM_HEAL_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_01[] = { ITEM_TUNNEL_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_02[] = { ITEM_BLOOM_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_03[] = { ITEM_AIR_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_NEST_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_04[] = { ITEM_HEAL_POWDER, ITEM_ENERGYPOWDER, ITEM_ENERGY_ROOT, ITEM_REVIVAL_HERB, 0xFFFF };
+static const u16 sSinnohSpecialMart_05[] = { ITEM_HEART_MAIL, ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_NEST_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_06[] = { ITEM_AIR_MAIL, ITEM_NET_BALL, ITEM_NEST_BALL, ITEM_DUSK_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_07[] = { ITEM_AIR_MAIL, ITEM_NEST_BALL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_08[] = { ITEM_POTION, ITEM_SUPER_POTION, ITEM_HYPER_POTION, ITEM_MAX_POTION, ITEM_REVIVE, ITEM_ANTIDOTE, ITEM_PARLYZ_HEAL, ITEM_BURN_HEAL, ITEM_ICE_HEAL, ITEM_AWAKENING, ITEM_FULL_HEAL, 0xFFFF };
+static const u16 sSinnohSpecialMart_09[] = { ITEM_POKE_BALL, ITEM_GREAT_BALL, ITEM_ULTRA_BALL, ITEM_ESCAPE_ROPE, ITEM_POKE_DOLL, ITEM_REPEL, ITEM_SUPER_REPEL, ITEM_MAX_REPEL, ITEM_GRASS_MAIL, ITEM_FLAME_MAIL, ITEM_BUBBLE_MAIL, ITEM_SPACE_MAIL, 0xFFFF };
+static const u16 sSinnohSpecialMart_10[] = { ITEM_X_SPEED, ITEM_X_ATTACK, ITEM_X_DEFENSE, ITEM_GUARD_SPEC_, ITEM_DIRE_HIT, ITEM_X_ACCURACY, ITEM_X_SPECIAL, ITEM_X_SP__DEF, 0xFFFF };
+static const u16 sSinnohSpecialMart_11[] = { ITEM_PROTEIN, ITEM_IRON, ITEM_CALCIUM, ITEM_ZINC, ITEM_CARBOS, ITEM_HP_UP, 0xFFFF };
+static const u16 sSinnohSpecialMart_12[] = { ITEM_TM83, ITEM_TM17, ITEM_TM54, ITEM_TM20, ITEM_TM33, ITEM_TM16, ITEM_TM70, 0xFFFF };
+static const u16 sSinnohSpecialMart_13[] = { ITEM_TM38, ITEM_TM25, ITEM_TM14, ITEM_TM22, ITEM_TM52, ITEM_TM15, 0xFFFF };
+static const u16 sSinnohSpecialMart_14[] = { ITEM_AIR_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, ITEM_TIMER_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_15[] = { ITEM_SNOW_MAIL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, ITEM_TIMER_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_16[] = { ITEM_AIR_MAIL, ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_REPEAT_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_17[] = { ITEM_STEEL_MAIL, ITEM_LUXURY_BALL, 0xFFFF };
+static const u16 sSinnohSpecialMart_18[] = { ITEM_HEAL_BALL, ITEM_NET_BALL, ITEM_NEST_BALL, ITEM_DUSK_BALL, ITEM_QUICK_BALL, ITEM_TIMER_BALL, ITEM_REPEAT_BALL, ITEM_LUXURY_BALL, 0xFFFF };
+const u16 *sSinnohSpecialMarts[] = { sSinnohSpecialMart_00, sSinnohSpecialMart_01, sSinnohSpecialMart_02, sSinnohSpecialMart_03, sSinnohSpecialMart_04, sSinnohSpecialMart_05, sSinnohSpecialMart_06, sSinnohSpecialMart_07, sSinnohSpecialMart_08, sSinnohSpecialMart_09, sSinnohSpecialMart_10, sSinnohSpecialMart_11, sSinnohSpecialMart_12, sSinnohSpecialMart_13, sSinnohSpecialMart_14, sSinnohSpecialMart_15, sSinnohSpecialMart_16, sSinnohSpecialMart_17, sSinnohSpecialMart_18 };
+// SINNOH_PORT_END
+
 const u16 *_0210FA3C[] = {
     _020FBA54,
     _020FBA78,
@@ -161,6 +187,26 @@ const u16 *_0210FA3C[] = {
     _020FBB16,
     _020FBAB8,
     _020FBBD8,
+    // SINNOH_PORT: ids 30-48 are Diamond's special marts (see sSinnohSpecialMarts)
+    sSinnohSpecialMart_00,
+    sSinnohSpecialMart_01,
+    sSinnohSpecialMart_02,
+    sSinnohSpecialMart_03,
+    sSinnohSpecialMart_04,
+    sSinnohSpecialMart_05,
+    sSinnohSpecialMart_06,
+    sSinnohSpecialMart_07,
+    sSinnohSpecialMart_08,
+    sSinnohSpecialMart_09,
+    sSinnohSpecialMart_10,
+    sSinnohSpecialMart_11,
+    sSinnohSpecialMart_12,
+    sSinnohSpecialMart_13,
+    sSinnohSpecialMart_14,
+    sSinnohSpecialMart_15,
+    sSinnohSpecialMart_16,
+    sSinnohSpecialMart_17,
+    sSinnohSpecialMart_18,
 };
 
 BOOL ScrCmd_SpecialMartBuy(ScriptContext *ctx) {

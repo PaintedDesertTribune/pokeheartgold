@@ -57,7 +57,7 @@ scr_seq_SC05R0201_001:
 	GetPartyLead 0x8000
 	BufferPartyMonNick 0, 0x8000
 	NPCMsg msg_0996_SC05R0201_00003
-	// TODO Diamond ScrCmd_GetPartyMonFriendship 0x1b9 args [32780, 32768]: no HeartGold mapping yet
+	MonGetFriendship 0x800C, 0x8000
 	CompareVarToValue 0x800C, 255
 	GoToIf 4, _0108
 	CompareVarToValue 0x800C, 200

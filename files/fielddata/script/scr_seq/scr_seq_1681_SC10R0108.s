@@ -12,8 +12,8 @@
 
 scr_seq_SC10R0108_000:
 	SetVar 0x4000, 0
-	// TODO Diamond ScrCmd_Unk025B 0x25b args []: no HeartGold mapping yet
-	// TODO Diamond ScrCmd_Unk025D 0x25d args [16385]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025B dropped: Great Marsh observatory binoculars
+	// Diamond ScrCmd_Unk025D dropped: Great Marsh observatory binoculars
 	CompareVarToValue 0x4001, 0
 	GoToIf 1, scr_seq_SC10R0108_001
 	End
@@ -23,7 +23,7 @@ scr_seq_SC10R0108_001:
 	End
 
 scr_seq_SC10R0108_002:
-	// TODO Diamond ScrCmd_Unk025C 0x25c args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025C dropped: Great Marsh observatory binoculars
 	SetVar 0x4000, 1
 	End
 

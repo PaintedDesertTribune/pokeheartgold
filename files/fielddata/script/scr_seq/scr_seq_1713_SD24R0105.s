@@ -17,7 +17,7 @@
 	ScrDefEnd
 
 scr_seq_SD24R0105_000:
-	// TODO Diamond ScrCmd_Unk025B 0x25b args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025B dropped: Great Marsh observatory binoculars
 	CheckFlag FLAG_SINNOH_229
 	GoToIf 0, _0035
 	End
@@ -35,7 +35,7 @@ _004A:
 	End
 
 scr_seq_SD24R0105_001:
-	// TODO Diamond ScrCmd_Unk025C 0x25c args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk025C dropped: Great Marsh observatory binoculars
 	End
 
 scr_seq_SD24R0105_002:
@@ -61,7 +61,7 @@ scr_seq_SD24R0105_002:
 	WaitButton
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 609
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 4, 48
 	ReleaseAll
 	End
@@ -92,7 +92,7 @@ scr_seq_SD24R0105_003:
 	NPCMsg msg_1203_SD24R0105_00004
 	CloseMsg
 	SetVar VAR_SINNOH_4092, 0
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 4, 16
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8005, 2
@@ -117,7 +117,7 @@ scr_seq_SD24R0105_004:
 
 scr_seq_SD24R0105_008:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 4, 16
 	GetPlayerCoords 0x8004, 0x8005
 	CompareVarToValue 0x8005, 40
@@ -139,9 +139,9 @@ scr_seq_SD24R0105_008:
 	BufferPlayersName 0
 	NPCMsg msg_1203_SD24R0105_00008
 	CloseMsg
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	TrainerBattle TRAINER_SINNOH_GALACTIC_GRUNT_33, TRAINER_SINNOH_GALACTIC_GRUNT_34, 0, 0
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	CheckBattleWon 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0377

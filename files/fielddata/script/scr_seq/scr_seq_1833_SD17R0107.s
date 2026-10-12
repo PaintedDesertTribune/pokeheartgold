@@ -10,7 +10,7 @@
 
 scr_seq_SD17R0107_000:
 	Call _0014
-	// TODO Diamond ScrCmd_Unk0285 0x285 args [16651, 16652]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0285 dropped: Great Marsh area shuttle warp
 	End
 
 _0014:

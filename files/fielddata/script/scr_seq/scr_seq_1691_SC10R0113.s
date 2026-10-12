@@ -76,7 +76,7 @@ _0106:
 	Return
 
 _010E:
-	// TODO Diamond ScrCmd_Unk0270 0x270 args [2, 1]: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0270 dropped: Diamond save-flag toggle of unknown purpose
 	Return
 
 _0115:

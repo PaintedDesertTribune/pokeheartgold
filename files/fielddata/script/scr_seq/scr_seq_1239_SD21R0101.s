@@ -45,7 +45,7 @@ scr_seq_SD21R0101_001:
 	WaitButton
 	CloseMsg
 	SetVar VAR_SINNOH_403F, 612
-	// TODO Diamond ScrCmd_Unk0161 0x161 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0161 dropped: Diamond partner-trainer set; HeartGold's following system differs
 	SetObjectMovementType 4, 48
 	ReleaseAll
 	End
@@ -91,7 +91,7 @@ scr_seq_SD21R0101_002:
 
 scr_seq_SD21R0101_003:
 	LockAll
-	// TODO Diamond ScrCmd_Unk0162 0x162 args []: no HeartGold mapping yet
+	// Diamond ScrCmd_Unk0162 dropped: Diamond partner-trainer clear; HeartGold's following system differs
 	SetObjectMovementType 4, 16
 	GetPlayerFacing 0x800C
 	CompareVarToValue 0x800C, 2
