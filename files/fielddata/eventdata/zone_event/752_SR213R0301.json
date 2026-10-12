@@ -1,0 +1,57 @@
+{
+  "header": "fielddata/script/scr_seq/event_SR213R0301.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SR213R0301_0",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR213R0301_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 3,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SR213R0301_1",
+      "spriteId": "SPRITE_POLICEMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR213R0301_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 11,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 8,
+      "z": 2,
+      "header": "MAP_SINNOH_ROUTE_213",
+      "anchor": 4,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "z": 11,
+      "header": "MAP_SINNOH_ROUTE_213",
+      "anchor": 3,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

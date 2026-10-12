@@ -1,0 +1,92 @@
+{
+  "key": 8438,
+  "messages": [
+    {
+      "id": "msg_1236_SD16R0102_00000",
+      "en_US": [
+        "Buck: Hey!\n",
+        "{STRVAR_1 3, 0, 0}, right?\r",
+        "Your zippity little buddy challenged\n",
+        "me to a battle earlier.\r",
+        "Yeah, I owned the little dude.\n",
+        "Made sure he was taught a lesson.\r",
+        "But I don’t know if I could beat\n",
+        "him again the next time.\r",
+        "Seriously, you’re bound to run into\n",
+        "tough Trainers wherever you go!\r",
+        "Anyway, I found out about this place,\n",
+        "but the Pokémon here are tough...\r",
+        "What do you say we team up and\n",
+        "go together?\r"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} decided to go with\n",
+        "Buck!"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00002",
+      "en_US": [
+        "Buck: You won’t regret teaming up!\n",
+        "I’ll keep your Pokémon healthy!"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00003",
+      "en_US": [
+        "Buck: So, yeah, the Pokémon here\n",
+        "are tough...\r",
+        "What do you say we team up and\n",
+        "go together?\r"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00004",
+      "en_US": [
+        "Buck: Whoa, wait up!\r",
+        "I can’t go on by myself if you leave\n",
+        "me now.\r",
+        "Well, if you gotta go, you gotta go.\n",
+        "I’ll stick around here for you.\r"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00005",
+      "en_US": [
+        "Buck: There we go!\n",
+        "There’s the exit!\r",
+        "My instincts tell me the volcano’s\n",
+        "treasure is just ahead of us.\r",
+        "See you around, {STRVAR_1 3, 0, 0}!\n",
+        "You might be the toughest besides me!\r"
+      ]
+    },
+    {
+      "id": "msg_1236_SD16R0102_00006",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1236_SD16R0102_00007",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1236_SD16R0102_00008",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1236_SD16R0102_00009",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1236_SD16R0102_00010",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1236_SD16R0102_00011",
+      "en_US": ""
+    }
+  ]
+}

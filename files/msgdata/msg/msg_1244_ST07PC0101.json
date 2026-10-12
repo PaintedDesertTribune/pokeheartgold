@@ -1,0 +1,25 @@
+{
+  "key": 8734,
+  "messages": [
+    {
+      "id": "msg_1244_ST07PC0101_00000",
+      "en_US": [
+        "Pokémon appear where there’s still\n",
+        "lots of nature left.\r",
+        "And Trainers gather where Pokémon\n",
+        "appear.\r",
+        "And where Trainers gather, that’s\n",
+        "where Pokémon Centers appear."
+      ]
+    },
+    {
+      "id": "msg_1244_ST07PC0101_00001",
+      "en_US": [
+        "An Idol goes anywhere to sing for\n",
+        "their adoring fans.\r",
+        "A Trainer goes anywhere as long\n",
+        "as it’s with their Pokémon."
+      ]
+    }
+  ]
+}

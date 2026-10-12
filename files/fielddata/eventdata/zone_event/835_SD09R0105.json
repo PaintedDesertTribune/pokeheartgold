@@ -1,0 +1,22 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD09R0105.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 5,
+      "z": 20,
+      "header": "MAP_SINNOH_VICTORY_ROAD_1F",
+      "anchor": 6,
+      "y": 0
+    },
+    {
+      "x": 21,
+      "z": 10,
+      "header": "MAP_SINNOH_VICTORY_ROAD_1F_BACK_2",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

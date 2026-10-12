@@ -1,0 +1,23 @@
+{
+  "key": 8362,
+  "messages": [
+    {
+      "id": "msg_1142_SC09PC0101_00000",
+      "en_US": [
+        "You know how there are many Ice-type\n",
+        "Pokémon around Snowpoint City?\\fI wonder if they also live in the temple?"
+      ]
+    },
+    {
+      "id": "msg_1142_SC09PC0101_00001",
+      "en_US": [
+        "Sound gets swallowed up by the snow.\n",
+        "That’s why it’s very quiet here."
+      ]
+    },
+    {
+      "id": "msg_1142_SC09PC0101_00002",
+      "en_US": "PSYDUCK: Gaga guwawa!"
+    }
+  ]
+}

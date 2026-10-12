@@ -1,0 +1,30 @@
+{
+  "key": 8381,
+  "messages": [
+    {
+      "id": "msg_1218_SC11R0401_00000",
+      "en_US": [
+        "The Battle Zone used to attract only\n",
+        "the hardiest of the Trainers.\r",
+        "They were considered eccentric for\n",
+        "gathering at a place like this.\r",
+        "It’s hard to believe how much it’s\n",
+        "changed since then.\r",
+        "Places like the Fight Area and the\n",
+        "Survival Area just seemed to spring\\fup overnight."
+      ]
+    },
+    {
+      "id": "msg_1218_SC11R0401_00001",
+      "en_US": [
+        "He was one of those early eccentrics\n",
+        "who were around during the early days\r",
+        "of the Battle Zone. Well, I was too."
+      ]
+    },
+    {
+      "id": "msg_1218_SC11R0401_00002",
+      "en_US": "TORCHIC: Chiic chic!"
+    }
+  ]
+}

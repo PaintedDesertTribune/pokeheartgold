@@ -1,0 +1,76 @@
+{
+  "header": "fielddata/script/scr_seq/event_SR219.h",
+  "bgs": [
+    {
+      "scriptId": "8419",
+      "type": 2,
+      "x": 175,
+      "z": 889,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SR219_000 + 1",
+      "type": 1,
+      "x": 179,
+      "z": 866,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SR219_0",
+      "spriteId": "SPRITE_SINNOH_BEACHBOY",
+      "movement": 20,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_TUBER_M_TRENTON)",
+      "facingDirection": 3,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 4,
+      "yRange": 0,
+      "x": 171,
+      "z": 887,
+      "y": 0
+    },
+    {
+      "id": "obj_SR219_1",
+      "spriteId": "SPRITE_SINNOH_BEACHGIRL",
+      "movement": 16,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_TUBER_F_MARIEL)",
+      "facingDirection": 2,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 176,
+      "z": 887,
+      "y": 0
+    },
+    {
+      "id": "obj_SR219_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1110",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 169,
+      "z": 877,
+      "y": 0
+    }
+  ],
+  "warps": [],
+  "coords": []
+}

@@ -1,0 +1,44 @@
+{
+  "key": 8437,
+  "messages": [
+    {
+      "id": "msg_1235_SD16R0101_00000",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Darn it!\n",
+        "What was that all about?!\r",
+        "Oh, hey, {STRVAR_1 3, 1, 0}.\n",
+        "That Buck guy wiped us!\r",
+        "Oh, man... There’s always tough\n",
+        "Trainers around everywhere.\r",
+        "But you know? Losing means I have\n",
+        "room to become even tougher.\r",
+        "That’s why there’s the Battle Tower\n",
+        "in the Battle Zone."
+      ]
+    },
+    {
+      "id": "msg_1235_SD16R0101_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Darn it!\n",
+        "I’m still choked up from losing.\r",
+        "But you know? Losing means I have\n",
+        "room to become even tougher.\r",
+        "That’s why there’s the Battle Tower\n",
+        "in the Battle Zone."
+      ]
+    },
+    {
+      "id": "msg_1235_SD16R0101_00002",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hey, {STRVAR_1 3, 1, 0}!\n",
+        "Are you still raising your Pokémon?\r",
+        "Me? You need to ask? Of course I am.\n",
+        "They’re my partners!\r",
+        "I’m going to rule at the Battle Tower\n",
+        "with them.\r",
+        "I’ll prove how strong we’ve become\n",
+        "and totally shock the guy there."
+      ]
+    }
+  ]
+}

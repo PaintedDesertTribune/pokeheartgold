@@ -1,0 +1,30 @@
+{
+  "key": 8377,
+  "messages": [
+    {
+      "id": "msg_1215_SC11PC0101_00000",
+      "en_US": [
+        "The Battle Tower’s as tough as they\n",
+        "say...\r",
+        "It’s no cakewalk, that’s for sure."
+      ]
+    },
+    {
+      "id": "msg_1215_SC11PC0101_00001",
+      "en_US": [
+        "The best Trainers from around the\n",
+        "country...\r",
+        "No, the best Trainers from around\n",
+        "the world gather here."
+      ]
+    },
+    {
+      "id": "msg_1215_SC11PC0101_00002",
+      "en_US": [
+        "To toughen myself!\n",
+        "To toughen my Pokémon!\r",
+        "For that alone, I have come!"
+      ]
+    }
+  ]
+}

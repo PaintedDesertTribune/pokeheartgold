@@ -1,0 +1,314 @@
+{
+  "key": 8462,
+  "messages": [
+    {
+      "id": "msg_0890_SD27R0101_00000",
+      "en_US": "{STRVAR_1 3, 0, 0}: What’s going on...?\r"
+    },
+    {
+      "id": "msg_0890_SD27R0101_00001",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00002",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00003",
+      "en_US": [
+        "Professor, there isn’t anything out\n",
+        "of the ordinary on the other side,\\feither!\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00004",
+      "en_US": [
+        "Professor, there’s nothing out of the\n",
+        "ordinary on the other side, either!\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00005",
+      "en_US": [
+        "Professor: Hmm...\n",
+        "I may have been mistaken...\r",
+        "Something appears to be different\n",
+        "than it was before, but...\r",
+        "Fine! It’s enough that we have\n",
+        "seen the lake.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00006",
+      "en_US": "{STRVAR_1 3, 0, 0}, we’re leaving.\r"
+    },
+    {
+      "id": "msg_0890_SD27R0101_00007",
+      "en_US": [
+        "Dawn: Professor, how are you enjoying\n",
+        "being back in Sinnoh?\r",
+        "After being away for four years,\n",
+        "it must be exciting again?\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00008",
+      "en_US": [
+        "Lucas: Professor, you’ve been gone\n",
+        "for four years now.\r",
+        "How are you enjoying being back in\n",
+        "Sinnoh?\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00009",
+      "en_US": [
+        "Professor: ...Hm.\n",
+        "There is one thing I can say.\r",
+        "There are many rare kinds of Pokémon\n",
+        "in Sinnoh.\r",
+        "The region should serve us very well\n",
+        "in regard to our studies.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00010",
+      "en_US": [
+        "Professor: Excuse me.\n",
+        "Let us pass, please.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00011",
+      "en_US": [
+        "Dawn: I beg your pardon...\n",
+        "We’ll be on our way.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00012",
+      "en_US": "Lucas: Sorry, folks.\r"
+    },
+    {
+      "id": "msg_0890_SD27R0101_00013",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: What was that about?\n",
+        "Those two...\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00014",
+      "en_US": [
+        "Huh? {STRVAR_1 3, 0, 0}!\n",
+        "Let’s go check this out!\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00015",
+      "en_US": [
+        "...\n",
+        "...\r",
+        "What’s that?\n",
+        "Don’t go into the tall grass?\r",
+        "No problem, no problem!\r",
+        "We won’t be in there long enough\n",
+        "for a wild Pokémon to come out.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00016",
+      "en_US": [
+        "It’s...\n",
+        "A briefcase?\r",
+        "Those people forgot it here.\n",
+        "What are we supposed to do with it?\r",
+        "We can try to deliver it, but who are\n",
+        "they? I heard them say professor...\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00017",
+      "en_US": [
+        "Waaah!\n",
+        "Po-Pokémon?!\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00018",
+      "en_US": "What’s going on?!\r"
+    },
+    {
+      "id": "msg_0890_SD27R0101_00019",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Fwaaah!\n",
+        "Your {STRVAR_1 0, 1, 0} totally rocked!\r",
+        "But my {STRVAR_1 0, 2, 0} was way tougher\n",
+        "than yours!\r",
+        "...They were other people’s\n",
+        "Pokémon, though...\r",
+        "But we had to use them...\n",
+        "They won’t mind, will they?\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00020",
+      "en_US": [
+        "Dawn: Oh! There’s the briefcase!\r",
+        "The professor would have been furious\n",
+        "if I’d lost it...\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00021",
+      "en_US": [
+        "Dawn: Huh?\n",
+        "Oh, no!\r",
+        "Did you...\n",
+        "Did you use the Pokémon in here?\r",
+        "You did?! Oh, my gosh!\n",
+        "What’s the professor going to say...?\r",
+        "...This is so not good...\n",
+        "I’ll take this briefcase for now.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00022",
+      "en_US": [
+        "Lucas: Whew! You found the briefcase?\r",
+        "The professor would’ve gone through\n",
+        "the roof if he knew I forgot it here.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00023",
+      "en_US": [
+        "Lucas: Hunh?\n",
+        "Whaaaat?!\r",
+        "Did you guys...\n",
+        "Did you use these Pokémon?!\r",
+        "Oh, man... How am I gonna explain\n",
+        "this to the professor?\r",
+        "...This briefcase is the professor’s,\n",
+        "so I’ll take it, OK?\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00024",
+      "en_US": "{STRVAR_1 3, 0, 0}: What was that about?\r"
+    },
+    {
+      "id": "msg_0890_SD27R0101_00025",
+      "en_US": [
+        "I don’t know what’s going on.\n",
+        "{STRVAR_1 3, 0, 0}, let’s get out of here.\r",
+        "My Pokémon got hurt from that\n",
+        "battle.\r",
+        "If we get attacked by another\n",
+        "Pokémon, we might be in trouble.\r"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00026",
+      "en_US": [
+        "Rowan: Hmmm...\r",
+        "No legendary Pokémon, nothing out\n",
+        "of the ordinary...\r",
+        "{STRVAR_1 3, 0, 0}, how was Lake Valor?\n",
+        "Anything to report?\r",
+        "What? You’re just going there now?\n",
+        "You’ve got to move faster than that!"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00027",
+      "en_US": [
+        "Rowan: {STRVAR_1 3, 0, 0}, how was Lake\n",
+        "Valor? Anything to report?\r",
+        "What? You’re just going there now?\n",
+        "You’ve got to move faster than that!"
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00028",
+      "en_US": [
+        "Dawn: {STRVAR_1 3, 0, 0}, how was\n",
+        "Lake Valor?\r",
+        "There’s nothing wrong here.\n",
+        "The lake hasn’t changed at all.\r",
+        "We haven’t found a legendary\n",
+        "Pokémon, either, though..."
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00029",
+      "en_US": [
+        "Lucas: Hiya, {STRVAR_1 3, 0, 0}!\n",
+        "How’s Lake Valor?\r",
+        "There’s nothing wrong here.\n",
+        "The lake is ordinary, as usual.\r",
+        "There’s no legendary Pokémon,\n",
+        "either..."
+      ]
+    },
+    {
+      "id": "msg_0890_SD27R0101_00030",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00031",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00032",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00033",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00034",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00035",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00036",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00037",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00038",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00039",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00040",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00041",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00042",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00043",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0890_SD27R0101_00044",
+      "en_US": ""
+    }
+  ]
+}

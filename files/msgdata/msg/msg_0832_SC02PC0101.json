@@ -1,0 +1,27 @@
+{
+  "key": 8242,
+  "messages": [
+    {
+      "id": "msg_0832_SC02PC0101_00000",
+      "en_US": [
+        "The same kinds of Pokémon can\n",
+        "sometimes have different abilities.\r",
+        "Maybe I ought to raise two with\n",
+        "different natures."
+      ]
+    },
+    {
+      "id": "msg_0832_SC02PC0101_00001",
+      "en_US": [
+        "I can’t use the hidden move Strength\n",
+        "until I beat Byron, the Gym Leader.\r",
+        "I already got the Strength HM from\n",
+        "the Lost Tower on Route 209, also..."
+      ]
+    },
+    {
+      "id": "msg_0832_SC02PC0101_00002",
+      "en_US": ""
+    }
+  ]
+}

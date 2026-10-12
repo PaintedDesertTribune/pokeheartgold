@@ -1,0 +1,425 @@
+{
+  "key": 8217,
+  "messages": [
+    {
+      "id": "msg_0852_SC01R0201_00000",
+      "en_US": [
+        "Why don’t you try dressing up your\n",
+        "Pokémon now?\r",
+        "We have a Fitting Room on\n",
+        "the second floor.\r",
+        "Dress up your Pokémon nicely with\n",
+        "Accessories!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00001",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0852_SC01R0201_00002",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0852_SC01R0201_00003",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0852_SC01R0201_00004",
+      "en_US": [
+        "This is the Pokémon Lottery Corner.\r",
+        "If your drawn number matches the\n",
+        "ID No. of any of your Pokémon,\r",
+        "starting with the far right digit,\n",
+        "you will receive a fabulous gift.\r",
+        "Would you like to draw a Pokémon\n",
+        "Loto Ticket?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00005",
+      "en_US": [
+        "You’ve already drawn a Loto Ticket\n",
+        "today. Please come back tomorrow."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00006",
+      "en_US": [
+        "Oh. I see.\n",
+        "Please do visit us again."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00007",
+      "en_US": [
+        "Please draw a Loto Ticket.\r",
+        "...\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00008",
+      "en_US": [
+        "Your Loto Ticket number is {STRVAR_1 54, 0, 0}.\r",
+        "Now, let’s see if it matches the\n",
+        "ID No. of any of your Pokémon.\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00009",
+      "en_US": [
+        "Congratulations!\r",
+        "The ID No. of your team’s\n",
+        "{STRVAR_1 1, 0, 0} matches your Loto\\fTicket number!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00010",
+      "en_US": [
+        "Congratulations!\r",
+        "The ID No. of your PC-boxed\n",
+        "{STRVAR_1 1, 0, 0} matches your Loto\\fTicket number!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00011",
+      "en_US": [
+        "I’m sorry.\n",
+        "You didn’t get a match..."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00012",
+      "en_US": [
+        "The last digit matched, so you\n",
+        "win the fourth prize!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00013",
+      "en_US": [
+        "You gained a new Backdrop for use\n",
+        "in Fitting Rooms."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00014",
+      "en_US": [
+        "The last two digits matched, so you\n",
+        "win the third prize!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00015",
+      "en_US": [
+        "The last three digits matched, so you\n",
+        "win the second prize!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00016",
+      "en_US": [
+        "The last four digits matched, so you\n",
+        "win the first prize!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00017",
+      "en_US": [
+        "Oh, my goodness, all five digits\n",
+        "matched!\r",
+        "You’ve won the jackpot prize!\n",
+        "This is just so incredible!\r",
+        "...Oh, I’m sorry! Your prize!\n",
+        "I got carried away there.\r",
+        "Here you go!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00018",
+      "en_US": [
+        "...Oh?\n",
+        "You seem to have no room for this.\r",
+        "Please make room in your Bag and\n",
+        "then let me know."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00019",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}?\n",
+        "Yes, I’ve been expecting you.\r",
+        "This is the prize we’ve been holding\n",
+        "for you. Here you go!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00020",
+      "en_US": "Please do visit again."
+    },
+    {
+      "id": "msg_0852_SC01R0201_00021",
+      "en_US": [
+        "They keep records of things like\n",
+        "how many battles you’ve won in a row,\\for how many Pokémon you’ve caught.\r",
+        "You can check everyone’s records\n",
+        "up on the third floor."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00022",
+      "en_US": [
+        "I’m going to get commercials shown\n",
+        "on TV.\r",
+        "They’ll attract more customers to\n",
+        "the department store."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00023",
+      "en_US": [
+        "The Trainers that gather over there\n",
+        "are looking for battles.\r",
+        "That corner used to be for karaoke,\n",
+        "but now it’s all battling!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00024",
+      "en_US": [
+        "More than singing!\n",
+        "More than dancing!\r",
+        "I love Pokémon!\n",
+        "So, shall we battle?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00025",
+      "en_US": [
+        "I’ll let you join my fan club if you\n",
+        "can beat me!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00026",
+      "en_US": [
+        "Aww... That’s heartbreaking...\n",
+        "I’m an Idol, too..."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00027",
+      "en_US": [
+        "Well, that’s me and my Pokémon!\n",
+        "I hope you’ll support us!\r",
+        "Just so you know, our latest single\n",
+        "is called “Jigglin’ Pokémon Wub!”"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00028",
+      "en_US": [
+        "I’m working on a story.\n",
+        "Can you battle me?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00029",
+      "en_US": "Join me for a live report!\r"
+    },
+    {
+      "id": "msg_0852_SC01R0201_00030",
+      "en_US": [
+        "Press coverage denied...\n",
+        "But you’re so intriguing!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00031",
+      "en_US": [
+        "Interviews are about taking the\n",
+        "initiative."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00032",
+      "en_US": [
+        "I’ve spotted a charismatic Trainer!\n",
+        "Is it OK to go for the scoop?\n"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00033",
+      "en_US": [
+        "As a professional cameraman, I always\n",
+        "go for the best shot!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00034",
+      "en_US": [
+        "That’s a downer...\r",
+        "I thought I’d found a Trainer and\n",
+        "Pokémon who’d shine on camera."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00035",
+      "en_US": [
+        "The lively expressions on you and\n",
+        "your Pokémon’s faces...\r",
+        "It makes for some great TV!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00036",
+      "en_US": [
+        "Are we all ready to have some fun?\n",
+        "I sure am! Aren’t you having fun?!\\fLet’s make it fun! OK?!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00037",
+      "en_US": [
+        "OK, how shall we do this?\n",
+        "Shall we do something fantastical?\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00038",
+      "en_US": [
+        "Oh, how shall I say this...?\n",
+        "It makes me all lonely, I say..."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00039",
+      "en_US": [
+        "A clown’s makeup is a face that’s\n",
+        "crying while laughing.\r",
+        "It defines what we do!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00040",
+      "en_US": [
+        "Two Pokémon! If you had two Pokémon,\n",
+        "we’d get a great shot here."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00041",
+      "en_US": [
+        "Oh! You’re ready for a battle\n",
+        "with us?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00042",
+      "en_US": [
+        "You’re live on camera, but try\n",
+        "to act natural, OK?\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00043",
+      "en_US": [
+        "OK, that’s how it is, huh.\n",
+        "Can’t do anything about that."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00044",
+      "en_US": [
+        "I’d like to take that footage and\n",
+        "have it broadcast worldwide."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00045",
+      "en_US": [
+        "Oh, no. What we really want to see\n",
+        "is you in action with two Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00046",
+      "en_US": [
+        "Giggle!\n",
+        "Will you have a battle with us?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00047",
+      "en_US": [
+        "We’ll check you out thoroughly as\n",
+        "a Trainer!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00048",
+      "en_US": [
+        "Oh, too bad!\n",
+        "I wanted to check out your Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00049",
+      "en_US": [
+        "I lost but I’m totally thrilled!\n",
+        "We made a wonderful spectacle!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00050",
+      "en_US": [
+        "Po-Po-Pokémon!\r",
+        "I want to become more like\n",
+        "a PIKACHU! Will you battle me?"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00051",
+      "en_US": "Pi-pikachu!\r"
+    },
+    {
+      "id": "msg_0852_SC01R0201_00052",
+      "en_US": "Pikachu!"
+    },
+    {
+      "id": "msg_0852_SC01R0201_00053",
+      "en_US": [
+        "I need to get more into the\n",
+        "character of a Pokémon..."
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00054",
+      "en_US": [
+        "Come on, let’s show off our Pokémon!\n",
+        "Let’s do battle, kiddo!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00055",
+      "en_US": [
+        "Your spirit’s vibes... I can feel\n",
+        "you’ve got rock in your veins!\r"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00056",
+      "en_US": [
+        "Now, that is so lame.\n",
+        "You have to let your passion burn!"
+      ]
+    },
+    {
+      "id": "msg_0852_SC01R0201_00057",
+      "en_US": [
+        "Rock is about your spirit!\n",
+        "Battling is about spirit, too!\\fThat’s why a battle is rock!"
+      ]
+    }
+  ]
+}

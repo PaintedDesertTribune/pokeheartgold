@@ -1,0 +1,172 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST07.h",
+  "bgs": [
+    {
+      "scriptId": "8473",
+      "type": 2,
+      "x": 824,
+      "z": 471,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8474",
+      "type": 2,
+      "x": 822,
+      "z": 445,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST07_004 + 1",
+      "type": 1,
+      "x": 805,
+      "z": 449,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST07_005 + 1",
+      "type": 1,
+      "x": 817,
+      "z": 460,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_ST07_2",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1218",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 829,
+      "z": 466,
+      "y": 0
+    },
+    {
+      "id": "obj_ST07_3",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07_000 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 806,
+      "z": 462,
+      "y": 0
+    },
+    {
+      "id": "obj_ST07_4",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07_001 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 3,
+      "yRange": 0,
+      "x": 821,
+      "z": 461,
+      "y": 0
+    },
+    {
+      "id": "obj_ST07_5",
+      "spriteId": "SPRITE_FIGHTER",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 3,
+      "yRange": 0,
+      "x": 813,
+      "z": 472,
+      "y": 0
+    },
+    {
+      "id": "obj_ST07_6",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07_002 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 804,
+      "z": 471,
+      "y": 0
+    },
+    {
+      "id": "obj_ST07_11",
+      "spriteId": "SPRITE_SINNOH_SWIMMERM",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07_006 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 819,
+      "z": 458,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 802,
+      "z": 465,
+      "header": "MAP_SINNOH_RESORT_AREA_SOUTHWEST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 816,
+      "z": 469,
+      "header": "MAP_SINNOH_RESORT_AREA_SOUTHEAST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 826,
+      "z": 453,
+      "header": "MAP_SINNOH_RESORT_AREA_RIBBON_SYNDICATE_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 807,
+      "z": 457,
+      "header": "MAP_SINNOH_RESORT_AREA_POKECENTER_1F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

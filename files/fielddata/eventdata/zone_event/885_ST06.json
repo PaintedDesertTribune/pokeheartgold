@@ -1,0 +1,171 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST06.h",
+  "bgs": [
+    {
+      "scriptId": "8450",
+      "type": 2,
+      "x": 649,
+      "z": 324,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST06_004 + 1",
+      "type": 1,
+      "x": 646,
+      "z": 338,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 679,
+      "z": 340,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_ST06_1",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 660,
+      "z": 327,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06_2",
+      "spriteId": "SPRITE_SINNOH_VENTHOLE",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "0",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 652,
+      "z": 327,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06_3",
+      "spriteId": "SPRITE_EXPLORE",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST06_002 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 659,
+      "z": 350,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06_4",
+      "spriteId": "SPRITE_GIRL2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST06_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 652,
+      "z": 341,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06_5",
+      "spriteId": "SPRITE_BOY2",
+      "movement": 2,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST06_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 667,
+      "z": 338,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06_7",
+      "spriteId": "SPRITE_CAMERAMAN",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST06_003 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 651,
+      "z": 348,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 650,
+      "z": 338,
+      "header": "MAP_SINNOH_SURVIVAL_AREA_WEST_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 655,
+      "z": 348,
+      "header": "MAP_SINNOH_SURVIVAL_AREA_SOUTH_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 656,
+      "z": 325,
+      "header": "MAP_SINNOH_SURVIVAL_AREA_NORTH_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 657,
+      "z": 338,
+      "header": "MAP_SINNOH_SURVIVAL_AREA_POKECENTER_1F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 663,
+      "z": 338,
+      "header": "MAP_SINNOH_SURVIVAL_AREA_POKEMART",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

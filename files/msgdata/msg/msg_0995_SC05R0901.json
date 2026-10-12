@@ -1,0 +1,99 @@
+{
+  "key": 8310,
+  "messages": [
+    {
+      "id": "msg_0995_SC05R0901_00000",
+      "en_US": [
+        "Hiya!\n",
+        "Oh, you’re a Trainer!\r",
+        "That means you’re using Pokémon\n",
+        "Boxes! I love meeting end users!\r",
+        "Oh, what’s up?\n",
+        "Why that astonished look?\r",
+        "Oh, right, sorry!\n",
+        "There I go running my mouth again!\r",
+        "My name’s Bebe!\r",
+        "You know the PC Pokémon Boxes?\n",
+        "I’m the system administrator!"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00001",
+      "en_US": [
+        "Bebe: My buddy Bill developed the\n",
+        "basic storage system.\r",
+        "I tinkered with it here and there\n",
+        "to make it easier for me to use."
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00002",
+      "en_US": [
+        "Bebe: Hiya! Been a long time!\n",
+        "How’s it going? Using the PC Boxes?\r",
+        "Oh? Now lookie here, that’s a National\n",
+        "Pokédex I’m seeing. Good for you!\r",
+        "You’ll be using my Boxes like crazy\n",
+        "if you’re using that now.\r",
+        "Well, I always thought a good Trainer\n",
+        "ought to juggle Boxes smartly, though\\fI shouldn’t be the one to say so.\r",
+        "Oh yeah, do you want a Pokémon named\n",
+        "EEVEE?"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00003",
+      "en_US": [
+        "Bebe: So, do you want that EEVEE\n",
+        "that I’ve got?"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00004",
+      "en_US": [
+        "Bebe: Here you go!\n",
+        "Now, you be good to it.\r"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00005",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} obtained\n",
+        "an EEVEE!\r"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00006",
+      "en_US": [
+        "Would you like to give a nickname\n",
+        "to the EEVEE that Bebe gave you?"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00007",
+      "en_US": [
+        "Bebe: Here you go!\r",
+        "Wait, I can’t do that! You can’t\n",
+        "take any more Pokémon with you!\r",
+        "Right about now, my Pokémon Boxes\n",
+        "come in handy!"
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00008",
+      "en_US": [
+        "Bebe: Oh, OK...\n",
+        "Guess I’ll have to raise it myself."
+      ]
+    },
+    {
+      "id": "msg_0995_SC05R0901_00009",
+      "en_US": [
+        "Bebe: That EEVEE I gave you,\n",
+        "I got it from a good mate in Johto.\r",
+        "Who knows how many EEVEE he’s raised\n",
+        "over the years."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "key": 8318,
+  "messages": [
+    {
+      "id": "msg_1097_SC06PC0101_00000",
+      "en_US": [
+        "The Great Marsh is vast!\n",
+        "How vast is it, you ask?\r",
+        "Take a look from the Observatory\n",
+        "and you can see for yourself!"
+      ]
+    },
+    {
+      "id": "msg_1097_SC06PC0101_00001",
+      "en_US": [
+        "Pastoria’s Great Marsh was once\n",
+        "a part of the sea.\r",
+        "The seawater drained away over time,\n",
+        "leaving the huge marshland.\r",
+        "That’s why they say there are rare\n",
+        "Pokémon that you can only see here."
+      ]
+    }
+  ]
+}

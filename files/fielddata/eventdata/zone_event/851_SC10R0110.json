@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC10R0110.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 4,
+      "z": 2,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_CYNTHIA_ROOM",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "z": 23,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_LUCIAN_ROOM",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_SC10R0110_002 + 1",
+      "x": 4,
+      "z": 19,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "0x4000"
+    }
+  ]
+}

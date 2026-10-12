@@ -1,0 +1,694 @@
+{
+  "key": 8210,
+  "messages": [
+    {
+      "id": "msg_0938_SD25R0104_00000",
+      "en_US": [
+        "Dawn: Hi, {STRVAR_1 3, 1, 0}!\n",
+        "Are you catching Pokémon?\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00001",
+      "en_US": [
+        "Wow! You’ve already got {STRVAR_1 50, 0, 0} Pokémon\n",
+        "with you!\r",
+        "At that pace, your Pokédex should\n",
+        "be full in no time at all!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00002",
+      "en_US": [
+        "...Um...\r",
+        "I think you’d feel a lot safer if you\n",
+        "were to catch some more.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00003",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00004",
+      "en_US": [
+        "In Jubilife City, there’s the Trainers’\n",
+        "School, which... Well, you know.\r",
+        "{STRVAR_1 3, 0, 0}, you should visit it.\n",
+        "You’ll get some tips on Pokémon.\r",
+        "Oh yes, {STRVAR_1 3, 1, 0} went to the\n",
+        "Trainers’ School earlier.\r",
+        "OK, bye now!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00005",
+      "en_US": [
+        "Lucas: Hey, {STRVAR_1 3, 1, 0}!\n",
+        "How many Pokémon have you caught?\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00006",
+      "en_US": [
+        "Whoa! You already have {STRVAR_1 50, 0, 0} Pokémon\n",
+        "with you!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00007",
+      "en_US": [
+        "Huh?\n",
+        "I think you should catch some more.\r",
+        "It might be more of a challenge\n",
+        "raising a lot of Pokémon...\r",
+        "But it’s worth it. The more Pokémon\n",
+        "you have, the happier you’ll be.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00008",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00009",
+      "en_US": [
+        "In Jubilife City, there’s the Trainers’\n",
+        "School. Check it out, {STRVAR_1 3, 0, 0}.\r",
+        "Oh yeah, {STRVAR_1 3, 1, 0} went to the\n",
+        "Trainers’ School earlier.\r",
+        "OK, see you around!\n",
+        "Work hard on your Pokédex!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00010",
+      "en_US": [
+        "Jubilife City’s built on land they\n",
+        "carved out of a mountain.\r",
+        "The people and Pokémon of\n",
+        "Oreburgh City helped out with\\fthat undertaking."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00011",
+      "en_US": [
+        "Hello! Let me ask you, have you paid\n",
+        "a visit to the TV station?\r",
+        "If you’ve never been, you owe it to\n",
+        "yourself to make the trip.\r",
+        "And, if you’ve been there before,\n",
+        "it never hurts to visit again.\r",
+        "After all, you can be a star!\n",
+        "Or at least dream of being one!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00012",
+      "en_US": [
+        "Jubilife City is the love of my life.\n",
+        "Words can’t do it justice.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00013",
+      "en_US": [
+        "By the way, have you visited the\n",
+        "Trainers’ School?\r",
+        "Not yet, right?\n",
+        "You really must visit there!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00014",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00015",
+      "en_US": [
+        "By the way, have you participated\n",
+        "in the Pokétch campaign?\r",
+        "Not yet, right?\n",
+        "You really must try!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00016",
+      "en_US": [
+        "Hello! Yes, you!\n",
+        "You with that cool scarf!\r",
+        "You should have seen the boy that\n",
+        "came running by earlier.\r",
+        "He ran past me so quickly, I couldn’t\n",
+        "even manage a hello."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00017",
+      "en_US": [
+        "Jubilife City is a big place.\n",
+        "Take your time sightseeing."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00018",
+      "en_US": [
+        "Jubilife City is the love of my life\n",
+        "Words can’t do it justice."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00019",
+      "en_US": [
+        "By the way, have you visited the\n",
+        "Trainers’ School?\r",
+        "Not yet, right?\n",
+        "You really must visit there!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00020",
+      "en_US": [
+        "By the way, have you participated\n",
+        "in the Pokétch campaign?\r",
+        "Not yet, right?\n",
+        "You really must try!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00021",
+      "en_US": [
+        "Oh, oh, oh?\r",
+        "You call yourself a Pokémon Trainer?\n",
+        "And yet you have no Pokétch?\r",
+        "That is, Pokémon Watch, or Pokétch\n",
+        "for short!\r",
+        "Oh my, you are a rare case\n",
+        "indeed!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00022",
+      "en_US": [
+        "You see, I invented, and now\n",
+        "manufacture, Pokétches.\r",
+        "Not only that, I’m now conducting\n",
+        "the Pokétch promotional campaign!\r",
+        "All you have to do is find three\n",
+        "clowns in Jubilife City.\r",
+        "If you can find them...\n",
+        "I will gift you with a Pokétch!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00023",
+      "en_US": [
+        "The three clowns will each ask you\n",
+        "a skill-testing question.\r",
+        "The questions will all have to do\n",
+        "with Pokémon.\r",
+        "After all, a Pokétch is a tool for\n",
+        "Pokémon Trainers.\r",
+        "Collect a Coupon from each clown,\n",
+        "then come see me, OK?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00024",
+      "en_US": [
+        "OK, let me count your Coupons!\n",
+        "I’ll use the Pokétch here...\r",
+        "One, two, three!\n",
+        "Bravo! I say, bravo!\r",
+        "In return for these Coupons,\n",
+        "I present you this Pokémon Watch,\\for Pokétch for short!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00025",
+      "en_US": "{STRVAR_1 3, 0, 0} received a {COLOR 1}Pokétch{COLOR 0}!{YESNO 1}"
+    },
+    {
+      "id": "msg_0938_SD25R0104_00026",
+      "en_US": [
+        "You can add apps to your Pokétch\n",
+        "to make it even more versatile!\r",
+        "Touch the Pokétch screen and please\n",
+        "do try it out!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00027",
+      "en_US": [
+        "Hi! I’m a Pokétch campaign clown!\n",
+        "Let’s roll out my question!\r",
+        "Does a Pokémon grow by defeating\n",
+        "others and gaining Exp. Points?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00028",
+      "en_US": [
+        "Ding-ding!\n",
+        "You’re absolutely correct!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00029",
+      "en_US": [
+        "Bzzzzt!\n",
+        "That’s the wrong answer..."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00030",
+      "en_US": [
+        "Pokémon grow stronger by defeating\n",
+        "other Pokémon in battle.\r",
+        "Some Pokémon even grow into an\n",
+        "entirely different form in a process\\fknown as evolution.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00031",
+      "en_US": [
+        "Here you go!\n",
+        "Your Pokétch Coupon!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00032",
+      "en_US": [
+        "Pokémon grow stronger through\n",
+        "battling.\r",
+        "Some Pokémon even grow into an\n",
+        "entirely different form in a process\\fknown as evolution."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00033",
+      "en_US": [
+        "Hi! I’m a Pokétch campaign clown!\n",
+        "Let’s roll out my question!\r",
+        "Just like Pokémon types, the moves\n",
+        "of Pokémon also have types?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00034",
+      "en_US": [
+        "Ding-ding!\n",
+        "You’re absolutely correct!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00035",
+      "en_US": [
+        "Bzzzzt!\n",
+        "That’s the wrong answer..."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00036",
+      "en_US": [
+        "If the Pokémon’s type matches its\n",
+        "move’s type, that move is made much\\fmore powerful!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00037",
+      "en_US": [
+        "Here you go!\n",
+        "Your Pokétch Coupon!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00038",
+      "en_US": [
+        "If the Pokémon’s type matches its\n",
+        "move’s type, that move is made much\\fmore powerful!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00039",
+      "en_US": [
+        "Hi! I’m a Pokétch campaign clown!\n",
+        "Let’s roll out my question!\r",
+        "Can a Pokémon hold an item?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00040",
+      "en_US": [
+        "Ding-ding!\n",
+        "You’re absolutely correct!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00041",
+      "en_US": [
+        "Bzzzzt!\n",
+        "That’s the wrong answer..."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00042",
+      "en_US": [
+        "A Pokémon may hold a single item.\r",
+        "Some items become effective as soon\n",
+        "as they are held by a Pokémon.\r",
+        "Berries are eaten by Pokémon as\n",
+        "necessary during battle.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00043",
+      "en_US": [
+        "Here you go!\n",
+        "Your Pokétch Coupon!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00044",
+      "en_US": [
+        "Hi, there. You should stick around.\n",
+        "We’re doing a Pokétch campaign soon.\r",
+        "Before it starts, I think you should\n",
+        "brush up at the Trainers’ School."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00045",
+      "en_US": [
+        "A Pokémon may hold a single item.\r",
+        "Some items become effective as soon\n",
+        "as they are held by Pokémon.\r",
+        "Berries are eaten by Pokémon as\n",
+        "necessary during battle."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00046",
+      "en_US": [
+        "Rowan: Ah, {STRVAR_1 3, 0, 0}.\n",
+        "Impeccable timing as always.\r",
+        "These miscreants are babbling utter\n",
+        "nonsense that I just can’t stomach.\r",
+        "Show them some manners, if you will.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00047",
+      "en_US": [
+        "Mystery man: Oh, Professor Pokémon,\n",
+        "must you be so difficult?\r",
+        "We are approaching you strictly\n",
+        "as businessmen.\r",
+        "All you must do is provide us with\n",
+        "all your research findings.\r",
+        "In return, we’ll refrain from causing\n",
+        "massive damage to your assistant.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00048",
+      "en_US": [
+        "Dawn: {STRVAR_1 3, 1, 0}!\r",
+        "Let’s battle together and teach\n",
+        "these horrible men a lesson!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00049",
+      "en_US": [
+        "Lucas: {STRVAR_1 3, 1, 0}!\n",
+        "Join me and battle these guys!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00050",
+      "en_US": [
+        "Grunt: You leave us no option.\n",
+        "We will retreat for now.\r",
+        "Because Team Galactic is benevolent\n",
+        "to all, we shall leave.\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00051",
+      "en_US": [
+        "Rowan: That lot...\n",
+        "They called themselves Team Galactic.\r",
+        "When Pokémon evolve, they seem to\n",
+        "release some type of energy...\r",
+        "However, I believe that it’s a mystic\n",
+        "power far beyond our control.\r",
+        "But Team Galactic seems to be trying\n",
+        "to use that power for something...\r",
+        "Anyway, {STRVAR_1 3, 0, 0}, well done!\n",
+        "You battle quite capably.\r",
+        "The sight of you Trainers and Pokémon\n",
+        "battling together...\r",
+        "I made the right decision in\n",
+        "entrusting you with a Pokédex!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00052",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00053",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00054",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00055",
+      "en_US": [
+        "Dawn: {STRVAR_1 3, 1, 0}, did you know?\r",
+        "The professor studies the evolution\n",
+        "of Pokémon, too.\r",
+        "According to his research, 90% of\n",
+        "all Pokémon are somehow tied\\fto evolution!\r",
+        "I guess that means some Pokémon\n",
+        "must undergo startling evolutions.\r",
+        "So, {STRVAR_1 3, 1, 0}...\n",
+        "Let’s keep working on our Pokédex\\fproject for the professor!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00056",
+      "en_US": [
+        "Lucas: {STRVAR_1 3, 1, 0}, did you know\n",
+        "about this?\r",
+        "The professor studies about the\n",
+        "evolution of Pokémon, too.\r",
+        "According to his research, 90% of\n",
+        "all Pokémon are somehow tied\\fto evolution!\r",
+        "I guess that means some Pokémon\n",
+        "must undergo weird evolutions.\r",
+        "So, {STRVAR_1 3, 1, 0}...\n",
+        "Let’s keep working on our Pokédex\\fproject for the prof!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00057",
+      "en_US": [
+        "Oh, that was very good!\n",
+        "Nicely done! Truly excellent!\r",
+        "Oh, I beg your pardon, I’m from\n",
+        "Jubilife TV!\r",
+        "I’d like you to have something for\n",
+        "letting me see that smashing battle!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00058",
+      "en_US": [
+        "Contained within that Fashion Case...\r",
+        "You will find a whole spectrum of chic\n",
+        "Accessories and tasteful Backdrops!\r",
+        "Dress up your Pokémon and watch\n",
+        "their appeal grow!\r",
+        "And, right now the TV station is\n",
+        "offering its facilities so visitors\\fcan dress up their Pokémon!\r",
+        "There are also prize giveaways, too!\n",
+        "Please do visit our TV station!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00059",
+      "en_US": [
+        "The way you look...\n",
+        "You’re obviously a Trainer!\r",
+        "Can you tell me what type of Pokémon\n",
+        "you like?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00060",
+      "en_US": [
+        "The Fire type?\n",
+        "You must have a fiery personality."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00061",
+      "en_US": [
+        "A person that likes the Water type\n",
+        "must be somewhat cool."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00062",
+      "en_US": [
+        "You chose the Grass type?\n",
+        "No wonder you look so calm."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00063",
+      "en_US": [
+        "Did you see me on TV?\n",
+        "I was in an interview!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00064",
+      "en_US": [
+        "When you walk with your Pokémon,\n",
+        "they gradually grow friendlier."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00065",
+      "en_US": [
+        "OK, set six Poké Balls in my\n",
+        "belt...\r",
+        "Yeah, that’ll do it. At most, you\n",
+        "can have six Pokémon with you."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00066",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0938_SD25R0104_00067",
+      "en_US": [
+        "Hiya, where’d you come from?\r",
+        "...\r",
+        "Twinleaf Town, huh...\n",
+        "It’s a nice place. Quiet and all.\r",
+        "Jubilife City is a big place, so it\n",
+        "might be a bit of a shock to you."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00068",
+      "en_US": [
+        "Hello, Trainer!\n",
+        "Do you know much about Pokémon?"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00069",
+      "en_US": [
+        "Ah, I see!\n",
+        "You are knowledgeable!\r",
+        "I imagine you wouldn’t see the need\n",
+        "to visit the Trainers’ School, then.\r",
+        "But do visit if you have the time.\n",
+        "You may discover something new!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00070",
+      "en_US": [
+        "Oh, you’re not knowledgeable...\n",
+        "But not to worry!\\fThere’s the Trainers’ School.\r",
+        "The school will teach you the\n",
+        "basics of Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00071",
+      "en_US": [
+        "Past here is the GTS, which stands\n",
+        "for Global Trade Station.\r",
+        "Oh, I’m sorry, you don’t have\n",
+        "any Gym Badges.\r",
+        "The GTS is off-limits if you don’t\n",
+        "have a Gym Badge. Sorry!\r"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00072",
+      "en_US": [
+        "Past here is the GTS, which stands\n",
+        "for Global Trade Station.\r",
+        "Trading Pokémon means connecting\n",
+        "with friends, both old and new.\r",
+        "That’s awesome!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00073",
+      "en_US": "I’m trading Pokémon with my buddy!"
+    },
+    {
+      "id": "msg_0938_SD25R0104_00074",
+      "en_US": [
+        "I made my Pokémon hold an item\n",
+        "before trading it.\r",
+        "That will make the other Trainer\n",
+        "double happy!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00075",
+      "en_US": [
+        "Jubilife City\n",
+        "City of Joy"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00076",
+      "en_US": [
+        "Jubilife Condominiums\n",
+        "Tenants Wanted!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00077",
+      "en_US": [
+        "The Pokétch Company\n",
+        "Pokémon Watches for the World!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00078",
+      "en_US": [
+        "Trainers’ School\n",
+        "The First Step for Trainers!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00079",
+      "en_US": [
+        "Jubilife TV\n",
+        "The Fun-and-Games TV Station!"
+      ]
+    },
+    {
+      "id": "msg_0938_SD25R0104_00080",
+      "en_US": [
+        "Global Trade Station\n",
+        "Worldwide Pokémon Trading!"
+      ]
+    }
+  ]
+}

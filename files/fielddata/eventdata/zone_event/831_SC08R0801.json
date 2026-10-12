@@ -1,0 +1,76 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC08R0801.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SC08R0801_002 + 1",
+      "type": 0,
+      "x": 6,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SC08R0801_0",
+      "spriteId": "SPRITE_SEAMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC08R0801_000 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_SC08R0801_1",
+      "spriteId": "SPRITE_BOY2",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC08R0801_001 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 8,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_SC08R0801_2",
+      "spriteId": "SPRITE_LEADER8",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_671",
+      "scriptId": "_EV_scr_seq_SC08R0801_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 6,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 6,
+      "z": 9,
+      "header": "MAP_SINNOH_SUNYSHORE_VISTA_LIGHTHOUSE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

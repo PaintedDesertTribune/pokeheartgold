@@ -1,0 +1,97 @@
+{
+  "header": "fielddata/script/scr_seq/event_SL03.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SL03_004 + 1",
+      "type": 1,
+      "x": 309,
+      "z": 242,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SL03_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1149",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 340,
+      "z": 230,
+      "y": 0
+    },
+    {
+      "id": "obj_SL03_1",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_594",
+      "scriptId": "_EV_scr_seq_SL03_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 310,
+      "z": 240,
+      "y": 0
+    },
+    {
+      "id": "obj_SL03_2",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_594",
+      "scriptId": "_EV_scr_seq_SL03_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 311,
+      "z": 240,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 310,
+      "z": 239,
+      "header": "MAP_SINNOH_LAKE_ACUITY",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 311,
+      "z": 239,
+      "header": "MAP_SINNOH_LAKE_ACUITY",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 310,
+      "z": 239,
+      "header": "MAP_SINNOH_ACUITY_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 311,
+      "z": 239,
+      "header": "MAP_SINNOH_ACUITY_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

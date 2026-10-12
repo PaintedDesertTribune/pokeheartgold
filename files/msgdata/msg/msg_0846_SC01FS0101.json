@@ -1,0 +1,22 @@
+{
+  "key": 8211,
+  "messages": [
+    {
+      "id": "msg_0846_SC01FS0101_00000",
+      "en_US": [
+        "If you’re catching a Pokémon,\n",
+        "you have to get its HP down.\r",
+        "If you don’t, Poké Balls won’t be\n",
+        "very effective."
+      ]
+    },
+    {
+      "id": "msg_0846_SC01FS0101_00001",
+      "en_US": [
+        "I need Potions most of all!\r",
+        "If my Pokémon faints, my eyes grow\n",
+        "dim and I can’t see!"
+      ]
+    }
+  ]
+}

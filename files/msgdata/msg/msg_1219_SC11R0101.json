@@ -1,0 +1,214 @@
+{
+  "key": 8378,
+  "messages": [
+    {
+      "id": "msg_1219_SC11R0101_00000",
+      "en_US": [
+        "Welcome to the Battle Park!\r",
+        "It’s your first time, isn’t it?\n",
+        "Please step this way.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00001",
+      "en_US": [
+        "Since this is your first visit, you\n",
+        "need to be given a Point Card.\r",
+        "Point Cards are used only in\n",
+        "the Battle Park.\r",
+        "Here you go.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00002",
+      "en_US": [
+        "If you need information on the Point\n",
+        "Card, please ask the receptionist\\fnext to me.\r",
+        "I’m the one to ask if you need any\n",
+        "information on the facilities here\\fin the Battle Park.\r",
+        "For information on the battle rules\n",
+        "used at the Battle Park, please ask\\fthe receptionist across from me.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00003",
+      "en_US": [
+        "Welcome to the Battle Park!\r",
+        "If you need any information on the\n",
+        "facilities, I’m the one to ask.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00004",
+      "en_US": "What would you like me to explain?"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00005",
+      "en_US": [
+        "The Battle Park is a place where\n",
+        "Trainers may enjoy battles.\r",
+        "There are two facilities in\n",
+        "the Battle Park: the Exchange Service\\fCorner and the Battle Tower.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00006",
+      "en_US": [
+        "The Exchange Service Corner is the\n",
+        "building that looks like a castle.\r",
+        "There, you may exchange the BP\n",
+        "(Battle Points) you’ve earned for\\fitems.\r",
+        "Fabulous prizes are offered, so\n",
+        "please do visit the Exchange Service\\fCorner when you save up BP.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00007",
+      "en_US": [
+        "The Battle Tower is the building\n",
+        "at the back of the Battle Park.\r",
+        "The tower has four sets of Battle\n",
+        "Rooms for different kinds of battles.\r",
+        "The Single Battle Rooms are for\n",
+        "conducting one-on-one battles.\r",
+        "The Double Battle Rooms are for\n",
+        "two-on-two battles.\r",
+        "The Multi Battle Rooms are for\n",
+        "tag team battles with a partner.\r",
+        "The Wi-Fi Battle Rooms are for\n",
+        "battling other Trainers from around\\fthe world.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00008",
+      "en_US": [
+        "Welcome to the Battle Park!\r",
+        "I can explain how the Point Card and\n",
+        "the BP (Battle Points) work.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00009",
+      "en_US": "What would you like me to explain?"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00010",
+      "en_US": [
+        "Every Trainer visiting the Battle Park\n",
+        "is provided with a Point Card that\\fconfirms their challenger status.\r",
+        "The Point Card stores BP (Battle\n",
+        "Points) that you earn from battling\\fin the Battle Tower.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00011",
+      "en_US": [
+        "BP, short for Battle Points, are used\n",
+        "only in the Battle Park.\r",
+        "You will earn BP by hitting certain\n",
+        "performance targets battling at\\fthe Battle Tower.\r",
+        "The BP can be traded for prizes at\n",
+        "the Exchange Service Corner.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00012",
+      "en_US": [
+        "Welcome to the Battle Park!\r",
+        "I can give you a rundown of the\n",
+        "battle rules that are used at\\fthe Battle Tower.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00013",
+      "en_US": "What would you like me to explain?"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00014",
+      "en_US": [
+        "In the Battle Tower, you may enter\n",
+        "Pokémon in battles that are capped\\fat Lv. 50.\r",
+        "Pokémon up to Lv. 50 may be entered\n",
+        "with a few exceptions.\r",
+        "Pokémon above Lv. 50 may also be\n",
+        "entered, but their level will be\\fcut to Lv. 50 in the Battle Tower.\r",
+        "The reduced level will be restored\n",
+        "when you leave the Battle Tower.\r",
+        "Please keep in mind that your\n",
+        "opponents will not use Pokémon below\\fLv. 50.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00015",
+      "en_US": [
+        "Excluding Eggs and certain exotic\n",
+        "Pokémon, virtually every species of\\fPokémon may enter the Battle Tower.\r",
+        "Please be aware that the number of\n",
+        "Pokémon you may enter will depend\\fon the course you challenge.\r",
+        "You are also permitted to take only\n",
+        "one of each kind of Pokémon into\\fthe Battle Tower.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00016",
+      "en_US": [
+        "Your Pokémon may not be holding the\n",
+        "same kind of item in the Battle\\fTower.\r",
+        "Please be sure the Pokémon entering\n",
+        "the Battle Tower are all holding\\fdifferent items.\r"
+      ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00017",
+      "en_US": "Good luck!"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00018",
+      "en_US": "Welcome to the Battle Park!"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00019",
+      "en_US": "EXIT"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00020",
+      "en_US": "BATTLE PARK"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00021",
+      "en_US": "EXCHANGE SERVICE CORNER"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00022",
+      "en_US": "BATTLE TOWER"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00023",
+      "en_US": "POINT CARD"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00024",
+      "en_US": "BP"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00025",
+      "en_US": "LEVEL LIMIT"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00026",
+      "en_US": "SPECIES & NUMBERS"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00027",
+      "en_US": "HOLD ITEMS"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00028",
+      "en_US": [
+        "The Battle Tower’s up ahead.\r",
+        "I wonder what kind of Trainers\n",
+        "are waiting there?"
+      ]
+    }
+  ]
+}

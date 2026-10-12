@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC05GYM0107.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC05GYM0107_0",
+      "spriteId": "SPRITE_PICNICGIRL",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_PICNICKER_CHEYENNE)",
+      "facingDirection": 1,
+      "param0": 4,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 7,
+      "z": 6,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 7,
+      "z": 10,
+      "header": "MAP_SINNOH_HEARTHOME_GYM_SECOND_QUESTION_ROOM",
+      "anchor": 2,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

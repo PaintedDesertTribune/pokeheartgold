@@ -1,0 +1,53 @@
+{
+  "key": 8729,
+  "messages": [
+    {
+      "id": "msg_1229_ST06R0101_00000",
+      "en_US": [
+        "Let me tell you about the volcano\n",
+        "named Stark Mountain.\r",
+        "That volcano dates to when Sinnoh\n",
+        "was made by the melding of time\\fand space.\r",
+        "Fiery lava spilled out and pooled,\n",
+        "and then it turned into a Pokémon.\r",
+        "It’s said the Magma Stone was used\n",
+        "to keep the Pokémon under control.\r",
+        "Over time, the Pokémon turned into\n",
+        "the volcano, according to legend."
+      ]
+    },
+    {
+      "id": "msg_1229_ST06R0101_00001",
+      "en_US": [
+        "You say the Magma Stone was found?\n",
+        "The legend was true, then?\r",
+        "If so, the volcano’s Pokémon may\n",
+        "awaken and cause an eruption!"
+      ]
+    },
+    {
+      "id": "msg_1229_ST06R0101_00002",
+      "en_US": [
+        "HEATRAN...\n",
+        "So there was such a Pokémon?\r",
+        "Did it come to be when Sinnoh was\n",
+        "created?"
+      ]
+    },
+    {
+      "id": "msg_1229_ST06R0101_00003",
+      "en_US": [
+        "Buck: Gotcha, gramps!\n",
+        "I’ll put the Magma Stone back.\r",
+        "That Magma Stone was keeping the\n",
+        "volcano Pokémon under control.\r",
+        "It’s all right, though.\n",
+        "I can go put it back myself.\r"
+      ]
+    },
+    {
+      "id": "msg_1229_ST06R0101_00004",
+      "en_US": ""
+    }
+  ]
+}

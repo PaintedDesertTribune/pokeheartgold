@@ -1,0 +1,50 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC07R0701.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC07R0701_0",
+      "spriteId": "SPRITE_MIDDLEMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0701_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 5,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0701_1",
+      "spriteId": "SPRITE_MIDDLEWOMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0701_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE",
+      "anchor": 9,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

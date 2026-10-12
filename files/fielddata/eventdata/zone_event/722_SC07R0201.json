@@ -1,0 +1,149 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC07R0201.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SC07R0201_005 + 1",
+      "type": 0,
+      "x": 10,
+      "z": 9,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC07R0201_006 + 1",
+      "type": 0,
+      "x": 13,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SC07R0201_0",
+      "spriteId": "SPRITE_SINNOH_WOMAN6",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 16,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0201_1",
+      "spriteId": "SPRITE_SINNOH_MIDDLEMAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 17,
+      "z": 11,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0201_2",
+      "spriteId": "SPRITE_GORGGEOUSW",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_002 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 4,
+      "z": 4,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0201_3",
+      "spriteId": "SPRITE_LADY",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_007 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 6,
+      "z": 12,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0201_4",
+      "spriteId": "SPRITE_SHOPW1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_003 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 5,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_SC07R0201_5",
+      "spriteId": "SPRITE_SHOPM1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC07R0201_004 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 8,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 10,
+      "z": 12,
+      "header": "MAP_SINNOH_VEILSTONE",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "z": 8,
+      "header": "MAP_SINNOH_VEILSTONE_DEPARTMENT_STORE_2F",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 15,
+      "z": 2,
+      "header": "MAP_SINNOH_VEILSTONE_DEPARTMENT_STORE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

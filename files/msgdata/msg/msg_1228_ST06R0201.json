@@ -1,0 +1,23 @@
+{
+  "key": 8730,
+  "messages": [
+    {
+      "id": "msg_1228_ST06R0201_00000",
+      "en_US": [
+        "There’s a move that doubles in power\n",
+        "if the Pokémon using it is poisoned,\\fparalyzed, or burned.\r",
+        "I’ve got the Technical Machine for\n",
+        "it right here. You want it?\r"
+      ]
+    },
+    {
+      "id": "msg_1228_ST06R0201_00001",
+      "en_US": [
+        "Facade’s a good move for your\n",
+        "Pokémon to have.\r",
+        "It makes it tough for the opponent\n",
+        "to use status-affecting moves."
+      ]
+    }
+  ]
+}

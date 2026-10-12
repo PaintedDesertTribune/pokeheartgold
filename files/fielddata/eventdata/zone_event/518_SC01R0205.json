@@ -1,0 +1,156 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC01R0205.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_001 + 1",
+      "type": 0,
+      "x": 5,
+      "z": 4,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_002 + 1",
+      "type": 0,
+      "x": 9,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_003 + 1",
+      "type": 0,
+      "x": 11,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_004 + 1",
+      "type": 0,
+      "x": 13,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_005 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_006 + 1",
+      "type": 0,
+      "x": 17,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_007 + 1",
+      "type": 0,
+      "x": 10,
+      "z": 8,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_008 + 1",
+      "type": 0,
+      "x": 12,
+      "z": 8,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_009 + 1",
+      "type": 0,
+      "x": 14,
+      "z": 8,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_010 + 1",
+      "type": 0,
+      "x": 16,
+      "z": 8,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0205_011 + 1",
+      "type": 0,
+      "x": 18,
+      "z": 8,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SC01R0205_0",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0205_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SC01R0205_1",
+      "spriteId": "SPRITE_MAN1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0205_012 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 15,
+      "z": 10,
+      "y": 0
+    },
+    {
+      "id": "obj_SC01R0205_2",
+      "spriteId": "SPRITE_BABYGIRL1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0205_013 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 10,
+      "yRange": 0,
+      "x": 18,
+      "z": 10,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 3,
+      "z": 13,
+      "header": "MAP_SINNOH_JUBLIFE_TV_2F",
+      "anchor": 2,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -1,0 +1,263 @@
+{
+  "header": "fielddata/script/scr_seq/event_SL02.h",
+  "bgs": [
+    {
+      "scriptId": "8314",
+      "type": 2,
+      "x": 720,
+      "z": 794,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8315",
+      "type": 2,
+      "x": 730,
+      "z": 773,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8316",
+      "type": 2,
+      "x": 692,
+      "z": 801,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8317",
+      "type": 2,
+      "x": 716,
+      "z": 745,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SL02_007 + 1",
+      "type": 1,
+      "x": 704,
+      "z": 792,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SL02_0",
+      "spriteId": "SPRITE_CHAMPION",
+      "movement": 16,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_459",
+      "scriptId": "_EV_scr_seq_SL02_003 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 723,
+      "z": 760,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_1",
+      "spriteId": "SPRITE_ASSISTANTM",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_460",
+      "scriptId": "_EV_scr_seq_SL02_006 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 718,
+      "z": 760,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_2",
+      "spriteId": "SPRITE_ASSISTANTM",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_460",
+      "scriptId": "_EV_scr_seq_SL02_004 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 718,
+      "z": 761,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1069",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 712,
+      "z": 783,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_4",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1070",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 719,
+      "z": 769,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_5",
+      "spriteId": "SPRITE_SINNOH_GINGAM",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_569",
+      "scriptId": "_EV_scr_seq_SL02_002 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 719,
+      "z": 790,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_31",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_373",
+      "scriptId": "0",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 694,
+      "z": 804,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_8",
+      "spriteId": "SPRITE_WOMAN2",
+      "movement": 7,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_635",
+      "scriptId": "_EV_scr_seq_SL02_005 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 715,
+      "z": 782,
+      "y": 0
+    },
+    {
+      "id": "obj_SL02_9",
+      "spriteId": "SPRITE_BIGMAN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_667",
+      "scriptId": "_EV_scr_seq_SL02_008 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 724,
+      "z": 788,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 706,
+      "z": 790,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT_SEVEN_STARS_RESTAURANT",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 715,
+      "z": 781,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT_GRAND_LAKE_EAST_ROOM",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 690,
+      "z": 791,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT_GRAND_LAKE_WEST_ROOM",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 717,
+      "z": 760,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 717,
+      "z": 761,
+      "header": "MAP_SINNOH_VALOR_LAKEFRONT",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 717,
+      "z": 760,
+      "header": "MAP_SINNOH_LAKE_VALOR",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 717,
+      "z": 761,
+      "header": "MAP_SINNOH_LAKE_VALOR",
+      "anchor": 4,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_SL02_009 + 1",
+      "x": 724,
+      "z": 789,
+      "w": 1,
+      "h": 3,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_4112"
+    }
+  ]
+}

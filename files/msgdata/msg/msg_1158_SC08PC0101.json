@@ -1,0 +1,42 @@
+{
+  "key": 8349,
+  "messages": [
+    {
+      "id": "msg_1158_SC08PC0101_00000",
+      "en_US": [
+        "I once dreamed of becoming a Gym\n",
+        "Leader...\r",
+        "Though that dream never came true,\n",
+        "I got to live with Pokémon all\\fthis time.\r",
+        "It’s been a blessed life."
+      ]
+    },
+    {
+      "id": "msg_1158_SC08PC0101_00001",
+      "en_US": [
+        "Wow, you’re really cool!\n",
+        "You have seven Gym Badges!"
+      ]
+    },
+    {
+      "id": "msg_1158_SC08PC0101_00002",
+      "en_US": [
+        "Wow! You’re awesomely cool!\n",
+        "You have all eight Gym Badges!\r",
+        "Now, you have to challenge the\n",
+        "Pokémon League!"
+      ]
+    },
+    {
+      "id": "msg_1158_SC08PC0101_00003",
+      "en_US": [
+        "Sunyshore is situated on a narrow\n",
+        "spit of land bordered by the sea and\\fmountains.\r",
+        "To make up for the lack of space,\n",
+        "the city built solar panels to use for\\fpower as well as for roads.\r",
+        "It’s a place where nature, Pokémon,\n",
+        "and people are as one!"
+      ]
+    }
+  ]
+}

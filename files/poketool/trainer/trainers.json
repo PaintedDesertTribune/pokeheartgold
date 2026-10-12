@@ -54057,6 +54057,3479 @@
           "message": "If you don’t give up, you can reach\\nyour goal.\\rThat perseverance is what’s important\\nto Trainers. That’s in my book, too."
         }
       ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Ruben",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_POLIWHIRL",
+          "moves": [
+            "MOVE_HYDRO_PUMP",
+            "MOVE_WAKE_UP_SLAP",
+            "MOVE_HYPNOSIS"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_GYARADOS",
+          "moves": [
+            "MOVE_HYPER_BEAM",
+            "MOVE_HYDRO_PUMP",
+            "MOVE_DRAGON_DANCE",
+            "MOVE_ICE_FANG"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "There’s something about you...\\nYou’re not just anybody.\\rI challenge you!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’re at a different level of\\nexpertise for sure!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You’ve won countless times...\\nThat has made you very powerful.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "There’s something about you...\\nYou still remain extraordinary.\\rI challenge you again!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_M",
+      "name": "{TRNAME}Maxwell",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_MISDREAVUS",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_HAUNTER",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "For some reason I was drawn here,\\nand it is here that I met you...\\rI want to know what all this means!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I see...\\rSo that’s what it means...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I feel... I feel some sort of a mystic\\npresence emanating from here...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Why have you come back to this spot?\\nI want to know what all this means!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BLACK_BELT",
+      "name": "{TRNAME}Carl",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_CROAGUNK",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_MACHAMP",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "A man standing alone, I face the sea\\nand train.\\rThese fists were hewn in that way!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "My training and my fists weren’t\\nenough to defeat you!"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Argh! Instead of training myself,\\nI should have trained my Pokémon!\\rAll I’ve been doing for the last year\\nis staring out over the sea!\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Ah, it’s been a long time!\\rI have been toughening my fists\\nagainst the sea, just as before!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_VETERAN",
+      "name": "{TRNAME}Armando",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_STARAVIA",
+          "moves": [
+            "MOVE_BRAVE_BIRD",
+            "MOVE_TAKE_DOWN",
+            "MOVE_QUICK_ATTACK",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_PELIPPER",
+          "moves": [
+            "MOVE_STOCKPILE",
+            "MOVE_SWALLOW",
+            "MOVE_SPIT_UP",
+            "MOVE_WATER_PULSE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_GOLBAT",
+          "moves": [
+            "MOVE_AIR_SLASH",
+            "MOVE_POISON_FANG",
+            "MOVE_BITE",
+            "MOVE_CONFUSE_RAY"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I’ve seen countless Trainers and\\neven more Pokémon!\\rSo, what kind of a Trainer are you?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I see...\\nSimply outstanding."
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I’ve seen countless Trainers and\\neven more Pokémon.\\rYou’re a strong Trainer.\\nMoreover, your heart is strong.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I am indeed a Veteran, but I don’t\\nuse that as an excuse to slack off.\\rI take pride in challenging those\\nwho have bested me before!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_F",
+      "name": "{TRNAME}Brittney",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_MEDICHAM",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_ALAKAZAM",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "There is nothing here... And yet\\nthere is a power lurking...\\rWere you drawn by it, as well?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "The power that slumbers within you...\\nIt is rather marvelous indeed...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "A place where nothing else exists...\\rA place such as that is better suited\\nto awaken the power within.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Do you see now?\\nYou’ve come back again.\\rThere must be something that draws\\nyou to this place...\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Jamie",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_METAGROSS",
+          "moves": [
+            "MOVE_METEOR_MASH",
+            "MOVE_HAMMER_ARM",
+            "MOVE_PSYCHIC",
+            "MOVE_MAGNET_RISE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I constantly analyze Pokémon and\\nvarious battles on my laptop.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "...Things don’t always work out\\naccording to my calculations...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I had a lot of fun battling with\\nyou, though.\\rI wonder if I can analyze the\\nbattle data properly?\\rI could use a rematch to get\\nsome additional data.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I analyzed our last battle on my\\nlaptop.\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_RUIN_MANIAC",
+      "name": "{TRNAME}Larry",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_STEELIX",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I don’t care who you are--no one\\ninterferes with my treasure hunting!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "My treasure!\\nMy Pokémon!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I heard there’s an intriguing stone\\nmonument around, so I came running.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I’m still here...and still searching\\nfor treasures.\\rHowever, a battle with you\\nis a treasure I can’t pass up!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Hayden",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_SWABLU",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_ALTARIA",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My dragon Pokémon chose to become\\npowerful here. They sure like it!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Your battle style...\\nSo savage...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "It’s been several years since I left\\nthe Dragon’s Den.\\rI’ve got to say, your Pokémon are\\nin the top class for toughness."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "My dragon Pokémon chose to remain\\nhere to become powerful.\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_FLOATZEL",
+          "moves": [
+            "MOVE_AQUA_JET",
+            "MOVE_CRUNCH",
+            "MOVE_ICE_FANG",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_ROSERADE",
+          "moves": [
+            "MOVE_POISON_JAB",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_SHADOW_BALL",
+            "MOVE_GRASS_WHISTLE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_BODY_SLAM",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_REST"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 64,
+          "species": "SPECIES_INFERNAPE",
+          "moves": [
+            "MOVE_FLAMETHROWER",
+            "MOVE_FOCUS_BLAST",
+            "MOVE_SHADOW_CLAW",
+            "MOVE_AERIAL_ACE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "Oh, yeah? When the going gets tough,\\nmy Pokémon get tougher!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou’re telling me I lost again?!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 68,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_FLOATZEL",
+          "moves": [
+            "MOVE_AQUA_JET",
+            "MOVE_CRUNCH",
+            "MOVE_ICE_FANG",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_ROSERADE",
+          "moves": [
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_SHADOW_BALL",
+            "MOVE_GRASS_WHISTLE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_GIGA_IMPACT",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 74,
+          "species": "SPECIES_INFERNAPE",
+          "moves": [
+            "MOVE_FLARE_BLITZ",
+            "MOVE_FOCUS_BLAST",
+            "MOVE_SHADOW_CLAW",
+            "MOVE_AERIAL_ACE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "I’m not giving up till the end!\\nI can’t give up!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou wait! I’ll get tougher!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_ROSERADE",
+          "moves": [
+            "MOVE_POISON_JAB",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_SHADOW_BALL",
+            "MOVE_GRASS_WHISTLE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_FIRE_BLAST",
+            "MOVE_SUNNY_DAY",
+            "MOVE_BOUNCE",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_BODY_SLAM",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_REST"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 64,
+          "species": "SPECIES_EMPOLEON",
+          "moves": [
+            "MOVE_HYDRO_PUMP",
+            "MOVE_METAL_CLAW",
+            "MOVE_DRILL_PECK",
+            "MOVE_SHADOW_CLAW"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "Oh, yeah? When the going gets tough,\\nmy Pokémon get tougher!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou’re telling me I lost again?!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 68,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_ROSERADE",
+          "moves": [
+            "MOVE_SLUDGE_BOMB",
+            "MOVE_GIGA_DRAIN",
+            "MOVE_SHADOW_BALL",
+            "MOVE_GRASS_WHISTLE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_FIRE_BLAST",
+            "MOVE_SUNNY_DAY",
+            "MOVE_MEGAHORN",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_GIGA_IMPACT",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 74,
+          "species": "SPECIES_EMPOLEON",
+          "moves": [
+            "MOVE_HYDRO_PUMP",
+            "MOVE_METAL_CLAW",
+            "MOVE_DRILL_PECK",
+            "MOVE_ICE_BEAM"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "I’m not giving up till the end!\\nI can’t give up!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou wait! I’ll get tougher!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_FLOATZEL",
+          "moves": [
+            "MOVE_AQUA_JET",
+            "MOVE_CRUNCH",
+            "MOVE_ICE_FANG",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_FIRE_BLAST",
+            "MOVE_SUNNY_DAY",
+            "MOVE_BOUNCE",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_BODY_SLAM",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_REST"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 64,
+          "species": "SPECIES_TORTERRA",
+          "moves": [
+            "MOVE_LEAF_STORM",
+            "MOVE_EARTHQUAKE",
+            "MOVE_CRUNCH",
+            "MOVE_LEECH_SEED"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "Oh, yeah? When the going gets tough,\\nmy Pokémon get tougher!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou’re telling me I lost again?!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_SINNOH_PKMN_TRAINER_BARRY",
+      "name": "{TRNAME}Cedric",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 68,
+          "species": "SPECIES_STARAPTOR",
+          "moves": [
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_AERIAL_ACE",
+            "MOVE_STEEL_WING",
+            "MOVE_U_TURN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_FLOATZEL",
+          "moves": [
+            "MOVE_AQUA_JET",
+            "MOVE_CRUNCH",
+            "MOVE_ICE_FANG",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_HERACROSS",
+          "moves": [
+            "MOVE_MEGAHORN",
+            "MOVE_CLOSE_COMBAT",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 69,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_FIRE_BLAST",
+            "MOVE_SUNNY_DAY",
+            "MOVE_MEGAHORN",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 70,
+          "species": "SPECIES_SNORLAX",
+          "moves": [
+            "MOVE_GIGA_IMPACT",
+            "MOVE_CRUNCH",
+            "MOVE_EARTHQUAKE",
+            "MOVE_BRICK_BREAK"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 250,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 74,
+          "species": "SPECIES_TORTERRA",
+          "moves": [
+            "MOVE_LEAF_STORM",
+            "MOVE_EARTHQUAKE",
+            "MOVE_CRUNCH",
+            "MOVE_STONE_EDGE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_LAST_POKE_HALF",
+          "message": "I’m not giving up till the end!\\nI can’t give up!\\n"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What just went down?!\\nYou wait! I’ll get tougher!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Rodolfo",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_LICKITUNG",
+          "moves": [
+            "MOVE_POWER_WHIP",
+            "MOVE_SLAM",
+            "MOVE_DISABLE",
+            "MOVE_KNOCK_OFF"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_MILTANK",
+          "moves": [
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_BODY_SLAM",
+            "MOVE_CAPTIVATE",
+            "MOVE_MILK_DRINK"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "There is something missing in the\\nway I battle...\\rI’ve come here to find it.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I see it now...\\nI know what I lack.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "It’s been a privilege to have battled\\nwith you.\\rI learned an invaluable lesson from\\nyou today.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Have you discovered what’s missing in\\nyour battles? I have.\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_F",
+      "name": "{TRNAME}Ashlee",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 50,
+          "species": "SPECIES_ZIGZAGOON",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_SKARMORY",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "In the embrace of Mother Nature,\\npeople and Pokémon grow strong!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "My, you are tough.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You can grow strong anywhere.\\nIt doesn’t matter where you are.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "By battling tough opponents, both\\nTrainers and Pokémon grow tough!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BIRD_KEEPER",
+      "name": "{TRNAME}Audrey",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_FARFETCHD",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_SWELLOW",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I let my bird Pokémon carry me to\\nwherever. And so, here I am!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Sheesh... I arrive in a new place, and\\nit turns out to be the Battle Zone...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I was born in the Hoenn region.\\nI’ve only just recently flown here.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I let my bird Pokémon do as they\\nwish. And so, we train here daily!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_F",
+      "name": "{TRNAME}Daisy",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_SLOWPOKE",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_SLOWBRO",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Right after this, you will send out\\nPokémon to battle me!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Right after this, I have to pay\\nout your prize money...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "What will happen to you after this?\\nWhy don’t you do just as you like?\\fIt would be more fun that way.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Right after this, you will hurl a Poké\\nBall in an astonishingly cool way!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Geoffrey",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_DRATINI",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DRAGONAIR",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "The potential of dragon Pokémon puts\\nthem at the top of my list!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Potential doesn’t mean I can win...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "A Dragon Tamer Champion...\\rI’ll need to train so much more to\\neven come close to coming close...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I’ve cranked up my dragon Pokémon’s\\npotential!\\rI’ve been looking forward to seeing\\nyou again!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Deanna",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_FLAAFFY",
+          "moves": [
+            "MOVE_DISCHARGE",
+            "MOVE_POWER_GEM",
+            "MOVE_SIGNAL_BEAM",
+            "MOVE_LIGHT_SCREEN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_TROPIUS",
+          "moves": [
+            "MOVE_SOLAR_BEAM",
+            "MOVE_AIR_SLASH",
+            "MOVE_SYNTHESIS",
+            "MOVE_SUNNY_DAY"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Worthy opponents... The search for\\nthem drives me to travel far.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I’ve certainly found a tough\\nadversary in you...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "How much you believe in your\\nPokémon...\\rThat’s a critical factor in how a\\nbattle will turn out.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "We’ve faced many challengers since\\nwe met, but they were all weak...\\rI relish the tough resistance that\\nonly you can provide!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_M",
+      "name": "{TRNAME}Dwayne",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DONPHAN",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "We go on patrol to make sure there’s\\nnothing strange going on.\\rAnd occasionally, we battle!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Thanks much!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You know that Pokémon ability Pickup?\\rI think that’s a good way of keeping\\nthe environment clean of litter."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Patrols day in and day out!\\nAnd the occasional battle!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Quinn",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_PINSIR",
+          "moves": [
+            "MOVE_SUPERPOWER",
+            "MOVE_X_SCISSOR",
+            "MOVE_SWORDS_DANCE",
+            "MOVE_ROCK_TOMB"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_MIGHTYENA",
+          "moves": [
+            "MOVE_CRUNCH",
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_SCARY_FACE",
+            "MOVE_EMBARGO"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My team’s been trained through\\nand through!\\rYou’ll shake when you see how\\ntough they are!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I’m sh-sh-shaking all over...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I fed my gang Protein, Carbos...\\nYou name it, I pumped ’em full of it.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Hey! You’re that Trainer who left\\nme all shook up! Uh-huh!\\rThis time, it’s my turn to leave you\\nshaking all over!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_F",
+      "name": "{TRNAME}Lydia",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_BIBAREL",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_AZUMARILL",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_SEALEO",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I want to be with my water Pokémon.\\nThat’s why I swim.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Glub glub...\\nI’m sinking...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Everyone I know says they have to\\ntrain harder and more often.\\rI thought so too, but I find it hard\\nto get that serious about it.\\rBeing with my Pokémon puts me in\\na mellow mood, I guess.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I want to be with my water Pokémon.\\nThat’s why I want to be stronger!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Graham",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_SKARMORY",
+          "moves": [
+            "MOVE_AIR_SLASH",
+            "MOVE_SLASH",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_STEEL_WING"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I’ve leveled my precious partner this\\nfar. I’ll let you see it!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "It needs to be leveled more?!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "My Pokémon...\\rIt’s actually the very first friend\\nthat I’ve ever had.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "...When I close my eyes, I’m taken\\nback to that time we lost to you.\\rMy partner’s leveled since then.\\nI’ll prove it to you!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BIRD_KEEPER",
+      "name": "{TRNAME}Geneva",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_GOLBAT",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_XATU",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My Pokémon grew up in the arms of\\nMother Nature. They’re tough!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "How could you be tougher than\\nMother Nature?\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Most of the time, my Pokémon return\\nto their Poké Balls right away.\\rBut sometimes, they just fall asleep\\non top of my head. That gets messy."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "The desire to win... That should be\\nevident in every Trainer!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Stanley",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_SEADRA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_GYARADOS",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "How do you do?\\nI’m a Dragon Tamer.\\rWhat say we compare our Pokémon\\nby means of a battle?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Oops!\\nHow very silly of me!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Well, there seems to be an image\\nassociated with Dragon Tamers.\\rBut personally, I’m really laid back\\nand easygoing, you know?\\rI figure there’s a whole lot of other\\nthings I need to worry about first.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Heya, how do you do again?\\rWhat say we let our Pokémon duke it\\nout in another battle?\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_M",
+      "name": "{TRNAME}Wade",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_CARVANHA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_CARVANHA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_SHARPEDO",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Me and my Pokémon are pumped up\\nand ready to go all out!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Our muscles are deflating...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Overwhelm with our dazzling physiques!\\nThat was our game plan...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Me and my Pokémon are pumped up!\\nSee, our muscles are twitching!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Saul",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_TAUROS",
+          "moves": [
+            "MOVE_THRASH",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_SWAGGER",
+            "MOVE_PAYBACK"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I’ve got the urge to battle with you.\\nHope you’re willing to oblige!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I shouldn’t have paid attention\\nto my urge...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "So long as my partner’s alongside me,\\nI’m willing to take on the world!\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "The urge to battle you again has\\nstruck me. Want to humor me?\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_F",
+      "name": "{TRNAME}Felicia",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_LICKITUNG",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_VIGOROTH",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "We’ve grown strong together in\\nnature and in the concrete jungle.\\rWe make everywhere we go our\\nplayground!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’re fantastically tough,\\naren’t you?!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Look around you at this wildly\\ncontorted terrain.\\rIt’s no wonder that Pokémon would\\ngrow tough in a place like this.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I think I’m pretty tough, but so\\nare you and your Pokémon.\\rLet’s have a battle to see who\\nis the toughest!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BLACK_BELT",
+      "name": "{TRNAME}Griffin",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_CACTURNE",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_MACHAMP",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I have meditated under a waterfall\\nto temper my spirit.\\rAllow me to demonstrate its strength!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Ha-choo! Sniffle...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "All that time under the waterfall...\\nSeems I’ve caught a cold.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Since the day I lost to you, I’ve\\nmeditated under a waterfall!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Mikayla",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_MEOWTH",
+          "moves": [
+            "MOVE_NIGHT_SLASH",
+            "MOVE_BITE",
+            "MOVE_TAUNT",
+            "MOVE_FAKE_OUT"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_PERSIAN",
+          "moves": [
+            "MOVE_NIGHT_SLASH",
+            "MOVE_POWER_GEM",
+            "MOVE_FAINT_ATTACK",
+            "MOVE_FAKE_OUT"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_HYPNO",
+          "moves": [
+            "MOVE_PSYCHIC",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_HYPNOSIS",
+            "MOVE_DISABLE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "The world is huge, and there are\\nso many different Pokémon!\\rWhat kinds of Pokémon are with you?\\nPlease, I want to have a look!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Wow, there are Pokémon that\\nwonderful!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "There is always something to like\\nabout any Pokémon.\\rIt’s so hard to decide which ones\\nI should raise.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "If I’m having trouble deciding,\\nI go with my favorites!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Darien",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 60,
+          "species": "SPECIES_GYARADOS",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "What my Pokémon and I most want...\\nVictory!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Arrrgh! My GYARADOS...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I don’t ever want to put my Pokémon\\nthrough that again...\\rIt got humiliated because I wasn’t\\ngood enough..."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "You’ve beaten us once before, but we\\nwon’t make the same mistake!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Keenan",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_PRIMEAPE",
+          "moves": [
+            "MOVE_CROSS_CHOP",
+            "MOVE_PUNISHMENT",
+            "MOVE_U_TURN",
+            "MOVE_SCREECH"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_TORKOAL",
+          "moves": [
+            "MOVE_HEAT_WAVE",
+            "MOVE_SMOKE_SCREEN",
+            "MOVE_IRON_DEFENSE",
+            "MOVE_AMNESIA"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "What it means to win battles...\\nThat is what I seek.\\fTeach me if you will!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I grow less certain still...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Perhaps there is no meaning to\\nvictory, but still I will battle!\\rThat is what makes me a Trainer!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Kassandra",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_STANTLER",
+          "moves": [
+            "MOVE_ME_FIRST",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_STOMP",
+            "MOVE_CONFUSE_RAY"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_CARNIVINE",
+          "moves": [
+            "MOVE_POWER_WHIP",
+            "MOVE_WRING_OUT",
+            "MOVE_CRUNCH",
+            "MOVE_BIND"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "You’ve come all this way for Pokémon?\\nYou must be dedicated.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Your dedication won out.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "The Pokémon here must battle each\\nother all the time.\\rThat must be why they are so strong\\nin this area.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Skylar",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_LOUDRED",
+          "moves": [
+            "MOVE_HYPER_VOICE",
+            "MOVE_BITE",
+            "MOVE_SUPERSONIC",
+            "MOVE_SCREECH"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_RAMPARDOS",
+          "moves": [
+            "MOVE_HEAD_SMASH",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_SCREECH"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I was born in Floaroma Town.\\nI’m sure thrilled to be here.\\rIt took a long time to get here.\\nWe’re not going to lose again!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "We went down...\\nWe couldn’t stick it out...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You can level all you want, but that\\nwon’t guarantee you any wins.\\rBut we keep trying to get better.\\nThat’s what makes us Trainers.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Natasha",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_DUNSPARCE",
+          "moves": [
+            "MOVE_ENDEAVOR",
+            "MOVE_ANCIENT_POWER",
+            "MOVE_SCREECH",
+            "MOVE_YAWN"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_SCYTHER",
+          "moves": [
+            "MOVE_X_SCISSOR",
+            "MOVE_AIR_SLASH",
+            "MOVE_NIGHT_SLASH",
+            "MOVE_DOUBLE_HIT"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_MAROWAK",
+          "moves": [
+            "MOVE_EARTHQUAKE",
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_ROCK_SLIDE",
+            "MOVE_LEER"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I came here after winning my way\\nthrough the Battle Tower!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "But...\\nI had a win streak going...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Train more at the Battle Tower...\\nThat’s what I’ll do.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_F",
+      "name": "{TRNAME}Chelsey",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_XATU",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_MISMAGIUS",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I’ll use my mystifying psychic power\\nto pulverize you!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "That’s what I get for making idle\\nclaims...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Psychic power is a mystery that\\ndefies explanation.\\rBut if everything could be explained,\\nit would be a boring world."
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_M",
+      "name": "{TRNAME}Sterling",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_BALTOY",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_GRUMPIG",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I had a revelation this morning.\\rI knew that I would have a wonderful\\nencounter here today.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "There’s nothing wonderful about this!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Is my sense of premonition nothing\\nto write home about?\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BIRD_KEEPER",
+      "name": "{TRNAME}Krystal",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DODRIO",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_FEAROW",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_HONCHKROW",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "With one mighty flap, my birds blow\\naway the embers of aggression!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "We failed to get off the ground...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "The HM Fly isn’t useful inside caves.\\nIt’s such a shame.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BLACK_BELT",
+      "name": "{TRNAME}Ray",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_TYROGUE",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_MAROWAK",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_BRELOOM",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My Pokémon can destroy anything.\\nAnd you think you can win?!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "We weren’t up to the task!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Even though my team could break\\nbricks and shatter boulders, they\\ffailed to dent your spirits!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Stefan",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_LARVITAR",
+          "moves": [
+            "MOVE_HYPER_BEAM",
+            "MOVE_STONE_EDGE",
+            "MOVE_EARTHQUAKE",
+            "MOVE_CRUNCH"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_MAGCARGO",
+          "moves": [
+            "MOVE_EARTH_POWER",
+            "MOVE_FLAMETHROWER",
+            "MOVE_AMNESIA",
+            "MOVE_RECOVER"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Being with Pokémon makes me happy.\\rAnd when we win, I feel happier\\nstill!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "We’re still happy even when we lose!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Raising Pokémon to the extremes...\\nHaving fun with Pokémon...\\rPeople should do whatever makes them\\nhappy. That’s what I think!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Jasmin",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_DRAPION",
+          "moves": [
+            "MOVE_CROSS_POISON",
+            "MOVE_CRUNCH",
+            "MOVE_X_SCISSOR",
+            "MOVE_AERIAL_ACE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My Pokémon and I are pretty nice,\\nbut not when it comes to a battle!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "I couldn’t unleash the real me...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "When you’re raising Pokémon, you need\\nto be both firm and gentle.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Drake",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_VIBRAVA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_SEADRA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_DRAGONAIR",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Dragons and a fiery mountain...\\nIt’s a totally classic setup!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Losing isn’t a happy occasion...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "My Pokémon seem to like it here\\na lot.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BLACK_BELT",
+      "name": "{TRNAME}Jarrett",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_MACHAMP",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Hear the howl of my iron fists!\\nHowdy! I’m crazy for karate!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Losing made it clear to me.\\nYou’re crazy about Pokémon!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I love seeing people who love Pokémon\\nmore than anything!\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Abel",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_AERODACTYL",
+          "moves": [
+            "MOVE_STONE_EDGE",
+            "MOVE_IRON_HEAD",
+            "MOVE_AERIAL_ACE",
+            "MOVE_CRUNCH"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "The Trainers and Pokémon that gather\\nhere aren’t pushovers.\\fThey all have tricks up their sleeves!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’re not a Trainer that can be\\ntaken lightly!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "The Pokémon you’ll meet here won’t\\nmake it easy for you to move onward.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Monique",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_KANGASKHAN",
+          "moves": [
+            "MOVE_DIZZY_PUNCH",
+            "MOVE_CRUNCH",
+            "MOVE_ENDURE",
+            "MOVE_REVERSAL"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_URSARING",
+          "moves": [
+            "MOVE_SLASH",
+            "MOVE_BRICK_BREAK",
+            "MOVE_AERIAL_ACE",
+            "MOVE_SCARY_FACE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "We’re all good to go!\\nWe just have to battle now!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Aww...\\nI’m out of useful items!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "We came completely unprepared for\\nthis little adventure...\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_VETERAN",
+      "name": "{TRNAME}Harlan",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_LOUDRED",
+          "moves": [
+            "MOVE_HYPER_VOICE",
+            "MOVE_BITE",
+            "MOVE_SCREECH",
+            "MOVE_UPROAR"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_DONPHAN",
+          "moves": [
+            "MOVE_EARTHQUAKE",
+            "MOVE_SLAM",
+            "MOVE_SCARY_FACE",
+            "MOVE_ROCK_TOMB"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 100,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_TAUROS",
+          "moves": [
+            "MOVE_GIGA_IMPACT",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_PURSUIT",
+            "MOVE_ROCK_SLIDE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "What do you expect to achieve here?\\nI’ll be the one to make that call!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’ve earned the right to be here.\\nBoth you and your Pokémon.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You may find it odd, but the stink\\nof sulfur from the volcanic gas\\fis what draws me here.\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Kenny",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_BAGON",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 59,
+          "species": "SPECIES_SHELGON",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Are you seeking the mythical\\nPokémon, too? Let’s battle, then!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "There’s nothing left...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "The mythical Pokémon that sleeps\\ndeep in a volcano...\\rCould it be a dragon Pokémon?\\n"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Jose",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_GOLDUCK",
+          "moves": [
+            "MOVE_HYDRO_PUMP",
+            "MOVE_BRICK_BREAK",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_SCREECH"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_SANDSLASH",
+          "moves": [
+            "MOVE_EARTHQUAKE",
+            "MOVE_CRUSH_CLAW",
+            "MOVE_POISON_JAB",
+            "MOVE_SAND_TOMB"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Have you any knowledge of levels\\nor the stats of Pokémon? Well, I do!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Hmm. I like how you attack.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Pokémon and numbers...\\nWho cares about that stuff?\\rWinning is what’s important.\\nNumbers aren’t everything.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Pokémon battles aren’t decided by\\nnumbers.\\rIt’s the bond you share with your\\nPokémon that decides outcomes!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Ariana",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_AMBIPOM",
+          "moves": [
+            "MOVE_DOUBLE_HIT",
+            "MOVE_ASTONISH",
+            "MOVE_AGILITY",
+            "MOVE_BATON_PASS"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_RAPIDASH",
+          "moves": [
+            "MOVE_BOUNCE",
+            "MOVE_FIRE_BLAST",
+            "MOVE_STOMP",
+            "MOVE_GROWL"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_CHANSEY",
+          "moves": [
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_MINIMIZE",
+            "MOVE_DEFENSE_CURL",
+            "MOVE_LIGHT_SCREEN"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Please don’t hold anything back.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Hmm...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I feel invigorated from that battle,\\neven though we lost.\\rAfter all, we gave it everything we\\nhad."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Hello again! Please don’t hold\\nanything back--just like before.\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_M",
+      "name": "{TRNAME}Kyler",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_EXEGGCUTE",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_URSARING",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "People! Nature! Pokémon!\\nHarmony is essential!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’re A-OK!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Protecting Pokémon and nature.\\nThink of what that means.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Do you remember my slogan?\\nPeople! Nature! Pokémon!\\rThat’s right, harmony is essential!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_F",
+      "name": "{TRNAME}Krista",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_TRAPINCH",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 56,
+          "species": "SPECIES_VIBRAVA",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Are you getting worn out from all\\nthe running you’ve done?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You’re not tired at all?!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "The world is full of Pokémon and all\\nsorts of Trainers.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "What do you think of the Battle\\nZone?\\rYou’ve met so many Pokémon...\\nI’ve got to battle you again!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_DRAGON_TAMER",
+      "name": "{TRNAME}Keegan",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 58,
+          "species": "SPECIES_GYARADOS",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Dragon Pokémon are sacred beings...\\nThat’s what my master taught me.\\rAnd now I’ll prove it to you!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Not good enough!\\nWe’re still not strong enough!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "It’s not good enough for a Pokémon\\nto just be tough.\\rIt’s not good enough for a Trainer\\nto just work hard.\\rBoth have to grow together!"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "This time!\\rI’ll show you how brilliantly I work\\nwith my Pokémon partner!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PSYCHIC_M",
+      "name": "{TRNAME}Corbin",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_SHUPPET",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DUSKULL",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "You’re going to win!\\nThat’s the future I saw!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "What I saw in the future turned out\\nto be true...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I lost, but my vision of the future\\ncame true...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "You’re going to win again!\\nThat’s the future I saw!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Meagan",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DELCATTY",
+          "moves": [
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_COPYCAT",
+            "MOVE_FAINT_ATTACK",
+            "MOVE_CHARM"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_YANMA",
+          "moves": [
+            "MOVE_BUG_BUZZ",
+            "MOVE_AIR_SLASH",
+            "MOVE_U_TURN",
+            "MOVE_QUICK_ATTACK"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "What sort of moves have you taught?\\nThat tells me how good you are!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Yowch!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I heard that somewhere there’s\\nsomeone who teaches Pokémon moves.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Have you taught your team any new\\nmoves since last time?\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_BLACK_BELT",
+      "name": "{TRNAME}Davon",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_MANKEY",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_MAKUHITA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 30,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_HARIYAMA",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "My quest for power brought me here.\\rIt was beneath the desert sand that\\nI toughened my body and soul.\\rAccept my challenge! Uraah!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "My spirit is broken...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I thought I couldn’t win before it\\nbecame a fact...\\rI’ve let down my Pokémon...\\rThey go to battle with faith in\\ntheir Trainer..."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "This time! This time I will win!\\nMy spirit is renewed and strong!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_PKMN_RANGER_M",
+      "name": "{TRNAME}Deshawn",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_SPINDA",
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_KECLEON",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I work to protect beautiful, natural\\nenvironments.\\rMy Pokémon are my constant\\ncompanions while I work.\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Oh, my gosh!\\nMy poor Pokémon!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Everyone can do their part to keep\\nnature clean. It doesn’t take much.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I’m on patrol in pristine nature\\nwith my Pokémon like usual.\\rCome to think of it, you’re always\\nwith Pokémon, too.\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_M",
+      "name": "{TRNAME}Felix",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_DUSCLOPS",
+          "moves": [
+            "MOVE_SHADOW_SNEAK",
+            "MOVE_PAYBACK",
+            "MOVE_CURSE",
+            "MOVE_WILL_O_WISP"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_SALAMENCE",
+          "moves": [
+            "MOVE_DRAGON_CLAW",
+            "MOVE_AERIAL_ACE",
+            "MOVE_ZEN_HEADBUTT",
+            "MOVE_CRUNCH"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Welcome to my Pokémon show!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Did you enjoy the show?\\nSuper fabulous, wasn’t it?\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I’ll be happy to battle you again!\\nLet’s battle again sometime, yeah?"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Welcome to my new Pokémon show!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Dana",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_MIGHTYENA",
+          "moves": [
+            "MOVE_CRUNCH",
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_IRON_TAIL",
+            "MOVE_SCARY_FACE"
+          ],
+          "capsule": 0
+        },
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 55,
+          "species": "SPECIES_KIRLIA",
+          "moves": [
+            "MOVE_PSYCHIC",
+            "MOVE_MAGICAL_LEAF",
+            "MOVE_SHOCK_WAVE",
+            "MOVE_SHADOW_BALL"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "You’re willing to battle?\\nLet me see what you have?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Your love of Pokémon really shows!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I grew up together with my team,\\nright from my childhood.\\rAll our memories, we’ve always shared\\nthem.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Oh, hi, we meet again.\\rMay I see what you’ve done with your\\nPokémon?\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON_MOVES",
+      "class": "TRAINERCLASS_ACE_TRAINER_F",
+      "name": "{TRNAME}Sandra",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 50,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 57,
+          "species": "SPECIES_GRANBULL",
+          "moves": [
+            "MOVE_CRUNCH",
+            "MOVE_PAYBACK",
+            "MOVE_TAKE_DOWN",
+            "MOVE_SCARY_FACE"
+          ],
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "When eyes meet...\\nThat’s when a battle starts!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "You won’t let me win?\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I suddenly remembered what it was \\nlike when I had my first battle.\\rI wonder why that would be?\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "When eyes meet...\\nThat’s when a battle starts!\\fThat’s what makes us Trainers!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_M",
+      "name": "{TRNAME}Glenn",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_SEEL",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_STARMIE",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "A Trainer riding a Pokémon!\\nI like that! We’ve gotta battle!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Awesome!\\nYou’re a real wild child!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Riding the waves on a Pokémon’s\\nback...\\rYeah, that’s something to talk\\nabout, all right.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Yo, Pokémon-riding Trainer!\\nHow about a rematch?\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_F",
+      "name": "{TRNAME}Joanna",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 50,
+          "species": "SPECIES_LUVDISC",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_LAPRAS",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "People keep coming to us for battles.\\nI really don’t know why! Teehee!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "OK, we lost.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I wanted to be alone, but swatting\\naway immature boys on the prowl...\\rWell, my Pokémon grew tough without\\nme really even trying.\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "People still keep coming to us for\\nbattles! Why?! Leave me alone!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_M",
+      "name": "{TRNAME}Kurt",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 53,
+          "species": "SPECIES_CRAWDAUNT",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Check out my physique! The rough\\nseas sculpted this awesome body!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Muscles I have plenty of...\\nBut let’s not talk about power.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "You’ve got your Pokémon using\\na hidden move for you...\\rI find that really moving."
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "The rough seas here almost\\ndrowned...\\rWait, no, shaped my physique!\\nSee how buff it is!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_F",
+      "name": "{TRNAME}Sophia",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 50,
+          "species": "SPECIES_MANTYKE",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 52,
+          "species": "SPECIES_MANTINE",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Are your Pokémon growing up?\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Maybe too grown up!\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "I’ve grown with my Pokémon, too.\\nMy swimsuit’s getting a little tight...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Did your Pokémon grow any more?\\rMy Pokémon?\\nMine are doing awesome!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_M",
+      "name": "{TRNAME}Sam",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_CHINCHOU",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 51,
+          "species": "SPECIES_LANTURN",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "Check out my dynamic form!\\nVictory is assured!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Oh.\\nThat’s how it is.\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "Being a good swimmer doesn’t make\\nme any better as a Trainer...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "Hi! You’re that kid who’s great with\\nPokémon!\\rI’ll battle with an even more dynamic\\nform than before! Watch me now!\\r"
+        }
+      ]
+    },
+    {
+      "type": "TRTYPE_MON",
+      "class": "TRAINERCLASS_SWIMMER_F",
+      "name": "{TRNAME}Mallory",
+      "items": [],
+      "ai_flags": 1,
+      "double": 0,
+      "party": [
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 50,
+          "species": "SPECIES_SEEL",
+          "capsule": 0
+        },
+        {
+          "difficulty": 0,
+          "genderOverride": "TRPOKE_GENDER_OVERRIDE_OFF",
+          "abilityOverride": "TRPOKE_ABILITY_OVERRIDE_OFF",
+          "level": 54,
+          "species": "SPECIES_DEWGONG",
+          "capsule": 0
+        }
+      ],
+      "messages": [
+        {
+          "type": "TRMSG_INTRO",
+          "message": "I’m a mermaid who drifts among\\nthe waves...\\rBut I’m also a playful girl who likes\\nto have fun with Pokémon!\\r"
+        },
+        {
+          "type": "TRMSG_LOSE",
+          "message": "Losing brings tears to my eyes...\\n"
+        },
+        {
+          "type": "TRMSG_AFTER",
+          "message": "A mermaid’s tears are so salty...\\n"
+        },
+        {
+          "type": "TRMSG_PHONE_REMATCH_INTRO",
+          "message": "I remain a mermaid who drifts among\\nthe waves...\\rBut I’m also a playful girl who likes\\nto have fun with Pokémon!\\r"
+        }
+      ]
     }
   ]
 }

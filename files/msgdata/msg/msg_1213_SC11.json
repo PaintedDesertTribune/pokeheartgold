@@ -1,0 +1,253 @@
+{
+  "key": 8375,
+  "messages": [
+    {
+      "id": "msg_1213_SC11_00000",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Oh, hey, {STRVAR_1 3, 1, 0}!\n",
+        "What took you so long?\\fI’m fining you $100 million!\r",
+        "Listen up. I’m going to become\n",
+        "the greatest Trainer ever.\r",
+        "That’s why I’m here--to toughen\n",
+        "up myself and my Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00001",
+      "en_US": [
+        "Hehehe! Sorry!\n",
+        "I couldn’t help overhearing that.\r",
+        "But the greatest Trainer ever?!\n",
+        "That’s going to be really tough.\\fBecause you’re talking about me!\r",
+        "To prove that, I’m going to the\n",
+        "volcano right now.\r",
+        "You look puzzled. You really don’t\n",
+        "know anything, do you?\r",
+        "All right, I’ll tell you.\n",
+        "This is the Battle Zone, OK?\r",
+        "At the far end, there’s a volcano.\r",
+        "And deep inside the volcano, there’s\n",
+        "supposed to be a treasure.\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00002",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: So?\n",
+        "What’s the big deal?\r",
+        "If I find that treasure first, that’ll\n",
+        "make me the greatest Trainer ever?\r",
+        "That’s what I’ll do, {STRVAR_1 3, 1, 0}!\n",
+        "And you too, stranger!\\fI’m gonna get the treasure first!\r",
+        "But before that, I’m going to the\n",
+        "Battle Tower! See ya!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00003",
+      "en_US": [
+        "That guy...\n",
+        "He can’t stay still, can he?\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00004",
+      "en_US": [
+        "Anyways, howdy, I’m Buck.\n",
+        "Sheesh, that punk can’t beat me.\r",
+        "So, do you know that zippity-doodah\n",
+        "of a Trainer?\r",
+        "You should chase after that guy\n",
+        "and tell him not to underestimate\\fthe volcano.\r",
+        "Oh, but you know what?\r",
+        "You’d better shape up at the\n",
+        "Battle Tower first, too.\r",
+        "I don’t like your chances of getting\n",
+        "to the volcano, otherwise.\r",
+        "Be seeing you!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00005",
+      "en_US": [
+        "Howdy, Trainer!\n",
+        "You have a Pokédex, do you?\r",
+        "I bet the person who gave you that\n",
+        "is waiting for you to fill that\\fPokédex completely."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00006",
+      "en_US": [
+        "Howdy, Trainer!\n",
+        "You have a Pokédex, do you?\r",
+        "Here’s my advice: go out and\n",
+        "challenge other Trainers!\r",
+        "They’ll often have different Pokémon,\n",
+        "so your Pokédex should fill up fast!"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00007",
+      "en_US": [
+        "The way the Battle Tower looms...\r",
+        "It really is a wall that stands\n",
+        "before every Trainer."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00008",
+      "en_US": [
+        "I’ve battled many Trainers over\n",
+        "the years.\r",
+        "I’ve gained some confidence in my\n",
+        "skill levels, too.\r",
+        "But the world is still a huge place.\n",
+        "It’s not easy to win in life!"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00009",
+      "en_US": [
+        "Because of the volcano, the land\n",
+        "around here is craggy.\r",
+        "The rough terrain and all the ups\n",
+        "and downs make it hard to hike."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00010",
+      "en_US": [
+        "The Pokémon League’s Elite Four\n",
+        "come here sometimes!"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00011",
+      "en_US": [
+        "Your Pokémon are from Sinnoh,\n",
+        "aren’t they?\r",
+        "They’re not what we’re used to\n",
+        "seeing around here."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00012",
+      "en_US": [
+        "There’s no end to becoming tough!\r",
+        "I just made that up, but it sounds\n",
+        "kind of cool, huh?"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00013",
+      "en_US": [
+        "What’s up? Do you want to sail to\n",
+        "Snowpoint City?"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00014",
+      "en_US": [
+        "Aye, right!\n",
+        "It’s anchors aweigh, then!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00015",
+      "en_US": [
+        "Oh, right. You’d rather just fly\n",
+        "everywhere in some big hurry."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00016",
+      "en_US": [
+        "Whenever I go to a new place, I get\n",
+        "excited over what I might discover.\r",
+        "But places I’ve visited before...\r",
+        "Even those places thrill me with\n",
+        "new discoveries!"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00017",
+      "en_US": [
+        "Hmm!\n",
+        "A Super Rod is really good!\r",
+        "Wouldn’t you agree?"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00018",
+      "en_US": [
+        "Hmm!\n",
+        "We’re of identical minds!\r",
+        "Hmm!\n",
+        "Take this {STRVAR_1 8, 0, 0}!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00019",
+      "en_US": [
+        "Wherever there’s water, try your\n",
+        "luck at fishing."
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00020",
+      "en_US": "Don’t you like to fish?"
+    },
+    {
+      "id": "msg_1213_SC11_00021",
+      "en_US": [
+        "What’s that?\n",
+        "Any advice for fishing?\r",
+        "Well, I’ll tell you.\n",
+        "It’s all about the rod and technique!"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00022",
+      "en_US": [
+        "Fight Area\n",
+        "Battles Galore"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00023",
+      "en_US": [
+        "Battle Park Ahead\n",
+        "Where Trainers Train"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00024",
+      "en_US": [
+        "Rt. 225 Ahead\n",
+        "A Road of Challenges"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00025",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hey, {STRVAR_1 3, 1, 0}!\r",
+        "You’re not the only one who’s getting\n",
+        "tougher, you know!\r",
+        "I’ll prove it to you!\n",
+        "Get ready to battle!\r"
+      ]
+    },
+    {
+      "id": "msg_1213_SC11_00026",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: ...!\n",
+        "It’s OK, though.\r",
+        "{STRVAR_1 3, 1, 0}, the tougher you get,\n",
+        "the tougher we can get, too.\r",
+        "There’s no end to Pokémon.\n",
+        "That’s what I’m saying, {STRVAR_1 3, 1, 0}."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "key": 8728,
+  "messages": [
+    {
+      "id": "msg_1225_ST06PC0101_00000",
+      "en_US": [
+        "I wasn’t experienced enough for\n",
+        "the Battle Tower...\r",
+        "Training on Stark Mountain seems to\n",
+        "be the only sensible choice ...\r",
+        "For some reason, the best Trainers\n",
+        "in Sinnoh seem to gather there."
+      ]
+    },
+    {
+      "id": "msg_1225_ST06PC0101_00001",
+      "en_US": [
+        "In a Multi Battle, coordination with\n",
+        "your partner is vital.\r",
+        "By working together, one plus one\n",
+        "could become not just two, but even\\fthree or four.\r",
+        "But one times one is always one.\n",
+        "Do you understand that?"
+      ]
+    },
+    {
+      "id": "msg_1225_ST06PC0101_00002",
+      "en_US": [
+        "Some say the universe was made by\n",
+        "something born from an Egg...\r",
+        "A man I met long ago told me that."
+      ]
+    }
+  ]
+}

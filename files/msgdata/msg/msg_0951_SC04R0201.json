@@ -1,0 +1,23 @@
+{
+  "key": 8277,
+  "messages": [
+    {
+      "id": "msg_0951_SC04R0201_00000",
+      "en_US": [
+        "Welcome to Team Galactic. Are you\n",
+        "here to donate your Pokémon?\r",
+        "What? You’re not?\n",
+        "Then kindly get off our property!\r",
+        "Do we have to bring the pain like we\n",
+        "did with the Cycle Shop manager?"
+      ]
+    },
+    {
+      "id": "msg_0951_SC04R0201_00001",
+      "en_US": [
+        "Team Galactic isn’t interested in the\n",
+        "world. Our gaze is beyond the stars!"
+      ]
+    }
+  ]
+}

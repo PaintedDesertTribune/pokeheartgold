@@ -1,0 +1,50 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC03R0301.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC03R0301_0",
+      "spriteId": "SPRITE_GIRL3",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC03R0301_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 8,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_SC03R0301_1",
+      "spriteId": "SPRITE_MOUNT",
+      "movement": 9,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC03R0301_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 2,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_OREBURGH",
+      "anchor": 5,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

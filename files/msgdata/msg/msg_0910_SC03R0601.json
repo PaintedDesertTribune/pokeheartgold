@@ -1,0 +1,28 @@
+{
+  "key": 8266,
+  "messages": [
+    {
+      "id": "msg_0910_SC03R0601_00000",
+      "en_US": [
+        "Hiya! Your Pokémon could use some\n",
+        "toughening up.\r",
+        "Why not try training in\n",
+        "the Oreburgh Mine?"
+      ]
+    },
+    {
+      "id": "msg_0910_SC03R0601_00001",
+      "en_US": [
+        "I always have a rotten time trying\n",
+        "to decide which moves my Pokémon\\fshould learn."
+      ]
+    },
+    {
+      "id": "msg_0910_SC03R0601_00002",
+      "en_US": [
+        "You remind me so much of the time\n",
+        "I got my first Pokémon."
+      ]
+    }
+  ]
+}

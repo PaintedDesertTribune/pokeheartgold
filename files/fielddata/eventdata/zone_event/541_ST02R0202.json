@@ -1,0 +1,24 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST02R0202.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_ST02R0202_001 + 1",
+      "type": 0,
+      "x": 2,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 6,
+      "z": 3,
+      "header": "MAP_SINNOH_SANDGEM_PROFESSOR_ASSISTANT_HOUSE_1F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

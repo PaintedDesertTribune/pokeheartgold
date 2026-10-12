@@ -1,0 +1,42 @@
+{
+  "header": "fielddata/script/scr_seq/event_SR228R0201.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SR228R0201_001 + 1",
+      "type": 0,
+      "x": 4,
+      "z": 2,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SR228R0201_0",
+      "spriteId": "SPRITE_OLDMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR228R0201_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 2,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_ROUTE_228",
+      "anchor": 2,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

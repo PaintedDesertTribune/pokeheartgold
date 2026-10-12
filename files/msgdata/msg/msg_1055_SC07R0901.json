@@ -1,0 +1,24 @@
+{
+  "key": 8344,
+  "messages": [
+    {
+      "id": "msg_1055_SC07R0901_00000",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1055_SC07R0901_00001",
+      "en_US": [
+        "I wanted to go to Celestic Town, but\n",
+        "there were some Pokémon in the way."
+      ]
+    },
+    {
+      "id": "msg_1055_SC07R0901_00002",
+      "en_US": [
+        "There was a group of Pokémon blocking\n",
+        "the way up to Celestic Town.\r",
+        "I think they’re gone now."
+      ]
+    }
+  ]
+}

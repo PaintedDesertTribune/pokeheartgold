@@ -1,0 +1,111 @@
+{
+  "key": 8328,
+  "messages": [
+    {
+      "id": "msg_1059_SC07GYM0101_00000",
+      "en_US": [
+        "Hello.\n",
+        "I’m pleased to meet you.\r",
+        "I’m Maylene, and I’m the Gym\n",
+        "Leader.\r",
+        "I don’t really know what it means to\n",
+        "be strong, or how I got to be the\\fGym Leader.\r",
+        "But I will do the best I can as the\n",
+        "Gym Leader.\r",
+        "I take battling very seriously.\n",
+        "Whenever you’re ready!\r"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00001",
+      "en_US": [
+        "...OK.\n",
+        "You win.\r",
+        "That was a tough loss.\n",
+        "I learned a lot from it.\r",
+        "Please, accept this Gym Badge.\r"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00002",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received\n",
+        "the Cobble Badge from Maylene."
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00003",
+      "en_US": [
+        "Um...\n",
+        "I should explain about that Badge.\r",
+        "If you have that official Pokémon\n",
+        "League Badge, you can use the hidden\\fmove Fly outside of battle.\r",
+        "Oh, and please take this as well.\r"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00004",
+      "en_US": [
+        "That {STRVAR_1 8, 0, 0} contains\n",
+        "the move {STRVAR_1 6, 1, 0}.\r",
+        "Um... That move inflicts damage,\n",
+        "and it robs the target’s HP."
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00005",
+      "en_US": [
+        "Gee, I’m hungry...\r",
+        "Oh, sorry, it’s nothing.\n",
+        "I didn’t say anything.\r",
+        "{STRVAR_1 3, 0, 0}, I can’t explain what\n",
+        "it means to be strong.\r",
+        "I don’t know how much effort goes\n",
+        "into being strong...\r",
+        "But being with Pokémon lets us\n",
+        "keep making the effort, doesn’t it?"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00006",
+      "en_US": [
+        "Hey, there!\n",
+        "How’s it going, Champ-to-be?\r",
+        "The Gym Leader is a user of\n",
+        "Fighting-type Pokémon.\r",
+        "She’d be a terror against Normal-type\n",
+        "Pokémon.\r",
+        "But! And it’s a big but!\n",
+        "Just between you and me...\r",
+        "Maylene, the Gym Leader, said Flying-\n",
+        "and Psychic-type Pokémon could be\\freal trouble for her!"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00007",
+      "en_US": [
+        "Oh! {STRVAR_1 3, 0, 0}!\n",
+        "You’ve beaten the Gym Leader!\r",
+        "Of course, I thought you’d win."
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00008",
+      "en_US": [
+        "Veilstone City Pokémon Gym\n",
+        "Leader: Maylene\r",
+        "Certified Trainers:\n",
+        "{STRVAR_1 3, 1, 0}"
+      ]
+    },
+    {
+      "id": "msg_1059_SC07GYM0101_00009",
+      "en_US": [
+        "Veilstone City Pokémon Gym\n",
+        "Leader: Maylene\r",
+        "Certified Trainers:\n",
+        "{STRVAR_1 3, 0, 0}\\f{STRVAR_1 3, 1, 0}"
+      ]
+    }
+  ]
+}

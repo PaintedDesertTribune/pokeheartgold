@@ -1,0 +1,27 @@
+{
+  "key": 8724,
+  "messages": [
+    {
+      "id": "msg_1052_ST05R0401_00000",
+      "en_US": [
+        "I must bear down and train...\n",
+        "And for that, time is unimportant.\r",
+        "Therefore, I have no need for\n",
+        "a watch. Take this from me!\r"
+      ]
+    },
+    {
+      "id": "msg_1052_ST05R0401_00001",
+      "en_US": [
+        "Analog or digital, use whichever\n",
+        "watch you prefer.\r",
+        "There are many kinds of Pokémon.\n",
+        "Use whichever you like, too."
+      ]
+    },
+    {
+      "id": "msg_1052_ST05R0401_00002",
+      "en_US": "HAPPINY: Pinny haaa!"
+    }
+  ]
+}

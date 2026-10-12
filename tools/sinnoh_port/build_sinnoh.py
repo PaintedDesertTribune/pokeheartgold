@@ -124,7 +124,7 @@ SCRIPT_OVERRIDES = {
         19: """\tPlaySE SEQ_SE_DP_SELECT
 \tLockAll
 \tFacePlayer
-\tNPCMsg msg_0829_C02_00041
+\tNPCMsg msg_0829_SC02_00041
 \tYesNo VAR_SPECIAL_RESULT
 \tCompare VAR_SPECIAL_RESULT, 1
 \tGoToIfEq _sail_no
@@ -138,7 +138,7 @@ SCRIPT_OVERRIDES = {
 \tEnd
 
 _sail_no:
-\tNPCMsg msg_0829_C02_00042
+\tNPCMsg msg_0829_SC02_00042
 \tWaitButton
 \tCloseMsg
 \tReleaseAll
@@ -247,6 +247,7 @@ class Diamond:
         self.cmd_names = self._cmd_table()
         self.cmd_layout = self._cmd_layouts()
         self.matrix0 = self._matrix(0)
+        self.claims = {}   # shared-matrix filler cells (header MAP_EVERYWHERE) claimed by an imported neighbour map
 
     def header(self, mid):
         l = self.rows[mid]
@@ -300,7 +301,8 @@ class Diamond:
         """Return (cells as list of (x, y, land_id, alt)), (origin x, origin y), (w, h) for this map."""
         if hdr["matrix"] == 0:
             m = self.matrix0
-            cells = [(i % m["w"], i // m["w"], m["land"][i], m["alts"][i]) for i in range(m["w"] * m["h"]) if m["headers"][i] == mid]
+            cells = [(i % m["w"], i // m["w"], m["land"][i], m["alts"][i]) for i in range(m["w"] * m["h"])
+                     if m["headers"][i] == mid or self.claims.get((i % m["w"], i // m["w"])) == mid]
             xs = [c[0] for c in cells]
             ys = [c[1] for c in cells]
             x0, y0 = min(xs), min(ys)
@@ -647,7 +649,7 @@ class Translator:
     def var(self, dpvar):
         return self.state.var(dpvar)
 
-    def translate(self, bank, overrides=None):
+    def translate(self, bank, overrides=None, frame_scripts=()):
         """Translate a Diamond script bank to HeartGold assembly text. Returns (asm, nscripts)."""
         overrides = overrides or {}
         b = self.dp.file("script/scr_seq_release", bank)
@@ -669,7 +671,8 @@ class Translator:
                 labels[s] = name
         movements = {}
         lines = {}
-        work = list(starts)
+        cmds = {}   # address -> (Diamond command name, raw args, next address, layout)
+        work = [(st, i) for i, st in enumerate(starts)]   # (address, index of the script this walk started from)
         seen = set()
         stubbed = set()
         for idx, st in enumerate(starts):
@@ -677,12 +680,13 @@ class Translator:
                 lines[st] = overrides[idx]
                 seen.add(st)
         while work:
-            pc = work.pop(0)
+            pc, origin = work.pop(0)
             if pc in seen or pc >= len(b):
                 continue
             last_se = None
             while pc < len(b) and pc not in seen:
                 seen.add(pc)
+                cmd_pc = pc
                 cmd = struct.unpack_from("<H", b, pc)[0]
                 name = self.dp.cmd_names[cmd] if cmd < len(self.dp.cmd_names) else f"cmd_{cmd:04x}"
                 lay = self.dp.cmd_layout.get(name)
@@ -704,6 +708,7 @@ class Translator:
                         v = struct.unpack_from("<i", b, q)[0]; q += 4
                         raw.append(v if li < len(mkinds) and mkinds[li] == "W" else q + v)   # 'W': a plain 32-bit value
                 nxt = q
+                cmds[cmd_pc] = (name, raw, nxt, lay)
                 if name == "ScrCmd_PlaySoundWait":   # Diamond waits for whatever is playing; HeartGold's WaitSE wants the id
                     lines[pc] = f"\tWaitSE {last_se}" if last_se else "\t// Diamond PlaySoundWait with no sound effect before it"
                     pc = nxt
@@ -742,7 +747,7 @@ class Translator:
                             args.append(str(v))
                         elif k == "w":
                             lbl = labels.setdefault(v, f"_{v:04X}")
-                            work.append(v)
+                            work.append((v, origin))
                             args.append(lbl)
                         elif k == "G":
                             if v in self.maps:
@@ -787,8 +792,50 @@ class Translator:
                         self.todo.append(f"{macro} {args[0]}: Diamond mart id used against HeartGold's mart tables")
                     lines[pc] = f"\t{macro} {', '.join(args)}".rstrip()
                 pc = nxt
+                if name == "ScrCmd_End" and origin in frame_scripts:
+                    # Frame-table scripts rerun every frame while their variable holds; Diamond's lock the player first
+                    # and may End without releasing when the player is not where the cutscene expects (a Fly landing).
+                    lines[cmd_pc] = "\tReleaseAll\n" + lines[cmd_pc]
                 if name in ("ScrCmd_End", "ScrCmd_Return", "ScrCmd_GoTo", "ScrCmd_RestartCurrentScript"):
                     break
+        # Frame-table scripts re-fire every frame while their variable holds its value. Diamond's typically start with
+        # LockAll, test the player's position, and End when it does not match; a player who flew in would be relocked
+        # every frame. Move that LockAll into the branches the tests jump to, so a non-matching position costs nothing.
+        CHECKS = ("ScrCmd_Compare", "ScrCmd_Check", "ScrCmd_GetPlayerPosition", "ScrCmd_GoToIf", "ScrCmd_CallIf", "ScrCmd_Get")
+        self.frame_triggers = {}   # script index -> [(axis, value)] when the head is "player x/z equals N" tests only
+        for idx in frame_scripts:
+            if not (0 <= idx < len(starts)) or starts[idx] not in cmds or cmds[starts[idx]][0] != "ScrCmd_LockAllEvents":
+                continue
+            st = starts[idx]
+            pc2, targets, ok = cmds[st][2], [], False
+            triggers, pure, last_cmp = [], True, None
+            while pc2 in cmds:
+                name2, raw2, nxt2, lay2 = cmds[pc2]
+                if name2 == "ScrCmd_End":
+                    ok = True
+                    break
+                if not name2.startswith(CHECKS):
+                    break
+                targets += [v for v, k in zip(raw2, lay2) if k == "w"]
+                if name2 == "ScrCmd_GetPlayerPosition" and tuple(raw2) == (0x8004, 0x8005):
+                    pass
+                elif name2 == "ScrCmd_CompareVarToValue" and raw2[0] in (0x8004, 0x8005):
+                    last_cmp = ("x" if raw2[0] == 0x8004 else "z", raw2[1])
+                elif name2 == "ScrCmd_GoToIf" and raw2[0] == 1 and last_cmp:
+                    triggers.append(last_cmp)
+                    last_cmp = None
+                else:
+                    pure = False
+                pc2 = nxt2
+            if ok and targets and pure and triggers:
+                # The whole head is "if the player stands on row/column N, run the cutscene": that is a coordinate event
+                # in HeartGold, which only fires when the player steps there instead of every frame.
+                self.frame_triggers[idx] = triggers
+            if ok and targets:
+                lines[st] = "\t// LockAll moved into the branches below: this frame script re-fires until its variable changes"
+                for t in targets:
+                    if t in lines and not lines[t].startswith("\tLockAll"):
+                        lines[t] = "\tLockAll\n" + lines[t]
         # movement data: (u16 cmd, u16 count)* terminated by 0x00FE
         mv_text = []
         for off, lbl in sorted(movements.items()):
@@ -863,6 +910,18 @@ def main():
     manifest = [l.strip() for l in open(os.path.join(HERE, "maps.txt")) if l.strip() and not l.startswith("#")]
     subprocess.run(["git", "checkout", "master", "--"] + RESTORE, check=True)
     narcs = Narcs()
+    # Safety net: per-map generated files (event_*.h, scr_seq_*.s, map_matrix_*.bin, NNN_*.json, msg_*.json) must never land on
+    # a path that exists in stock HeartGold; a colliding map code would silently replace HeartGold's own data.
+    stock_paths = set(subprocess.run(["git", "ls-tree", "-r", "--name-only", "master", "--", "files"], capture_output=True, text=True).stdout.split())
+    import builtins
+    _open = builtins.open
+
+    def guarded_open(path, mode="r", *a, **k):
+        sp = str(path)
+        if "w" in str(mode) and sp in stock_paths and re.match(r"(event_|scr_seq_\d{4}_|map_matrix_\d{4}_|msg_\d{4}_|\d{3}_)", os.path.basename(sp)):
+            raise RuntimeError(f"refusing to overwrite stock file {sp}: a generated name collides with HeartGold's")
+        return _open(path, mode, *a, **k)
+    builtins.open = guarded_open
     state = State()
     hg_sprites = set(re.findall(r"#define (SPRITE_\w+)", open("include/constants/sprites.h").read()))
     sprites = Sprites(dp, hg_sprites)
@@ -873,7 +932,7 @@ def main():
     maps = []  # dicts
     for i, name in enumerate(manifest):
         mid = dp.maps[name]
-        code = dp.codes[name]
+        code = "S" + dp.codes[name]   # HeartGold reuses many of Diamond's map codes (T01, D17R0110...); the prefix keeps every generated name apart
         maps.append(dict(name=name, dpid=mid, code=code, hgid=FIRST_MAP_ID + i, hgname=f"MAP_SINNOH_{name[4:]}",
                          scr=FIRST_SCR_SEQ + 2 * i, hdr=FIRST_SCR_SEQ + 2 * i + 1, evt=FIRST_ZONE_EVENT + i, msg=FIRST_MSG + i,
                          matrix=FIRST_MATRIX + i, dphdr=dp.header(mid)))
@@ -886,6 +945,31 @@ def main():
         p = 4 + struct.unpack_from("<I", eb, 0)[0] * 0x14
         return [struct.unpack_from("<14Hi", eb, p + 4 + i * 0x20) for i in range(struct.unpack_from("<I", eb, p)[0])]
     area_signs = {}
+    # Diamond draws sea and mountain filler cells that belong to no map (header MAP_EVERYWHERE). Give each filler cell within
+    # two cells of an imported map to that map, so coasts are water instead of black and the cell uses the neighbour's area.
+    m0 = dp.matrix0
+    owned = {}
+    for m in maps:
+        if m["dphdr"]["matrix"] == 0:
+            for i in range(m0["w"] * m0["h"]):
+                if m0["headers"][i] == m["dpid"]:
+                    owned[(i % m0["w"], i // m0["w"])] = m["dpid"]
+    frontier = set(owned)
+    for _layer in range(2):
+        new = {}
+        for (cx, cy) in frontier:
+            for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                nx, ny = cx + dx, cy + dy
+                if not (0 <= nx < m0["w"] and 0 <= ny < m0["h"]):
+                    continue
+                j = ny * m0["w"] + nx
+                if (nx, ny) in owned or (nx, ny) in dp.claims or (nx, ny) in new:
+                    continue
+                if m0["headers"][j] in (0, 1) and m0["land"][j] != 0xFFFF:
+                    new[(nx, ny)] = owned.get((cx, cy), dp.claims.get((cx, cy)))
+        dp.claims.update(new)
+        frontier = set(new)
+    print(f"claimed {len(dp.claims)} filler cells of the shared matrix for their neighbouring maps")
     all_shared = set()   # every imported cell of the shared Sinnoh matrix, to fence off its unimported neighbours
     for m in maps:
         if m["dphdr"]["matrix"] == 0:
@@ -1035,7 +1119,17 @@ def main():
         generated_msgs.append(bank_name)
         # --- scripts
         tr = Translator(dp, state, m["code"], bank_name, nmsgs, sprites, trainers, dp2hg, m["hgname"])
-        asm, nscripts, stubbed = tr.translate(h["scripts"], SCRIPT_OVERRIDES.get(m["name"]))
+        frame_idx = set()   # scripts run from the level script's frame table (var == value, every frame)
+        lb0 = dp.file("script/scr_seq_release", h["lvl"])
+        p0 = 0
+        while lb0[p0] != 0:
+            if lb0[p0] == 1:
+                q0 = p0 + 5 + struct.unpack_from("<I", lb0, p0 + 1)[0]
+                while struct.unpack_from("<H", lb0, q0)[0] != 0:
+                    frame_idx.add(struct.unpack_from("<H", lb0, q0 + 4)[0] - 1)
+                    q0 += 6
+            p0 += 5
+        asm, nscripts, stubbed = tr.translate(h["scripts"], SCRIPT_OVERRIDES.get(m["name"]), frame_idx)
         todo += [f"{m['name']}: {t}" for t in tr.todo] + [f"{m['name']}: unmapped command {s}" for s in sorted(stubbed)]
         scr_name = f"scr_seq_{m['scr']:04d}_{m['code']}"
         hdr_name = f"scr_seq_{m['hdr']:04d}_{m['code']}_hdr"
@@ -1073,13 +1167,16 @@ def main():
         if table is not None:
             hdr_lines.append(f"\tInitScriptEntry_OnFrameTable scr_seq_{m['code']}_map_scripts")
         hdr_lines.append("\tInitScriptEntryEnd\n")
+        frame_coord_requests = []   # (script ref, var, value, [(axis, tile)]) replacing frame-table rows
         if table is not None:
             hdr_lines.append(f"scr_seq_{m['code']}_map_scripts:")
             q = table
             while struct.unpack_from("<H", lb, q)[0] != 0:
                 var, val, sid = struct.unpack_from("<HHH", lb, q)
                 ref = script_ref(sid)
-                if ref is not None:
+                if ref is not None and (sid - 1) in tr.frame_triggers:
+                    frame_coord_requests.append((ref, state.var(var), val, tr.frame_triggers[sid - 1]))
+                elif ref is not None:
                     hdr_lines.append(f"\tInitScriptGoToIfEqual {state.var(var)}, {val}, {ref}")
                 q += 6
             hdr_lines.append("\tInitScriptFrameTableEnd\n")
@@ -1172,6 +1269,19 @@ def main():
                 csid = ev_script(sid)
             coords.append({"scriptId": csid, "x": x - ox, "z": z - oy, "w": cw, "h": ch, "y": y,
                            "val": val, "var": state.var(var)})
+        if frame_coord_requests:
+            if shared:
+                xs = [c[0] for c in m["cells"]]
+                ys = [c[1] for c in m["cells"]]
+                x0, x1, y0, y1 = min(xs) * 32, (max(xs) + 1) * 32, min(ys) * 32, (max(ys) + 1) * 32
+            else:
+                x0, x1, y0, y1 = 0, w * 32, 0, hgt * 32
+            for ref, cvar, cval, trig in frame_coord_requests:
+                for axis, tile in trig:
+                    if axis == "z":
+                        coords.append({"scriptId": ref, "x": x0 - ox, "z": tile - oy, "w": x1 - x0, "h": 1, "y": 0, "val": cval, "var": cvar})
+                    else:
+                        coords.append({"scriptId": ref, "x": tile - ox, "z": y0 - oy, "w": 1, "h": y1 - y0, "y": 0, "val": cval, "var": cvar})
         ev = {"header": f"fielddata/script/scr_seq/event_{m['code']}.h", "bgs": bgs, "objects": objs, "warps": warps, "coords": coords}
         evname = f"{m['evt']:03d}_{m['code']}"
         json.dump(ev, open(f"files/fielddata/eventdata/zone_event/{evname}.json", "w"), indent=2)

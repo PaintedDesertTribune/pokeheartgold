@@ -1,0 +1,249 @@
+{
+  "key": 8250,
+  "messages": [
+    {
+      "id": "msg_0894_SC03_00000",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hunh?\r",
+        "Oh, it’s you, {STRVAR_1 3, 1, 0}!\n",
+        "You finally got here?\\fYou’re slow like always.\r",
+        "You’re so slow, the Gym Leader’s\n",
+        "long gone now.\r",
+        "He said he had to go... Uh...\n",
+        "Oh, yeah, to Oreburgh Mine!\r",
+        "I got my Badge already, so it’s no\n",
+        "big deal to me, but..."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: I told you, the Gym\n",
+        "Leader isn’t here.\r",
+        "If you want to take the Gym\n",
+        "challenge, you’d better go down to\\fthe mine and ask him.\r",
+        "But, boy, a Gym Leader is in a\n",
+        "different class of toughness.\r",
+        "Even I’m feeling run down."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00002",
+      "en_US": "Thud!!\r"
+    },
+    {
+      "id": "msg_0894_SC03_00003",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Whoops! {STRVAR_1 3, 1, 0}!\n",
+        "You got the Gym Badge, huh?\r",
+        "Eterna City is the next place with\n",
+        "a Gym that gives away Badges, right?\r"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00004",
+      "en_US": [
+        "So, yeah, I went to Route 207, but\n",
+        "you can’t go there without a Bicycle.\r",
+        "I made my team battle and toughened\n",
+        "them up, so it wasn’t a waste.\r"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00005",
+      "en_US": [
+        "So, I’m going back to Jubilife City.\n",
+        "Next stop, the Eterna Gym Badge!\r",
+        "Ten seconds before I dash!\r",
+        "Nine...\r",
+        "Bah! Who’s got time to count?!\r"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00006",
+      "en_US": [
+        "Howdy, Trainer!\r",
+        "If you don’t have a single Gym Badge,\n",
+        "other Trainers will look down on\\fyou like you’re a total noob, right?\r",
+        "So, I’ll show you where the town’s\n",
+        "Pokémon Gym is.\r"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00007",
+      "en_US": [
+        "Huh?\n",
+        "There’s someone there."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00008",
+      "en_US": [
+        "Is that guy in front of the Gym\n",
+        "your friend?\r",
+        "He’s sort of twitchy and impatient."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00009",
+      "en_US": [
+        "Oh, hi, you’re back!\n",
+        "The Gym Leader’s waiting for you."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00010",
+      "en_US": [
+        "Can I see your Trainer Case?\r",
+        "It’s got the Gym Badge you just\n",
+        "won, right?"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00011",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0894_SC03_00012",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0894_SC03_00013",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0894_SC03_00014",
+      "en_US": [
+        "The Gym Leader went off to work in\n",
+        "the mine."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00015",
+      "en_US": [
+        "The Gym Leader is young, but he’s\n",
+        "the mine’s safety supervisor.\r",
+        "He’s an expert in more than just one\n",
+        "field!"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00016",
+      "en_US": [
+        "Everyone’s proud of the mine.\r",
+        "They’re digging for coal under the\n",
+        "sea as we speak...\r",
+        "It’s amazing how they do it!"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00017",
+      "en_US": [
+        "Up ahead there’s a huge mountain\n",
+        "that towers above everything.\r",
+        "It divides Sinnoh into two distinct\n",
+        "halves."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00018",
+      "en_US": [
+        "Have you seen the vents?\n",
+        "They release steam from down below."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00019",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0894_SC03_00020",
+      "en_US": [
+        "These vents exchange the hot air\n",
+        "down below with the fresh air outside.\r",
+        "Looking down them gives me the urge\n",
+        "to start yelling into ’em! Hello!"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00021",
+      "en_US": [
+        "There’s no question. This is hard,\n",
+        "hard work.\r",
+        "But working alongside Pokémon...\n",
+        "It gives me a boost somehow.\r",
+        "Here, take one of these.\r"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00022",
+      "en_US": [
+        "Feeling hale and hearty puts a smile\n",
+        "on my face. And that makes me happy."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00023",
+      "en_US": [
+        "This pile of dirty sand is called\n",
+        "a slag heap.\r",
+        "It’s the waste from sorting coal."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00024",
+      "en_US": [
+        "Chop, chop, MACHOP!\n",
+        "Chop, chop away on rocks! ~♫"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00025",
+      "en_US": [
+        "TMs are single use only, but HMs\n",
+        "can be used over and over.\r",
+        "It’s tricky trying to decide which\n",
+        "Pokémon should learn what moves."
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00026",
+      "en_US": [
+        "When I run around with my Running\n",
+        "Shoes on, it feels like I’m the center\\fof attention!"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00027",
+      "en_US": "MACHOP: Macho! Chopo!"
+    },
+    {
+      "id": "msg_0894_SC03_00028",
+      "en_US": [
+        "Oreburgh City\n",
+        "City of Energy"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00029",
+      "en_US": [
+        "Oreburgh Pokémon Gym\n",
+        "Leader: Roark\\f“Call me Roark the Rock!”"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00030",
+      "en_US": [
+        "Oreburgh Mining Museum\n",
+        "“Coal Mining and You!”"
+      ]
+    },
+    {
+      "id": "msg_0894_SC03_00031",
+      "en_US": [
+        "Oreburgh Coal Mine\n",
+        "Beware of Busy Pokémon!"
+      ]
+    }
+  ]
+}

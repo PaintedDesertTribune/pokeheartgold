@@ -1,0 +1,29 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD17R0101.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 12,
+      "z": 56,
+      "header": "MAP_SINNOH_SENDOFF_SPRING",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "z": 56,
+      "header": "MAP_SINNOH_SENDOFF_SPRING",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 31,
+      "z": 16,
+      "header": "MAP_SINNOH_TURNBACK_CAVE_ENTRANCE",
+      "anchor": 4,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

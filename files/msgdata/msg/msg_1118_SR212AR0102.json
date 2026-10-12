@@ -1,0 +1,30 @@
+{
+  "key": 8632,
+  "messages": [
+    {
+      "id": "msg_1118_SR212AR0102_00000",
+      "en_US": [
+        "You know how you can catch Pokémon\n",
+        "in the trophy garden?\r",
+        "If you put this on a caught Pokémon,\n",
+        "it warms up to you faster.\r",
+        "I’ll share one with you, so give it\n",
+        "a try.\r"
+      ]
+    },
+    {
+      "id": "msg_1118_SR212AR0102_00001",
+      "en_US": [
+        "I hope you become a Trainer that\n",
+        "Pokémon can love and trust."
+      ]
+    },
+    {
+      "id": "msg_1118_SR212AR0102_00002",
+      "en_US": [
+        "I’m not loafing off.\n",
+        "I’m just taking a personal break."
+      ]
+    }
+  ]
+}

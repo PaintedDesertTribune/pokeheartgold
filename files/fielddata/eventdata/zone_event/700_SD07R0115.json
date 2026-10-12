@@ -1,0 +1,36 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD07R0115.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 2,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B3F_MAIN_ROOM_2",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B3F_MAIN_ROOM_1",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "z": 10,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B4F_ROOM_1",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "z": 10,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B4F_ROOM_3",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

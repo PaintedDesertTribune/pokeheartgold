@@ -1,0 +1,62 @@
+{
+  "key": 8549,
+  "messages": [
+    {
+      "id": "msg_1084_SL02R0301_00000",
+      "en_US": [
+        "Ciao!\n",
+        "I’m the game director!\r",
+        "You’re working on filling\n",
+        "a Pokédex, aren’t you?\r",
+        "It’s awesome that you’re going to\n",
+        "meet lots of Pokémon.\r",
+        "Come show me your Pokédex when\n",
+        "you’ve filled it with tons of entries!"
+      ]
+    },
+    {
+      "id": "msg_1084_SL02R0301_00001",
+      "en_US": [
+        "Ciao!\n",
+        "I’m the game director!\r",
+        "Your Pokédex is looking great!\r",
+        "You’ve already met every Pokémon\n",
+        "there is to meet in this region.\r",
+        "I’m really impressed!\n",
+        "Let me give you an award!"
+      ]
+    },
+    {
+      "id": "msg_1084_SL02R0301_00002",
+      "en_US": [
+        "Ciao!\n",
+        "I’m the game director!\r",
+        "You’ve finally collected all the\n",
+        "Pokémon in the world!\r",
+        "Your Pokédex is completed!\n",
+        "That’s outstanding work!\r",
+        "The effort you went through getting\n",
+        "this Pokédex together...\r",
+        "It’s fantastic! Totally cool!\n",
+        "Thank you very much!\r",
+        "Please allow Game Freak to honor\n",
+        "you with an award!"
+      ]
+    },
+    {
+      "id": "msg_1084_SL02R0301_00003",
+      "en_US": [
+        "How did you meet all the Pokémon\n",
+        "that filled your Pokédex?\r",
+        "Did you work long and hard to catch\n",
+        "and raise them?\r",
+        "Did you receive them as gifts from\n",
+        "friends?\r",
+        "Maybe you got some in trades from\n",
+        "around the world?\r",
+        "Though everyone’s Pokédexes may\n",
+        "look the same, the stories they\\fcontain are all unique."
+      ]
+    }
+  ]
+}

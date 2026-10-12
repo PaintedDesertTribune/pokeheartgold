@@ -57,6 +57,7 @@ def start_coords(name, dp_codes):
     """A walkable tile: in front of the map's first warp (its door), else the middle of a small interior."""
     import glob
     code = dp_codes.get("MAP_" + name[len("MAP_SINNOH_"):])
+    code = "S" + code if code else None   # generated Sinnoh names carry an S prefix
     files = glob.glob(os.path.join(ROOT, "files/fielddata/eventdata/zone_event", f"*_{code}.json")) if code else []
     for path in files:
         d = json.load(open(path))

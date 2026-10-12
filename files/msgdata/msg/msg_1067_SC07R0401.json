@@ -1,0 +1,67 @@
+{
+  "key": 8339,
+  "messages": [
+    {
+      "id": "msg_1067_SC07R0401_00000",
+      "en_US": [
+        "Welcome!\r",
+        "You may exchange your Coins for\n",
+        "fabulous prizes here!\r"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00001",
+      "en_US": "Which prize would you like?"
+    },
+    {
+      "id": "msg_1067_SC07R0401_00002",
+      "en_US": [
+        "So your choice is\n",
+        "the {STRVAR_1 8, 0, 0}?"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00003",
+      "en_US": [
+        "So your choice is {STRVAR_1 8, 0, 0}:\n",
+        "{STRVAR_1 6, 1, 0}?"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00004",
+      "en_US": "Here you go!"
+    },
+    {
+      "id": "msg_1067_SC07R0401_00005",
+      "en_US": "You don’t have enough Coins.\r"
+    },
+    {
+      "id": "msg_1067_SC07R0401_00006",
+      "en_US": [
+        "There isn’t any room available for\n",
+        "that {STRVAR_1 8, 0, 0}.\r"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00007",
+      "en_US": [
+        "Oh, is that so? \n",
+        "Please come back with some Coins!"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00008",
+      "en_US": [
+        "I love words like “walk-off,\n",
+        "grand-slam home run.”"
+      ]
+    },
+    {
+      "id": "msg_1067_SC07R0401_00009",
+      "en_US": [
+        "They have prizes I really want, but\n",
+        "it’d be tough saving up the Coins."
+      ]
+    }
+  ]
+}

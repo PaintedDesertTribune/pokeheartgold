@@ -1,0 +1,248 @@
+{
+  "header": "fielddata/script/scr_seq/event_SW226.h",
+  "bgs": [
+    {
+      "scriptId": "8451",
+      "type": 2,
+      "x": 715,
+      "z": 345,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8452",
+      "type": 2,
+      "x": 718,
+      "z": 330,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8453",
+      "type": 2,
+      "x": 725,
+      "z": 334,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8454",
+      "type": 2,
+      "x": 723,
+      "z": 331,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8455",
+      "type": 2,
+      "x": 744,
+      "z": 325,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SW226_000 + 1",
+      "type": 1,
+      "x": 679,
+      "z": 341,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 755,
+      "z": 314,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SW226_001 + 1",
+      "type": 1,
+      "x": 760,
+      "z": 327,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SW226_1",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1191",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 717,
+      "z": 339,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_2",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1193",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 690,
+      "z": 344,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_3",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1192",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 693,
+      "z": 333,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_8",
+      "spriteId": "SPRITE_SINNOH_SWIMMERW",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_SWIMMER_F_LYDIA)",
+      "facingDirection": 1,
+      "param0": 2,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 727,
+      "z": 342,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_10",
+      "spriteId": "SPRITE_MAN3",
+      "movement": 20,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_ACE_TRAINER_M_GRAHAM)",
+      "facingDirection": 2,
+      "param0": 1,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 4,
+      "yRange": 0,
+      "x": 689,
+      "z": 335,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_11",
+      "spriteId": "SPRITE_WOMAN3",
+      "movement": 6,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_BIRD_KEEPER_GENEVA)",
+      "facingDirection": 2,
+      "param0": 2,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 707,
+      "z": 331,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_12",
+      "spriteId": "SPRITE_MAN3",
+      "movement": 15,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_DRAGON_TAMER_STANLEY)",
+      "facingDirection": 1,
+      "param0": 1,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 707,
+      "z": 329,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_5",
+      "spriteId": "SPRITE_BOY2",
+      "movement": 2,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_450",
+      "scriptId": "0",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 667,
+      "z": 338,
+      "y": 0
+    },
+    {
+      "id": "obj_SW226_15",
+      "spriteId": "SPRITE_SINNOH_SWIMMERM",
+      "movement": 18,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_SWIMMER_M_WADE)",
+      "facingDirection": 1,
+      "param0": 2,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 760,
+      "z": 342,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 739,
+      "z": 339,
+      "header": "MAP_SINNOH_ROUTE_226_HOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 767,
+      "z": 330,
+      "header": "MAP_SINNOH_ROUTE_228_ROUTE_226_GATEHOUSE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 767,
+      "z": 331,
+      "header": "MAP_SINNOH_ROUTE_228_ROUTE_226_GATEHOUSE",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

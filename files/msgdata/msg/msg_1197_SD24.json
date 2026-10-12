@@ -1,0 +1,23 @@
+{
+  "key": 8449,
+  "messages": [
+    {
+      "id": "msg_1197_SD24_00000",
+      "en_US": "Do you want to sail somewhere?"
+    },
+    {
+      "id": "msg_1197_SD24_00001",
+      "en_US": [
+        "Aye, aye!\n",
+        "Anchors aweigh!\r"
+      ]
+    },
+    {
+      "id": "msg_1197_SD24_00002",
+      "en_US": [
+        "You just go on and tell me whenever\n",
+        "you want to set sail again!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC04R0303.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC04R0303_0",
+      "spriteId": "SPRITE_MIDDLEMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC04R0303_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 13,
+      "z": 9,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0303_1",
+      "spriteId": "SPRITE_BOY1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC04R0303_002 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 14,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0303_2",
+      "spriteId": "SPRITE_BOY3",
+      "movement": 8,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC04R0303_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 10,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0303_3",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC04R0303_003 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 1,
+      "x": 9,
+      "z": 8,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 8,
+      "z": 3,
+      "header": "MAP_SINNOH_ETERNA_CONDOMINIUMS_2F",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "z": 1,
+      "header": "MAP_SINNOH_ETERNA_CONDOMINIUMS_4F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

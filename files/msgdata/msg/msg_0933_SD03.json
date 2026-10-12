@@ -1,0 +1,29 @@
+{
+  "key": 8404,
+  "messages": [
+    {
+      "id": "msg_0933_SD03_00000",
+      "en_US": [
+        "Oh, are you collecting Accessories?\n",
+        "I’ve got something for you.\r"
+      ]
+    },
+    {
+      "id": "msg_0933_SD03_00001",
+      "en_US": [
+        "I collect Berries and trade them for\n",
+        "Accessories in Floaroma Town.\r",
+        "I sometimes worry for days on end\n",
+        "about what Accessories I should be\\fputting on my Pokémon."
+      ]
+    },
+    {
+      "id": "msg_0933_SD03_00002",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0933_SD03_00003",
+      "en_US": ""
+    }
+  ]
+}

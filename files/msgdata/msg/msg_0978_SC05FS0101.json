@@ -1,0 +1,21 @@
+{
+  "key": 8291,
+  "messages": [
+    {
+      "id": "msg_0978_SC05FS0101_00000",
+      "en_US": [
+        "I’d like to buy the item Revive, but\n",
+        "they won’t sell it to someone with\\fonly two Gym Badges..."
+      ]
+    },
+    {
+      "id": "msg_0978_SC05FS0101_00001",
+      "en_US": [
+        "I’ve heard there are Accessories\n",
+        "to be found.\r",
+        "Someone told me that you can find\n",
+        "some in Amity Square."
+      ]
+    }
+  ]
+}

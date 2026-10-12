@@ -1,0 +1,32 @@
+{
+  "key": 8659,
+  "messages": [
+    {
+      "id": "msg_1153_SR222R0101_00000",
+      "en_US": "PIKACHU: Pikachuu!"
+    },
+    {
+      "id": "msg_1153_SR222R0101_00001",
+      "en_US": "PIKACHU: Pikaah!"
+    },
+    {
+      "id": "msg_1153_SR222R0101_00002",
+      "en_US": "PIKACHU: Pika pika?"
+    },
+    {
+      "id": "msg_1153_SR222R0101_00003",
+      "en_US": "PIKACHU: Pi! Pikachu!"
+    },
+    {
+      "id": "msg_1153_SR222R0101_00004",
+      "en_US": "PIKACHU: Pii! Kaahchu!"
+    },
+    {
+      "id": "msg_1153_SR222R0101_00005",
+      "en_US": [
+        "Eehehe! I’m going for the Pokémon\n",
+        "Championship with only PIKACHU!"
+      ]
+    }
+  ]
+}

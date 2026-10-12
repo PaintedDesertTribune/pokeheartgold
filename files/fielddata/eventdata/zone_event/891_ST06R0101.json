@@ -1,0 +1,50 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST06R0101.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_ST06R0101_0",
+      "spriteId": "SPRITE_OLDMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST06R0101_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 5,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_ST06R0101_1",
+      "spriteId": "SPRITE_SEVEN4",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_500",
+      "scriptId": "_EV_scr_seq_ST06R0101_001 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 8,
+      "z": 4,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_SURVIVAL_AREA",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

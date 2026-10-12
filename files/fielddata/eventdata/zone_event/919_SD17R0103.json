@@ -1,0 +1,61 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD17R0103.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SD17R0103_001 + 1",
+      "type": 0,
+      "x": 10,
+      "z": 14,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SD17R0103_001 + 1",
+      "type": 0,
+      "x": 11,
+      "z": 14,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SD17R0103_001 + 1",
+      "type": 0,
+      "x": 12,
+      "z": 14,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 11,
+      "z": 1,
+      "header": "MAP_SINNOH_TURNBACK_CAVE_ENTRANCE",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 20,
+      "z": 11,
+      "header": "MAP_SINNOH_TURNBACK_CAVE_ENTRANCE",
+      "anchor": 3,
+      "y": 0
+    },
+    {
+      "x": 11,
+      "z": 20,
+      "header": "MAP_SINNOH_TURNBACK_CAVE_ENTRANCE",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "z": 11,
+      "header": "MAP_SINNOH_TURNBACK_CAVE_ENTRANCE",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

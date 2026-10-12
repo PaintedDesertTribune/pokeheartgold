@@ -1,0 +1,54 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD04.h",
+  "bgs": [
+    {
+      "scriptId": "8271",
+      "type": 2,
+      "x": 187,
+      "z": 594,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "8272",
+      "type": 2,
+      "x": 177,
+      "z": 581,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SD04_000 + 1",
+      "type": 1,
+      "x": 172,
+      "z": 588,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 169,
+      "z": 587,
+      "header": "MAP_SINNOH_FUEGO_IRONWORKS_INTERIOR",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 168,
+      "z": 587,
+      "header": "MAP_SINNOH_FUEGO_IRONWORKS_INTERIOR",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 170,
+      "z": 587,
+      "header": "MAP_SINNOH_FUEGO_IRONWORKS_INTERIOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

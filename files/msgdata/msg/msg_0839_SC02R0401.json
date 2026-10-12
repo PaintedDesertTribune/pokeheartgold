@@ -1,0 +1,26 @@
+{
+  "key": 8248,
+  "messages": [
+    {
+      "id": "msg_0839_SC02R0401_00000",
+      "en_US": [
+        "...Welcome...\r",
+        "...\n",
+        "...Kekeke...\r",
+        "We’ve had a reservation for you.\n",
+        "We’ve held it a long time...\r"
+      ]
+    },
+    {
+      "id": "msg_0839_SC02R0401_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} lay down on the bed\n",
+        "as if bidden there...\r"
+      ]
+    },
+    {
+      "id": "msg_0839_SC02R0401_00002",
+      "en_US": "{STRVAR_1 3, 0, 0} awakened!"
+    }
+  ]
+}

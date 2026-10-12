@@ -1,0 +1,235 @@
+{
+  "key": 8697,
+  "messages": [
+    {
+      "id": "msg_0873_ST02_00000",
+      "en_US": [
+        "Dawn: Oh! There you are!\n",
+        "Please, come with me!\\fThe professor is waiting!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00001",
+      "en_US": [
+        "This is it!\n",
+        "Our Pokémon Research Lab!\r",
+        "Let’s go...\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00002",
+      "en_US": [
+        "Lucas: Hi! I’ve been waiting for you!\n",
+        "Please, come with me.\\fThe prof’s waiting to see you.\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00003",
+      "en_US": [
+        "See? This is our Pokémon Research\n",
+        "Lab.\r",
+        "We’ll just go ahead and...\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00004",
+      "en_US": "Thud!!\r"
+    },
+    {
+      "id": "msg_0873_ST02_00005",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: What the...\r",
+        "Oh, it’s you, {STRVAR_1 3, 1, 0}!\r",
+        "That old guy... He’s not scary so\n",
+        "much as he is totally out there!\r",
+        "Aww, it doesn’t matter, {STRVAR_1 3, 1, 0}.\n",
+        "I’m out of here. See you later!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00006",
+      "en_US": [
+        "Dawn: Wow, what was that?\r",
+        "Your friend sure seems to be really\n",
+        "impatient.\r",
+        "Well, anyway...\n",
+        "Let’s go inside.\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00007",
+      "en_US": [
+        "Lucas: What was that?!\r",
+        "Your friend always seems to be\n",
+        "in such a rush.\r",
+        "Anyway...\n",
+        "Let’s go in.\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00008",
+      "en_US": [
+        "Dawn: OK, {STRVAR_1 3, 1, 0}, I’ll act as\n",
+        "your mentor.\r",
+        "I’ve got a bit more experience than\n",
+        "you as a Trainer and as the\\fprofessor’s assistant.\r",
+        "OK, follow me!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00009",
+      "en_US": [
+        "This building with the red roof is\n",
+        "the Pokémon Center.\r",
+        "It’s the place that heals Pokémon\n",
+        "that have been hurt in battle.\r",
+        "You can find a Pokémon Center in\n",
+        "most towns.\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00010",
+      "en_US": [
+        "The building with the blue roof over\n",
+        "here is the Poké Mart.\r",
+        "It’s a shop where you can buy and\n",
+        "sell items and medicine.\r",
+        "{STRVAR_1 3, 0, 0}, since you’re a novice\n",
+        "Trainer, you won’t be able to buy\\fmany kinds of merchandise.\r",
+        "Don’t let it bother you!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00011",
+      "en_US": [
+        "Oh, that’s right!\n",
+        "{STRVAR_1 3, 0, 0}...\r",
+        "Don’t you need to let your family\n",
+        "know that you’re going to be helping\\fProf. Rowan with the Pokédex?\r",
+        "You may need to go far away, so I\n",
+        "think you should let someone know.\r",
+        "Oh, but before you go, heal up your\n",
+        "Pokémon at the Poké Center.\r",
+        "It will be a lot less scary that way.\n",
+        "OK, bye now!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00012",
+      "en_US": ""
+    },
+    {
+      "id": "msg_0873_ST02_00013",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hey, {STRVAR_1 3, 1, 0}!\n",
+        "I want to show you a few things.\\fSo, follow me!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00014",
+      "en_US": [
+        "This building with the red roof is\n",
+        "the Pokémon Center.\r",
+        "You can get your Pokémon healed if\n",
+        "it’s been hurt in battle.\r",
+        "You’ll find a Pokémon Center in most\n",
+        "towns.\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00015",
+      "en_US": [
+        "Over here, the building with the blue\n",
+        "roof is the Poké Mart.\r",
+        "It’s a shop where you can buy and\n",
+        "sell all sorts of items.\r",
+        "{STRVAR_1 3, 0, 0}, since you’re a rookie\n",
+        "Trainer, you won’t be able to buy\\fvery much stuff.\r",
+        "Don’t worry about it, OK?\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00016",
+      "en_US": [
+        "Oh, yeah, right!\n",
+        "{STRVAR_1 3, 0, 0}...\r",
+        "You should let your family know\n",
+        "you’re helping Prof. Rowan put\\ftogether his Pokédex.\r",
+        "Sometimes, you have to go far away,\n",
+        "so you should let someone know.\r",
+        "Oh, but first, go heal up your\n",
+        "Pokémon at the Poké Center.\r",
+        "You’ll be safe then.\n",
+        "OK, be seeing you!\r"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00017",
+      "en_US": [
+        "Oh, wow!\n",
+        "Pokémon are so cool!\r",
+        "You can make yours battle and make\n",
+        "them stronger!\r",
+        "I wish I had some!\n",
+        "It’s so cool!"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00018",
+      "en_US": [
+        "That thing you have!\r",
+        "It’s a Pokédex, isn’t it?!\r",
+        "You’re off to see all kinds of\n",
+        "Pokémon now! Lucky you!"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00019",
+      "en_US": [
+        "So I don’t forget what’s happened,\n",
+        "till now, I’d better save this...\r",
+        "There!\n",
+        "Now I can take a break."
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00020",
+      "en_US": [
+        "Professor Rowan’s come back to town!\r",
+        "It must be, like, four years since\n",
+        "he left.\r",
+        "They say he was doing his research\n",
+        "somewhere else all this time."
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00021",
+      "en_US": [
+        "Sandgem Town\n",
+        "Town of Sand!"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00022",
+      "en_US": "Pokémon Research Lab"
+    },
+    {
+      "id": "msg_0873_ST02_00023",
+      "en_US": "{STRVAR_1 3, 0, 0}’s House"
+    },
+    {
+      "id": "msg_0873_ST02_00024",
+      "en_US": [
+        "All Your Item Needs Fulfilled!\n",
+        "Pokémon Mart"
+      ]
+    },
+    {
+      "id": "msg_0873_ST02_00025",
+      "en_US": [
+        "Heal Your Pokémon!\n",
+        "Pokémon Center"
+      ]
+    }
+  ]
+}

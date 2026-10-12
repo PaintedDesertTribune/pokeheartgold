@@ -1,0 +1,93 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD24R0104.h",
+  "bgs": [
+    {
+      "scriptId": "8429",
+      "type": 2,
+      "x": 12,
+      "z": 17,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SD24R0104_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1124",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 16,
+      "z": 2,
+      "y": 0
+    },
+    {
+      "id": "obj_SD24R0104_1",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1125",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 7,
+      "z": 17,
+      "y": 0
+    },
+    {
+      "id": "obj_SD24R0104_2",
+      "spriteId": "SPRITE_WORKMAN",
+      "movement": 40,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_WORKER_WILLY)",
+      "facingDirection": 3,
+      "param0": 2,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 6,
+      "yRange": 1,
+      "x": 4,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SD24R0104_3",
+      "spriteId": "SPRITE_WORKMAN",
+      "movement": 21,
+      "type": 1,
+      "eventFlag": "0",
+      "scriptId": "std_trainer(TRAINER_SINNOH_WORKER_BRADEN)",
+      "facingDirection": 0,
+      "param0": 3,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 4,
+      "yRange": 6,
+      "x": 1,
+      "z": 19,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 2,
+      "z": 3,
+      "header": "MAP_SINNOH_IRON_ISLAND_B1F_ROOM_2",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

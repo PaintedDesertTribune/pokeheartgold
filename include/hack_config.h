@@ -12,7 +12,7 @@
 
 // Boot straight into a new game (no intro movie, title or menu), for unattended map-load tests driven over the
 // melonDS GDB stub by tools/sinnoh_port/maploadtest.py. Set to 0 for a normal boot.
-#define HACK_AUTO_NEWGAME 1
+#define HACK_AUTO_NEWGAME 0
 // Show the game's error screen on any failed assertion instead of silently continuing.
 #define HACK_ASSERTS_ALWAYS_VISIBLE 1
 

@@ -1,0 +1,29 @@
+{
+  "key": 8218,
+  "messages": [
+    {
+      "id": "msg_0853_SC01R0202_00000",
+      "en_US": [
+        "I don’t know what to do.\r",
+        "What Accessories will go well with\n",
+        "my dress today?"
+      ]
+    },
+    {
+      "id": "msg_0853_SC01R0202_00001",
+      "en_US": [
+        "The star of tomorrow is... You!\n",
+        "Your Pokémon has a glow about it!\r",
+        "So, a gift for our future star!\r"
+      ]
+    },
+    {
+      "id": "msg_0853_SC01R0202_00002",
+      "en_US": [
+        "That’s a {STRVAR_1 31, 0, 0}!\r",
+        "I hope you get into collecting\n",
+        "Accessories for your Pokémon!"
+      ]
+    }
+  ]
+}

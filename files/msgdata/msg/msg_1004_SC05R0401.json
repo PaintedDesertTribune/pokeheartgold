@@ -1,0 +1,21 @@
+{
+  "key": 8303,
+  "messages": [
+    {
+      "id": "msg_1004_SC05R0401_00000",
+      "en_US": [
+        "You can take a cute Pokémon out for\n",
+        "a stroll in Amity Square."
+      ]
+    },
+    {
+      "id": "msg_1004_SC05R0401_00001",
+      "en_US": [
+        "I’m appalled!\n",
+        "They refused entry to my Pokémon!\r",
+        "Oh, my poor GYARADOS and STEELIX!\n",
+        "This is discrimination!"
+      ]
+    }
+  ]
+}

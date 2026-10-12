@@ -1,0 +1,57 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC10R0107.h",
+  "bgs": [
+    {
+      "scriptId": "0",
+      "type": 0,
+      "x": 8,
+      "z": 2,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 0,
+      "x": 8,
+      "z": 12,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SC10R0107_0",
+      "spriteId": "SPRITE_SINNOH_BIGFOUR3",
+      "movement": 15,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC10R0107_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 8,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 8,
+      "z": 2,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_FLINT_LUCIAN_LINK",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "z": 11,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_BERTHA_FLINT_LINK",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

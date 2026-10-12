@@ -1,0 +1,24 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC05R0803.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SC05R0803_000 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 5,
+      "y": 0,
+      "dir": 0
+    }
+  ],
+  "objects": [],
+  "warps": [
+    {
+      "x": 3,
+      "z": 6,
+      "header": "MAP_SINNOH_HEARTHOME_NORTHEAST_HOUSE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

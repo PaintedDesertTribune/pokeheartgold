@@ -1,0 +1,70 @@
+{
+  "key": 8337,
+  "messages": [
+    {
+      "id": "msg_1065_SC07R0206_00000",
+      "en_US": [
+        "Hello, thank you for shopping\n",
+        "with us today.\r",
+        "To which floor may I take you?"
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00001",
+      "en_US": "I look forward to serving you again."
+    },
+    {
+      "id": "msg_1065_SC07R0206_00002",
+      "en_US": [
+        "Certainly.\n",
+        "Elevator going up.\r"
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00003",
+      "en_US": [
+        "Certainly.\n",
+        "Elevator going down.\r"
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00004",
+      "en_US": "We are already on that floor?!"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00005",
+      "en_US": [
+        "Ground floor: Medicine and items for\n",
+        "all your adventure needs."
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00006",
+      "en_US": [
+        "Second floor: Useful items for all\n",
+        "Pokémon battles."
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00007",
+      "en_US": [
+        "Third floor: Technical Machines for\n",
+        "powering up Pokémon."
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00008",
+      "en_US": [
+        "Fourth floor: Desirable decoration\n",
+        "goods and Pokémon Dolls."
+      ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00009",
+      "en_US": [
+        "Fifth floor: The Rooftop Square for\n",
+        "a refreshing break from shopping."
+      ]
+    }
+  ]
+}

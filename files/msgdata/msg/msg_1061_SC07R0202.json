@@ -1,0 +1,106 @@
+{
+  "key": 8333,
+  "messages": [
+    {
+      "id": "msg_1061_SC07R0202_00000",
+      "en_US": [
+        "Hello.\n",
+        "May I help you with anything?"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00001",
+      "en_US": [
+        "Hello, {STRVAR_1 3, 0, 0}.\n",
+        "May I help you with anything?"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00002",
+      "en_US": "Please enjoy yourself."
+    },
+    {
+      "id": "msg_1061_SC07R0202_00003",
+      "en_US": [
+        "Would you care for a Protein?\n",
+        "It’s a drink that boosts Attack."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00004",
+      "en_US": [
+        "May I suggest a Carbos? It’s a drink\n",
+        "that boosts the base Speed stat."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00005",
+      "en_US": [
+        "When you need to make sure attacks hit\n",
+        "the target hard... Dire Hit is for you."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00006",
+      "en_US": [
+        "If your Pokémon has trouble with aim,\n",
+        "try treating it to an X Accuracy."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00007",
+      "en_US": [
+        "Where can I find matching dresses for\n",
+        "myself and my dear Pokémon?"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00008",
+      "en_US": [
+        "I’m going to give an HP Up to\n",
+        "my KRICKETOT.\r",
+        "This is going to raise its HP, huh?"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00009",
+      "en_US": [
+        "We’re giving away a Pokétch app for\n",
+        "free as a promotion.\r",
+        "I can give you the Counter app\n",
+        "over the counter. Would you like it?"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00010",
+      "en_US": [
+        "OK, here you go.\n",
+        "Go forth and count!\r"
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00011",
+      "en_US": [
+        "I hope that Counter app I gave you\n",
+        "is useful."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00012",
+      "en_US": [
+        "You’re not interested? I’ll be here\n",
+        "if you change your mind."
+      ]
+    },
+    {
+      "id": "msg_1061_SC07R0202_00013",
+      "en_US": [
+        "1F: Trainers’ Zone\r",
+        "2F: Battle Collection\r",
+        "3F: TM Corner\r",
+        "4F: Poké Dolls & Goods\r",
+        "5F: Rooftop Plaza"
+      ]
+    }
+  ]
+}

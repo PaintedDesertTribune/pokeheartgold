@@ -1,0 +1,59 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST04R0301.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_ST04R0301_002 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 3,
+      "y": 0,
+      "dir": 2
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_ST04R0301_0",
+      "spriteId": "SPRITE_SUNGLASSES",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST04R0301_000 + 1",
+      "facingDirection": 1,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 2,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_ST04R0301_1",
+      "spriteId": "SPRITE_MAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST04R0301_001 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 4,
+      "z": 3,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 8,
+      "header": "MAP_SINNOH_SOLACEON",
+      "anchor": 2,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

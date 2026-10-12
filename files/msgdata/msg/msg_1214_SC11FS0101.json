@@ -1,0 +1,30 @@
+{
+  "key": 8376,
+  "messages": [
+    {
+      "id": "msg_1214_SC11FS0101_00000",
+      "en_US": [
+        "What items should Pokémon hold?\n",
+        "It’s an important question.\r",
+        "Here’s something else to think\n",
+        "about.\r"
+      ]
+    },
+    {
+      "id": "msg_1214_SC11FS0101_00001",
+      "en_US": [
+        "Now, which Pokémon will you give\n",
+        "that Scope Lens to...?\r",
+        "Did I just add to your worries?"
+      ]
+    },
+    {
+      "id": "msg_1214_SC11FS0101_00002",
+      "en_US": [
+        "An item that guarantees you won’t\n",
+        "ever lose a battle...\r",
+        "They don’t sell anything like that."
+      ]
+    }
+  ]
+}

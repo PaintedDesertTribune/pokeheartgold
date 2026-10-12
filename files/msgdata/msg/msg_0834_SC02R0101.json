@@ -1,0 +1,63 @@
+{
+  "key": 8243,
+  "messages": [
+    {
+      "id": "msg_0834_SC02R0101_00000",
+      "en_US": [
+        "Hello.\n",
+        "This is the Canalave Library.\r",
+        "Please keep quiet while you’re on\n",
+        "the premises."
+      ]
+    },
+    {
+      "id": "msg_0834_SC02R0101_00001",
+      "en_US": [
+        "H-hello!\n",
+        "This is the Canalave Library.\r",
+        "Please keep quiet while you’re on\n",
+        "the premises.\r",
+        "It certainly wasn’t me who screamed,\r",
+        "“Gyaaah!!”\r",
+        "or shouted,\r",
+        "“Help meee!!”\r",
+        "No, really, that wasn’t me\n",
+        "screaming!"
+      ]
+    },
+    {
+      "id": "msg_0834_SC02R0101_00002",
+      "en_US": "...\r"
+    },
+    {
+      "id": "msg_0834_SC02R0101_00003",
+      "en_US": [
+        "What is it? Please don’t disturb\n",
+        "me when I’m reading.\r"
+      ]
+    },
+    {
+      "id": "msg_0834_SC02R0101_00004",
+      "en_US": [
+        "I’ve been asking people not to\n",
+        "disturb me while I’m reading...\r",
+        "I shouldn’t even have bothered...\n",
+        "I’m all agitated now!"
+      ]
+    },
+    {
+      "id": "msg_0834_SC02R0101_00005",
+      "en_US": [
+        "The ceiling-high bookshelves are\n",
+        "crammed with books."
+      ]
+    },
+    {
+      "id": "msg_0834_SC02R0101_00006",
+      "en_US": [
+        "The shelves are lined with books\n",
+        "worn from being read by many people."
+      ]
+    }
+  ]
+}

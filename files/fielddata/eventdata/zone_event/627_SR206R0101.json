@@ -1,0 +1,113 @@
+{
+  "header": "fielddata/script/scr_seq/event_SR206R0101.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SR206R0101_0",
+      "spriteId": "SPRITE_SHOPM1",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR206R0101_001 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_SR206R0101_1",
+      "spriteId": "SPRITE_SHOPM1",
+      "movement": 16,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR206R0101_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 11,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_SR206R0101_2",
+      "spriteId": "SPRITE_GIRL2",
+      "movement": 10,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR206R0101_003 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 9,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 6,
+      "z": 2,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 7,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "z": 12,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "z": 2,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "z": 2,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 8,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "z": 12,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "z": 12,
+      "header": "MAP_SINNOH_ROUTE_206",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_SR206R0101_002 + 1",
+      "x": 5,
+      "z": 7,
+      "w": 5,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "VAR_SINNOH_40EC"
+    }
+  ]
+}

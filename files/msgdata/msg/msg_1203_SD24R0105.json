@@ -1,0 +1,200 @@
+{
+  "key": 8450,
+  "messages": [
+    {
+      "id": "msg_1203_SD24R0105_00000",
+      "en_US": [
+        "...You are?\r",
+        "OK, you’re {STRVAR_1 3, 0, 0}.\n",
+        "I’m Riley.\r",
+        "I’m a Trainer, and yes, it is a bit\n",
+        "odd that I would be training here.\r",
+        "If you’d like, we could team up.\n",
+        "The wild Pokémon here are restless.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00001",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} decided to go with\n",
+        "Riley!"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00002",
+      "en_US": [
+        "Riley: If your Pokémon get hurt,\n",
+        "I’ll heal them up."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00003",
+      "en_US": [
+        "Riley: Hi, {STRVAR_1 3, 0, 0}.\n",
+        "Let’s team up.\\fThe Pokémon seem to be restless.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00004",
+      "en_US": [
+        "Riley: ...Are you going back?\r",
+        "I’ll be hanging around here.\n",
+        "It would be good if you came back.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00005",
+      "en_US": [
+        "Riley: I get it now. You’re\n",
+        "responsible for agitating the Pokémon.\r",
+        "I don’t care what good reason you\n",
+        "may have, but I don’t want you\\fbringing any trouble into my mine.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00006",
+      "en_US": [
+        "Grunt 1: We’re Team Galactic!\n",
+        "We’ll take all the Pokémon we want!\\fIsn’t that right, partner?\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00007",
+      "en_US": [
+        "Grunt 2: You said it, brother!\n",
+        "So that’s what we’re gonna do!\r",
+        "We’re abducting all the Pokémon from\n",
+        "this rusted-out Iron Island!\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00008",
+      "en_US": [
+        "Riley: To share in all the joys and\n",
+        "all the sorrows...\r",
+        "That is how all the Trainers and\n",
+        "Pokémon live in Sinnoh!\r",
+        "I won’t allow anyone to defy that\n",
+        "code of ethics!\r",
+        "Come on, {STRVAR_1 3, 0, 0}!\n",
+        "This is one battle we can’t lose!\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00009",
+      "en_US": [
+        "Grunt 1: Stop! I said stop!\n",
+        "Your combination is so sick!\\fThe both of you, and your Pokémon...\r",
+        "Let’s beat it, partner!\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00010",
+      "en_US": [
+        "Grunt 2: You said it, brother!\r",
+        "We don’t even know what Team \n",
+        "Galactic’s big plan is anyway!\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00011",
+      "en_US": [
+        "Riley: Thanks.\n",
+        "You really helped me out.\r",
+        "Listen, I have a Pokémon Egg\n",
+        "here.\r",
+        "Would you take it with you?"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00012",
+      "en_US": [
+        "Riley: Thanks!\r",
+        "I’d like you to show the Pokémon\n",
+        "that’s inside the Egg all sorts\\fof new places.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00013",
+      "en_US": [
+        "Riley: Thank you...\r",
+        "But you don’t have room to take\n",
+        "another Pokémon.\r",
+        "All right, then.\n",
+        "I’ll wait here for you."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00014",
+      "en_US": [
+        "Riley: I hope you’ll accept it as\n",
+        "a token of our friendship.\r"
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00015",
+      "en_US": [
+        "Riley: Spending time with you was\n",
+        "very enjoyable.\r",
+        "I intend to test my skills in other\n",
+        "places from now on.\r",
+        "Let’s meet again!\n",
+        "Take care on the way out."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00016",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1203_SD24R0105_00017",
+      "en_US": ""
+    },
+    {
+      "id": "msg_1203_SD24R0105_00018",
+      "en_US": [
+        "Riley: Haha, I’d have to agree.\r",
+        "People training here would be those\n",
+        "with too much time on their hands."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00019",
+      "en_US": [
+        "Riley: This used to be a fairly\n",
+        "thriving ore mine once upon a time.\r",
+        "I guess the steel ore’s played out.\n",
+        "There’s only Pokémon here now."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00020",
+      "en_US": [
+        "Riley: Have you met Byron?\n",
+        "The Leader of Canalave Gym?\r",
+        "He’s asked me to become a Gym Leader,\n",
+        "but there’s his son Roark to consider."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00021",
+      "en_US": [
+        "Riley: Imagine what it would be like\n",
+        "for a Steel-type Pokémon user to\\fbattle a Steel type.\r",
+        "Would that be like battling yourself,\n",
+        "I wonder?\r",
+        "I mean, it’s a lot harder to defeat\n",
+        "one’s self than anyone else."
+      ]
+    },
+    {
+      "id": "msg_1203_SD24R0105_00022",
+      "en_US": [
+        "Riley: What’s going on here, though?\n",
+        "The native Pokémon are restless...\r",
+        "I don’t like this...\n",
+        "Let’s hurry."
+      ]
+    }
+  ]
+}

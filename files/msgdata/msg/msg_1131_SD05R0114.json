@@ -1,0 +1,501 @@
+{
+  "key": 8412,
+  "messages": [
+    {
+      "id": "msg_1131_SD05R0114_00000",
+      "en_US": [
+        "Something huge is going to happen,\n",
+        "I think...maybe. Right?\r",
+        "Don’t meddle around! Of course,\n",
+        "you’re going to, aren’t you?\r",
+        "That’s why the two of us will team up\n",
+        "to take you down to the ground!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00001",
+      "en_US": [
+        "Something huge is going to happen,\n",
+        "I think...maybe. Right?\r",
+        "Don’t meddle around! Of course,\n",
+        "you’re going to, aren’t you?\r",
+        "That’s why the two of us will team up\n",
+        "to take you down to the ground!\r",
+        "Oh, but you have only one Pokémon?\n",
+        "Scram, then!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00002",
+      "en_US": [
+        "Well, that was just pathetic...\r",
+        "We’re just gonna let you pass so you\n",
+        "can get pulverized by our bosses!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00003",
+      "en_US": [
+        "Boss: ...\r",
+        "Now, all will end.\n",
+        "And everything will begin.\r",
+        "With this Red Chain I will pry open\n",
+        "the portal to another dimension.\r",
+        "I command that you unleash your\n",
+        "power for me...\r",
+        "DIALGA, the mythical Pokémon, and\n",
+        "the master of time!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00004",
+      "en_US": [
+        "Boss: ...\r",
+        "Now, all will end.\n",
+        "And everything will begin.\r",
+        "With this Red Chain I will pry open\n",
+        "the portal to another dimension.\r",
+        "I command that you unleash your\n",
+        "power for me...\r",
+        "PALKIA, the mythical Pokémon, and\n",
+        "the master of space and dimensions!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00005",
+      "en_US": [
+        "Boss: ...This will bring about the\n",
+        "destruction of all things.\r",
+        "With everything gone, there will be\n",
+        "no fighting and no strife.\r",
+        "Can you feel time distorting?\n",
+        "Only I can choose to stop it.\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00006",
+      "en_US": [
+        "Boss: ...This will bring about the\n",
+        "destruction of all things.\r",
+        "With everything gone, there will be\n",
+        "no fighting and no strife.\r",
+        "Feel the dimensions distorting...\n",
+        "Only I can stop it.\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00007",
+      "en_US": [
+        "Boss: This is the mythical Pokémon\n",
+        "that created Sinnoh!\r",
+        "DIALGA, the ancient deity of time!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00008",
+      "en_US": [
+        "Boss: This is the mythical Pokémon\n",
+        "that created Sinnoh!\r",
+        "PALKIA, the ancient deity of space\n",
+        "and the dimensions!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00009",
+      "en_US": "DIALGA: Gugyugubah!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00010",
+      "en_US": "PALKIA: Gagyagyaah!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00011",
+      "en_US": [
+        "Boss: This world cannot be molded\n",
+        "into the ultimate world I seek!\r",
+        "It’s far easier to create an entirely\n",
+        "new world than to change this one!\r",
+        "A new world in which I am the ruler\n",
+        "of all things! I shall become a deity!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00012",
+      "en_US": [
+        "Mars: There’s no need to rush.\r",
+        "I can understand you want to battle\n",
+        "our boss real bad, but you’ll have\\fto go through me first.\r",
+        "After all, you’ve made me look bad\n",
+        "more times than I care to remember!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00013",
+      "en_US": [
+        "Jupiter: And I’ll be next.\r",
+        "You might be tough, but this time,\n",
+        "the gloves are coming off!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00014",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hold on one second!\r",
+        "Don’t you start the party without\n",
+        "me!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00015",
+      "en_US": [
+        "Jupiter: Humph!\r",
+        "Well, if it isn’t the little boy who\n",
+        "ran off crying at Lake Acuity!\r",
+        "Did you get any tougher since then?\n",
+        "We’ll beat you two-on-two!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00016",
+      "en_US": [
+        "Mars: You don’t think you can just\n",
+        "run off now, do you?\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00017",
+      "en_US": [
+        "Mars: Well, hotshot?\n",
+        "Now what?"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00018",
+      "en_US": [
+        "Jupiter: Oh? You chickening out now?\r",
+        "You finally realized that you can’t\n",
+        "beat our boss, eh?\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00019",
+      "en_US": [
+        "Jupiter: What’s the matter?\n",
+        "Don’t tell me you’re shaking?"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00020",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: ...Heh.\n",
+        "My Pokémon are tough, right?\\fI can get even tougher!\r",
+        "...But, you know, that’s it for us.\n",
+        "We’ve hit the wall...\r",
+        "{STRVAR_1 3, 1, 0}, I’ll help you with\n",
+        "this!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00021",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} fully healed\n",
+        "{STRVAR_1 3, 1, 0}’s Pokémon!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00022",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}: Hey, {STRVAR_1 3, 1, 0}!\n",
+        "This is it! It’s your show now!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00023",
+      "en_US": [
+        "Boss: Oh! DIALGA...\n",
+        "This is...\r",
+        "Fantastic!\n",
+        "Beautiful!\r",
+        "It’s the creation of a new galaxy!\n",
+        "My new world!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00024",
+      "en_US": [
+        "Boss: Oh! PALKIA...\n",
+        "This is...\r",
+        "Fantastic!\n",
+        "Beautiful!\r",
+        "It’s the creation of a new galaxy!\n",
+        "My new world!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00025",
+      "en_US": "Boss: ...Wh-what?!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00026",
+      "en_US": "UXIE: Piiih!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00027",
+      "en_US": "MESPRIT: Piiih!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00028",
+      "en_US": "AZELF: Piiih!\r"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00029",
+      "en_US": [
+        "Boss: ...!\r",
+        "The Red Chain!\n",
+        "It crumbled away to nothing?!\r",
+        "But why?\r",
+        "Why would MESPRIT, the Pokémon of\n",
+        "Lake Verity, appear by your side?\r",
+        "But never mind that!\n",
+        "It’s all destroyed!\\fMy galaxy is gone!\r",
+        "...I won’t allow this...\r",
+        "I will capture those three again\n",
+        "and craft another Red Chain!\r",
+        "But before I even think about that,\n",
+        "I’m going to completely crush you!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00030",
+      "en_US": [
+        "Boss: ...!\r",
+        "What is truly the ultimate to you?\n",
+        "What do you consider perfection?\r",
+        "The most important thing...\n",
+        "What shines the brightest...\r",
+        "...Telling you is meaningless.\n",
+        "But I will not give up.\r",
+        "I will become a deity one day...\n",
+        "And I will make the ultimate mine..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00031",
+      "en_US": [
+        "Boss: ...!\r",
+        "What is truly the ultimate to you?\n",
+        "What do you consider perfection?\r",
+        "The most beautiful thing...\n",
+        "Joy that shines the brightest...\r",
+        "...Telling you is meaningless.\n",
+        "But I will not give up.\r",
+        "I will become a deity one day...\n",
+        "And I will make the ultimate mine..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00032",
+      "en_US": "DIALGA: Gugyugubah!"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00033",
+      "en_US": "PALKIA: Gagyagyaah!"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00034",
+      "en_US": [
+        "DIALGA returned to the world from\n",
+        "which it came..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00035",
+      "en_US": [
+        "PALKIA returned to the world from\n",
+        "which it came..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00036",
+      "en_US": [
+        "Rowan: DIALGA, the master of\n",
+        "time...\r",
+        "It’s impossible to tell if it is\n",
+        "enraged or saddened...\r",
+        "But to me, DIALGA appears to be\n",
+        "waiting for you, {STRVAR_1 3, 0, 0}...\r",
+        "It seems to be challenging you\n",
+        "as a test...\r",
+        "Go on, {STRVAR_1 3, 0, 0}.\n",
+        "Face up to DIALGA!\r",
+        "Listen to its heart.\n",
+        "Understand its thoughts.\r",
+        "DIALGA is out of control after being\n",
+        "dragged out by the Red Chain\\fand forced to use its power.\r",
+        "DIALGA seems to be entrusting you\n",
+        "with stopping it..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00037",
+      "en_US": [
+        "Rowan: PALKIA, the master of\n",
+        "space and the dimensions...\r",
+        "It’s impossible to tell if it is\n",
+        "enraged or saddened...\r",
+        "But to me, PALKIA appears to be\n",
+        "waiting for you, {STRVAR_1 3, 0, 0}...\r",
+        "It seems to be challenging you\n",
+        "as a test...\r",
+        "Go on, {STRVAR_1 3, 0, 0}.\n",
+        "Face up to PALKIA!\r",
+        "Listen to its heart.\n",
+        "Understand its thoughts.\r",
+        "PALKIA is out of control after being\n",
+        "dragged out by the Red Chain\\fand forced to use its power.\r",
+        "PALKIA seems to be entrusting you\n",
+        "with stopping it..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00038",
+      "en_US": [
+        "Rowan: Go on, {STRVAR_1 3, 0, 0}.\n",
+        "Face up to the Pokémon!\r",
+        "Listen to its heart.\n",
+        "Understand its thoughts.\r",
+        "The mythical Pokémon seems to be\n",
+        "entrusting you with stopping it...\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00039",
+      "en_US": [
+        "Dawn: {STRVAR_1 3, 0, 0}... I ran into\n",
+        "{STRVAR_1 3, 1, 0} a little while ago.\r",
+        "He said that he believed in you,\n",
+        "{STRVAR_1 3, 0, 0}.\r",
+        "He said that you could get the job\n",
+        "done.\r",
+        "I feel the same way.\r",
+        "Please help that Pokémon!\r",
+        "It’s suffering from being dragged\n",
+        "out by Team Galactic!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00040",
+      "en_US": [
+        "Lucas: {STRVAR_1 3, 0, 0}...\n",
+        "I just ran into {STRVAR_1 3, 1, 0}.\r",
+        "He said that he believed in you,\n",
+        "{STRVAR_1 3, 0, 0}.\r",
+        "He said that you could get the job\n",
+        "done.\r",
+        "I think so too.\r",
+        "You’ve got to help that Pokémon!\r",
+        "It’s suffering from being dragged\n",
+        "out by Team Galactic!"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00041",
+      "en_US": [
+        "Rowan: {STRVAR_1 3, 1, 0}!\n",
+        "I don’t know how...\r",
+        "You were magnificent.\n",
+        "Truly, you were incredible.\r",
+        "I’ve lived for sixty years, but I’ve\n",
+        "never been thrilled like this!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00042",
+      "en_US": [
+        "Dawn: Since the last time, the\n",
+        "professor did a lot of research...\r",
+        "He became very concerned about you,\n",
+        "{STRVAR_1 3, 1, 0}, so he came out to\\fa place as treacherous as this...\r",
+        "{STRVAR_1 3, 1, 0}, I’m so glad you’re\n",
+        "safe.\r",
+        "Let’s go home!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00043",
+      "en_US": [
+        "Lucas: Since the last time, the\n",
+        "professor did a lot of research...\r",
+        "He became very worried about you,\n",
+        "{STRVAR_1 3, 1, 0}, so he came out to\\fa place as terrible as this...\r",
+        "{STRVAR_1 3, 1, 0}, I’m glad to see\n",
+        "you’re safe.\r",
+        "Let’s leave this place already!\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00044",
+      "en_US": [
+        "Rowan: No one has the right to take\n",
+        "away anyone’s future or anyone’s\\fworld..."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00045",
+      "en_US": [
+        "Rowan: {STRVAR_1 3, 0, 0}, I’ll be looking\n",
+        "forward to seeing your Pokédex.\r",
+        "Go wherever you’ve never visited\n",
+        "before.\r",
+        "That way, you should see Pokémon\n",
+        "you haven’t yet seen."
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00046",
+      "en_US": [
+        "Dawn: ...You know, that Pokémon was\n",
+        "extraordinary, wasn’t it?\r",
+        "Was it really the Pokémon that\n",
+        "created the Sinnoh region...?"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00047",
+      "en_US": [
+        "Lucas: ...You know, that Pokémon was\n",
+        "extraordinary, wasn’t it?\r",
+        "Was it really the Pokémon that\n",
+        "created the Sinnoh region...?"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00048",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}’s Azure Flute is\n",
+        "making a sound.\r",
+        "Would you like to play\n",
+        "the Azure Flute?"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00049",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} played\n",
+        "the Azure Flute.\r"
+      ]
+    },
+    {
+      "id": "msg_1131_SD05R0114_00050",
+      "en_US": "A stairway of light appeared!"
+    },
+    {
+      "id": "msg_1131_SD05R0114_00051",
+      "en_US": [
+        "The Azure Flute’s notes rang hollowly\n",
+        "to no effect...\r",
+        "It appears to be useless here..."
+      ]
+    }
+  ]
+}

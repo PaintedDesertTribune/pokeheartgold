@@ -1,0 +1,27 @@
+{
+  "key": 8420,
+  "messages": [
+    {
+      "id": "msg_1113_SD06R0206_00000",
+      "en_US": [
+        "I found this during the Safari\n",
+        "Game.\r",
+        "It’s the Hidden Machine Defog, but\n",
+        "none of my Pokémon can learn it.\r",
+        "You’d be doing me a favor if you\n",
+        "took this.\r"
+      ]
+    },
+    {
+      "id": "msg_1113_SD06R0206_00001",
+      "en_US": [
+        "It’d be good if we could set up signs\n",
+        "for the Safari Game. Some markers."
+      ]
+    },
+    {
+      "id": "msg_1113_SD06R0206_00002",
+      "en_US": "Great Marsh Area 6"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "key": 8613,
+  "messages": [
+    {
+      "id": "msg_0929_SR205AR0101_00000",
+      "en_US": [
+        "You seem to be tired...\n",
+        "Rest a while."
+      ]
+    },
+    {
+      "id": "msg_0929_SR205AR0101_00001",
+      "en_US": [
+        "You and your Pokémon look\n",
+        "completely refreshed!"
+      ]
+    },
+    {
+      "id": "msg_0929_SR205AR0101_00002",
+      "en_US": [
+        "Just because you’re young doesn’t\n",
+        "mean you should push yourself."
+      ]
+    },
+    {
+      "id": "msg_0929_SR205AR0101_00003",
+      "en_US": [
+        "You think you can get through the\n",
+        "Eterna Forest by yourself?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST01R0201.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_006 + 1",
+      "type": 0,
+      "x": 6,
+      "z": 5,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_006 + 1",
+      "type": 0,
+      "x": 7,
+      "z": 5,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_007 + 1",
+      "type": 0,
+      "x": 5,
+      "z": 3,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_008 + 1",
+      "type": 0,
+      "x": 2,
+      "z": 3,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_008 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 3,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_009 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 5,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_009 + 1",
+      "type": 0,
+      "x": 2,
+      "z": 5,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_009 + 1",
+      "type": 0,
+      "x": 3,
+      "z": 5,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_ST01R0201_0",
+      "spriteId": "SPRITE_SINNOH_MAMA",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST01R0201_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 7,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_ST01R0201_1",
+      "spriteId": "SPRITE_MIDDLEWOMAN1",
+      "movement": 14,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_527",
+      "scriptId": "_EV_scr_seq_ST01R0201_005 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 6,
+      "z": 10,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 6,
+      "z": 10,
+      "header": "MAP_SINNOH_TWINLEAF",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 10,
+      "z": 3,
+      "header": "MAP_SINNOH_TWINLEAF_RIVAL_HOUSE_2F",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_ST01R0201_004 + 1",
+      "x": 6,
+      "z": 10,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 1,
+      "var": "VAR_SINNOH_40A4"
+    }
+  ]
+}

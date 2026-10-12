@@ -1,0 +1,48 @@
+{
+  "key": 8439,
+  "messages": [
+    {
+      "id": "msg_1237_SD16R0103_00000",
+      "en_US": [
+        "Buck: Heheh!\n",
+        "Check this out, {STRVAR_1 3, 1, 0}!\r",
+        "This is the Magma Stone, the treasure\n",
+        "of Stark Mountain!\r",
+        "Since I found it, that makes me the\n",
+        "greatest Trainer out of everyone!\r",
+        "Thanks, you all helped it happen!\r"
+      ]
+    },
+    {
+      "id": "msg_1237_SD16R0103_00001",
+      "en_US": "Buck: Oof!\r"
+    },
+    {
+      "id": "msg_1237_SD16R0103_00002",
+      "en_US": [
+        "Buck: Whoa! Wow!\r",
+        "Hehehe! That was wicked!\n",
+        "The volcano’s in shock from that!\r",
+        "It might be so shocked, it’ll erupt!\n",
+        "Nah, that can’t happen!\r",
+        "See ya, {STRVAR_1 3, 1, 0}!\n",
+        "Say hi to that zippity Trainer buddy!\r"
+      ]
+    },
+    {
+      "id": "msg_1237_SD16R0103_00003",
+      "en_US": "Gwogobo gwobobobo!\r"
+    },
+    {
+      "id": "msg_1237_SD16R0103_00004",
+      "en_US": [
+        "HEATRAN disappeared into\n",
+        "the volcano..."
+      ]
+    },
+    {
+      "id": "msg_1237_SD16R0103_00005",
+      "en_US": ""
+    }
+  ]
+}

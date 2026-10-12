@@ -1,0 +1,54 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD07R0105.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SD07R0105_0",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 11,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_573",
+      "scriptId": "_EV_scr_seq_SD07R0105_000 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 4,
+      "z": 6,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 4,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_1F_MAIN_ROOM",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "z": 10,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B2F_MAIN_ROOM",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "z": 3,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B1F_ROOM_1",
+      "anchor": 0,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "z": 10,
+      "header": "MAP_SINNOH_SOLACEON_RUINS_B1F_ROOM_2",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -1,0 +1,26 @@
+{
+  "key": 8257,
+  "messages": [
+    {
+      "id": "msg_0901_SC03R0103_00000",
+      "en_US": [
+        "Do you make your Pokémon hold items?\r",
+        "If you’d like, let one hold this\n",
+        "{STRVAR_1 8, 0, 0}.\r"
+      ]
+    },
+    {
+      "id": "msg_0901_SC03R0103_00001",
+      "en_US": [
+        "That {STRVAR_1 8, 0, 0} intensifies the\n",
+        "power of Rock-type moves.\r",
+        "Unfortunately, none of my Pokémon\n",
+        "can use Rock-type moves, so..."
+      ]
+    },
+    {
+      "id": "msg_0901_SC03R0103_00002",
+      "en_US": "PSYDUCK: Duuuck?"
+    }
+  ]
+}

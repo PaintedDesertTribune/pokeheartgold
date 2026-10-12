@@ -31,7 +31,7 @@ _021FB884: .word Heap_Realloc
 	thumb_func_start AreaDataManager_Alloc
 AreaDataManager_Alloc: ; 0x021FB888
 	push {r3, r4, r5, lr}
-	ldr r1, _021FB8F8 ; =0x000008C4
+	ldr r1, _021FB8F8 ; =0x0000102C
 	add r5, r0, #0
 	mov r0, #4
 	bl Heap_Alloc
@@ -39,7 +39,7 @@ AreaDataManager_Alloc: ; 0x021FB888
 	mov r0, #4
 	mov r1, #0x10
 	bl Heap_AllocAtEnd
-	ldr r1, _021FB8FC ; =0x000008B8
+	ldr r1, _021FB8FC ; =0x00001020
 	mov r2, #0
 	str r0, [r4, r1]
 	ldr r0, [r4, r1]
@@ -51,7 +51,7 @@ AreaDataManager_Alloc: ; 0x021FB888
 	mov r1, #0x2a
 	add r2, r5, #0
 	bl ReadWholeNarcMemberByIdPair
-	ldr r0, _021FB900 ; =0x000008B6
+	ldr r0, _021FB900 ; =0x0000101E
 	ldrb r0, [r4, r0]
 	cmp r0, #0
 	beq _021FB8D8
@@ -78,7 +78,7 @@ _021FB8D8:
 	mov r1, #4
 	bl NARC_New
 _021FB8EE:
-	ldr r1, _021FB8FC ; =0x000008B8
+	ldr r1, _021FB8FC ; =0x00001020
 	ldr r1, [r4, r1]
 	str r0, [r1, #8]
 	add r0, r4, #0
@@ -139,20 +139,21 @@ _021FB93E:
 AreaDataManager_Free: ; 0x021FB944
 	push {r3, r4, r5, r6, r7, lr}
 	add r5, r0, #0
-	mov r0, #0x23
+	mov r0, #0x81
 	ldr r1, [r5]
-	lsl r0, r0, #6
+	lsl r0, r0, #5
+	add r0, #8
 	ldr r0, [r1, r0]
 	bl NARC_Delete
 	ldr r1, [r5]
-	ldr r0, _021FB9BC ; =0x000008AC
+	ldr r0, _021FB9BC ; =0x00001014
 	ldr r0, [r1, r0]
 	cmp r0, #0
 	beq _021FB962
 	bl ov01_021EA7E0
 _021FB962:
 	mov r6, #0
-	ldr r7, _021FB9C0 ; =0x00000226
+	ldr r7, _021FB9C0 ; =0x00000400
 	add r4, r6, #0
 _021FB968:
 	ldr r0, [r5]
@@ -167,25 +168,26 @@ _021FB976:
 	cmp r6, r7
 	blt _021FB968
 	ldr r1, [r5]
-	ldr r0, _021FB9C4 ; =0x000008BC
+	ldr r0, _021FB9C4 ; =0x00001024
 	ldr r0, [r1, r0]
 	bl Heap_Free
 	ldr r1, [r5]
-	ldr r0, _021FB9C8 ; =0x0000089C
+	ldr r0, _021FB9C8 ; =0x00001004
 	ldr r0, [r1, r0]
 	bl Heap_Free
 	ldr r1, [r5]
-	ldr r0, _021FB9C8 ; =0x0000089C
+	ldr r0, _021FB9C8 ; =0x00001004
 	mov r2, #0
 	str r2, [r1, r0]
 	ldr r1, [r5]
 	add r0, r0, #4
 	ldr r0, [r1, r0]
 	bl Heap_Free
-	mov r0, #0x8a
+	mov r0, #0x80
 	ldr r1, [r5]
 	mov r2, #0
-	lsl r0, r0, #4
+	lsl r0, r0, #5
+	add r0, #8
 	str r2, [r1, r0]
 	ldr r0, [r5]
 	bl Heap_Free
@@ -206,7 +208,7 @@ AreaDataManager_GetMapTexture: ; 0x021FB9CC
 	bne _021FB9D6
 	bl GF_AssertFail
 _021FB9D6:
-	ldr r0, _021FB9DC ; =0x000008A4
+	ldr r0, _021FB9DC ; =0x0000100C
 	ldr r0, [r4, r0]
 	pop {r4, pc}
 	.balign 4, 0
@@ -220,7 +222,7 @@ ov01_021FB9E0: ; 0x021FB9E0
 	bne _021FB9EA
 	bl GF_AssertFail
 _021FB9EA:
-	ldr r0, _021FB9F0 ; =0x000008A8
+	ldr r0, _021FB9F0 ; =0x00001010
 	ldr r0, [r4, r0]
 	pop {r4, pc}
 	.balign 4, 0
@@ -229,7 +231,7 @@ _021FB9F0: .word 0x00001010
 
 	thumb_func_start ov01_021FB9F4
 ov01_021FB9F4: ; 0x021FB9F4
-	ldr r1, _021FB9FC ; =0x000008AC
+	ldr r1, _021FB9FC ; =0x00001014
 	ldr r0, [r0, r1]
 	bx lr
 	nop
@@ -238,7 +240,7 @@ _021FB9FC: .word 0x00001014
 
 	thumb_func_start ov01_021FBA00
 ov01_021FBA00: ; 0x021FBA00
-	ldr r1, _021FBA10 ; =0x000008B7
+	ldr r1, _021FBA10 ; =0x0000101F
 	ldrb r0, [r0, r1]
 	cmp r0, #0
 	beq _021FBA0C
@@ -253,7 +255,7 @@ _021FBA10: .word 0x0000101F
 
 	thumb_func_start AreaDataManager_GetAreaLightArchiveID
 AreaDataManager_GetAreaLightArchiveID: ; 0x021FBA14
-	ldr r1, _021FBA38 ; =0x000008B7
+	ldr r1, _021FBA38 ; =0x0000101F
 	ldrb r0, [r0, r1]
 	cmp r0, #0
 	beq _021FBA26
@@ -284,7 +286,7 @@ AreaDataManager_Load: ; 0x021FBA3C
 	sub sp, #0x13c
 	str r1, [sp, #0xc]
 	add r5, r0, #0
-	ldr r1, _021FBC94 ; =0x000008B8
+	ldr r1, _021FBC94 ; =0x00001020
 	ldr r0, [sp, #0x150]
 	ldr r6, [r5, r1]
 	sub r1, #8
@@ -295,22 +297,22 @@ AreaDataManager_Load: ; 0x021FBA3C
 	mov r2, #4
 	add r4, r3, #0
 	bl AllocAndReadWholeNarcMemberByIdPair
-	ldr r1, _021FBC98 ; =0x000008BC
+	ldr r1, _021FBC98 ; =0x00001024
 	str r0, [r5, r1]
 	ldr r0, [r5, r1]
 	ldrh r1, [r0]
-	ldr r0, _021FBC9C ; =0x00000226
+	ldr r0, _021FBC9C ; =0x00000400
 	strh r1, [r6, #0xc]
 	cmp r1, r0
 	blo _021FBA70
 	bl GF_AssertFail
 _021FBA70:
-	ldr r1, _021FBCA0 ; =0x000008B2
+	ldr r1, _021FBCA0 ; =0x0000101A
 	mov r0, #0x2c
 	ldrh r1, [r5, r1]
 	mov r2, #4
 	bl AllocAndReadWholeNarcMemberByIdPair
-	ldr r1, _021FBCA4 ; =0x0000089C
+	ldr r1, _021FBCA4 ; =0x00001004
 	mov r2, #4
 	str r0, [r5, r1]
 	add r1, #0x14
@@ -324,7 +326,7 @@ _021FBA70:
 	sub r0, r1, #4
 	ldr r0, [r5, r0]
 	bl NNS_G3dGetTex
-	ldr r1, _021FBCA8 ; =0x000008A4
+	ldr r1, _021FBCA8 ; =0x0000100C
 	str r0, [r5, r1]
 	ldrh r0, [r6, #0xc]
 	cmp r0, #0
@@ -332,7 +334,7 @@ _021FBA70:
 	sub r0, r1, #4
 	ldr r0, [r5, r0]
 	bl NNS_G3dGetTex
-	ldr r1, _021FBCAC ; =0x000008A8
+	ldr r1, _021FBCAC ; =0x00001010
 	str r0, [r5, r1]
 	b _021FBAB8
 _021FBAB2:
@@ -340,19 +342,19 @@ _021FBAB2:
 	add r0, r1, #4
 	str r2, [r5, r0]
 _021FBAB8:
-	ldr r0, _021FBCA8 ; =0x000008A4
+	ldr r0, _021FBCA8 ; =0x0000100C
 	ldr r0, [r5, r0]
 	bl GF3dRender_AllocAndLoadTexResources
 	cmp r0, #0
 	bne _021FBAC8
 	bl GF_AssertFail
 _021FBAC8:
-	ldr r1, _021FBCA4 ; =0x0000089C
+	ldr r1, _021FBCA4 ; =0x00001004
 	ldr r0, [r5, r1]
 	add r1, #8
 	ldr r1, [r5, r1]
 	bl ov01_021FB878
-	ldr r0, _021FBCAC ; =0x000008A8
+	ldr r0, _021FBCAC ; =0x00001010
 	ldr r0, [r5, r0]
 	cmp r0, #0
 	beq _021FBAF6
@@ -369,7 +371,7 @@ _021FBAE8:
 	ldr r1, [r5, r1]
 	bl ov01_021FB878
 _021FBAF6:
-	ldr r0, _021FBCB0 ; =0x000008B4
+	ldr r0, _021FBCB0 ; =0x0000101C
 	ldrh r1, [r5, r0]
 	ldr r0, _021FBCB4 ; =0x0000FFFF
 	cmp r1, r0
@@ -378,7 +380,7 @@ _021FBAF6:
 	bl ov01_0220463C
 _021FBB06:
 	mov r2, #0
-	ldr r0, _021FBC9C ; =0x00000226
+	ldr r0, _021FBC9C ; =0x00000400
 	add r3, r5, #0
 	add r1, r2, #0
 _021FBB0E:
@@ -387,7 +389,7 @@ _021FBB0E:
 	add r3, r3, #4
 	cmp r2, r0
 	blt _021FBB0E
-	ldr r0, _021FBCB8 ; =0x000008AC
+	ldr r0, _021FBCB8 ; =0x00001014
 	str r1, [r5, r0]
 	ldr r0, [sp, #0x10]
 	bl MapPropAnimationManager_GetAnimListNARCFileCount
@@ -400,7 +402,7 @@ _021FBB0E:
 	ldr r0, [sp, #0x20]
 	str r0, [sp, #0x18]
 _021FBB32:
-	ldr r0, _021FBC98 ; =0x000008BC
+	ldr r0, _021FBC98 ; =0x00001024
 	ldr r1, [r5, r0]
 	ldr r0, [sp, #0x18]
 	add r0, r1, r0
@@ -427,7 +429,7 @@ _021FBB4C:
 	add r1, r4, #0
 	add r2, sp, #0x24
 	bl NARC_ReadWholeMember
-	ldr r1, _021FBCAC ; =0x000008A8
+	ldr r1, _021FBCAC ; =0x00001010
 	ldr r0, [r7, #4]
 	ldr r1, [r5, r1]
 	bl GF3dRender_BindModelSet
@@ -475,7 +477,7 @@ _021FBBC2:
 	add r0, sp, #0x24
 	str r0, [sp]
 	ldr r0, [sp, #0x10]
-	ldr r3, _021FBCAC ; =0x000008A8
+	ldr r3, _021FBCAC ; =0x00001010
 	str r0, [sp, #4]
 	ldr r0, [sp, #0x150]
 	add r2, r7, #0
@@ -530,7 +532,7 @@ _021FBC2C:
 	mov r0, #0x20
 	orr r0, r1
 	strh r0, [r2]
-	ldr r0, _021FBCC4 ; =0x000008B7
+	ldr r0, _021FBCC4 ; =0x0000101F
 	ldrb r0, [r5, r0]
 	cmp r0, #0
 	bne _021FBC50
@@ -542,7 +544,7 @@ _021FBC50:
 	bl G3X_SetEdgeColorTable
 _021FBC56:
 	bl ov01_021EA724
-	ldr r1, _021FBCB8 ; =0x000008AC
+	ldr r1, _021FBCB8 ; =0x00001014
 	str r0, [r5, r1]
 	add r1, #0xa
 	ldrb r0, [r5, r1]
@@ -556,14 +558,14 @@ _021FBC70:
 	ldr r1, _021FBCD4 ; =ov01_02209AB4
 	bl sprintf
 _021FBC76:
-	ldr r1, _021FBCB8 ; =0x000008AC
+	ldr r1, _021FBCB8 ; =0x00001014
 	add r0, sp, #0x3c
 	ldr r1, [r5, r1]
 	bl ov01_021EA73C
-	ldr r0, _021FBC94 ; =0x000008B8
+	ldr r0, _021FBC94 ; =0x00001020
 	ldr r0, [r5, r0]
 	bl Heap_Free
-	ldr r0, _021FBC94 ; =0x000008B8
+	ldr r0, _021FBC94 ; =0x00001020
 	mov r1, #0
 	str r1, [r5, r0]
 	add sp, #0x13c

@@ -1,0 +1,67 @@
+{
+  "header": "fielddata/script/scr_seq/event_SR213R0501.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SR213R0501_0",
+      "spriteId": "SPRITE_CLOWN",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR213R0501_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 2,
+      "z": 3,
+      "y": 0
+    },
+    {
+      "id": "obj_SR213R0501_1",
+      "spriteId": "SPRITE_MYSTERY",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR213R0501_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 8,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_SR213R0501_2",
+      "spriteId": "SPRITE_MAN2",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SR213R0501_002 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 1,
+      "x": 5,
+      "z": 5,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 6,
+      "z": 8,
+      "header": "MAP_SINNOH_ROUTE_213",
+      "anchor": 6,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

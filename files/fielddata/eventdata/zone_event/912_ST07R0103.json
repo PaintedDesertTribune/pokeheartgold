@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_ST07R0103.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_ST07R0103_0",
+      "spriteId": "SPRITE_SINNOH_WOMAN6",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_ST07R0103_000 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 1,
+      "z": 6,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 3,
+      "z": 6,
+      "header": "MAP_SINNOH_RESORT_AREA_RIBBON_SYNDICATE_ELEVATOR",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

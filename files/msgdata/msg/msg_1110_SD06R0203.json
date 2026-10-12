@@ -1,0 +1,24 @@
+{
+  "key": 8417,
+  "messages": [
+    {
+      "id": "msg_1110_SD06R0203_00000",
+      "en_US": [
+        "If you throw food at Pokémon, it\n",
+        "makes them easier to catch...\r",
+        "But they’re also more likely to\n",
+        "bolt when they eat.\r",
+        "If you throw mud at them, they\n",
+        "also get easier to catch...\r",
+        "But they also get more likely to\n",
+        "bolt out of anger.\r",
+        "It’s hard to decide what I should\n",
+        "be doing."
+      ]
+    },
+    {
+      "id": "msg_1110_SD06R0203_00001",
+      "en_US": "Great Marsh Area 3"
+    }
+  ]
+}

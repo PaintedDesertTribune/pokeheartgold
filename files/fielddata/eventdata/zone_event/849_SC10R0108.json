@@ -1,0 +1,33 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC10R0108.h",
+  "bgs": [],
+  "objects": [],
+  "warps": [
+    {
+      "x": 4,
+      "z": 2,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_LUCIAN_ROOM",
+      "anchor": 1,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "z": 15,
+      "header": "MAP_SINNOH_POKEMON_LEAGUE_FLINT_ROOM",
+      "anchor": 0,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_SC10R0108_002 + 1",
+      "x": 4,
+      "z": 11,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "0x4000"
+    }
+  ]
+}

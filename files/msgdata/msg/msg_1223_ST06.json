@@ -1,0 +1,84 @@
+{
+  "key": 8726,
+  "messages": [
+    {
+      "id": "msg_1223_ST06_00000",
+      "en_US": [
+        "Buck: Yo, if it isn’t {STRVAR_1 3, 0, 0}!\r",
+        "Don’t tell me you’re going to Stark\n",
+        "Mountain, too?\r",
+        "You’re pretty wimpy...\n",
+        "You’re sure you’re going to be OK?\r",
+        "Heh, why am I asking you that?\n",
+        "It’s not like I care.\r",
+        "Anyways, if we see each other on\n",
+        "Stark Mountain, the race is on to\\fsee who gets the Magma Stone first!\r"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00001",
+      "en_US": [
+        "Hey, traveling Trainer.\n",
+        "Is your Bag full of items?\\fOr is it full of dreams?"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00002",
+      "en_US": [
+        "Trainers who lose at the Battle\n",
+        "Tower come here to train."
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00003",
+      "en_US": [
+        "I’ve been exploring a long time,\n",
+        "but I know when I’m beaten.\r",
+        "It takes a better Trainer than me\n",
+        "to explore the volcano thoroughly!"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00004",
+      "en_US": [
+        "I’m a Cameraman, obviously.\r",
+        "Have you seen that TV program,\n",
+        "“Search for the Red GYARADOS!”?\r",
+        "You know, “The mysterious\n",
+        "appearance of a raging Pokémon in\\fa lake”?\r",
+        "Yeah, that outstanding documentary!\n",
+        "I filmed that!"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00005",
+      "en_US": [
+        "Oh man! Oh geez! Oh, this is bad!\n",
+        "But I’m a Cameraman, obviously!\r",
+        "I have to stand firm and get this\n",
+        "on film for the world to see!"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00006",
+      "en_US": [
+        "I’m a Cameraman, obviously.\r",
+        "“The Eruption of Stark Mountain?\n",
+        "The mystery of the fiery Pokémon\\fasleep deep in the volcano!”\r",
+        "I’ve had that documentary all mapped\n",
+        "out in my head for a long time...\r",
+        "But I have nothing on film as of yet.\n",
+        "So much for that show.\r",
+        "Oh, well. The world’s a huge place.\n",
+        "There’re plenty of other mysteries!"
+      ]
+    },
+    {
+      "id": "msg_1223_ST06_00007",
+      "en_US": [
+        "Survival Area\n",
+        "Staging Point"
+      ]
+    }
+  ]
+}

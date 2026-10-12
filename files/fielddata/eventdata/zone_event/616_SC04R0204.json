@@ -1,0 +1,84 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC04R0204.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC04R0204_0",
+      "spriteId": "SPRITE_SINNOH_GKANBU3",
+      "movement": 16,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_539",
+      "scriptId": "_EV_scr_seq_SC04R0204_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 11,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0204_1",
+      "spriteId": "SPRITE_SINNOH_PIPPI",
+      "movement": 8,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_541",
+      "scriptId": "_EV_scr_seq_SC04R0204_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 12,
+      "z": 7,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0204_2",
+      "spriteId": "SPRITE_MIDDLEMAN1",
+      "movement": 17,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_541",
+      "scriptId": "_EV_scr_seq_SC04R0204_003 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 9,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_SC04R0204_3",
+      "spriteId": "SPRITE_SINNOH_MIMITUTO",
+      "movement": 6,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_541",
+      "scriptId": "_EV_scr_seq_SC04R0204_002 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 12,
+      "z": 9,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 8,
+      "z": 3,
+      "header": "MAP_SINNOH_ETERNA_GALACTIC_BUILDING_3F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

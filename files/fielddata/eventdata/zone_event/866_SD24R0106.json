@@ -1,0 +1,51 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD24R0106.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SD24R0106_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1130",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 14,
+      "z": 7,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 2,
+      "z": 5,
+      "header": "MAP_SINNOH_IRON_ISLAND_EXTERIOR",
+      "anchor": 2,
+      "y": 0
+    },
+    {
+      "x": 14,
+      "z": 15,
+      "header": "MAP_SINNOH_IRON_ISLAND_B2F_ROOM_2",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": [
+    {
+      "scriptId": "_EV_scr_seq_SD24R0106_001 + 1",
+      "x": 9,
+      "z": 11,
+      "w": 1,
+      "h": 1,
+      "y": 0,
+      "val": 0,
+      "var": "0x4000"
+    }
+  ]
+}

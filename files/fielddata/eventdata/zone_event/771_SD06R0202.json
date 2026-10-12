@@ -1,0 +1,75 @@
+{
+  "header": "fielddata/script/scr_seq/event_SD06R0202.h",
+  "bgs": [
+    {
+      "scriptId": "8333",
+      "type": 0,
+      "x": 69,
+      "z": 38,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "8334",
+      "type": 2,
+      "x": 86,
+      "z": 35,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "_EV_scr_seq_SD06R0202_001 + 1",
+      "type": 1,
+      "x": 70,
+      "z": 48,
+      "y": 0,
+      "dir": 4
+    },
+    {
+      "scriptId": "0",
+      "type": 1,
+      "x": 61,
+      "z": 48,
+      "y": 0,
+      "dir": 4
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SD06R0202_0",
+      "spriteId": "SPRITE_MONSTARBALL",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "FLAG_SINNOH_1054",
+      "scriptId": "std_itemball_variadic",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 76,
+      "z": 36,
+      "y": 0
+    },
+    {
+      "id": "obj_SD06R0202_2",
+      "spriteId": "SPRITE_AMBRELLA",
+      "movement": 5,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SD06R0202_000 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 1,
+      "yRange": 0,
+      "x": 90,
+      "z": 44,
+      "y": 0
+    }
+  ],
+  "warps": [],
+  "coords": []
+}

@@ -1,0 +1,61 @@
+{
+  "key": 8332,
+  "messages": [
+    {
+      "id": "msg_1060_SC07R0201_00000",
+      "en_US": [
+        "Welcome to the fabulous Veilstone\n",
+        "Department Store."
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00001",
+      "en_US": [
+        "This department store knows how to\n",
+        "ensure customer satisfaction.\r",
+        "They really look after you once you\n",
+        "become a regular customer."
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00002",
+      "en_US": [
+        "I like the formal air of a luxury\n",
+        "department store."
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00003",
+      "en_US": [
+        "I made an Accessory modeled after\n",
+        "the Pokémon of a Trainer I met.\r",
+        "Would you like one?\r"
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00004",
+      "en_US": [
+        "It’s a {STRVAR_1 31, 0, 0}.\r",
+        "It will give your Pokémon a\n",
+        "different look for Contests."
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00005",
+      "en_US": [
+        "Discover a new you!\n",
+        "Veilstone Department Store"
+      ]
+    },
+    {
+      "id": "msg_1060_SC07R0201_00006",
+      "en_US": [
+        "1F: Trainers’ Zone\r",
+        "2F: Battle Collection\r",
+        "3F: TM Corner\r",
+        "4F: Poké Dolls & Goods\r",
+        "5F: Rooftop Plaza"
+      ]
+    }
+  ]
+}

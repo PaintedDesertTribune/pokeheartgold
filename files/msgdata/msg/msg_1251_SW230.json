@@ -1,0 +1,35 @@
+{
+  "key": 8777,
+  "messages": [
+    {
+      "id": "msg_1251_SW230_00000",
+      "en_US": [
+        "Rt. 230\n",
+        "Fight Area"
+      ]
+    },
+    {
+      "id": "msg_1251_SW230_00001",
+      "en_US": [
+        "Hold it right there, Trainer!\r",
+        "Since you’re here, you’ve got\n",
+        "to visit the Battle Tower.\r",
+        "You don’t earn Exp. Points, and your\n",
+        "Pokédex isn’t updated there.\r",
+        "It’s a place solely for Trainers to\n",
+        "hone their own skills."
+      ]
+    },
+    {
+      "id": "msg_1251_SW230_00002",
+      "en_US": [
+        "Hold it right there, Trainer!\n",
+        "Have you been to the Battle Tower?\r",
+        "It’s a good place to learn useful\n",
+        "battle techniques.\r",
+        "You get to see all sorts of Pokémon\n",
+        "and their moves, also!"
+      ]
+    }
+  ]
+}

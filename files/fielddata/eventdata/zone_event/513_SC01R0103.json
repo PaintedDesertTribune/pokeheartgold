@@ -1,0 +1,100 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC01R0103.h",
+  "bgs": [
+    {
+      "scriptId": "_EV_scr_seq_SC01R0103_003 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 11,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0103_004 + 1",
+      "type": 0,
+      "x": 9,
+      "z": 11,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0103_005 + 1",
+      "type": 0,
+      "x": 15,
+      "z": 11,
+      "y": 0,
+      "dir": 0
+    },
+    {
+      "scriptId": "_EV_scr_seq_SC01R0103_006 + 1",
+      "type": 0,
+      "x": 1,
+      "z": 4,
+      "y": 0,
+      "dir": 2
+    }
+  ],
+  "objects": [
+    {
+      "id": "obj_SC01R0103_0",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0103_000 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 2,
+      "yRange": 0,
+      "x": 7,
+      "z": 5,
+      "y": 0
+    },
+    {
+      "id": "obj_SC01R0103_1",
+      "spriteId": "SPRITE_MIDDLEWOMAN1",
+      "movement": 2,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0103_001 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 14,
+      "z": 6,
+      "y": 0
+    },
+    {
+      "id": "obj_SC01R0103_2",
+      "spriteId": "SPRITE_OLDWOMAN1",
+      "movement": 10,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC01R0103_002 + 1",
+      "facingDirection": 2,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 3,
+      "z": 6,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 15,
+      "z": 3,
+      "header": "MAP_SINNOH_JUBLIFE_POKETCH_COMPANY_2F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

@@ -1,0 +1,100 @@
+{
+  "key": 8736,
+  "messages": [
+    {
+      "id": "msg_1249_ST07R0102_00000",
+      "en_US": [
+        "How may we serve you today?\n",
+        "Perhaps a spa treatment?\r",
+        "Our spa treatment will make your\n",
+        "{STRVAR_1 1, 1, 0} grow more friendly.\r",
+        "Would you care to have a spa\n",
+        "treatment, {STRVAR_1 3, 0, 0}?"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00001",
+      "en_US": "We hope to see you again."
+    },
+    {
+      "id": "msg_1249_ST07R0102_00002",
+      "en_US": [
+        "Ah, yes.\n",
+        "Right this way, please...\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00003",
+      "en_US": [
+        "We’re ready to begin.\n",
+        "Please, relax all your muscles.\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00004",
+      "en_US": [
+        "This oil contains dissolved diamonds\n",
+        "for enhanced effectiveness.\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00005",
+      "en_US": [
+        "This foam contains an extract taken\n",
+        "from pearls.\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00006",
+      "en_US": [
+        "The body’s toxins are forced out with\n",
+        "a foreign massage technique.\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00007",
+      "en_US": [
+        "The salon’s air is perfumed by an\n",
+        "herbal aroma for relaxation.\r"
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00008",
+      "en_US": [
+        "There, all done.\n",
+        "I hope you enjoyed it."
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00009",
+      "en_US": [
+        "Oh, I do apologize.\r",
+        "We can only provide one spa\n",
+        "session a day to our members."
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00010",
+      "en_US": [
+        "We keep our clients and Pokémon from\n",
+        "seeing others.\r",
+        "That way, all our clients and their\n",
+        "Pokémon can fully relax."
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00011",
+      "en_US": [
+        "Our service is very exclusive.\n",
+        "We only accept five members a day."
+      ]
+    },
+    {
+      "id": "msg_1249_ST07R0102_00012",
+      "en_US": [
+        "We’ve developed a reputation for\n",
+        "bringing our members closer to\\ftheir Pokémon."
+      ]
+    }
+  ]
+}

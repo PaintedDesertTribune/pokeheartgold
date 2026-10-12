@@ -1,0 +1,54 @@
+{
+  "key": 8260,
+  "messages": [
+    {
+      "id": "msg_0904_SC03R0202_00000",
+      "en_US": [
+        "All Pokémon have a special power\n",
+        "called an ability."
+      ]
+    },
+    {
+      "id": "msg_0904_SC03R0202_00001",
+      "en_US": [
+        "How my Pokémon and I are alike...\r",
+        "It’s not anything I can explain\n",
+        "easily."
+      ]
+    },
+    {
+      "id": "msg_0904_SC03R0202_00002",
+      "en_US": [
+        "The view is good from up here, but\n",
+        "it’s a pain going out.\r",
+        "If you don’t mind, how about showing\n",
+        "me a Pokémon called ZUBAT?"
+      ]
+    },
+    {
+      "id": "msg_0904_SC03R0202_00003",
+      "en_US": [
+        "The view is good from up here, but\n",
+        "it’s a pain going out.\r",
+        "If you don’t mind, how about showing\n",
+        "me a Pokémon called ZUBAT?\r",
+        "Oh! That Pokémon!\n",
+        "That’s a ZUBAT!\r",
+        "Wow, that’s cool...\n",
+        "It’s so cute...\r",
+        "That does it!\n",
+        "I’ll go out and catch Pokémon, too!\r",
+        "Thank you, my friend!\n",
+        "This is a token of my thanks!\r"
+      ]
+    },
+    {
+      "id": "msg_0904_SC03R0202_00004",
+      "en_US": [
+        "Yeah, there are so many kinds of\n",
+        "Pokémon out in the world.\r",
+        "I want to see them all now!"
+      ]
+    }
+  ]
+}

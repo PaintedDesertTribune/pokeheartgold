@@ -1,0 +1,67 @@
+{
+  "header": "fielddata/script/scr_seq/event_SC03R0104.h",
+  "bgs": [],
+  "objects": [
+    {
+      "id": "obj_SC03R0104_0",
+      "spriteId": "SPRITE_BABYBOY1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC03R0104_001 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 3,
+      "yRange": 3,
+      "x": 13,
+      "z": 8,
+      "y": 0
+    },
+    {
+      "id": "obj_SC03R0104_1",
+      "spriteId": "SPRITE_BOY1",
+      "movement": 3,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC03R0104_000 + 1",
+      "facingDirection": 0,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 3,
+      "yRange": 3,
+      "x": 13,
+      "z": 10,
+      "y": 0
+    },
+    {
+      "id": "obj_SC03R0104_2",
+      "spriteId": "SPRITE_MIDDLEWOMAN1",
+      "movement": 0,
+      "type": 0,
+      "eventFlag": "0",
+      "scriptId": "_EV_scr_seq_SC03R0104_002 + 1",
+      "facingDirection": 3,
+      "param0": 0,
+      "param1": 0,
+      "param2": 0,
+      "xRange": 0,
+      "yRange": 0,
+      "x": 6,
+      "z": 8,
+      "y": 0
+    }
+  ],
+  "warps": [
+    {
+      "x": 8,
+      "z": 3,
+      "header": "MAP_SINNOH_OREBURGH_NORTHWEST_HOUSE_3F",
+      "anchor": 1,
+      "y": 0
+    }
+  ],
+  "coords": []
+}

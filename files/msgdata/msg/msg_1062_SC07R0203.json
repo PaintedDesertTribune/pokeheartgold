@@ -1,0 +1,85 @@
+{
+  "key": 8334,
+  "messages": [
+    {
+      "id": "msg_1062_SC07R0203_00000",
+      "en_US": [
+        "Hello.\n",
+        "May I help you with anything?"
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00001",
+      "en_US": [
+        "Hello, {STRVAR_1 3, 0, 0}.\n",
+        "May I help you with anything?"
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00002",
+      "en_US": "Please enjoy yourself."
+    },
+    {
+      "id": "msg_1062_SC07R0203_00003",
+      "en_US": [
+        "False Swipe makes wild Pokémon easier\n",
+        "to catch.\r",
+        "Many customers have confided that to\n",
+        "me recently."
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00004",
+      "en_US": [
+        "For Fire-type Pokémon, may I suggest\n",
+        "Fire Blast?"
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00005",
+      "en_US": [
+        "The move Protect is the perfect\n",
+        "solution for dodging attacks.\r",
+        "Please be aware that overuse can\n",
+        "result in failure."
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00006",
+      "en_US": [
+        "When it is raining, the accuracy\n",
+        "of Thunder becomes precise.\r",
+        "Please do be careful about\n",
+        "the weather."
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00007",
+      "en_US": [
+        "A friend traded me a MACHOKE using\n",
+        "DS Wireless Communications.\r",
+        "But instead of a MACHOKE, I got\n",
+        "a different Pokémon!"
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00008",
+      "en_US": [
+        "I wrote some secrets in my Mail\n",
+        "as a reminder...\r",
+        "If someone reads it...\n",
+        "I’m in deep trouble."
+      ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00009",
+      "en_US": [
+        "1F: Trainers’ Zone\r",
+        "2F: Battle Collection\r",
+        "3F: TM Corner\r",
+        "4F: Poké Dolls & Goods\r",
+        "5F: Rooftop Plaza"
+      ]
+    }
+  ]
+}
