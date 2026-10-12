@@ -124,6 +124,13 @@ static int ov101_021EB784(PokegearMapAppData *mapApp, int flyDest) {
     mapApp->pokegear->args->selectedFlyDest = flyDest;
     mapApp->pokegear->args->mapCursorX = mapApp->playerX;
     mapApp->pokegear->args->mapCursorY = mapApp->playerY - 2;
+    {   // Sinnoh: the picture is not the matrix, so land on the town's own cell
+        int cx, cy;
+        if (PokegearMap_GetSinnohFlyLanding(mapApp, flyDest, &cx, &cy)) {
+            mapApp->pokegear->args->mapCursorX = cx;
+            mapApp->pokegear->args->mapCursorY = cy;
+        }
+    }
     if (mapApp->pokegear->menuInputState == MENU_INPUT_STATE_TOUCH) {
         ov101_021E9464(mapApp, gSystem.touchX, gSystem.touchY, &x, &y);
     } else {

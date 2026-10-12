@@ -7,6 +7,7 @@
 #include "constants/battle.h"
 #include "constants/map_sections.h"
 #include "constants/maps.h"
+#include "constants/sinnoh.h"
 #include "constants/sndseq.h"
 
 #include "files/fielddata/eventdata/zone_event.naix"
@@ -202,6 +203,10 @@ BOOL MapHeader_IsTeleportAllowed(u32 mapId) {
 
 BOOL MapHeader_MapIsOnMainMatrix(u32 mapId) {
     return MapHeader_GetMatrixId(mapId) == NARC_map_matrix_map_matrix_0000_EVERYWHERE_bin;
+}
+
+BOOL MapHeader_MapIsOnSinnohMatrix(u32 mapId) {
+    return MapHeader_GetMatrixId(mapId) == SINNOH_MATRIX_ID;
 }
 
 BOOL MapHeader_IsCave(u32 mapId) {

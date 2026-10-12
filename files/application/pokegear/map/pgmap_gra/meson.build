@@ -45,7 +45,8 @@ pgmap_gra_clobber_ncgr = ncgr_gen.process(
 
 pgmap_gra_sopc_8bpp_ncgr = ncgr_gen.process(
     files(
-        'pgmap_gra_00000010.png'
+        'pgmap_gra_00000010.png',
+        'pgmap_gra_00000070.png'
     ),
     extra_args : VERSION101_SOPC_8BPP_NCGR_FLAGS
 )
@@ -103,5 +104,6 @@ pgmap_gra_nscr = copy_gen.process(
         'pgmap_gra_00000065.NSCR',
         'pgmap_gra_00000067.NSCR',
         'pgmap_gra_00000069.NSCR',
+        'pgmap_gra_00000071.NSCR'
     )
 )

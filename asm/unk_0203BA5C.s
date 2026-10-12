@@ -1,4 +1,5 @@
 #include "constants/maps.h"
+#include "constants/sinnoh.h"
 	.include "macros.inc"
 	.include "unk_0203BA5C.inc"
 	.include "global.inc"
@@ -41,6 +42,10 @@ sSpawnMaps:
 	spawn 0x1B, 1, 0, MAP_ROUTE_32_POKECENTER_1F, 8, 13, MAP_ROUTE_32, 0x01D4, 0x01A3, MAP_ROUTE_32, 0x01D4, 0x01A3
 	spawn 0x24, 1, 0, MAP_ROUTE_3_POKECENTER_1F, 8, 13, MAP_ROUTE_3, 0x048F, 0x006B, MAP_ROUTE_3, 0x048F, 0x006B
 	spawn 0x25, 1, 0, MAP_ROUTE_10_POKECENTER_1F, 8, 13, MAP_ROUTE_10, 0x0592, 0x00A4, MAP_ROUTE_10, 0x0592, 0x00A4
+// SINNOH_PORT_BEGIN
+	spawn 38, 1, 1, MAP_SINNOH_CANALAVE_POKECENTER_1F, 8, 11, MAP_SINNOH_CANALAVE, 58, 723, MAP_SINNOH_CANALAVE, 58, 723
+	spawn 39, 1, 1, MAP_SINNOH_JUBLIFE_POKECENTER_1F, 8, 11, MAP_SINNOH_JUBLIFE, 180, 777, MAP_SINNOH_JUBLIFE, 180, 777
+// SINNOH_PORT_END
 
 	.text
 
@@ -49,7 +54,7 @@ SpawnIdToTableIndex: ; 0x0203BA5C
 	push {r3, lr}
 	cmp r0, #0
 	ble _0203BA66
-	cmp r0, #0x1e
+	cmp r0, #SPAWN_MAPS_COUNT
 	bls _0203BA6C
 _0203BA66:
 	bl GF_AssertFail
@@ -173,7 +178,7 @@ _0203BB3C:
 	add r2, r2, #1
 	add r3, #0x12
 	add r4, #0x12
-	cmp r2, #0x1e
+	cmp r2, #SPAWN_MAPS_COUNT
 	blo _0203BB28
 	mov r0, #0
 	pop {r3, r4}
@@ -195,7 +200,7 @@ _0203BB54:
 _0203BB5E:
 	add r2, r2, #1
 	add r3, #0x12
-	cmp r2, #0x1e
+	cmp r2, #SPAWN_MAPS_COUNT
 	blo _0203BB54
 	mov r0, #0
 	bx lr
@@ -233,7 +238,7 @@ _0203BBA2:
 	add r4, r4, #1
 	add r2, #0x12
 	add r3, #0x12
-	cmp r4, #0x1e
+	cmp r4, #SPAWN_MAPS_COUNT
 	blo _0203BB78
 	pop {r3, r4, r5, pc}
 	nop

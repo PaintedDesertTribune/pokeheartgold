@@ -1,6 +1,7 @@
 #include "unk_02092BE8.h"
 
 #include "global.h"
+#include "constants/sinnoh.h"
 
 #include "constants/maps.h"
 #include "constants/phone_contacts.h"
@@ -37,7 +38,22 @@ static void FieldSystem_InitPokegearArgs(FieldSystem *sys, PokegearArgs *pokegea
     GearPhoneRingManager *phoneRingMgr = FieldSystem_GetGearPhoneRingManager(sys);
     pokegearArgs->saveData = sys->saveData;
     pokegearArgs->mapID = PosPtr->mapId;
-    if (MapHeader_MapIsOnMainMatrix(pokegearArgs->mapID)) {
+    if (MapHeader_GetRegionNo(pokegearArgs->mapID) == MAP_REGION_SINNOH) {
+        // Sinnoh's Pokégear page is Diamond's Town Map picture; matrix cells project onto it (constants/sinnoh.h)
+        if (MapHeader_MapIsOnSinnohMatrix(pokegearArgs->mapID)) {
+            pokegearArgs->x = PlayerAvatar_GetXCoord(sys->playerAvatar);
+            pokegearArgs->z = PlayerAvatar_GetZCoord(sys->playerAvatar);
+            pokegearArgs->matrixXCoord = SINNOH_CELL_TO_MAP_X(pokegearArgs->x / 32);
+            pokegearArgs->matrixYCoord = SINNOH_CELL_TO_MAP_Y(pokegearArgs->z / 32);
+        } else {
+            pokegearArgs->x = warpPtr->x;
+            pokegearArgs->z = warpPtr->y;
+            MapHeader_GetWorldMapCoords(pokegearArgs->mapID, &x, &y);
+            pokegearArgs->matrixXCoord = x;
+            pokegearArgs->matrixYCoord = y;
+        }
+        pokegearArgs->mapHeader = pokegearArgs->mapID;
+    } else if (MapHeader_MapIsOnMainMatrix(pokegearArgs->mapID)) {
         pokegearArgs->x = PlayerAvatar_GetXCoord(sys->playerAvatar);
         pokegearArgs->z = PlayerAvatar_GetZCoord(sys->playerAvatar);
         pokegearArgs->matrixXCoord = pokegearArgs->x / 32;

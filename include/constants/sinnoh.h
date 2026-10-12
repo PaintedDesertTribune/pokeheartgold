@@ -89,4 +89,10 @@
 #define VAR_SINNOH_4106 0x4112
 #define VAR_SINNOH_410A 0x4141
 
+#define SINNOH_MATRIX_ID NARC_map_matrix_map_matrix_0331_SINNOH_bin
+#define SINNOH_CELL_TO_MAP_X(cx) ((cx) * 32 / 30)
+#define SINNOH_CELL_TO_MAP_Y(cy) ((cy) * 22 / 30)
+#define SPAWN_MAPS_COUNT 32            // HeartGold's 30 spawn rows plus one per Sinnoh town
+#define SINNOH_FLYPOINT_FLAG_BASE 0xDC0   // fly-point flags 38+ (64 slots, below the Sinnoh trainer block)
+
 #endif

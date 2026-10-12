@@ -44,6 +44,7 @@ BOOL FlyMap_Init(OverlayManager *man, int *state) {
     FlyMap_InitParam(mapApp);
     mapApp->locationSpecs = sLocationSpecs;
     mapApp->numLocationSpecs = NELEMS(sLocationSpecs);
+    PokegearMap_ApplySinnoh(mapApp);
     return TRUE;
 }
 

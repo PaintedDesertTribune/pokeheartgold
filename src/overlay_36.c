@@ -20,6 +20,10 @@
 #include "heap.h"
 #include "script_pokemon_util.h"
 #include "constants/items.h"
+#include "save_vars_flags.h"
+#include "player_avatar.h"
+#include "save_local_field_data.h"
+#include "constants/flags.h"
 #include "player_data.h"
 #include "constants/moves.h"
 #include "constants/maps.h"
@@ -152,6 +156,18 @@ static void HackSkipIntro_GiveTestTeam(SaveData *saveData) {
     MonSetMoveInSlot(Party_GetMonByIndex(party, 2), MOVE_FLY, 0);
     for (i = 0; i < 16; i++) {
         PlayerProfile_SetBadgeFlag(profile, i);
+    }
+    // The intro also hands out the menu, bag, Pokégear, Pokédex and running shoes; without these flags the
+    // X button does nothing in the field.
+    {
+        SaveVarsFlags *flags = Save_VarsFlags_Get(saveData);
+        SetScriptFlag(flags, FLAG_GOT_STARTER);
+        SetScriptFlag(flags, FLAG_GOT_POKEDEX);
+        SetScriptFlag(flags, FLAG_GOT_POKEGEAR);
+        for (i = 0; i < 4; i++) {
+            SetScriptFlag(flags, FLAG_GOT_BAG + i);
+        }
+        PlayerSaveData_SetRunningShoesFlag(LocalFieldData_GetPlayer(Save_LocalFieldData_Get(saveData)), TRUE);
     }
     Bag_AddItem(bag, ITEM_MASTER_BALL, 2, HEAPID_OV36);
     Bag_AddItem(bag, ITEM_ULTRA_BALL, 20, HEAPID_OV36);

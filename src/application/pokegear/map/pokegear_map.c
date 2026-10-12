@@ -50,6 +50,7 @@ BOOL PokegearMap_Init(OverlayManager *man, int *state) {
     PokegearMap_InitInternal(mapApp);
     mapApp->locationSpecs = sLocationSpecs;
     mapApp->numLocationSpecs = NELEMS(sLocationSpecs);
+    PokegearMap_ApplySinnoh(mapApp);
     return TRUE;
 }
 

@@ -21,6 +21,49 @@ static void ov101_021EAA0C(PokegearMapAppData *mapApp, BOOL a1, BOOL a2);
 static void PokegearMap_PrintMarkingECWord(PokegearMapAppData *mapApp, u8 a1, u16 a2);
 static void PokegearMap_GetLandmarkNameFromMapID(u16 mapno, enum HeapID heapID, String *dest);
 
+#include "map_header.h"
+#include "data/sinnoh_pokegear.h"
+
+// Sinnoh has its own Pokégear page: Diamond's Town Map art with locations and fly points projected from the
+// Sinnoh matrix (generated into data/sinnoh_pokegear.h). None of the Johto/Kanto unlock, region or overlay rules apply.
+void PokegearMap_ApplySinnoh(PokegearMapAppData *mapApp) {
+    mapApp->flypoints = gMapFlypointParams;
+    mapApp->numFlypoints = PGMAP_NUM_FLYPOINTS;
+    mapApp->isSinnoh = MapHeader_GetRegionNo(mapApp->mapID) == MAP_REGION_SINNOH;
+    if (!mapApp->isSinnoh) {
+        return;
+    }
+    mapApp->locationSpecs = sSinnohLocationSpecs;
+    mapApp->numLocationSpecs = SINNOH_POKEGEAR_LOCATIONS;
+    mapApp->flypoints = sSinnohFlypointParams;
+    mapApp->numFlypoints = SINNOH_POKEGEAR_FLYPOINTS;
+    mapApp->mapUnlockLevel = 2;
+    mapApp->minXscroll = 1;
+    mapApp->maxXscroll = 30;
+    mapApp->minYscroll = 1;
+    mapApp->maxYscroll = 21;
+    mapApp->canSeeSafariZone = FALSE;
+    mapApp->canFlyToGoldenrod = FALSE;
+    mapApp->isMapSinjoh = FALSE;
+    mapApp->isMapSSAqua = FALSE;
+    mapApp->curRegion = POKEGEAR_REGION_SINNOH;
+}
+
+BOOL PokegearMap_GetSinnohFlyLanding(PokegearMapAppData *mapApp, int mapID, int *cellX, int *cellY) {
+    int i;
+    if (!mapApp->isSinnoh) {
+        return FALSE;
+    }
+    for (i = 0; i < SINNOH_POKEGEAR_FLYPOINTS; i++) {
+        if (sSinnohFlypointParams[i].mapIDforWarp == mapID) {
+            *cellX = sSinnohFlyLanding[i][0];
+            *cellY = sSinnohFlyLanding[i][1];
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 static const TouchscreenListMenuTemplate sListMenuTemplate = {
     .wrapAround = TRUE,
     .centered = TRUE,
@@ -570,8 +613,8 @@ void ov101_021EA4D0(PokegearMapAppData *mapApp, u8 mode) {
     s16 halfHeight;
     const MapFlypointParam *flypointParam;
 
-    for (i = 0; i < PGMAP_NUM_FLYPOINTS; ++i) {
-        flypointParam = &gMapFlypointParams[i];
+    for (i = 0; i < mapApp->numFlypoints; ++i) {
+        flypointParam = &mapApp->flypoints[i];
         halfWidth = flypointParam->width * 4;
         halfHeight = flypointParam->height * 4;
         x = (flypointParam->x - mapApp->cursorSpriteState.left) * 8 + mapApp->centerX + halfWidth;
@@ -582,7 +625,7 @@ void ov101_021EA4D0(PokegearMapAppData *mapApp, u8 mode) {
         case 0:
             mapApp->objManager->objects[objIndex].pos.x = x;
             mapApp->objManager->objects[objIndex].pos.y = y;
-            if (Save_VarsFlags_FlypointFlagAction(mapApp->pokegear->saveVarsFlags, FLAG_ACTION_CHECK, flypointParam->flypoint)) {
+            if (mapApp->isSinnoh || Save_VarsFlags_FlypointFlagAction(mapApp->pokegear->saveVarsFlags, FLAG_ACTION_CHECK, flypointParam->flypoint)) {
                 Sprite_SetDrawFlag(mapApp->objManager->objects[objIndex].sprite, TRUE);
             } else {
                 Sprite_SetDrawFlag(mapApp->objManager->objects[objIndex].sprite, FALSE);
@@ -702,7 +745,11 @@ void ov101_021EA794(PokegearMapAppData *mapApp, PokegearMapAppData_Sub118 *a1, u
 }
 
 BOOL ov101_021EA7E4(PokegearMapAppData *mapApp, u16 x, u16 y) {
-    PokegearRegion region = Pokegear_RegionFromCoords(x, y);
+    PokegearRegion region;
+    if (mapApp->isSinnoh) {
+        return TRUE;
+    }
+    region = Pokegear_RegionFromCoords(x, y);
     if (mapApp->curRegion == POKEGEAR_REGION_INDIGO || region == mapApp->curRegion) {
         return TRUE;
     } else {
@@ -722,12 +769,12 @@ static int ov101_021EA81C(PokegearMapAppData *mapApp, u16 x, u16 y) {
     int i;
     const MapFlypointParam *flypoint;
 
-    for (i = 0; i < PGMAP_NUM_FLYPOINTS; ++i) {
-        flypoint = &gMapFlypointParams[i];
+    for (i = 0; i < mapApp->numFlypoints; ++i) {
+        flypoint = &mapApp->flypoints[i];
         if (x < flypoint->x || x >= flypoint->x + flypoint->width || y < flypoint->y || y >= flypoint->y + flypoint->height) {
             continue;
         }
-        if (!Save_VarsFlags_FlypointFlagAction(mapApp->pokegear->saveVarsFlags, FLAG_ACTION_CHECK, flypoint->flypoint)) {
+        if (!mapApp->isSinnoh && !Save_VarsFlags_FlypointFlagAction(mapApp->pokegear->saveVarsFlags, FLAG_ACTION_CHECK, flypoint->flypoint)) {
             continue;
         }
         return i;
@@ -740,10 +787,10 @@ int PokegearMap_GetFlyDestinationAtCoord(PokegearMapAppData *mapApp, u16 x, u16 
     int idx;
 
     idx = ov101_021EA81C(mapApp, x, y);
-    if (idx < 0 || !ov101_021EA804(mapApp, gMapFlypointParams[idx].mapIDforWarp, x, y)) {
+    if (idx < 0 || !ov101_021EA804(mapApp, mapApp->flypoints[idx].mapIDforWarp, x, y)) {
         return 0;
     }
-    return gMapFlypointParams[idx].mapIDforWarp;
+    return mapApp->flypoints[idx].mapIDforWarp;
 }
 
 int ov101_021EA8A8(PokegearMapAppData *mapApp, PokegearMapAppData_Sub118 *a1, u8 x, u8 y) {
@@ -760,7 +807,7 @@ int ov101_021EA8A8(PokegearMapAppData *mapApp, PokegearMapAppData_Sub118 *a1, u8
         return -1;
     }
 
-    mapID = gMapFlypointParams[idx].mapIDforName;
+    mapID = mapApp->flypoints[idx].mapIDforName;
     a1->x = x;
     a1->y = y;
     a1->locationSpec = PokegearMap_GetLocationSpecByMapID(mapApp, mapID);
@@ -894,7 +941,7 @@ static void ov101_021EAA0C(PokegearMapAppData *mapApp, BOOL a1, int regionNo) {
 
 void ov101_021EAD90(PokegearMapAppData *mapApp, BOOL a1) {
     // Pokegear_RegionFromCoords returning 0 and 1 are considered Kanto, 2 is Johto
-    ov101_021EAA0C(mapApp, a1, (Pokegear_RegionFromCoords(mapApp->playerX, mapApp->playerY - 2) / 2) ^ TRUE);
+    ov101_021EAA0C(mapApp, a1, mapApp->isSinnoh ? 2 : (Pokegear_RegionFromCoords(mapApp->playerX, mapApp->playerY - 2) / 2) ^ TRUE);
 }
 
 static void PokegearMap_PrintMarkingECWord(PokegearMapAppData *mapApp, u8 index, u16 word) {
@@ -951,6 +998,10 @@ void ov101_021EAF40(PokegearMapAppData *mapApp) {
     int i;
     const MapFlypointParam *flypoint;
 
+    if (mapApp->isSinnoh) {   // the whole Sinnoh picture, rows 2..23 of the 64x32 tilemap
+        CopyToBgTilemapRect(mapApp->pokegear->bgConfig, GF_BG_LYR_MAIN_3, 0, 0, 32, 24, mapApp->unk_170->rawData, 0, 0, mapApp->unk_170->screenWidth / 8, mapApp->unk_170->screenHeight / 8);
+        return;
+    }
     CopyToBgTilemapRect(mapApp->pokegear->bgConfig, GF_BG_LYR_MAIN_3, 0, 0, 47, 20, mapApp->unk_170->rawData, 0, 0, mapApp->unk_170->screenWidth / 8, mapApp->unk_170->screenHeight / 8);
 
     switch (mapApp->mapUnlockLevel) {
@@ -962,8 +1013,8 @@ void ov101_021EAF40(PokegearMapAppData *mapApp) {
         break;
     }
 
-    for (i = 0; i < PGMAP_NUM_FLYPOINTS; ++i) {
-        flypoint = &gMapFlypointParams[i];
+    for (i = 0; i < mapApp->numFlypoints; ++i) {
+        flypoint = &mapApp->flypoints[i];
         if (flypoint->mapIDforName == MAP_CIANWOOD) {
             continue;
         }

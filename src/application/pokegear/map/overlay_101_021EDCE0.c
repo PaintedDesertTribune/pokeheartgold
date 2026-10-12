@@ -506,7 +506,7 @@ static void FlyMap_DeinitBGs(PokegearMapAppData *mapApp) {
 static void FlyMap_LoadBGGraphics(PokegearMapAppData *mapApp) {
     NARC *narc = NARC_New(NARC_application_pokegear_map_pgmap_gra, mapApp->heapID);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000066_NCGR, GF_BG_LYR_MAIN_1, GF_BG_GFX_TYPE_CHAR, 0, 0);
-    BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000010_NCGR, GF_BG_LYR_MAIN_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
+    BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, mapApp->isSinnoh ? NARC_pgmap_gra_pgmap_gra_00000070_NCGR : NARC_pgmap_gra_pgmap_gra_00000010_NCGR, GF_BG_LYR_MAIN_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000064_NCGR, GF_BG_LYR_SUB_0, GF_BG_GFX_TYPE_CHAR, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000068_NCGR, GF_BG_LYR_SUB_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000012_NCGR, GF_BG_LYR_SUB_3, GF_BG_GFX_TYPE_CHAR, 0, 0);
@@ -514,7 +514,7 @@ static void FlyMap_LoadBGGraphics(PokegearMapAppData *mapApp) {
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000062_NCLR, GF_BG_LYR_SUB_0, GF_BG_GFX_TYPE_PLTT, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000065_NSCR, GF_BG_LYR_SUB_0, GF_BG_GFX_TYPE_SCRN, 0, 0);
     mapApp->unk_154[0] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000069_NSCR, FALSE, &mapApp->unk_16C, mapApp->heapID);
-    mapApp->unk_154[1] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000011_NSCR, FALSE, &mapApp->unk_170, mapApp->heapID);
+    mapApp->unk_154[1] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, mapApp->isSinnoh ? NARC_pgmap_gra_pgmap_gra_00000071_NSCR : NARC_pgmap_gra_pgmap_gra_00000011_NSCR, FALSE, &mapApp->unk_170, mapApp->heapID);
     mapApp->unk_154[2] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000013_NSCR, FALSE, &mapApp->unk_174, mapApp->heapID);
     mapApp->unk_154[3] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000067_NSCR, FALSE, &mapApp->unk_178, mapApp->heapID);
     NARC_Delete(narc);
@@ -556,6 +556,7 @@ static void FlyMap_LoadStrings(PokegearMapAppData *mapApp) {
     mapApp->flavorTextString = String_New(91, mapApp->heapID);
     mapApp->regionNameStrings[0] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00001);
     mapApp->regionNameStrings[1] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00000);
+    mapApp->regionNameStrings[2] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00118);
     mapApp->mapNameString = String_New(40, mapApp->heapID);
     mapApp->chooseDestinationString = NewString_ReadMsgData(mapApp->msgData, msg_0273_00004);
     mapApp->flyToLocationString = NewString_ReadMsgData(mapApp->msgData, msg_0273_00005);
@@ -570,6 +571,7 @@ static void FlyMap_UnloadStrings(PokegearMapAppData *mapApp) {
     String_Delete(mapApp->flyToLocationString);
     String_Delete(mapApp->chooseDestinationString);
     String_Delete(mapApp->mapNameString);
+    String_Delete(mapApp->regionNameStrings[2]);
     String_Delete(mapApp->regionNameStrings[1]);
     String_Delete(mapApp->regionNameStrings[0]);
     String_Delete(mapApp->flavorTextString);

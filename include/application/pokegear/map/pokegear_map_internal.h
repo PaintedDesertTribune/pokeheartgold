@@ -198,7 +198,7 @@ typedef struct PokegearMapAppData {
     MessageFormat *msgFormat;                     // 0x08C
     String *flavorTextString;                     // 0x090
     u8 filler_094[8];                             // 0x094
-    String *regionNameStrings[2];                 // 0x09C
+    String *regionNameStrings[3];                 // 0x09C (Kanto, Johto, Sinnoh)
     String *mapNameString;                        // 0x0A4
     String *chooseDestinationString;              // 0x0A8
     String *flyToLocationString;                  // 0x0AC
@@ -270,6 +270,9 @@ typedef struct PokegearMapAppData {
     NNSG2dScreenData *unk_180;                    // 0x180
     Window windows[9];                            // 0x184
     const PokegearMapLocationSpec *locationSpecs; // 0x214
+    const MapFlypointParam *flypoints;            // region fly point table
+    u8 numFlypoints;
+    u8 isSinnoh;                                  // Sinnoh page: Diamond art, projected coordinates, no Johto/Kanto rules
     MapMarkingsHeapNode mapMarkingsHeap[100];     // 0x218
     u16 roamerLocations[ROAMER_MAX];              // 0x9E8
     u8 mapMarkingsListHead;                       // 0x9F0
@@ -277,6 +280,8 @@ typedef struct PokegearMapAppData {
     u8 mapMarkingsListCount;                      // 0x9F2
 } PokegearMapAppData;                             // size: 0x9F4
 
+void PokegearMap_ApplySinnoh(PokegearMapAppData *mapApp);
+BOOL PokegearMap_GetSinnohFlyLanding(PokegearMapAppData *mapApp, int mapID, int *cellX, int *cellY);
 BOOL PokegearMap_LoadGFX(PokegearMapAppData *mapApp);
 BOOL PokegearMap_UnloadGFX(PokegearMapAppData *mapApp);
 BOOL PokegearMap_AnimateSwitchToMarkingMode(PokegearMapAppData *mapApp);

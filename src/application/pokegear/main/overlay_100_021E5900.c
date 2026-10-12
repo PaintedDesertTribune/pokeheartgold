@@ -181,6 +181,9 @@ PokegearRegion Pokegear_RegionFromCoords(u16 x, u16 y) {
 }
 
 int Pokegear_GetCurrentRegion(PokegearAppData *pokegearApp) {
+    if (MapHeader_GetRegionNo(pokegearApp->args->mapID) == MAP_REGION_SINNOH) {
+        return POKEGEAR_REGION_SINNOH;
+    }
     return Pokegear_RegionFromCoords(pokegearApp->args->x / 32, pokegearApp->args->z / 32);
 }
 

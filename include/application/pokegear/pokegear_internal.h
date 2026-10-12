@@ -185,6 +185,7 @@ typedef enum PokegearRegion {
     POKEGEAR_REGION_KANTO,
     POKEGEAR_REGION_INDIGO,
     POKEGEAR_REGION_JOHTO,
+    POKEGEAR_REGION_SINNOH,   // Sinnoh's own page (Diamond's Town Map art); see PokegearMap_ApplySinnoh
 } PokegearRegion;
 
 PokegearRegion Pokegear_RegionFromCoords(u16 x, u16 y);

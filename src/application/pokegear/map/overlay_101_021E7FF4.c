@@ -292,11 +292,11 @@ static void PokegearMap_UnloadBGs(PokegearMapAppData *mapApp) {
 static void PokegearMap_LoadGraphics(PokegearMapAppData *mapApp, u8 frame) {
     NARC *narc = NARC_New(NARC_application_pokegear_map_pgmap_gra, mapApp->heapID);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, frame + NARC_pgmap_gra_pgmap_gra_00000026_NCGR, GF_BG_LYR_MAIN_1, GF_BG_GFX_TYPE_CHAR, 0, 0);
-    BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000010_NCGR, GF_BG_LYR_MAIN_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
+    BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, mapApp->isSinnoh ? NARC_pgmap_gra_pgmap_gra_00000070_NCGR : NARC_pgmap_gra_pgmap_gra_00000010_NCGR, GF_BG_LYR_MAIN_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, frame + NARC_pgmap_gra_pgmap_gra_00000050_NCGR, GF_BG_LYR_SUB_2, GF_BG_GFX_TYPE_CHAR, 0, 0);
     BgConfig_LoadAssetFromOpenNarc(mapApp->pokegear->bgConfig, mapApp->heapID, narc, NARC_application_pokegear_map_pgmap_gra, NARC_pgmap_gra_pgmap_gra_00000012_NCGR, GF_BG_LYR_SUB_3, GF_BG_GFX_TYPE_CHAR, 0, 0);
     mapApp->unk_154[0] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, frame + NARC_pgmap_gra_pgmap_gra_00000056_NSCR, FALSE, &mapApp->unk_16C, mapApp->heapID);
-    mapApp->unk_154[1] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000011_NSCR, FALSE, &mapApp->unk_170, mapApp->heapID);
+    mapApp->unk_154[1] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, mapApp->isSinnoh ? NARC_pgmap_gra_pgmap_gra_00000071_NSCR : NARC_pgmap_gra_pgmap_gra_00000011_NSCR, FALSE, &mapApp->unk_170, mapApp->heapID);
     mapApp->unk_154[2] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, NARC_pgmap_gra_pgmap_gra_00000013_NSCR, FALSE, &mapApp->unk_174, mapApp->heapID);
     mapApp->unk_154[3] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, frame + NARC_pgmap_gra_pgmap_gra_00000032_NSCR, FALSE, &mapApp->unk_178, mapApp->heapID);
     mapApp->unk_154[4] = GfGfxLoader_GetScrnDataFromOpenNarc(narc, frame + NARC_pgmap_gra_pgmap_gra_00000038_NSCR, FALSE, &mapApp->unk_17C, mapApp->heapID);
@@ -418,6 +418,7 @@ static void PokegearMap_InitMsg(PokegearMapAppData *mapApp) {
     mapApp->flavorTextString = String_New(91, mapApp->heapID);
     mapApp->regionNameStrings[0] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00001);
     mapApp->regionNameStrings[1] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00000);
+    mapApp->regionNameStrings[2] = NewString_ReadMsgData(mapApp->msgData, msg_0273_00118);
     mapApp->mapNameString = String_New(40, mapApp->heapID);
     mapApp->formatFlavorTextString = NewString_ReadMsgData(mapApp->msgData, msg_0273_00003);
     mapApp->unk_0B8 = 2;
@@ -426,6 +427,7 @@ static void PokegearMap_InitMsg(PokegearMapAppData *mapApp) {
 static void PokegearMap_DeleteMsg(PokegearMapAppData *mapApp) {
     String_Delete(mapApp->formatFlavorTextString);
     String_Delete(mapApp->mapNameString);
+    String_Delete(mapApp->regionNameStrings[2]);
     String_Delete(mapApp->regionNameStrings[1]);
     String_Delete(mapApp->regionNameStrings[0]);
     String_Delete(mapApp->flavorTextString);

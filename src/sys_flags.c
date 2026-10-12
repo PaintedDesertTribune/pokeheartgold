@@ -1,6 +1,7 @@
 #include "sys_flags.h"
 
 #include "global.h"
+#include "constants/sinnoh.h"
 
 #include "constants/flags.h"
 #include "constants/maps.h"
@@ -262,7 +263,9 @@ BOOL SysFlagDefogCheck(SaveVarsFlags *state) {
 }
 
 BOOL Save_VarsFlags_FlypointFlagAction(SaveVarsFlags *state, u32 action, u32 flypoint_flag_no) {
-    GF_ASSERT(flypoint_flag_no < 38);
+    if (flypoint_flag_no >= 38) {   // Sinnoh fly points (spawn table rows past HeartGold's 30) live in their own block
+        return FlagAction(state, action, SINNOH_FLYPOINT_FLAG_BASE + (flypoint_flag_no - 38));
+    }
     return FlagAction(state, action, FLAG_SYS_FLYPOINT_PALLET + flypoint_flag_no);
 }
 
