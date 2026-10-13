@@ -41,6 +41,7 @@ ARCHIVES = {
     "buildlist": "files/a/0/4/3",
     "buildtex": "files/a/0/7/0",
     "area": "files/a/0/4/2",
+    "anims": "files/a/1/0/6",     # building animations (NSBCA/NSBTA/NSBTP); Diamond's come from files/arc/bm_anime
 }
 MATSHP = {"field": "files/fielddata/build_model/bm_field_matshp.dat", "room": "files/fielddata/build_model/bm_room_matshp.dat"}
 ENC_JSON = "files/fielddata/encountdata/gs_enc_data.json"
@@ -306,6 +307,13 @@ class Diamond:
             bases = {k: int(v) for k, v in re.findall(r"#define (SNDARC_\w+_BASE)\s+(\d+)", src)}
             self._seqs = {bases[b] + int(n): name for name, b, n in re.findall(r"#define (SEQ_\w+)\s+\((SNDARC_\w+_BASE) \+ (\d+)\)", src)}
         return self._seqs.get(seqno)
+
+    def build_anim_entry(self, bid):
+        """Diamond's bm_anime_list entry for build model bid (20 bytes: has, flags, 0, 0, four s32 bm_anime ids) or None."""
+        if not hasattr(self, "_anim_list"):
+            self._anim_list = narc_read(f"{self.repo}/files/arc/bm_anime_list.narc")[0]
+            self._anims = narc_read(f"{self.repo}/files/arc/bm_anime.narc")[0]
+        return self._anim_list[bid] if bid < len(self._anim_list) else None
 
     def hidden_item(self, idx):
         """Diamond's hidden-item table (UNK_020F2DB4, 229 rows of {u16 item, u8 qty, u8 dowsing, u16 0, u16 index});
@@ -1179,13 +1187,37 @@ def main():
     def model_blob(bid):
         return dp.models[bid] if isinstance(bid, int) else dp.fldeff(bid[1])
 
+    anim_cache = {}   # Diamond bm_anime member -> HeartGold a/1/0/6 member
+
+    def anim_entry(bid):
+        """HeartGold's 24-byte build-anim entry for a Diamond building: its animations appended to a/1/0/6."""
+        stub = b"\xff\xff" + b"\x00" * 6 + b"\xff" * 16
+        if not isinstance(bid, int):
+            return stub
+        e = dp.build_anim_entry(bid)
+        if e is None or e[0] == 0:
+            return stub
+        ids = list(struct.unpack_from("<4i", e, 4))
+        hg = []
+        for a in ids:
+            if a < 0 or a >= len(dp._anims):
+                hg.append(-1)
+                continue
+            if a not in anim_cache:
+                anim_cache[a] = narcs.append("anims", dp._anims[a])
+            hg.append(anim_cache[a])
+        count = sum(1 for a in hg if a >= 0)
+        if count == 0:   # Diamond marks many models "animated" with no animation ids and flags 0xFF
+            return stub
+        return bytes([1, e[1], e[2], 0]) + bytes([0, 0, 1, count]) + struct.pack("<4i", *hg)
+
     def import_models(ids, kind):
         key_models, key_anim = ("field_models", "field_anim") if kind == "field" else ("room_models", "room_anim")
         out = []
         for bid in ids:
             if bid not in model_cache[kind]:
                 model_cache[kind][bid] = narcs.append(key_models, model_blob(bid))
-                narcs.append(key_anim, b"\xff\xff" + b"\x00" * 6 + b"\xff" * 16)
+                narcs.append(key_anim, anim_entry(bid))
                 narcs.matshp_add[kind] += 1
             out.append(model_cache[kind][bid])
         return out
