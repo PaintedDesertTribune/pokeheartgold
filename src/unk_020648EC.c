@@ -7,6 +7,7 @@
 #include "field/gymmick/sinnoh_veilstone.h"
 #include "field/gymmick/sinnoh_sunyshore.h"
 #include "field/gymmick/sinnoh_pastoria.h"
+#include "field/gymmick/sinnoh_hearthome.h"
 #include "overlay_04.h"
 #include "save_misc_data.h"
 #include "scrcmd.h"
@@ -60,6 +61,7 @@ static const FieldSystemFunc1 sInitFuncs[] = {
     [GYMMICK_SINNOH_VEILSTONE] = GymmickInit_SinnohVeilstone,
     [GYMMICK_SINNOH_SUNYSHORE] = GymmickInit_SinnohSunyshore,
     [GYMMICK_SINNOH_PASTORIA] = GymmickInit_SinnohPastoria,
+    [GYMMICK_SINNOH_HEARTHOME] = GymmickInit_SinnohHearthome,
 };
 
 static const FieldSystemFunc1 sFreeFuncs[] = {
@@ -77,6 +79,7 @@ static const FieldSystemFunc1 sFreeFuncs[] = {
     [GYMMICK_SINNOH_VEILSTONE] = GymmickFree_SinnohVeilstone,
     [GYMMICK_SINNOH_SUNYSHORE] = GymmickFree_SinnohSunyshore,
     [GYMMICK_SINNOH_PASTORIA] = GymmickFree_SinnohPastoria,
+    [GYMMICK_SINNOH_HEARTHOME] = GymmickFree_SinnohHearthome,
 };
 
 static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
@@ -94,4 +97,5 @@ static const FieldSystemFunc2 sCheckCollisionFuncs[] = {
     [GYMMICK_SINNOH_VEILSTONE] = GymmickCheckCollision_SinnohVeilstone,
     [GYMMICK_SINNOH_SUNYSHORE] = GymmickCheckCollision_SinnohSunyshore,
     [GYMMICK_SINNOH_PASTORIA] = GymmickCheckCollision_SinnohPastoria,
+    [GYMMICK_SINNOH_HEARTHOME] = NULL,
 };

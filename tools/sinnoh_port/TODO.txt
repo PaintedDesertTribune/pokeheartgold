@@ -88,11 +88,7 @@ MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: dropped ScrCmd_Unk0238: unknown Diamo
 MAP_HEARTHOME_AMITY_SQUARE_EAST_GATEHOUSE: object 2 uses Diamond std script 10162; no script for now
 MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: dropped ScrCmd_Unk0238: unknown Diamond variable transform (sub_02042214)
 MAP_HEARTHOME_AMITY_SQUARE_WEST_GATEHOUSE: object 3 uses Diamond std script 10162; no script for now
-MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
-MAP_HEARTHOME_GYM_FOURTH_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_GYM_LEADER_ROOM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
-MAP_HEARTHOME_GYM_SECOND_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
-MAP_HEARTHOME_GYM_THIRD_QUESTION_ROOM: dropped ScrCmd_InitHearthomeGym: Hearthome Gym lift state; the lift is a warp here (no state needed)
 MAP_HEARTHOME_NORTHEAST_HOUSE_ELEVATOR: warp 0 to Diamond map 4095 not imported; points at itself
 MAP_HEARTHOME_POKECENTER_1F: warp 2 to Diamond map MAP_HEARTHOME_POKECENTER_B1F not imported; points at itself
 MAP_HEARTHOME_POKECENTER_2F: warp 1 to Diamond map MAP_UNION_ROOM not imported; points at itself

@@ -421,6 +421,7 @@ pokeheartgold_c = files(
         'field/gymmick/sinnoh_veilstone.c',
         'field/gymmick/sinnoh_sunyshore.c',
         'field/gymmick/sinnoh_pastoria.c',
+        'field/gymmick/sinnoh_hearthome.c',
         'sinnoh_spear_pillar.c',
         'field/gymmick/viridian.c',
     ##############################

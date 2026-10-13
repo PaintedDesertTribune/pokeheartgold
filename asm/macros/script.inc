@@ -1094,6 +1094,14 @@
 	.short 860
 	.endm
 
+	.macro SinnohHearthomeGymInit
+	.short 861
+	.endm
+
+	.macro SinnohHearthomeGymElevator
+	.short 862
+	.endm
+
 	.macro Warp arg0, arg1=0, arg2, arg3, arg4
 	.short 176
 	.short \arg0

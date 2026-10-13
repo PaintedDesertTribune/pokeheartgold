@@ -12,21 +12,11 @@
 	ScrDefEnd
 
 scr_seq_SC05GYM0104_000:
-	// Diamond ScrCmd_InitHearthomeGym dropped: Hearthome Gym lift state; the lift is a warp here (no state needed)
+	SinnohHearthomeGymInit
 	End
 
 scr_seq_SC05GYM0104_001:
-	GetPlayerFacing VAR_SPECIAL_RESULT
-	GetPlayerCoords VAR_SPECIAL_x8004, VAR_SPECIAL_x8005
-	Compare VAR_SPECIAL_RESULT, DIR_NORTH
-	GoToIfEq _elev_SC05GYM0104_0016
-	AddVar VAR_SPECIAL_x8005, 1
-	Warp MAP_SINNOH_HEARTHOME_GYM_SECOND_QUESTION_ROOM, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_SOUTH
-	End
-_elev_SC05GYM0104_0016:
-	SubVar VAR_SPECIAL_x8005, 1
-	Warp MAP_SINNOH_HEARTHOME_GYM_SECOND_QUESTION_ROOM, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_NORTH
-	End
+	SinnohHearthomeGymElevator
 	End
 
 scr_seq_SC05GYM0104_002:

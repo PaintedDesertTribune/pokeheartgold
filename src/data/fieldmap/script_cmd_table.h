@@ -864,6 +864,8 @@ const ScrCmdFunc gScriptCmdTable[] = {
     ScrCmd_SinnohSpearPillarSequence, // 858: Sinnoh port, Spear Pillar cutscene stand-in (operation, var)
     ScrCmd_SinnohPastoriaGymInit, // 859: Sinnoh port, Pastoria Gym water
     ScrCmd_SinnohPastoriaGymButton, // 860: Sinnoh port, Pastoria Gym button under the player
+    ScrCmd_SinnohHearthomeGymInit, // 861: Sinnoh port, Hearthome Gym elevator
+    ScrCmd_SinnohHearthomeGymElevator, // 862: Sinnoh port, Hearthome Gym elevator ride
 };
 const u32 sNumScriptCmds = NELEMS(gScriptCmdTable);
 

@@ -83,7 +83,10 @@ EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "S
                                            "SINNOH_BM_VEILSTONE_BAG_3": 0x122, "SINNOH_BM_VEILSTONE_BAG_4": 0x123, "SINNOH_BM_VEILSTONE_BAG_5": 0x124,
                                            "SINNOH_BM_VEILSTONE_BAG_6": 0x125},
                      "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)},
-                     "MAP_PASTORIA_GYM": {"SINNOH_BM_PASTORIA_WATER": 0xF2}}
+                     "MAP_PASTORIA_GYM": {"SINNOH_BM_PASTORIA_WATER": 0xF2},
+                     "MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM": {"SINNOH_BM_HEARTHOME_LIFT": 0x102}}
+# Diamond weather ids -> HeartGold's (include/constants/weather.h in each tree); fog/Defog maps use HeartGold's mist (0)
+WEATHER_MAP = {0: 0, 1: 0, 2: 1, 3: 2, 4: 3, 5: 5, 6: 5, 7: 6, 8: 0, 9: 7, 10: 7, 11: 8, 14: 0, 16: 11, 17: 3}
 PASTORIA_BUTTON_MODELS = {0xEF: 2, 0xF0: 1, 0xF1: 0}   # Diamond button building model -> water level it sets
 SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
 BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
@@ -539,6 +542,8 @@ TRANSLATE = {
     "ScrCmd_InitVeilstoneGym": ("SinnohVeilstoneGymInit", ""),   # src/field/gymmick/sinnoh_veilstone.c
     "ScrCmd_InitSunyshoreGym": ("SinnohSunyshoreGymInit", "b"),   # src/field/gymmick/sinnoh_sunyshore.c
     "ScrCmd_InitPastoriaGym": ("SinnohPastoriaGymInit", ""),     # src/field/gymmick/sinnoh_pastoria.c
+    "ScrCmd_InitHearthomeGym": ("SinnohHearthomeGymInit", ""),   # src/field/gymmick/sinnoh_hearthome.c
+    "ScrCmd_MoveHearthomeGymElevator": ("SinnohHearthomeGymElevator", ""),
     "ScrCmd_CheckPastoriaGymButton": ("SinnohPastoriaGymButton", ""),
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
@@ -608,7 +613,6 @@ DROP = {
     "ScrCmd_Unk02CF": "Diamond list-window option tweak",
     "ScrCmd_ShowPokemonPic": "Diamond's in-field Pokémon portrait window has no HeartGold script command",
     "ScrCmd_KeepEvent": "Diamond's keep-object-across-load flag; HeartGold objects persist by map data",
-    "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
     "ScrCmd_Unk0250": "Diamond new-game save-field init; HeartGold does its own",
     "ScrCmd_InitPokemonRecordSize": "Diamond new-game record init; HeartGold does its own",
     "ScrCmd_OpenTradeScreen": "the trade screen is part of HeartGold's NPCTradeExec",
@@ -868,16 +872,6 @@ class Translator:
                     val = self.var(raw[1]) if raw[1] >= 0x4000 else str(raw[1])
                     lines[pc] = f"\tMenuItemAdd {msg}, {menu_idx}, {val}"
                     menu_idx += 1
-                    pc = nxt
-                    continue
-                if name == "ScrCmd_MoveHearthomeGymElevator":
-                    # Diamond lifts the player between the room's two floors in place (upper floor north of the lift tile,
-                    # lower floor south; the height plates do not overlap), so a warp one tile north or south stands in
-                    lbl = f"_elev_{self.code}_{pc:04X}"
-                    lines[pc] = (f"\tGetPlayerFacing VAR_SPECIAL_RESULT\n\tGetPlayerCoords VAR_SPECIAL_x8004, VAR_SPECIAL_x8005\n"
-                                 f"\tCompare VAR_SPECIAL_RESULT, DIR_NORTH\n\tGoToIfEq {lbl}\n"
-                                 f"\tAddVar VAR_SPECIAL_x8005, 1\n\tWarp {self.hgmap}, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_SOUTH\n\tEnd\n"
-                                 f"{lbl}:\n\tSubVar VAR_SPECIAL_x8005, 1\n\tWarp {self.hgmap}, 0, VAR_SPECIAL_x8004, VAR_SPECIAL_x8005, DIR_NORTH\n\tEnd")
                     pc = nxt
                     continue
                 if name in DROP:
@@ -1560,7 +1554,7 @@ def main():
                         .areaIcon = {1 if outdoor else 9},
                         .momCallIntroParam = 6,
                         .regionNo = MAP_REGION_SINNOH,
-                        .weather = 0,
+                        .weather = {WEATHER_MAP.get(h["weather"], 0)},
                         {extra}
                         .bikeAllowed = {'TRUE' if h['bike'] else 'FALSE'},
                         .runningAllowed_Unused = TRUE,
