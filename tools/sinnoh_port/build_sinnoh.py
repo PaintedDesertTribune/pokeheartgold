@@ -84,7 +84,9 @@ EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "S
                                            "SINNOH_BM_VEILSTONE_BAG_6": 0x125},
                      "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)},
                      "MAP_PASTORIA_GYM": {"SINNOH_BM_PASTORIA_WATER": 0xF2},
-                     "MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM": {"SINNOH_BM_HEARTHOME_LIFT": 0x102}}
+                     "MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM": {"SINNOH_BM_HEARTHOME_LIFT": 0x102},
+                     "MAP_CANALAVE": {"SINNOH_BM_CANALAVE_SHIP": 0x22},            # the harbor ship the departure scene slides away
+                     "MAP_IRON_ISLAND_EXTERIOR": {"SINNOH_BM_ISLAND_SHIP": 0x1C1}}  # the islands' boat (same model in all three areas)
 # Diamond weather ids -> HeartGold's (include/constants/weather.h in each tree); fog/Defog maps use HeartGold's mist (0)
 WEATHER_MAP = {0: 0, 1: 0, 2: 1, 3: 2, 4: 3, 5: 5, 6: 5, 7: 6, 8: 0, 9: 7, 10: 7, 11: 8, 14: 0, 16: 11, 17: 3}
 PASTORIA_BUTTON_MODELS = {0xEF: 2, 0xF0: 1, 0xF1: 0}   # Diamond button building model -> water level it sets
@@ -168,7 +170,6 @@ SCRIPT_PATCHES = {
         (r"\tMenuItemAdd (\S+), (\d+), 4\n", lambda m: f"\tMenuItemAdd msg_0829_SC02_00041, {m.group(2)}, 5\n\tMenuItemAdd {m.group(1)}, {int(m.group(2)) + 1}, 4\n", 1),
         (r"(\tCompareVarToValue 0x800C, 3\n\tGoToIf 1, _07E8\n)", lambda m: m.group(1) + "\tCompareVarToValue 0x800C, 5\n\tGoToIf 1, _sail_olivine\n", 1),
         (r"(?=_07E8:\n)", lambda m: OLIVINE_SAIL, 1),
-        (r"(\tSinnohShipCutscene 3, [^\n]+\n)", lambda m: "\tFadeScreen 6, 1, 0, RGB_BLACK\n\tWaitFade\n" + m.group(1), 0),
     ],
 }
 

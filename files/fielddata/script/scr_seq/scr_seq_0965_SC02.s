@@ -533,8 +533,6 @@ _0737:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	FadeScreen 6, 1, 0, RGB_BLACK
-	WaitFade
 	SinnohShipCutscene 3, 3, MAP_SINNOH_IRON_ISLAND_EXTERIOR, 100, 502
 	ReleaseAll
 	End
@@ -547,8 +545,6 @@ _0772:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	FadeScreen 6, 1, 0, RGB_BLACK
-	WaitFade
 	SinnohShipCutscene 3, 2, MAP_SINNOH_FULLMOON_ISLAND_EXTERIOR, 39, 277
 	ReleaseAll
 	End
@@ -561,8 +557,6 @@ _07AD:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	FadeScreen 6, 1, 0, RGB_BLACK
-	WaitFade
 	SinnohShipCutscene 3, 3, MAP_SINNOH_NEWMOON_ISLAND_EXTERIOR, 152, 277
 	ReleaseAll
 	End
@@ -575,8 +569,6 @@ _sail_olivine:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
-	FadeScreen 6, 1, 0, RGB_BLACK
-	WaitFade
 	SinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
 	ReleaseAll
 	End

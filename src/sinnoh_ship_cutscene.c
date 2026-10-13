@@ -11,6 +11,11 @@
 #include "constants/sndseq.h"
 
 #include "camera.h"
+#include "constants/gx.h"
+#include "constants/sinnoh.h"
+#include "field/map_prop.h"
+#include "map_object.h"
+#include "player_avatar.h"
 #include "field_system.h"
 #include "field_bgm.h"
 #include "field_warp_tasks.h"
@@ -62,7 +67,55 @@ typedef struct SinnohShipTaskEnv {
     int z;
     Location location;
     SinnohShipArgs args;
+    // in-field departure (Diamond sub_020607D4): the harbor's ship prop slides away under a fixed camera
+    MapProp *ship;
+    VecFx32 cameraTarget;
+    fx32 speed;
+    fx32 travelled;
+    fx32 travelDistance;
+    fx32 cameraPan;
+    u8 accelTimer;
 } SinnohShipTaskEnv;
+
+#define SHIP_PRE_STATES     100   // task states before the full-screen scene
+#define SHIP_SPEED_START    (FX32_ONE / 4)     // Diamond: 0x400 per frame, +1.0 every 24 frames until >= 1.0
+#define SHIP_PAN_TILES      FX32_CONST(32)     // Diamond pans the fixed camera two tiles while the ship leaves
+
+static void SinnohShip_SlideStep(SinnohShipTaskEnv *env) {
+    VecFx32 pos;
+    MapProp_GetTranslation(&pos, env->ship);
+    switch (env->travelDir) {
+    case 0:
+        pos.z += env->speed;
+        break;
+    case 1:
+        pos.x -= env->speed;
+        break;
+    case 2:
+        pos.x += env->speed;
+        break;
+    default:
+        pos.z -= env->speed;
+        break;
+    }
+    MapProp_SetTranslation(env->ship, &pos);
+    env->travelled += env->speed;
+    if (env->speed < FX32_ONE && ++env->accelTimer >= 24) {
+        env->speed += FX32_ONE;
+        env->accelTimer = 0;
+    }
+    if (env->cameraPan < SHIP_PAN_TILES) {   // Diamond: dir 3 pans x by 1 unit, dir 2 pans z by half a unit per frame
+        if (env->travelDir == 3) {
+            env->cameraTarget.x += FX32_ONE;
+            env->cameraPan += FX32_ONE;
+        } else if (env->travelDir == 2) {
+            env->cameraTarget.z += FX32_ONE / 2;
+            env->cameraPan += FX32_ONE / 2;
+        } else {
+            env->cameraPan = SHIP_PAN_TILES;
+        }
+    }
+}
 
 // Member indices into ship_demo.narc: one model plus four animations per travel direction.
 static const struct {
@@ -273,9 +326,45 @@ static BOOL Task_SinnohShipCutscene(TaskManager *taskManager) {
     SinnohShipTaskEnv *env = TaskManager_GetEnvironment(taskManager);
 
     switch (env->state) {
-    case 0:
-        // The script has already faded the field to black; silence the town music too.
+    case SHIP_PRE_STATES: {
+        // Diamond's ShipAnimation first slides the harbor's ship out of frame (Canalave: build model 0x22 going
+        // north 25 tiles; the islands' boat 0x1C1 going east 12 tiles) under a camera fixed on the dock.
+        int model = env->travelDir == 3 ? SINNOH_BM_CANALAVE_SHIP : (env->travelDir == 2 ? SINNOH_BM_ISLAND_SHIP : -1);
+        env->ship = model >= 0 ? MapPropManager_FindMapPropByBuildModel(fieldSystem->mapPropManager, model) : NULL;
+        if (env->ship == NULL) {
+            env->state = SHIP_PRE_STATES + 2;   // no ship here (other harbors): just fade and go
+            break;
+        }
+        PlayerAvatar_CopyPositionVector(fieldSystem->playerAvatar, &env->cameraTarget);
+        Camera_ClearFixedTarget(fieldSystem->camera);
+        Camera_SetFixedTarget(&env->cameraTarget, fieldSystem->camera);
+        MapObject_SetVisible(PlayerAvatar_GetMapObject(fieldSystem->playerAvatar), FALSE);   // the player is aboard
+        env->speed = SHIP_SPEED_START;
+        env->travelDistance = env->travelDir == 3 ? FX32_CONST(400) : FX32_CONST(192);
+        PlaySE(SEQ_SE_DP_W092);
+        env->state++;
+    } break;
+    case SHIP_PRE_STATES + 1:
+        SinnohShip_SlideStep(env);
+        if (env->travelled >= env->travelDistance) {
+            env->state++;
+        }
+        break;
+    case SHIP_PRE_STATES + 2:
+        BeginNormalPaletteFade(FADE_BOTH_SCREENS, FADE_TYPE_BRIGHTNESS_OUT, FADE_TYPE_BRIGHTNESS_OUT, RGB_BLACK, 6, 1, HEAP_ID_FIELD1);
         GF_SndStartFadeOutBGM(0, 6);
+        env->state++;
+        break;
+    case SHIP_PRE_STATES + 3:
+        if (!IsPaletteFadeFinished() || GF_SndGetFadeTimer() != 0) {
+            break;
+        }
+        if (env->ship != NULL) {
+            Camera_ClearFixedTarget(fieldSystem->camera);
+        }
+        env->state = 0;
+        break;
+    case 0:
         CallTask_LeaveOverworld(taskManager);
         env->state++;
         break;
@@ -298,6 +387,13 @@ static BOOL Task_SinnohShipCutscene(TaskManager *taskManager) {
         env->state++;
         break;
     case 4:
+        BeginNormalPaletteFade(FADE_BOTH_SCREENS, FADE_TYPE_BRIGHTNESS_IN, FADE_TYPE_BRIGHTNESS_IN, RGB_BLACK, 6, 1, HEAP_ID_FIELD1);
+        env->state++;
+        break;
+    case 5:
+        if (!IsPaletteFadeFinished()) {
+            break;
+        }
         Heap_Free(env);
         return TRUE;
     }
@@ -312,6 +408,7 @@ void CallTask_SinnohShipCutscene(TaskManager *taskManager, u8 travelDir, u8 exit
     env->mapId = mapId;
     env->x = x;
     env->z = z;
+    env->state = SHIP_PRE_STATES;
     TaskManager_Call(taskManager, Task_SinnohShipCutscene, env);
 }
 
