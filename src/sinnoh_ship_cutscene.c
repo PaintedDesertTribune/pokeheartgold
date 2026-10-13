@@ -14,6 +14,8 @@
 #include "constants/gx.h"
 #include "constants/sinnoh.h"
 #include "field/map_prop.h"
+#include "field/map_prop_animation.h"
+#include "field/overlay_01_02204004.h"
 #include "map_object.h"
 #include "player_avatar.h"
 #include "field_system.h"
@@ -75,7 +77,39 @@ typedef struct SinnohShipTaskEnv {
     fx32 travelDistance;
     fx32 cameraPan;
     u8 accelTimer;
+    u8 bridgeAnims;   // drawbridge halves whose lift animation was started
 } SinnohShipTaskEnv;
+
+static const int sBridgeModels[2] = { SINNOH_BM_CANALAVE_BRIDGE_A, SINNOH_BM_CANALAVE_BRIDGE_B };
+
+// Diamond lifts the two drawbridge halves (deferred map-prop animations) as the ship leaves Canalave.
+static void SinnohShip_StartDrawbridge(FieldSystem *fieldSystem, SinnohShipTaskEnv *env) {
+    for (int i = 0; i < 2; i++) {
+        Field3dRenderObj *obj = Field3dObjectList_GetRenderObjectByID(fieldSystem->renderObjManager, sBridgeModels[i]);
+        if (obj == NULL) {
+            continue;
+        }
+        if (!MapPropAnimationManager_AddAnimationToRenderObj(sBridgeModels[i], 0, TRUE, &obj->renderObj, fieldSystem->mapPropAnimationManager)) {
+            continue;
+        }
+        MapPropAnimationData *anim = MapPropAnimationManager_GetAnimationData(sBridgeModels[i], 0, fieldSystem->mapPropAnimationManager);
+        MapPropAnimationData_SetAnimationLoopCount(anim, 1);
+        MapPropAnimationData_GoToFirstAnimationFrame(anim);
+        env->bridgeAnims |= 1 << i;
+    }
+    if (env->bridgeAnims) {
+        PlaySE(SEQ_SE_DP_W092B);
+    }
+}
+
+static BOOL SinnohShip_DrawbridgeDone(FieldSystem *fieldSystem, SinnohShipTaskEnv *env) {
+    for (int i = 0; i < 2; i++) {
+        if ((env->bridgeAnims & (1 << i)) && !MapPropAnimationData_IsAnimationLoopFinished(MapPropAnimationManager_GetAnimationData(sBridgeModels[i], 0, fieldSystem->mapPropAnimationManager))) {
+            return FALSE;
+        }
+    }
+    return TRUE;
+}
 
 #define SHIP_PRE_STATES     100   // task states before the full-screen scene
 #define SHIP_SPEED_START    (FX32_ONE / 4)     // Diamond: 0x400 per frame, +1.0 every 24 frames until >= 1.0
@@ -342,11 +376,16 @@ static BOOL Task_SinnohShipCutscene(TaskManager *taskManager) {
         env->speed = SHIP_SPEED_START;
         env->travelDistance = env->travelDir == 3 ? FX32_CONST(400) : FX32_CONST(192);
         PlaySE(SEQ_SE_DP_W092);
+        if (env->travelDir == 3) {
+            SinnohShip_StartDrawbridge(fieldSystem, env);
+        }
         env->state++;
     } break;
     case SHIP_PRE_STATES + 1:
-        SinnohShip_SlideStep(env);
-        if (env->travelled >= env->travelDistance) {
+        if (env->travelled < env->travelDistance) {
+            SinnohShip_SlideStep(env);
+        }
+        if (env->travelled >= env->travelDistance && SinnohShip_DrawbridgeDone(fieldSystem, env)) {
             env->state++;
         }
         break;

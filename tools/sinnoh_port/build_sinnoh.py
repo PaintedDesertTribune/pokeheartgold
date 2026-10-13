@@ -86,7 +86,7 @@ EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "S
                      "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)},
                      "MAP_PASTORIA_GYM": {"SINNOH_BM_PASTORIA_WATER": 0xF2},
                      "MAP_HEARTHOME_GYM_FIRST_QUESTION_ROOM": {"SINNOH_BM_HEARTHOME_LIFT": 0x102},
-                     "MAP_CANALAVE": {"SINNOH_BM_CANALAVE_SHIP": 0x22},            # the harbor ship the departure scene slides away
+                     "MAP_CANALAVE": {"SINNOH_BM_CANALAVE_SHIP": 0x22, "SINNOH_BM_CANALAVE_BRIDGE_A": 0x1F, "SINNOH_BM_CANALAVE_BRIDGE_B": 0x20},   # ship and drawbridge halves
                      "MAP_IRON_ISLAND_EXTERIOR": {"SINNOH_BM_ISLAND_SHIP": 0x1C1}}  # the islands' boat (same model in all three areas)
 # Diamond weather ids -> HeartGold's (include/constants/weather.h in each tree); fog/Defog maps use HeartGold's mist (0)
 WEATHER_MAP = {0: 0, 1: 0, 2: 1, 3: 2, 4: 3, 5: 5, 6: 5, 7: 6, 8: 0, 9: 7, 10: 7, 11: 8, 14: 0, 16: 11, 17: 3}
