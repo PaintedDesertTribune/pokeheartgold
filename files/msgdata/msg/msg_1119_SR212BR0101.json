@@ -76,6 +76,26 @@
         "Red Shards: Sunny Day\n",
         "Blue Shards: Rain Dance\\fYellow Shards: Sandstorm\\fGreen Shards: Hail\\f...The Weather Institute"
       ]
+    },
+    {
+      "id": "msg_1119_SR212BR0101_00010",
+      "en_US": "RED SHARD"
+    },
+    {
+      "id": "msg_1119_SR212BR0101_00011",
+      "en_US": "CANCEL"
+    },
+    {
+      "id": "msg_1119_SR212BR0101_00012",
+      "en_US": "BLUE SHARD"
+    },
+    {
+      "id": "msg_1119_SR212BR0101_00013",
+      "en_US": "YELLOW SHARD"
+    },
+    {
+      "id": "msg_1119_SR212BR0101_00014",
+      "en_US": "GREEN SHARD"
     }
   ]
 }

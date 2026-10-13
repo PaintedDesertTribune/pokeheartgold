@@ -280,12 +280,12 @@ scr_seq_SC01R0701_010:
 _0356:
 	NPCMsg msg_0869_SC01R0701_00021
 	MenuInit 7, 2, 0, 1, 0x800C
-	ScrCmd_066 0, 0
-	ScrCmd_066 1, 1
-	ScrCmd_066 2, 2
-	ScrCmd_066 3, 3
-	ScrCmd_066 4, 4
-	ScrCmd_066 5, 5
+	MenuItemAdd msg_0869_SC01R0701_00028, 0, 0
+	MenuItemAdd msg_0869_SC01R0701_00029, 1, 1
+	MenuItemAdd msg_0869_SC01R0701_00030, 2, 2
+	MenuItemAdd msg_0869_SC01R0701_00031, 3, 3
+	MenuItemAdd msg_0869_SC01R0701_00032, 4, 4
+	MenuItemAdd msg_0869_SC01R0701_00033, 5, 5
 	// TODO Diamond ScrCmd_Unk0048 0x048 args [2]: no HeartGold mapping yet
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

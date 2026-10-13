@@ -103,6 +103,26 @@
         "Um... You don’t appear to have\n",
         "enough money..."
       ]
+    },
+    {
+      "id": "msg_0975_SR208R0101_00013",
+      "en_US": "GROWTH MULCH{CURSOR_X 90}$200"
+    },
+    {
+      "id": "msg_0975_SR208R0101_00014",
+      "en_US": "DAMP MULCH{CURSOR_X 90}$200"
+    },
+    {
+      "id": "msg_0975_SR208R0101_00015",
+      "en_US": "STABLE MULCH{CURSOR_X 90}$200"
+    },
+    {
+      "id": "msg_0975_SR208R0101_00016",
+      "en_US": "GOOEY MULCH{CURSOR_X 90}$200"
+    },
+    {
+      "id": "msg_0975_SR208R0101_00017",
+      "en_US": "EXIT"
     }
   ]
 }

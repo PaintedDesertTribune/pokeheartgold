@@ -80,6 +80,22 @@
     {
       "id": "msg_1064_SC07R0205_00010",
       "en_US": "Decided not to buy a drink."
+    },
+    {
+      "id": "msg_1064_SC07R0205_00011",
+      "en_US": "FRESH WATER{CURSOR_X 80}$200"
+    },
+    {
+      "id": "msg_1064_SC07R0205_00012",
+      "en_US": "SODA POP{CURSOR_X 80}$300"
+    },
+    {
+      "id": "msg_1064_SC07R0205_00013",
+      "en_US": "LEMONADE{CURSOR_X 80}$350"
+    },
+    {
+      "id": "msg_1064_SC07R0205_00014",
+      "en_US": "NO THANKS"
     }
   ]
 }

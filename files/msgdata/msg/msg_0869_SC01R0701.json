@@ -250,6 +250,30 @@
         "A Trainer’s mission is to defeat the\n",
         "strong Trainers who await challengers\\fin Pokémon Gyms."
       ]
+    },
+    {
+      "id": "msg_0869_SC01R0701_00028",
+      "en_US": "POISONED"
+    },
+    {
+      "id": "msg_0869_SC01R0701_00029",
+      "en_US": "PARALYZED"
+    },
+    {
+      "id": "msg_0869_SC01R0701_00030",
+      "en_US": "ASLEEP"
+    },
+    {
+      "id": "msg_0869_SC01R0701_00031",
+      "en_US": "BURNED"
+    },
+    {
+      "id": "msg_0869_SC01R0701_00032",
+      "en_US": "FROZEN"
+    },
+    {
+      "id": "msg_0869_SC01R0701_00033",
+      "en_US": "EXIT"
     }
   ]
 }

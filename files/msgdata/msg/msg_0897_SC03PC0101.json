@@ -62,6 +62,26 @@
         "So, how about telling me what kind of\n",
         "Trainer that you like?\r"
       ]
+    },
+    {
+      "id": "msg_0897_SC03PC0101_00008",
+      "en_US": "{STRVAR_1 3, 0, 0}"
+    },
+    {
+      "id": "msg_0897_SC03PC0101_00009",
+      "en_US": "{STRVAR_1 3, 1, 0}"
+    },
+    {
+      "id": "msg_0897_SC03PC0101_00010",
+      "en_US": "{STRVAR_1 3, 2, 0}"
+    },
+    {
+      "id": "msg_0897_SC03PC0101_00011",
+      "en_US": "{STRVAR_1 3, 3, 0}"
+    },
+    {
+      "id": "msg_0897_SC03PC0101_00012",
+      "en_US": "EXIT"
     }
   ]
 }

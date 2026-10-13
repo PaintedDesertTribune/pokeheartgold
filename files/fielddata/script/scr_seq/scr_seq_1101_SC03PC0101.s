@@ -54,11 +54,11 @@ _006C:
 	NPCMsg msg_0897_SC03PC0101_00003
 	// TODO Diamond ScrCmd_Unk0154 0x154 args []: no HeartGold mapping yet
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 50, 0
-	ScrCmd_066 51, 1
-	ScrCmd_066 52, 2
-	ScrCmd_066 53, 3
-	ScrCmd_066 43, 4
+	MenuItemAdd msg_0897_SC03PC0101_00008, 0, 0
+	MenuItemAdd msg_0897_SC03PC0101_00009, 1, 1
+	MenuItemAdd msg_0897_SC03PC0101_00010, 2, 2
+	MenuItemAdd msg_0897_SC03PC0101_00011, 3, 3
+	MenuItemAdd msg_0897_SC03PC0101_00012, 4, 4
 	MenuExec
 	CopyVar 0x8004, 0x800C
 	CopyVar 0x8008, 0x800C

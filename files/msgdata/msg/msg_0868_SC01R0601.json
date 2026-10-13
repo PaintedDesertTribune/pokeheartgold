@@ -144,6 +144,30 @@
         "If it is really that easy, I’d love\n",
         "to trade Pokémon, too!"
       ]
+    },
+    {
+      "id": "msg_0868_SC01R0601_00016",
+      "en_US": "TRADE"
+    },
+    {
+      "id": "msg_0868_SC01R0601_00017",
+      "en_US": "INFO"
+    },
+    {
+      "id": "msg_0868_SC01R0601_00018",
+      "en_US": "EXIT"
+    },
+    {
+      "id": "msg_0868_SC01R0601_00019",
+      "en_US": "OFFER POKéMON?"
+    },
+    {
+      "id": "msg_0868_SC01R0601_00020",
+      "en_US": "SEEK POKéMON?"
+    },
+    {
+      "id": "msg_0868_SC01R0601_00021",
+      "en_US": "UNDERSTOOD!"
     }
   ]
 }

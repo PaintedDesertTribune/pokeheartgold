@@ -488,26 +488,54 @@ scr_seq_SC02_020:
 	End
 
 scr_seq_SC02_019:
-	PlaySE SEQ_SE_DP_SELECT
+	PlayFanfare SEQ_SE_DP_SELECT
 	LockAll
 	FacePlayer
-	NPCMsg msg_0829_SC02_00041
-	YesNo VAR_SPECIAL_RESULT
-	Compare VAR_SPECIAL_RESULT, 1
-	GoToIfEq _sail_no
-	CloseMsg
+	GetPlayerFacing 0x8004
+	FacePlayer
+	CompareVarToValue VAR_SINNOH_4106, 2
+	GoToIf 1, scr_seq_SC02_021
+	NPCMsg msg_0829_SC02_00024
+	MenuInit 1, 1, 0, 1, 0x800C
+	MenuItemAdd msg_0829_SC02_00042, 0, 0
+	CheckFlag FLAG_SINNOH_307
+	CallIf 1, _0731
+	CheckFlag FLAG_SINNOH_316
+	CallIf 1, _072B
+	MenuItemAdd msg_0829_SC02_00041, 1, 5
+	MenuItemAdd msg_0829_SC02_00043, 2, 4
+	MenuExec
+	CompareVarToValue 0x800C, 0
+	GoToIf 1, _0737
+	CompareVarToValue 0x800C, 1
+	GoToIf 1, _0772
+	CompareVarToValue 0x800C, 2
+	GoToIf 1, _07AD
+	CompareVarToValue 0x800C, 3
+	GoToIf 1, _07E8
+	CompareVarToValue 0x800C, 5
+	GoToIf 1, _sail_olivine
+	GoTo _07E8
+
+_072B:
+	MenuItemAdd msg_0829_SC02_00045, 0, 2
+	Return
+
+_0731:
+	MenuItemAdd msg_0829_SC02_00044, 0, 1
+	Return
+
+_0737:
+	Call _07F3
+	CompareVarToValue 0x8004, 1
+	CallIf 1, _0812
+	CompareVarToValue 0x8004, 3
+	CallIf 1, _082C
+	CompareVarToValue 0x8004, 0
+	CallIf 1, _0846
 	FadeScreen 6, 1, 0, RGB_BLACK
 	WaitFade
-	SinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
-	FadeScreen 6, 1, 1, RGB_BLACK
-	WaitFade
-	ReleaseAll
-	End
-
-_sail_no:
-	NPCMsg msg_0829_SC02_00042
-	WaitButton
-	CloseMsg
+	SinnohShipCutscene 3, 3, MAP_SINNOH_IRON_ISLAND_EXTERIOR, 100, 502
 	ReleaseAll
 	End
 
@@ -519,7 +547,44 @@ _0772:
 	CallIf 1, _082C
 	CompareVarToValue 0x8004, 0
 	CallIf 1, _0846
+	FadeScreen 6, 1, 0, RGB_BLACK
+	WaitFade
 	SinnohShipCutscene 3, 2, MAP_SINNOH_FULLMOON_ISLAND_EXTERIOR, 39, 277
+	ReleaseAll
+	End
+
+_07AD:
+	Call _07F3
+	CompareVarToValue 0x8004, 1
+	CallIf 1, _0812
+	CompareVarToValue 0x8004, 3
+	CallIf 1, _082C
+	CompareVarToValue 0x8004, 0
+	CallIf 1, _0846
+	FadeScreen 6, 1, 0, RGB_BLACK
+	WaitFade
+	SinnohShipCutscene 3, 3, MAP_SINNOH_NEWMOON_ISLAND_EXTERIOR, 152, 277
+	ReleaseAll
+	End
+
+_sail_olivine:
+	Call _07F3
+	CompareVarToValue 0x8004, 1
+	CallIf 1, _0812
+	CompareVarToValue 0x8004, 3
+	CallIf 1, _082C
+	CompareVarToValue 0x8004, 0
+	CallIf 1, _0846
+	FadeScreen 6, 1, 0, RGB_BLACK
+	WaitFade
+	SinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
+	ReleaseAll
+	End
+
+_07E8:
+	NPCMsg msg_0829_SC02_00026
+	WaitButton
+	CloseMsg
 	ReleaseAll
 	End
 

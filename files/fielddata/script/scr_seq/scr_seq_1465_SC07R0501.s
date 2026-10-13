@@ -52,8 +52,8 @@ _008F:
 _009F:
 	NPCMsg msg_1079_SC07R0501_00002
 	MenuInit 1, 1, 0, 0, 0x8000
-	ScrCmd_066 174, 0
-	ScrCmd_066 175, 1
+	MenuItemAdd msg_1079_SC07R0501_00007, 0, 0
+	MenuItemAdd msg_1079_SC07R0501_00008, 1, 1
 	MenuExec
 	Random 0x800C, 2
 	CompareVarToValue 0x800C, 0

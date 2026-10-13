@@ -90,10 +90,10 @@ scr_seq_SC07R0205_005:
 
 _00D5:
 	MenuInit 1, 1, 0, 1, 0x8000
-	ScrCmd_066 219, 0
-	ScrCmd_066 220, 1
-	ScrCmd_066 221, 2
-	ScrCmd_066 222, 3
+	MenuItemAdd msg_1064_SC07R0205_00011, 0, 0
+	MenuItemAdd msg_1064_SC07R0205_00012, 1, 1
+	MenuItemAdd msg_1064_SC07R0205_00013, 2, 2
+	MenuItemAdd msg_1064_SC07R0205_00014, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x8000
 	CompareVarToValue 0x8008, 0

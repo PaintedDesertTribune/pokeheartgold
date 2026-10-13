@@ -49,10 +49,10 @@ _0071:
 	NPCMsg msg_1219_SC11R0101_00004
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 9, 0, 1, 32780]: no HeartGold mapping yet
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	ScrCmd_066 20, 0
-	ScrCmd_066 21, 1
-	ScrCmd_066 22, 2
-	ScrCmd_066 19, 3
+	MenuItemAdd msg_1219_SC11R0101_00029, 0, 0
+	MenuItemAdd msg_1219_SC11R0101_00030, 1, 1
+	MenuItemAdd msg_1219_SC11R0101_00031, 2, 2
+	MenuItemAdd msg_1219_SC11R0101_00032, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -89,9 +89,9 @@ _00EF:
 	NPCMsg msg_1219_SC11R0101_00009
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 11, 0, 1, 32780]: no HeartGold mapping yet
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	ScrCmd_066 23, 0
-	ScrCmd_066 24, 1
-	ScrCmd_066 19, 2
+	MenuItemAdd msg_1219_SC11R0101_00033, 0, 0
+	MenuItemAdd msg_1219_SC11R0101_00034, 1, 1
+	MenuItemAdd msg_1219_SC11R0101_00032, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -122,10 +122,10 @@ _0153:
 	NPCMsg msg_1219_SC11R0101_00013
 	// TODO Diamond ScrCmd_Unk0041 0x041 args [31, 9, 0, 1, 32780]: no HeartGold mapping yet
 	// Diamond ScrCmd_Unk02CF dropped: Diamond list-window option tweak
-	ScrCmd_066 25, 0
-	ScrCmd_066 26, 1
-	ScrCmd_066 27, 2
-	ScrCmd_066 19, 3
+	MenuItemAdd msg_1219_SC11R0101_00035, 0, 0
+	MenuItemAdd msg_1219_SC11R0101_00036, 1, 1
+	MenuItemAdd msg_1219_SC11R0101_00037, 2, 2
+	MenuItemAdd msg_1219_SC11R0101_00032, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

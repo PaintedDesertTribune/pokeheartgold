@@ -23,8 +23,8 @@ scr_seq_SC07R0202_000:
 	GoToIf 1, _005F
 	NPCMsg msg_1061_SC07R0202_00000
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 229, 1
-	ScrCmd_066 228, 0
+	MenuItemAdd msg_1061_SC07R0202_00014, 0, 1
+	MenuItemAdd msg_1061_SC07R0202_00015, 1, 0
 	MenuExec
 	CompareVarToValue 0x800C, 1
 	GoToIf 1, _00C2
@@ -34,8 +34,8 @@ _005F:
 	BufferPlayersName 0
 	NPCMsg msg_1061_SC07R0202_00001
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 229, 0
-	ScrCmd_066 228, 1
+	MenuItemAdd msg_1061_SC07R0202_00014, 0, 0
+	MenuItemAdd msg_1061_SC07R0202_00015, 1, 1
 	MenuExec
 	CompareVarToValue 0x800C, 0
 	GoToIf 5, _00B7

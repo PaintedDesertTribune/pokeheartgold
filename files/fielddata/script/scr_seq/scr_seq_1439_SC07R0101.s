@@ -133,9 +133,9 @@ _01A8:
 _01B4:
 	NPCMsg msg_1066_SC07R0101_00002
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 125, 0
-	ScrCmd_066 126, 1
-	ScrCmd_066 127, 2
+	MenuItemAdd msg_1066_SC07R0101_00023, 0, 0
+	MenuItemAdd msg_1066_SC07R0101_00024, 1, 1
+	MenuItemAdd msg_1066_SC07R0101_00025, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

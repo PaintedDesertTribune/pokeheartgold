@@ -65,6 +65,30 @@
         "Fifth floor: The Rooftop Square for\n",
         "a refreshing break from shopping."
       ]
+    },
+    {
+      "id": "msg_1065_SC07R0206_00010",
+      "en_US": "5F"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00011",
+      "en_US": "4F"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00012",
+      "en_US": "3F"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00013",
+      "en_US": "2F"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00014",
+      "en_US": "1F"
+    },
+    {
+      "id": "msg_1065_SC07R0206_00015",
+      "en_US": "EXIT"
     }
   ]
 }

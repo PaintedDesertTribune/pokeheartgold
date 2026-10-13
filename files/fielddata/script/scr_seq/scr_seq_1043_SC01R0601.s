@@ -81,9 +81,9 @@ scr_seq_SC01R0601_002:
 
 _00FF:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 129, 0
-	ScrCmd_066 128, 1
-	ScrCmd_066 130, 2
+	MenuItemAdd msg_0868_SC01R0601_00016, 0, 0
+	MenuItemAdd msg_0868_SC01R0601_00017, 1, 1
+	MenuItemAdd msg_0868_SC01R0601_00018, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -100,9 +100,9 @@ _014A:
 
 _0155:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 131, 0
-	ScrCmd_066 132, 1
-	ScrCmd_066 133, 2
+	MenuItemAdd msg_0868_SC01R0601_00019, 0, 0
+	MenuItemAdd msg_0868_SC01R0601_00020, 1, 1
+	MenuItemAdd msg_0868_SC01R0601_00021, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

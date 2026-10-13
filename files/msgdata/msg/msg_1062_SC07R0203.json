@@ -80,6 +80,14 @@
         "4F: Poké Dolls & Goods\r",
         "5F: Rooftop Plaza"
       ]
+    },
+    {
+      "id": "msg_1062_SC07R0203_00010",
+      "en_US": "What’s recommended?"
+    },
+    {
+      "id": "msg_1062_SC07R0203_00011",
+      "en_US": "Nothing, thanks."
     }
   ]
 }

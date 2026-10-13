@@ -50,12 +50,12 @@ _0092:
 	// Diamond ScrCmd_ShowCurrentFloorNumber dropped: elevator floor box (cosmetic)
 	NPCMsg msg_1065_SC07R0206_00000
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 120, 0
-	ScrCmd_066 119, 1
-	ScrCmd_066 118, 2
-	ScrCmd_066 117, 3
-	ScrCmd_066 116, 4
-	ScrCmd_066 124, 5
+	MenuItemAdd msg_1065_SC07R0206_00010, 0, 0
+	MenuItemAdd msg_1065_SC07R0206_00011, 1, 1
+	MenuItemAdd msg_1065_SC07R0206_00012, 2, 2
+	MenuItemAdd msg_1065_SC07R0206_00013, 3, 3
+	MenuItemAdd msg_1065_SC07R0206_00014, 4, 4
+	MenuItemAdd msg_1065_SC07R0206_00015, 5, 5
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

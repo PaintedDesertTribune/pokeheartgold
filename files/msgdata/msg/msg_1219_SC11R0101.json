@@ -209,6 +209,42 @@
         "I wonder what kind of Trainers\n",
         "are waiting there?"
       ]
+    },
+    {
+      "id": "msg_1219_SC11R0101_00029",
+      "en_US": "TOUGH"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00030",
+      "en_US": "SMART"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00031",
+      "en_US": "TRADE"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00032",
+      "en_US": "CUTE"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00033",
+      "en_US": "CANCEL"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00034",
+      "en_US": "FANCY CUP"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00035",
+      "en_US": "YELLOW CUP"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00036",
+      "en_US": "LITTLE CUP"
+    },
+    {
+      "id": "msg_1219_SC11R0101_00037",
+      "en_US": "MIDDLE CUP"
     }
   ]
 }

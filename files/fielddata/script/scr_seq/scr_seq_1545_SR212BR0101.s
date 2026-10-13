@@ -64,8 +64,8 @@ scr_seq_SR212BR0101_002:
 
 _0100:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 44, 1
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00011, 1, 1
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -74,8 +74,8 @@ _0100:
 
 _012D:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 210, 0
-	ScrCmd_066 44, 1
+	MenuItemAdd msg_1119_SR212BR0101_00012, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00011, 1, 1
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -84,8 +84,8 @@ _012D:
 
 _015A:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 211, 0
-	ScrCmd_066 44, 1
+	MenuItemAdd msg_1119_SR212BR0101_00013, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00011, 1, 1
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -94,8 +94,8 @@ _015A:
 
 _0187:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 212, 0
-	ScrCmd_066 44, 1
+	MenuItemAdd msg_1119_SR212BR0101_00014, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00011, 1, 1
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -104,9 +104,9 @@ _0187:
 
 _01B4:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 210, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00012, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -117,9 +117,9 @@ _01B4:
 
 _01F2:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 211, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00013, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -130,9 +130,9 @@ _01F2:
 
 _0230:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 212, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00014, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -143,9 +143,9 @@ _0230:
 
 _026E:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 210, 0
-	ScrCmd_066 211, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00012, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00013, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -156,9 +156,9 @@ _026E:
 
 _02AC:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 210, 0
-	ScrCmd_066 212, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00012, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00014, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -169,9 +169,9 @@ _02AC:
 
 _02EA:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 211, 0
-	ScrCmd_066 212, 1
-	ScrCmd_066 44, 2
+	MenuItemAdd msg_1119_SR212BR0101_00013, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00014, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00011, 2, 2
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -182,10 +182,10 @@ _02EA:
 
 _0328:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 210, 1
-	ScrCmd_066 211, 2
-	ScrCmd_066 44, 3
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00012, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00013, 2, 2
+	MenuItemAdd msg_1119_SR212BR0101_00011, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -198,10 +198,10 @@ _0328:
 
 _0377:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 210, 1
-	ScrCmd_066 212, 2
-	ScrCmd_066 44, 3
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00012, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00014, 2, 2
+	MenuItemAdd msg_1119_SR212BR0101_00011, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -214,10 +214,10 @@ _0377:
 
 _03C6:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 210, 0
-	ScrCmd_066 211, 1
-	ScrCmd_066 212, 2
-	ScrCmd_066 44, 3
+	MenuItemAdd msg_1119_SR212BR0101_00012, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00013, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00014, 2, 2
+	MenuItemAdd msg_1119_SR212BR0101_00011, 3, 3
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0
@@ -230,11 +230,11 @@ _03C6:
 
 _0415:
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 209, 0
-	ScrCmd_066 210, 1
-	ScrCmd_066 211, 2
-	ScrCmd_066 212, 3
-	ScrCmd_066 44, 4
+	MenuItemAdd msg_1119_SR212BR0101_00010, 0, 0
+	MenuItemAdd msg_1119_SR212BR0101_00012, 1, 1
+	MenuItemAdd msg_1119_SR212BR0101_00013, 2, 2
+	MenuItemAdd msg_1119_SR212BR0101_00014, 3, 3
+	MenuItemAdd msg_1119_SR212BR0101_00011, 4, 4
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

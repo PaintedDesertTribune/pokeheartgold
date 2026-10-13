@@ -334,18 +334,23 @@
     },
     {
       "id": "msg_0829_SC02_00041",
-      "en_US": [
-        "Sailor: This ship sails to Olivine City\n",
-        "in the Johto region.\r",
-        "Shall we set sail?"
-      ]
+      "en_US": "OLIVINE CITY"
     },
     {
       "id": "msg_0829_SC02_00042",
-      "en_US": [
-        "Sailor: Come back whenever you’re ready\n",
-        "to sail."
-      ]
+      "en_US": "IRON ISLAND"
+    },
+    {
+      "id": "msg_0829_SC02_00043",
+      "en_US": "EXIT"
+    },
+    {
+      "id": "msg_0829_SC02_00044",
+      "en_US": "FULLMOON ISLAND"
+    },
+    {
+      "id": "msg_0829_SC02_00045",
+      "en_US": "NEWMOON ISLAND"
     }
   ]
 }

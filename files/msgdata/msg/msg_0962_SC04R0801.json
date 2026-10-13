@@ -567,6 +567,30 @@
         "Dig around all over and find\n",
         "Treasure!\r"
       ]
+    },
+    {
+      "id": "msg_0962_SC04R0801_00047",
+      "en_US": "FLAGS"
+    },
+    {
+      "id": "msg_0962_SC04R0801_00048",
+      "en_US": "SPHERES"
+    },
+    {
+      "id": "msg_0962_SC04R0801_00049",
+      "en_US": "TRAPS"
+    },
+    {
+      "id": "msg_0962_SC04R0801_00050",
+      "en_US": "GOODS"
+    },
+    {
+      "id": "msg_0962_SC04R0801_00051",
+      "en_US": "TREASURES"
+    },
+    {
+      "id": "msg_0962_SC04R0801_00052",
+      "en_US": "EXIT"
     }
   ]
 }

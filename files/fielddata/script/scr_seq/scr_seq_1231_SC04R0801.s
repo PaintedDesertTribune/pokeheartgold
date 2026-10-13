@@ -498,12 +498,12 @@ scr_seq_SC04R0801_004:
 _068E:
 	NPCMsg msg_0962_SC04R0801_00041
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 180, 0
-	ScrCmd_066 181, 1
-	ScrCmd_066 182, 2
-	ScrCmd_066 183, 3
-	ScrCmd_066 184, 4
-	ScrCmd_066 12, 5
+	MenuItemAdd msg_0962_SC04R0801_00047, 0, 0
+	MenuItemAdd msg_0962_SC04R0801_00048, 1, 1
+	MenuItemAdd msg_0962_SC04R0801_00049, 2, 2
+	MenuItemAdd msg_0962_SC04R0801_00050, 3, 3
+	MenuItemAdd msg_0962_SC04R0801_00051, 4, 4
+	MenuItemAdd msg_0962_SC04R0801_00052, 5, 5
 	MenuExec
 	CopyVar 0x8008, 0x800C
 	CompareVarToValue 0x8008, 0

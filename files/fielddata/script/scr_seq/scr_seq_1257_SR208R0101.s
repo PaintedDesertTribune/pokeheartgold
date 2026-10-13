@@ -103,11 +103,11 @@ scr_seq_SR208R0101_003:
 	NPCMsg msg_0975_SR208R0101_00007
 	ShowMoneyBox 20, 2
 	MenuInit 1, 1, 0, 1, 0x800C
-	ScrCmd_066 223, 0
-	ScrCmd_066 224, 1
-	ScrCmd_066 225, 2
-	ScrCmd_066 226, 3
-	ScrCmd_066 227, 4
+	MenuItemAdd msg_0975_SR208R0101_00013, 0, 0
+	MenuItemAdd msg_0975_SR208R0101_00014, 1, 1
+	MenuItemAdd msg_0975_SR208R0101_00015, 2, 2
+	MenuItemAdd msg_0975_SR208R0101_00016, 3, 3
+	MenuItemAdd msg_0975_SR208R0101_00017, 4, 4
 	MenuExec
 	CopyVar 0x8000, 0x800C
 	CopyVar 0x8008, 0x8000

@@ -155,37 +155,21 @@ EXTRA_WARPS = {
 }
 # Extra dialogue lines appended to a map's text bank (ids continue after Diamond's).
 EXTRA_MESSAGES = {
-    "MAP_CANALAVE": [
-        "Sailor: This ship sails to Olivine City\nin the Johto region.\rShall we set sail?",
-        "Sailor: Come back whenever you’re ready\nto sail.",
-    ],
+    "MAP_CANALAVE": ["OLIVINE CITY"],   # msg_0829_SC02_00041: the harbor menu's added destination (SCRIPT_PATCHES)
 }
 # Hand-written HeartGold scripts replacing a translated one: map -> {script index (0-based): asm body}.
-SCRIPT_OVERRIDES = {
-    "MAP_CANALAVE": {
-        19: """\tPlaySE SEQ_SE_DP_SELECT
-\tLockAll
-\tFacePlayer
-\tNPCMsg msg_0829_SC02_00041
-\tYesNo VAR_SPECIAL_RESULT
-\tCompare VAR_SPECIAL_RESULT, 1
-\tGoToIfEq _sail_no
-\tCloseMsg
-\tFadeScreen 6, 1, 0, RGB_BLACK
-\tWaitFade
-\tSinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277
-\tFadeScreen 6, 1, 1, RGB_BLACK
-\tWaitFade
-\tReleaseAll
-\tEnd
-
-_sail_no:
-\tNPCMsg msg_0829_SC02_00042
-\tWaitButton
-\tCloseMsg
-\tReleaseAll
-\tEnd""",
-    },
+SCRIPT_OVERRIDES = {}
+# Text patches applied to a map's translated script bank after translation: map -> [(regex, replacement, count)].
+# Canalave's sailor keeps Diamond's menu (Iron Island, Fullmoon Island, Newmoon Island) and gains Olivine City.
+OLIVINE_SAIL = ("_sail_olivine:\n\tCall _07F3\n\tCompareVarToValue 0x8004, 1\n\tCallIf 1, _0812\n\tCompareVarToValue 0x8004, 3\n\tCallIf 1, _082C\n"
+                "\tCompareVarToValue 0x8004, 0\n\tCallIf 1, _0846\n\tSinnohShipCutscene 3, DIR_SOUTH, MAP_OLIVINE, 279, 277\n\tReleaseAll\n\tEnd\n\n")
+SCRIPT_PATCHES = {
+    "MAP_CANALAVE": [
+        (r"\tMenuItemAdd (\S+), (\d+), 4\n", lambda m: f"\tMenuItemAdd msg_0829_SC02_00041, {m.group(2)}, 5\n\tMenuItemAdd {m.group(1)}, {int(m.group(2)) + 1}, 4\n", 1),
+        (r"(\tCompareVarToValue 0x800C, 3\n\tGoToIf 1, _07E8\n)", lambda m: m.group(1) + "\tCompareVarToValue 0x800C, 5\n\tGoToIf 1, _sail_olivine\n", 1),
+        (r"(?=_07E8:\n)", lambda m: OLIVINE_SAIL, 1),
+        (r"(\tSinnohShipCutscene 3, [^\n]+\n)", lambda m: "\tFadeScreen 6, 1, 0, RGB_BLACK\n\tWaitFade\n" + m.group(1), 0),
+    ],
 }
 
 
@@ -455,7 +439,6 @@ TRANSLATE = {
     "ScrCmd_Unk0039": ("WaitSignpostAction", ""),
     "ScrCmd_Unk003A": ("TrainerTips", "mp"),
     "ScrCmd_Unk003B": ("WaitSignpost", "p"),
-    "ScrCmd_Unk0042": ("ScrCmd_066", "bb"),
     "ScrCmd_PlayFanfare": ("PlayFanfare", "E"),
     "ScrCmd_PlayFanfareWait": ("WaitSE", "E"),
     "ScrCmd_PlayCry": ("PlayCry", "vv"),
@@ -867,7 +850,7 @@ class Translator:
                     last_se = self.var(raw[0]) if raw[0] >= 0x4000 else (nm0 if nm0 in HG_SE_IDS else SE_RENAMES.get(nm0, str(raw[0])))
                 if name == "ScrCmd_Unk0040":
                     menu_idx = 0
-                if name == "ScrCmd_Unk029D":   # list-window item: (message, value) -> MenuItemAdd message, row, value
+                if name in ("ScrCmd_Unk029D", "ScrCmd_Unk0042"):   # list-window item: (shared label, value) -> MenuItemAdd label, row, value
                     msg = self.shared_msg(DP_MENU_TEXT_BANK, raw[0])   # labels come from Diamond's shared menu-text bank
                     val = self.var(raw[1]) if raw[1] >= 0x4000 else str(raw[1])
                     lines[pc] = f"\tMenuItemAdd {msg}, {menu_idx}, {val}"
@@ -1336,6 +1319,9 @@ def main():
                     q0 += 6
             p0 += 5
         asm, nscripts, stubbed = tr.translate(h["scripts"], SCRIPT_OVERRIDES.get(m["name"]), frame_idx)
+        for pat, fn, count in SCRIPT_PATCHES.get(m["name"], []):
+            asm, nsub = re.subn(pat, fn, asm, count=count)
+            assert nsub > 0, f"{m['name']}: script patch {pat!r} matched nothing"
         for k, (sbank, smid) in enumerate(tr.extra_msgs):
             if sbank not in _shared_msg_cache:
                 _shared_msg_cache[sbank] = gmm_to_json(dp, sbank, "shared")[0]["messages"]
