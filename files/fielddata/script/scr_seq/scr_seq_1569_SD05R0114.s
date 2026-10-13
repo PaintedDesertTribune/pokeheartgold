@@ -133,7 +133,7 @@ _01AF:
 scr_seq_SD05R0114_001:
 	CheckFlag FLAG_SINNOH_190
 	GoToIf 0, _01CD
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [2, 16384]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 2, 0x4000
 
 _01CD:
 	CheckFlag FLAG_SINNOH_142
@@ -245,15 +245,15 @@ scr_seq_SD05R0114_003:
 	ApplyMovement 241, mv_SD05R0114_069C
 	WaitMovement
 	// Diamond ScrCmd_Unk005D dropped: Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [0, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 0, 0x800C
 	Wait 162, 0x800C
 	PlayBGM SEQ_GS_E_TSURETEKE2
 
 _036A:
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [1, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 1, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _036A
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [2, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 2, 0x800C
 	ApplyMovement 241, mv_SD05R0114_06A8
 	WaitMovement
 	SetVar 0x8005, 5
@@ -268,7 +268,7 @@ _036A:
 	CloseMsg
 	Warp MAP_SINNOH_MOUNT_CORONET_SPEAR_PILLAR, 0, 31, 25, 3
 	ShowPerson 255
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [7, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 7, 0x800C
 	FadeScreen 6, 1, 1, 0
 	PlayBGM SEQ_GS_E_TSURETEKE1
 	WaitFade
@@ -277,7 +277,7 @@ _036A:
 	WaitFade
 	Warp MAP_SINNOH_VALLEY_WINDWORKS_EXTERIOR, 0, 240, 660, 3
 	ShowPerson 255
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [8, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 8, 0x800C
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	Wait 90, 0x800C
@@ -285,7 +285,7 @@ _036A:
 	WaitFade
 	Warp MAP_SINNOH_HEARTHOME, 0, 479, 692, 2
 	ShowPerson 255
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [9, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 9, 0x800C
 	FadeScreen 6, 1, 1, 0
 	WaitFade
 	Wait 90, 0x800C
@@ -582,9 +582,9 @@ _0A94:
 	GetPlayerCoords 0x8004, 0x8005
 	// Diamond ScrCmd_LockCamera dropped: scripted camera moves need a HeartGold port (library cutscene)
 	Call _0C35
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [3, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 3, 0x800C
 	ClearFlag FLAG_SINNOH_190
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [4, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 4, 0x800C
 	Wait 30, 0x800C
 	PlayFanfare SEQ_SE_DP_W025
 	Wait 90, 0x800C
@@ -614,12 +614,12 @@ _0A94:
 	NPCMsg msg_1131_SD05R0114_00028
 	WaitCry
 	CloseMsg
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [5, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 5, 0x800C
 	Wait 30, 0x800C
 	PlayFanfare SEQ_SE_DP_W060C
 
 _0B47:
-	// TODO Diamond ScrCmd_SpearPillarSequence 0x20d args [6, 32780]: no HeartGold mapping yet
+	SinnohSpearPillarSequence 6, 0x800C
 	CompareVarToValue 0x800C, 0
 	GoToIf 1, _0B47
 	Wait 60, 0x800C

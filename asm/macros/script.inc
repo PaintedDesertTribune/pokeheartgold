@@ -1080,6 +1080,12 @@
 	.byte \dir
 	.endm
 
+	.macro SinnohSpearPillarSequence op, var
+	.short 858
+	.byte \op
+	.short \var
+	.endm
+
 	.macro Warp arg0, arg1=0, arg2, arg3, arg4
 	.short 176
 	.short \arg0

@@ -539,6 +539,7 @@ TRANSLATE = {
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
     "ScrCmd_GiveEgg": ("GiveEgg", "vv"),
+    "ScrCmd_SpearPillarSequence": ("SinnohSpearPillarSequence", "bp"),   # src/sinnoh_spear_pillar.c stand-in
     "ScrCmd_SetEventPosition": ("MovePersonFacing", "ovvvv"),   # (object, x, z, height, facing) in both games
     "ScrCmd_PartyMonHasMove": ("MonHasMove", "pvv"),
     "ScrCmd_SealsMart": ("SealMart", "v"),                  # HeartGold's seal shop lists, same index range

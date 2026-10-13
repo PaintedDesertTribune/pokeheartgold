@@ -173,7 +173,6 @@ MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk0058: Diamond sound player vol
 MAP_MOUNT_CORONET_SPEAR_PILLAR: dropped ScrCmd_Unk005D: Diamond music fade-out to silence; HeartGold scripts fade via FadeOutBGM where needed
 MAP_MOUNT_CORONET_SPEAR_PILLAR: tag battle partner taken as Barry's Spear Pillar team (Diamond picks it by starter)
 MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_DebugWatch
-MAP_MOUNT_CORONET_SPEAR_PILLAR: unmapped command ScrCmd_SpearPillarSequence
 MAP_NEWMOON_ISLAND_EXTERIOR: dropped ScrCmd_Unk0270: Diamond save-flag toggle of unknown purpose
 MAP_OLD_CHATEAU_1F: unmapped command ScrCmd_Unk0292
 MAP_OLD_CHATEAU_2F_ROOM_4: unmapped command ScrCmd_Unk0292
