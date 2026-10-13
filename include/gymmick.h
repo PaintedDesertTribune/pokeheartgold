@@ -17,6 +17,7 @@ typedef enum GymmickType {
     GYMMICK_SINNOH_CANALAVE, // Sinnoh port: Canalave Gym lifts
     GYMMICK_SINNOH_VEILSTONE, // Sinnoh port: Veilstone Gym punching bags
     GYMMICK_SINNOH_SUNYSHORE, // Sinnoh port: Sunyshore Gym gears
+    GYMMICK_SINNOH_PASTORIA, // Sinnoh port: Pastoria Gym water level
 } GymmickType;
 
 typedef union GymmickUnion {
@@ -58,6 +59,9 @@ typedef union GymmickUnion {
         s8 rotation; // Sinnoh port: quarter turns of the current room's gears
         u8 room;
     } sinnohSunyshore;
+    struct {
+        u8 level; // Sinnoh port: Pastoria water level 0-2
+    } sinnohPastoria;
 } GymmickUnion;
 
 typedef struct Gymmick {

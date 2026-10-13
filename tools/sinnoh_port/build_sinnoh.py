@@ -82,7 +82,9 @@ EXTRA_AREA_MODELS = {"MAP_CANALAVE_GYM": {"SINNOH_BM_CANALAVE_LIFT_Z": 0x126, "S
                      "MAP_VEILSTONE_GYM": {"SINNOH_BM_VEILSTONE_BAG_0": 0x11F, "SINNOH_BM_VEILSTONE_BAG_1": 0x120, "SINNOH_BM_VEILSTONE_BAG_2": 0x121,
                                            "SINNOH_BM_VEILSTONE_BAG_3": 0x122, "SINNOH_BM_VEILSTONE_BAG_4": 0x123, "SINNOH_BM_VEILSTONE_BAG_5": 0x124,
                                            "SINNOH_BM_VEILSTONE_BAG_6": 0x125},
-                     "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)}}
+                     "MAP_SUNYSHORE_GYM_ROOM_1": {f"SINNOH_BM_SUNYSHORE_GEAR_{i}": 0x1CA + i for i in range(7)},
+                     "MAP_PASTORIA_GYM": {"SINNOH_BM_PASTORIA_WATER": 0xF2}}
+PASTORIA_BUTTON_MODELS = {0xEF: 2, 0xF0: 1, 0xF1: 0}   # Diamond button building model -> water level it sets
 SIGN_MODELS = {91: (69, 1), 92: (70, 1), 93: (71, 1), 94: (72, 1), 95: (73, 1), 96: (74, 1), 183: (79, 0), 209: (110, 0)}
 BERRY_PLOT_SPRITE = 100   # Diamond berry patches: an invisible object whose graphic is drawn by the berry system
 FIRST_SINNOH_SPRITE = 1100   # HeartGold sprite ids above the follower-mon range
@@ -536,6 +538,8 @@ TRANSLATE = {
     "ScrCmd_InitCanalaveGym": ("SinnohCanalaveGymInit", ""),   # src/field/gymmick/sinnoh_canalave.c
     "ScrCmd_InitVeilstoneGym": ("SinnohVeilstoneGymInit", ""),   # src/field/gymmick/sinnoh_veilstone.c
     "ScrCmd_InitSunyshoreGym": ("SinnohSunyshoreGymInit", "b"),   # src/field/gymmick/sinnoh_sunyshore.c
+    "ScrCmd_InitPastoriaGym": ("SinnohPastoriaGymInit", ""),     # src/field/gymmick/sinnoh_pastoria.c
+    "ScrCmd_CheckPastoriaGymButton": ("SinnohPastoriaGymButton", ""),
     "ScrCmd_RotateSunyshoreGymGear": ("SinnohSunyshoreGymRotate", "b"),
     "ScrCmd_NamePokemonScreen": ("NicknameInput", "vp"),
     "ScrCmd_GiveEgg": ("GiveEgg", "vv"),
@@ -604,8 +608,6 @@ DROP = {
     "ScrCmd_Unk02CF": "Diamond list-window option tweak",
     "ScrCmd_ShowPokemonPic": "Diamond's in-field Pokémon portrait window has no HeartGold script command",
     "ScrCmd_KeepEvent": "Diamond's keep-object-across-load flag; HeartGold objects persist by map data",
-    "ScrCmd_InitPastoriaGym": "Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet",
-    "ScrCmd_CheckPastoriaGymButton": "Pastoria Gym water buttons not ported yet (gym stays walkable)",
     "ScrCmd_InitHearthomeGym": "Hearthome Gym lift state; the lift is a warp here (no state needed)",
     "ScrCmd_Unk0250": "Diamond new-game save-field init; HeartGold does its own",
     "ScrCmd_InitPokemonRecordSize": "Diamond new-game record init; HeartGold does its own",
@@ -1667,6 +1669,20 @@ def main():
             f"#define SINNOH_HIDDEN_ITEM_FIRST_IDX {FIRST_HIDDEN_ITEM_IDX}   // hidden-item indices from here on are Sinnoh's",
             f"#define SINNOH_HIDDEN_ITEM_FLAG_BASE 0x{SINNOH_HIDDEN_ITEM_FLAG_BASE:04X}   // their flags (stock 800+idx would hit story flags)", ""]
     sin += [f"#define {cname} {hgid}   // Diamond build model, placed at runtime by gymmick code" for cname, hgid in sorted(extra_model_defs.items())] + [""]
+    buttons = []
+    for pm in maps:
+        if pm["name"] != "MAP_PASTORIA_GYM":
+            continue
+        pcells, _, _ = dp.map_cells(pm["dpid"], pm["dphdr"])
+        for cx, cy, land_id, _ in pcells:
+            c = dp.file("land_data/land_data_release", land_id)
+            perm, bld = struct.unpack_from("<2I", c, 0)
+            for i in range(bld // 0x30):
+                bid = struct.unpack_from("<I", c, 0x10 + perm + i * 0x30)[0]
+                if bid in PASTORIA_BUTTON_MODELS:
+                    bx, _, bz = struct.unpack_from("<iii", c, 0x10 + perm + i * 0x30 + 4)
+                    buttons.append((cx * 32 + int(bx / 4096 / 16 + 16), cy * 32 + int(bz / 4096 / 16 + 16), PASTORIA_BUTTON_MODELS[bid]))
+    sin += ["#define SINNOH_PASTORIA_BUTTONS " + " ".join(f"{{ {x}, {z}, {lvl} }}," for x, z, lvl in buttons) + "   // button tile x, z, water level (from the gym's land data)", ""]
     std3 = "files/fielddata/script/scr_seq/scr_seq_0003.s"
     std3_src = open(std3).read()
     std3_count = std3_src.count("\tScrDef ")

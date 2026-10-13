@@ -200,8 +200,6 @@ MAP_PASTORIA: berry plot object 16 skipped; Diamond's soft-soil berry system is 
 MAP_PASTORIA: dropped ScrCmd_GetFashionName: Contest dress-up dropped (decision 16)
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_1F: unmapped command ScrCmd_EnableDisableSafariZone
 MAP_PASTORIA_GREAT_MARSH_ENTRANCE_2F: unmapped command ScrCmd_UseGreatMarshBinoculars
-MAP_PASTORIA_GYM: dropped ScrCmd_CheckPastoriaGymButton: Pastoria Gym water buttons not ported yet (gym stays walkable)
-MAP_PASTORIA_GYM: dropped ScrCmd_InitPastoriaGym: Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet
 MAP_PASTORIA_GYM: dropped ScrCmd_Unk01CD: Diamond misc save-data pointer setup
 MAP_PASTORIA_MOVE_TUTOR_HOUSE: unmapped command ScrCmd_GetItemNameWithIndefArticle
 MAP_PASTORIA_MOVE_TUTOR_HOUSE: unmapped command ScrCmd_Unk021F

@@ -862,6 +862,8 @@ const ScrCmdFunc gScriptCmdTable[] = {
     ScrCmd_SinnohSunyshoreGymInit, // 856: Sinnoh port, Sunyshore Gym gears (room)
     ScrCmd_SinnohSunyshoreGymRotate, // 857: Sinnoh port, Sunyshore Gym gears (direction)
     ScrCmd_SinnohSpearPillarSequence, // 858: Sinnoh port, Spear Pillar cutscene stand-in (operation, var)
+    ScrCmd_SinnohPastoriaGymInit, // 859: Sinnoh port, Pastoria Gym water
+    ScrCmd_SinnohPastoriaGymButton, // 860: Sinnoh port, Pastoria Gym button under the player
 };
 const u32 sNumScriptCmds = NELEMS(gScriptCmdTable);
 

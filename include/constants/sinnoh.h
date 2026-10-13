@@ -956,6 +956,7 @@
 #define SINNOH_BM_CANALAVE_LIFT_V 278   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_X 277   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_CANALAVE_LIFT_Z 276   // Diamond build model, placed at runtime by gymmick code
+#define SINNOH_BM_PASTORIA_WATER 395   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_SUNYSHORE_GEAR_0 408   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_SUNYSHORE_GEAR_1 409   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_SUNYSHORE_GEAR_2 410   // Diamond build model, placed at runtime by gymmick code
@@ -970,6 +971,8 @@
 #define SINNOH_BM_VEILSTONE_BAG_4 386   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_VEILSTONE_BAG_5 387   // Diamond build model, placed at runtime by gymmick code
 #define SINNOH_BM_VEILSTONE_BAG_6 388   // Diamond build model, placed at runtime by gymmick code
+
+#define SINNOH_PASTORIA_BUTTONS { 3, 6, 2 }, { 9, 24, 2 }, { 17, 9, 1 }, { 19, 13, 1 }, { 19, 24, 1 }, { 10, 30, 1 }, { 9, 14, 0 }, { 19, 22, 0 }, { 23, 31, 0 }, { 3, 34, 0 },   // button tile x, z, water level (from the gym's land data)
 
 #define std_sinnoh_partner_theme 2072   // appended to HeartGold's misc std bank
 #define std_sinnoh_rival_theme 2073   // appended to HeartGold's misc std bank

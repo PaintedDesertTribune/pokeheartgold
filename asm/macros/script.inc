@@ -1086,6 +1086,14 @@
 	.short \var
 	.endm
 
+	.macro SinnohPastoriaGymInit
+	.short 859
+	.endm
+
+	.macro SinnohPastoriaGymButton
+	.short 860
+	.endm
+
 	.macro Warp arg0, arg1=0, arg2, arg3, arg4
 	.short 176
 	.short \arg0

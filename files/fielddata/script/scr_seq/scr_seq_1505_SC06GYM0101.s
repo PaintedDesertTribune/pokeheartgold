@@ -18,25 +18,25 @@ scr_seq_SC06GYM0101_000:
 	SetVar 0x4001, 0
 	SetVar 0x4002, 1
 	SetVar 0x4003, 0
-	// Diamond ScrCmd_InitPastoriaGym dropped: Pastoria Gym water level: the water tiles are plain floor in HeartGold, so the gym is walkable; water animation not ported yet
+	SinnohPastoriaGymInit
 	End
 
 scr_seq_SC06GYM0101_001:
-	// Diamond ScrCmd_CheckPastoriaGymButton dropped: Pastoria Gym water buttons not ported yet (gym stays walkable)
+	SinnohPastoriaGymButton
 	SetVar 0x4001, 1
 	SetVar 0x4002, 0
 	SetVar 0x4003, 0
 	End
 
 scr_seq_SC06GYM0101_002:
-	// Diamond ScrCmd_CheckPastoriaGymButton dropped: Pastoria Gym water buttons not ported yet (gym stays walkable)
+	SinnohPastoriaGymButton
 	SetVar 0x4001, 0
 	SetVar 0x4002, 1
 	SetVar 0x4003, 0
 	End
 
 scr_seq_SC06GYM0101_003:
-	// Diamond ScrCmd_CheckPastoriaGymButton dropped: Pastoria Gym water buttons not ported yet (gym stays walkable)
+	SinnohPastoriaGymButton
 	SetVar 0x4001, 0
 	SetVar 0x4002, 0
 	SetVar 0x4003, 1

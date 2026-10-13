@@ -875,6 +875,8 @@ BOOL ScrCmd_SinnohVeilstoneGymInit(ScriptContext *ctx); // Sinnoh port (src/fiel
 BOOL ScrCmd_SinnohSunyshoreGymInit(ScriptContext *ctx); // Sinnoh port (src/field/gymmick/sinnoh_sunyshore.c)
 BOOL ScrCmd_SinnohSunyshoreGymRotate(ScriptContext *ctx); // Sinnoh port
 BOOL ScrCmd_SinnohSpearPillarSequence(ScriptContext *ctx); // Sinnoh port (src/sinnoh_spear_pillar.c)
+BOOL ScrCmd_SinnohPastoriaGymInit(ScriptContext *ctx); // Sinnoh port (src/field/gymmick/sinnoh_pastoria.c)
+BOOL ScrCmd_SinnohPastoriaGymButton(ScriptContext *ctx); // Sinnoh port
 
 MessageFormat *sub_0204B538(SaveData *saveData, u16 numEligblePokemon, u16 a2, u8 a3, u8 *numLegendaryPokemonSeen);
 void ov01_021EF564(ScriptContext *ctx, u16 messageBank, u16 messageNum, u16 word1, s16 word2, u8 canABSpeedUp);
