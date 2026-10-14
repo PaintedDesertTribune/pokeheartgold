@@ -1,0 +1,2 @@
+# Ruby maps to import, in order. The first entry gets the first free HeartGold map id.
+MAP_LITTLEROOT_TOWN

@@ -11,16 +11,23 @@ stop such as a CPU exception (CRASH), or nothing within the time limit (HANG).
 
     python3 tools/sinnoh_port/maploadtest.py [--maps MAP_SINNOH_A,MAP_SINNOH_B] [--prefix MAP_SINNOH_] [--out report.json]
 """
-import argparse, json, os, re, subprocess, sys, time
+import argparse, json, os, re, shutil, subprocess, sys, tempfile, time
 
+WINDOWS = sys.platform == "win32"
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ROM = os.path.join(ROOT, "build/pokeheartgold.us.nds")
-ELF = os.path.join(ROOT, "build/heartgold.us.nef")
-MELONDS = os.path.expanduser("~/Applications/melonDS.app")
-GDB = "arm-none-eabi-gdb"
+# Mac: the in-tree build/ dir and melonDS.app; Windows: the build dir outside OneDrive, a melonDS copy whose
+# melonDS.toml has the GDB stub on with BreakOnStartup, and MSYS2's gdb-multiarch. Each can be overridden by env.
+BUILD = os.environ.get("PFR_BUILD_DIR", os.path.expanduser("~/pfr-build/heartgold") if WINDOWS else os.path.join(ROOT, "build"))
+ROM = os.path.join(BUILD, "pokeheartgold.us.nds")
+ELF = os.path.join(BUILD, "heartgold.us.nef")
+MELONDS = os.environ.get("MELONDS", os.path.expanduser("~/Applications/melonDS-test/melonDS.exe" if WINDOWS else "~/Applications/melonDS.app"))
+GDB = os.environ.get("GDB", "gdb-multiarch" if WINDOWS else "arm-none-eabi-gdb")
+DP_ROOT = os.environ.get("DP_ROOT", os.path.expanduser("~/code/pokediamond"))
+if not os.path.isdir(DP_ROOT):
+    DP_ROOT = os.path.join(os.path.dirname(ROOT), "pokediamond")   # the Windows layout: both repos side by side
 
 def nm():
-    out = subprocess.run([f"arm-none-eabi-nm", ELF], capture_output=True, text=True).stdout
+    out = subprocess.run([os.environ.get("NM", "arm-none-eabi-nm"), ELF], capture_output=True, text=True).stdout
     return {m.group(2): int(m.group(1), 16) for m in re.finditer(r"^([0-9a-f]{8}) [TtDdBb] (\w+)$", out, re.M)}
 
 def map_ids():
@@ -38,7 +45,7 @@ def dp_matrix_dims():
     try:
         sys.path.insert(0, os.path.join(ROOT, "tools/sinnoh_port"))
         import build_sinnoh as B
-        dp = B.Diamond(os.path.expanduser("~/code/pokediamond"))
+        dp = B.Diamond(DP_ROOT)
     except Exception:
         return {}
     out = {}
@@ -77,30 +84,46 @@ GDB_PORT = 3333   # --port: the ARM9 GDB stub port of that instance ([InstanceN.
 _our_pids = set()
 
 def _melonds_pids():
+    if WINDOWS:
+        out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq melonDS.exe", "/FO", "CSV", "/NH"], capture_output=True, text=True).stdout
+        return set(int(m.group(1)) for m in re.finditer(r'^"melonDS\.exe","(\d+)"', out, re.M))
     out = subprocess.run(["pgrep", "-x", "melonDS"], capture_output=True, text=True).stdout.split()
     return set(int(p) for p in out)
 
+def _kill_pid(pid):
+    if WINDOWS:
+        subprocess.run(["taskkill", "/PID", str(pid), "/F"], capture_output=True)
+    else:
+        subprocess.run(["kill", "-9", str(pid)], capture_output=True)
+
 def kill_emulator():
     """Kill only the emulator this harness started (instance mode) or every melonDS (instance 0, the old behaviour)."""
-    if INSTANCE == 0:
+    if INSTANCE == 0 and not WINDOWS:
         subprocess.run(["pkill", "-9", "-x", "melonDS"], capture_output=True)
+    elif INSTANCE == 0:
+        for pid in _melonds_pids():
+            _kill_pid(pid)
     else:
         for pid in list(_our_pids):
-            subprocess.run(["kill", "-9", str(pid)], capture_output=True)
+            _kill_pid(pid)
         _our_pids.clear()
 
 def run_one(name, mid, x, y, syms, timeout=70):
     kill_emulator()
     time.sleep(1.5)
     before = _melonds_pids()
-    subprocess.run((["open", "-n", "-a"] if INSTANCE else ["open", "-a"]) + [MELONDS, ROM], check=True)
+    if WINDOWS:
+        p = subprocess.Popen([MELONDS, ROM], cwd=os.path.dirname(MELONDS))
+        _our_pids.add(p.pid)
+    else:
+        subprocess.run((["open", "-n", "-a"] if INSTANCE else ["open", "-a"]) + [MELONDS, ROM], check=True)
     time.sleep(4)
-    if INSTANCE:
+    if INSTANCE and not WINDOWS:
         _our_pids.update(_melonds_pids() - before)
     loc = syms["sLocation_PlayerRoom"]
     script = f"""set pagination off
 set confirm off
-file {ELF}
+file {ELF.replace(os.sep, "/")}
 set remote binary-download-packet off
 target remote localhost:{GDB_PORT}
 break Location_SetToPlayerRoom
@@ -123,7 +146,7 @@ x/96wx $sp
 detach
 quit
 """
-    sp = f"/tmp/maploadtest_{os.getpid()}.gdb"
+    sp = os.path.join(tempfile.gettempdir(), f"maploadtest_{os.getpid()}.gdb")
     open(sp, "w").write(script)
     t0 = time.time()
     try:
@@ -188,7 +211,7 @@ def main():
     ids = map_ids()
     global DP_DIMS
     DP_DIMS = dp_matrix_dims()
-    dp_codes = {k: c[4:] for k, c in re.findall(r"#define (MAP_\w+)\s+\d+\s*// (MAP_\w+)", open(os.path.expanduser("~/code/pokediamond/include/constants/maps.h")).read())}
+    dp_codes = {k: c[4:] for k, c in re.findall(r"#define (MAP_\w+)\s+\d+\s*// (MAP_\w+)", open(os.path.join(DP_ROOT, "include/constants/maps.h")).read())}
     names = [n for n in a.maps.split(",") if n] or sorted(n for n in ids if n.startswith(a.prefix))
     prev = {}
     if os.path.exists(a.out):

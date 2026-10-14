@@ -1,0 +1,9 @@
+MAP_LITTLEROOT_TOWN: mapsec is a New Bark placeholder; music is HeartGold's New Bark theme (decision 17)
+gTileset_Petalburg: tile 800 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 801 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 802 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 803 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 816 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 817 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 818 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported
+gTileset_Petalburg: tile 819 is an animated slot (tileset_anims.c); drawn blank until animation frames are imported

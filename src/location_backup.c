@@ -8,7 +8,16 @@
 #include "field_system.h"
 #include "save_local_field_data.h"
 
-#if HACK_START_IN_CANALAVE
+#if HACK_START_IN_LITTLEROOT
+// Test start for the Hoenn geometry proof: the middle of Littleroot Town's chunk (the 20x20 map sits at tiles 6..25).
+static const Location sLocation_PlayerRoom = {
+    .mapId = MAP_HOENN_LITTLEROOT_TOWN,
+    .warpId = 0xFFFFFFFF,
+    .x = 16,
+    .y = 16,
+    .direction = 0x00000000,
+};
+#elif HACK_START_IN_CANALAVE
 // Test start for the Sinnoh proof slice: the east bank of Canalave's canal, by the harbor.
 static const Location sLocation_PlayerRoom = {
     .mapId = MAP_SINNOH_CANALAVE,

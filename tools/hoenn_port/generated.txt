@@ -1,0 +1,6 @@
+files/fielddata/script/scr_seq/event_HLITTLEROOT.h
+files/fielddata/mapmatrix/map_matrix/map_matrix_0737_HLITTLEROOT.bin
+files/fielddata/eventdata/zone_event/939_HLITTLEROOT.json
+files/msgdata/msg/msg_1277_HLITTLEROOT.json
+files/fielddata/script/scr_seq/scr_seq_1861_HLITTLEROOT.s
+files/fielddata/script/scr_seq/scr_seq_1862_HLITTLEROOT_hdr.s

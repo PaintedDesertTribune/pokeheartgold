@@ -940,4 +940,7 @@ zone_event_json = files(
     '937_SD17R0121.json',
     '938_SD17R0117.json',
     # SINNOH_PORT_END
+    # HOENN_PORT_BEGIN
+    '939_HLITTLEROOT.json',
+    # HOENN_PORT_END
 )

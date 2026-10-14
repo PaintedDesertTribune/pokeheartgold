@@ -7,6 +7,10 @@
 // without playing to Olivine. Set to 0 for a normal start.
 #define HACK_START_IN_CANALAVE 1
 
+// Start a new game in Littleroot Town (the Hoenn geometry proof) instead; wins over the Canalave switch.
+// Set to 0 to fall back to Canalave or the normal start.
+#define HACK_START_IN_LITTLEROOT 1
+
 // Skip the Oak speech and naming screens on New Game: player is Ethan, rival is Silver.
 #define HACK_SKIP_INTRO 1
 

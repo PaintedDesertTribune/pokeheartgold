@@ -675,4 +675,7 @@ map_matrix_bin = copy_gen.process(files(
     'map_matrix_0735_SD17R0117.bin',
     'map_matrix_0736_SINNOH.bin',
     # SINNOH_PORT_END
+    # HOENN_PORT_BEGIN
+    'map_matrix_0737_HLITTLEROOT.bin',
+    # HOENN_PORT_END
 ))

@@ -29655,6 +29655,38 @@ static const MapHeader sMapHeaders[] = {
                         .radioSignal = FALSE,
                         },
 // SINNOH_PORT_END
+// HOENN_PORT_BEGIN
+    [MAP_HOENN_LITTLEROOT_TOWN] = {
+                        .wildEncounterBank = ENCDATA_NA,
+                        .areaDataBank = 152,
+                        .moveModelBank = 15,
+                        .worldMapX = 0,
+                        .worldMapY = 0,
+                        .matrixId = NARC_map_matrix_map_matrix_0737_HLITTLEROOT_bin,
+                        .scriptsBank = scr_seq_1861_HLITTLEROOT_bin,
+                        .scriptHeaderBank = scr_seq_1862_HLITTLEROOT_hdr_bin,
+                        .msgBank = msg_1277_HLITTLEROOT,
+                        .dayMusicId = SEQ_GS_T_WAKABA,
+                        .nightMusicId = SEQ_GS_T_WAKABA,
+                        .eventsBank = NARC_zone_event_939_HLITTLEROOT_bin,
+                        .mapsec = MAPSEC_NEW_BARK_TOWN,
+                        .areaIcon = 1,
+                        .momCallIntroParam = 6,
+                        .regionNo = MAP_REGION_HOENN,
+                        .weather = 0,
+                        .cameraType = 0,
+                        .followMode = MAP_FOLLOWMODE_ALLOW,
+                        .battleBg = BATTLE_BG_CITY,
+                        .bikeAllowed = TRUE,
+                        .runningAllowed_Unused = TRUE,
+                        .escapeRopeAllowed = FALSE,
+                        .flyAllowed = FALSE,
+                        .outgoingCalls = FALSE,
+                        .incomingCalls = FALSE,
+                        .radioSignal = FALSE,
+                        },
+// HOENN_PORT_END
+
 };
 
 #endif

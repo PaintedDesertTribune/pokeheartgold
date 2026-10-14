@@ -319,14 +319,35 @@ class Diamond:
         """Diamond's hidden-item table (UNK_020F2DB4, 229 rows of {u16 item, u8 qty, u8 dowsing, u16 0, u16 index});
         std script 8000+idx looks its row up by index. Returns (item, qty, dowsing) or None."""
         if not hasattr(self, "_hidden"):
-            rom = open(f"{self.repo}/build/diamond.us/pokediamond.us.nds", "rb").read()
-            a9off, a9ram = struct.unpack_from("<I", rom, 0x20)[0], struct.unpack_from("<I", rom, 0x28)[0]
-            off = a9off + (0x020F2DB4 - a9ram)
+            rom_path = f"{self.repo}/build/diamond.us/pokediamond.us.nds"
+            if os.path.exists(rom_path):
+                rom = open(rom_path, "rb").read()
+                a9off, a9ram = struct.unpack_from("<I", rom, 0x20)[0], struct.unpack_from("<I", rom, 0x28)[0]
+                off = a9off + (0x020F2DB4 - a9ram)
+                raw = rom[off:off + 0xE5 * 8]
+            else:
+                # No built Diamond ROM: the same table sits in the decomp's source as .byte lines under UNK_020F2DB4.
+                raw = self._rodata_bytes("arm9/asm/unk_02038C78.s", "UNK_020F2DB4")[:0xE5 * 8]
             self._hidden = {}
             for i in range(0xE5):
-                item, qty, dows, _, index = struct.unpack_from("<HBBHH", rom, off + i * 8)
+                item, qty, dows, _, index = struct.unpack_from("<HBBHH", raw, i * 8)
                 self._hidden[index] = (item, qty, dows)
         return self._hidden.get(idx)
+
+    def _rodata_bytes(self, asm_path, label):
+        """The .byte data that follows `label:` in a Diamond assembly file, up to the next label or directive."""
+        out = bytearray()
+        found = False
+        for line in open(f"{self.repo}/{asm_path}"):
+            if not found:
+                found = line.startswith(label + ":")
+                continue
+            s = line.strip()
+            if s.startswith(".byte"):
+                out += bytes(int(v, 0) for v in s[5:].split(","))
+            elif s and not s.startswith(";"):
+                break
+        return bytes(out)
 
     def _sprite_tables(self):
         asm = open(f"{self.repo}/{DP_SPRITE_TABLES}").read()

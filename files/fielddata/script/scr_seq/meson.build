@@ -985,6 +985,9 @@ scr_seq_event_headers = files(
     'event_SD17R0121.h',
     'event_SD17R0117.h',
     # SINNOH_PORT_HDR_END
+    # HOENN_PORT_HDR_BEGIN
+    'event_HLITTLEROOT.h',
+    # HOENN_PORT_HDR_END
 )
 
 scr_seq_asm = files(
@@ -2851,4 +2854,8 @@ scr_seq_asm = files(
     'scr_seq_1859_SD17R0117.s',
     'scr_seq_1860_SD17R0117_hdr.s',
     # SINNOH_PORT_END
+    # HOENN_PORT_BEGIN
+    'scr_seq_1861_HLITTLEROOT.s',
+    'scr_seq_1862_HLITTLEROOT_hdr.s',
+    # HOENN_PORT_END
 )
